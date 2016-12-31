@@ -6,7 +6,7 @@ The aim of Nelson is providing a powerful open computing environment for enginee
 
 It has sophisticated data structures (including cell, struct, linear systems...), an interpreter and a high level programming language. 
 
-Nelson has been developped to be an open/mmodular system where an user can define these own data types and operations on these data types by using overload. 
+Nelson has been developped to be an open/modular system where an user can define these own data types and operations on these data types by using overload. 
 
 ## [Download](https://github.com/Nelson-numerical-software/nelson/releases)
 
