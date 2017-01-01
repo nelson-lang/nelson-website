@@ -10,6 +10,8 @@ Nelson has been developped to be an open/modular system where an user can define
 
 ## [Screenshots](SCREENSHOTS.md)
 
+## [Sources](https://github.com/Nelson-numerical-software/nelson)
+
 ## [Download](https://github.com/Nelson-numerical-software/nelson/releases)
 
 ## [Documentation online](https://nelson-numerical-software.github.io/nelson-website/help/en_US/index.html)
