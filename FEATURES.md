@@ -90,6 +90,7 @@ ans =
   - Single:
 
 Scalar, vector, matrix 2D, N dimensions array, sparse matrix supported.
+
 ```
 --> single(rand(2,2))
 
@@ -182,6 +183,7 @@ ans =
 ### [cell](https://nelson-numerical-software.github.io/nelson-website/help/en_US/cell.html)
 
 ```
+
 --> ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
 ce =
 
@@ -337,8 +339,7 @@ help 'module_skeleton' (en_US) generated.
 
 ## Help viewer
 ```
---> buildhelp('module_skeleton')
-help 'module_skeleton' (en_US) generated.
+--> doc nelson_sum
 ```
 ![alt text](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/Nelson-macos.png "Nelson's help viewer")
 
