@@ -8,6 +8,8 @@ It has sophisticated data structures (including cell, struct, linear systems...)
 
 Nelson has been developped to be an open/modular system where an user can define these own data types and operations on these data types by using overload. 
 
+## [Features](FEATURES.md)
+
 ## [Screenshots](SCREENSHOTS.md)
 
 ## [Sources](https://github.com/Nelson-numerical-software/nelson)
