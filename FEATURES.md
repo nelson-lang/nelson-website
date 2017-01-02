@@ -1,6 +1,6 @@
 # Features 
 
-## [Internal data types](TYPES.md)
+## [Internal data types](TYPES.md
 
 ## Modularity
 
