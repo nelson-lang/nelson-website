@@ -105,3 +105,5 @@ Columns 1 to 1
  'D:/Developpements/GitHub/nelson/modules/cacsd'
  'D:/developpements/github/nelson/module_skeleton'
 ```
+
+[Previous page](FEATURES.md)

@@ -7,3 +7,5 @@ see [xml template](https://github.com/Nelson-numerical-software/nelson/blob/mast
 --> buildhelp('module_skeleton')
 help 'module_skeleton' (en_US) generated.
 ```
+
+[Previous page](FEATURES.md)
