@@ -4,9 +4,9 @@ Nelson allows to overload all operators available in the interpreter.
 
 An example is better than a long text.
 
-In this example, we want to create an 'complexObj' i.e an special complex number object
+In this example, we want to create an 'complexObj' i.e an special complex number object.
 
-We create an function:
+We create an function: 
 
 ```
 function r = complexObj(a, b)
@@ -74,11 +74,6 @@ imag part
 And if you want to add to 'complexObj', you need also to define: 'complexObj_plus_complexObj'
 
 ```
---> complexObj_plus_complexObj
-Undefined variable or function: complexObj_plus_complexObj
-```
-
-```
 function r = complexObj_plus_complexObj(a, b)
   // stupid addition algo.
   R1 = a.r + b.r;
@@ -86,6 +81,8 @@ function r = complexObj_plus_complexObj(a, b)
   r = complexObj(R1, R2);
 endfunction
 ```
+
+Result of o + o:
 
 ```
 --> o + o
