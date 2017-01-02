@@ -117,12 +117,12 @@ ans =
   - String (Unicode):
 
 ```
---> disp('Hello: ??')
-Hello: ??
+--> disp('Hello: 你好')
+Hello: 你好
 ```
 
 ```
---> int32('??')
+--> int32('你好')
 
 ans =
 
