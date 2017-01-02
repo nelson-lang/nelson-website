@@ -7,6 +7,7 @@ An example is better than a long text.
 In this example, we want to create an 'complexObj' i.e an special complex number object
 
 We create an function:
+
 ```
 function r = complexObj(a, b)
  s.r = a;
@@ -14,13 +15,15 @@ function r = complexObj(a, b)
  r = class(s, 'complexObj');
 endfunction
 ```
+
 This function creates in fact a struct typed 'complexObj', you can consider it as an constructor.
 
 ```
 o = complexObj(5, 4);
 ```
 
-If you forget the ';' at the end. You have:
+If you forget the ";" at the end. You have:
+
 ```
 --> o = complexObj(5, 4)
 o =
@@ -29,7 +32,9 @@ function complexObj_disp undefined.
 called from:
 EvaluateString
 ```
+
 It is normal because when you create an overloaded object, you need to also create dedicated display.
+
 ```
 function complexObj_disp(obj)
   disp('complexObj_disp:')
@@ -40,7 +45,8 @@ function complexObj_disp(obj)
 endfunction
 ```
 
-and extraction function
+and extraction function:
+
 ```
 function r = complexObj_extraction(varargin)
   obj = varargin{1};
@@ -53,6 +59,7 @@ endfunction
 ```
 
 Result:
+
 ```
 --> o = complexObj(5, 4)
 o =
@@ -65,6 +72,7 @@ imag part
 ```
 
 And if you want to add to 'complexObj', you need also to define: 'complexObj_plus_complexObj'
+
 ```
 --> complexObj_plus_complexObj
 Undefined variable or function: complexObj_plus_complexObj
