@@ -22,6 +22,16 @@ This function creates in fact a struct typed 'complexObj', you can consider it a
 o = complexObj(5, 4);
 ```
 
+You can check the new 'user-defined' type:
+
+```
+--> class(o)
+
+ans =
+
+complexObj
+```
+
 If you forget the ";" at the end. You have:
 
 ```
@@ -29,8 +39,6 @@ If you forget the ";" at the end. You have:
 o =
 
 function complexObj_disp undefined.
-called from:
-EvaluateString
 ```
 
 It is normal because when you create an overloaded object, you need to also create dedicated display.
