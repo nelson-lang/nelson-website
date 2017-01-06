@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>minus</title>
+	<title>error</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="lt.html">&lt;&lt; lt</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mldivide.html">mldivide &gt;&gt;</a></span>
+<span class = "next"><a href = "lasterror.html">lasterror &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">minus</h1>
+<h1 class="refname">error</h1>
 <hr/>
 
-<h3>Subtraction, - operator</h3>
+<h3>Raise an error message.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,38 +46,18 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = minus(A, B)</td>
-	</tr>
-
-	<tr>
-		<td>C = A - B</td>
+		<td>error(msg)</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">A</span></dt>
-<dd>
-<p class="para">a variable</p>
-</dd>
-
-<dt><span class="term">B</span></dt>
-<dd>
-<p class="para">a variable</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">msg</span></dt>
 <dd>
-<p class="para">result of A - B</p>
+<p class="para">a string.</p>
 </dd>
 
 </dl>
@@ -91,24 +67,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = minus(A, B)</b> performs subtraction A - B variables.</p>
+  <p><b>error</b> stops the current script execution.</p>
+  <p><b>error('')</b> will be ignored and the script will continue to run.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">minus(3, 4)
-3 - 4
-</code>
-</pre>
-<pre>
-<code class = "nelson">[1, 2] - 1
-minus([1, 2], 1)
-</code>
-</pre>
-<pre>
-<code class = "nelson">ones(0, 0) - 1
+<code class = "nelson">error('your error message.')
+error('')
 </code>
 </pre>
 
@@ -116,7 +84,7 @@ minus([1, 2], 1)
 <hr/>
 
 <p>
-<a href = "plus.html" class = "link">plus</a>, <a href = "uminus.html" class = "link">uminus</a>.</p>
+<a href = "lasterror.html" class = "link">lasterror</a>, <a href = "warning.html" class = "link">warning</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -141,16 +109,12 @@ minus([1, 2], 1)
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="lt.html">&lt;&lt; lt</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mldivide.html">mldivide &gt;&gt;</a></span>
+<span class = "next"><a href = "lasterror.html">lasterror &gt;&gt;</a></span>
 </td>
 
 </tr></table>
