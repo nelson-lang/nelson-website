@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>mkdir</title>
+	<title>isfile</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfile.html">&lt;&lt; isfile</a></span>
+<span class="top"><a href="isdir.html">&lt;&lt; isdir</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "pathsep.html">pathsep &gt;&gt;</a></span>
+<span class = "next"><a href = "mkdir.html">mkdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">mkdir</h1>
+<h1 class="refname">isfile</h1>
 <hr/>
 
-<h3>Creates a new directory.</h3>
+<h3>Returns true is the input argument is a file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,27 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>mkdir(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>mkdir(parentdir, dirname)</td>
-	</tr>
-
-	<tr>
-		<td>status = mkdir(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>status = mkdir(parentdir, dirname)</td>
-	</tr>
-
-	<tr>
-		<td>[status, msg] = mkdir(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>[status, msg] = mkdir(parentdir, dirname)</td>
+		<td>r = isfile(name)</td>
 	</tr>
 
 </table>
@@ -79,14 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dirname</span></dt>
+<dt><span class="term">name</span></dt>
 <dd>
-<p class="para">a string: directory name to create</p>
-</dd>
-
-<dt><span class="term">parentdir</span></dt>
-<dd>
-<p class="para">a string: a directory in which the dirname directory will be created</p>
+<p class="para">a string: filename to check.</p>
 </dd>
 
 </dl>
@@ -95,14 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">status</span></dt>
+<dt><span class="term">r</span></dt>
 <dd>
-<p class="para">a logical true or false</p>
-</dd>
-
-<dt><span class="term">msg</span></dt>
-<dd>
-<p class="para">a string: error message</p>
+<p class="para">a logical: true if it is a file.</p>
 </dd>
 
 </dl>
@@ -112,21 +82,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Creates a directory named dirname in the directory parent.</p>
-  <p>If no parent directory is specified the present working directory is used.</p>
-  <p>If directory is created or already existing, status is true, otherwise it will be false.</p>
+  <p><b>isfile(name)</b> returns <b>true</b> if <b>name</b> is a file.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">mkdir(tempdir(), 'subdir_example')
-if isdir([tempdir(), '/subdir_example'])
-	disp('OK')
-else
-	disp('NOT OK')
-end
+<code class = "nelson">isfile(nelsonroot())
+isfile([nelsonroot(), '/etc/finish.nls'])
 </code>
 </pre>
 
@@ -134,7 +98,7 @@ end
 <hr/>
 
 <p>
-<a href = "isdir.html" class = "link">isdir</a>.</p>
+<a href = "mkdir.html" class = "link">mkdir</a>, <a href = "isdir.html" class = "link">isdir</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -160,7 +124,7 @@ end
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfile.html">&lt;&lt; isfile</a></span>
+<span class="top"><a href="isdir.html">&lt;&lt; isdir</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -168,7 +132,7 @@ end
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "pathsep.html">pathsep &gt;&gt;</a></span>
+<span class = "next"><a href = "mkdir.html">mkdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
