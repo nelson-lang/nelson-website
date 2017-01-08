@@ -1,0 +1,12 @@
+  - Logical:
+  
+Scalar, vector, matrix 2D, N dimensions array, sparse matrix supported.
+
+```
+--> logical(sparse(eye(3,2)))
+
+ans =
+
+  (1,1) true
+  (2,2) true
+```
