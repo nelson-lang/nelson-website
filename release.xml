@@ -9,7 +9,7 @@
 <p>#8: test_nargin & test_nargout failed in Windows binary version.</p>
 		</en_US>
 		<fr_FR>
-<p>Cette pré-version est une version de maintenance:</p>
+<p>Cette prÃ©-version est une version de maintenance:</p>
 <p>#11: colon constructor failed with some special values.</p>
 <p>#10: module_skeleton did not build/load.</p>
 <p>#8: test_nargin & test_nargout failed in Windows binary version.</p>
