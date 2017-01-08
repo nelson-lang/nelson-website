@@ -1,12 +1,12 @@
   - String (Unicode):
 
 ```
---> disp('Hello: ??')
+--> disp('Hello: 你好')
 Hello: ??
 ```
 
 ```
---> int32('??')
+--> int32('你好')
 
 ans =
 
