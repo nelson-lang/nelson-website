@@ -16,4 +16,4 @@ Columns 1 to 2
          20320          22909  
 ```
 
-[Previous page](TYPES.md)
+[Previous page](../TYPES.md)
