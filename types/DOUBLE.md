@@ -83,3 +83,5 @@ ans =
   (2,2)     1.0000
   (3,3)     1.0000
 ```
+
+[Previous page](../TYPES.md)
