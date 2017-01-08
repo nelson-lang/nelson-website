@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>filesep</title>
+	<title>diff_file</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fileparts.html">&lt;&lt; fileparts</a></span>
+<span class="top"><a href="copyfile.html">&lt;&lt; copyfile</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mkdir.html">mkdir &gt;&gt;</a></span>
+<span class = "next"><a href = "dir.html">dir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">filesep</h1>
+<h1 class="refname">diff_file</h1>
 <hr/>
 
-<h3>Return the file separator character for the current platform.</h3>
+<h3>diff two files or strings.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,10 +50,31 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = filesep()</td>
+		<td>res = diff(filename_1, filename_2, with_eol)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">filename_1</span></dt>
+<dd>
+<p class="para">a string: a filename.</p>
+</dd>
+
+<dt><span class="term">filename_2</span></dt>
+<dd>
+<p class="para">a string: a filename.</p>
+</dd>
+
+<dt><span class="term">with_eol</span></dt>
+<dd>
+<p class="para">a logical: with end of line considered or not (true by default).</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
@@ -61,7 +82,12 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a string: '/' or '\'</p>
+<p class="para">a string: '' if no diff detected.</p>
+</dd>
+
+<dt><span class="term">msg</span></dt>
+<dd>
+<p class="para">a string: error message</p>
 </dd>
 
 </dl>
@@ -70,13 +96,17 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>pathsep</b> returns '\' on Windows and '/' on others platforms.
+
+  <p><b>diff_file</b> compares two files and returns diff as unified format.</p>
+  <p>if compared files are equals, res is an empty string.</p>
+
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = filesep
+<code class = "nelson">res = diff_file([nelsonroot(), '/etc/startup.nls'], [nelsonroot(), '/etc/startup.nls'])
+res = diff_file([nelsonroot(), '/etc/startup.nls'], [nelsonroot(), '/etc/finish.nls'])
 </code>
 </pre>
 
@@ -84,7 +114,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "pathsep.html" class = "link">pathsep</a>.</p>
+<a href = "isdir.html" class = "link">isdir</a>, <a href = "isfile.html" class = "link">isfile</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -110,7 +140,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fileparts.html">&lt;&lt; fileparts</a></span>
+<span class="top"><a href="copyfile.html">&lt;&lt; copyfile</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -118,7 +148,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mkdir.html">mkdir &gt;&gt;</a></span>
+<span class = "next"><a href = "dir.html">dir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
