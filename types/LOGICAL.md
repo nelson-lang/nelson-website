@@ -10,3 +10,5 @@ ans =
   (1,1) true
   (2,2) true
 ```
+
+[Previous page](../TYPES.md)

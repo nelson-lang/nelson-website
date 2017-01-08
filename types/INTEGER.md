@@ -40,3 +40,5 @@ ans =
   <int8>  - size: 1x1
   127  
 ```
+
+[Previous page](../TYPES.md)

@@ -14,3 +14,4 @@ Columns 1 to 2
     0.59284461         0.84426576      
 ```
 
+[Previous page](../TYPES.md)
