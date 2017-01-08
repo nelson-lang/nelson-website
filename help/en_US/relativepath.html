@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>dir</title>
+	<title>relativepath</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="./diff_file.html">&lt;&lt; diff_file</a></span>
+<span class="top"><a href="./pwd.html">&lt;&lt; pwd</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "./fileparts.html">fileparts &gt;&gt;</a></span>
+<span class = "next"><a href = "./rmdir.html">rmdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">dir</h1>
+<h1 class="refname">relativepath</h1>
 <hr/>
 
-<h3>Returns file list.</h3>
+<h3>Returns the relative path from an actual path to the target path.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,27 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>dir</td>
-	</tr>
-
-	<tr>
-		<td>dir(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>dir(dirname, '-s')</td>
-	</tr>
-
-	<tr>
-		<td>res =dir()</td>
-	</tr>
-
-	<tr>
-		<td>res = dir(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>res = dir(dirname, '-s')</td>
+		<td>r = relativepath(path_1, path_2)</td>
 	</tr>
 
 </table>
@@ -79,14 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dirname</span></dt>
+<dt><span class="term">path_1</span></dt>
 <dd>
-<p class="para">a string: file or directory name.</p>
+<p class="para">a string: file or directory.</p>
 </dd>
 
-<dt><span class="term">'-s'</span></dt>
+<dt><span class="term">path_2</span></dt>
 <dd>
-<p class="para">a string: scan also subdirectories.</p>
+<p class="para">a string: file or directory.</p>
 </dd>
 
 </dl>
@@ -95,9 +75,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">r</span></dt>
 <dd>
-<p class="para">a struct with fields: name, date, bytes, isdir, datenum.</p>
+<p class="para">a string: relative path.</p>
 </dd>
 
 </dl>
@@ -107,16 +87,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>dir</b> displays the list of files and folders in the current folder.</p>
-  <p>* (wildcard) is supported in filename and path name.</p>
+  <p>Returns the relative path from an actual path to the target path.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">res = dir(nelsonroot())
-res = dir(nelsonroot(), '-s')
+<code class = "nelson">relativepath(nelsonroot(), [nelsonroot(), '/COPYING.md'])
+relativepath(nelsonroot(), [nelsonroot(), '/etc/finish.nls'])
+relativepath([nelsonroot(),'/bin'], [nelsonroot(), '/COPYING.md'])
+relativepath('.', '.')
+relativepath('.', '..')
+relativepath('..', '.')
 </code>
 </pre>
 
@@ -124,7 +107,7 @@ res = dir(nelsonroot(), '-s')
 <hr/>
 
 <p>
-<a href = "isdir.html" class = "link">isdir</a>, <a href = "isfile.html" class = "link">isfile</a>.</p>
+<a href = "cd.html" class = "link">cd</a>, <a href = "dir.html" class = "link">dir</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -150,7 +133,7 @@ res = dir(nelsonroot(), '-s')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="./diff_file.html">&lt;&lt; diff_file</a></span>
+<span class="top"><a href="./pwd.html">&lt;&lt; pwd</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -158,7 +141,7 @@ res = dir(nelsonroot(), '-s')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "./fileparts.html">fileparts &gt;&gt;</a></span>
+<span class = "next"><a href = "./rmdir.html">rmdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
