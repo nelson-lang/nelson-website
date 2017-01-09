@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>error</title>
+	<title>func2str</title>
 
 </head>
 <body>
@@ -24,21 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="40%" class="center">
-<span class="top"><a href="chapter_error_manager.html">error manager</a></span>
+<td width="30%" class="previous">
+<span class="top"><a href="isfunction_handle.html">&lt;&lt; isfunction_handle</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "lasterror.html">lasterror &gt;&gt;</a></span>
+<td width="40%" class="center">
+<span class="top"><a href="chapter_function_handle.html">function_handle functions</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">error</h1>
+<h1 class="refname">func2str</h1>
 <hr/>
 
-<h3>Raise an error message.</h3>
+<h3>Returns a string from function handle.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,18 +46,29 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>error(msg)</td>
+		<td>str = func2str(func_handle)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">func_handle</span></dt>
+<dd>
+<p class="para">a function handle.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">msg</span></dt>
+<dt><span class="term">str</span></dt>
 <dd>
-<p class="para">a string.</p>
+<p class="para">a string</p>
 </dd>
 
 </dl>
@@ -67,16 +78,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>error</b> stops the current script execution.</p>
-  <p><b>error('')</b> will be ignored and the script will continue to run.</p>
+  <p><b>str = func2str(function_handle)</b> returns a string <b>str</b> that holds the name of the function to which the function handle is associated.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">error('your error message.')
-error('')
+<code class = "nelson">fh = str2func('cos')
+str = func2str(fh)
 </code>
 </pre>
 
@@ -84,7 +94,7 @@ error('')
 <hr/>
 
 <p>
-<a href = "lasterror.html" class = "link">lasterror</a>, <a href = "warning.html" class = "link">warning</a>.</p>
+<a href = "str2func.html" class = "link">str2func</a>, <a href = "isfunction_handle.html" class = "link">isfunction_handle</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -109,12 +119,12 @@ error('')
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="40%" class="center">
-<span class="top"><a href="chapter_error_manager.html">error manager</a></span>
+<td width="30%" class="previous">
+<span class="top"><a href="isfunction_handle.html">&lt;&lt; isfunction_handle</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "lasterror.html">lasterror &gt;&gt;</a></span>
+<td width="40%" class="center">
+<span class="top"><a href="chapter_function_handle.html">function_handle functions</a></span>
 </td>
 
 </tr></table>
