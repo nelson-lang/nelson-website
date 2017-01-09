@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>addpath</title>
+	<title>clearfun</title>
 
 </head>
 <body>
@@ -24,21 +24,25 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="builtin.html">&lt;&lt; builtin</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_functions_manager.html">functions manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "builtin.html">builtin &gt;&gt;</a></span>
+<span class = "next"><a href = "path.html">path &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">addpath</h1>
+<h1 class="refname">clearfun</h1>
 <hr/>
 
-<h3>Add directories to functions search path.</h3>
+<h3>Clear an built-in function.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,35 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>addpath(dirname)</td>
+		<td>l = clearfun(function_name)</td>
 	</tr>
 
 	<tr>
-		<td>addpath(dirname, ..., dirname)</td>
-	</tr>
-
-	<tr>
-		<td>addpath(dirname, ..., dirname, '-begin')</td>
-	</tr>
-
-	<tr>
-		<td>addpath(dirname, ..., dirname, '-end')</td>
-	</tr>
-
-	<tr>
-		<td>previous = addpath(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>previous = addpath(dirname, ..., dirname)</td>
-	</tr>
-
-	<tr>
-		<td>previous = addpath(dirname, ..., dirname, '-begin')</td>
-	</tr>
-
-	<tr>
-		<td>previous = addpath(dirname, ..., dirname, '-end')</td>
+		<td>l = clearfun(function_handle)</td>
 	</tr>
 
 </table>
@@ -83,14 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dirname</span></dt>
+<dt><span class="term">function_name</span></dt>
 <dd>
-<p class="para">a string: a directory</p>
+<p class="para">a string: function name.</p>
 </dd>
 
-<dt><span class="term">'-end' or '-begin'</span></dt>
+<dt><span class="term">function_handle</span></dt>
 <dd>
-<p class="para">append dirname at the end or begin of the list.</p>
+<p class="para">a function handle.</p>
 </dd>
 
 </dl>
@@ -99,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">previous</span></dt>
+<dt><span class="term">l</span></dt>
 <dd>
-<p class="para">returns previous path before adding</p>
+<p class="para">a logical</p>
 </dd>
 
 </dl>
@@ -111,19 +91,20 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>addpath</b> add directories to search path.</p>
-  <p>It is also possible to add lists of directory names separated by pathsep.</p>
+  <p><b>clearfun</b> clears built-in.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">path()
-addpath(tempdir())
-path
-rmpath(tempdir())
-path
+<code class = "nelson">cos(3)
+a = clearfun('cos')
+cos(3)
+
+sin(3)
+b = clearfun(str2func('sin'))
+sin(3)
 </code>
 </pre>
 
@@ -131,7 +112,7 @@ path
 <hr/>
 
 <p>
-<a href = "path.html" class = "link">path</a>, <a href = "rmpath.html" class = "link">rmpath</a>, <a href = "restoredefaultpath.html" class = "link">restoredefaultpath</a>.</p>
+<a href = "feval.html" class = "link">feval</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -156,12 +137,16 @@ path
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="builtin.html">&lt;&lt; builtin</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_functions_manager.html">functions manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "builtin.html">builtin &gt;&gt;</a></span>
+<span class = "next"><a href = "path.html">path &gt;&gt;</a></span>
 </td>
 
 </tr></table>
