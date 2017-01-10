@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>path</title>
+	<title>feval</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="macroargs.html">&lt;&lt; macroargs</a></span>
+<span class="top"><a href="clearfun.html">&lt;&lt; clearfun</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "rehash.html">rehash &gt;&gt;</a></span>
+<span class = "next"><a href = "macroargs.html">macroargs &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">path</h1>
+<h1 class="refname">feval</h1>
 <hr/>
 
-<h3>Modify or display Nelson’s load path.</h3>
+<h3>Evaluates function.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,23 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>path()</td>
+		<td>feval(function_name; x1, ..., xn)</td>
 	</tr>
 
 	<tr>
-		<td>p = path()</td>
+		<td>feval(function_handle; x1, ..., xn)</td>
 	</tr>
 
 	<tr>
-		<td>path(dirname)</td>
+		<td>[r1, ..., rn] = feval(function_name, x1, ..., xn)</td>
 	</tr>
 
 	<tr>
-		<td>path(path(), dirname)</td>
-	</tr>
-
-	<tr>
-		<td>path(dirname, path())</td>
+		<td>[r1, ..., rn] = feval(function_handle, x1, ..., xn)</td>
 	</tr>
 
 </table>
@@ -75,9 +71,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dirname</span></dt>
+<dt><span class="term">function_name</span></dt>
 <dd>
-<p class="para">a directory name or an suite of directory names using pathsep()</p>
+<p class="para">a string: function name.</p>
+</dd>
+
+<dt><span class="term">function_handle</span></dt>
+<dd>
+<p class="para">a function handle.</p>
+</dd>
+
+<dt><span class="term">x1, ..., xn</span></dt>
+<dd>
+<p class="para">input arguments of the function.</p>
 </dd>
 
 </dl>
@@ -86,9 +92,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">p</span></dt>
+<dt><span class="term">r1, ..., rn</span></dt>
 <dd>
-<p class="para">string: the specified paths</p>
+<p class="para">output arguments returned by the function</p>
 </dd>
 
 </dl>
@@ -98,18 +104,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>path</b> modifies or displays Nelson’s load path.</p>
+  <p><b>function</b> calls the base function or built-in described by its name or function handle and input arguments.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">path
-p = path()
-path(p, tempdir())
-path
-path(p)
+<code class = "nelson">a = feval('cos', 0)
+b = feval(str2func('cos'), 0)
 </code>
 </pre>
 
@@ -117,7 +120,7 @@ path(p)
 <hr/>
 
 <p>
-<a href = "rmpath.html" class = "link">rmpath</a>, <a href = "addpath.html" class = "link">addpath</a>, <a href = "rehash.html" class = "link">rehash</a>.</p>
+<a href = "builtin.html" class = "link">builtin</a>, <a href = "func2str.html" class = "link">func2str</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -143,7 +146,7 @@ path(p)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="macroargs.html">&lt;&lt; macroargs</a></span>
+<span class="top"><a href="clearfun.html">&lt;&lt; clearfun</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -151,7 +154,7 @@ path(p)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "rehash.html">rehash &gt;&gt;</a></span>
+<span class = "next"><a href = "macroargs.html">macroargs &gt;&gt;</a></span>
 </td>
 
 </tr></table>

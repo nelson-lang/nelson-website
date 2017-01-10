@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>path</title>
+	<title>what</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="macroargs.html">&lt;&lt; macroargs</a></span>
+<span class="top"><a href="userpath.html">&lt;&lt; userpath</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "rehash.html">rehash &gt;&gt;</a></span>
+<span class = "next"><a href = "which.html">which &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">path</h1>
+<h1 class="refname">what</h1>
 <hr/>
 
-<h3>Modify or display Nelson’s load path.</h3>
+<h3>Get Nelson builtin list.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,45 +50,18 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>path()</td>
-	</tr>
-
-	<tr>
-		<td>p = path()</td>
-	</tr>
-
-	<tr>
-		<td>path(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>path(path(), dirname)</td>
-	</tr>
-
-	<tr>
-		<td>path(dirname, path())</td>
+		<td>list_builtin = what()</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">dirname</span></dt>
-<dd>
-<p class="para">a directory name or an suite of directory names using pathsep()</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">p</span></dt>
+<dt><span class="term">list_builtin</span></dt>
 <dd>
-<p class="para">string: the specified paths</p>
+<p class="para">a cell of strings</p>
 </dd>
 
 </dl>
@@ -98,18 +71,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>path</b> modifies or displays Nelson’s load path.</p>
+  <p><b>what</b> returns the list of all builtin available in current Nelson's session.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">path
-p = path()
-path(p, tempdir())
-path
-path(p)
+<code class = "nelson">l = what()
 </code>
 </pre>
 
@@ -117,7 +86,7 @@ path(p)
 <hr/>
 
 <p>
-<a href = "rmpath.html" class = "link">rmpath</a>, <a href = "addpath.html" class = "link">addpath</a>, <a href = "rehash.html" class = "link">rehash</a>.</p>
+<a href = "which.html" class = "link">which</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -143,7 +112,7 @@ path(p)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="macroargs.html">&lt;&lt; macroargs</a></span>
+<span class="top"><a href="userpath.html">&lt;&lt; userpath</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -151,7 +120,7 @@ path(p)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "rehash.html">rehash &gt;&gt;</a></span>
+<span class = "next"><a href = "which.html">which &gt;&gt;</a></span>
 </td>
 
 </tr></table>

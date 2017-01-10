@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>path</title>
+	<title>macroargs</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="macroargs.html">&lt;&lt; macroargs</a></span>
+<span class="top"><a href="feval.html">&lt;&lt; feval</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "rehash.html">rehash &gt;&gt;</a></span>
+<span class = "next"><a href = "path.html">path &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">path</h1>
+<h1 class="refname">macroargs</h1>
 <hr/>
 
-<h3>Modify or display Nelson’s load path.</h3>
+<h3>Returns variables names of a function.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,23 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>path()</td>
-	</tr>
-
-	<tr>
-		<td>p = path()</td>
-	</tr>
-
-	<tr>
-		<td>path(dirname)</td>
-	</tr>
-
-	<tr>
-		<td>path(path(), dirname)</td>
-	</tr>
-
-	<tr>
-		<td>path(dirname, path())</td>
+		<td>[argOut, argIn] = macroarg(function_name)</td>
 	</tr>
 
 </table>
@@ -75,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dirname</span></dt>
+<dt><span class="term">function_name</span></dt>
 <dd>
-<p class="para">a directory name or an suite of directory names using pathsep()</p>
+<p class="para">a string: function name.</p>
 </dd>
 
 </dl>
@@ -86,9 +70,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">p</span></dt>
+<dt><span class="term">argOut</span></dt>
 <dd>
-<p class="para">string: the specified paths</p>
+<p class="para">a cell with output arguments.</p>
+</dd>
+
+<dt><span class="term">argIn</span></dt>
+<dd>
+<p class="para">a cell with input arguments.</p>
 </dd>
 
 </dl>
@@ -98,18 +87,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>path</b> modifies or displays Nelson’s load path.</p>
+  <p><b>macroargs</b> returns input and output variables used by the function.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">path
-p = path()
-path(p, tempdir())
-path
-path(p)
+<code class = "nelson">[out_args, in_args] = macroarg('getfield')
+[out_args, in_args] = macroarg('deal')
 </code>
 </pre>
 
@@ -117,7 +103,7 @@ path(p)
 <hr/>
 
 <p>
-<a href = "rmpath.html" class = "link">rmpath</a>, <a href = "addpath.html" class = "link">addpath</a>, <a href = "rehash.html" class = "link">rehash</a>.</p>
+<a href = "which.html" class = "link">which</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -143,7 +129,7 @@ path(p)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="macroargs.html">&lt;&lt; macroargs</a></span>
+<span class="top"><a href="feval.html">&lt;&lt; feval</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -151,7 +137,7 @@ path(p)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "rehash.html">rehash &gt;&gt;</a></span>
+<span class = "next"><a href = "path.html">path &gt;&gt;</a></span>
 </td>
 
 </tr></table>
