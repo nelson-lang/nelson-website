@@ -2,7 +2,7 @@
 
 ```
 --> disp('Hello: 你好')
-Hello: ??
+Hello: 你好
 ```
 
 ```
