@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>uigetdir</title>
+	<title>headcomments</title>
 
 </head>
 <body>
@@ -24,21 +24,17 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="inserthtml.html">&lt;&lt; inserthtml</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_gui.html">gui module</a></span>
+<span class="top"><a href="chapter_help_tools.html">help tools functions</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">uigetdir</h1>
+<h1 class="refname">headcomments</h1>
 <hr/>
 
-<h3>Opens dialog box to select a directory.</h3>
+<h3>Display Nelson function header comments.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,15 +42,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>dir_ans = uigetdir()</td>
+		<td>headcomments(function_name)</td>
 	</tr>
 
 	<tr>
-		<td>dir_ans = uigetdir(path)</td>
-	</tr>
-
-	<tr>
-		<td>dir_ans = uigetdir(path, title)</td>
+		<td>ce = headcomments(function_name)</td>
 	</tr>
 
 </table>
@@ -63,14 +55,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">path</span></dt>
+<dt><span class="term">function_name</span></dt>
 <dd>
-<p class="para">a string: initial path</p>
-</dd>
-
-<dt><span class="term">title</span></dt>
-<dd>
-<p class="para">a string: title of the dialog box</p>
+<p class="para">a string: function name.</p>
 </dd>
 
 </dl>
@@ -79,9 +66,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dir_ans</span></dt>
+<dt><span class="term">ce</span></dt>
 <dd>
-<p class="para">a string (returned path) or 0 if dialogbox is canceled</p>
+<p class="para">a cell of strings</p>
 </dd>
 
 </dl>
@@ -91,15 +78,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>uigetdir</b> opens a dialog box for selecting a directory.</p>
-  <p>If path is wrong or not given, the current working directory will be used.</p>
+  <p><b>head_comments</b> displays the function header comments.</p>
+  <p>Comments are read from the associated .nlf file.</p>
+  <p>Nelson predefined functions have no header comments.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = uigetdir();
+<code class = "nelson">headcomments('buildhelp')
+ce = headcomments('buildhelp')
 </code>
 </pre>
 
@@ -107,7 +96,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "pwd.html" class = "link">pwd</a>.</p>
+<a href = "doc.html" class = "link">doc</a>, <a href = "which.html" class = "link">which</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -132,12 +121,8 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="inserthtml.html">&lt;&lt; inserthtml</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_gui.html">gui module</a></span>
+<span class="top"><a href="chapter_help_tools.html">help tools functions</a></span>
 </td>
 
 </tr></table>
