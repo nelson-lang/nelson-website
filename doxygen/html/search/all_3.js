@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['data',['Data',['../de/d42/class_nelson_1_1_data.html',1,'Nelson']]],
+  ['dcomplexconstructor',['dcomplexConstructor',['../d2/d46/class_nelson_1_1_array_of.html#a410b980a458c67f56f096c59c44abf0f',1,'Nelson::ArrayOf']]],
+  ['deletecurrentchar',['deleteCurrentChar',['../d9/d0d/class_line_manager.html#a0440c319477bf64d167a0c27616c061e',1,'LineManager']]],
+  ['deletefunction',['deleteFunction',['../d6/d48/class_nelson_1_1_scope.html#a1f6752ffb0a863789c2715ea7fbce10d',1,'Nelson::Scope']]],
+  ['deleteglobalvariablepointer',['deleteGlobalVariablePointer',['../d6/d48/class_nelson_1_1_scope.html#ae7842c81814a60c2d86015062f2a1254',1,'Nelson::Scope']]],
+  ['deletendimsubset',['deleteNDimSubset',['../d2/d46/class_nelson_1_1_array_of.html#ab26b16a2e6646d2c7c5420b53309901b',1,'Nelson::ArrayOf']]],
+  ['deletepersistentvariablepointer',['deletePersistentVariablePointer',['../d6/d48/class_nelson_1_1_scope.html#ad5ae15feca0bb0fb5648dd771d1b212e',1,'Nelson::Scope']]],
+  ['deletepreviouschar',['deletePreviousChar',['../d9/d0d/class_line_manager.html#aed2330eeaf8dc85eaf7b7280c1c5dbcb',1,'LineManager']]],
+  ['deletevariable',['deleteVariable',['../db/d1f/class_nelson_1_1_context.html#a04fd194ff48f1f7e02e189affc647e15',1,'Nelson::Context::deleteVariable()'],['../d6/d48/class_nelson_1_1_scope.html#aebedc863c322105fad96b56fc04394b7',1,'Nelson::Scope::deleteVariable()']]],
+  ['deletevectorsubset',['deleteVectorSubset',['../d2/d46/class_nelson_1_1_array_of.html#a7d8a5194e72bc298d250c808b5979dde',1,'Nelson::ArrayOf']]],
+  ['diagonalconstructor',['diagonalConstructor',['../d2/d46/class_nelson_1_1_array_of.html#af39ad2a17e55decf45ffef229178086f',1,'Nelson::ArrayOf']]],
+  ['diary',['Diary',['../dd/d3a/class_nelson_1_1_diary.html',1,'Nelson']]],
+  ['dimensions',['Dimensions',['../d7/d09/class_nelson_1_1_dimensions.html',1,'Nelson::Dimensions'],['../d7/d09/class_nelson_1_1_dimensions.html#ac133cf87ec6a83671c1ff96bb0592613',1,'Nelson::Dimensions::Dimensions()'],['../d7/d09/class_nelson_1_1_dimensions.html#a6b4f7a3a3534f1d682dd71c8a6511bc8',1,'Nelson::Dimensions::Dimensions(indexType dimCount)'],['../d7/d09/class_nelson_1_1_dimensions.html#ada1bfd14f0f95766352d18436ff7bc5f',1,'Nelson::Dimensions::Dimensions(indexType nrows, indexType ncols)']]],
+  ['disableoverload',['disableOverload',['../d6/de2/class_nelson_1_1_evaluator.html#a2aad12426134bea3d1a49eac0bcf97e6',1,'Nelson::Evaluator']]],
+  ['displayprompt',['displayPrompt',['../d9/d0d/class_line_manager.html#ae50a991ad819c5703669f08f7928d876',1,'LineManager']]],
+  ['dopowerassist',['doPowerAssist',['../d5/d55/namespace_nelson.html#a7b501bf2527bfa522c39da0e0f29af5c',1,'Nelson']]],
+  ['dotleftdivide',['DotLeftDivide',['../d5/d55/namespace_nelson.html#a68e9eb9d72e7605e23e96de34b3f6645',1,'Nelson']]],
+  ['dotmultiply',['DotMultiply',['../d5/d55/namespace_nelson.html#adb16589b3e3868952725bb5d414ebff8',1,'Nelson']]],
+  ['dotpower',['DotPower',['../d5/d55/namespace_nelson.html#a0eb824ca252cfbaa78efba364664b68a',1,'Nelson']]],
+  ['dotrightdivide',['DotRightDivide',['../d5/d55/namespace_nelson.html#abaae8b059a46af29495172c7ef9800aa',1,'Nelson']]],
+  ['dottranspose',['DotTranspose',['../d5/d55/namespace_nelson.html#ab39515eac7c40ff0243738dcbcdc2f75',1,'Nelson']]],
+  ['doublecolon',['doubleColon',['../d6/de2/class_nelson_1_1_evaluator.html#a5278eb907d7f759cbe37951f82401200',1,'Nelson::Evaluator']]],
+  ['doubleconstructor',['doubleConstructor',['../d2/d46/class_nelson_1_1_array_of.html#aedd1405b98c989e7f724693826998154',1,'Nelson::ArrayOf']]],
+  ['doublevectorconstructor',['doubleVectorConstructor',['../d2/d46/class_nelson_1_1_array_of.html#aac5393781f20a9c3c4d0e4903d910e64',1,'Nelson::ArrayOf']]]
+];
