@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>headcomments</title>
+	<title>htmltopdf</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
+<span class="top"><a href="headcomments.html">&lt;&lt; headcomments</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "htmltopdf.html">htmltopdf &gt;&gt;</a></span>
+<span class = "next"><a href = "markdown.html">markdown &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">headcomments</h1>
+<h1 class="refname">htmltopdf</h1>
 <hr/>
 
-<h3>Display Nelson function header comments.</h3>
+<h3>Convers html page to pdf.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>headcomments(function_name)</td>
-	</tr>
-
-	<tr>
-		<td>ce = headcomments(function_name)</td>
+		<td>htmltopdf(html_filename, pdf_filename)</td>
 	</tr>
 
 </table>
@@ -63,20 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">function_name</span></dt>
+<dt><span class="term">html_filename</span></dt>
 <dd>
-<p class="para">a string: function name or a .nlf filename.</p>
+<p class="para">a string: html filename.</p>
 </dd>
 
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">ce</span></dt>
+<dt><span class="term">pdf_filename</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a string: pdf filename (destination).</p>
 </dd>
 
 </dl>
@@ -86,25 +76,33 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>head_comments</b> displays the function header comments.</p>
-  <p>Comments are read from the associated .nlf file.</p>
-  <p>Nelson predefined functions have no header comments.</p>
+  <p><b>htmltopdf</b> converts html page to pdf.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">comments = headcomments('getfield'); md = markdown(comments);inserthtml(md)
+<code class = "nelson">txt = {'## Example of Markdown text';
+'>Nelson html to pdf conversion example'};
+
+html = markdown(txt);
+f = fopen([tempdir(), '/htmltopdf_example.html'], 'wt');
+fwrite(f, html);
+fclose(f);
+
+htmltopdf([tempdir(), '/htmltopdf_example.html'], [tempdir(), '/htmltopdf_example.pdf'])
+if ispc()
+  winopen([tempdir(), '/htmltopdf_example.pdf']);
+end
 </code>
 </pre>
-<img src="headcomments_E9DF6806.png" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "doc.html" class = "link">doc</a>, <a href = "markdown.html" class = "link">markdown</a>, <a href = "inserthtml.html" class = "link">inserthtml</a>, <a href = "which.html" class = "link">which</a>.</p>
+<a href = "markdown.html" class = "link">markdown</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -130,7 +128,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
+<span class="top"><a href="headcomments.html">&lt;&lt; headcomments</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -138,7 +136,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "htmltopdf.html">htmltopdf &gt;&gt;</a></span>
+<span class = "next"><a href = "markdown.html">markdown &gt;&gt;</a></span>
 </td>
 
 </tr></table>

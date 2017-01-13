@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>headcomments</title>
+	<title>markdown</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
+<span class="top"><a href="htmltopdf.html">&lt;&lt; htmltopdf</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "htmltopdf.html">htmltopdf &gt;&gt;</a></span>
+<span class = "next"><a href = "xmldocbuild.html">xmldocbuild &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">headcomments</h1>
+<h1 class="refname">markdown</h1>
 <hr/>
 
-<h3>Display Nelson function header comments.</h3>
+<h3>Converts markdown to html.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>headcomments(function_name)</td>
+		<td>html_txt = markdown(md_txt)</td>
 	</tr>
 
 	<tr>
-		<td>ce = headcomments(function_name)</td>
+		<td>status = markdown(md_filename, html_filename)</td>
 	</tr>
 
 </table>
@@ -63,9 +63,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">function_name</span></dt>
+<dt><span class="term">md_txt</span></dt>
 <dd>
-<p class="para">a string: function name or a .nlf filename.</p>
+<p class="para">a string: markdown text to convert.</p>
+</dd>
+
+<dt><span class="term">md_filename</span></dt>
+<dd>
+<p class="para">a string: markdown filename to convert (source).</p>
+</dd>
+
+<dt><span class="term">html_filename</span></dt>
+<dd>
+<p class="para">a string: html filename (destination).</p>
 </dd>
 
 </dl>
@@ -74,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">ce</span></dt>
+<dt><span class="term">status</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a logical: html file generated or not.</p>
 </dd>
 
 </dl>
@@ -86,25 +96,32 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>head_comments</b> displays the function header comments.</p>
-  <p>Comments are read from the associated .nlf file.</p>
-  <p>Nelson predefined functions have no header comments.</p>
+  <p><b>markdown</b> converts Markdown text-to-HTML.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">comments = headcomments('getfield'); md = markdown(comments);inserthtml(md)
+<code class = "nelson">txt = {'## Example of Markdown text';
+'>Nelson supports markdown ...'};
+html = markdown(txt);
+
+f = fopen([tempdir(), '/markdown_example.html'], 'wt');
+fwrite(f, html);
+fclose(f);
+
+if ispc()
+  winopen([tempdir(), '/markdown_example.html']);
+end
 </code>
 </pre>
-<img src="headcomments_E9DF6806.png" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "doc.html" class = "link">doc</a>, <a href = "markdown.html" class = "link">markdown</a>, <a href = "inserthtml.html" class = "link">inserthtml</a>, <a href = "which.html" class = "link">which</a>.</p>
+<a href = "htmltopdf.html" class = "link">htmltopdf</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -130,7 +147,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
+<span class="top"><a href="htmltopdf.html">&lt;&lt; htmltopdf</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -138,7 +155,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "htmltopdf.html">htmltopdf &gt;&gt;</a></span>
+<span class = "next"><a href = "xmldocbuild.html">xmldocbuild &gt;&gt;</a></span>
 </td>
 
 </tr></table>

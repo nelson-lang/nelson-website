@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>headcomments</title>
+	<title>xmldocchecker</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
+<span class="top"><a href="xmldocbuild.html">&lt;&lt; xmldocbuild</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_help_tools.html">help tools functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "htmltopdf.html">htmltopdf &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">headcomments</h1>
+<h1 class="refname">xmldocchecker</h1>
 <hr/>
 
-<h3>Display Nelson function header comments.</h3>
+<h3>Checks a xml documentation file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>headcomments(function_name)</td>
+		<td>xmldocchecker(xmldocfilename)</td>
 	</tr>
 
 	<tr>
-		<td>ce = headcomments(function_name)</td>
+		<td>[errors_detected, warnings_detected] = xmldocchecker(xmldocfilename)</td>
 	</tr>
 
 </table>
@@ -63,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">function_name</span></dt>
+<dt><span class="term">xmldocfilename</span></dt>
 <dd>
-<p class="para">a string: function name or a .nlf filename.</p>
+<p class="para">a string: xml document.</p>
 </dd>
 
 </dl>
@@ -74,9 +70,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">ce</span></dt>
+<dt><span class="term">errors_detected</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a cell of strings: errors detected.</p>
+</dd>
+
+<dt><span class="term">warnings_detected</span></dt>
+<dd>
+<p class="para">a cell of strings: warnings detected.</p>
 </dd>
 
 </dl>
@@ -86,25 +87,22 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>head_comments</b> displays the function header comments.</p>
-  <p>Comments are read from the associated .nlf file.</p>
-  <p>Nelson predefined functions have no header comments.</p>
+  <p><b>xmldocchecker</b> is a tool to check that a xml document is valid.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">comments = headcomments('getfield'); md = markdown(comments);inserthtml(md)
+<code class = "nelson">xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 </code>
 </pre>
-<img src="headcomments_E9DF6806.png" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "doc.html" class = "link">doc</a>, <a href = "markdown.html" class = "link">markdown</a>, <a href = "inserthtml.html" class = "link">inserthtml</a>, <a href = "which.html" class = "link">which</a>.</p>
+<a href = "buildhelp.html" class = "link">buildhelp</a>, <a href = "buildhelpweb.html" class = "link">buildhelpweb</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -130,15 +128,11 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
+<span class="top"><a href="xmldocbuild.html">&lt;&lt; xmldocbuild</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_help_tools.html">help tools functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "htmltopdf.html">htmltopdf &gt;&gt;</a></span>
 </td>
 
 </tr></table>
