@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>intmin</title>
+	<title>int8</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="intmax.html">&lt;&lt; intmax</a></span>
+<span class="top"><a href="int64.html">&lt;&lt; int64</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "uint16.html">uint16 &gt;&gt;</a></span>
+<span class = "next"><a href = "intmax.html">intmax &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">intmin</h1>
+<h1 class="refname">int8</h1>
 <hr/>
 
-<h3>Return the smallest integer that can be represented in an integer type.</h3>
+<h3>Converts to 8-bit signed integer.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>imin = intmin()</td>
-	</tr>
-
-	<tr>
-		<td>imin = intmin(classname)</td>
+		<td>Y = int8(X)</td>
 	</tr>
 
 </table>
@@ -63,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">classname</span></dt>
+<dt><span class="term">X</span></dt>
 <dd>
-<p class="para">a string: by default: int32</p>
+<p class="para">a matrix of double, single or integers.</p>
 </dd>
 
 </dl>
@@ -74,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">imin</span></dt>
+<dt><span class="term">Y</span></dt>
 <dd>
-<p class="para">smallest integer</p>
+<p class="para">a matrix of 8-bit integer.</p>
 </dd>
 
 </dl>
@@ -86,29 +82,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>imin = intmin(classname)</b>the smallest integer that can be represented in an integer type.</p>
-  <p>Supported values for the string <b>classname</b> are:</p>
-  <p>'int8'</p>
-  <p>'uint8'</p>
-  <p>'int16'</p>
-  <p>'uint16'</p>
-  <p>'int32'</p>
-  <p>'uint32'</p>
-  <p>'int64'</p>
-  <p>'uint64'</p>
+  <p><b>int8</b> converts value to 8-bit integer type.</p>
+  <p>The value is rounded to the nearest int8 value on conversion. A value that is above or below the range for an int8 class is mapped to one of the endpoints of the range [-128, 127].</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = intmin('int64')
-res = class(A)
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = intmin('uint32')
-res = class(C)
+<code class = "nelson">A = [1 -255 -120 127 128 215]
+B = int8(A)
 </code>
 </pre>
 
@@ -116,7 +99,7 @@ res = class(C)
 <hr/>
 
 <p>
-<a href = "intmax.html" class = "link">intmax</a>, <a href = "class.html" class = "link">class</a>.</p>
+<a href = "intmax.html" class = "link">intmax</a>, <a href = "intmax.html" class = "link">intmin</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -142,7 +125,7 @@ res = class(C)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="intmax.html">&lt;&lt; intmax</a></span>
+<span class="top"><a href="int64.html">&lt;&lt; int64</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -150,7 +133,7 @@ res = class(C)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "uint16.html">uint16 &gt;&gt;</a></span>
+<span class = "next"><a href = "intmax.html">intmax &gt;&gt;</a></span>
 </td>
 
 </tr></table>
