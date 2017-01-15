@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>true</title>
+	<title>xor</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logical.html">&lt;&lt; logical</a></span>
+<span class="top"><a href="true.html">&lt;&lt; true</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_logical.html">logical type functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "xor.html">xor &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">true</h1>
+<h1 class="refname">xor</h1>
 <hr/>
 
-<h3>Logical true.</h3>
+<h3>Exclusive or.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,23 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>true</td>
+		<td>R = xor(V1, V2)</td>
 	</tr>
 
 	<tr>
-		<td>l = true(n)</td>
-	</tr>
-
-	<tr>
-		<td>l = true(sz)</td>
-	</tr>
-
-	<tr>
-		<td>l = true(n, m, ..., k)</td>
-	</tr>
-
-	<tr>
-		<td>l = true(n, m, 'like', sp)</td>
+		<td>R = xor(V1, V2, ... , VN)</td>
 	</tr>
 
 </table>
@@ -75,24 +59,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">n</span></dt>
+<dt><span class="term">V1</span></dt>
 <dd>
-<p class="para">a integer value.</p>
+<p class="para">a matrix.</p>
 </dd>
 
-<dt><span class="term">sz</span></dt>
+<dt><span class="term">V2</span></dt>
 <dd>
-<p class="para">a size vector.</p>
+<p class="para">a matrix, same dimensions than V1.</p>
 </dd>
 
-<dt><span class="term">n, m, ..., k</span></dt>
+<dt><span class="term">VN</span></dt>
 <dd>
-<p class="para">a n -by- m - ... -by- k array to indicate size.</p>
-</dd>
-
-<dt><span class="term">sp</span></dt>
-<dd>
-<p class="para">a sparse or array.</p>
+<p class="para">a matrix, same dimensions than V1.</p>
 </dd>
 
 </dl>
@@ -101,9 +80,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">l</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">a logical value: true.</p>
+<p class="para">a logical matrix.</p>
 </dd>
 
 </dl>
@@ -113,18 +92,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>true</b> build a matrix of true.</p>
+  <p><b>xor</b> performs a logical exclusive-OR.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">true
-true(4)
-true(4, 1, 4)
-L = logical(sparse(1, 2))
-L2 = true(3,'like', L);
+<code class = "nelson">x = [0 1 0 1];
+y = [0 0 1 1];
+R = xor(x, y)
 </code>
 </pre>
 
@@ -132,7 +109,7 @@ L2 = true(3,'like', L);
 <hr/>
 
 <p>
-<a href = "false.html" class = "link">false</a>.</p>
+<a href = "or.html" class = "link">or</a>, <a href = "and.html" class = "link">and</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -158,15 +135,11 @@ L2 = true(3,'like', L);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logical.html">&lt;&lt; logical</a></span>
+<span class="top"><a href="true.html">&lt;&lt; true</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_logical.html">logical type functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "xor.html">xor &gt;&gt;</a></span>
 </td>
 
 </tr></table>
