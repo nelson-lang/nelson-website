@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>logical</title>
+	<title>true</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="false.html">&lt;&lt; false</a></span>
+<span class="top"><a href="logical.html">&lt;&lt; logical</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_logical.html">logical type functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "true.html">true &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">logical</h1>
+<h1 class="refname">true</h1>
 <hr/>
 
-<h3>Converts a numeric value to logical type.</h3>
+<h3>Logical true.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,23 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>Y = logical(X)</td>
+		<td>true</td>
+	</tr>
+
+	<tr>
+		<td>l = true(n)</td>
+	</tr>
+
+	<tr>
+		<td>l = true(sz)</td>
+	</tr>
+
+	<tr>
+		<td>l = true(n, m, ..., k)</td>
+	</tr>
+
+	<tr>
+		<td>l = true(n, m, 'like', sp)</td>
 	</tr>
 
 </table>
@@ -59,9 +71,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">X</span></dt>
+<dt><span class="term">n</span></dt>
 <dd>
-<p class="para">a numeric value.</p>
+<p class="para">a integer value.</p>
+</dd>
+
+<dt><span class="term">sz</span></dt>
+<dd>
+<p class="para">a size vector.</p>
+</dd>
+
+<dt><span class="term">n, m, ..., k</span></dt>
+<dd>
+<p class="para">a n -by- m - ... -by- k array to indicate size.</p>
+</dd>
+
+<dt><span class="term">sp</span></dt>
+<dd>
+<p class="para">a sparse or array.</p>
 </dd>
 
 </dl>
@@ -70,9 +97,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">Y</span></dt>
+<dt><span class="term">l</span></dt>
 <dd>
-<p class="para">a logical value.</p>
+<p class="para">a logical value: true.</p>
 </dd>
 
 </dl>
@@ -82,18 +109,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>logical</b> converts a numeric value to logical type.</p>
-  <p>Nonzero value converted to true and zeros values converted to false.</p>
-  <p>Complex numbers returns an error.</p>
+  <p><b>true</b> build a matrix of true.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = eye(2, 2)
-B = logical(A)
-islogical(B)
+<code class = "nelson">true
+true(4)
+true(4, 1, 4)
+L = logical(sparse(1, 2))
+L2 = true(3,'like', L);
 </code>
 </pre>
 
@@ -101,7 +128,7 @@ islogical(B)
 <hr/>
 
 <p>
-<a href = "islogical.html" class = "link">islogical</a>.</p>
+<a href = "false.html" class = "link">false</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,15 +154,11 @@ islogical(B)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="false.html">&lt;&lt; false</a></span>
+<span class="top"><a href="logical.html">&lt;&lt; logical</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_logical.html">logical type functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "true.html">true &gt;&gt;</a></span>
 </td>
 
 </tr></table>
