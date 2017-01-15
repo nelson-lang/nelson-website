@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>iskeyword</title>
+	<title>parsefile</title>
 
 </head>
 <body>
@@ -24,21 +24,25 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="max_recursion_depth.html">&lt;&lt; max_recursion_depth</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "max_recursion_depth.html">max_recursion_depth &gt;&gt;</a></span>
+<span class = "next"><a href = "parsestring.html">parsestring &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">iskeyword</h1>
+<h1 class="refname">parsefile</h1>
 <hr/>
 
-<h3>Returns all Nelson keywords.</h3>
+<h3>Parse a Nelson file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>state = iskeyword(name)</td>
-	</tr>
-
-	<tr>
-		<td>ce = iskeyword()</td>
+		<td>status = parsefile(filename)</td>
 	</tr>
 
 </table>
@@ -59,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">name</span></dt>
+<dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a string.</p>
+<p class="para">a string: a filename to parse.</p>
 </dd>
 
 </dl>
@@ -70,14 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">state</span></dt>
+<dt><span class="term">status</span></dt>
 <dd>
-<p class="para">a logical: true if is an Nelson keyword.</p>
-</dd>
-
-<dt><span class="term">ce</span></dt>
-<dd>
-<p class="para">a cell of strings: list of Nelson's keywords.</p>
+<p class="para">a string: 'script', 'function', 'error'.</p>
 </dd>
 
 </dl>
@@ -87,15 +82,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>iskeyword</b> returns a list of all Nelson keywords.</p>
+  <p><b>parsefile</b> parse a file and returns if it is a valid script, a valid function or an error.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">iskeyword('for')
-ce = iskeyword()
+<code class = "nelson">parsefile([nelsonroot(), '/etc/startup.nls'])
+parsefile([nelsonroot(), '/modules/data_structures/functions/getfield.nlf'])
 </code>
 </pre>
 
@@ -122,12 +117,16 @@ ce = iskeyword()
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="max_recursion_depth.html">&lt;&lt; max_recursion_depth</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "max_recursion_depth.html">max_recursion_depth &gt;&gt;</a></span>
+<span class = "next"><a href = "parsestring.html">parsestring &gt;&gt;</a></span>
 </td>
 
 </tr></table>
