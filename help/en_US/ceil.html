@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>ge</title>
+	<title>ceil</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="floor.html">&lt;&lt; floor</a></span>
+<span class="top"><a href="and.html">&lt;&lt; and</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "gt.html">gt &gt;&gt;</a></span>
+<span class = "next"><a href = "colon.html">colon &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">ge</h1>
+<h1 class="refname">ceil</h1>
 <hr/>
 
-<h3>greater than or equal, >= operator.</h3>
+<h3>Round up</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = ge(A, B)</td>
-	</tr>
-
-	<tr>
-		<td>C = (A >= B)</td>
+		<td>C = ceil(A)</td>
 	</tr>
 
 </table>
@@ -68,11 +64,6 @@ SAME AS NELSON SOFTWARE
 <p class="para">a variable</p>
 </dd>
 
-<dt><span class="term">B</span></dt>
-<dd>
-<p class="para">a variable</p>
-</dd>
-
 </dl>
 
 <h3>Output argument</h3>
@@ -81,7 +72,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">C</span></dt>
 <dd>
-<p class="para">result of A >= B</p>
+<p class="para">result of ceil.</p>
 </dd>
 
 </dl>
@@ -91,31 +82,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.</p>
-  <p/>
+  <p><b>ceil</b> returns an integer or complex matrix made of rounded up elements.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">eye(2,2) >= ones(2, 2)
-</code>
-</pre>
-<pre>
-<code class = "nelson">0 >= i
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' >= 'Noslen'
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' >= 'l'
-</code>
-</pre>
-<pre>
-<code class = "nelson">ge(0.8-0.6-0.2, 0)
+<code class = "nelson">ceil(pi)
 </code>
 </pre>
 
@@ -123,7 +97,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "ne.html" class = "link">ne</a>, <a href = "lt.html" class = "link">lt</a>, <a href = "le.html" class = "link">le</a>, <a href = "gt.html" class = "link">gt</a>, <a href = "eq.html" class = "link">eq</a>.</p>
+<a href = "floor.html" class = "link">floor</a>, <a href = "fix.html" class = "link">fix</a>, <a href = "round.html" class = "link">round</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -149,7 +123,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="floor.html">&lt;&lt; floor</a></span>
+<span class="top"><a href="and.html">&lt;&lt; and</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -157,7 +131,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "gt.html">gt &gt;&gt;</a></span>
+<span class = "next"><a href = "colon.html">colon &gt;&gt;</a></span>
 </td>
 
 </tr></table>
