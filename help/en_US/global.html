@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>memory</title>
+	<title>global</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="global.html">&lt;&lt; global</a></span>
+<span class="top"><a href="clear.html">&lt;&lt; clear</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "memory.html">memory &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">memory</h1>
+<h1 class="refname">global</h1>
 <hr/>
 
-<h3>Get memory information.</h3>
+<h3>Defines a global variable.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,31 +50,26 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>memory</td>
+		<td>global variable_name</td>
 	</tr>
 
 	<tr>
-		<td>usermem = memory()</td>
+		<td>global(variable_name)</td>
 	</tr>
 
 	<tr>
-		<td>[usermem, systemmem] = memory()</td>
+		<td>global variable_name1 ... variable_nameN</td>
 	</tr>
 
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">usermem</span></dt>
+<dt><span class="term">variable_name</span></dt>
 <dd>
-<p class="para">Get information about user memory (an struct).</p>
-</dd>
-
-<dt><span class="term">systemmem</span></dt>
-<dd>
-<p class="para">Get information about system memory (an struct)</p>
+<p class="para">a string: valid variable name.</p>
 </dd>
 
 </dl>
@@ -80,38 +79,26 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>memory</b> get memory information.</p>
-  <p><b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).</p>
-  <p><b>System Memory</b>:</p>
-  <p>VirtualAddressSpace.Available: available swap file space</p>
-  <p>VirtualAddressSpace.Total: total swap file space</p>
-  <p>SystemMemory.Available: available system memory</p>
-  <p>PhysicalMemory.Available: available physical memory</p>
-  <p>PhysicalMemory.Total: total physical memory</p>
+  <p><b>global</b> make variable in global assign value to a variable in a specified variables scope.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">memory()
-A = ones(1000);
-memory()
-</code>
-</pre>
-<pre>
-<code class = "nelson">clear('A');
-[u1, s1] = memory();
-A = ones(1000);
-[u2, s2] = memory();
-disp(u2.MemUsedNelson - u1.MemUsedNelson);
-clear('A');
-[u3, s3] = memory();
-disp(u3.MemUsedNelson - u2.MemUsedNelson);
-</code>
-</pre>
-<pre>
-<code class = "nelson">[u1, s1] = memory()
+<code class = "nelson">function myfun()
+global y;
+y = 1;
+endfunction
+
+myfun()
+who
+global y
+who
+disp(y)
+who
+clear global y
+disp(y)
 </code>
 </pre>
 
@@ -145,11 +132,15 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="global.html">&lt;&lt; global</a></span>
+<span class="top"><a href="clear.html">&lt;&lt; clear</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "memory.html">memory &gt;&gt;</a></span>
 </td>
 
 </tr></table>
