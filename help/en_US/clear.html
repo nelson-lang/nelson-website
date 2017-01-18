@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>memory</title>
+	<title>clear</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="clear.html">&lt;&lt; clear</a></span>
+<span class="top"><a href="assignin.html">&lt;&lt; assignin</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "memory.html">memory &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">memory</h1>
+<h1 class="refname">clear</h1>
 <hr/>
 
-<h3>Get memory information.</h3>
+<h3>Remove variable from workspace.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,31 +50,66 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>memory</td>
+		<td>clear</td>
 	</tr>
 
 	<tr>
-		<td>usermem = memory()</td>
+		<td>clear variable_name</td>
 	</tr>
 
 	<tr>
-		<td>[usermem, systemmem] = memory()</td>
+		<td>clear global</td>
+	</tr>
+
+	<tr>
+		<td>clear all</td>
+	</tr>
+
+	<tr>
+		<td>clear variables</td>
+	</tr>
+
+	<tr>
+		<td>clear functions</td>
+	</tr>
+
+	<tr>
+		<td>clear variable_name_1 ... variable_name_N</td>
+	</tr>
+
+	<tr>
+		<td>clear global variable_name</td>
 	</tr>
 
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">usermem</span></dt>
+<dt><span class="term">variable_name</span></dt>
 <dd>
-<p class="para">Get information about user memory (an struct).</p>
+<p class="para">a string: variable name.</p>
 </dd>
 
-<dt><span class="term">systemmem</span></dt>
+<dt><span class="term">global</span></dt>
 <dd>
-<p class="para">Get information about system memory (an struct)</p>
+<p class="para">clears all global variables.</p>
+</dd>
+
+<dt><span class="term">all</span></dt>
+<dd>
+<p class="para">clears all variables in all scopes</p>
+</dd>
+
+<dt><span class="term">variables</span></dt>
+<dd>
+<p class="para">clears all variables in current scope.</p>
+</dd>
+
+<dt><span class="term">functions</span></dt>
+<dd>
+<p class="para">clears cache of macros functions.</p>
 </dd>
 
 </dl>
@@ -80,38 +119,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>memory</b> get memory information.</p>
-  <p><b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).</p>
-  <p><b>System Memory</b>:</p>
-  <p>VirtualAddressSpace.Available: available swap file space</p>
-  <p>VirtualAddressSpace.Total: total swap file space</p>
-  <p>SystemMemory.Available: available system memory</p>
-  <p>PhysicalMemory.Available: available physical memory</p>
-  <p>PhysicalMemory.Total: total physical memory</p>
+  <p><b>clear</b> is used to remove variable given by its name.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">memory()
-A = ones(1000);
-memory()
-</code>
-</pre>
-<pre>
-<code class = "nelson">clear('A');
-[u1, s1] = memory();
-A = ones(1000);
-[u2, s2] = memory();
-disp(u2.MemUsedNelson - u1.MemUsedNelson);
-clear('A');
-[u3, s3] = memory();
-disp(u3.MemUsedNelson - u2.MemUsedNelson);
-</code>
-</pre>
-<pre>
-<code class = "nelson">[u1, s1] = memory()
+<code class = "nelson">A = 3;
+who
+clear A
+who
+A
 </code>
 </pre>
 
@@ -119,7 +138,7 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 <hr/>
 
 <p>
-<a href = "clear.html" class = "link">clear</a>, <a href = "who.html" class = "link">who</a>.</p>
+<a href = "who.html" class = "link">who</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -145,11 +164,15 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="clear.html">&lt;&lt; clear</a></span>
+<span class="top"><a href="assignin.html">&lt;&lt; assignin</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "memory.html">memory &gt;&gt;</a></span>
 </td>
 
 </tr></table>
