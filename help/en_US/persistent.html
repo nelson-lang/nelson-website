@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>clear</title>
+	<title>persistent</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="assignin.html">&lt;&lt; assignin</a></span>
+<span class="top"><a href="memory.html">&lt;&lt; memory</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "global.html">global &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">clear</h1>
+<h1 class="refname">persistent</h1>
 <hr/>
 
-<h3>Remove variable from workspace.</h3>
+<h3>Persistent variable.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,35 +46,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>clear</td>
+		<td>persistent variable_name</td>
 	</tr>
 
 	<tr>
-		<td>clear variable_name</td>
+		<td>persistent('variable_name')</td>
 	</tr>
 
 	<tr>
-		<td>clear global</td>
-	</tr>
-
-	<tr>
-		<td>clear all</td>
-	</tr>
-
-	<tr>
-		<td>clear variables</td>
-	</tr>
-
-	<tr>
-		<td>clear functions</td>
-	</tr>
-
-	<tr>
-		<td>clear variable_name_1 ... variable_name_N</td>
-	</tr>
-
-	<tr>
-		<td>clear global variable_name</td>
+		<td>persistent  variable_name1, ...,  variable_nameN</td>
 	</tr>
 
 </table>
@@ -92,26 +68,6 @@ SAME AS NELSON SOFTWARE
 <p class="para">a string: variable name.</p>
 </dd>
 
-<dt><span class="term">global</span></dt>
-<dd>
-<p class="para">clears all global variables.</p>
-</dd>
-
-<dt><span class="term">all</span></dt>
-<dd>
-<p class="para">clears all variables in all scopes</p>
-</dd>
-
-<dt><span class="term">variables</span></dt>
-<dd>
-<p class="para">clears all variables in current scope.</p>
-</dd>
-
-<dt><span class="term">functions</span></dt>
-<dd>
-<p class="para">clears cache of macros functions and associated persistent variables.</p>
-</dd>
-
 </dl>
 
 <h3>Description</h3>
@@ -119,18 +75,31 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>clear</b> is used to remove variable given by its name.</p>
+  <p><b>persistent</b> defines a variable defined by his name <b>variable_name</b> as persistent in a function.</p>
+  <p>Before to use a persistent variable, it is necessary to initializ value.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
+<p>function to define:</p>
 <pre>
-<code class = "nelson">A = 3;
-who
-clear A
-who
-A
+<code class = "nelson">function r = test_persistent_function()
+ persistent calls;
+ if isempty(calls)
+    calls = 0;
+ end 
+ disp(['nb calls to test_persistent_function: ', int2str(calls)]);
+ r= calls;
+ calls = calls + 1;
+endfunction
+</code>
+</pre>
+<p>calls test_persistent_function</p>
+<pre>
+<code class = "nelson">for i = 1:30
+  r = test_persistent_function();
+end
 </code>
 </pre>
 
@@ -138,7 +107,7 @@ A
 <hr/>
 
 <p>
-<a href = "who.html" class = "link">who</a>.</p>
+<a href = "clear.html" class = "link">clear</a>, <a href = "who.html" class = "link">who</a>, <a href = "global.html" class = "link">global</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -164,15 +133,11 @@ A
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="assignin.html">&lt;&lt; assignin</a></span>
+<span class="top"><a href="memory.html">&lt;&lt; memory</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "global.html">global &gt;&gt;</a></span>
 </td>
 
 </tr></table>
