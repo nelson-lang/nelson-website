@@ -7,7 +7,7 @@
 [![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
 [![Open Hub](https://img.shields.io/badge/Open-Hub-blue.svg)](https://www.openhub.net/p/nelson-interpreter)
 [![Weblate](https://img.shields.io/badge/Weblate--green.svg)](https://hosted.weblate.org/projects/nelson/)
-
+[![Build Status](https://travis-ci.org/Nelson-numerical-software/nelson.svg?branch=master)](https://travis-ci.org/Nelson-numerical-software/nelson)
 
 
 ## [Free](https://nelson-numerical-software.github.io/nelson-website/COPYING.md) Scientific Software Package
