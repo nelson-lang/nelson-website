@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>ismodule</title>
+	<title>removemodule</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="getmodules.html">&lt;&lt; getmodules</a></span>
+<span class="top"><a href="modulepath.html">&lt;&lt; modulepath</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "modulepath.html">modulepath &gt;&gt;</a></span>
+<span class = "next"><a href = "requiremodule.html">requiremodule &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">ismodule</h1>
+<h1 class="refname">removemodule</h1>
 <hr/>
 
-<h3>Checks if a module is loaded.</h3>
+<h3>remove a module from Nelson.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>state = ismodule(module_short_name)</td>
+		<td>removemodule(module_short_name)</td>
 	</tr>
 
 </table>
@@ -61,18 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">module_short_name</span></dt>
 <dd>
-<p class="para">a string: short module's name to test.</p>
-</dd>
-
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">state</span></dt>
-<dd>
-<p class="para">a logical.</p>
+<p class="para">a string: short module's name.</p>
 </dd>
 
 </dl>
@@ -82,15 +71,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>ismodule</b> returns <b>true</b> if module is loaded otherwise <b>false</b>.</p>
+  <p><b>removemodule</b> remove a module designed by his short name.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
+<p>See module skeleton for example</p>
 <pre>
-<code class = "nelson">ismodule('core')
-ismodule('mymodule')
+<code class = "nelson">ismodule('module_skeleton')
+addmodule([nelsonroot(), '/module_skeleton'], 'module_skeleton')
+ismodule('module_skeleton')
+removemodule('module_skeleton')
+ismodule('module_skeleton')
 </code>
 </pre>
 
@@ -98,7 +91,7 @@ ismodule('mymodule')
 <hr/>
 
 <p>
-<a href = "requiremodule.html" class = "link">requiremodule</a>, <a href = "getmodules.html" class = "link">getmodules</a>.</p>
+<a href = "ismodule.html" class = "link">ismodule</a>, <a href = "removemodule.html" class = "link">addmodule</a>, <a href = "getmodules.html" class = "link">getmodules</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,7 +117,7 @@ ismodule('mymodule')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="getmodules.html">&lt;&lt; getmodules</a></span>
+<span class="top"><a href="modulepath.html">&lt;&lt; modulepath</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +125,7 @@ ismodule('mymodule')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "modulepath.html">modulepath &gt;&gt;</a></span>
+<span class = "next"><a href = "requiremodule.html">requiremodule &gt;&gt;</a></span>
 </td>
 
 </tr></table>
