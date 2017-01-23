@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>varislock</title>
+	<title>who</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="persistent.html">&lt;&lt; persistent</a></span>
+<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "varlock.html">varlock &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">varislock</h1>
+<h1 class="refname">who</h1>
 <hr/>
 
-<h3>Checks if a variable is locked.</h3>
+<h3>List variables in memory.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>state = varislock(scope, variable_name)</td>
+		<td>who</td>
+	</tr>
+
+	<tr>
+		<td>s = who()</td>
+	</tr>
+
+	<tr>
+		<td>who(scope)</td>
+	</tr>
+
+	<tr>
+		<td>s = who(scope)</td>
 	</tr>
 
 </table>
@@ -71,26 +79,35 @@ SAME AS NELSON SOFTWARE
 
 </dl>
 
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">s</span></dt>
+<dd>
+<p class="para">a cell of strings: list of variable's name.</p>
+</dd>
+
+</dl>
+
 <h3>Description</h3>
 <hr/>
 
 <p></p>
 
-  <p><b>varislock</b> returns true if <b>variable_name</b> has been declared as locked variable and false otherwise.</p>
+  <p><b>who</b> displays current variable names.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">y = 3;
-varislock('local', 'y')
-varlock('local', 'y')
-varislock('local', 'y')
-y = 4
-varunlock('local', 'y')
-varislock('local', 'y')
-y = 4
+<code class = "nelson">clear
+who
+A = 3
+b= 3
+who
+s = who()
 </code>
 </pre>
 
@@ -98,7 +115,7 @@ y = 4
 <hr/>
 
 <p>
-<a href = "varlock.html" class = "link">varlock</a>, <a href = "varunlock.html" class = "link">varunlock</a>.</p>
+<a href = "what.html" class = "link">what</a>, <a href = "clear.html" class = "link">clear</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,15 +141,11 @@ y = 4
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="persistent.html">&lt;&lt; persistent</a></span>
+<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "varlock.html">varlock &gt;&gt;</a></span>
 </td>
 
 </tr></table>
