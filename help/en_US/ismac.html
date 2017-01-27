@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>getenv</title>
+	<title>ismac</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="createGUID.html">&lt;&lt; createGUID</a></span>
+<span class="top"><a href="getenv.html">&lt;&lt; getenv</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ismac.html">ismac &gt;&gt;</a></span>
+<span class = "next"><a href = "ispc.html">ispc &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">getenv</h1>
+<h1 class="refname">ismac</h1>
 <hr/>
 
-<h3>Get the value of an environment variable.</h3>
+<h3>Checks if version is for MacOS platform.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,21 +50,10 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>s = getenv(env_name)</td>
+		<td>s = ismac()</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">env_name</span></dt>
-<dd>
-<p class="para">a string: environment variable name.</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
@@ -72,7 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">s</span></dt>
 <dd>
-<p class="para">a string: the environment variable value.</p>
+<p class="para">a logical: true if it is a MacOS platform.</p>
 </dd>
 
 </dl>
@@ -82,16 +71,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>getenv</b> returns the value of an environment variable if it exists.</p>
-  <p>If the environment variable does not exist, it will return ''.</p>
+  <p><b>ismac</b> checks if it is a MacOs platform.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">getenv('OS')
-getenv('myenvvar')
+<code class = "nelson">if ismac
+  disp('Your platform is MacOs')
+else
+  disp('Your platform is not MacOs')
+end
 </code>
 </pre>
 
@@ -99,7 +90,7 @@ getenv('myenvvar')
 <hr/>
 
 <p>
-<a href = "setenv.html" class = "link">setenv</a>, <a href = "searchenv.html" class = "link">searchenv</a>.</p>
+<a href = "isunix.html" class = "link">isunix</a>, <a href = "ispc.html" class = "link">ispc</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -125,7 +116,7 @@ getenv('myenvvar')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="createGUID.html">&lt;&lt; createGUID</a></span>
+<span class="top"><a href="getenv.html">&lt;&lt; getenv</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -133,7 +124,7 @@ getenv('myenvvar')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ismac.html">ismac &gt;&gt;</a></span>
+<span class = "next"><a href = "ispc.html">ispc &gt;&gt;</a></span>
 </td>
 
 </tr></table>

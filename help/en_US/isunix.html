@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>getenv</title>
+	<title>ispc</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="createGUID.html">&lt;&lt; createGUID</a></span>
+<span class="top"><a href="ispc.html">&lt;&lt; ispc</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ismac.html">ismac &gt;&gt;</a></span>
+<span class = "next"><a href = "searchenv.html">searchenv &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">getenv</h1>
+<h1 class="refname">ispc</h1>
 <hr/>
 
-<h3>Get the value of an environment variable.</h3>
+<h3>Checks if version is for  GNU Linux or Unix platform.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,21 +50,10 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>s = getenv(env_name)</td>
+		<td>s = isunix()</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">env_name</span></dt>
-<dd>
-<p class="para">a string: environment variable name.</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
@@ -72,7 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">s</span></dt>
 <dd>
-<p class="para">a string: the environment variable value.</p>
+<p class="para">a logical: true if it is a GNU Linux or Unix platform.</p>
 </dd>
 
 </dl>
@@ -82,16 +71,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>getenv</b> returns the value of an environment variable if it exists.</p>
-  <p>If the environment variable does not exist, it will return ''.</p>
+  <p><b>isunix</b> checks if it is a GNU Linux or Unix platform.</p>
+  <p>MacOs platform is also detected as a GNU Linux or Unix platform.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">getenv('OS')
-getenv('myenvvar')
+<code class = "nelson">if isunix
+  disp('Your platform is Unix or Linux')
+else
+  disp('Your platform is Unix or Linux')
+end
 </code>
 </pre>
 
@@ -99,7 +91,7 @@ getenv('myenvvar')
 <hr/>
 
 <p>
-<a href = "setenv.html" class = "link">setenv</a>, <a href = "searchenv.html" class = "link">searchenv</a>.</p>
+<a href = "ispc.html" class = "link">ispc</a>, <a href = "ismac.html" class = "link">ismac</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -125,7 +117,7 @@ getenv('myenvvar')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="createGUID.html">&lt;&lt; createGUID</a></span>
+<span class="top"><a href="ispc.html">&lt;&lt; ispc</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -133,7 +125,7 @@ getenv('myenvvar')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ismac.html">ismac &gt;&gt;</a></span>
+<span class = "next"><a href = "searchenv.html">searchenv &gt;&gt;</a></span>
 </td>
 
 </tr></table>
