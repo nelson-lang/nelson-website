@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>createGUID</title>
+	<title>searchenv</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="computer.html">&lt;&lt; computer</a></span>
+<span class="top"><a href="getenv.html">&lt;&lt; getenv</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getenv.html">getenv &gt;&gt;</a></span>
+<span class = "next"><a href = "setenv.html">setenv &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">createGUID</h1>
+<h1 class="refname">searchenv</h1>
 <hr/>
 
-<h3>Creates a GUID.</h3>
+<h3>Searches for a file using environment paths.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>s = createGUID()</td>
-	</tr>
-
-	<tr>
-		<td>c = createGUID(numbers_of_GUID)</td>
+		<td>c = searchenv(filename, env_name)</td>
 	</tr>
 
 </table>
@@ -63,9 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">numbers_of_GUID</span></dt>
+<dt><span class="term">env_name</span></dt>
 <dd>
-<p class="para">an integer value: numbers of GUID to create.</p>
+<p class="para">a string: environment variable name.</p>
+</dd>
+
+<dt><span class="term">filename</span></dt>
+<dd>
+<p class="para">a string: filename searched in environment variable.</p>
 </dd>
 
 </dl>
@@ -74,14 +75,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">s</span></dt>
-<dd>
-<p class="para">a string</p>
-</dd>
-
 <dt><span class="term">c</span></dt>
 <dd>
-<p class="para">a cell of strings.</p>
+<p class="para">a cell of strings: full paths found in environment variable.</p>
 </dd>
 
 </dl>
@@ -91,17 +87,29 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>createGUID</b> creates a Globally Unique IDentifier (GUID), , a unique 128-bit integer used for CLSIDs and interface identifiers.</p>
+  <p><b>searchenv</b> Searches for a file using environment paths.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">createGUID()
-createGUID(10)
+<code class = "nelson">[modules, paths] = getmodules();
+env_value = '';
+for p = paths
+ env_value = [env_value, pathsep, p];
+end
+
+setenv('MY_PATH_ENV', env_value);
+c = searchenv('loader.nls', 'MY_PATH_ENV')
 </code>
 </pre>
+
+<h3>See also</h3>
+<hr/>
+
+<p>
+<a href = "getenv.html" class = "link">getenv</a>, <a href = "setenv.html" class = "link">setenv</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,7 +135,7 @@ createGUID(10)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="computer.html">&lt;&lt; computer</a></span>
+<span class="top"><a href="getenv.html">&lt;&lt; getenv</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -135,7 +143,7 @@ createGUID(10)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getenv.html">getenv &gt;&gt;</a></span>
+<span class = "next"><a href = "setenv.html">setenv &gt;&gt;</a></span>
 </td>
 
 </tr></table>
