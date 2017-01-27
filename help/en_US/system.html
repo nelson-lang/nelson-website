@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>setenv</title>
+	<title>system</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="searchenv.html">&lt;&lt; searchenv</a></span>
+<span class="top"><a href="setenv.html">&lt;&lt; setenv</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_os_functions.html">os functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "system.html">system &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">setenv</h1>
+<h1 class="refname">system</h1>
 <hr/>
 
-<h3>Set the value of an environment variable.</h3>
+<h3>shell command execution.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>getenv(env_name, env_value)</td>
+		<td>status = system(command)</td>
+	</tr>
+
+	<tr>
+		<td>[status, output] = system(command)</td>
+	</tr>
+
+	<tr>
+		<td>[status, output] = system(command, '-echo')</td>
 	</tr>
 
 </table>
@@ -59,14 +63,25 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">env_name</span></dt>
+<dt><span class="term">command</span></dt>
 <dd>
-<p class="para">a string: environment variable name.</p>
+<p class="para">a string: command to execute in command shell.</p>
 </dd>
 
-<dt><span class="term">env_value</span></dt>
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">status</span></dt>
 <dd>
-<p class="para">a string: environment variable value.</p>
+<p class="para">an integer value: exit code value of the command.</p>
+</dd>
+
+<dt><span class="term">output</span></dt>
+<dd>
+<p class="para">a string: output of the command.</p>
 </dd>
 
 </dl>
@@ -76,17 +91,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>setenv</b> set the value of an environment variable.</p>
+  <p><b>system</b> sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell.</p>
+  <p><b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">setenv('MY_ENV_VAR', 'funvalue')
-getenv('MY_ENV_VAR')
-setenv('MY_ENV_VAR', '')
-getenv('MY_ENV_VAR')
+<code class = "nelson">[s,w] = dos('dir');
+[s,w] = dos('dir','-echo');
 </code>
 </pre>
 
@@ -94,7 +108,7 @@ getenv('MY_ENV_VAR')
 <hr/>
 
 <p>
-<a href = "getenv.html" class = "link">getenv</a>, <a href = "searchenv.html" class = "link">searchenv</a>.</p>
+<a href = "winopen.html" class = "link">winopen</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,15 +134,11 @@ getenv('MY_ENV_VAR')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="searchenv.html">&lt;&lt; searchenv</a></span>
+<span class="top"><a href="setenv.html">&lt;&lt; setenv</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_os_functions.html">os functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "system.html">system &gt;&gt;</a></span>
 </td>
 
 </tr></table>
