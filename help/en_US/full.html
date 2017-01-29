@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>nnz</title>
+	<title>full</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="IJV.html">&lt;&lt; IJV</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_sparse.html">sparse type</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "nzmax.html">nzmax &gt;&gt;</a></span>
+<span class = "next"><a href = "IJV.html">IJV &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">nnz</h1>
+<h1 class="refname">full</h1>
 <hr/>
 
-<h3>Return the number of nonzero elements.</h3>
+<h3>Sparse to full matrix conversion.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>v = nnz(M)</td>
+		<td>M = full(sp)</td>
 	</tr>
 
 </table>
@@ -59,9 +55,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">sp</span></dt>
 <dd>
-<p class="para">a matrix: double or logical, sparse or not.</p>
+<p class="para">a matrix: double or logical, sparse.</p>
 </dd>
 
 </dl>
@@ -70,9 +66,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">v</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a integer value.</p>
+<p class="para">a matrix.</p>
 </dd>
 
 </dl>
@@ -82,20 +78,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>nnz</b> returns the number of non zero elements in an matrix.</p>
+  <p><b>full</b> converts a sparse matrix into its full representation.</p>
+  <p> If input argument is already full then output argument will be equal to input argument.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">I = [1 2 3];
-J = [3 1 2];
-V = [32 42 53];
-sp = sparse(I, J, V, 5, 4, 10)
-size(sp)
-nnz(sp)
-nzmax(sp)
+<code class = "nelson">sp = sparse(eye(3,3))
+F = full(sp)
 </code>
 </pre>
 
@@ -103,7 +95,7 @@ nzmax(sp)
 <hr/>
 
 <p>
-<a href = "sparse.html" class = "link">sparse</a>, <a href = "nzmax.html" class = "link">nzmax</a>.</p>
+<a href = "sparse.html" class = "link">sparse</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -128,16 +120,12 @@ nzmax(sp)
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="IJV.html">&lt;&lt; IJV</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_sparse.html">sparse type</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "nzmax.html">nzmax &gt;&gt;</a></span>
+<span class = "next"><a href = "IJV.html">IJV &gt;&gt;</a></span>
 </td>
 
 </tr></table>
