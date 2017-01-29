@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fgets</title>
+	<title>fopen</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fgetl.html">&lt;&lt; fgetl</a></span>
+<span class="top"><a href="fgets.html">&lt;&lt; fgets</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
+<span class = "next"><a href = "fread.html">fread &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fgets</h1>
+<h1 class="refname">fopen</h1>
 <hr/>
 
-<h3>Read string from a file, stopping after a newline, or EOF, or n characters have been read.</h3>
+<h3>Open a file in Nelson.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,27 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = fgets(f)</td>
+		<td>fid = fopen(filename)</td>
 	</tr>
 
 	<tr>
-		<td>res = fgets(f, n)</td>
+		<td>fid = fopen(filename, permission)</td>
+	</tr>
+
+	<tr>
+		<td>[fid, msg] = fopen(filename)</td>
+	</tr>
+
+	<tr>
+		<td>[fid, msg] = fopen(filename, permission)</td>
+	</tr>
+
+	<tr>
+		<td>[filename, permission] = fopen(fid)</td>
+	</tr>
+
+	<tr>
+		<td>fids = fopen('all')</td>
 	</tr>
 
 </table>
@@ -63,14 +79,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">f</span></dt>
+<dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a file descriptor</p>
+<p class="para">a string: filename to open</p>
 </dd>
 
-<dt><span class="term">n</span></dt>
+<dt><span class="term">permission</span></dt>
 <dd>
-<p class="para">a scalar: number of characters</p>
+<p class="para">a string: permission applied on file: 'r', 'w', 'a', 'r+', 'a+'</p>
 </dd>
 
 </dl>
@@ -79,9 +95,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">fid</span></dt>
 <dd>
-<p class="para">a string or -1</p>
+<p class="para">an integer value: a file descriptor or -1 if there is an error.</p>
+</dd>
+
+<dt><span class="term">msg</span></dt>
+<dd>
+<p class="para">a string: error message returned by fopen or ''.</p>
+</dd>
+
+<dt><span class="term">fids</span></dt>
+<dd>
+<p class="para">a vector of integer values: list of files descriptor opened in Nelson.</p>
 </dd>
 
 </dl>
@@ -91,35 +117,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Read string from a file, stopping after a newline, or EOF, or n characters have been read.</p>
-  <p>If there is no more character to read, fgets will return -1.</p>
-  <p>If n is omitted, fgets reads until the next newline.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fid = fopen([nelsonroot(), '/etc/startup.nls']);
-  tline = fgets(fid);
-  while ischar(tline)
-  disp(tline)
-  tline = fgets(fid);
-  end
-
-  fclose(fid);
-</code>
-</pre>
-<pre>
-<code class = "nelson">fid = fopen([nelsonroot(), '/etc/startup.nls']);
-
-  tline = fgets(fid, 5);
-  while ischar(tline)
-  disp(tline)
-  tline = fgets(fid, 5);
-  end
-
-  fclose(fid);
+<code class = "nelson">fid = fopen([tempdir(), filesep(), 'fopen_tst'], 'wt');
+[filename, permission] = fopen(fid)
+fids = fopen('all')
+status = fclose(fd)
+[filename, permission] = fopen(stdin)
+[filename, permission] = fopen(stdout)
+[filename, permission] = fopen(stderr)
 </code>
 </pre>
 
@@ -127,7 +137,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "fclose.html" class = "link">fclose</a>, <a href = "fopen.html" class = "link">fopen</a>, <a href = "fgetl.html" class = "link">fgetl</a>.</p>
+<a href = "fclose.html" class = "link">fclose</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -153,7 +163,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fgetl.html">&lt;&lt; fgetl</a></span>
+<span class="top"><a href="fgets.html">&lt;&lt; fgets</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -161,7 +171,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
+<span class = "next"><a href = "fread.html">fread &gt;&gt;</a></span>
 </td>
 
 </tr></table>
