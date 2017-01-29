@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fgetl</title>
+	<title>fclose</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fclose.html">&lt;&lt; fclose</a></span>
+<span class="top"><a href="diary.html">&lt;&lt; diary</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fgets.html">fgets &gt;&gt;</a></span>
+<span class = "next"><a href = "fgetl.html">fgetl &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fgetl</h1>
+<h1 class="refname">fclose</h1>
 <hr/>
 
-<h3>Read string from a file without newline.</h3>
+<h3>Close an opened file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = fgetl(f)</td>
+		<td>fclose(fid)</td>
+	</tr>
+
+	<tr>
+		<td>fclose('all')</td>
+	</tr>
+
+	<tr>
+		<td>status = fclose(fid)</td>
+	</tr>
+
+	<tr>
+		<td>status = fclose('all')</td>
 	</tr>
 
 </table>
@@ -59,7 +71,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">f</span></dt>
+<dt><span class="term">fid</span></dt>
 <dd>
 <p class="para">a file descriptor</p>
 </dd>
@@ -70,9 +82,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">status</span></dt>
 <dd>
-<p class="para">a string or -1</p>
+<p class="para">an integer value: 0 if file is closed or -1 if not.</p>
 </dd>
 
 </dl>
@@ -82,24 +94,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Read string from a file, stopping after a newline or EOF have been read.</p>
-  <p>If there is no more character to read, fgets willreturn -1.</p>
-  <p>newline character removed of the string returned</p>
+  <p><b>fclose</b> must be used to close a file opened by <b>fopen</b>.</p>
+  <p><b>fclose('all')</b> closes all opened file with <b>fopen</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fid = fopen([nelsonroot(), '/etc/startup.nls']);
-
-tline = fgetl(fid);
-while ischar(tline)
-    disp(tline)
-    tline = fgetl(fid);
-end
-
-fclose(fid);
+<code class = "nelson">fd = fopen([tempdir(), filesep(), 'fclose_tst'],'wt');
+status = fclose(fd)
+status = fclose(fd)
 </code>
 </pre>
 
@@ -107,7 +112,7 @@ fclose(fid);
 <hr/>
 
 <p>
-<a href = "fclose.html" class = "link">fclose</a>, <a href = "fopen.html" class = "link">fopen</a>, <a href = "fgets.html" class = "link">fgets</a>.</p>
+<a href = "fopen.html" class = "link">fopen</a>, <a href = "fread.html" class = "link">fread</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -133,7 +138,7 @@ fclose(fid);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fclose.html">&lt;&lt; fclose</a></span>
+<span class="top"><a href="diary.html">&lt;&lt; diary</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -141,7 +146,7 @@ fclose(fid);
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fgets.html">fgets &gt;&gt;</a></span>
+<span class = "next"><a href = "fgetl.html">fgetl &gt;&gt;</a></span>
 </td>
 
 </tr></table>
