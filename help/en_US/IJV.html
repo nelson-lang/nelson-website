@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>[iv, jv, vv, m, n, nnz] = IJV(sp)</td>
+		<td>[iv, jv, vv, m, n, nzmax] = IJV(sp)</td>
 	</tr>
 
 </table>
@@ -95,9 +95,9 @@ SAME AS NELSON SOFTWARE
 <p class="para">an integer value: number of columns in the matrix.</p>
 </dd>
 
-<dt><span class="term">nnz</span></dt>
+<dt><span class="term">nzmax</span></dt>
 <dd>
-<p class="para">an integer value: number of non zeros elements.</p>
+<p class="para">an integer value: reserved size for nonzero elements..</p>
 </dd>
 
 </dl>
@@ -115,7 +115,7 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">sp = sparse(eye(3,3))
-[IV, JV, VV, m, n, nnz] = IJV(sp)
+[IV, JV, VV, m, n, nzmax] = IJV(sp)
 </code>
 </pre>
 
