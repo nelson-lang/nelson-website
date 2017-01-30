@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fwrite</title>
+	<title>fseek</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ftell.html">&lt;&lt; ftell</a></span>
+<span class="top"><a href="frewind.html">&lt;&lt; frewind</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "fsize.html">fsize &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">fwrite</h1>
+<h1 class="refname">fseek</h1>
 <hr/>
 
-<h3>Write data in binary form to the file specified by the file descriptor fid.</h3>
+<h3>Set the file pointer to a location.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,23 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>count = fwrite(fid, data)</td>
+		<td>fseek(fid, offset, origin)</td>
 	</tr>
 
 	<tr>
-		<td>count = fwrite(fid, data, precision)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision, skip)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision, skip, arch)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision, arch)</td>
+		<td>status = fseek(fid, offset, origin)</td>
 	</tr>
 
 </table>
@@ -73,27 +65,17 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">fid</span></dt>
 <dd>
-<p class="para">a file descriptor</p>
+<p class="para">an integer value: file descriptor</p>
 </dd>
 
-<dt><span class="term">data</span></dt>
+<dt><span class="term">offset</span></dt>
 <dd>
-<p class="para">data to write</p>
+<p class="para">an integer value: number of bytes to move from origin.</p>
 </dd>
 
-<dt><span class="term">precision</span></dt>
+<dt><span class="term">origin</span></dt>
 <dd>
-<p class="para">class of values to read</p>
-</dd>
-
-<dt><span class="term">skip</span></dt>
-<dd>
-<p class="para">number of bytes to skip</p>
-</dd>
-
-<dt><span class="term">arch</span></dt>
-<dd>
-<p class="para">a string specifying the data format for the file.</p>
+<p class="para">an integer value or a string: location in the file.</p>
 </dd>
 
 </dl>
@@ -102,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">count</span></dt>
+<dt><span class="term">status</span></dt>
 <dd>
-<p class="para">-1 or number of elements written</p>
+<p class="para">an integer value: 0 or -1 if there is an error.</p>
 </dd>
 
 </dl>
@@ -114,26 +96,24 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Write data in binary form to the file specified by the file descriptor fid.</p>
-  <p>supported architecture:</p>
-  <p><b>native</b> , <b>n</b>: format of the current machine.</p>
-  <p><b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
-  <p><b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+  <p><b>fseek</b> moves the file pointer to the location <b>offset</b> within the file <b>fid</b>.</p>
+  <p>origin can take as value:</p>
+  <p>'bof' or -1 : beginning of file.</p>
+  <p>'cof' or 0 : current position in file.</p>
+  <p>'eof' or 1 : end of file.</p>
+  <p><b>offset</b> may be one of the predefined variables <b>SEEK_CUR</b> (current position, or 0), <b>SEEK_SET</b> (beginning, or -1), or <b>SEEK_END</b> (end of file, or 1).</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = rand(3,1)
-
-fileID = fopen([tempdir(), '/doubledata.bin'],'w');
-fwrite(fileID, A,'double');
+<code class = "nelson">fileID = fopen([tempdir(), '/fseek.txt'],'wt');
+fprintf(fileID, 'son is beautiful.');
+fseek(fileID, SEEK_CUR, 'bof');
+fprintf(fileID, 'sun');
 fclose(fileID);
-
-fileID = fopen([tempdir(), '/doubledata.bin'],'r');
-R = fread(fileID, 'double')
-fclose(fileID);
+R = fileread([tempdir(), '/fseek.txt'])
 </code>
 </pre>
 
@@ -141,7 +121,7 @@ fclose(fileID);
 <hr/>
 
 <p>
-<a href = "fopen.html" class = "link">fopen</a>, <a href = "fclose.html" class = "link">fclose</a>, <a href = "fread.html" class = "link">fread</a>.</p>
+<a href = "frewind.html" class = "link">frewind</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -167,11 +147,15 @@ fclose(fileID);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ftell.html">&lt;&lt; ftell</a></span>
+<span class="top"><a href="frewind.html">&lt;&lt; frewind</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "fsize.html">fsize &gt;&gt;</a></span>
 </td>
 
 </tr></table>

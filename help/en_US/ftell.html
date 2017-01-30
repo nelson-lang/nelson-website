@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fwrite</title>
+	<title>ftell</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ftell.html">&lt;&lt; ftell</a></span>
+<span class="top"><a href="fsize.html">&lt;&lt; fsize</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "fwrite.html">fwrite &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">fwrite</h1>
+<h1 class="refname">ftell</h1>
 <hr/>
 
-<h3>Write data in binary form to the file specified by the file descriptor fid.</h3>
+<h3>Returns the offset of the current byte relative to the beginning of a file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,23 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>count = fwrite(fid, data)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision, skip)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision, skip, arch)</td>
-	</tr>
-
-	<tr>
-		<td>count = fwrite(fid, data, precision, arch)</td>
+		<td>p = ftell(fid)</td>
 	</tr>
 
 </table>
@@ -76,35 +64,15 @@ SAME AS NELSON SOFTWARE
 <p class="para">a file descriptor</p>
 </dd>
 
-<dt><span class="term">data</span></dt>
-<dd>
-<p class="para">data to write</p>
-</dd>
-
-<dt><span class="term">precision</span></dt>
-<dd>
-<p class="para">class of values to read</p>
-</dd>
-
-<dt><span class="term">skip</span></dt>
-<dd>
-<p class="para">number of bytes to skip</p>
-</dd>
-
-<dt><span class="term">arch</span></dt>
-<dd>
-<p class="para">a string specifying the data format for the file.</p>
-</dd>
-
 </dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">count</span></dt>
+<dt><span class="term">p</span></dt>
 <dd>
-<p class="para">-1 or number of elements written</p>
+<p class="para">an integer value: position of the file pointer as the number of characters from the beginning of the file.</p>
 </dd>
 
 </dl>
@@ -114,26 +82,20 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Write data in binary form to the file specified by the file descriptor fid.</p>
-  <p>supported architecture:</p>
-  <p><b>native</b> , <b>n</b>: format of the current machine.</p>
-  <p><b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
-  <p><b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+  <p><b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = rand(3,1)
-
-fileID = fopen([tempdir(), '/doubledata.bin'],'w');
-fwrite(fileID, A,'double');
-fclose(fileID);
-
-fileID = fopen([tempdir(), '/doubledata.bin'],'r');
-R = fread(fileID, 'double')
-fclose(fileID);
+<code class = "nelson">TXT = 'example about ftell.';
+fileID = fopen([tempdir(), '/ftell.txt'],'wt');
+fprintf(fileID, TXT);
+p1 = ftell(fileID)
+fseek(fileID, SEEK_CUR, 'bof');
+p2 = ftell(fileID)
+status = fclose(fileID);
 </code>
 </pre>
 
@@ -141,7 +103,7 @@ fclose(fileID);
 <hr/>
 
 <p>
-<a href = "fopen.html" class = "link">fopen</a>, <a href = "fclose.html" class = "link">fclose</a>, <a href = "fread.html" class = "link">fread</a>.</p>
+<a href = "fopen.html" class = "link">fopen</a>, <a href = "fread.html" class = "link">fprintf</a>, <a href = "fclose.html" class = "link">fclose</a>, <a href = "fseek.html" class = "link">fseek</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -167,11 +129,15 @@ fclose(fileID);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ftell.html">&lt;&lt; ftell</a></span>
+<span class="top"><a href="fsize.html">&lt;&lt; fsize</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "fwrite.html">fwrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>
