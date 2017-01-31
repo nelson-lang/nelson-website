@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>strcmp</title>
+	<title>strfind</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="int2str.html">&lt;&lt; int2str</a></span>
+<span class="top"><a href="strcmpi.html">&lt;&lt; strcmpi</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "strcmpi.html">strcmpi &gt;&gt;</a></span>
+<span class = "next"><a href = "strncmp.html">strncmp &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">strcmp</h1>
+<h1 class="refname">strfind</h1>
 <hr/>
 
-<h3>Strings comparaison.</h3>
+<h3>Find a string in another.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = strcmp(s1, s2)</td>
+		<td>occ = strfind(str, pattern)</td>
+	</tr>
+
+	<tr>
+		<td>occ = strfind(str, pattern,'ForceCellOutput', ouput)</td>
 	</tr>
 
 </table>
@@ -59,14 +63,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">s1</span></dt>
+<dt><span class="term">str</span></dt>
 <dd>
 <p class="para">a string or cell of strings.</p>
 </dd>
 
-<dt><span class="term">s2</span></dt>
+<dt><span class="term">pattern</span></dt>
 <dd>
-<p class="para">a string or cell of strings.</p>
+<p class="para">a string to find.</p>
+</dd>
+
+<dt><span class="term">output</span></dt>
+<dd>
+<p class="para">a logical.</p>
 </dd>
 
 </dl>
@@ -75,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">occ</span></dt>
 <dd>
-<p class="para">a logical: true if the two are identical and false otherwise.</p>
+<p class="para">a cell or matrix of integer values: occurences position.</p>
 </dd>
 
 </dl>
@@ -86,21 +95,23 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>strcmp</b> compares two strings.
+<b>strfind</b> find a string in another.
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">strcmp('Nelson', 'nelSon')
-strcmp('Nelson', 'Nelson')
+<code class = "nelson">str = 'To make a mountain out of a molehill';
+k = strfind (str, 'in')
+k= strfind(str, ' ')
+k = strfind ({'abababada', 'beabebe', 'ab'}, 'aba')
 
 A = {'Nel', 'son'; 'Toolboxes', 'Modules'}
-B = {'Handle', 'Struct'; 'Toolboxes', 'Modules'}
-C = {'C', 'Contents'; 'Nel', 'son'}
-strcmp(A, B)
-strcmp(A, C)
-strcmp(C, 'C')
+k = strfind(A, 'o')
+
+str = 'No pain no gain.';
+k = strfind(str,'in','ForceCellOutput',true)
+k = strfind(str,'in','ForceCellOutput',false)
 </code>
 </pre>
 
@@ -108,7 +119,7 @@ strcmp(C, 'C')
 <hr/>
 
 <p>
-<a href = "char.html" class = "link">char</a>.</p>
+<a href = "strcmp.html" class = "link">strcmp</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -134,7 +145,7 @@ strcmp(C, 'C')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="int2str.html">&lt;&lt; int2str</a></span>
+<span class="top"><a href="strcmpi.html">&lt;&lt; strcmpi</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -142,7 +153,7 @@ strcmp(C, 'C')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "strcmpi.html">strcmpi &gt;&gt;</a></span>
+<span class = "next"><a href = "strncmp.html">strncmp &gt;&gt;</a></span>
 </td>
 
 </tr></table>

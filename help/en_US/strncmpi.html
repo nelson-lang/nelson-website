@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>strcmp</title>
+	<title>strncmpi</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="int2str.html">&lt;&lt; int2str</a></span>
+<span class="top"><a href="strncmp.html">&lt;&lt; strncmp</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "strcmpi.html">strcmpi &gt;&gt;</a></span>
+<span class = "next"><a href = "tolower.html">tolower &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">strcmp</h1>
+<h1 class="refname">strncmpi</h1>
 <hr/>
 
-<h3>Strings comparaison.</h3>
+<h3>Compares first n characters of strings (case sensitive).</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = strcmp(s1, s2)</td>
+		<td>res = strncmpi(s1, s2, n)</td>
 	</tr>
 
 </table>
@@ -67,6 +67,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">s2</span></dt>
 <dd>
 <p class="para">a string or cell of strings.</p>
+</dd>
+
+<dt><span class="term">n</span></dt>
+<dd>
+<p class="para">an integer value: numbers of characters to compare.</p>
 </dd>
 
 </dl>
@@ -86,21 +91,21 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>strcmp</b> compares two strings.
+<b>strncmpi</b> compares the first n characters of two strings (case insensitive).
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">strcmp('Nelson', 'nelSon')
-strcmp('Nelson', 'Nelson')
+<code class = "nelson">strncmpi('Nelson', 'nelSon', 3)
+strncmpi('Nelson', 'Nelson', 3)
 
 A = {'Nel', 'son'; 'Toolboxes', 'Modules'}
 B = {'Handle', 'Struct'; 'Toolboxes', 'Modules'}
 C = {'C', 'Contents'; 'Nel', 'son'}
-strcmp(A, B)
-strcmp(A, C)
-strcmp(C, 'C')
+strncmpi(A, B, 2)
+strncmpi(A, C, 2)
+strncmpi(C, 'C', 4)
 </code>
 </pre>
 
@@ -108,7 +113,7 @@ strcmp(C, 'C')
 <hr/>
 
 <p>
-<a href = "char.html" class = "link">char</a>.</p>
+<a href = "strncmp.html" class = "link">strncmp</a>, <a href = "strcmp.html" class = "link">strcmp</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -134,7 +139,7 @@ strcmp(C, 'C')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="int2str.html">&lt;&lt; int2str</a></span>
+<span class="top"><a href="strncmp.html">&lt;&lt; strncmp</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -142,7 +147,7 @@ strcmp(C, 'C')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "strcmpi.html">strcmpi &gt;&gt;</a></span>
+<span class = "next"><a href = "tolower.html">tolower &gt;&gt;</a></span>
 </td>
 
 </tr></table>
