@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>calendar</title>
+	<title>clock</title>
 
 </head>
 <body>
@@ -24,21 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="40%" class="center">
-<span class="top"><a href="chapter_time.html">time functions</a></span>
+<td width="30%" class="previous">
+<span class="top"><a href="calendar.html">&lt;&lt; calendar</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "clock.html">clock &gt;&gt;</a></span>
+<td width="40%" class="center">
+<span class="top"><a href="chapter_time.html">time functions</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">calendar</h1>
+<h1 class="refname">clock</h1>
 <hr/>
 
-<h3>Calendar.</h3>
+<h3>Return the current local date and time as a date vector.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,51 +46,18 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>calendar()</td>
-	</tr>
-
-	<tr>
-		<td>c = calendar()</td>
-	</tr>
-
-	<tr>
-		<td>c = calendar(d)</td>
-	</tr>
-
-	<tr>
-		<td>c = calendar(y, m)</td>
+		<td>v = clock()</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">d</span></dt>
-<dd>
-<p class="para">an integer value: a serial date number.</p>
-</dd>
-
-<dt><span class="term">y</span></dt>
-<dd>
-<p class="para">an integer value: 'year' desired [1400, 9999].</p>
-</dd>
-
-<dt><span class="term">m</span></dt>
-<dd>
-<p class="para">an integer value: 'month' desired [1, 12].</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">c</span></dt>
+<dt><span class="term">v</span></dt>
 <dd>
-<p class="para">a 6x7 matrix.</p>
+<p class="para">a vector: [year, month, day, hours, minutes, seconds].</p>
 </dd>
 
 </dl>
@@ -101,16 +68,24 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>calendar()</b> returns the currently monthly calendar.</p>
-  <p>If no output arguments are specified,the calendar is displayed on the screen instead of returning a matrix 6x7.</p>
+  <p>The date vector contains the following fields:</p>
+  <p>year</p>
+  <p>months [1, 12]</p>
+  <p>days [1, 31]</p>
+  <p>hours [0, 23]</p>
+  <p>minutes [0, 59]</p>
+  <p>seconds [0, 61]</p>
+  <p>seconds: field has a fractional part after the decimal point for extended accuracy.</p>
+  <p>To time the duration of an event, use tic and toc functions instead of clock.</p>
+  <p>The clock function is based on the system time and thus might not be reliable for time comparison operations.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">calendar()
-c = calendar(1973, 8)
-c = calendar(datenum(1973, 8, 4))
+<code class = "nelson">c = clock()
+fix(c)
 </code>
 </pre>
 
@@ -118,7 +93,7 @@ c = calendar(datenum(1973, 8, 4))
 <hr/>
 
 <p>
-<a href = "datenum.html" class = "link">datenum</a>.</p>
+<a href = "tic.html" class = "link">tic</a>, <a href = "toc.html" class = "link">toc</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -143,12 +118,12 @@ c = calendar(datenum(1973, 8, 4))
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="40%" class="center">
-<span class="top"><a href="chapter_time.html">time functions</a></span>
+<td width="30%" class="previous">
+<span class="top"><a href="calendar.html">&lt;&lt; calendar</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "clock.html">clock &gt;&gt;</a></span>
+<td width="40%" class="center">
+<span class="top"><a href="chapter_time.html">time functions</a></span>
 </td>
 
 </tr></table>
