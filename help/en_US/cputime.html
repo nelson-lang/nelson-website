@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>clock</title>
+	<title>cputime</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="calendar.html">&lt;&lt; calendar</a></span>
+<span class="top"><a href="clock.html">&lt;&lt; clock</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_time.html">time functions</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "cputime.html">cputime &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">clock</h1>
+<h1 class="refname">cputime</h1>
 <hr/>
 
-<h3>Return the current local date and time as a date vector.</h3>
+<h3>Return the CPU time used by your Nelon session.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>v = clock()</td>
+		<td>t = cputime()</td>
 	</tr>
 
 </table>
@@ -59,9 +55,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">v</span></dt>
+<dt><span class="term">t</span></dt>
 <dd>
-<p class="para">a vector: [year, month, day, hours, minutes, seconds].</p>
+<p class="para">a double: time in seconds.</p>
 </dd>
 
 </dl>
@@ -71,25 +67,23 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>calendar()</b> returns the currently monthly calendar.</p>
-  <p>The date vector contains the following fields:</p>
-  <p>year</p>
-  <p>months [1, 12]</p>
-  <p>days [1, 31]</p>
-  <p>hours [0, 23]</p>
-  <p>minutes [0, 59]</p>
-  <p>seconds [0, 61]</p>
-  <p>seconds: field has a fractional part after the decimal point for extended accuracy.</p>
-  <p>To time the duration of an event, use tic and toc functions instead of clock.</p>
-  <p>The clock function is based on the system time and thus might not be reliable for time comparison operations.</p>
+  <p><b>cputime()</b> returns the CPU time used by Nelson session.</p>
+  <p>To measure performance, it is better to use tic and toc functions.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">c = clock()
-fix(c)
+<code class = "nelson">t1 = cputime;
+sleep(10);
+t2 = cputime;
+t2 - t1
+
+// versus tic toc
+tic()
+sleep(10);
+toc()
 </code>
 </pre>
 
@@ -123,15 +117,11 @@ fix(c)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="calendar.html">&lt;&lt; calendar</a></span>
+<span class="top"><a href="clock.html">&lt;&lt; clock</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_time.html">time functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "cputime.html">cputime &gt;&gt;</a></span>
 </td>
 
 </tr></table>
