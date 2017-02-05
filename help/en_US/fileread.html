@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>Inf</title>
+	<title>fileread</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="i.html">&lt;&lt; i</a></span>
+<span class="top"><a href="fgets.html">&lt;&lt; fgets</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_constructors_functions.html">constructors functions</a></span>
+<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "NaN.html">NaN &gt;&gt;</a></span>
+<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">Inf</h1>
+<h1 class="refname">fileread</h1>
 <hr/>
 
-<h3>Infinity</h3>
+<h3>Read contents of file as text.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>Inf</td>
-	</tr>
-
-	<tr>
-		<td>inf</td>
-	</tr>
-
-	<tr>
-		<td>Inf(n)</td>
-	</tr>
-
-	<tr>
-		<td>Inf(n, m)</td>
+		<td>str = fileread(filename)</td>
 	</tr>
 
 </table>
@@ -71,14 +59,20 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">n</span></dt>
+<dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a variable: n-by-n matrix</p>
+<p class="para">a string: a file name</p>
 </dd>
 
-<dt><span class="term">m</span></dt>
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">str</span></dt>
 <dd>
-<p class="para">a variable: n-by-m matrix</p>
+<p class="para">a string.</p>
 </dd>
 
 </dl>
@@ -88,22 +82,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
+  <p><b>fileread</b> read contents of file as text.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">Inf
-</code>
-</pre>
-<pre>
-<code class = "nelson">-Inf + Inf
-</code>
-</pre>
-<pre>
-<code class = "nelson">1.e1000
+<code class = "nelson">str = fileread([nelsonroot(),'/CHANGELOG.md'])
 </code>
 </pre>
 
@@ -111,7 +97,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "NaN.html" class = "link">nan</a>.</p>
+<a href = "fgetl.html" class = "link">fgetl</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -137,15 +123,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="i.html">&lt;&lt; i</a></span>
+<span class="top"><a href="fgets.html">&lt;&lt; fgets</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_constructors_functions.html">constructors functions</a></span>
+<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "NaN.html">NaN &gt;&gt;</a></span>
+<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
 </td>
 
 </tr></table>

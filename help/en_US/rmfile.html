@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>Inf</title>
+	<title>rmfile</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="i.html">&lt;&lt; i</a></span>
+<span class="top"><a href="rmdir.html">&lt;&lt; rmdir</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_constructors_functions.html">constructors functions</a></span>
+<span class="top"><a href="chapter_files_folders_functions.html">files and folders functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "NaN.html">NaN &gt;&gt;</a></span>
+<span class = "next"><a href = "tempdir.html">tempdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">Inf</h1>
+<h1 class="refname">rmfile</h1>
 <hr/>
 
-<h3>Infinity</h3>
+<h3>Removes a file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>Inf</td>
+		<td>rmfile(filename)</td>
 	</tr>
 
 	<tr>
-		<td>inf</td>
+		<td>res = rmfile(filename)</td>
 	</tr>
 
 	<tr>
-		<td>Inf(n)</td>
+		<td>[res, msg] = rmfile(filename)</td>
 	</tr>
 
 	<tr>
-		<td>Inf(n, m)</td>
+		<td>[res, msg] = rmfile(filename)</td>
 	</tr>
 
 </table>
@@ -71,14 +71,25 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">n</span></dt>
+<dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a variable: n-by-n matrix</p>
+<p class="para">a string: file name.</p>
 </dd>
 
-<dt><span class="term">m</span></dt>
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a variable: n-by-m matrix</p>
+<p class="para">a logical: true or false.</p>
+</dd>
+
+<dt><span class="term">msg</span></dt>
+<dd>
+<p class="para">a string: error message or ''.</p>
 </dd>
 
 </dl>
@@ -88,22 +99,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
+  <p><b>res = rmfile(filename)</b> removes the file <b>filename</b>.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">Inf
-</code>
-</pre>
-<pre>
-<code class = "nelson">-Inf + Inf
-</code>
-</pre>
-<pre>
-<code class = "nelson">1.e1000
+<code class = "nelson">fd = fopen([tempdir(), '/test_rmfile.txt'], 'wt')
+fclose(fd)
+isfile([tempdir(), '/test_rmfile.txt'])
+rmfile([tempdir(), '/test_rmfile.txt'])
+isfile([tempdir(), '/test_rmfile.txt'])
 </code>
 </pre>
 
@@ -111,7 +118,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "NaN.html" class = "link">nan</a>.</p>
+<a href = "isfile.html" class = "link">isfile</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -137,15 +144,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="i.html">&lt;&lt; i</a></span>
+<span class="top"><a href="rmdir.html">&lt;&lt; rmdir</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_constructors_functions.html">constructors functions</a></span>
+<span class="top"><a href="chapter_files_folders_functions.html">files and folders functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "NaN.html">NaN &gt;&gt;</a></span>
+<span class = "next"><a href = "tempdir.html">tempdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
