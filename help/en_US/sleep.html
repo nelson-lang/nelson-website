@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>cputime</title>
+	<title>sleep</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="clock.html">&lt;&lt; clock</a></span>
+<span class="top"><a href="now.html">&lt;&lt; now</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "datenum.html">datenum &gt;&gt;</a></span>
+<span class = "next"><a href = "tic.html">tic &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">cputime</h1>
+<h1 class="refname">sleep</h1>
 <hr/>
 
-<h3>Return the CPU time used by your Nelon session.</h3>
+<h3>Suspend code execution.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,18 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>t = cputime()</td>
+		<td>sleep(sec)</td>
 	</tr>
 
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">t</span></dt>
+<dt><span class="term">n</span></dt>
 <dd>
-<p class="para">a double: time in seconds.</p>
+<p class="para">a double: duration of the sleep in seconds (decimal number).</p>
 </dd>
 
 </dl>
@@ -71,23 +71,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>cputime()</b> returns the CPU time used by Nelson session.</p>
-  <p>To measure performance, it is better to use tic and toc functions.</p>
+  <p><b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.</p>
+  <p> CTRL-C interruption stops <b>sleep</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">t1 = cputime;
-sleep(10);
-t2 = cputime;
-t2 - t1
-
-// versus tic toc
-tic()
-sleep(10);
-toc()
+<code class = "nelson">tic();sleep(1);toc()
+tic();sleep(0.1);toc()
+tic();sleep(0.01);toc()
 </code>
 </pre>
 
@@ -121,7 +115,7 @@ toc()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="clock.html">&lt;&lt; clock</a></span>
+<span class="top"><a href="now.html">&lt;&lt; now</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -129,7 +123,7 @@ toc()
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "datenum.html">datenum &gt;&gt;</a></span>
+<span class = "next"><a href = "tic.html">tic &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>cputime</title>
+	<title>datevec</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="clock.html">&lt;&lt; clock</a></span>
+<span class="top"><a href="datenum.html">&lt;&lt; datenum</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "datenum.html">datenum &gt;&gt;</a></span>
+<span class = "next"><a href = "now.html">now &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">cputime</h1>
+<h1 class="refname">datevec</h1>
 <hr/>
 
-<h3>Return the CPU time used by your Nelon session.</h3>
+<h3>Convert a serial date number into a date vector.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,38 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>t = cputime()</td>
+		<td>[Y, M, D, H, MN, S] = datevec(dv)</td>
+	</tr>
+
+	<tr>
+		<td>V = datevec(dv)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">dv</span></dt>
+<dd>
+<p class="para">a scalar, vector, or multidimensional array e: a serial date number.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">t</span></dt>
+<dt><span class="term">Y, M, D, H, MN, S</span></dt>
 <dd>
-<p class="para">a double: time in seconds.</p>
+<p class="para">double: Year, Month, Day, Hour, Minutes, Seconds.</p>
+</dd>
+
+<dt><span class="term">V</span></dt>
+<dd>
+<p class="para">a vector of double: [Year, Month, Day, Hour, Minutes, Seconds].</p>
 </dd>
 
 </dl>
@@ -71,7 +91,7 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>cputime()</b> returns the CPU time used by Nelson session.</p>
+  <p><b>datevec</b> converts a serial date number into a date vector.</p>
   <p>To measure performance, it is better to use tic and toc functions.</p>
 
 
@@ -79,15 +99,10 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <pre>
-<code class = "nelson">t1 = cputime;
-sleep(10);
-t2 = cputime;
-t2 - t1
-
-// versus tic toc
-tic()
-sleep(10);
-toc()
+<code class = "nelson">datevec(now())
+datevec(720840)
+V = datevec([720840, now()])
+[Y, M, D, H, MN, S] = datevec([720840, now()])
 </code>
 </pre>
 
@@ -121,7 +136,7 @@ toc()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="clock.html">&lt;&lt; clock</a></span>
+<span class="top"><a href="datenum.html">&lt;&lt; datenum</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -129,7 +144,7 @@ toc()
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "datenum.html">datenum &gt;&gt;</a></span>
+<span class = "next"><a href = "now.html">now &gt;&gt;</a></span>
 </td>
 
 </tr></table>
