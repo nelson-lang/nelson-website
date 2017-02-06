@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isdouble</title>
+	<title>isclass</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isclass.html">&lt;&lt; isclass</a></span>
+<span class="top"><a href="ischar.html">&lt;&lt; ischar</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isempty.html">isempty &gt;&gt;</a></span>
+<span class = "next"><a href = "isdouble.html">isdouble &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isdouble</h1>
+<h1 class="refname">isclass</h1>
 <hr/>
 
-<h3>Return true if variable var is a double matrix.</h3>
+<h3>Return true if variable var is a class object.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = isdouble(var)</td>
+		<td>res = isclass(var)</td>
 	</tr>
 
 </table>
@@ -81,29 +81,17 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>isdouble</b> returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
+<b>isclass</b> returns a logical 1 if the argument is a class object and a logical 0 otherwise.
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">A = 3;
-res = isdouble(A)
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = single(3);
-res = isdouble(A)
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = single([3, i]);
-res = isdouble(A)
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = [3, i];
-res = isdouble(A)
+res = isclass(A)
+addpath([nelsonroot(), '/modules/overload/examples/complex']);
+c = complexObj(3,4);
+res = isclass(c)
 </code>
 </pre>
 
@@ -111,7 +99,7 @@ res = isdouble(A)
 <hr/>
 
 <p>
-<a href = "isa.html" class = "link">isa</a>, <a href = "single.html" class = "link">single</a>, <a href = "double.html" class = "link">double</a>, <a href = "isfloat.html" class = "link">isfloat</a>.</p>
+<a href = "class.html" class = "link">class</a>, <a href = "isstruct.html" class = "link">isstruct</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -137,7 +125,7 @@ res = isdouble(A)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isclass.html">&lt;&lt; isclass</a></span>
+<span class="top"><a href="ischar.html">&lt;&lt; ischar</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -145,7 +133,7 @@ res = isdouble(A)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isempty.html">isempty &gt;&gt;</a></span>
+<span class = "next"><a href = "isdouble.html">isdouble &gt;&gt;</a></span>
 </td>
 
 </tr></table>
