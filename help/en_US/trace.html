@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>tic</title>
+	<title>trace</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="sleep.html">&lt;&lt; sleep</a></span>
+<span class="top"><a href="schur.html">&lt;&lt; schur</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_time.html">time functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "toc.html">toc &gt;&gt;</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">tic</h1>
+<h1 class="refname">trace</h1>
 <hr/>
 
-<h3>Starts a stopwatch timer.</h3>
+<h3>Matrix trace.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,22 +46,29 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tic()</td>
-	</tr>
-
-	<tr>
-		<td>t = tic()</td>
+		<td>res = trace(x)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">x</span></dt>
+<dd>
+<p class="para">a numeric value: scalar or matrix (double or single)</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">t</span></dt>
+<dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a unsigned integer 64 bit: value of internal timer of the tic function.</p>
+<p class="para">a numeric value: a scalar</p>
 </dd>
 
 </dl>
@@ -75,21 +78,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
-  <p>Consecutive <b>tic</b> commands overwrite the tic timer.</p>
+  <p><b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">tic()
-sleep(10)
-toc()
-
-tic()
-sleep(10)
-t = toc()
+<code class = "nelson">X = [1 0; 0 3];
+Y = trace(X)
 </code>
 </pre>
 
@@ -97,7 +94,7 @@ t = toc()
 <hr/>
 
 <p>
-<a href = "toc.html" class = "link">toc</a>, <a href = "sleep.html" class = "link">sleep</a>.</p>
+<a href = "eig.html" class = "link">eig</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,15 +120,11 @@ t = toc()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="sleep.html">&lt;&lt; sleep</a></span>
+<span class="top"><a href="schur.html">&lt;&lt; schur</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_time.html">time functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "toc.html">toc &gt;&gt;</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 </tr></table>

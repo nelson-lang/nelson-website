@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fclose</title>
+	<title>schur</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dlmwrite.html">&lt;&lt; dlmwrite</a></span>
+<span class="top"><a href="inv.html">&lt;&lt; inv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fgetl.html">fgetl &gt;&gt;</a></span>
+<span class = "next"><a href = "trace.html">trace &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fclose</h1>
+<h1 class="refname">schur</h1>
 <hr/>
 
-<h3>Close an opened file.</h3>
+<h3>Schur decomposition.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +50,27 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>fclose(fid)</td>
+		<td>T = schur(M)</td>
 	</tr>
 
 	<tr>
-		<td>fclose('all')</td>
+		<td>T = schur(M, 'real')</td>
 	</tr>
 
 	<tr>
-		<td>status = fclose(fid)</td>
+		<td>T = schur(M, 'complex')</td>
 	</tr>
 
 	<tr>
-		<td>status = fclose('all')</td>
+		<td>[U, T] = schur(M)</td>
+	</tr>
+
+	<tr>
+		<td>[U, T] = schur(M, 'complex')</td>
+	</tr>
+
+	<tr>
+		<td>[U, T] = schur(M, 'real')</td>
 	</tr>
 
 </table>
@@ -71,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">fid</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a file descriptor</p>
+<p class="para">a numeric value: scalar or square matrix (double or single)</p>
 </dd>
 
 </dl>
@@ -82,9 +90,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">status</span></dt>
+<dt><span class="term">U</span></dt>
 <dd>
-<p class="para">an integer value: 0 if file is closed or -1 if not.</p>
+<p class="para">unitary matrix</p>
+</dd>
+
+<dt><span class="term">T</span></dt>
+<dd>
+<p class="para">upper triangular matrix</p>
 </dd>
 
 </dl>
@@ -94,17 +107,20 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>fclose</b> must be used to close a file opened by <b>fopen</b>.</p>
-  <p><b>fclose('all')</b> closes all opened file with <b>fopen</b>.</p>
+  <p><b>schur(M)</b> computes the schur decomposition.</p>
+  <p>With the flag 'complex', the complex schur form is upper triangular with the eigenvalues of M on the diagonal.</p>
+  <p>If A is real, the real schur form is returned.</p>
+  <p>With the flag 'real', the real schur form has the real eigenvalues on the diagonal and the complex eigenvalues in 2-by-2 blocks on the diagonal.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fd = fopen([tempdir(), filesep(), 'fclose_tst'],'wt');
-status = fclose(fd)
-status = fclose(fd)
+<code class = "nelson">X = [1 2; 3 4];
+[U, T] = schur(X)
+[U, T] = schur(X * i, 'complex')
+[U, T] = schur(X * i, 'real')
 </code>
 </pre>
 
@@ -112,7 +128,7 @@ status = fclose(fd)
 <hr/>
 
 <p>
-<a href = "fopen.html" class = "link">fopen</a>, <a href = "fread.html" class = "link">fread</a>.</p>
+<a href = "eig.html" class = "link">eig</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,15 +154,15 @@ status = fclose(fd)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dlmwrite.html">&lt;&lt; dlmwrite</a></span>
+<span class="top"><a href="inv.html">&lt;&lt; inv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fgetl.html">fgetl &gt;&gt;</a></span>
+<span class = "next"><a href = "trace.html">trace &gt;&gt;</a></span>
 </td>
 
 </tr></table>
