@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>trace</title>
+	<title>rcond</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="svd.html">&lt;&lt; svd</a></span>
+<span class="top"><a href="issymmetric.html">&lt;&lt; issymmetric</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">trace</h1>
+<h1 class="refname">rcond</h1>
 <hr/>
 
-<h3>Matrix trace.</h3>
+<h3>Inverse condition number.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = trace(x)</td>
+		<td>res = rcond(x)</td>
 	</tr>
 
 </table>
@@ -57,7 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">x</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or matrix (double or single)</p>
+<p class="para">a numeric value: scalar or square matrix (double or single)</p>
 </dd>
 
 </dl>
@@ -68,7 +72,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a numeric value: a scalar</p>
+<p class="para">a numeric value: a scalar.</p>
 </dd>
 
 </dl>
@@ -78,15 +82,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
+  <p><b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">X = [1 0; 0 3];
-Y = trace(X)
+<code class = "nelson">X = rand(10, 10);
+r = rcond(X);
 </code>
 </pre>
 
@@ -94,7 +98,7 @@ Y = trace(X)
 <hr/>
 
 <p>
-<a href = "eig.html" class = "link">eig</a>.</p>
+<a href = "inv.html" class = "link">inv</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,11 +124,15 @@ Y = trace(X)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="svd.html">&lt;&lt; svd</a></span>
+<span class="top"><a href="issymmetric.html">&lt;&lt; issymmetric</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
 </td>
 
 </tr></table>

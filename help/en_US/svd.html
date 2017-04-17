@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>inv</title>
+	<title>svd</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="expm.html">&lt;&lt; expm</a></span>
+<span class="top"><a href="schur.html">&lt;&lt; schur</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "issymmetric.html">issymmetric &gt;&gt;</a></span>
+<span class = "next"><a href = "trace.html">trace &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">inv</h1>
+<h1 class="refname">svd</h1>
 <hr/>
 
-<h3>Matrix inverse.</h3>
+<h3>Singular Value Decomposition.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = inv(x)</td>
+		<td>s = svd(M)</td>
+	</tr>
+
+	<tr>
+		<td>[U, S, V] = svd(M)</td>
+	</tr>
+
+	<tr>
+		<td>[U, S, V] = svd(M, 0)</td>
+	</tr>
+
+	<tr>
+		<td>[U, S, V] = svd(M, 'econ')</td>
 	</tr>
 
 </table>
@@ -59,9 +71,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">x</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or square matrix (double or single)</p>
+<p class="para">a numeric value: matrix (double or single)</p>
 </dd>
 
 </dl>
@@ -70,9 +82,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">s</span></dt>
 <dd>
-<p class="para">a numeric value: a square matrix</p>
+<p class="para">real vector (singular values) by descending order.</p>
+</dd>
+
+<dt><span class="term">U</span></dt>
+<dd>
+<p class="para">left singular values.</p>
+</dd>
+
+<dt><span class="term">S</span></dt>
+<dd>
+<p class="para">real diagonal matrix (singular values)</p>
+</dd>
+
+<dt><span class="term">V</span></dt>
+<dd>
+<p class="para">right singular values.</p>
 </dd>
 
 </dl>
@@ -82,16 +109,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>inv(x)</b> computes the matrix inverse of x.</p>
+  <p><b>[U, S, V] = svd(M)</b> produces a diagonal matrix S of the same dimension as M and with nonnegative diagonal elements in decreasing order, and unitary matrices U and V so that X = U*S*V'.</p>
+  <p><b>[U, S, V] = svd(M, 0)</b> produces the 'economy size' decomposition. If M is m-by-n with m &gt; n then only the first n columns of U are computed and S is n-by-n.</p>
+  <p><b>[U, S, V] = svd(M,0)</b> produces a different economy-size decomposition of m-by-n matrix M. If m &gt; n  then svd(M, 0) is equivalent to svd(M,'econ'). If m  &lt;= n then svd(M, 0) is equivalent to svd(M).</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">X = rand(10, 10);
-Y = inv(X);
-Y * X
+<code class = "nelson">X = eye(3, 3);
+s = svd(X)
+[U, S, V] = svd(X)
 </code>
 </pre>
 
@@ -99,7 +128,7 @@ Y * X
 <hr/>
 
 <p>
-<a href = "expm.html" class = "link">expm</a>.</p>
+<a href = "eig.html" class = "link">eig</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -125,7 +154,7 @@ Y * X
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="expm.html">&lt;&lt; expm</a></span>
+<span class="top"><a href="schur.html">&lt;&lt; schur</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -133,7 +162,7 @@ Y * X
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "issymmetric.html">issymmetric &gt;&gt;</a></span>
+<span class = "next"><a href = "trace.html">trace &gt;&gt;</a></span>
 </td>
 
 </tr></table>

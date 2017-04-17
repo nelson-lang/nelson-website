@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>trace</title>
+	<title>ndims</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="svd.html">&lt;&lt; svd</a></span>
+<span class="top"><a href="mtimes.html">&lt;&lt; mtimes</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "ne.html">ne &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">trace</h1>
+<h1 class="refname">ndims</h1>
 <hr/>
 
-<h3>Matrix trace.</h3>
+<h3>Number of dimensions of an array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = trace(x)</td>
+		<td>n = ndims(M)</td>
 	</tr>
 
 </table>
@@ -55,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">x</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or matrix (double or single)</p>
+<p class="para">a variable</p>
 </dd>
 
 </dl>
@@ -66,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">n</span></dt>
 <dd>
-<p class="para">a numeric value: a scalar</p>
+<p class="para">a integer value: Number of dimensions of M.</p>
 </dd>
 
 </dl>
@@ -78,15 +82,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
+  <p><b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.</p>
+  <p><b>M</b> is greater than or equal to 2.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">X = [1 0; 0 3];
-Y = trace(X)
+<code class = "nelson">ndims(ones(3, 0))
+ndims(3)
+ndims([1 2 3 4 5])
+ndims(ones(3, 4, 5))
 </code>
 </pre>
 
@@ -94,7 +101,7 @@ Y = trace(X)
 <hr/>
 
 <p>
-<a href = "eig.html" class = "link">eig</a>.</p>
+<a href = "size.html" class = "link">size</a>, <a href = "length.html" class = "link">length</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,11 +127,15 @@ Y = trace(X)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="svd.html">&lt;&lt; svd</a></span>
+<span class="top"><a href="mtimes.html">&lt;&lt; mtimes</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "ne.html">ne &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>trace</title>
+	<title>issymmetric</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="svd.html">&lt;&lt; svd</a></span>
+<span class="top"><a href="inv.html">&lt;&lt; inv</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "rcond.html">rcond &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">trace</h1>
+<h1 class="refname">issymmetric</h1>
 <hr/>
 
-<h3>Matrix trace.</h3>
+<h3>Computes if matrix is symmetric.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,7 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = trace(x)</td>
+		<td>res = issymmetric(x)</td>
+	</tr>
+
+	<tr>
+		<td>res = issymmetric(x, 'skew')</td>
+	</tr>
+
+	<tr>
+		<td>res = issymmetric(x, 'nonskew')</td>
+	</tr>
+
+	<tr>
+		<td>res = issymmetric(x, tol)</td>
 	</tr>
 
 </table>
@@ -57,7 +73,12 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">x</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or matrix (double or single)</p>
+<p class="para">a numeric value: scalar or matrix (double or single, integers).</p>
+</dd>
+
+<dt><span class="term">tol</span></dt>
+<dd>
+<p class="para">a numeric value: finite and >= 0.</p>
 </dd>
 
 </dl>
@@ -68,7 +89,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a numeric value: a scalar</p>
+<p class="para">a logical.</p>
 </dd>
 
 </dl>
@@ -78,23 +99,22 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
+  <p><b>issymmetric(x)</b> computes if matrix is symmetric.</p>
+  <p>With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'</p>
+  <p>With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">X = [1 0; 0 3];
-Y = trace(X)
+<code class = "nelson">issymmetric([1, 2; 2, 1])
+issymmetric([1, 2.1; 2, 1.1], 0.2)
+A = [0 1 -2 5; -1 0 3 -4; 2 -3 0 6; -5 4 -6 0];
+issymmetric(A, 'skew')
+issymmetric(A, 'nonskew')
 </code>
 </pre>
-
-<h3>See also</h3>
-<hr/>
-
-<p>
-<a href = "eig.html" class = "link">eig</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,11 +140,15 @@ Y = trace(X)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="svd.html">&lt;&lt; svd</a></span>
+<span class="top"><a href="inv.html">&lt;&lt; inv</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "rcond.html">rcond &gt;&gt;</a></span>
 </td>
 
 </tr></table>
