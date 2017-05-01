@@ -142,7 +142,8 @@ Example how to modify title of the button "Button":
 Get children of the figure created by 'hello.qml'
 
 ```
---> children = get(a, 'children')
+// or children = get(a, 'children')
+--> children = a.children
 children =
 
 [QML] - size: 1x2
@@ -284,7 +285,8 @@ button_child =
 To get the text of the button:
 
 ```
---> text_button = get(button_child, 'text')
+// text_button = get(button_child, 'text')
+--> text_button = button_child.text
 text_button =
 
 Button
@@ -292,7 +294,8 @@ Button
 
 To set the text of the button:
 ```
---> set(button_child, 'text', 'new button text'); button_child
+// or set(button_child, 'text', 'new button text'); button_child
+--> button_child.text = 'new button text'; button_child
 
 [QML] - size: 1x1
 
@@ -363,3 +366,4 @@ Nelson interaction with QML and QCharts.js:
 ![Nelson interaction with QML and QCharts.js](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml-nelson-QCharts.png "Nelson interaction with QML and QCharts.js")
 
 
+[Previous page](../TYPES.md)
