@@ -10,5 +10,7 @@
 
 ### [data structure](types/DATA_STRUCTURE.md)
 
+### [handle object](types/HANDLE.md)
+
 
 [Previous page](FEATURES.md)
