@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,9 +30,9 @@
   <td id="projectlogo"><img alt="Logo" src="banner_nelson_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Nelson
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.1.6</span>
    </div>
-   <div id="projectbrief">Nelson is a numerical interpreter using modern C/C++ libraries (Boost, Eigen, ...) and others state of art numerical libraries.</div>
+   <div id="projectbrief">Nelson numerical interpreter</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_m.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,57 +86,60 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>MacroFunctionDef()
-: <a class="el" href="d1/d6f/class_nelson_1_1_macro_function_def.html#a036590b0f18cb584b343301d9b0a2ee8">Nelson::MacroFunctionDef</a>
+: <a class="el" href="class_nelson_1_1_macro_function_def.html#a036590b0f18cb584b343301d9b0a2ee8">Nelson::MacroFunctionDef</a>
 </li>
 <li>makeScalar()
-: <a class="el" href="d7/d09/class_nelson_1_1_dimensions.html#aa31960080d42d75124899ff10e90fafb">Nelson::Dimensions</a>
+: <a class="el" href="class_nelson_1_1_dimensions.html#aa31960080d42d75124899ff10e90fafb">Nelson::Dimensions</a>
 </li>
 <li>mapPoint()
-: <a class="el" href="d7/d09/class_nelson_1_1_dimensions.html#afe68fa1cffa634c140d313d919b0efa4">Nelson::Dimensions</a>
+: <a class="el" href="class_nelson_1_1_dimensions.html#afe68fa1cffa634c140d313d919b0efa4">Nelson::Dimensions</a>
 </li>
 <li>match()
-: <a class="el" href="dc/d92/class_nelson_1_1_a_s_t.html#a3dec7005be45dfb69fdc3d42b9211ebd">Nelson::AST</a>
+: <a class="el" href="class_nelson_1_1_a_s_t.html#a3dec7005be45dfb69fdc3d42b9211ebd">Nelson::AST</a>
 </li>
 <li>matches()
-: <a class="el" href="db/db9/class_nelson_1_1_exception.html#a47d629270838562666cfda42c91adf46">Nelson::Exception</a>
+: <a class="el" href="class_nelson_1_1_exception.html#a47d629270838562666cfda42c91adf46">Nelson::Exception</a>
 </li>
 <li>matrixDefinition()
-: <a class="el" href="d6/de2/class_nelson_1_1_evaluator.html#a47754c1a02877f50d6d8465a1c4f95f0">Nelson::Evaluator</a>
+: <a class="el" href="class_nelson_1_1_evaluator.html#a47754c1a02877f50d6d8465a1c4f95f0">Nelson::Evaluator</a>
 </li>
 <li>moveBackHistory()
-: <a class="el" href="d9/d0d/class_line_manager.html#add071fba802e01df2d101bb16ec44015">LineManager</a>
+: <a class="el" href="class_line_manager.html#add071fba802e01df2d101bb16ec44015">LineManager</a>
 </li>
 <li>moveBackSingleChar()
-: <a class="el" href="d9/d0d/class_line_manager.html#aed1b73c77a6c240e479708fbe1f0e7b1">LineManager</a>
+: <a class="el" href="class_line_manager.html#aed1b73c77a6c240e479708fbe1f0e7b1">LineManager</a>
 </li>
 <li>moveBackSingleWord()
-: <a class="el" href="d9/d0d/class_line_manager.html#a7d1237b006c555de5c299294b0ca25cc">LineManager</a>
+: <a class="el" href="class_line_manager.html#a7d1237b006c555de5c299294b0ca25cc">LineManager</a>
 </li>
 <li>moveBeginningLine()
-: <a class="el" href="d9/d0d/class_line_manager.html#acb02009156abf16abf39840945ec8dc8">LineManager</a>
+: <a class="el" href="class_line_manager.html#acb02009156abf16abf39840945ec8dc8">LineManager</a>
 </li>
 <li>moveEndLine()
-: <a class="el" href="d9/d0d/class_line_manager.html#aa3e57b2aa8d11a0da5766168889c96a1">LineManager</a>
+: <a class="el" href="class_line_manager.html#aa3e57b2aa8d11a0da5766168889c96a1">LineManager</a>
 </li>
 <li>moveForwardHistory()
-: <a class="el" href="d9/d0d/class_line_manager.html#a11a54bbd22c734f23085df0b587c095f">LineManager</a>
+: <a class="el" href="class_line_manager.html#a11a54bbd22c734f23085df0b587c095f">LineManager</a>
 </li>
 <li>moveForwardSingleChar()
-: <a class="el" href="d9/d0d/class_line_manager.html#af1469214fecbbe1fe33dbf8301b15cad">LineManager</a>
+: <a class="el" href="class_line_manager.html#af1469214fecbbe1fe33dbf8301b15cad">LineManager</a>
 </li>
 <li>moveForwardSingleWord()
-: <a class="el" href="d9/d0d/class_line_manager.html#a8b37af03f5526f1bda736f28566f9984">LineManager</a>
+: <a class="el" href="class_line_manager.html#a8b37af03f5526f1bda736f28566f9984">LineManager</a>
 </li>
 <li>multiFunctionCall()
-: <a class="el" href="d6/de2/class_nelson_1_1_evaluator.html#a90d227c0237c6872fcc1aa3e0842a9b4">Nelson::Evaluator</a>
+: <a class="el" href="class_nelson_1_1_evaluator.html#a90d227c0237c6872fcc1aa3e0842a9b4">Nelson::Evaluator</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

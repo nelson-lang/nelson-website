@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,9 +30,9 @@
   <td id="projectlogo"><img alt="Logo" src="banner_nelson_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Nelson
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.1.6</span>
    </div>
-   <div id="projectbrief">Nelson is a numerical interpreter using modern C/C++ libraries (Boost, Eigen, ...) and others state of art numerical libraries.</div>
+   <div id="projectbrief">Nelson numerical interpreter</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_p.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,43 +86,46 @@ $(function() {
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>peerCount()
-: <a class="el" href="dc/d92/class_nelson_1_1_a_s_t.html#af249353d57929f556ce94d44836ba840">Nelson::AST</a>
+: <a class="el" href="class_nelson_1_1_a_s_t.html#af249353d57929f556ce94d44836ba840">Nelson::AST</a>
 </li>
 <li>popID()
-: <a class="el" href="d6/de2/class_nelson_1_1_evaluator.html#ab2b3dd35cd205fa6f4b80882fd937481">Nelson::Evaluator</a>
+: <a class="el" href="class_nelson_1_1_evaluator.html#ab2b3dd35cd205fa6f4b80882fd937481">Nelson::Evaluator</a>
 </li>
 <li>popScope()
-: <a class="el" href="db/d1f/class_nelson_1_1_context.html#a6f19e5d0f80f630f6e873d37706e13b0">Nelson::Context</a>
+: <a class="el" href="class_nelson_1_1_context.html#a6f19e5d0f80f630f6e873d37706e13b0">Nelson::Context</a>
 </li>
 <li>printData()
-: <a class="el" href="d6/d48/class_nelson_1_1_scope.html#a6240a5601c0b5b6fc5c1f9fd4f805519">Nelson::Scope</a>
+: <a class="el" href="class_nelson_1_1_scope.html#a6240a5601c0b5b6fc5c1f9fd4f805519">Nelson::Scope</a>
 </li>
 <li>printMe()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#ab081a03fac80ce6095e36aa38263bc56">Nelson::ArrayOf</a>
-, <a class="el" href="df/db1/class_nelson_1_1_built_in_function_def.html#aefded9091ed7e22138c14c9b1315ca2b">Nelson::BuiltInFunctionDef</a>
-, <a class="el" href="db/d1f/class_nelson_1_1_context.html#a4dee5610c357b1c340f0b0b65e725133">Nelson::Context</a>
-, <a class="el" href="d7/d09/class_nelson_1_1_dimensions.html#af310a7c3db47f48f94e3367abe0b7ab1">Nelson::Dimensions</a>
-, <a class="el" href="db/db9/class_nelson_1_1_exception.html#a7a85108a79a7a1856ef4bb6972d7bd13">Nelson::Exception</a>
-, <a class="el" href="d1/d20/class_nelson_1_1_function_def.html#a0b1b699054bc949520ef6764c1793bfd">Nelson::FunctionDef</a>
-, <a class="el" href="d1/d6f/class_nelson_1_1_macro_function_def.html#a55eb77665adbc3ca5b068e075d9639ff">Nelson::MacroFunctionDef</a>
-, <a class="el" href="d6/d48/class_nelson_1_1_scope.html#a9208511e74aabf07bd921c92a481cb29">Nelson::Scope</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#ab081a03fac80ce6095e36aa38263bc56">Nelson::ArrayOf</a>
+, <a class="el" href="class_nelson_1_1_built_in_function_def.html#aefded9091ed7e22138c14c9b1315ca2b">Nelson::BuiltInFunctionDef</a>
+, <a class="el" href="class_nelson_1_1_context.html#a4dee5610c357b1c340f0b0b65e725133">Nelson::Context</a>
+, <a class="el" href="class_nelson_1_1_dimensions.html#af310a7c3db47f48f94e3367abe0b7ab1">Nelson::Dimensions</a>
+, <a class="el" href="class_nelson_1_1_exception.html#a7a85108a79a7a1856ef4bb6972d7bd13">Nelson::Exception</a>
+, <a class="el" href="class_nelson_1_1_function_def.html#a0b1b699054bc949520ef6764c1793bfd">Nelson::FunctionDef</a>
+, <a class="el" href="class_nelson_1_1_macro_function_def.html#a55eb77665adbc3ca5b068e075d9639ff">Nelson::MacroFunctionDef</a>
+, <a class="el" href="class_nelson_1_1_scope.html#a9208511e74aabf07bd921c92a481cb29">Nelson::Scope</a>
 </li>
 <li>promoteType()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#a53d6932c50267e037e996791fc952441">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#a53d6932c50267e037e996791fc952441">Nelson::ArrayOf</a>
 </li>
 <li>pushID()
-: <a class="el" href="d6/de2/class_nelson_1_1_evaluator.html#aee2051332070cc09eff626ef99c498bf">Nelson::Evaluator</a>
+: <a class="el" href="class_nelson_1_1_evaluator.html#aee2051332070cc09eff626ef99c498bf">Nelson::Evaluator</a>
 </li>
 <li>pushScope()
-: <a class="el" href="db/d1f/class_nelson_1_1_context.html#a0a6eee0a0cb1d1f4163c67af02b4122d">Nelson::Context</a>
+: <a class="el" href="class_nelson_1_1_context.html#a0a6eee0a0cb1d1f4163c67af02b4122d">Nelson::Context</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

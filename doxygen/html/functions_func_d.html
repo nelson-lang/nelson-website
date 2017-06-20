@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -23,9 +30,9 @@
   <td id="projectlogo"><img alt="Logo" src="banner_nelson_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Nelson
-   &#160;<span id="projectnumber">0.1.2</span>
+   &#160;<span id="projectnumber">0.1.6</span>
    </div>
-   <div id="projectbrief">Nelson is a numerical interpreter using modern C/C++ libraries (Boost, Eigen, ...) and others state of art numerical libraries.</div>
+   <div id="projectbrief">Nelson numerical interpreter</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_d.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,61 +86,64 @@ $(function() {
 
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>dcomplexConstructor()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#a410b980a458c67f56f096c59c44abf0f">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#a410b980a458c67f56f096c59c44abf0f">Nelson::ArrayOf</a>
 </li>
 <li>deleteCurrentChar()
-: <a class="el" href="d9/d0d/class_line_manager.html#a0440c319477bf64d167a0c27616c061e">LineManager</a>
+: <a class="el" href="class_line_manager.html#a0440c319477bf64d167a0c27616c061e">LineManager</a>
 </li>
 <li>deleteFunction()
-: <a class="el" href="d6/d48/class_nelson_1_1_scope.html#a1f6752ffb0a863789c2715ea7fbce10d">Nelson::Scope</a>
+: <a class="el" href="class_nelson_1_1_scope.html#a1f6752ffb0a863789c2715ea7fbce10d">Nelson::Scope</a>
 </li>
 <li>deleteGlobalVariablePointer()
-: <a class="el" href="d6/d48/class_nelson_1_1_scope.html#ae7842c81814a60c2d86015062f2a1254">Nelson::Scope</a>
+: <a class="el" href="class_nelson_1_1_scope.html#ae7842c81814a60c2d86015062f2a1254">Nelson::Scope</a>
 </li>
 <li>deleteNDimSubset()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#ab26b16a2e6646d2c7c5420b53309901b">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#ab26b16a2e6646d2c7c5420b53309901b">Nelson::ArrayOf</a>
 </li>
 <li>deletePersistentVariablePointer()
-: <a class="el" href="d6/d48/class_nelson_1_1_scope.html#ad5ae15feca0bb0fb5648dd771d1b212e">Nelson::Scope</a>
+: <a class="el" href="class_nelson_1_1_scope.html#ad5ae15feca0bb0fb5648dd771d1b212e">Nelson::Scope</a>
 </li>
 <li>deletePreviousChar()
-: <a class="el" href="d9/d0d/class_line_manager.html#aed2330eeaf8dc85eaf7b7280c1c5dbcb">LineManager</a>
+: <a class="el" href="class_line_manager.html#aed2330eeaf8dc85eaf7b7280c1c5dbcb">LineManager</a>
 </li>
 <li>deleteVariable()
-: <a class="el" href="db/d1f/class_nelson_1_1_context.html#a04fd194ff48f1f7e02e189affc647e15">Nelson::Context</a>
-, <a class="el" href="d6/d48/class_nelson_1_1_scope.html#aebedc863c322105fad96b56fc04394b7">Nelson::Scope</a>
+: <a class="el" href="class_nelson_1_1_context.html#a04fd194ff48f1f7e02e189affc647e15">Nelson::Context</a>
+, <a class="el" href="class_nelson_1_1_scope.html#aebedc863c322105fad96b56fc04394b7">Nelson::Scope</a>
 </li>
 <li>deleteVectorSubset()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#a7d8a5194e72bc298d250c808b5979dde">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#a7d8a5194e72bc298d250c808b5979dde">Nelson::ArrayOf</a>
 </li>
 <li>diagonalConstructor()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#af39ad2a17e55decf45ffef229178086f">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#af39ad2a17e55decf45ffef229178086f">Nelson::ArrayOf</a>
 </li>
 <li>Dimensions()
-: <a class="el" href="d7/d09/class_nelson_1_1_dimensions.html#ac133cf87ec6a83671c1ff96bb0592613">Nelson::Dimensions</a>
+: <a class="el" href="class_nelson_1_1_dimensions.html#ac133cf87ec6a83671c1ff96bb0592613">Nelson::Dimensions</a>
 </li>
 <li>disableOverload()
-: <a class="el" href="d6/de2/class_nelson_1_1_evaluator.html#a2aad12426134bea3d1a49eac0bcf97e6">Nelson::Evaluator</a>
+: <a class="el" href="class_nelson_1_1_evaluator.html#a2aad12426134bea3d1a49eac0bcf97e6">Nelson::Evaluator</a>
 </li>
 <li>displayPrompt()
-: <a class="el" href="d9/d0d/class_line_manager.html#ae50a991ad819c5703669f08f7928d876">LineManager</a>
+: <a class="el" href="class_line_manager.html#ae50a991ad819c5703669f08f7928d876">LineManager</a>
 </li>
 <li>doubleColon()
-: <a class="el" href="d6/de2/class_nelson_1_1_evaluator.html#a5278eb907d7f759cbe37951f82401200">Nelson::Evaluator</a>
+: <a class="el" href="class_nelson_1_1_evaluator.html#a5278eb907d7f759cbe37951f82401200">Nelson::Evaluator</a>
 </li>
 <li>doubleConstructor()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#aedd1405b98c989e7f724693826998154">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#aedd1405b98c989e7f724693826998154">Nelson::ArrayOf</a>
 </li>
 <li>doubleVectorConstructor()
-: <a class="el" href="d2/d46/class_nelson_1_1_array_of.html#aac5393781f20a9c3c4d0e4903d910e64">Nelson::ArrayOf</a>
+: <a class="el" href="class_nelson_1_1_array_of.html#aac5393781f20a9c3c4d0e4903d910e64">Nelson::ArrayOf</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,0 +1,26 @@
+var class_nelson_1_1_xml_doc_document =
+[
+    [ "XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#adf3f848f71587e09f5240d3c35c882b8", null ],
+    [ "XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#a5776a4ee63513f9ac11fa98f607b1084", null ],
+    [ "~XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#a71161285abbdb5e7569b016f8e1fc2ac", null ],
+    [ "getChapter", "class_nelson_1_1_xml_doc_document.html#a341cef3f9fe625759a7e18047e059c0f", null ],
+    [ "getChapterDescription", "class_nelson_1_1_xml_doc_document.html#a5d03f401168f9f89f08c6accbb63a7f9", null ],
+    [ "getDestinationFile", "class_nelson_1_1_xml_doc_document.html#add4205f328044cc2a4ce20133dcda75e", null ],
+    [ "getError", "class_nelson_1_1_xml_doc_document.html#adac35dbc1fbc44919fc01debb44f7614", null ],
+    [ "getFilename", "class_nelson_1_1_xml_doc_document.html#ac1ceceabf135b283b49fdfca5e9ed97d", null ],
+    [ "getModuleName", "class_nelson_1_1_xml_doc_document.html#af4ab3ef4069f0586e4b10d1422f46be7", null ],
+    [ "getPageDescription", "class_nelson_1_1_xml_doc_document.html#afabf24e5fe3e81637a4584430d336b2f", null ],
+    [ "getPageTitle", "class_nelson_1_1_xml_doc_document.html#ab7b20d49996e865819d90218e748f5d5", null ],
+    [ "getWarning", "class_nelson_1_1_xml_doc_document.html#a31e68b21d5afdce9583423c2743e12a0", null ],
+    [ "getXmlDocGenericItems", "class_nelson_1_1_xml_doc_document.html#ab8577d1414a2d31cf547ef78e0ade9cd", null ],
+    [ "isChapterDocument", "class_nelson_1_1_xml_doc_document.html#a6b72fd74ed5118d182d0fae45c26b336", null ],
+    [ "isKeywordDocument", "class_nelson_1_1_xml_doc_document.html#a840ca2f97210e05f464093ffd73329a8", null ],
+    [ "isTitleDocument", "class_nelson_1_1_xml_doc_document.html#ae3502c305a901ca9d3ed19c6a45bf4fb", null ],
+    [ "needToUpdate", "class_nelson_1_1_xml_doc_document.html#a3c9194ad8001e2f63b1b1c099e2879b7", null ],
+    [ "readFile", "class_nelson_1_1_xml_doc_document.html#a38ecfc8fb62354a65b9c83f002eb8f69", null ],
+    [ "setIndexPageLink", "class_nelson_1_1_xml_doc_document.html#a7d1d53d6615108e2db99b6b07bec00f9", null ],
+    [ "setNextPageLink", "class_nelson_1_1_xml_doc_document.html#ac029be315eea58f53fe71a0efb044793", null ],
+    [ "setPreviousPageLink", "class_nelson_1_1_xml_doc_document.html#ad460b3073cdcc13539594cbadd927b16", null ],
+    [ "writeAsHtml", "class_nelson_1_1_xml_doc_document.html#aab5ca63a0d352b1184f4eec8adbc052b", null ],
+    [ "writeAsHtml", "class_nelson_1_1_xml_doc_document.html#a40a6c3759c066f58be86674bad37fab6", null ]
+];
