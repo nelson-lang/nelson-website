@@ -6,12 +6,14 @@ The QML engine enables nelson programs to display and manipulate graphical conte
 ```
 ![qml_demos screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml_demos.png "qml_demos")
 
-![checkboxes screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/checkboxes_demo.png "checkboxes_demo")
+
+![checkboxes screenshot](https://github.com/Nelson-numerical-software/nelson-website/blob/master/images/demo_checkboxes.png "checkboxes demo")
 
 ### Interacting with Nelson
 
 Interaction with Nelson happens through the following mechanisms:
 * Call Nelson functions from QML,
+
 ```
     Button {
         text: "Button"
@@ -22,7 +24,9 @@ Interaction with Nelson happens through the following mechanisms:
 ```
 
 * Read and set context properties from Nelson and QML.
+
 ```
+
 --> h1 = errordlg()
 h1 =
 
@@ -47,6 +51,7 @@ h1 =
 	width: int 0
 	x: int 0
 	y: int 0
+
 ```
 
 
