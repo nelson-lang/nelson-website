@@ -23,7 +23,8 @@ Nelson has been developped to be an open/modular system where an user can define
 ## [Features](FEATURES.md)
 
 ## [Screenshots](SCREENSHOTS.md)
-    ![Nelson](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/Nelson-windows.png "Nelson")
+
+![Nelson](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/Nelson-windows.png "Nelson")
 
 ## [Sources](https://github.com/Nelson-numerical-software/nelson)
 
