@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>ctranspose</title>
+	<title>prod</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="conj.html">&lt;&lt; conj</a></span>
+<span class="top"><a href="power.html">&lt;&lt; power</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "disp.html">disp &gt;&gt;</a></span>
+<span class = "next"><a href = "rdivide.html">rdivide &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">ctranspose</h1>
+<h1 class="refname">prod</h1>
 <hr/>
 
-<h3>Returns complex conjugate transpose: ' operator.</h3>
+<h3>Product of array elements.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,23 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C= ctranspose(A)</td>
+		<td>R = prod(M)</td>
 	</tr>
 
 	<tr>
-		<td>C = A'</td>
+		<td>R = prod(M, d)</td>
+	</tr>
+
+	<tr>
+		<td>R = prod(M, d)</td>
+	</tr>
+
+	<tr>
+		<td>R = prod(M, d, t)</td>
+	</tr>
+
+	<tr>
+		<td>R = prod(M, d, t, f)</td>
 	</tr>
 
 </table>
@@ -63,9 +75,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">an array of double, single, integers, ...</p>
+</dd>
+
+<dt><span class="term">d</span></dt>
+<dd>
+<p class="para">dimension to operate along: positive integer scalar.</p>
+</dd>
+
+<dt><span class="term">t</span></dt>
+<dd>
+<p class="para">a string: 'default', 'double' or 'native'.</p>
+</dd>
+
+<dt><span class="term">f</span></dt>
+<dd>
+<p class="para">a string: 'includenan' or 'omitnan'.</p>
 </dd>
 
 </dl>
@@ -74,9 +101,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result: complex conjugate transpose of A.</p>
+<p class="para">Product of array elements.</p>
 </dd>
 
 </dl>
@@ -86,25 +113,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
+  <p><b>R = prod(M)</b> returns the product of the array elements of M.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = 3
-B = A'
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = -i
-B = A'
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = sparse(eye(3, 4) * i)
-B = A'
+<code class = "nelson">M = uint8([10:30:70;20:30:80;30:30:90]);
+R = prod(M, 'native')
 </code>
 </pre>
 
@@ -112,7 +129,7 @@ B = A'
 <hr/>
 
 <p>
-<a href = "transpose.html" class = "link">transpose</a>.</p>
+<a href = "ndims.html" class = "link">ndims</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,7 +155,7 @@ B = A'
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="conj.html">&lt;&lt; conj</a></span>
+<span class="top"><a href="power.html">&lt;&lt; power</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -146,7 +163,7 @@ B = A'
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "disp.html">disp &gt;&gt;</a></span>
+<span class = "next"><a href = "rdivide.html">rdivide &gt;&gt;</a></span>
 </td>
 
 </tr></table>

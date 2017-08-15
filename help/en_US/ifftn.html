@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>ctranspose</title>
+	<title>ifftn</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="conj.html">&lt;&lt; conj</a></span>
+<span class="top"><a href="ifft.html">&lt;&lt; ifft</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "disp.html">disp &gt;&gt;</a></span>
+<span class="top"><a href="chapter_fftw.html">FFTW</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">ctranspose</h1>
+<h1 class="refname">ifftn</h1>
 <hr/>
 
-<h3>Returns complex conjugate transpose: ' operator.</h3>
+<h3>Inverse multidimensional fast Fourier transform.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C= ctranspose(A)</td>
+		<td>Y = ifftn(X)</td>
 	</tr>
 
 	<tr>
-		<td>C = A'</td>
+		<td>Y = ifftn(X, sz)</td>
 	</tr>
 
 </table>
@@ -63,9 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">X</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a vector, matrix or N-D array (double, single, integer, logical).</p>
+</dd>
+
+<dt><span class="term">sz</span></dt>
+<dd>
+<p class="para">a multidimensional array.</p>
 </dd>
 
 </dl>
@@ -74,9 +75,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">Y</span></dt>
 <dd>
-<p class="para">result: complex conjugate transpose of A.</p>
+<p class="para">a vector, matrix, N-D array: frequency domain representation.</p>
 </dd>
 
 </dl>
@@ -86,25 +87,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
+  <p><b>Y = ifftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.</p>
+  <p> The size of the result <b>Y</b> is <b>sz</b>.</p>
+  <p><b>Y = ifftn(X)</b> performs the N-dimensional inverse fast Fourier transform.</p>
+  <p>The result <b>Y</b> is the same size as <b>X</b>.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = 3
-B = A'
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = -i
-B = A'
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = sparse(eye(3, 4) * i)
-B = A'
+<code class = "nelson">f = zeros(5, 5);
+f(1:5,4:5) = 1;
+Y = ifftn(fftn(f));
 </code>
 </pre>
 
@@ -112,7 +107,7 @@ B = A'
 <hr/>
 
 <p>
-<a href = "transpose.html" class = "link">transpose</a>.</p>
+<a href = "fftn.html" class = "link">fftn</a>, <a href = "fft.html" class = "link">fft</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,15 +133,11 @@ B = A'
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="conj.html">&lt;&lt; conj</a></span>
+<span class="top"><a href="ifft.html">&lt;&lt; ifft</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "disp.html">disp &gt;&gt;</a></span>
+<span class="top"><a href="chapter_fftw.html">FFTW</a></span>
 </td>
 
 </tr></table>
