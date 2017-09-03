@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>mldivide</title>
+	<title>fftshift</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="minus.html">&lt;&lt; minus</a></span>
+<span class="top"><a href="fftn.html">&lt;&lt; fftn</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_fftw.html">FFTW</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mod.html">mod &gt;&gt;</a></span>
+<span class = "next"><a href = "fftw.html">fftw &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">mldivide</h1>
+<h1 class="refname">fftshift</h1>
 <hr/>
 
-<h3>Matrix left division, \ operator.</h3>
+<h3>Shift the zero-frequency component to the center of the spectrum.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = mldivide(A, B)</td>
+		<td>Y = fftshift(X)</td>
 	</tr>
 
 	<tr>
-		<td>C = A \ B</td>
+		<td>Y = fftshift(X, DIM)</td>
 	</tr>
 
 </table>
@@ -63,14 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">X</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a vector, matrix or N-D array (double, single, integer).</p>
 </dd>
 
-<dt><span class="term">B</span></dt>
+<dt><span class="term">DIM</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">axes over which to shift.</p>
 </dd>
 
 </dl>
@@ -79,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">Y</span></dt>
 <dd>
-<p class="para">result of A \ B</p>
+<p class="para">shifted array.</p>
 </dd>
 
 </dl>
@@ -91,16 +91,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = mldivide(A, B)</b> returns the matrix left division of A and B.</p>
+  <p><b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">B = ones(3, 4)
-A = B *2
-A \ B
+<code class = "nelson">M = [ 0.,  10.,  20.; 30.,  40., -40.; -30., -20., -10.]
+fftshift(M)
+fftshift(M, 1)
 </code>
 </pre>
 
@@ -108,7 +108,7 @@ A \ B
 <hr/>
 
 <p>
-<a href = "ldivide.html" class = "link">ldivide</a>, <a href = "mrdivide.html" class = "link">mrdivide</a>.</p>
+<a href = "ifft.html" class = "link">fft</a>, <a href = "ifftshift.html" class = "link">ifftshift</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -134,15 +134,15 @@ A \ B
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="minus.html">&lt;&lt; minus</a></span>
+<span class="top"><a href="fftn.html">&lt;&lt; fftn</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_fftw.html">FFTW</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mod.html">mod &gt;&gt;</a></span>
+<span class = "next"><a href = "fftw.html">fftw &gt;&gt;</a></span>
 </td>
 
 </tr></table>
