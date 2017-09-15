@@ -39,8 +39,9 @@ Nelson has been developped to be an open/modular system where an user can define
 - Windows 8, 10 32 bit & 64 bit (intel x86)
 - Linux Debian 32 bit & 64 bit (intel x86)
 - Mac Os X Sierra  (intel x86)
+- Linux Ubuntu 14.04 (trusty) (Travis CI)
 - Arch Linux (ARM v7 i.MX 6)
 - Raspberry Pi 3 Model B ( Raspbian)
-- Linux Ubuntu 14.04 (trusty) (Travis CI)
+- Rock64 (Ubuntu aarch64)
 
 ## [Developement](DEVELOPMENT.md)
