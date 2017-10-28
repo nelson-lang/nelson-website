@@ -12,6 +12,9 @@
 ## [Fast Fourier Transformation](FFTW.md)
 
 
+## [Subroutine Library in Systems and Control Theory](SLICOT.md)
+
+
 ## [QML engine](QML_ENGINE.md)
 
 
