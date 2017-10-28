@@ -15,9 +15,6 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
-	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>system</title>
-
 </head>
 <body>
 
@@ -42,6 +39,12 @@ SAME AS NELSON SOFTWARE
 <h1 class="refname">system</h1>
 <hr/>
 
+<h1 class="refname">dos</h1>
+<hr/>
+
+<h1 class="refname">unix</h1>
+<hr/>
+
 <h3>Shell command execution.</h3>
 <hr/>
 
@@ -54,11 +57,35 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
+		<td>status = dos(command)</td>
+	</tr>
+
+	<tr>
+		<td>status = unix(command)</td>
+	</tr>
+
+	<tr>
 		<td>[status, output] = system(command)</td>
 	</tr>
 
 	<tr>
+		<td>[status, output] = dos(command)</td>
+	</tr>
+
+	<tr>
+		<td>[status, output] = unix(command)</td>
+	</tr>
+
+	<tr>
 		<td>[status, output] = system(command, '-echo')</td>
+	</tr>
+
+	<tr>
+		<td>[status, output] = dos(command, '-echo')</td>
+	</tr>
+
+	<tr>
+		<td>[status, output] = unix(command, '-echo')</td>
 	</tr>
 
 </table>

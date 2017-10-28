@@ -49,15 +49,24 @@ SAME AS NELSON SOFTWARE
 		<td>error(msg)</td>
 	</tr>
 
+	<tr>
+		<td>error(error_structure)</td>
+	</tr>
+
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
 <dt><span class="term">msg</span></dt>
 <dd>
 <p class="para">a string.</p>
+</dd>
+
+<dt><span class="term">error_structure</span></dt>
+<dd>
+<p class="para">error message structure.</p>
 </dd>
 
 </dl>
@@ -71,12 +80,21 @@ SAME AS NELSON SOFTWARE
   <p><b>error('')</b> will be ignored and the script will continue to run.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">error('your error message.')
 error('')
+</code>
+</pre>
+<pre>
+<code class = "nelson">1 / [1 2 3]
+a = lasterror()
+lasterror('reset')
+b = lasterror()
+error(a)
+c = lasterror()
 </code>
 </pre>
 
