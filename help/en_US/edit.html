@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>what</title>
+	<title>edit</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="userpath.html">&lt;&lt; userpath</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_functions_manager.html">functions manager</a></span>
+<span class="top"><a href="chapter_text_editor.html">text editor</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "which.html">which &gt;&gt;</a></span>
+<span class = "next"><a href = "editor.html">editor &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">what</h1>
+<h1 class="refname">edit</h1>
 <hr/>
 
-<h3>Get Nelson builtin and macro list.</h3>
+<h3>function editor.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,27 +46,31 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>list_builtin = what()</td>
+		<td>edit()</td>
 	</tr>
 
 	<tr>
-		<td>[list_builtin, list_macro] = what()</td>
+		<td>edit filename</td>
+	</tr>
+
+	<tr>
+		<td>edit function_name</td>
 	</tr>
 
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">list_builtin</span></dt>
+<dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a string: filename to open.</p>
 </dd>
 
-<dt><span class="term">list_macro</span></dt>
+<dt><span class="term">function_name</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a string: function name</p>
 </dd>
 
 </dl>
@@ -80,15 +80,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>what</b> returns the list of all builtin and macro available in current Nelson's session.</p>
+  <p><b>edit</b> opens a new file called untitled.nls in the nelson's editor.</p>
+  <p>If <b>function_name</b> is the name of a defined nelson function <b>edit(function_name)</b> try to open the associated file function_name.nlf.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">l = what()
-[l, m] = what()
+<code class = "nelson">edit('edit')
 </code>
 </pre>
 
@@ -96,7 +96,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "which.html" class = "link">which</a>.</p>
+<a href = "smartindent.html" class = "link">smartindent</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -121,16 +121,12 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="userpath.html">&lt;&lt; userpath</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_functions_manager.html">functions manager</a></span>
+<span class="top"><a href="chapter_text_editor.html">text editor</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "which.html">which &gt;&gt;</a></span>
+<span class = "next"><a href = "editor.html">editor &gt;&gt;</a></span>
 </td>
 
 </tr></table>
