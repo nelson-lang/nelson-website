@@ -21,6 +21,9 @@
 ## [COM interface](COM_INTERFACE.md)
 
 
+## [Code editor](CODE_EDITOR.md)
+
+
 ## [Help engine](HELPENGINE.md)
 
 
