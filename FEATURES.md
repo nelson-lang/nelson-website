@@ -21,6 +21,9 @@
 ## [COM interface](COM_INTERFACE.md)
 
 
+## [Message Passing Interface](MPI.md)
+
+
 ## [Code editor](CODE_EDITOR.md)
 
 
