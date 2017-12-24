@@ -1,5 +1,6 @@
 ## Message Passing Interface
 
+
 Distributed Computing with MPI:
 
 * [mpiexec](/help/en_US/mpiexec.html) : Run an MPI script.
@@ -26,5 +27,11 @@ Distributed Computing with MPI:
 * [MPI_Recv](/help/en_US/MPI_Recv.html) : Blocking receive for a message.
 * [MPI_Reduce](/help/en_US/MPI_Reduce.html) : Reduces values on all processes to a single value.
 * [MPI_Send](/help/en_US/MPI_Send.html) : Performs a blocking send.
+
+
+Example: Sum on distributed computing:
+
+![MPI Sum](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/MPI_parallel_sum.png "MPI")
+![Task manager with process started by Nelson](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/task_manager.png "Task manager with process started by Nelson")
 
 [Previous page](README.md)
