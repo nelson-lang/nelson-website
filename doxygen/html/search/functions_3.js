@@ -20,5 +20,6 @@ var searchData=
   ['dottranspose',['DotTranspose',['../namespace_nelson.html#ab39515eac7c40ff0243738dcbcdc2f75',1,'Nelson']]],
   ['doublecolon',['doubleColon',['../class_nelson_1_1_evaluator.html#a5278eb907d7f759cbe37951f82401200',1,'Nelson::Evaluator']]],
   ['doubleconstructor',['doubleConstructor',['../class_nelson_1_1_array_of.html#aedd1405b98c989e7f724693826998154',1,'Nelson::ArrayOf']]],
+  ['doublematrix2dconstructor',['doubleMatrix2dConstructor',['../class_nelson_1_1_array_of.html#a2723a3f240b75b3fff500cbc9b2bfd11',1,'Nelson::ArrayOf']]],
   ['doublevectorconstructor',['doubleVectorConstructor',['../class_nelson_1_1_array_of.html#aac5393781f20a9c3c4d0e4903d910e64',1,'Nelson::ArrayOf']]]
 ];

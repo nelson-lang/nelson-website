@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['scope',['Scope',['../class_nelson_1_1_scope.html',1,'Nelson::Scope'],['../class_nelson_1_1_scope.html#a27a3aed28c4dda1545793a4f4b040d59',1,'Nelson::Scope::Scope()']]],
+  ['scope',['Scope',['../class_nelson_1_1_scope.html',1,'Nelson']]],
+  ['scope',['Scope',['../class_nelson_1_1_scope.html#a27a3aed28c4dda1545793a4f4b040d59',1,'Nelson::Scope']]],
   ['scopestack',['ScopeStack',['../struct_nelson_1_1_scope_stack.html',1,'Nelson']]],
   ['serialize',['Serialize',['../class_nelson_1_1_serialize.html',1,'Nelson']]],
   ['setarrayofiointerface',['setArrayOfIOInterface',['../class_nelson_1_1_array_of.html#a8a04a24d76151fdb9b41c9b3f9d918d2',1,'Nelson::ArrayOf']]],
@@ -27,6 +28,7 @@ var searchData=
   ['simplify',['simplify',['../class_nelson_1_1_dimensions.html#aa93e1bfee6050b207465b1ef11348122',1,'Nelson::Dimensions']]],
   ['singleconstructor',['singleConstructor',['../class_nelson_1_1_array_of.html#af739af3e2f0acce90a27ed421727e0bd',1,'Nelson::ArrayOf']]],
   ['smartypants_5fdata',['smartypants_data',['../structsmartypants__data.html',1,'']]],
+  ['specblock',['Specblock',['../struct_specblock.html',1,'']]],
   ['specialfunctioncall',['specialFunctionCall',['../class_nelson_1_1_evaluator.html#ac45116fb4af2afab291c46521b0d132a',1,'Nelson::Evaluator']]],
   ['stackentry',['StackEntry',['../class_nelson_1_1_stack_entry.html',1,'Nelson']]],
   ['statement',['statement',['../class_nelson_1_1_evaluator.html#a905ee3f7d9ea351e4b99a99237ec28bb',1,'Nelson::Evaluator']]],
@@ -34,7 +36,8 @@ var searchData=
   ['stream',['Stream',['../class_nelson_1_1_stream.html',1,'Nelson']]],
   ['stringconstructor',['stringConstructor',['../class_nelson_1_1_array_of.html#a2ecb17d6702c4f4ea1204f57ada32dd1',1,'Nelson::ArrayOf::stringConstructor(std::string aval)'],['../class_nelson_1_1_array_of.html#ac2e92cc13e404cfd4c0f7852a6a0fb51',1,'Nelson::ArrayOf::stringConstructor(std::wstring aval)']]],
   ['structconstructor',['structConstructor',['../class_nelson_1_1_array_of.html#aae12d72e2bdd7616798b21bbd1d93c55',1,'Nelson::ArrayOf']]],
-  ['summarizecellentry',['summarizeCellEntry',['../class_nelson_1_1_array_of.html#a2d4d8f700ca4d1f4549ed29a66cec6d4',1,'Nelson::ArrayOf']]],
+  ['summarizecellentry',['summarizeCellEntry',['../class_nelson_1_1_array_of.html#a67247643b1bf80862e55dfc7f5ac4b63',1,'Nelson::ArrayOf']]],
   ['switchstatement',['switchStatement',['../class_nelson_1_1_evaluator.html#ad12d52389627584f78263869ec76205e',1,'Nelson::Evaluator']]],
+  ['syl',['syl',['../structsyl.html',1,'']]],
   ['symboltable',['SymbolTable',['../class_nelson_1_1_symbol_table.html',1,'Nelson']]]
 ];

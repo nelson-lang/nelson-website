@@ -11,6 +11,7 @@ var class_nelson_1_1_path_func_manager =
     [ "find", "class_nelson_1_1_path_func_manager.html#a8015729ac3742f8e52359a14123d34a0", null ],
     [ "find", "class_nelson_1_1_path_func_manager.html#aa9826305ba75a344188a4dd90da56750", null ],
     [ "find", "class_nelson_1_1_path_func_manager.html#a29017871dd93fe48b7257c7cbcb44138", null ],
+    [ "getMacrosList", "class_nelson_1_1_path_func_manager.html#a378c38331054eaf027eb0f6bdfb8797f", null ],
     [ "getPathNameAsString", "class_nelson_1_1_path_func_manager.html#a1d390e53dce19428042443405e247429", null ],
     [ "getPathNameVector", "class_nelson_1_1_path_func_manager.html#ac758889aead1d6a125a418acdab9cec3", null ],
     [ "getUserPath", "class_nelson_1_1_path_func_manager.html#afa9eff1f0d37ae61506b3a412a350e2c", null ],

@@ -14,5 +14,5 @@ var searchData=
   ['exitloop',['exitLoop',['../class_nelson_1_1_context.html#ad81317d1c949a72c33efe73b66b972a7',1,'Nelson::Context::exitLoop()'],['../class_nelson_1_1_scope.html#a251e3b882e1d7bd2bbcb1feee8cffc86',1,'Nelson::Scope::exitLoop()']]],
   ['expandtocover',['expandToCover',['../class_nelson_1_1_dimensions.html#ab4bf1aacfe4c6562774daeb2d0b5934e',1,'Nelson::Dimensions']]],
   ['expression',['expression',['../class_nelson_1_1_evaluator.html#a85a1b68ec34f3e8a7c855e4bb860cbf1',1,'Nelson::Evaluator']]],
-  ['expressionlist',['expressionList',['../class_nelson_1_1_evaluator.html#ab0099c901e72d85b3528ba8f1649e906',1,'Nelson::Evaluator']]]
+  ['expressionlist',['expressionList',['../class_nelson_1_1_evaluator.html#a98f578d8eb4af671c1d54d13d9399abf',1,'Nelson::Evaluator']]]
 ];

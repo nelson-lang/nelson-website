@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['olist',['olist',['../structolist.html',1,'']]],
   ['operator_3d',['operator=',['../class_nelson_1_1_exception.html#a02c2a61805c46b9ef8925a85a5d52695',1,'Nelson::Exception::operator=()'],['../class_nelson_1_1_array_of.html#ad3671a3c4dd0b295c4746f4fc50bbfbd',1,'Nelson::ArrayOf::operator=()']]],
   ['operator_5b_5d',['operator[]',['../class_nelson_1_1_dimensions.html#aded4a9fef96ec3154e1730822d76a6e9',1,'Nelson::Dimensions']]],
   ['option',['Option',['../class_nelson_1_1_option.html',1,'Nelson']]],

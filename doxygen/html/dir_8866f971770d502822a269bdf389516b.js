@@ -1,7 +1,10 @@
 var dir_8866f971770d502822a269bdf389516b =
 [
+    [ "AbsoluteValue.hpp", "_absolute_value_8hpp_source.html", null ],
     [ "And.hpp", "_and_8hpp_source.html", null ],
+    [ "ComplexConjugate.hpp", "_complex_conjugate_8hpp_source.html", null ],
     [ "ComplexConstructor.hpp", "_complex_constructor_8hpp_source.html", null ],
+    [ "ComplexTranspose.hpp", "_complex_transpose_8hpp_source.html", null ],
     [ "ConcatenateNdArray.hpp", "_concatenate_nd_array_8hpp_source.html", null ],
     [ "DotLeftDivide.hpp", "_dot_left_divide_8hpp_source.html", null ],
     [ "DotPower.hpp", "_dot_power_8hpp_source.html", null ],
@@ -18,13 +21,16 @@ var dir_8866f971770d502822a269bdf389516b =
     [ "LeftDivide.hpp", "_left_divide_8hpp_source.html", null ],
     [ "LessEquals.hpp", "_less_equals_8hpp_source.html", null ],
     [ "LessThan.hpp", "_less_than_8hpp_source.html", null ],
+    [ "Modulo.hpp", "_modulo_8hpp_source.html", null ],
     [ "Negate.hpp", "_negate_8hpp_source.html", null ],
     [ "nlsElementary_functions_exports.h", "nls_elementary__functions__exports_8h_source.html", null ],
     [ "Not.hpp", "_not_8hpp_source.html", null ],
     [ "NotEquals.hpp", "_not_equals_8hpp_source.html", null ],
     [ "Or.hpp", "_or_8hpp_source.html", null ],
     [ "Power.hpp", "_power_8hpp_source.html", null ],
+    [ "Prod.hpp", "_prod_8hpp_source.html", null ],
     [ "RealPart.hpp", "_real_part_8hpp_source.html", null ],
+    [ "Remainder.hpp", "_remainder_8hpp_source.html", null ],
     [ "RightDivide.hpp", "_right_divide_8hpp_source.html", null ],
     [ "Transpose.hpp", "_transpose_8hpp_source.html", null ],
     [ "TruncateFunctions.hpp", "_truncate_functions_8hpp_source.html", null ]

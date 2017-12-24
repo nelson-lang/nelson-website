@@ -1,6 +1,8 @@
 var searchData=
 [
   ['name',['name',['../class_nelson_1_1_function_def.html#a8970ca2d72c2641fcb3f8723a5547771',1,'Nelson::FunctionDef']]],
+  ['nameblock',['Nameblock',['../struct_nameblock.html',1,'']]],
+  ['namelist',['Namelist',['../struct_namelist.html',1,'']]],
   ['negate',['Negate',['../namespace_nelson.html#a7d8d6b8a495b0ec6b678487f976425ee',1,'Nelson']]],
   ['nelson',['Nelson',['../namespace_nelson.html',1,'']]],
   ['nelsonobject',['nelsonObject',['../classnelson_object.html',1,'']]],

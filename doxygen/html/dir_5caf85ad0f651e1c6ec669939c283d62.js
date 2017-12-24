@@ -11,6 +11,7 @@ var dir_5caf85ad0f651e1c6ec669939c283d62 =
     [ "sparsedouble_horzcat_sparsedoubleBuiltin.hpp", "sparsedouble__horzcat__sparsedouble_builtin_8hpp_source.html", null ],
     [ "sparsedouble_imagBuiltin.hpp", "sparsedouble__imag_builtin_8hpp_source.html", null ],
     [ "sparsedouble_realBuiltin.hpp", "sparsedouble__real_builtin_8hpp_source.html", null ],
+    [ "sparsedouble_transposeBuiltin.hpp", "sparsedouble__transpose_builtin_8hpp_source.html", null ],
     [ "sparsedouble_uminusBuiltin.hpp", "sparsedouble__uminus_builtin_8hpp_source.html", null ],
     [ "sparsedouble_vertcat_sparsedoubleBuiltin.hpp", "sparsedouble__vertcat__sparsedouble_builtin_8hpp_source.html", null ],
     [ "sparselogical_ctransposeBuiltin.hpp", "sparselogical__ctranspose_builtin_8hpp_source.html", null ],
@@ -18,6 +19,7 @@ var dir_5caf85ad0f651e1c6ec669939c283d62 =
     [ "sparselogical_horzcat_sparselogicalBuiltin.hpp", "sparselogical__horzcat__sparselogical_builtin_8hpp_source.html", null ],
     [ "sparselogical_imagBuiltin.hpp", "sparselogical__imag_builtin_8hpp_source.html", null ],
     [ "sparselogical_realBuiltin.hpp", "sparselogical__real_builtin_8hpp_source.html", null ],
+    [ "sparselogical_transposeBuiltin.hpp", "sparselogical__transpose_builtin_8hpp_source.html", null ],
     [ "sparselogical_uminusBuiltin.hpp", "sparselogical__uminus_builtin_8hpp_source.html", null ],
     [ "sparselogical_vertcat_sparselogicalBuiltin.hpp", "sparselogical__vertcat__sparselogical_builtin_8hpp_source.html", null ]
 ];

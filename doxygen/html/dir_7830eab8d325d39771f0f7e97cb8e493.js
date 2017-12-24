@@ -5,6 +5,7 @@ var dir_7830eab8d325d39771f0f7e97cb8e493 =
     [ "clearBuiltin.hpp", "clear_builtin_8hpp_source.html", null ],
     [ "globalBuiltin.hpp", "global_builtin_8hpp_source.html", null ],
     [ "isglobalBuiltin.hpp", "isglobal_builtin_8hpp_source.html", null ],
+    [ "isvarBuiltin.hpp", "isvar_builtin_8hpp_source.html", null ],
     [ "memoryBuiltin.hpp", "memory_builtin_8hpp_source.html", null ],
     [ "nlsMemory_manager_builtin_exports.h", "nls_memory__manager__builtin__exports_8h_source.html", null ],
     [ "persistentBuiltin.hpp", "persistent_builtin_8hpp_source.html", null ],

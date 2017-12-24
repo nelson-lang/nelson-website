@@ -5,6 +5,7 @@ var dir_f7d93d3460198a758fc1bfde29b6f3fc =
     [ "execstrBuiltin.hpp", "execstr_builtin_8hpp_source.html", null ],
     [ "exitBuiltin.hpp", "exit_builtin_8hpp_source.html", null ],
     [ "formatBuiltin.hpp", "format_builtin_8hpp_source.html", null ],
+    [ "maxNumCompThreadsBuiltin.hpp", "max_num_comp_threads_builtin_8hpp_source.html", null ],
     [ "namelengthmaxBuiltin.hpp", "namelengthmax_builtin_8hpp_source.html", null ],
     [ "narginBuiltin.hpp", "nargin_builtin_8hpp_source.html", null ],
     [ "nargoutBuiltin.hpp", "nargout_builtin_8hpp_source.html", null ],

@@ -1,6 +1,55 @@
+var NAVTREE =
+[
+  [ "Nelson", "index.html", [
+    [ "homepage", "md__d_1__developpements__git_hub_nelson_modules_main_help_en__u_s_html_homepage.html", null ],
+    [ "homepage", "md__d_1__developpements__git_hub_nelson_modules_main_help_fr__f_r_html_homepage.html", null ],
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"_a_s_t_8hpp_source.html",
+"_narg_out_8hpp_source.html",
+"atan_builtin_8hpp_source.html",
+"class_nelson_1_1_array_of.html#aefd6a8ea9e3766963eb85ff42125b1e9",
+"class_nelson_1_1_evaluator.html#af04e37328eeaf984720502343ec8b852",
+"class_nelson_1_1_path_func_manager.html#a83e47d48a0b2a76cecc3f26d784d8aa7",
+"class_nelson_1_1_xml_doc_bibliography_item.html#ac708e71157d902fae34b641e9c8e9c32",
+"class_nelson_1_1_xml_doc_used_function_item.html#acbccd449385390129d97e4185bd51c63",
+"dir_87350b19f7eb4489183678a482bcfb25.html",
+"getmodules_builtin_8hpp_source.html",
+"nls_linear__algebra__exports_8h_source.html",
+"struct_dotlist.html#a5d7d5df46b8068f30fd55c4dd9fa96e6",
+"structcllist.html#a8f52d307fd020ad43a2f2e9a2d665103",
+"structtable__entry.html#a03bc38c87a186f5e258482936d0474fb"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
-var arrowDown = '&#9660;';
-var arrowRight = '&#9658;';
 
 function getData(varName)
 {
@@ -73,17 +122,17 @@ function cachedLink()
 
 function getScript(scriptName,func,show)
 {
-  var head = document.getElementsByTagName("head")[0];
+  var head = document.getElementsByTagName("head")[0]; 
   var script = document.createElement('script');
   script.id = scriptName;
   script.type = 'text/javascript';
-  script.onload = func;
-  script.src = scriptName+'.js';
-  if ($.browser.msie && $.browser.version<=8) {
+  script.onload = func; 
+  script.src = scriptName+'.js'; 
+  if ($.browser.msie && $.browser.version<=8) { 
     // script.onload does not work with older versions of IE
     script.onreadystatechange = function() {
-      if (script.readyState=='complete' || script.readyState=='loaded') {
-        func(); if (show) showRoot();
+      if (script.readyState=='complete' || script.readyState=='loaded') { 
+        func(); if (show) showRoot(); 
       }
     }
   }
@@ -96,17 +145,18 @@ function createIndent(o,domNode,node,level)
   var n = node;
   while (n.parentNode) { level++; n=n.parentNode; }
   if (node.childrenData) {
-    var imgNode = document.createElement("span");
-    imgNode.className = 'arrow';
+    var imgNode = document.createElement("img");
     imgNode.style.paddingLeft=(16*level).toString()+'px';
-    imgNode.innerHTML=arrowRight;
+    imgNode.width  = 16;
+    imgNode.height = 22;
+    imgNode.border = 0;
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
     node.expandToggle.onclick = function() {
       if (node.expanded) {
         $(node.getChildrenUL()).slideUp("fast");
-        node.plus_img.innerHTML=arrowRight;
+        node.plus_img.src = node.relpath+"ftv2pnode.png";
         node.expanded = false;
       } else {
         expandNode(o, node, false, false);
@@ -114,13 +164,15 @@ function createIndent(o,domNode,node,level)
     }
     node.expandToggle.appendChild(imgNode);
     domNode.appendChild(node.expandToggle);
+    imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
     var span = document.createElement("span");
-    span.className = 'arrow';
+    span.style.display = 'inline-block';
     span.style.width   = 16*(level+1)+'px';
+    span.style.height  = '22px';
     span.innerHTML = '&#160;';
     domNode.appendChild(span);
-  }
+  } 
 }
 
 var animationInProgress = false;
@@ -194,7 +246,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
       var aname = '#'+link.split('#')[1];
       var srcPage = stripPath(pathName());
       var targetPage = stripPath(link.split('#')[0]);
-      a.href = srcPage!=targetPage ? url : "javascript:void(0)";
+      a.href = srcPage!=targetPage ? url : "javascript:void(0)"; 
       a.onclick = function(){
         storeLink(link);
         if (!$(a).parent().parent().hasClass('selected'))
@@ -212,7 +264,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
       a.onclick = function() { storeLink(link); }
     }
   } else {
-    if (childrenData != null)
+    if (childrenData != null) 
     {
       a.className = "nolink";
       a.href = "javascript:void(0)";
@@ -261,13 +313,17 @@ function expandNode(o, node, imm, showRoot)
     } else {
       if (!node.childrenVisited) {
         getNode(o, node);
-      } if (imm || ($.browser.msie && $.browser.version>8)) {
+      } if (imm || ($.browser.msie && $.browser.version>8)) { 
         // somehow slideDown jumps to the start of tree for IE9 :-(
         $(node.getChildrenUL()).show();
       } else {
         $(node.getChildrenUL()).slideDown("fast");
       }
-      node.plus_img.innerHTML = arrowDown;
+      if (node.isLast) {
+        node.plus_img.src = node.relpath+"ftv2mlastnode.png";
+      } else {
+        node.plus_img.src = node.relpath+"ftv2mnode.png";
+      }
       node.expanded = true;
     }
   }
@@ -336,7 +392,11 @@ function showNode(o, node, index, hash)
         getNode(o, node);
       }
       $(node.getChildrenUL()).css({'display':'block'});
-      node.plus_img.innerHTML = arrowDown;
+      if (node.isLast) {
+        node.plus_img.src = node.relpath+"ftv2mlastnode.png";
+      } else {
+        node.plus_img.src = node.relpath+"ftv2mnode.png";
+      }
       node.expanded = true;
       var n = node.children[o.breadcrumbs[index]];
       if (index+1<o.breadcrumbs.length) {
@@ -473,9 +533,10 @@ function initNavTree(toroot,relpath)
   o.node.relpath = relpath;
   o.node.expanded = false;
   o.node.isLast = true;
-  o.node.plus_img = document.createElement("span");
-  o.node.plus_img.className = 'arrow';
-  o.node.plus_img.innerHTML = arrowRight;
+  o.node.plus_img = document.createElement("img");
+  o.node.plus_img.src = relpath+"ftv2pnode.png";
+  o.node.plus_img.width = 16;
+  o.node.plus_img.height = 22;
 
   if (localStorageSupported()) {
     var navSync = $('#nav-sync');

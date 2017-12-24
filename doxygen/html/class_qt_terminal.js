@@ -1,6 +1,7 @@
 var class_qt_terminal =
 [
     [ "QtTerminal", "class_qt_terminal.html#abe9e15d7fe327657df30120ca224d63a", null ],
+    [ "~QtTerminal", "class_qt_terminal.html#af874988f4ab5a70ea6431fb7098cc799", null ],
     [ "banner", "class_qt_terminal.html#afd44feec8cb669463d0624be1a7f7c58", null ],
     [ "clc", "class_qt_terminal.html#a206b1dae8962812eea3dcc1c5d15e13d", null ],
     [ "clearLine", "class_qt_terminal.html#a303a6784514830f9bdf977cbceade61f", null ],

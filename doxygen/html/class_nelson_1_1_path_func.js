@@ -6,7 +6,7 @@ var class_nelson_1_1_path_func =
     [ "findFuncName", "class_nelson_1_1_path_func.html#a690bc5d79a74678f8eb0d8269950aeb1", null ],
     [ "findFuncName", "class_nelson_1_1_path_func.html#a12d6f5f3e890fd21f8a1f20b76d7d4ad", null ],
     [ "getFunctionsFilename", "class_nelson_1_1_path_func.html#a2407909bc40bf4bb12a4e71aec3263c1", null ],
-    [ "getFunctionsName", "class_nelson_1_1_path_func.html#a1d857ca782d14dc7fceca0f50c3c0cc5", null ],
+    [ "getFunctionsName", "class_nelson_1_1_path_func.html#a2a534da6b5a9561e173107685a34cbc4", null ],
     [ "getPath", "class_nelson_1_1_path_func.html#a227befc2d8c19b8b8f2e1d9281471841", null ],
     [ "rehash", "class_nelson_1_1_path_func.html#aabc0d37120b7278ab6c3121cc4e16f2b", null ]
 ];

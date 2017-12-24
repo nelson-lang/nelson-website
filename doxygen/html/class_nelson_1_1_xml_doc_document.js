@@ -1,7 +1,7 @@
 var class_nelson_1_1_xml_doc_document =
 [
     [ "XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#adf3f848f71587e09f5240d3c35c882b8", null ],
-    [ "XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#a5776a4ee63513f9ac11fa98f607b1084", null ],
+    [ "XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#a126031e1aeb2dcca96ee02466cfccb5f", null ],
     [ "~XmlDocDocument", "class_nelson_1_1_xml_doc_document.html#a71161285abbdb5e7569b016f8e1fc2ac", null ],
     [ "getChapter", "class_nelson_1_1_xml_doc_document.html#a341cef3f9fe625759a7e18047e059c0f", null ],
     [ "getChapterDescription", "class_nelson_1_1_xml_doc_document.html#a5d03f401168f9f89f08c6accbb63a7f9", null ],

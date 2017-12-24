@@ -25,6 +25,7 @@ var dir_b309ac7d21ba1bf727b0507628b60fe4 =
     [ "MacroFunctionDef.hpp", "_macro_function_def_8hpp_source.html", null ],
     [ "NelsonGateway.hpp", "_nelson_gateway_8hpp_source.html", null ],
     [ "nlsInterpreter_exports.h", "nls_interpreter__exports_8h_source.html", null ],
+    [ "Operators.hpp", "_operators_8hpp_source.html", null ],
     [ "OverloadDisplay.hpp", "_overload_display_8hpp_source.html", null ],
     [ "ParseFile.hpp", "_parse_file_8hpp_source.html", null ],
     [ "ParserInterface.hpp", "_parser_interface_8hpp_source.html", null ],

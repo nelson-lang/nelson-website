@@ -7,5 +7,5 @@ var structhoedown__html__renderer__state =
     [ "link_attributes", "structhoedown__html__renderer__state.html#af99742155fccb04f6c17861efe114961", null ],
     [ "nesting_level", "structhoedown__html__renderer__state.html#ac33a1291339a88be8cfd7ea1e433f1cc", null ],
     [ "opaque", "structhoedown__html__renderer__state.html#ae6ffe969b995288760fed89ffc25a115", null ],
-    [ "toc_data", "structhoedown__html__renderer__state.html#aed06f3b3e754657fe523ccf688a733d8", null ]
+    [ "toc_data", "structhoedown__html__renderer__state.html#acf1ccec1d1a5233e3f60401f99643ae8", null ]
 ];

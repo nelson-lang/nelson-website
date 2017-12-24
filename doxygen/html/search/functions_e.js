@@ -2,6 +2,7 @@ var searchData=
 [
   ['redrawline',['redrawLine',['../class_line_manager.html#ae2927115a8fa52b9bd333834a846a138',1,'LineManager']]],
   ['refreshline',['refreshLine',['../class_line_manager.html#a5098ed2ecccaaf4c24e8be6b3211ca9d',1,'LineManager']]],
+  ['remainder',['Remainder',['../namespace_nelson.html#adc717e1a3f85cd927180a2dca983118d',1,'Nelson']]],
   ['reset',['reset',['../class_nelson_1_1_dimensions.html#a24e054d45b80a4d49232d6e8de3a2844',1,'Nelson::Dimensions']]],
   ['resetparser',['resetParser',['../namespace_nelson.html#aaf7c52b6072e31b594ce86fe7cb1a637',1,'Nelson']]],
   ['resetstate',['resetState',['../class_nelson_1_1_evaluator.html#abdb69079dab69283f5009a1974137846',1,'Nelson::Evaluator']]],
