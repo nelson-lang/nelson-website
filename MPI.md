@@ -31,6 +31,8 @@ Distributed Computing with MPI:
 
 Example: Sum on distributed computing:
 
+[Source MPI sum example](https://github.com/Nelson-numerical-software/nelson/blob/master/modules/mpi/examples/MPI_parallel_sum.nls)
+
 ![MPI Sum](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/MPI_parallel_sum.png "MPI")
 ![Task manager with process started by Nelson](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/task_manager.png "Task manager with process started by Nelson")
 
