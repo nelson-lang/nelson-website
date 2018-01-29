@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['olist',['olist',['../structolist.html',1,'']]],
-  ['option',['Option',['../class_nelson_1_1_option.html',1,'Nelson']]],
-  ['option_5fdata',['option_data',['../structoption__data.html',1,'']]]
+  ['nameblock',['Nameblock',['../struct_nameblock.html',1,'']]],
+  ['namelist',['Namelist',['../struct_namelist.html',1,'']]],
+  ['nelsonobject',['nelsonObject',['../classnelson_object.html',1,'']]],
+  ['nlsgatewaystructtype',['nlsGatewayStructType',['../struct_nelson_1_1nls_gateway_struct_type.html',1,'Nelson']]]
 ];

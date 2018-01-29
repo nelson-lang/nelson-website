@@ -2,6 +2,8 @@ var namespace_nelson =
 [
     [ "ArrayOf", "class_nelson_1_1_array_of.html", "class_nelson_1_1_array_of" ],
     [ "AST", "class_nelson_1_1_a_s_t.html", "class_nelson_1_1_a_s_t" ],
+    [ "AudioDeviceInfo", "class_nelson_1_1_audio_device_info.html", "class_nelson_1_1_audio_device_info" ],
+    [ "AudioplayerObject", "class_nelson_1_1_audioplayer_object.html", "class_nelson_1_1_audioplayer_object" ],
     [ "BuiltInFunctionDef", "class_nelson_1_1_built_in_function_def.html", "class_nelson_1_1_built_in_function_def" ],
     [ "BuiltInFunctionDefManager", "class_nelson_1_1_built_in_function_def_manager.html", "class_nelson_1_1_built_in_function_def_manager" ],
     [ "Calendar", "class_nelson_1_1_calendar.html", "class_nelson_1_1_calendar" ],
@@ -29,6 +31,7 @@ var namespace_nelson =
     [ "HelpBrowser", "class_nelson_1_1_help_browser.html", "class_nelson_1_1_help_browser" ],
     [ "HistoryManager", "class_nelson_1_1_history_manager.html", "class_nelson_1_1_history_manager" ],
     [ "Interface", "class_nelson_1_1_interface.html", "class_nelson_1_1_interface" ],
+    [ "JsonVariable", "class_nelson_1_1_json_variable.html", "class_nelson_1_1_json_variable" ],
     [ "keywordStruct", "struct_nelson_1_1keyword_struct.html", "struct_nelson_1_1keyword_struct" ],
     [ "LocalFunctionsTable", "class_nelson_1_1_local_functions_table.html", "class_nelson_1_1_local_functions_table" ],
     [ "Localization", "class_nelson_1_1_localization.html", "class_nelson_1_1_localization" ],

@@ -5,6 +5,8 @@ var dir_f1612f477f06cb3a491da488b98ce34f =
     [ "fcloseBuiltin.hpp", "fclose_builtin_8hpp_source.html", null ],
     [ "fgetlBuiltin.hpp", "fgetl_builtin_8hpp_source.html", null ],
     [ "fgetsBuiltin.hpp", "fgets_builtin_8hpp_source.html", null ],
+    [ "filereadBuiltin.hpp", "fileread_builtin_8hpp_source.html", null ],
+    [ "filewriteBuiltin.hpp", "filewrite_builtin_8hpp_source.html", null ],
     [ "fopenBuiltin.hpp", "fopen_builtin_8hpp_source.html", null ],
     [ "fprintfBuiltin.hpp", "fprintf_builtin_8hpp_source.html", null ],
     [ "freadBuiltin.hpp", "fread_builtin_8hpp_source.html", null ],

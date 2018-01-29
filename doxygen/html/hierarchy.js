@@ -9,6 +9,7 @@ var hierarchy =
     [ "Nelson::ArrayOf", "class_nelson_1_1_array_of.html", null ],
     [ "Nelson::AST", "class_nelson_1_1_a_s_t.html", null ],
     [ "Atype", "struct_atype.html", null ],
+    [ "Nelson::AudioDeviceInfo", "class_nelson_1_1_audio_device_info.html", null ],
     [ "Nelson::BuiltInFunctionDefManager", "class_nelson_1_1_built_in_function_def_manager.html", null ],
     [ "Nelson::Calendar", "class_nelson_1_1_calendar.html", null ],
     [ "Chain", "struct_chain.html", null ],
@@ -64,13 +65,14 @@ var hierarchy =
       [ "Nelson::MacroFunctionDef", "class_nelson_1_1_macro_function_def.html", null ]
     ] ],
     [ "Nelson::HandleGenericObject", "class_nelson_1_1_handle_generic_object.html", [
+      [ "Nelson::AudioplayerObject", "class_nelson_1_1_audioplayer_object.html", null ],
       [ "Nelson::ComHandleObject", "class_nelson_1_1_com_handle_object.html", null ],
       [ "Nelson::MPI_CommHandleObject", "class_nelson_1_1_m_p_i___comm_handle_object.html", null ],
       [ "Nelson::QmlHandleObject", "class_nelson_1_1_qml_handle_object.html", null ]
     ] ],
     [ "Nelson::HandleManager", "class_nelson_1_1_handle_manager.html", null ],
-    [ "hashentry", "structhashentry.html", null ],
     [ "Hashentry", "struct_hashentry.html", null ],
+    [ "hashentry", "structhashentry.html", null ],
     [ "hashtab", "structhashtab.html", null ],
     [ "Headblock", "struct_headblock.html", null ],
     [ "Nelson::HelpBrowser", "class_nelson_1_1_help_browser.html", null ],
@@ -97,6 +99,9 @@ var hierarchy =
     [ "io_setup", "structio__setup.html", null ],
     [ "iob_data", "structiob__data.html", null ],
     [ "Ioclist", "struct_ioclist.html", null ],
+    [ "jsmn_parser", "structjsmn__parser.html", null ],
+    [ "jsmntok_t", "structjsmntok__t.html", null ],
+    [ "Nelson::JsonVariable", "class_nelson_1_1_json_variable.html", null ],
     [ "Keylist", "struct_keylist.html", null ],
     [ "Nelson::keywordStruct", "struct_nelson_1_1keyword_struct.html", null ],
     [ "Labelblock", "struct_labelblock.html", null ],

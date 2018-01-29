@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['vardesc',['Vardesc',['../struct_vardesc.html',1,'']]],
-  ['variablestable',['VariablesTable',['../class_nelson_1_1_variables_table.html',1,'Nelson']]],
-  ['vectorcheck',['VectorCheck',['../namespace_nelson.html#a9727c15f6a615a39adef953090bad579',1,'Nelson']]],
-  ['vectorresize',['vectorResize',['../class_nelson_1_1_array_of.html#a54f2ebcbb1b410e25d9b247112696945',1,'Nelson::ArrayOf']]],
-  ['vvfun',['vvfun',['../namespace_nelson.html#a51b459a3ec2310dc3fe4ef91ae186667',1,'Nelson']]]
+  ['ufloat',['ufloat',['../unionufloat.html',1,'']]],
+  ['uint',['Uint',['../union_uint.html',1,'']]],
+  ['uint16constructor',['uint16Constructor',['../class_nelson_1_1_array_of.html#a21f3a43644273fec3a1c413f4364e8d2',1,'Nelson::ArrayOf']]],
+  ['uint32constructor',['uint32Constructor',['../class_nelson_1_1_array_of.html#a9b62387aec45cfc89997026795dac456',1,'Nelson::ArrayOf']]],
+  ['uint64constructor',['uint64Constructor',['../class_nelson_1_1_array_of.html#a1b522c22a2b049ad21f700732e41ddfb',1,'Nelson::ArrayOf']]],
+  ['uint8constructor',['uint8Constructor',['../class_nelson_1_1_array_of.html#a4c7ce2027ec7e3cb574d804b60ccf602',1,'Nelson::ArrayOf']]],
+  ['unit',['unit',['../structunit.html',1,'']]],
+  ['unitcolon',['unitColon',['../class_nelson_1_1_evaluator.html#a1c34660f5bcad3052804bb02ea654616',1,'Nelson::Evaluator']]],
+  ['updatepathlistener',['UpdatePathListener',['../class_nelson_1_1_update_path_listener.html',1,'Nelson']]]
 ];

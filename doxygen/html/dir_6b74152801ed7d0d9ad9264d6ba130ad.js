@@ -7,6 +7,7 @@ var dir_6b74152801ed7d0d9ad9264d6ba130ad =
     [ "charBuiltin.hpp", "char_builtin_8hpp_source.html", null ],
     [ "int2strBuiltin.hpp", "int2str_builtin_8hpp_source.html", null ],
     [ "mat2strBuiltin.hpp", "mat2str_builtin_8hpp_source.html", null ],
+    [ "ndarraychar_dispBuiltin.hpp", "ndarraychar__disp_builtin_8hpp_source.html", null ],
     [ "ndarraychar_horzcat_ndarraycharBuiltin.hpp", "ndarraychar__horzcat__ndarraychar_builtin_8hpp_source.html", null ],
     [ "ndarraychar_isequalBuiltin.hpp", "ndarraychar__isequal_builtin_8hpp_source.html", null ],
     [ "ndarraychar_vertcat_ndarraycharBuiltin.hpp", "ndarraychar__vertcat__ndarraychar_builtin_8hpp_source.html", null ],

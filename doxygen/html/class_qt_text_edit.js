@@ -2,7 +2,7 @@ var class_qt_text_edit =
 [
     [ "QtTextEdit", "class_qt_text_edit.html#a7d8b1279770464479223fbe7c7e093ab", null ],
     [ "~QtTextEdit", "class_qt_text_edit.html#acdce03cba7098b1160f5ae1f95048d29", null ],
-    [ "canInsertFromMimeData", "class_qt_text_edit.html#a8e212b5b63b687c5281addbb7acf114c", null ],
+    [ "canInsertFromMimeData", "class_qt_text_edit.html#a870da4be8b0afddb0d8880e62cc8b73e", null ],
     [ "comment", "class_qt_text_edit.html#a12ceb12f2693eb03af0610c832274341", null ],
     [ "contextMenuEvent", "class_qt_text_edit.html#abb9aca982ab85effa2d121d57649d78e", null ],
     [ "focusInEvent", "class_qt_text_edit.html#ae54ed66be2dabf2cded0f65b84e3ac4d", null ],

@@ -17,7 +17,6 @@ var searchData=
   ['fptr',['fptr',['../class_nelson_1_1_built_in_function_def.html#a4a6bfc2cd108c4394bf16c6036b3b893',1,'Nelson::BuiltInFunctionDef']]],
   ['freezeast',['FreezeAST',['../namespace_nelson.html#aa2451be6d13a0b7a62976802037d5803',1,'Nelson']]],
   ['freezemacrofunction',['FreezeMacroFunction',['../namespace_nelson.html#adba8b495aaa3d595d2f803039d13dd86',1,'Nelson']]],
-  ['functiondef',['FunctionDef',['../class_nelson_1_1_function_def.html',1,'Nelson']]],
-  ['functiondef',['FunctionDef',['../class_nelson_1_1_function_def.html#ac21984222d9158b4f2064fa7ac78ddf6',1,'Nelson::FunctionDef']]],
+  ['functiondef',['FunctionDef',['../class_nelson_1_1_function_def.html',1,'Nelson::FunctionDef'],['../class_nelson_1_1_function_def.html#ac21984222d9158b4f2064fa7ac78ddf6',1,'Nelson::FunctionDef::FunctionDef()']]],
   ['functionexpression',['functionExpression',['../class_nelson_1_1_evaluator.html#a87271a334465cbb93a99436d1674dd81',1,'Nelson::Evaluator']]]
 ];

@@ -29,6 +29,7 @@ var searchData=
   ['statementtype',['statementType',['../class_nelson_1_1_evaluator.html#a2a2d94cebdd73fbd95b67701efa49281',1,'Nelson::Evaluator']]],
   ['stringconstructor',['stringConstructor',['../class_nelson_1_1_array_of.html#a2ecb17d6702c4f4ea1204f57ada32dd1',1,'Nelson::ArrayOf::stringConstructor(std::string aval)'],['../class_nelson_1_1_array_of.html#ac2e92cc13e404cfd4c0f7852a6a0fb51',1,'Nelson::ArrayOf::stringConstructor(std::wstring aval)']]],
   ['structconstructor',['structConstructor',['../class_nelson_1_1_array_of.html#aae12d72e2bdd7616798b21bbd1d93c55',1,'Nelson::ArrayOf']]],
-  ['summarizecellentry',['summarizeCellEntry',['../class_nelson_1_1_array_of.html#a67247643b1bf80862e55dfc7f5ac4b63',1,'Nelson::ArrayOf']]],
+  ['structscalarconstructor',['structScalarConstructor',['../class_nelson_1_1_array_of.html#a431c067538c86ef9e4480af9eaf2ad48',1,'Nelson::ArrayOf']]],
+  ['summarizecellentry',['summarizeCellEntry',['../class_nelson_1_1_array_of.html#a2d4d8f700ca4d1f4549ed29a66cec6d4',1,'Nelson::ArrayOf']]],
   ['switchstatement',['switchStatement',['../class_nelson_1_1_evaluator.html#ad12d52389627584f78263869ec76205e',1,'Nelson::Evaluator']]]
 ];

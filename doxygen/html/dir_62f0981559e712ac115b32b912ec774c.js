@@ -8,6 +8,7 @@ var dir_62f0981559e712ac115b32b912ec774c =
     [ "HandleManager.hpp", "_handle_manager_8hpp_source.html", null ],
     [ "IsValidFieldname.hpp", "_is_valid_fieldname_8hpp_source.html", null ],
     [ "IsValidVariableName.hpp", "_is_valid_variable_name_8hpp_source.html", null ],
+    [ "MakeValidFieldname.hpp", "_make_valid_fieldname_8hpp_source.html", null ],
     [ "nlsConfig.h", "nls_config_8h_source.html", null ],
     [ "nlsMath.h", "nls_math_8h_source.html", null ],
     [ "nlsTypes_exports.h", "nls_types__exports_8h_source.html", null ],

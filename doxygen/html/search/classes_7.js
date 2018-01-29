@@ -2,7 +2,7 @@ var searchData=
 [
   ['handlegenericobject',['HandleGenericObject',['../class_nelson_1_1_handle_generic_object.html',1,'Nelson']]],
   ['handlemanager',['HandleManager',['../class_nelson_1_1_handle_manager.html',1,'Nelson']]],
-  ['hashentry',['hashentry',['../structhashentry.html',1,'hashentry'],['../struct_hashentry.html',1,'Hashentry']]],
+  ['hashentry',['Hashentry',['../struct_hashentry.html',1,'Hashentry'],['../structhashentry.html',1,'hashentry']]],
   ['hashtab',['hashtab',['../structhashtab.html',1,'']]],
   ['headblock',['Headblock',['../struct_headblock.html',1,'']]],
   ['helpbrowser',['HelpBrowser',['../class_nelson_1_1_help_browser.html',1,'Nelson']]],

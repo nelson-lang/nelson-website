@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['windowsconsole',['WindowsConsole',['../class_windows_console.html',1,'']]]
+  ['vardesc',['Vardesc',['../struct_vardesc.html',1,'']]],
+  ['variablestable',['VariablesTable',['../class_nelson_1_1_variables_table.html',1,'Nelson']]]
 ];

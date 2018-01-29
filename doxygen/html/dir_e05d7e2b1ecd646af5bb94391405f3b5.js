@@ -2,6 +2,7 @@ var dir_e05d7e2b1ecd646af5bb94391405f3b5 =
 [
     [ "api_nelson", "dir_370b6a1973f85ea85497436964396231.html", "dir_370b6a1973f85ea85497436964396231" ],
     [ "assert_functions", "dir_c98a817c2b79c8635e436b0cb0ee336e.html", "dir_c98a817c2b79c8635e436b0cb0ee336e" ],
+    [ "audio", "dir_1e9e30051b90bd458c4ff5985cea5d4c.html", "dir_1e9e30051b90bd458c4ff5985cea5d4c" ],
     [ "characters_encoding", "dir_1776f1c3e8c6734dfb8d1338bfda32d3.html", "dir_1776f1c3e8c6734dfb8d1338bfda32d3" ],
     [ "com_engine", "dir_65edc80a71a586f4ea23352cd9d3a09d.html", "dir_65edc80a71a586f4ea23352cd9d3a09d" ],
     [ "console", "dir_54cc64e2ea7c4056846f30fb8a29725d.html", "dir_54cc64e2ea7c4056846f30fb8a29725d" ],
@@ -27,6 +28,7 @@ var dir_e05d7e2b1ecd646af5bb94391405f3b5 =
     [ "i18n", "dir_64357e54c130b09824afa287478dacec.html", "dir_64357e54c130b09824afa287478dacec" ],
     [ "integer", "dir_8127546c1e0b79752924d3e2c26b0619.html", "dir_8127546c1e0b79752924d3e2c26b0619" ],
     [ "interpreter", "dir_d9be28cb3fcdc0eba0d4277dbf896d3c.html", "dir_d9be28cb3fcdc0eba0d4277dbf896d3c" ],
+    [ "json", "dir_3ded5d0c12c1686c6a403193b20d04c9.html", "dir_3ded5d0c12c1686c6a403193b20d04c9" ],
     [ "linear_algebra", "dir_37e41d37a33249378309046bd3528ccf.html", "dir_37e41d37a33249378309046bd3528ccf" ],
     [ "localization", "dir_2a5a85b04c02a024620c9614cdb88168.html", "dir_2a5a85b04c02a024620c9614cdb88168" ],
     [ "logical", "dir_0230fa5c68691d416cea18461184e5f7.html", "dir_0230fa5c68691d416cea18461184e5f7" ],

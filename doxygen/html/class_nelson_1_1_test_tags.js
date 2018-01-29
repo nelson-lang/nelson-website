@@ -2,6 +2,8 @@ var class_nelson_1_1_test_tags =
 [
     [ "TestTags", "class_nelson_1_1_test_tags.html#accf3192c204fffb94d75c3072c91330d", null ],
     [ "isAdvCliMode", "class_nelson_1_1_test_tags.html#a8a11ab2d2fc7a2140f42c23af42a344b", null ],
+    [ "isAudioInputRequired", "class_nelson_1_1_test_tags.html#af5d0405a22f1a6e46fb242504b966d32", null ],
+    [ "isAudioOutputRequired", "class_nelson_1_1_test_tags.html#a63ea833f3b701276025ba5e5f23cf973", null ],
     [ "isCheckRef", "class_nelson_1_1_test_tags.html#a557b2fd4b6f1177f2d7dfd6578f562a6", null ],
     [ "isCliMode", "class_nelson_1_1_test_tags.html#a1e5969e7484d99ebaf74fd629e8661a9", null ],
     [ "isEnglishImposed", "class_nelson_1_1_test_tags.html#af9f36a44d32610a42e7eefc6f98c031f", null ],
@@ -16,6 +18,8 @@ var class_nelson_1_1_test_tags =
     [ "isWindowsOnly", "class_nelson_1_1_test_tags.html#a171c949815107b0e2beb5c5035832fce", null ],
     [ "isWithDisplay", "class_nelson_1_1_test_tags.html#a5ae008ca6b6360ebd44daeb4034732c5", null ],
     [ "setAdvCliMode", "class_nelson_1_1_test_tags.html#afbf977e179c3577b5283fbbc5f030939", null ],
+    [ "setAudioInputRequired", "class_nelson_1_1_test_tags.html#a9596d64f5ad45b6df3fcebde41b86b44", null ],
+    [ "setAudioOutputRequired", "class_nelson_1_1_test_tags.html#adbff3f33cbf492a316027e00be84d09a", null ],
     [ "setCheckRef", "class_nelson_1_1_test_tags.html#a678436b915fb08e94714f0832c8654c9", null ],
     [ "setCliMode", "class_nelson_1_1_test_tags.html#ab4748bd813e9494952b38e2b0e90bbd1", null ],
     [ "setEnglishImposed", "class_nelson_1_1_test_tags.html#a539ac1ea30283721027657e57dc0d609", null ],

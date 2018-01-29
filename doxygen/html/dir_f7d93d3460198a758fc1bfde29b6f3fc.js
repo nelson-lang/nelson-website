@@ -12,6 +12,7 @@ var dir_f7d93d3460198a758fc1bfde29b6f3fc =
     [ "nelsonrootBuiltin.hpp", "nelsonroot_builtin_8hpp_source.html", null ],
     [ "nfilenameBuiltin.hpp", "nfilename_builtin_8hpp_source.html", null ],
     [ "nlsCore_builtin_exports.h", "nls_core__builtin__exports_8h_source.html", null ],
+    [ "pauseBuiltin.hpp", "pause_builtin_8hpp_source.html", null ],
     [ "prefdirBuiltin.hpp", "prefdir_builtin_8hpp_source.html", null ],
     [ "runBuiltin.hpp", "run_builtin_8hpp_source.html", null ],
     [ "versionBuiltin.hpp", "version_builtin_8hpp_source.html", null ]
