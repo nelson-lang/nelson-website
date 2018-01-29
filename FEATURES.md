@@ -27,6 +27,9 @@
 ## [JavaScript Object Notation](JSON.md)
 
 
+## [Audio module](AUDIO.md)
+
+
 ## [Code editor](CODE_EDITOR.md)
 
 
