@@ -106,10 +106,7 @@ SAME AS NELSON SOFTWARE
 <code class = "nelson">txt = {'## Example of Markdown text';
 '>Nelson supports markdown ...'};
 html = markdown(txt);
-
-f = fopen([tempdir(), '/markdown_example.html'], 'wt');
-fwrite(f, html);
-fclose(f);
+filewrite([tempdir(), '/markdown_example.html'], html)
 
 if ispc()
   winopen([tempdir(), '/markdown_example.html']);

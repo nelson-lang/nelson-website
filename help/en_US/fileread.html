@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
+<span class = "next"><a href = "filewrite.html">filewrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -53,6 +53,14 @@ SAME AS NELSON SOFTWARE
 		<td>str = fileread(filename)</td>
 	</tr>
 
+	<tr>
+		<td>str = fileread(filename, type)</td>
+	</tr>
+
+	<tr>
+		<td>str = fileread(filename, 'char', eol)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -62,6 +70,16 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">filename</span></dt>
 <dd>
 <p class="para">a string: a file name</p>
+</dd>
+
+<dt><span class="term">type</span></dt>
+<dd>
+<p class="para">a string: 'char' or 'cell'. 'cell' will converts text file to a cell of string. 'char' by default.</p>
+</dd>
+
+<dt><span class="term">eol</span></dt>
+<dd>
+<p class="para">a string: 'native', 'pc' or 'unix'. Set end of line. 'unix' by default.</p>
 </dd>
 
 </dl>
@@ -90,6 +108,8 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">str = fileread([nelsonroot(),'/CHANGELOG.md'])
+str = fileread([nelsonroot(),'/CHANGELOG.md'], 'char')
+str = fileread([nelsonroot(),'/CHANGELOG.md'], 'cell')
 </code>
 </pre>
 
@@ -97,7 +117,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "fgetl.html" class = "link">fgetl</a>.</p>
+<a href = "fgetl.html" class = "link">fgetl</a>, <a href = "filewrite.html" class = "link">filewrite</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -131,7 +151,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
+<span class = "next"><a href = "filewrite.html">filewrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>
