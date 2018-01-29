@@ -1,7 +1,7 @@
 ## JavaScript Object Notation
 
 
-Functions to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). 
+Functions to transmit data objects consisting of attributeâ€“value pairs and array data types (or any other serializable value). 
 
 Example:
 
