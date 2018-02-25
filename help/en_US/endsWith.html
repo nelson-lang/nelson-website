@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>newline</title>
+	<title>endsWith</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="mat2str.html">&lt;&lt; mat2str</a></span>
+<span class="top"><a href="count.html">&lt;&lt; count</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "startsWith.html">startsWith &gt;&gt;</a></span>
+<span class = "next"><a href = "int2str.html">int2str &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">newline</h1>
+<h1 class="refname">endsWith</h1>
 <hr/>
 
-<h3>Returns a newline character.</h3>
+<h3>checks if string ends with pattern.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,42 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>ch = newline()</td>
+		<td>tf = endsWith(str, pattern)</td>
+	</tr>
+
+	<tr>
+		<td>tf = endsWith(str, pattern,'IgnoreCase', true)</td>
+	</tr>
+
+	<tr>
+		<td>tf = endsWith(str, pattern,'IgnoreCase', false)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">str</span></dt>
+<dd>
+<p class="para">a string or cell of strings.</p>
+</dd>
+
+<dt><span class="term">pattern</span></dt>
+<dd>
+<p class="para">a string to find.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">ch</span></dt>
+<dt><span class="term">tf</span></dt>
 <dd>
-<p class="para">a char: equivalent to char(10)</p>
+<p class="para">a matrix of logical.</p>
 </dd>
 
 </dl>
@@ -70,13 +94,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>newline</b> returns a newline character.
+<b>endsWith</b> returns <b>true</b> if <b>str</b> ends with <b>pattern</b>.
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">double(newline)
+<code class = "nelson">str = 'To make a mountain out of a molehill';
+k = endsWith (str, 'hill')
+k = endsWith (str, 'molehill')
+k = endsWith (str, 'Hill', 'IgnoreCase', true)
+
+A = {'Nel', 'son'; 'Nelson', 'Modules'}
+k = endsWith(A, 'son')
 </code>
 </pre>
 
@@ -84,7 +114,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "double.html" class = "link">double</a>.</p>
+<a href = "startsWith.html" class = "link">startsWith</a>, <a href = "contains.html" class = "link">contains</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -110,7 +140,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="mat2str.html">&lt;&lt; mat2str</a></span>
+<span class="top"><a href="count.html">&lt;&lt; count</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -118,7 +148,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "startsWith.html">startsWith &gt;&gt;</a></span>
+<span class = "next"><a href = "int2str.html">int2str &gt;&gt;</a></span>
 </td>
 
 </tr></table>

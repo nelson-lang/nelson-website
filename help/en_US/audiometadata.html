@@ -29,7 +29,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_audio.html">Audio playback and recording</a></span>
+<span class="top"><a href="chapter_audio.html">Audio playback</a></span>
 </td>
 
 <td width = "30%" class = "next">
@@ -42,7 +42,7 @@ SAME AS NELSON SOFTWARE
 <h1 class="refname">audiometadata</h1>
 <hr/>
 
-<h3>Get metadata of audio file .</h3>
+<h3>Get/Set metadata of audio file .</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -51,6 +51,10 @@ SAME AS NELSON SOFTWARE
 <table summary="syntax" style="width:50%">
 	<tr>
 		<td>info = audiometadata(filename)</td>
+	</tr>
+
+	<tr>
+		<td>info_previous = audiometadata(filename, info_new)</td>
 	</tr>
 
 </table>
@@ -64,6 +68,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">a string: an valid audio filename.</p>
 </dd>
 
+<dt><span class="term">info_new</span></dt>
+<dd>
+<p class="para">a struct: new information about audio file to set.</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -75,6 +84,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">a struct: information about audio file.</p>
 </dd>
 
+<dt><span class="term">info_previous</span></dt>
+<dd>
+<p class="para">a struct: previous information about audio file.</p>
+</dd>
+
 </dl>
 
 <h3>Description</h3>
@@ -83,15 +97,32 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>audiometadata</b> returns a structure with metadata of an audio file.</p>
+  <p><b>audiometadata</b> manages all tags available in the audio file.</p>
   <p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">wav_file = [modulepath('audio'), '/examples/haha.wav'];
 info = audiometadata(wav_file)
+</code>
+</pre>
+<pre>
+<code class = "nelson">wav_file = [modulepath('audio'), '/examples/haha.wav'];
+modified_wav_file = [tempdir(), '/haha_modified_tags.wav'];
+if isfile(modified_wav_file)
+  rmfile(modified_wav_file);
+end
+copyfile(wav_file, modified_wav_file);
+info = audiometadata(modified_wav_file)
+info.artist = 'Nelson';
+audiometadata(modified_wav_file, info);
+info = audiometadata(modified_wav_file)
+if isfile(modified_wav_file)
+  rmfile(modified_wav_file);
+end
 </code>
 </pre>
 
@@ -123,7 +154,7 @@ info = audiometadata(wav_file)
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_audio.html">Audio playback and recording</a></span>
+<span class="top"><a href="chapter_audio.html">Audio playback</a></span>
 </td>
 
 <td width = "30%" class = "next">
