@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fix</title>
+	<title>cast</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="factorial.html">&lt;&lt; factorial</a></span>
+<span class="top"><a href="and.html">&lt;&lt; and</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "floor.html">floor &gt;&gt;</a></span>
+<span class = "next"><a href = "ceil.html">ceil &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fix</h1>
+<h1 class="refname">cast</h1>
 <hr/>
 
-<h3>Round towards zero</h3>
+<h3>Converts variable to a different data type</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = fix(A)</td>
+		<td>R = cast(V, type_destination)</td>
+	</tr>
+
+	<tr>
+		<td>R = cast(V, 'like', W)</td>
 	</tr>
 
 </table>
@@ -59,7 +63,17 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">V</span></dt>
+<dd>
+<p class="para">a variable</p>
+</dd>
+
+<dt><span class="term">type_destination</span></dt>
+<dd>
+<p class="para">a string: name of destination data type.</p>
+</dd>
+
+<dt><span class="term">W</span></dt>
 <dd>
 <p class="para">a variable</p>
 </dd>
@@ -70,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result of fix.</p>
+<p class="para">a variable with new data type.</p>
 </dd>
 
 </dl>
@@ -82,14 +96,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
+  <p><b>cast</b> converts variable to a different data type.</p>
+  <p><b>R = cast(V, 'like', W)</b> converts varible V to sparsity and same data type than W.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fix(pi)
+<code class = "nelson">r = cast([3.6 1.2 -2.4], 'like', int64(3))
+r = cast([3.6 1.2 -2.4], 'int64')
 </code>
 </pre>
 
@@ -97,7 +113,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "floor.html" class = "link">floor</a>, <a href = "round.html" class = "link">round</a>, <a href = "ceil.html" class = "link">ceil</a>.</p>
+<a href = "class.html" class = "link">class</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,7 +139,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="factorial.html">&lt;&lt; factorial</a></span>
+<span class="top"><a href="and.html">&lt;&lt; and</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -131,7 +147,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "floor.html">floor &gt;&gt;</a></span>
+<span class = "next"><a href = "ceil.html">ceil &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fix</title>
+	<title>evalin</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="factorial.html">&lt;&lt; factorial</a></span>
+<span class="top"><a href="evalc.html">&lt;&lt; evalc</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_core.html">core</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "floor.html">floor &gt;&gt;</a></span>
+<span class = "next"><a href = "execstr.html">execstr &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fix</h1>
+<h1 class="refname">evalin</h1>
 <hr/>
 
-<h3>Round towards zero</h3>
+<h3>Evaluate Nelson code in string in an specified scope.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = fix(A)</td>
+		<td>evalin(scope, str)</td>
+	</tr>
+
+	<tr>
+		<td>[r1, ... rn] = evalin(scope, str)</td>
 	</tr>
 
 </table>
@@ -59,9 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">scope</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a string: 'base' or 'caller'.</p>
+</dd>
+
+<dt><span class="term">str</span></dt>
+<dd>
+<p class="para">a string: Nelson instruction to execute</p>
 </dd>
 
 </dl>
@@ -70,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">[r1, ... rn]</span></dt>
 <dd>
-<p class="para">result of fix.</p>
+<p class="para">results: output variables</p>
 </dd>
 
 </dl>
@@ -82,14 +91,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
+  <p><b>eval</b> executes Nelson instructions given in a string in 'base' or 'caller' scope.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fix(pi)
+<code class = "nelson">R = evalin('base', 'evalin(''caller'',''pi'')')
 </code>
 </pre>
 
@@ -97,7 +106,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "floor.html" class = "link">floor</a>, <a href = "round.html" class = "link">round</a>, <a href = "ceil.html" class = "link">ceil</a>.</p>
+<a href = "eval.html" class = "link">eval</a>, <a href = "acquirevar.html" class = "link">acquirevar</a>, <a href = "execstr.html" class = "link">execstr</a>, <a href = "evalc.html" class = "link">evalc</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,15 +132,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="factorial.html">&lt;&lt; factorial</a></span>
+<span class="top"><a href="evalc.html">&lt;&lt; evalc</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_core.html">core</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "floor.html">floor &gt;&gt;</a></span>
+<span class = "next"><a href = "execstr.html">execstr &gt;&gt;</a></span>
 </td>
 
 </tr></table>
