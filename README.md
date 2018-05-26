@@ -1,7 +1,6 @@
 # Welcome to Nelson website
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8865bc705b2d459c839b169e580d0526)](https://www.codacy.com/app/Nelson-numerical-software/nelson?utm_source=github.com&utm_medium=referral&utm_content=Nelson-numerical-software/nelson&utm_campaign=badger)
-[![Code Climate](https://codeclimate.com/github/Nelson-numerical-software/nelson/badges/gpa.svg)](https://codeclimate.com/github/Nelson-numerical-software/nelson)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/602/badge)](https://bestpractices.coreinfrastructure.org/projects/602) 
 [![GitHub license](https://img.shields.io/badge/license-GPL2-blue.svg)](https://github.com/Nelson-numerical-software/nelson/blob/master/COPYING.md)
 [![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
@@ -9,7 +8,11 @@
 [![Weblate](https://img.shields.io/badge/Weblate--green.svg)](https://hosted.weblate.org/projects/nelson/)
 [![Build Status](https://travis-ci.org/Nelson-numerical-software/nelson.svg?branch=master)](https://travis-ci.org/Nelson-numerical-software/nelson)
 [![Build status](https://ci.appveyor.com/api/projects/status/github/Nelson-numerical-software/nelson?svg=true)](https://ci.appveyor.com/project/Nelson-numerical-software/nelson)
+[![CircleCI](https://circleci.com/gh/Nelson-numerical-software/nelson/tree/master.svg?style=svg)](https://circleci.com/gh/Nelson-numerical-software/nelson/tree/master)
+[![Build Status](https://semaphoreci.com/api/v1/nelson-numerical-software/nelson/branches/master/badge.svg)](https://semaphoreci.com/nelson-numerical-software/nelson)
+
 [![Join the chat at https://gitter.im/nelson-numerical-software/Lobby](https://badges.gitter.im/nelson-numerical-software/Lobby.svg)](https://gitter.im/nelson-numerical-software/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 
 ## [Free](https://nelson-numerical-software.github.io/nelson-website/COPYING.md) Scientific Software Package
