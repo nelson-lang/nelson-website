@@ -50,7 +50,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>fprintf(fid, data)</td>
+		<td>fprintf(format, v1, ... , vn)</td>
+	</tr>
+
+	<tr>
+		<td>fprintf(fid, format, v1, ... , vn)</td>
+	</tr>
+
+	<tr>
+		<td>R = fprintf(fid, format, v1, ... , vn)</td>
 	</tr>
 
 </table>
@@ -64,9 +72,25 @@ SAME AS NELSON SOFTWARE
 <p class="para">a file descriptor</p>
 </dd>
 
-<dt><span class="term">data</span></dt>
+<dt><span class="term">format</span></dt>
 <dd>
-<p class="para">a string.</p>
+<p class="para">a string describing the format to used_function.</p>
+</dd>
+
+<dt><span class="term">v1, ... , vn</span></dt>
+<dd>
+<p class="para">data to convert and print according to the previous format parameter.</p>
+</dd>
+
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">R</span></dt>
+<dd>
+<p class="para">an integer value: number of bytes that fprintf write.</p>
 </dd>
 
 </dl>
@@ -77,17 +101,101 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p>Write data in text form to the file specified by the file descriptor fid.</p>
+  <p>If fid equals 1 redirection in stdout.</p>
+  <p>If fid equals 2 redirection in stderr.</p>
+  <p>The <b>format</b> follows C fprintf syntax.</p>
+  <style>
+table, th, td {
+    border: 1px solid black;
+}
+  </style>
+  <table style="width:100%">
+    <tr>
+      <th>Value type</th>
+      <th>format</th>
+      <th>comment</th>
+    </tr>
+    <tr>
+      <td>Integer</td>
+      <td>%i</td>
+      <td>base 10</td>
+    </tr>
+    <tr>
+      <td>Integer signed</td>
+      <td>%d</td>
+      <td>base 10</td>
+    </tr>
+    <tr>
+      <td>Integer unsigned</td>
+      <td>%u</td>
+      <td>base 10</td>
+    </tr>
+    <tr>
+      <td>Integer</td>
+      <td>%o</td>
+      <td>Octal (base 8)</td>
+    </tr>
+    <tr>
+      <td>Integer</td>
+      <td>%x</td>
+      <td>Hexadecimal (lowercase)</td>
+    </tr>
+    <tr>
+      <td>Integer</td>
+      <td>%X</td>
+      <td>Hexadecimal (uppercase)</td>
+    </tr>
+    <tr>
+      <td>Floating-point number</td>
+      <td>%f</td>
+      <td>Fixed-point notation</td>
+    </tr>
+    <tr>
+      <td>Floating-point number</td>
+      <td>%e</td>
+      <td>Exponential notation (lowercase)</td>
+    </tr>
+    <tr>
+      <td>Floating-point number</td>
+      <td>%E</td>
+      <td>Exponential notation (uppercase)</td>
+    </tr>
+    <tr>
+      <td>Floating-point number</td>
+      <td>%g</td>
+      <td>Exponential notation (compact format, lowercase)</td>
+    </tr>
+    <tr>
+      <td>Floating-point number</td>
+      <td>%G</td>
+      <td>Exponential notation (compact format, uppercase)</td>
+    </tr>
+    <tr>
+      <td>Character</td>
+      <td>%c</td>
+      <td>Single character</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>%s</td>
+      <td>Character vector.</td>
+    </tr>
+  </table>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">fileID = fopen([tempdir(), '/fprintf.txt'],'wt');
-fprintf(fileID, 'an example of text.');
+fprintf(fileID, 'an example of %s.', 'text');
 fclose(fileID);
 
 R = fileread([tempdir(), '/fprintf.txt'])
+</code>
+</pre>
+<pre>
+<code class = "nelson">fprintf(1, 'an value %g.', pi);
 </code>
 </pre>
 
