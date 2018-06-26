@@ -9,6 +9,12 @@
 ### [Modularity](MODULARITY.md)
 
 
+### [External modules](EXTERNAL_MODULE.md)
+
+
+### [Build C/C++ code on the fly](EXTERNAL_MODULE.md)
+
+
 ### [Foreign Function Interface](FFI.md)
 
 
