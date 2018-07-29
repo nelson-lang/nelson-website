@@ -15,34 +15,30 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
-	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>cos</title>
-
 </head>
 <body>
 
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="atan2.html">&lt;&lt; atan2</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_trigonometric_functions.html">trigonometric functions</a></span>
+<span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "cosd.html">cosd &gt;&gt;</a></span>
+<span class = "next"><a href = "break.html">break &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">cos</h1>
+<h1 class="refname">abort</h1>
 <hr/>
 
-<h3>Computes the cosine in radians for each element of x.</h3>
+<h1 class="refname">return</h1>
+<hr/>
+
+<h3>stop evaluation.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,45 +46,29 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = cos(x)</td>
+		<td>abort</td>
+	</tr>
+
+	<tr>
+		<td>return</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">x</span></dt>
-<dd>
-<p class="para">a numeric value</p>
-</dd>
-
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">res</span></dt>
-<dd>
-<p class="para">a numeric value</p>
-</dd>
-
-</dl>
 
 <h3>Description</h3>
 <hr/>
 
 <p></p>
-<b>cos</b> computes the cosine in radians for each element of x.
+
+  <p><b>return</b> or <b>abort</b> stops current evaluation.</p>
+
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = eye(3, 3);
-res = cos(A)
+<code class = "nelson">for i=1:10,a = i,abort,end
+a
 </code>
 </pre>
 
@@ -96,7 +76,7 @@ res = cos(A)
 <hr/>
 
 <p>
-<a href = "acos.html" class = "link">acos</a>.</p>
+<a href = "for.html" class = "link">for</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -121,16 +101,12 @@ res = cos(A)
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="atan2.html">&lt;&lt; atan2</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_trigonometric_functions.html">trigonometric functions</a></span>
+<span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "cosd.html">cosd &gt;&gt;</a></span>
+<span class = "next"><a href = "break.html">break &gt;&gt;</a></span>
 </td>
 
 </tr></table>

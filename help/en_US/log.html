@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>cast</title>
+	<title>log</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="angle.html">&lt;&lt; angle</a></span>
+<span class="top"><a href="length.html">&lt;&lt; length</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ceil.html">ceil &gt;&gt;</a></span>
+<span class = "next"><a href = "lt.html">lt &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">cast</h1>
+<h1 class="refname">log</h1>
 <hr/>
 
-<h3>Converts variable to a different data type</h3>
+<h3>Natural logarithm.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = cast(V, type_destination)</td>
-	</tr>
-
-	<tr>
-		<td>R = cast(V, 'like', W)</td>
+		<td>R = log(M)</td>
 	</tr>
 
 </table>
@@ -63,17 +59,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">V</span></dt>
-<dd>
-<p class="para">a variable</p>
-</dd>
-
-<dt><span class="term">type_destination</span></dt>
-<dd>
-<p class="para">a string: name of destination data type.</p>
-</dd>
-
-<dt><span class="term">W</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
 <p class="para">a variable</p>
 </dd>
@@ -86,7 +72,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">R</span></dt>
 <dd>
-<p class="para">a variable with new data type.</p>
+<p class="para">result of log: Natural logarithm.</p>
 </dd>
 
 </dl>
@@ -96,16 +82,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>cast</b> converts variable to a different data type.</p>
-  <p><b>R = cast(V, 'like', W)</b> converts varible V to sparsity and same data type than W.</p>
+  <p><b>log</b> computes the natural logarithm.</p>
+  <p>If input argument is a complex number or negative, <b>log(z)</b> computes log(abs(z)) + angle(z) * i.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">r = cast([3.6 1.2 -2.4], 'like', int64(3))
-r = cast([3.6 1.2 -2.4], 'int64')
+<code class = "nelson">x = [1+i,-i;i,2i];
+r = log(x)
 </code>
 </pre>
 
@@ -113,7 +99,7 @@ r = cast([3.6 1.2 -2.4], 'int64')
 <hr/>
 
 <p>
-<a href = "class.html" class = "link">class</a>.</p>
+<a href = "exp.html" class = "link">exp</a>, <a href = "abs.html" class = "link">abs</a>, <a href = "angle.html" class = "link">angle</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -139,7 +125,7 @@ r = cast([3.6 1.2 -2.4], 'int64')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="angle.html">&lt;&lt; angle</a></span>
+<span class="top"><a href="length.html">&lt;&lt; length</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -147,7 +133,7 @@ r = cast([3.6 1.2 -2.4], 'int64')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ceil.html">ceil &gt;&gt;</a></span>
+<span class = "next"><a href = "lt.html">lt &gt;&gt;</a></span>
 </td>
 
 </tr></table>

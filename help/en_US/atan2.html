@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>cast</title>
+	<title>atan2</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="angle.html">&lt;&lt; angle</a></span>
+<span class="top"><a href="atan.html">&lt;&lt; atan</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_trigonometric_functions.html">trigonometric functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ceil.html">ceil &gt;&gt;</a></span>
+<span class = "next"><a href = "cos.html">cos &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">cast</h1>
+<h1 class="refname">atan2</h1>
 <hr/>
 
-<h3>Converts variable to a different data type</h3>
+<h3>Computes the four-quadrant inverse tangent.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = cast(V, type_destination)</td>
-	</tr>
-
-	<tr>
-		<td>R = cast(V, 'like', W)</td>
+		<td>res = atan2(y, x)</td>
 	</tr>
 
 </table>
@@ -63,19 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">V</span></dt>
+<dt><span class="term">y</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a numeric value (double or single real)</p>
 </dd>
 
-<dt><span class="term">type_destination</span></dt>
+<dt><span class="term">x</span></dt>
 <dd>
-<p class="para">a string: name of destination data type.</p>
-</dd>
-
-<dt><span class="term">W</span></dt>
-<dd>
-<p class="para">a variable</p>
+<p class="para">a numeric value (double or single real)</p>
 </dd>
 
 </dl>
@@ -84,9 +75,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a variable with new data type.</p>
+<p class="para">a numeric value</p>
 </dd>
 
 </dl>
@@ -95,17 +86,13 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-
-  <p><b>cast</b> converts variable to a different data type.</p>
-  <p><b>R = cast(V, 'like', W)</b> converts varible V to sparsity and same data type than W.</p>
-
+<b>atan2</b> computes the four-quadrant inverse tangent.
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">r = cast([3.6 1.2 -2.4], 'like', int64(3))
-r = cast([3.6 1.2 -2.4], 'int64')
+<code class = "nelson">atan2(1, 0)
 </code>
 </pre>
 
@@ -113,7 +100,7 @@ r = cast([3.6 1.2 -2.4], 'int64')
 <hr/>
 
 <p>
-<a href = "class.html" class = "link">class</a>.</p>
+<a href = "atan.html" class = "link">atan</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -139,15 +126,15 @@ r = cast([3.6 1.2 -2.4], 'int64')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="angle.html">&lt;&lt; angle</a></span>
+<span class="top"><a href="atan.html">&lt;&lt; atan</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_trigonometric_functions.html">trigonometric functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ceil.html">ceil &gt;&gt;</a></span>
+<span class = "next"><a href = "cos.html">cos &gt;&gt;</a></span>
 </td>
 
 </tr></table>

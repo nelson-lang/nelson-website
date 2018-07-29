@@ -15,9 +15,6 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
-	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>length</title>
-
 </head>
 <body>
 
@@ -25,24 +22,27 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="le.html">&lt;&lt; le</a></span>
+<span class="top"><a href="for.html">&lt;&lt; for</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "log.html">log &gt;&gt;</a></span>
+<span class = "next"><a href = "if.html">if &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">length</h1>
+<h1 class="refname">function</h1>
 <hr/>
 
-<h3>Length of an object.</h3>
+<h1 class="refname">endfunction</h1>
+<hr/>
+
+<h3>function declaration.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,50 +50,40 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>l = length(M)</td>
+		<td>function [out_1,...,out_M,varargout] = fname(in_1, ... , in_N, varargin)</td>
+	</tr>
+
+	<tr>
+		<td>function fname(in_1, ... , in_N, varargin)</td>
+	</tr>
+
+	<tr>
+		<td>function [out_1,...,out_M,varargout] = fname()</td>
+	</tr>
+
+	<tr>
+		<td>function fname()</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">M</span></dt>
-<dd>
-<p class="para">a variable</p>
-</dd>
-
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">l</span></dt>
-<dd>
-<p class="para">the length of the largest array dimension in M.</p>
-</dd>
-
-</dl>
 
 <h3>Description</h3>
 <hr/>
 
 <p></p>
 
-  <p>For matrix or N-dimensional array, <b>length</b> returns the number of elements along the largest dimension.
-		For empty object, <b>length</b> returns 0. For scalar, <b>length</b> returns 1. For a vector, <b>length</b> returns the number of elements. </p>
+  <p><b>function</b> opens a function definition.</p>
+  <p><b>endfunction</b> closes a function definition (optional, but strongly recommended).</p>
 
 
 <h3>Example</h3>
 <hr/>
 
+<p>in a file: demo_function.nlf</p>
 <pre>
-<code class = "nelson">length(ones(3, 0))
-length(3)
-length([1 2 3 4 5])
-length(ones(3, 4, 5))
+<code class = "nelson">function r = demo_function(a, b)
+  r = a + b;
+endfunction
 </code>
 </pre>
 
@@ -101,7 +91,7 @@ length(ones(3, 4, 5))
 <hr/>
 
 <p>
-<a href = "size.html" class = "link">size</a>, <a href = "numel.html" class = "link">numel</a>.</p>
+<a href = "addpath.html" class = "link">addpath</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,15 +117,15 @@ length(ones(3, 4, 5))
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="le.html">&lt;&lt; le</a></span>
+<span class="top"><a href="for.html">&lt;&lt; for</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "log.html">log &gt;&gt;</a></span>
+<span class = "next"><a href = "if.html">if &gt;&gt;</a></span>
 </td>
 
 </tr></table>
