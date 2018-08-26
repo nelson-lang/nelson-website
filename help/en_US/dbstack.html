@@ -15,6 +15,9 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
+	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
+	<title>dbstack</title>
+
 </head>
 <body>
 
@@ -22,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dbstack.html">&lt;&lt; dbstack</a></span>
+<span class="top"><a href="continue.html">&lt;&lt; continue</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -30,19 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "function.html">function &gt;&gt;</a></span>
+<span class = "next"><a href = "for.html">for &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">for</h1>
+<h1 class="refname">dbstack</h1>
 <hr/>
 
-<h1 class="refname">parfor</h1>
-<hr/>
-
-<h3>for loop.</h3>
+<h3>call stack.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,29 +50,70 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>for variable = expression, statements, end</td>
+		<td>dbstack</td>
 	</tr>
 
 	<tr>
-		<td>for variable, statements, end</td>
+		<td>st = dbstack()</td>
+	</tr>
+
+	<tr>
+		<td>dbstack('-completenames')</td>
+	</tr>
+
+	<tr>
+		<td>st = dbstack('-completenames')</td>
+	</tr>
+
+	<tr>
+		<td>dbstack('-completenames', omit)</td>
+	</tr>
+
+	<tr>
+		<td>st = dbstack('-completenames', omit)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">omit</span></dt>
+<dd>
+<p class="para">an integer value: Number of frames to omit (must be positive).</p>
+</dd>
+
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">st</span></dt>
+<dd>
+<p class="para">a struct</p>
+</dd>
+
+</dl>
 
 <h3>Description</h3>
 <hr/>
 
 <p></p>
 
-  <p><b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.</p>
-  <p><b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
+  <p><b>dbstack</b> displays the file names and line numbers of the function calls.</p>
+  <p><b>dbstack('-completenames')</b> displays the full file names.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
+<p>Creates a myfun.nlf and calls it.</p>
 <pre>
-<code class = "nelson">for i = 1:10, disp(i), end
+<code class = "nelson">function myfun(x)
+dbstack();
+end
 </code>
 </pre>
 
@@ -80,7 +121,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "while.html" class = "link">while</a>.</p>
+<a href = "which.html" class = "link">which</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -106,7 +147,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dbstack.html">&lt;&lt; dbstack</a></span>
+<span class="top"><a href="continue.html">&lt;&lt; continue</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -114,7 +155,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "function.html">function &gt;&gt;</a></span>
+<span class = "next"><a href = "for.html">for &gt;&gt;</a></span>
 </td>
 
 </tr></table>

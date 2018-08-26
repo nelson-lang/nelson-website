@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>warning</title>
+	<title>lastwarn</title>
 
 </head>
 <body>
@@ -25,20 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="lastwarn.html">&lt;&lt; lastwarn</a></span>
+<span class="top"><a href="lasterror.html">&lt;&lt; lasterror</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
+<td width = "30%" class = "next">
+<span class = "next"><a href = "warning.html">warning &gt;&gt;</a></span>
+</td>
+
 </tr></table>
 <hr />
 
-<h1 class="refname">warning</h1>
+<h1 class="refname">lastwarn</h1>
 <hr/>
 
-<h3>Display a warning message.</h3>
+<h3>Returns last recorded warning message.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,68 +50,51 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>warning()</td>
+		<td>last_message = lastwarn()</td>
 	</tr>
 
 	<tr>
-		<td>warning(msg)</td>
+		<td>[last_message, last_identifier] = lastwarn()</td>
 	</tr>
 
 	<tr>
-		<td>warning(id, msg)</td>
+		<td>lastwarn('')</td>
 	</tr>
 
 	<tr>
-		<td>warning(state)</td>
+		<td>lastwarn(new_message)</td>
 	</tr>
 
 	<tr>
-		<td>warning(state, id)</td>
+		<td>lastwarn(new_message, new_identifier)</td>
 	</tr>
 
 	<tr>
-		<td>st = warning()</td>
+		<td>[last_message, last_identifier] = lastwarn('')</td>
 	</tr>
 
 	<tr>
-		<td>warning(st)</td>
+		<td>[last_message, last_identifier] = lastwarn(new_message)</td>
+	</tr>
+
+	<tr>
+		<td>[last_message, last_identifier] = lastwarn(new_message, new_identifier)</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">id</span></dt>
-<dd>
-<p class="para">a string: identifier for the warning.</p>
-</dd>
-
-<dt><span class="term">msg</span></dt>
-<dd>
-<p class="para">a string: message to warn.</p>
-</dd>
-
-<dt><span class="term">state</span></dt>
-<dd>
-<p class="para">a string: 'on', 'off', 'aserror', 'all' or 'query'.</p>
-</dd>
-
-<dt><span class="term">st</span></dt>
-<dd>
-<p class="para">a struct: set warning settings.</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">st</span></dt>
+<dt><span class="term">last_message</span></dt>
 <dd>
-<p class="para">a struct, warning settings.</p>
+<p class="para">string: last warning message.</p>
+</dd>
+
+<dt><span class="term">last_identifier</span></dt>
+<dd>
+<p class="para">string: identifier.</p>
 </dd>
 
 </dl>
@@ -117,24 +104,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>warning</b> displays a warning message.</p>
-  <p><b>warning('')</b> resets lastwarn state.</p>
+  <p><b>last_message = lastwarn()</b> returns a string containing the last warning message.</p>
+  <p><b>lastwarn('')</b> clears last warning.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">warning('your warning message.')
-</code>
-</pre>
-<pre>
-<code class = "nelson">warning('on', 'myModule:identifier');
-warning('myModule:identifier', 'my message 1 on');
-warning('off', 'myModule:identifier');
-warning('myModule:identifier', 'my message 2 off');
-warning('aserror', 'myModule:identifier');
-warning('myModule:identifier', 'my message 3 as error');
+<code class = "nelson">[1:3]:3
+    lastwarn
+    [msg, id] = lastwarn()
+    lastwarn('')
+    [msg, id] = lastwarn()
 </code>
 </pre>
 
@@ -142,7 +124,7 @@ warning('myModule:identifier', 'my message 3 as error');
 <hr/>
 
 <p>
-<a href = "lasterror.html" class = "link">lasterror</a>, <a href = "error.html" class = "link">error</a>, <a href = "lastwarn.html" class = "link">lastwarn</a>.</p>
+<a href = "error.html" class = "link">error</a>, <a href = "warning.html" class = "link">warning</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -168,11 +150,15 @@ warning('myModule:identifier', 'my message 3 as error');
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="lastwarn.html">&lt;&lt; lastwarn</a></span>
+<span class="top"><a href="lasterror.html">&lt;&lt; lasterror</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_error_manager.html">error manager</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "warning.html">warning &gt;&gt;</a></span>
 </td>
 
 </tr></table>
