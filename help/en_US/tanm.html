@@ -15,6 +15,9 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
+	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
+	<title>tanm</title>
+
 </head>
 <body>
 
@@ -22,27 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dbstack.html">&lt;&lt; dbstack</a></span>
+<span class="top"><a href="tanh.html">&lt;&lt; tanh</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "function.html">function &gt;&gt;</a></span>
+<span class="top"><a href="chapter_trigonometric_functions.html">trigonometric functions</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">for</h1>
+<h1 class="refname">tanm</h1>
 <hr/>
 
-<h1 class="refname">parfor</h1>
-<hr/>
-
-<h3>for loop.</h3>
+<h3>Computes the matrix tangent of a square matrix.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,33 +46,47 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>for variable = expression, statements, end</td>
-	</tr>
-
-	<tr>
-		<td>for variable, statements, end</td>
+		<td>res = tanm(x)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">x</span></dt>
+<dd>
+<p class="para">a numeric value: scalar or square matrix</p>
+</dd>
+
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">res</span></dt>
+<dd>
+<p class="para">a numeric value: a square matrix</p>
+</dd>
+
+</dl>
 
 <h3>Description</h3>
 <hr/>
 
 <p></p>
+<b>tanm(x)</b> computes the matrix tangent of x.
 
-  <p><b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.</p>
-  <p><b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
-
-
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">for i = 1:10, disp(i), end
-</code>
-</pre>
-<pre>
-<code class = "nelson">for i = [1, 2; 3 4], disp(i), disp('next'), end
+<code class = "nelson">A = eye(3, 3);
+res = tanm(A)
+A = [1, 2; 3, 4];
+res = tanm(A)
 </code>
 </pre>
 
@@ -84,7 +94,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "while.html" class = "link">while</a>.</p>
+<a href = "tan.html" class = "link">tan</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -110,15 +120,11 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dbstack.html">&lt;&lt; dbstack</a></span>
+<span class="top"><a href="tanh.html">&lt;&lt; tanh</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_interpreter.html">interpreter functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "function.html">function &gt;&gt;</a></span>
+<span class="top"><a href="chapter_trigonometric_functions.html">trigonometric functions</a></span>
 </td>
 
 </tr></table>
