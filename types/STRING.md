@@ -1,19 +1,15 @@
-  - String (Unicode):
+  - String Array (Unicode):
 
 ```
---> disp('Hello: 你好')
-Hello: 你好
-```
+A = ["Nelson" "manages"; "string" "array"]
+class(A)
+strlength(A)
 
-```
---> int32('你好')
+B = {'Nelson' 'is' 'open' 'source'};
+B = string(B)
 
-ans =
-
-  <int32>  - size: 1x2
-
-Columns 1 to 2
-         20320          22909  
+C = string('Hello: 你好')
+C(3) = string('World')
 ```
 
 [Previous page](../TYPES.md)

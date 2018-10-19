@@ -6,7 +6,9 @@
 
 ### [integer](types/INTEGER.md)
 
-### [string](types/STRING.md)
+### [characters array](types/CHARACTERS.md)
+
+### [string array](types/STRING.md)
 
 ### [data structure](types/DATA_STRUCTURE.md)
 
