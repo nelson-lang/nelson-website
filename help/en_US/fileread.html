@@ -74,7 +74,7 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">type</span></dt>
 <dd>
-<p class="para">a string: 'char' or 'cell'. 'cell' will converts text file to a cell of string. 'char' by default.</p>
+<p class="para">a string: 'char', 'cell' or 'string'. 'cell' will converts text file to a cell of string. 'string' will converts text file to a string array. 'char' by default.</p>
 </dd>
 
 <dt><span class="term">eol</span></dt>
@@ -90,7 +90,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">str</span></dt>
 <dd>
-<p class="para">a string.</p>
+<p class="para">a string, cell of strings or string array.</p>
 </dd>
 
 </dl>
@@ -110,6 +110,7 @@ SAME AS NELSON SOFTWARE
 <code class = "nelson">str = fileread([nelsonroot(),'/CHANGELOG.md'])
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'char')
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'cell')
+str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
 </code>
 </pre>
 

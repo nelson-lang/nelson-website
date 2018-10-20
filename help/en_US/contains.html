@@ -69,7 +69,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">str</span></dt>
 <dd>
-<p class="para">a string or cell of strings.</p>
+<p class="para">a string, string array or cell of strings.</p>
 </dd>
 
 <dt><span class="term">pattern</span></dt>
@@ -94,7 +94,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>endsWith</b> contains <b>true</b> if <b>str</b> ends with <b>pattern</b>.
+<b>contains</b> returns <b>true</b> if <b>str</b> contains <b>pattern</b>.
 
 <h3>Example</h3>
 <hr/>
@@ -106,6 +106,9 @@ k = contains (str, 'molehill')
 k = contains (str, 'Hill', 'IgnoreCase', true)
 
 A = {'Nel', 'son'; 'Nelson', 'Modules'}
+k = contains(A, 'son')
+
+A = ["Nel", "son"; "Nelson", "Modules"]
 k = contains(A, 'son')
 </code>
 </pre>

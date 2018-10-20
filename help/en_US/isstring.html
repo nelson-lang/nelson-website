@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fieldnames</title>
+	<title>isstring</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cellstr.html">&lt;&lt; cellstr</a></span>
+<span class="top"><a href="issparse.html">&lt;&lt; issparse</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
+<span class="top"><a href="chapter_types.html">types module</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getfield.html">getfield &gt;&gt;</a></span>
+<span class = "next"><a href = "isstruct.html">isstruct &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fieldnames</h1>
+<h1 class="refname">isstring</h1>
 <hr/>
 
-<h3>Returns field names of a structure or an handle.</h3>
+<h3>Return true if variable var is a string array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,15 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>names = fieldnames(st)</td>
-	</tr>
-
-	<tr>
-		<td>names = fieldnames(h)</td>
-	</tr>
-
-	<tr>
-		<td>names = fieldnames(h, '-full')</td>
+		<td>res = isstring(var)</td>
 	</tr>
 
 </table>
@@ -67,14 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">st</span></dt>
+<dt><span class="term">var</span></dt>
 <dd>
-<p class="para">a structure</p>
-</dd>
-
-<dt><span class="term">h</span></dt>
-<dd>
-<p class="para">a handle object</p>
+<p class="para">a variable</p>
 </dd>
 
 </dl>
@@ -83,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">names</span></dt>
+<dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a logical: true or false</p>
 </dd>
 
 </dl>
@@ -94,17 +81,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
+<b>isstring</b> returns a logical 1 if the argument is a string array and a logical 0 otherwise.
 
-  <p><b>names = fieldnames(st)</b> returns a cell of strings with the names of the fields in the input structure.</p>
-  <p><b>names = fieldnames(h)</b> returns a cell of strings with the names of the properties in the handle (without hidden).</p>
-  <p><b>names = fieldnames(h, '-full')</b> returns a cell of strings with the names of the all properties in the handle.</p>
-
-
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fieldnames(dir())
+<code class = "nelson">A = 3;
+res = isstring(A)
+</code>
+</pre>
+<pre>
+<code class = "nelson">B = "NelSon";
+res = isstring(B)
+</code>
+</pre>
+<pre>
+<code class = "nelson">C = [1 ; 3];
+res = isstring(C)
 </code>
 </pre>
 
@@ -112,7 +106,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "getfield.html" class = "link">getfield</a>.</p>
+<a href = "class.html" class = "link">class</a>, <a href = "string.html" class = "link">string</a>, <a href = "ischar.html" class = "link">ischar</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,15 +132,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cellstr.html">&lt;&lt; cellstr</a></span>
+<span class="top"><a href="issparse.html">&lt;&lt; issparse</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
+<span class="top"><a href="chapter_types.html">types module</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getfield.html">getfield &gt;&gt;</a></span>
+<span class = "next"><a href = "isstruct.html">isstruct &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fieldnames</title>
+	<title>ismissing</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cellstr.html">&lt;&lt; cellstr</a></span>
+<span class="top"><a href="isinf.html">&lt;&lt; isinf</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getfield.html">getfield &gt;&gt;</a></span>
+<span class = "next"><a href = "isnan.html">isnan &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fieldnames</h1>
+<h1 class="refname">ismissing</h1>
 <hr/>
 
-<h3>Returns field names of a structure or an handle.</h3>
+<h3>Check for missing values.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,15 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>names = fieldnames(st)</td>
-	</tr>
-
-	<tr>
-		<td>names = fieldnames(h)</td>
-	</tr>
-
-	<tr>
-		<td>names = fieldnames(h, '-full')</td>
+		<td>tf = ismissing(M)</td>
 	</tr>
 
 </table>
@@ -67,14 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">st</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a structure</p>
-</dd>
-
-<dt><span class="term">h</span></dt>
-<dd>
-<p class="para">a handle object</p>
+<p class="para">a variable</p>
 </dd>
 
 </dl>
@@ -83,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">names</span></dt>
+<dt><span class="term">tf</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">logical: result of 'ismissing'.</p>
 </dd>
 
 </dl>
@@ -95,16 +82,26 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>names = fieldnames(st)</b> returns a cell of strings with the names of the fields in the input structure.</p>
-  <p><b>names = fieldnames(h)</b> returns a cell of strings with the names of the properties in the handle (without hidden).</p>
-  <p><b>names = fieldnames(h, '-full')</b> returns a cell of strings with the names of the all properties in the handle.</p>
+  <p><b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
+  <p>missing data are defined as:</p>
+  <p><b>NaN</b> for double or single</p>
+  <p><b>missing</b> for string array</p>
+  <p><b>' '</b> for character array</p>
+  <p><b>''</b> for cell of character array</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fieldnames(dir())
+<code class = "nelson">A = ["Nel", NaN, "son"];
+ismissing(A)
+B = [1 2 NaN Inf];
+ismissing(B)
+C = 'Nel son'
+ismissing(C)
+D = {'Nel' '' 'son'}
+ismissing(D)
 </code>
 </pre>
 
@@ -112,7 +109,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "getfield.html" class = "link">getfield</a>.</p>
+<a href = "isfinite.html" class = "link">isfinite</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,15 +135,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cellstr.html">&lt;&lt; cellstr</a></span>
+<span class="top"><a href="isinf.html">&lt;&lt; isinf</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getfield.html">getfield &gt;&gt;</a></span>
+<span class = "next"><a href = "isnan.html">isnan &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -65,6 +65,10 @@ SAME AS NELSON SOFTWARE
 		<td>C = cell(sz)</td>
 	</tr>
 
+	<tr>
+		<td>C = cell(A)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -79,6 +83,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">sz</span></dt>
 <dd>
 <p class="para">a vector of integer values (dimensions of the cell to create).</p>
+</dd>
+
+<dt><span class="term">A</span></dt>
+<dd>
+<p class="para">a string array.</p>
 </dd>
 
 </dl>
@@ -101,15 +110,21 @@ SAME AS NELSON SOFTWARE
 
   <p><b>cell</b> returns a cell array of empty matrices.</p>
   <p><b>cell()</b> is equivalent to <b>cell(0)</b></p>
+  <p><b>cell(A)</b> with A a string array converts to cell.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">A = eye(2, 4);
 sz = size(A)
 C = cell(sz)
+</code>
+</pre>
+<pre>
+<code class = "nelson">A = ["Nel", "son"; "open", "source"];
+C = cell(A)
 </code>
 </pre>
 

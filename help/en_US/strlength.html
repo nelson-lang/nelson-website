@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="strfind.html">&lt;&lt; strfind</a></span>
+<span class="top"><a href="strings.html">&lt;&lt; strings</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -42,7 +42,7 @@ SAME AS NELSON SOFTWARE
 <h1 class="refname">strlength</h1>
 <hr/>
 
-<h3>Length of strings in cell of strings.</h3>
+<h3>Length of strings in cell of strings or string array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -61,7 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">ce</span></dt>
 <dd>
-<p class="para">a string or cell of strings.</p>
+<p class="para">a string, string array or cell of strings.</p>
 </dd>
 
 </dl>
@@ -81,7 +81,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>strlength</b> returns length of strings in cell of strings.
+<b>strlength</b> returns length of strings.
 
 <h3>Example</h3>
 <hr/>
@@ -92,6 +92,9 @@ k = strlength(str)
 
 A = {'Nel', 'son'; 'Toolboxes', 'Modules'}
 k = strlength(A)
+
+B = ["Nel", NaN, "son"; "is", "open", "source"];
+k = strlength(B)
 </code>
 </pre>
 
@@ -125,7 +128,7 @@ k = strlength(A)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="strfind.html">&lt;&lt; strfind</a></span>
+<span class="top"><a href="strings.html">&lt;&lt; strings</a></span>
 </td>
 
 <td width="40%" class="center">

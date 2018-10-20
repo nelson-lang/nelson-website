@@ -70,7 +70,7 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">txt</span></dt>
 <dd>
-<p class="para">a string or cell of string: content to save in file</p>
+<p class="para">a string, cell of string or string array: content to save in file</p>
 </dd>
 
 <dt><span class="term">eol</span></dt>
@@ -85,7 +85,7 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>filewrite</b> saves a string or cell of string to a file.</p>
+  <p><b>filewrite</b> saves a character array, cell of string or string array to a file.</p>
   <p>file saved uses ascii or UTF-8 (NO-BOM) encoding.</p>
 
 
@@ -93,7 +93,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <pre>
-<code class = "nelson">str = fileread([nelsonroot(),'/CHANGELOG.md'])
+<code class = "nelson">str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
     	filewrite([tempdir(), '/CHANGELOG.md'], str)
 </code>
 </pre>

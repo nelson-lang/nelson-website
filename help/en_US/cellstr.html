@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fieldnames</title>
+	<title>cellstr</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cellstr.html">&lt;&lt; cellstr</a></span>
+<span class="top"><a href="cellfun.html">&lt;&lt; cellfun</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getfield.html">getfield &gt;&gt;</a></span>
+<span class = "next"><a href = "fieldnames.html">fieldnames &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fieldnames</h1>
+<h1 class="refname">cellstr</h1>
 <hr/>
 
-<h3>Returns field names of a structure or an handle.</h3>
+<h3>Converts to cell of character array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,15 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>names = fieldnames(st)</td>
-	</tr>
-
-	<tr>
-		<td>names = fieldnames(h)</td>
-	</tr>
-
-	<tr>
-		<td>names = fieldnames(h, '-full')</td>
+		<td>ce = cellstr(A)</td>
 	</tr>
 
 </table>
@@ -67,14 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">st</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a structure</p>
-</dd>
-
-<dt><span class="term">h</span></dt>
-<dd>
-<p class="para">a handle object</p>
+<p class="para">a string, a string array, cell of character array.</p>
 </dd>
 
 </dl>
@@ -83,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">names</span></dt>
+<dt><span class="term">ce</span></dt>
 <dd>
-<p class="para">a cell of strings</p>
+<p class="para">a cell of character array</p>
 </dd>
 
 </dl>
@@ -95,16 +82,22 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>names = fieldnames(st)</b> returns a cell of strings with the names of the fields in the input structure.</p>
-  <p><b>names = fieldnames(h)</b> returns a cell of strings with the names of the properties in the handle (without hidden).</p>
-  <p><b>names = fieldnames(h, '-full')</b> returns a cell of strings with the names of the all properties in the handle.</p>
+  <p><b>cellstr(A)</b> converts to cell of character array.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fieldnames(dir())
+<code class = "nelson">cellstr('Nelson')
+</code>
+</pre>
+<pre>
+<code class = "nelson">cellstr({'Nelson'})
+</code>
+</pre>
+<pre>
+<code class = "nelson">cellstr({})
 </code>
 </pre>
 
@@ -112,7 +105,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "getfield.html" class = "link">getfield</a>.</p>
+<a href = "iscellstr.html" class = "link">iscellstr</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,7 +131,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cellstr.html">&lt;&lt; cellstr</a></span>
+<span class="top"><a href="cellfun.html">&lt;&lt; cellfun</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -146,7 +139,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getfield.html">getfield &gt;&gt;</a></span>
+<span class = "next"><a href = "fieldnames.html">fieldnames &gt;&gt;</a></span>
 </td>
 
 </tr></table>

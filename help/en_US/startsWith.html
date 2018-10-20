@@ -69,7 +69,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">str</span></dt>
 <dd>
-<p class="para">a string or cell of strings.</p>
+<p class="para">a string, string array or cell of strings.</p>
 </dd>
 
 <dt><span class="term">pattern</span></dt>
@@ -107,6 +107,9 @@ k = startsWith (str, 'to', 'IgnoreCase', true)
 
 A = {'Nel', 'son'; 'Nelson', 'Modules'}
 k = startsWith(A, 'Nel')
+
+A = ["Nel", "son"; "Nelson", "Modules"];
+k = startsWith(A, "Nel")
 </code>
 </pre>
 
