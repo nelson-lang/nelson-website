@@ -26,4 +26,4 @@ Component Object Model (COM) is a binary-interface standard for software compone
   * COM_xlsfinfo : get informations about xls/xlsx file.
 
 
-[Previous page](README.md)
+[Previous page](FEATURES.md)

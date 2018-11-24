@@ -13,4 +13,4 @@ Nelson provides a cross-platform command-line tool written in Nelson for compili
 ![Nelson environment](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/build.png "build on the fly")
 
 
-[Previous page](README.md)
+[Previous page](FEATURES.md)

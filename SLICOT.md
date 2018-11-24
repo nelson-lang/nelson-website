@@ -27,4 +27,4 @@ New functions available provide numerical solution of some classical control pro
 * [slicot_tb01id](/help/en_US/slicot_tb01id.html) : Balancing a system matrix corresponding to a triplet (A, B, C). 
 * [slicot_tg01ad](/help/en_US/slicot_tg01ad.html) : Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C). 
 
-[Previous page](README.md)
+[Previous page](FEATURES.md)

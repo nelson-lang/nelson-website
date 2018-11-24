@@ -19,4 +19,4 @@ Code editor provides the following editing functionality for writing and modifyi
 
 
 
-[Previous page](README.md)
+[Previous page](FEATURES.md)

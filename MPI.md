@@ -36,4 +36,4 @@ Example: Sum on distributed computing:
 ![MPI Sum](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/MPI_parallel_sum.png "MPI")
 ![Task manager with process started by Nelson](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/task_manager.png "Task manager with process started by Nelson")
 
-[Previous page](README.md)
+[Previous page](FEATURES.md)
