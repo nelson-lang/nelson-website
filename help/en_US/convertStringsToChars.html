@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>contains</title>
+	<title>convertStringsToChars</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="char.html">&lt;&lt; char</a></span>
+<span class="top"><a href="convertCharsToStrings.html">&lt;&lt; convertCharsToStrings</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "convertCharsToStrings.html">convertCharsToStrings &gt;&gt;</a></span>
+<span class = "next"><a href = "count.html">count &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">contains</h1>
+<h1 class="refname">convertStringsToChars</h1>
 <hr/>
 
-<h3>checks if string contains with pattern.</h3>
+<h3>Convert string arrays to character arrays.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,15 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tf = contains(str, pattern)</td>
+		<td>C = convertStringsToChars(S)</td>
 	</tr>
 
 	<tr>
-		<td>tf = contains(str, pattern,'IgnoreCase', true)</td>
-	</tr>
-
-	<tr>
-		<td>tf = contains(str, pattern,'IgnoreCase', false)</td>
+		<td>[B1, B2, ..., BN] = convertStringsToChars(A1, A2, ..., AN)</td>
 	</tr>
 
 </table>
@@ -67,14 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">str</span></dt>
+<dt><span class="term">S</span></dt>
 <dd>
-<p class="para">a string, string array or cell of strings.</p>
+<p class="para">if S is a string array, output C will be converted to an cell of strings or an character vector (if S is scalar).</p>
 </dd>
 
-<dt><span class="term">pattern</span></dt>
+<dt><span class="term">A1, A2, ..., AN</span></dt>
 <dd>
-<p class="para">a string to find.</p>
+<p class="para">variables to convert to char array if it is a string array.</p>
 </dd>
 
 </dl>
@@ -83,9 +79,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">tf</span></dt>
+<dt><span class="term">C</span></dt>
 <dd>
-<p class="para">a matrix of logical.</p>
+<p class="para">a char array or unaltered variable</p>
+</dd>
+
+<dt><span class="term">B1, B2, ..., BN</span></dt>
+<dd>
+<p class="para">variables converted to char array if it is a string array.</p>
 </dd>
 
 </dl>
@@ -94,22 +95,16 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>contains</b> returns <b>true</b> if <b>str</b> contains <b>pattern</b>.
+
+  <p><b>convertStringsToChars</b> converts string arrays to character arrays.</p>
+
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">str = 'To make a mountain out of a molehill';
-k = contains (str, 'hill')
-k = contains (str, 'molehill')
-k = contains (str, 'Hill', 'IgnoreCase', true)
-
-A = {'Nel', 'son'; 'Nelson', 'Modules'}
-k = contains(A, 'son')
-
-A = ["Nel", "son"; "Nelson", "Modules"]
-k = contains(A, 'son')
+<code class = "nelson">A = convertStringsToChars("Nelson")
+A = convertStringsToChars(["Nelson", string(NaN)])
 </code>
 </pre>
 
@@ -117,7 +112,7 @@ k = contains(A, 'son')
 <hr/>
 
 <p>
-<a href = "startsWith.html" class = "link">startsWith</a>, <a href = "endsWith.html" class = "link">endsWith</a>.</p>
+<a href = "convertCharsToStrings.html" class = "link">convertCharsToStringss</a>, <a href = "cellstr.html" class = "link">cellstr</a>, <a href = "string.html" class = "link">string</a>, <a href = "char.html" class = "link">char</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -143,7 +138,7 @@ k = contains(A, 'son')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="char.html">&lt;&lt; char</a></span>
+<span class="top"><a href="convertCharsToStrings.html">&lt;&lt; convertCharsToStrings</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -151,7 +146,7 @@ k = contains(A, 'son')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "convertCharsToStrings.html">convertCharsToStrings &gt;&gt;</a></span>
+<span class = "next"><a href = "count.html">count &gt;&gt;</a></span>
 </td>
 
 </tr></table>
