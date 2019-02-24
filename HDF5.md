@@ -20,7 +20,7 @@ Files with the .nh5 extension are files that are in the binary data container fo
 .nh5 files are categorized as data files that include variables, functions, arrays and other information. 
 
 ```
-A = ["Nelson", "saves"; "string"; "array"];
+A = ["Nelson", "saves"; "string", "array"];
 nh5filename = [tempdir(), '/doc_nh5.nh5'];
 save(nh5filename, 'A')
 clear A
