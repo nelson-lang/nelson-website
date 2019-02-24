@@ -15,9 +15,6 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
-	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>h5dump</title>
-
 </head>
 <body>
 
@@ -25,7 +22,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="h5create.html">&lt;&lt; h5create</a></span>
+<span class="top"><a href="h5dump.html">&lt;&lt; h5dump</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +30,19 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "h5load.html">h5load &gt;&gt;</a></span>
+<span class = "next"><a href = "h5ls.html">h5ls &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">h5dump</h1>
+<h1 class="refname">h5load</h1>
 <hr/>
 
-<h3>dump the content of hdf5 file as text.</h3>
+<h1 class="refname">load</h1>
+<hr/>
+
+<h3>load data form .nh5 file into Nelson's workspace.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>h5dump(filename)</td>
+		<td>h5load(filename)</td>
 	</tr>
 
 	<tr>
-		<td>R = h5dump(filename)</td>
+		<td>st = h5load(filename)</td>
 	</tr>
 
 	<tr>
-		<td>h5dump(filename, location)</td>
+		<td>h5load(filename, var1, ..., varN)</td>
 	</tr>
 
 	<tr>
-		<td>R = h5dump(filename, location)</td>
+		<td>st = h5load(filename, var1, ..., varN)</td>
 	</tr>
 
 </table>
@@ -73,12 +73,12 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a string: hdf5 filename.</p>
+<p class="para">a string: .nh5 filename.</p>
 </dd>
 
-<dt><span class="term">location</span></dt>
+<dt><span class="term">var1, ..., varN</span></dt>
 <dd>
-<p class="para">a string: name of the path to dump.</p>
+<p class="para">string: Names of variables to load into Nelson's workspace.</p>
 </dd>
 
 </dl>
@@ -87,9 +87,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">st</span></dt>
 <dd>
-<p class="para">a string: dump of hdf5 file as text.</p>
+<p class="para">a structure with variables name as fieldnames.</p>
 </dd>
 
 </dl>
@@ -99,16 +99,28 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>h5dump</b> dump the content of hdf5 file as text.</p>
+  <p><b>h5load</b> loads data from .nh5 file to Nelson's workspace.</p>
+  <p>.nh5 file uses hdf5 file as container.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">h5create([tempdir(), '/myfile.h5'],'/myDataset2',[10 20]);
-h5dump([tempdir(), '/myfile.h5'])
-R = h5dump([tempdir(), '/myfile.h5'])
+<code class = "nelson">A = ones(3, 4);
+B = 'hello for open mat users';
+h5save([tempdir(), '/example_h5load.nh5'], 'A', 'B')
+clear;
+st = h5load([tempdir(), '/example_h5load.nh5']);
+who
+st.A
+st.B
+clear
+who
+h5load([tempdir(), '/example_h5load.nh5']);
+who
+A
+B
 </code>
 </pre>
 
@@ -116,7 +128,7 @@ R = h5dump([tempdir(), '/myfile.h5'])
 <hr/>
 
 <p>
-<a href = "h5write.html" class = "link">h5write</a>.</p>
+<a href = "h5save.html" class = "link">h5save</a>, <a href = "h5read.html" class = "link">h5read</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -142,7 +154,7 @@ R = h5dump([tempdir(), '/myfile.h5'])
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="h5create.html">&lt;&lt; h5create</a></span>
+<span class="top"><a href="h5dump.html">&lt;&lt; h5dump</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -150,7 +162,7 @@ R = h5dump([tempdir(), '/myfile.h5'])
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "h5load.html">h5load &gt;&gt;</a></span>
+<span class = "next"><a href = "h5ls.html">h5ls &gt;&gt;</a></span>
 </td>
 
 </tr></table>
