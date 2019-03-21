@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>who</title>
+	<title>whomat</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
+<span class="top"><a href="savemat.html">&lt;&lt; savemat</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+<span class="top"><a href="chapter_matio.html">MATIO</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whos.html">whos &gt;&gt;</a></span>
+<span class = "next"><a href = "whosmat.html">whosmat &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">who</h1>
+<h1 class="refname">whomat</h1>
 <hr/>
 
-<h3>List variables in memory or in .nh5 or in .mat file.</h3>
+<h3>List variables in an valid .mat file.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,35 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>who</td>
+		<td>whomat(filename)</td>
 	</tr>
 
 	<tr>
-		<td>s = who()</td>
+		<td>ce = whomat(filename)</td>
 	</tr>
 
 	<tr>
-		<td>who(scope)</td>
+		<td>whomat(filename, var1, ..., varN)</td>
 	</tr>
 
 	<tr>
-		<td>s = who(scope)</td>
-	</tr>
-
-	<tr>
-		<td>who('-file', filename)</td>
-	</tr>
-
-	<tr>
-		<td>s = who('-file', filename)</td>
-	</tr>
-
-	<tr>
-		<td>who(... , var1, ..., varN)</td>
-	</tr>
-
-	<tr>
-		<td>s = who(... , var1, ..., varN)</td>
+		<td>ce = whomat(filename, var1, ..., varN)</td>
 	</tr>
 
 </table>
@@ -87,19 +71,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">scope</span></dt>
-<dd>
-<p class="para">a string: 'global', 'base', 'caller', 'local' or '-file'.</p>
-</dd>
-
 <dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">string: an existing filename .nh5 or .mat file.</p>
+<p class="para">a string: .mat filename.</p>
 </dd>
 
 <dt><span class="term">var1, ..., varN</span></dt>
 <dd>
-<p class="para">string: variable name.</p>
+<p class="para">string: Names of variables to inspect.</p>
 </dd>
 
 </dl>
@@ -108,9 +87,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">s</span></dt>
+<dt><span class="term">ce</span></dt>
 <dd>
-<p class="para">a cell of strings: list of variable's name.</p>
+<p class="para">cell of strings with variables names.</p>
 </dd>
 
 </dl>
@@ -120,19 +99,24 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>who</b> displays current variable names.</p>
+  <p><b>whomat</b> lists variables in an valid .mat file.</p>
 
+
+<h3>Bibliography</h3>
+<hr/>
+Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">clear
-who
-A = 3
-b= 3
-who
-s = who()
+<code class = "nelson">A = ones(3, 4);
+B = 'Nelson';
+C = sparse(true);
+D = sparse(3i);		
+savemat([tempdir(), '/example_whomat-v7.3.mat'], 'A', 'B', 'C', 'D', '-v7.3')
+whomat([tempdir(), '/example_whomat-v7.3.mat'])
+ce = whomat([tempdir(), '/example_whomat-v7.3.mat'])
 </code>
 </pre>
 
@@ -140,7 +124,7 @@ s = who()
 <hr/>
 
 <p>
-<a href = "what.html" class = "link">what</a>, <a href = "clear.html" class = "link">clear</a>, <a href = "whos.html" class = "link">whos</a>.</p>
+<a href = "whonh5.html" class = "link">whonh5</a>, <a href = "who.html" class = "link">who</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -166,15 +150,15 @@ s = who()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
+<span class="top"><a href="savemat.html">&lt;&lt; savemat</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+<span class="top"><a href="chapter_matio.html">MATIO</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whos.html">whos &gt;&gt;</a></span>
+<span class = "next"><a href = "whosmat.html">whosmat &gt;&gt;</a></span>
 </td>
 
 </tr></table>

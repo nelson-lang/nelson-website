@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>who</title>
+	<title>loadmat</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
+<span class="top"><a href="ismatfile.html">&lt;&lt; ismatfile</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+<span class="top"><a href="chapter_matio.html">MATIO</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whos.html">whos &gt;&gt;</a></span>
+<span class = "next"><a href = "savemat.html">savemat &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">who</h1>
+<h1 class="refname">loadmat</h1>
 <hr/>
 
-<h3>List variables in memory or in .nh5 or in .mat file.</h3>
+<h3>load data from .mat file into Nelson's workspace.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,35 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>who</td>
+		<td>loadmat(filename)</td>
 	</tr>
 
 	<tr>
-		<td>s = who()</td>
+		<td>st = loadmat(filename)</td>
 	</tr>
 
 	<tr>
-		<td>who(scope)</td>
+		<td>loadmat(filename, var1, ..., varN)</td>
 	</tr>
 
 	<tr>
-		<td>s = who(scope)</td>
-	</tr>
-
-	<tr>
-		<td>who('-file', filename)</td>
-	</tr>
-
-	<tr>
-		<td>s = who('-file', filename)</td>
-	</tr>
-
-	<tr>
-		<td>who(... , var1, ..., varN)</td>
-	</tr>
-
-	<tr>
-		<td>s = who(... , var1, ..., varN)</td>
+		<td>st = loadmat(filename, var1, ..., varN)</td>
 	</tr>
 
 </table>
@@ -87,19 +71,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">scope</span></dt>
-<dd>
-<p class="para">a string: 'global', 'base', 'caller', 'local' or '-file'.</p>
-</dd>
-
 <dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">string: an existing filename .nh5 or .mat file.</p>
+<p class="para">a string: .mat filename.</p>
 </dd>
 
 <dt><span class="term">var1, ..., varN</span></dt>
 <dd>
-<p class="para">string: variable name.</p>
+<p class="para">string: Names of variables to load into Nelson's workspace.</p>
 </dd>
 
 </dl>
@@ -108,9 +87,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">s</span></dt>
+<dt><span class="term">st</span></dt>
 <dd>
-<p class="para">a cell of strings: list of variable's name.</p>
+<p class="para">a structure with variables name as fieldnames.</p>
 </dd>
 
 </dl>
@@ -120,19 +99,31 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>who</b> displays current variable names.</p>
+  <p><b>loadmat</b> loads data from .mat file to Nelson's workspace.</p>
 
+
+<h3>Bibliography</h3>
+<hr/>
+Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">clear
+<code class = "nelson">A = ones(3, 4);
+B = 'hello for open mat users';
+savemat([tempdir(), '/example_loadmat.mat'], 'A', 'B')
+clear;
+st = loadmat([tempdir(), '/example_loadmat.mat']);
 who
-A = 3
-b= 3
+st.A
+st.B
+clear
 who
-s = who()
+loadmat([tempdir(), '/example_loadmat.mat']);
+who
+A
+B
 </code>
 </pre>
 
@@ -140,7 +131,7 @@ s = who()
 <hr/>
 
 <p>
-<a href = "what.html" class = "link">what</a>, <a href = "clear.html" class = "link">clear</a>, <a href = "whos.html" class = "link">whos</a>.</p>
+<a href = "load.html" class = "link">load</a>, <a href = "save.html" class = "link">save</a>, <a href = "savemat.html" class = "link">savemat</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -166,15 +157,15 @@ s = who()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
+<span class="top"><a href="ismatfile.html">&lt;&lt; ismatfile</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+<span class="top"><a href="chapter_matio.html">MATIO</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whos.html">whos &gt;&gt;</a></span>
+<span class = "next"><a href = "savemat.html">savemat &gt;&gt;</a></span>
 </td>
 
 </tr></table>

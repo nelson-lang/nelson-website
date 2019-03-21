@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>h5readatt</title>
+	<title>ismatfile</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="h5read.html">&lt;&lt; h5read</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_hdf5.html">HDF5</a></span>
+<span class="top"><a href="chapter_matio.html">MATIO</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "h5write.html">h5write &gt;&gt;</a></span>
+<span class = "next"><a href = "loadmat.html">loadmat &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">h5readatt</h1>
+<h1 class="refname">ismatfile</h1>
 <hr/>
 
-<h3>Read HDF5 attribute.</h3>
+<h3>Checks if filename a valid .mat file</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>attval = h5readatt(filename, location, attname)</td>
+		<td>[tf, ver] = ismatfile(filename)</td>
 	</tr>
 
 </table>
@@ -61,17 +57,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">a string: hdf5 filename.</p>
-</dd>
-
-<dt><span class="term">location</span></dt>
-<dd>
-<p class="para">a string: full path identifying a group or variable.</p>
-</dd>
-
-<dt><span class="term">attname</span></dt>
-<dd>
-<p class="para">a string: name of an attribute.</p>
+<p class="para">a string: .mat filename.</p>
 </dd>
 
 </dl>
@@ -80,9 +66,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">attval</span></dt>
+<dt><span class="term">tf</span></dt>
 <dd>
-<p class="para">a nelson's variable.</p>
+<p class="para">a logical: true if it is a valid .mat file.</p>
+</dd>
+
+<dt><span class="term">ver</span></dt>
+<dd>
+<p class="para">a string: version of .mat file ("-v7.3", "-v7" or "-v6").</p>
 </dd>
 
 </dl>
@@ -92,16 +83,25 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>h5readatt</b> reads attribute named <b>attname</b> from the HDF5 file.</p>
+  <p><b>ismatfile</b> checks if filename a valid .mat file.</p>
 
+
+<h3>Bibliography</h3>
+<hr/>
+Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">h5create([tempdir(), '/myfile.h5'],'/myDataset1',[10 20]);
-h5writeatt([tempdir(), '/myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
-h5readatt([tempdir(), '/myfile.h5'],'/','creation_date')
+<code class = "nelson">A = ones(3, 4);
+savemat([tempdir(), '/example_loadmat-v7.3.mat'], 'A', '-v7.3')
+savemat([tempdir(), '/example_loadmat-v7.mat'], 'A', '-v7')
+savemat([tempdir(), '/example_loadmat-v6.mat'], 'A', '-v6')
+[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.3.mat']) 
+[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.mat']) 
+[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v6.mat']) 
+[tf, ver] = ismatfile([tempdir(), '/example_not_existing.mat'])
 </code>
 </pre>
 
@@ -109,7 +109,7 @@ h5readatt([tempdir(), '/myfile.h5'],'/','creation_date')
 <hr/>
 
 <p>
-<a href = "h5writeatt.html" class = "link">h5writeatt</a>.</p>
+<a href = "isnh5file.html" class = "link">isnh5file</a>, <a href = "loadmat.html" class = "link">loadmat</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -134,16 +134,12 @@ h5readatt([tempdir(), '/myfile.h5'],'/','creation_date')
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="h5read.html">&lt;&lt; h5read</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_hdf5.html">HDF5</a></span>
+<span class="top"><a href="chapter_matio.html">MATIO</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "h5write.html">h5write &gt;&gt;</a></span>
+<span class = "next"><a href = "loadmat.html">loadmat &gt;&gt;</a></span>
 </td>
 
 </tr></table>

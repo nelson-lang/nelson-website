@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>who</title>
+	<title>load</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
+<span class="top"><a href="fwrite.html">&lt;&lt; fwrite</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whos.html">whos &gt;&gt;</a></span>
+<span class = "next"><a href = "save.html">save &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">who</h1>
+<h1 class="refname">load</h1>
 <hr/>
 
-<h3>List variables in memory or in .nh5 or in .mat file.</h3>
+<h3>load data from .nh5 or .mat file into Nelson's workspace.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,35 +50,27 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>who</td>
+		<td>load(filename)</td>
 	</tr>
 
 	<tr>
-		<td>s = who()</td>
+		<td>st = load(filename)</td>
 	</tr>
 
 	<tr>
-		<td>who(scope)</td>
+		<td>load(filename, var1, ..., varN)</td>
 	</tr>
 
 	<tr>
-		<td>s = who(scope)</td>
+		<td>st = load(filename, var1, ..., varN)</td>
 	</tr>
 
 	<tr>
-		<td>who('-file', filename)</td>
+		<td>load(filename, '-mat')</td>
 	</tr>
 
 	<tr>
-		<td>s = who('-file', filename)</td>
-	</tr>
-
-	<tr>
-		<td>who(... , var1, ..., varN)</td>
-	</tr>
-
-	<tr>
-		<td>s = who(... , var1, ..., varN)</td>
+		<td>load(filename, '-nh5')</td>
 	</tr>
 
 </table>
@@ -87,19 +79,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">scope</span></dt>
-<dd>
-<p class="para">a string: 'global', 'base', 'caller', 'local' or '-file'.</p>
-</dd>
-
 <dt><span class="term">filename</span></dt>
 <dd>
-<p class="para">string: an existing filename .nh5 or .mat file.</p>
+<p class="para">a string: .nh5 or .mat filename.</p>
+</dd>
+
+<dt><span class="term">'-mat' or '-nh5'</span></dt>
+<dd>
+<p class="para">forces to read file as nh5 or mat.</p>
 </dd>
 
 <dt><span class="term">var1, ..., varN</span></dt>
 <dd>
-<p class="para">string: variable name.</p>
+<p class="para">string: Names of variables to load into Nelson's workspace.</p>
 </dd>
 
 </dl>
@@ -108,9 +100,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">s</span></dt>
+<dt><span class="term">st</span></dt>
 <dd>
-<p class="para">a cell of strings: list of variable's name.</p>
+<p class="para">a structure with variables name as fieldnames.</p>
 </dd>
 
 </dl>
@@ -120,19 +112,27 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>who</b> displays current variable names.</p>
+  <p><b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">clear
+<code class = "nelson">A = ones(3, 4);
+B = 'hello for open mat users';
+save([tempdir(), '/example_load.mat'], 'A', 'B')
+clear;
+st = load([tempdir(), '/example_load.mat']);
 who
-A = 3
-b= 3
+st.A
+st.B
+clear
 who
-s = who()
+load([tempdir(), '/example_load.mat']);
+who
+A
+B
 </code>
 </pre>
 
@@ -140,7 +140,7 @@ s = who()
 <hr/>
 
 <p>
-<a href = "what.html" class = "link">what</a>, <a href = "clear.html" class = "link">clear</a>, <a href = "whos.html" class = "link">whos</a>.</p>
+<a href = "save.html" class = "link">save</a>, <a href = "savemat.html" class = "link">savemat</a>, <a href = "savenh5.html" class = "link">savenh5</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -166,15 +166,15 @@ s = who()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="varunlock.html">&lt;&lt; varunlock</a></span>
+<span class="top"><a href="fwrite.html">&lt;&lt; fwrite</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
+<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whos.html">whos &gt;&gt;</a></span>
+<span class = "next"><a href = "save.html">save &gt;&gt;</a></span>
 </td>
 
 </tr></table>

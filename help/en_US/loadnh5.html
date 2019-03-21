@@ -15,6 +15,9 @@ SAME AS NELSON SOFTWARE
 </script>
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
+	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
+	<title>loadnh5</title>
+
 </head>
 <body>
 
@@ -22,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="h5readatt.html">&lt;&lt; h5readatt</a></span>
+<span class="top"><a href="isnh5file.html">&lt;&lt; isnh5file</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -30,19 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "h5write.html">h5write &gt;&gt;</a></span>
+<span class = "next"><a href = "savenh5.html">savenh5 &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">h5save</h1>
+<h1 class="refname">loadnh5</h1>
 <hr/>
 
-<h1 class="refname">save</h1>
-<hr/>
-
-<h3>save workspace variables to .nh5 file</h3>
+<h3>load data from .nh5 file into Nelson's workspace.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>h5save(filename)</td>
+		<td>loadnh5(filename)</td>
 	</tr>
 
 	<tr>
-		<td>h5save(filename, var1, ..., varN)</td>
+		<td>st = loadnh5(filename)</td>
 	</tr>
 
 	<tr>
-		<td>h5save(filename, '-append', ...)</td>
+		<td>loadnh5(filename, var1, ..., varN)</td>
 	</tr>
 
 	<tr>
-		<td>h5save(filename, '-nocompression', ...)</td>
+		<td>st = loadnh5(filename, var1, ..., varN)</td>
 	</tr>
 
 </table>
@@ -78,17 +78,18 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">var1, ..., varN</span></dt>
 <dd>
-<p class="para">string: Names of variables to save from Nelson's workspace.</p>
+<p class="para">string: Names of variables to load into Nelson's workspace.</p>
 </dd>
 
-<dt><span class="term">'-append'</span></dt>
-<dd>
-<p class="para">append variables to an existing .nh5 file.</p>
-</dd>
+</dl>
 
-<dt><span class="term">'-nocompression'</span></dt>
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">st</span></dt>
 <dd>
-<p class="para">disable .nh5 file compression.</p>
+<p class="para">a structure with variables name as fieldnames.</p>
 </dd>
 
 </dl>
@@ -98,56 +99,28 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>h5save</b> save workspace variables to .nh5 file.</p>
+  <p><b>loadnh5</b> loads data from .nh5 file to Nelson's workspace.</p>
   <p>.nh5 file uses hdf5 file as container.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">A = ones(3, 4);
 B = 'hello for open mat users';
-h5save([tempdir(), '/example_h5load.nh5'], 'A', 'B')
+savenh5([tempdir(), '/example_h5load.nh5'], 'A', 'B')
 clear;
-st = h5load([tempdir(), '/example_h5load.nh5']);
+st = loadnh5([tempdir(), '/example_h5load.nh5']);
 who
 st.A
 st.B
 clear
 who
-h5load([tempdir(), '/example_h5load.nh5']);
+loadnh5([tempdir(), '/example_h5load.nh5']);
 who
 A
 B
-</code>
-</pre>
-<p>append variables</p>
-<pre>
-<code class = "nelson">C = eye(3, 4);
-h5save([tempdir(), '/example_h5load.nh5'], 'C', '-append')
-clear;
-st = h5load([tempdir(), '/example_h5load.nh5']);
-who
-st.A
-st.B
-st.C
-clear
-who
-h5load([tempdir(), '/example_h5load.nh5']);
-who
-A
-B
-C
-</code>
-</pre>
-<p>compression</p>
-<pre>
-<code class = "nelson">C = eye(1000, 1000);
-h5save([tempdir(), '/example_h5save_with_compression.nh5'], 'C')
-h5save([tempdir(), '/example_h5save_no_compression.nh5'], 'C', '-nocompression')
-with_compression = dir([tempdir(), '/example_h5save_with_compression.nh5'])
-no_compression = dir([tempdir(), '/example_h5save_no_compression.nh5'])
 </code>
 </pre>
 
@@ -155,7 +128,7 @@ no_compression = dir([tempdir(), '/example_h5save_no_compression.nh5'])
 <hr/>
 
 <p>
-<a href = "h5load.html" class = "link">h5load</a>, <a href = "h5write.html" class = "link">h5write</a>.</p>
+<a href = "savenh5.html" class = "link">savenh5</a>, <a href = "h5read.html" class = "link">h5read</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -181,7 +154,7 @@ no_compression = dir([tempdir(), '/example_h5save_no_compression.nh5'])
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="h5readatt.html">&lt;&lt; h5readatt</a></span>
+<span class="top"><a href="isnh5file.html">&lt;&lt; isnh5file</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -189,7 +162,7 @@ no_compression = dir([tempdir(), '/example_h5save_no_compression.nh5'])
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "h5write.html">h5write &gt;&gt;</a></span>
+<span class = "next"><a href = "savenh5.html">savenh5 &gt;&gt;</a></span>
 </td>
 
 </tr></table>
