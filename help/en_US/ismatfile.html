@@ -46,7 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>[tf, ver] = ismatfile(filename)</td>
+		<td>[tf, ver, header] = ismatfile(filename)</td>
 	</tr>
 
 </table>
@@ -73,7 +73,12 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">ver</span></dt>
 <dd>
-<p class="para">a string: version of .mat file ("-v7.3", "-v7" or "-v6").</p>
+<p class="para">a string array: version of .mat file ("-v7.3", "-v7" or "-v6").</p>
+</dd>
+
+<dt><span class="term">header</span></dt>
+<dd>
+<p class="para">a string array: header of .mat file (date).</p>
 </dd>
 
 </dl>
@@ -101,7 +106,7 @@ savemat([tempdir(), '/example_loadmat-v6.mat'], 'A', '-v6')
 [tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.3.mat']) 
 [tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.mat']) 
 [tf, ver] = ismatfile([tempdir(), '/example_loadmat-v6.mat']) 
-[tf, ver] = ismatfile([tempdir(), '/example_not_existing.mat'])
+[tf, ver, header] = ismatfile([tempdir(), '/example_not_existing.mat'])
 </code>
 </pre>
 

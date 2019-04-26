@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>str2func</title>
+	<title>profsave</title>
 
 </head>
 <body>
@@ -25,20 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfunction_handle.html">&lt;&lt; isfunction_handle</a></span>
+<span class="top"><a href="profile.html">&lt;&lt; profile</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_function_handle.html">function_handle functions</a></span>
+<span class="top"><a href="chapter_profiler.html">Profiling tools</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">str2func</h1>
+<h1 class="refname">profsave</h1>
 <hr/>
 
-<h3>Returns a function handle from a string.</h3>
+<h3>Save profile result to HTML format.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,7 +46,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>func_handle = str2func(str)</td>
+		<td>profsave</td>
+	</tr>
+
+	<tr>
+		<td>profsave(profile_info)</td>
+	</tr>
+
+	<tr>
+		<td>profsave(profile_info, dirname)</td>
 	</tr>
 
 </table>
@@ -55,20 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">str</span></dt>
+<dt><span class="term">profile_info</span></dt>
 <dd>
-<p class="para">a string</p>
+<p class="para">a struct: result of profile('info')</p>
 </dd>
 
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">func_handle</span></dt>
+<dt><span class="term">dirname</span></dt>
 <dd>
-<p class="para">a function handle.</p>
+<p class="para">a string: output directory destination.</p>
 </dd>
 
 </dl>
@@ -78,15 +80,20 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b></p>
+  <p><b>profsave</b> exports the profiling data into a series of HTML files.</p>
+  <p>The input profile_info is the structure returned by profile('info').</p>
+  <p>If unspecified, <b>profsave</b> will use the current profile.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fh = str2func('cos')
-str = func2str(fh)
+<code class = "nelson">profile on
+sind(5)
+profile off
+profsave(profile('info'), [tempdir(), '/profile_results'])
+unix([tempdir(), '/profile_results/index.html'])
 </code>
 </pre>
 
@@ -94,7 +101,7 @@ str = func2str(fh)
 <hr/>
 
 <p>
-<a href = "func2str.html" class = "link">func2str</a>, <a href = "isfunction_handle.html" class = "link">isfunction_handle</a>.</p>
+<a href = "profile.html" class = "link">profile</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,11 +127,11 @@ str = func2str(fh)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfunction_handle.html">&lt;&lt; isfunction_handle</a></span>
+<span class="top"><a href="profile.html">&lt;&lt; profile</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_function_handle.html">function_handle functions</a></span>
+<span class="top"><a href="chapter_profiler.html">Profiling tools</a></span>
 </td>
 
 </tr></table>

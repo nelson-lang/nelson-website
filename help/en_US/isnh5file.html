@@ -53,6 +53,10 @@ SAME AS NELSON SOFTWARE
 		<td>tf = isnh5file(filename)</td>
 	</tr>
 
+	<tr>
+		<td>[tf, version, header] = isnh5file(filename)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -75,6 +79,16 @@ SAME AS NELSON SOFTWARE
 <p class="para">a logical: true if it is a valid .nh5 file.</p>
 </dd>
 
+<dt><span class="term">version</span></dt>
+<dd>
+<p class="para">a string array: "-v1" or "" if it is undefined.</p>
+</dd>
+
+<dt><span class="term">header</span></dt>
+<dd>
+<p class="para">a string array: header of nh5 file (date created).</p>
+</dd>
+
 </dl>
 
 <h3>Description</h3>
@@ -93,7 +107,7 @@ SAME AS NELSON SOFTWARE
 savemat([tempdir(), '/example_isnh5.mat'], 'A')
 R = isnh5file([tempdir(), '/example_isnh5.mat'])
 h5save([tempdir(), '/example_isnh5.nh5'], 'A')
-R = isnh5file([tempdir(), '/example_isnh5.nh5'])
+[R, VER, HE] = isnh5file([tempdir(), '/example_isnh5.nh5'])
 </code>
 </pre>
 
