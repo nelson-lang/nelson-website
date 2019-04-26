@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Profile and Coverage cosd.nlf</title>
+</head>
+
+<link rel = "stylesheet" href = "./mono-blue.css">
+<script src = "./highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<body bgcolor=#F8F8F8>
+<div>
+<a href="./index.html">home</a>
+</div>
+<p></p>
+<p>File: cosd.nlf (Calls: 5, Time: 0.235 s)</p>
+<p></p>
+<hr>
+<p>Lines where the most time was spent</p>
+<table cellpadding = "0" cellspacing = "0" border = "1">
+<tbody>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Line Number</td>
+<td style = "padding-left:10px;padding-right:10px;">Code</td>
+<td style = "padding-left:10px;padding-right:10px;">Calls</td>
+<td style = "padding-left:10px;padding-right:10px;">Total time (s)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td align="right" style = "padding-left:10px;padding-right:10px;"><a name = "20"></a><span class = "lineNum">20</span></td>
+<td><pre><code class = "nelson">I = x * inv(180);</code></pre></td><td style = "padding-left:10px;padding-right:10px;">5</td>
+<td style = "padding-left:10px;padding-right:10px;">0.048</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td align="right" style = "padding-left:10px;padding-right:10px;"><a name = "21"></a><span class = "lineNum">21</span></td>
+<td><pre><code class = "nelson">r = cos (I .* pi);</code></pre></td><td style = "padding-left:10px;padding-right:10px;">5</td>
+<td style = "padding-left:10px;padding-right:10px;">0.058</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td align="right" style = "padding-left:10px;padding-right:10px;"><a name = "22"></a><span class = "lineNum">22</span></td>
+<td><pre><code class = "nelson">I = I + 0.5;</code></pre></td><td style = "padding-left:10px;padding-right:10px;">5</td>
+<td style = "padding-left:10px;padding-right:10px;">0.017</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td align="right" style = "padding-left:10px;padding-right:10px;"><a name = "23"></a><span class = "lineNum">23</span></td>
+<td><pre><code class = "nelson">r(I == fix (I) & isfinite (I)) = 0;</code></pre></td><td style = "padding-left:10px;padding-right:10px;">5</td>
+<td style = "padding-left:10px;padding-right:10px;">0.112</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<hr>
+<p>Coverage results</p>
+<table cellpadding = "0" cellspacing = "0" border = "1">
+<tbody>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Total lines in file</td>
+<td style = "padding-left:10px;padding-right:10px;">25</td>
+</tr>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Non-code lines (comments, blank lines)</td>
+<td style = "padding-left:10px;padding-right:10px;">19</td>
+</tr>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Code lines that did run</td>
+<td style = "padding-left:10px;padding-right:10px;">4</td>
+</tr>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Code lines (lines that can run)</td>
+<td style = "padding-left:10px;padding-right:10px;">4</td>
+</tr>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Code lines (Code lines that did not run)</td>
+<td style = "padding-left:10px;padding-right:10px;">0</td>
+</tr>
+<tr>
+<td style = "padding-left:10px;padding-right:10px;">Coverage (did run/can run)</td>
+<td style = "padding-left:10px;padding-right:10px;">100.00 %</td>
+</tr>
+</tbody></table>
+<p></p>
+<hr>
+<p>Function listing</p>
+<table cellpadding = "0" cellspacing = "0" border = "0">
+    <thead>
+        <tr>
+            <td  style = "padding-left:10px;padding-right:10px;">Line</td>
+            <td  style = "padding-left:10px;padding-right:10px;">Calls</td>
+            <td  style = "padding-left:10px;padding-right:10px;">Time (s)</td>
+            <td  style = "padding-left:10px;padding-right:10px;">Source code</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "1"><span class = "lineNum">1</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">//=============================================================================</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "2"><span class = "lineNum">2</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// Copyright (c) 2016-2019 Allan CORNET (Nelson)</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "3"><span class = "lineNum">3</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">//=============================================================================</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "4"><span class = "lineNum">4</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// LICENCE_BLOCK_BEGIN</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "5"><span class = "lineNum">5</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// This program is free software: you can redistribute it and/or modify</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "6"><span class = "lineNum">6</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// it under the terms of the GNU General Public License as published by</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "7"><span class = "lineNum">7</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// the Free Software Foundation, either version 2 of the License, or</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "8"><span class = "lineNum">8</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// (at your option) any later version.</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "9"><span class = "lineNum">9</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// </code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "10"><span class = "lineNum">10</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// This program is distributed in the hope that it will be useful,</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "11"><span class = "lineNum">11</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// but WITHOUT ANY WARRANTY; without even the implied warranty of</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "12"><span class = "lineNum">12</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "13"><span class = "lineNum">13</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// GNU General Public License for more details.</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "14"><span class = "lineNum">14</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// </code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "15"><span class = "lineNum">15</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// You should have received a copy of the GNU General Public License</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "16"><span class = "lineNum">16</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// along with this program.  If not, see <http://www.gnu.org/licenses/>.</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "17"><span class = "lineNum">17</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">// LICENCE_BLOCK_END</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "18"><span class = "lineNum">18</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">//=============================================================================</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "19"><span class = "lineNum">19</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">function r = cosd (x)</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "20"><span class = "lineNum">20</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">5</td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">0.048</td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">  I = x * inv(180);</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "21"><span class = "lineNum">21</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">5</td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">0.058</td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">  r = cos (I .* pi);</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "22"><span class = "lineNum">22</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">5</td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">0.017</td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">  I = I + 0.5;</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "23"><span class = "lineNum">23</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">5</td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;">0.112</td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">  r(I == fix (I) & isfinite (I)) = 0;</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "24"><span class = "lineNum">24</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">endfunction</code></pre></td>
+        </tr>
+        <tr>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"><a name = "25"><span class = "lineNum">25</span></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td align = "right" style = "padding-left:10px;padding-right:10px;"></td>
+            <td style = "padding-left:10px;padding-right:10px;"><pre><code class = "nelson">//=============================================================================</code></pre></td>
+        </tr>
+    </tbody>
+</table>
+<p></p>
+<hr>
+<tr><td class="versionInfo">Generated by: Nelson 2019-Apr-26 21:17:50</td></tr>
+<p></p>
+<div>
+<a href="./index.html">home</a>
+</div>
+<p></p>
+</body></html>

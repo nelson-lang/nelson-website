@@ -60,4 +60,7 @@
 ### [Tests engine](TESTSENGINE.md)
 
 
+### [Profiling and Coverage Tools](PROFILER.md)
+
+
 [Previous page](README.md)
