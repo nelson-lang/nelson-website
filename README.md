@@ -16,7 +16,7 @@
 [![Join the chat at https://gitter.im/nelson-numerical-software/Lobby](https://badges.gitter.im/nelson-numerical-software/Lobby.svg)](https://gitter.im/nelson-numerical-software/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-## [Free](https://nelson-numerical-software.github.io/nelson-website/FAQ_LICENSE.md) Scientific Software Package
+## [Free](FAQ_LICENSE.md) Scientific Software Package
 
 The aim of Nelson is providing a powerful open computing environment for engineering and scientific applications using modern C/C++ libraries (Boost, Eigen, FFTW, ...) and others state of art numerical libraries. 
 
@@ -79,3 +79,5 @@ The systems listed here without CI or binaries are known to build and operate, b
 | Raspbian         | ARM v7 (32-bit)  |    |          |
 
 ## [Developement](DEVELOPMENT.md)
+
+Contact: Allan CORNET (nelson.numerical.computation@gmail.com)
