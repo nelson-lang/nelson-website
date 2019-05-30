@@ -80,4 +80,4 @@ The systems listed here without CI or binaries are known to build and operate, b
 
 ## [Developement](DEVELOPMENT.md)
 
-Contact: Allan CORNET (nelson.numerical.computation@gmail.com)
+[Contact](mailto:nelson.numerical.computation@gmail.com)

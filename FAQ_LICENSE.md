@@ -43,7 +43,7 @@ There is an circumstance in which the GPL license may be useful. Some optional a
 
 ## Using Nelson in proprietary software
 
- ### Can Nelson be used in proprietary, closed-source software?
+### Can Nelson be used in proprietary, closed-source software?
 
 This is entirely welcome. Of course, you do not have to disclose any of your own source code. Using Nelson does not affect the licensing of your own software in any way. The LGPL v2.1 license of Nelson does not extend in any way to your own software.
 
