@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>format</title>
+	<title>num2bin</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exit.html">&lt;&lt; exit</a></span>
+<span class="top"><a href="not.html">&lt;&lt; not</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "license.html">license &gt;&gt;</a></span>
+<span class = "next"><a href = "numel.html">numel &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">format</h1>
+<h1 class="refname">num2bin</h1>
 <hr/>
 
-<h3>Display format and number printing.</h3>
+<h3>Convert number to binary representation.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>fmt = format()</td>
-	</tr>
-
-	<tr>
-		<td>format()</td>
-	</tr>
-
-	<tr>
-		<td>format(new_style)</td>
-	</tr>
-
-	<tr>
-		<td>fmt = format('get')</td>
+		<td>R = num2bin(M)</td>
 	</tr>
 
 </table>
@@ -71,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">new_style</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a string</p>
+<p class="para">a variable: logical, integer, single or double real full matrix.</p>
 </dd>
 
 </dl>
@@ -82,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">fmt</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">a string: current format used</p>
+<p class="para">result of num2bin: char array.</p>
 </dd>
 
 </dl>
@@ -94,45 +82,24 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>format(new_style)</b> changes the display format and number printing of the current session.</p>
-  <p><b>format()</b> without output and input arguments will reset to default format (short).</p>
-  <p>Current styles supported:</p>
-  <p>
-    <b>short</b>
-  </p>
-  <p>
-    <b>long</b>
-  </p>
-  <p>
-    <b>shortE</b>
-  </p>
-  <p>
-    <b>longE</b>
-  </p>
-  <p>
-    <b>hex</b>
-  </p>
+  <p><b>num2bin</b> returns a char array giving the literal bit representation of a number.</p>
 
+
+<h3>Used function(s)</h3>
+<hr/>
+
+C++ std::bitset
+
+<h3>Bibliography</h3>
+<hr/>
+http://www.oxfordmathcenter.com/drupal7/node/43
 
 <h3>Example</h3>
 <hr/>
 
-<p>an example</p>
 <pre>
-<code class = "nelson">current_style = format()
-current_style = format('get')
-pi
-format('short')
-pi
-format('long')
-pi
-format('shortE')
-pi
-format('longE')
-pi
-format('hex')
-pi
-format(current_style)
+<code class = "nelson">X = [65535 128; 1 0]
+Y = num2bin(X)
 </code>
 </pre>
 
@@ -140,7 +107,7 @@ format(current_style)
 <hr/>
 
 <p>
-<a href = "disp.html" class = "link">disp</a>.</p>
+<a href = "bin2num.html" class = "link">bin2num</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -166,15 +133,15 @@ format(current_style)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exit.html">&lt;&lt; exit</a></span>
+<span class="top"><a href="not.html">&lt;&lt; not</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "license.html">license &gt;&gt;</a></span>
+<span class = "next"><a href = "numel.html">numel &gt;&gt;</a></span>
 </td>
 
 </tr></table>
