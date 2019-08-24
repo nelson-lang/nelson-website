@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="frewind.html">&lt;&lt; frewind</a></span>
+<span class="top"><a href="fwrite.html">&lt;&lt; fwrite</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fileread.html">fileread &gt;&gt;</a></span>
+<span class = "next"><a href = "save.html">save &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -121,15 +121,15 @@ SAME AS NELSON SOFTWARE
 <pre>
 <code class = "nelson">A = ones(3, 4);
 B = 'hello for open mat users';
-save([tempdir(), '/example_load.mat'], 'A', 'B')
+save([tempdir(), 'example_load.mat'], 'A', 'B')
 clear;
-st = load([tempdir(), '/example_load.mat']);
+st = load([tempdir(), 'example_load.mat']);
 who
 st.A
 st.B
 clear
 who
-load([tempdir(), '/example_load.mat']);
+load([tempdir(), 'example_load.mat']);
 who
 A
 B
@@ -166,7 +166,7 @@ B
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="frewind.html">&lt;&lt; frewind</a></span>
+<span class="top"><a href="fwrite.html">&lt;&lt; fwrite</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -174,7 +174,7 @@ B
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fileread.html">fileread &gt;&gt;</a></span>
+<span class = "next"><a href = "save.html">save &gt;&gt;</a></span>
 </td>
 
 </tr></table>

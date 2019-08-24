@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="load.html">&lt;&lt; load</a></span>
+<span class="top"><a href="fgets.html">&lt;&lt; fgets</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
+<span class = "next"><a href = "filewrite.html">filewrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -61,6 +61,10 @@ SAME AS NELSON SOFTWARE
 		<td>str = fileread(filename, 'char', eol)</td>
 	</tr>
 
+	<tr>
+		<td>str = fileread(filename, 'char', eol, encoding)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -82,6 +86,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">a string: 'native', 'pc' or 'unix'. Set end of line. 'unix' by default.</p>
 </dd>
 
+<dt><span class="term">encoding</span></dt>
+<dd>
+<p class="para">a string: 'UTF-8' (default), 'auto', 'ISO-8859-1', 'windows-1251', 'windows-1252', ...</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -101,9 +110,10 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>fileread</b> read contents of file as text.</p>
+  <p>if encoding is 'auto', nelson will try to detect best encoding to read contents of file as text.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
@@ -111,6 +121,13 @@ SAME AS NELSON SOFTWARE
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'char')
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'cell')
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
+</code>
+</pre>
+<pre>
+<code class = "nelson">str = 'живете зело, земля, и иже и како люди';
+filewrite([tempdir(), 'example_fileread.txt'], str, 'native', 'windows-1251')
+T1 = fileread([tempdir(), 'example_fileread.txt'], 'char', 'native', 'windows-1251')
+T2 = fileread([tempdir(), 'example_fileread.txt'], 'string', 'native', 'auto')
 </code>
 </pre>
 
@@ -144,7 +161,7 @@ str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="load.html">&lt;&lt; load</a></span>
+<span class="top"><a href="fgets.html">&lt;&lt; fgets</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -152,7 +169,7 @@ str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fopen.html">fopen &gt;&gt;</a></span>
+<span class = "next"><a href = "filewrite.html">filewrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>

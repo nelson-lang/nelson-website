@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ismatfile.html">&lt;&lt; ismatfile</a></span>
+<span class="top"><a href="loadmat.html">&lt;&lt; loadmat</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whosmat.html">whosmat &gt;&gt;</a></span>
+<span class = "next"><a href = "whomat.html">whomat &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -127,15 +127,15 @@ Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 <pre>
 <code class = "nelson">A = ones(3, 4);
 B = 'hello for open mat users';
-savemat([tempdir(), '/example_loadmat.mat'], 'A', 'B')
+savemat([tempdir(), 'example_loadmat.mat'], 'A', 'B')
 clear;
-st = loadmat([tempdir(), '/example_loadmat.mat']);
+st = loadmat([tempdir(), 'example_loadmat.mat']);
 who
 st.A
 st.B
 clear
 who
-loadmat([tempdir(), '/example_loadmat.mat']);
+loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
@@ -144,16 +144,16 @@ B
 <p>append variables</p>
 <pre>
 <code class = "nelson">C = eye(3, 4);
-savemat([tempdir(), '/example_loadmat.mat'], 'C', '-append')
+savemat([tempdir(), 'example_loadmat.mat'], 'C', '-append')
 clear;
-st = loadmat([tempdir(), '/example_loadmat.mat']);
+st = loadmat([tempdir(), 'example_loadmat.mat']);
 who
 st.A
 st.B
 st.C
 clear
 who
-loadmat([tempdir(), '/example_loadmat.mat']);
+loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
@@ -163,10 +163,10 @@ C
 <p>compression</p>
 <pre>
 <code class = "nelson">C = eye(1000, 1000);
-savemat([tempdir(), '/example_savemat_with_compression.mat'], 'C')
-savemat([tempdir(), '/example_savemat_no_compression.mat'], 'C', '-nocompression')
-with_compression = dir([tempdir(), '/example_savemat_with_compression.mat'])
-no_compression = dir([tempdir(), '/example_savemat_no_compression.mat'])
+savemat([tempdir(), 'example_savemat_with_compression.mat'], 'C')
+savemat([tempdir(), 'example_savemat_no_compression.mat'], 'C', '-nocompression')
+with_compression = dir([tempdir(), 'example_savemat_with_compression.mat'])
+no_compression = dir([tempdir(), 'example_savemat_no_compression.mat'])
 </code>
 </pre>
 
@@ -200,7 +200,7 @@ no_compression = dir([tempdir(), '/example_savemat_no_compression.mat'])
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ismatfile.html">&lt;&lt; ismatfile</a></span>
+<span class="top"><a href="loadmat.html">&lt;&lt; loadmat</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -208,7 +208,7 @@ no_compression = dir([tempdir(), '/example_savemat_no_compression.mat'])
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "whosmat.html">whosmat &gt;&gt;</a></span>
+<span class = "next"><a href = "whomat.html">whomat &gt;&gt;</a></span>
 </td>
 
 </tr></table>

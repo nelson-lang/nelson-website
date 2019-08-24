@@ -29,7 +29,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "savemat.html">savemat &gt;&gt;</a></span>
+<span class = "next"><a href = "loadmat.html">loadmat &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -100,13 +100,13 @@ Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 <pre>
 <code class = "nelson">A = ones(3, 4);
-savemat([tempdir(), '/example_loadmat-v7.3.mat'], 'A', '-v7.3')
-savemat([tempdir(), '/example_loadmat-v7.mat'], 'A', '-v7')
-savemat([tempdir(), '/example_loadmat-v6.mat'], 'A', '-v6')
-[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.3.mat']) 
-[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.mat']) 
-[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v6.mat']) 
-[tf, ver, header] = ismatfile([tempdir(), '/example_not_existing.mat'])
+savemat([tempdir(), 'example_loadmat-v7.3.mat'], 'A', '-v7.3')
+savemat([tempdir(), 'example_loadmat-v7.mat'], 'A', '-v7')
+savemat([tempdir(), 'example_loadmat-v6.mat'], 'A', '-v6')
+[tf, ver] = ismatfile([tempdir(), 'example_loadmat-v7.3.mat']) 
+[tf, ver] = ismatfile([tempdir(), 'example_loadmat-v7.mat']) 
+[tf, ver] = ismatfile([tempdir(), 'example_loadmat-v6.mat']) 
+[tf, ver, header] = ismatfile([tempdir(), 'example_not_existing.mat'])
 </code>
 </pre>
 
@@ -144,7 +144,7 @@ savemat([tempdir(), '/example_loadmat-v6.mat'], 'A', '-v6')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "savemat.html">savemat &gt;&gt;</a></span>
+<span class = "next"><a href = "loadmat.html">loadmat &gt;&gt;</a></span>
 </td>
 
 </tr></table>

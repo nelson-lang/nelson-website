@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fileread.html">&lt;&lt; fileread</a></span>
+<span class="top"><a href="filewrite.html">&lt;&lt; filewrite</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ftell.html">ftell &gt;&gt;</a></span>
+<span class = "next"><a href = "fprintf.html">fprintf &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -66,7 +66,11 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
-		<td>[filename, permission] = fopen(fid)</td>
+		<td>[fid, msg] = fopen(filename, permission, machinefmt, encoding)</td>
+	</tr>
+
+	<tr>
+		<td>[filename, permission, machinefmt, encoding] = fopen(fid)</td>
 	</tr>
 
 	<tr>
@@ -87,6 +91,16 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">permission</span></dt>
 <dd>
 <p class="para">a string: permission applied on file: 'r', 'w', 'a', 'r+', 'a+'</p>
+</dd>
+
+<dt><span class="term">machinefmt</span></dt>
+<dd>
+<p class="para">a string: machine format applied on file: 'n' or 'native', 'b' or 'ieee-be', 'l' or 'ieee-le', 's' or 'ieee-be.l64', 'a' or 'ieee-le.l64'</p>
+</dd>
+
+<dt><span class="term">encoding</span></dt>
+<dd>
+<p class="para">a string: ccharacter encoding applied on file: 'UTF-8', 'ISO-8859-1', 'windows-1251', 'windows-1252', ...</p>
 </dd>
 
 </dl>
@@ -118,9 +132,10 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>fopen</b> opens a file in Nelson.</p>
+  <p>functions fprintf, fgetl, fgets, fread, and fwrite use character encoding for subsequent read and write operations.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
@@ -133,12 +148,24 @@ status = fclose(fd)
 [filename, permission] = fopen(stderr)
 </code>
 </pre>
+<p>characters encoding</p>
+<pre>
+<code class = "nelson">TEXT_REF = 'Виртуальная';
+filename = [tempdir(), 'fwrite_example_Windows-1251.txt'];
+F = fopen(filename, 'wt', 'n', 'windows-1251');
+W = fwrite(F, TEXT_REF, 'char')
+fclose(F);
+F = fopen(filename, 'rt', 'n', 'windows-1251');
+TXT_READ = fread(F, '*char')
+fclose(F);
+</code>
+</pre>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "fclose.html" class = "link">fclose</a>.</p>
+<a href = "fclose.html" class = "link">fclose</a>, <a href = "feof.html" class = "link">feof</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -164,7 +191,7 @@ status = fclose(fd)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fileread.html">&lt;&lt; fileread</a></span>
+<span class="top"><a href="filewrite.html">&lt;&lt; filewrite</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -172,7 +199,7 @@ status = fclose(fd)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ftell.html">ftell &gt;&gt;</a></span>
+<span class = "next"><a href = "fprintf.html">fprintf &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -25,11 +25,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="whomat.html">&lt;&lt; whomat</a></span>
+<span class="top"><a href="ismatfile.html">&lt;&lt; ismatfile</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_matio.html">MATIO</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "savemat.html">savemat &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -108,15 +112,15 @@ Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 <pre>
 <code class = "nelson">A = ones(3, 4);
 B = 'hello for open mat users';
-savemat([tempdir(), '/example_loadmat.mat'], 'A', 'B')
+savemat([tempdir(), 'example_loadmat.mat'], 'A', 'B')
 clear;
-st = loadmat([tempdir(), '/example_loadmat.mat']);
+st = loadmat([tempdir(), 'example_loadmat.mat']);
 who
 st.A
 st.B
 clear
 who
-loadmat([tempdir(), '/example_loadmat.mat']);
+loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
@@ -153,11 +157,15 @@ B
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="whomat.html">&lt;&lt; whomat</a></span>
+<span class="top"><a href="ismatfile.html">&lt;&lt; ismatfile</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_matio.html">MATIO</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "savemat.html">savemat &gt;&gt;</a></span>
 </td>
 
 </tr></table>

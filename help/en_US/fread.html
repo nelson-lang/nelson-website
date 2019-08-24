@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="save.html">&lt;&lt; save</a></span>
+<span class="top"><a href="fprintf.html">&lt;&lt; fprintf</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "diary.html">diary &gt;&gt;</a></span>
+<span class = "next"><a href = "frewind.html">frewind &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -50,27 +50,27 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = fwrite(fid)</td>
+		<td>res = fread(fid)</td>
 	</tr>
 
 	<tr>
-		<td>res = fwrite(fid, sz, precision)</td>
+		<td>res = fread(fid, sz, precision)</td>
 	</tr>
 
 	<tr>
-		<td>res = fwrite(fid, sz, precision, skip)</td>
+		<td>res = fread(fid, sz, precision, skip)</td>
 	</tr>
 
 	<tr>
-		<td>res = fwrite(fid, sz, precision, arch)</td>
+		<td>res = fread(fid, sz, precision, arch)</td>
 	</tr>
 
 	<tr>
-		<td>res = fwrite(fid, sz, precision, skip, arch)</td>
+		<td>res = fread(fid, sz, precision, skip, arch)</td>
 	</tr>
 
 	<tr>
-		<td>[res, count] = fwrite(fid, sz, precision, skip, arch)</td>
+		<td>[res, count] = fread(fid, sz, precision, skip, arch)</td>
 	</tr>
 
 </table>
@@ -132,33 +132,29 @@ SAME AS NELSON SOFTWARE
   <p><b>native</b> , <b>n</b>: format of the current machine.</p>
   <p><b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
   <p><b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+  <p>characters encoding uses <b>fopen</b> parameter.</p>
 
-
-<h3>Used function(s)</h3>
-<hr/>
-
-addition
 
 <h3>Examples</h3>
 <hr/>
 
 <pre>
 <code class = "nelson">A = rand(3,1)
-fileID = fopen([tempdir(), '/doubledata.bin'],'w');
+fileID = fopen([tempdir(), 'doubledata.bin'],'w');
 fwrite(fileID, A,'double');
 fclose(fileID);
 
-fileID = fopen([tempdir(), '/doubledata.bin'],'r');
+fileID = fopen([tempdir(), 'doubledata.bin'],'r');
 R = fread(fileID, 'double')
 fclose(fileID);
 </code>
 </pre>
 <pre>
-<code class = "nelson">fileID = fopen([tempdir(), '/uint16nine.bin'],'w');
+<code class = "nelson">fileID = fopen([tempdir(), 'uint16nine.bin'],'w');
 fwrite(fileID,[1:9],'uint16');
 fclose(fileID);
 
-fileID = fopen([tempdir(), '/uint16nine.bin'],'r');
+fileID = fopen([tempdir(), 'uint16nine.bin'],'r');
 A = fread(fileID,[4,Inf],'uint16')
 fclose(fileID);
 </code>
@@ -194,7 +190,7 @@ fclose(fileID);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="save.html">&lt;&lt; save</a></span>
+<span class="top"><a href="fprintf.html">&lt;&lt; fprintf</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -202,7 +198,7 @@ fclose(fileID);
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "diary.html">diary &gt;&gt;</a></span>
+<span class = "next"><a href = "frewind.html">frewind &gt;&gt;</a></span>
 </td>
 
 </tr></table>

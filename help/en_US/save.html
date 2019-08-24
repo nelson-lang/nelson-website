@@ -25,15 +25,11 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fsize.html">&lt;&lt; fsize</a></span>
+<span class="top"><a href="load.html">&lt;&lt; load</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "fread.html">fread &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -130,15 +126,15 @@ SAME AS NELSON SOFTWARE
 <pre>
 <code class = "nelson">A = ones(3, 4);
 B = 'hello for open mat users';
-save([tempdir(), '/example_load.mat'], 'A', 'B')
+save([tempdir(), 'example_load.mat'], 'A', 'B')
 clear;
-st = load([tempdir(), '/example_load.mat']);
+st = load([tempdir(), 'example_load.mat']);
 who
 st.A
 st.B
 clear
 who
-load([tempdir(), '/example_load.mat']);
+load([tempdir(), 'example_load.mat']);
 who
 A
 B
@@ -147,16 +143,16 @@ B
 <p>append variables</p>
 <pre>
 <code class = "nelson">C = eye(3, 4);
-save([tempdir(), '/example_load.mat'], 'C', '-append')
+save([tempdir(), 'example_load.mat'], 'C', '-append')
 clear;
-st = load([tempdir(), '/example_load.mat']);
+st = load([tempdir(), 'example_load.mat']);
 who
 st.A
 st.B
 st.C
 clear
 who
-load([tempdir(), '/example_load.mat']);
+load([tempdir(), 'example_load.mat']);
 who
 A
 B
@@ -166,10 +162,10 @@ C
 <p>compression</p>
 <pre>
 <code class = "nelson">C = eye(1000, 1000);
-save([tempdir(), '/example_save_with_compression.mat'], 'C')
-save([tempdir(), '/example_save_no_compression.mat'], 'C', '-nocompression')
-with_compression = dir([tempdir(), '/example_save_with_compression.mat'])
-no_compression = dir([tempdir(), '/example_save_no_compression.mat'])
+save([tempdir(), 'example_save_with_compression.mat'], 'C')
+save([tempdir(), 'example_save_no_compression.mat'], 'C', '-nocompression')
+with_compression = dir([tempdir(), 'example_save_with_compression.mat'])
+no_compression = dir([tempdir(), 'example_save_no_compression.mat'])
 </code>
 </pre>
 
@@ -203,15 +199,11 @@ no_compression = dir([tempdir(), '/example_save_no_compression.mat'])
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fsize.html">&lt;&lt; fsize</a></span>
+<span class="top"><a href="load.html">&lt;&lt; load</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "fread.html">fread &gt;&gt;</a></span>
 </td>
 
 </tr></table>
