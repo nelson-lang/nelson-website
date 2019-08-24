@@ -44,8 +44,10 @@ Nelson has been developped to be an open/modular system where an user can define
   * [COM interface](COM_INTERFACE.md)
   * [Message Passing Interface](MPI.md)
   * [JavaScript Object Notation](JSON.md)
-  *  [Nelson in the Cloud](CLOUD.md) ☁️
+  * [RESTfull web service](REST.md)
+  * [Nelson in the Cloud](CLOUD.md) ☁️
   * [Audio module](AUDIO.md)
+  * [UNICODE and charset support](CHARSET.md)
   * [Code editor](CODE_EDITOR.md)
 
 ## [Sources](https://github.com/Nelson-numerical-software/nelson)
@@ -69,7 +71,7 @@ The systems listed here without CI or binaries are known to build and operate, b
 | Windows 7+       | x86-64 (64-bit)  | ✓  | ✓        |
 |                  | i686 (32-bit)    | ✓  | ✓        |
 | MacOS 10.10+     | x86-64 (64-bit)  | ✓  |          |
-| Ubuntu 16.04     | x86-64 (64-bit)  | ✓  |          |
+| Ubuntu 18.04     | x86-64 (64-bit)  | ✓  |          |
 | Debian 10        | x86-64 (64-bit)  | ✓  |          |
 | Fedora 30        | x86-64 (64-bit)  | ✓  |          |
 | ArchLinux        | x86-64 (64-bit)  | ✓  |          |

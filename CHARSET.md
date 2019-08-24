@@ -1,7 +1,7 @@
 ## UNICODE and charset support
 
 
-Nelson supports more 30 charset encoding including UNICODE
+Nelson supports more [30](http://www.iana.org/assignments/character-sets/character-sets.xhtml) charset encoding including UNICODE
 
 Examples:
 
