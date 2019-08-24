@@ -42,6 +42,12 @@
 ### [JavaScript Object Notation](JSON.md)
 
 
+### [RESTfull web service](REST.md)
+
+
+### [UNICODE and others charset support](CHARSET.md)
+
+
 ###  [Nelson in the Cloud](CLOUD.md) ☁️
 
 
