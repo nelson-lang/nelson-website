@@ -58,6 +58,10 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
+		<td>vec = size(X, dims)</td>
+	</tr>
+
+	<tr>
 		<td>[r, c] = size(X)</td>
 	</tr>
 
@@ -81,6 +85,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">a variable: a positive integer to get the dimth dimension.</p>
 </dd>
 
+<dt><span class="term">dims</span></dt>
+<dd>
+<p class="para">a variable: a vector of  positive integer to get the dimth dimensions.</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -95,6 +104,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">sdim</span></dt>
 <dd>
 <p class="para">the length of dimension dim.</p>
+</dd>
+
+<dt><span class="term">vec</span></dt>
+<dd>
+<p class="para">length of dimensions dims.</p>
 </dd>
 
 <dt><span class="term">[r, c]</span></dt>
@@ -124,6 +138,7 @@ SAME AS NELSON SOFTWARE
 <code class = "nelson">X = rand(3, 4, 5, 6);
 size(X)
 size(X, 3)
+size(X, [2 4])
 [r, c] =size(X)
 [s1, s2, s3, s4] = size(X)
 </code>
