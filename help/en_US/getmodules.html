@@ -54,7 +54,7 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
-		<td>[modules_name, modules_root_path] = getmodules()</td>
+		<td>[modules_name, modules_root_path, modules_version, modules_protected] = getmodules()</td>
 	</tr>
 
 </table>
@@ -73,6 +73,16 @@ SAME AS NELSON SOFTWARE
 <p class="para">a cell of strings: path of modules.</p>
 </dd>
 
+<dt><span class="term">modules_version</span></dt>
+<dd>
+<p class="para">a cell of vector: [major, minor, patch].</p>
+</dd>
+
+<dt><span class="term">modules_protected</span></dt>
+<dd>
+<p class="para">a vector of logical: true if module can be removed or not.</p>
+</dd>
+
 </dl>
 
 <h3>Description</h3>
@@ -81,13 +91,14 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>getmodules</b> returns list of modules loaded in Nelson.</p>
+  <p>all core's modules are protected and cannot removed during an nelson's session.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">[modules_name, modules_root_path] = getmodules()
+<code class = "nelson">[modules_name, modules_root_path, modules_version, modules_protected] = getmodules()
 </code>
 </pre>
 
