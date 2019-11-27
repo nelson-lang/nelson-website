@@ -54,6 +54,30 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
+		<td>repo('clone', url, branch, destination, username, password)</td>
+	</tr>
+
+	<tr>
+		<td>repo('clone', url, destination, username, password)</td>
+	</tr>
+
+	<tr>
+		<td>repo('export', url, branch_tag_sha1, destination)</td>
+	</tr>
+
+	<tr>
+		<td>repo('export', url, destination)</td>
+	</tr>
+
+	<tr>
+		<td>repo('export', url, branch_tag_sha1, destination, username, password)</td>
+	</tr>
+
+	<tr>
+		<td>repo('export', url, destination, username, password)</td>
+	</tr>
+
+	<tr>
 		<td>repo('checkout', destination, branch_tag_sha1)</td>
 	</tr>
 
@@ -71,6 +95,10 @@ SAME AS NELSON SOFTWARE
 
 	<tr>
 		<td>repo('fetch', destination)</td>
+	</tr>
+
+	<tr>
+		<td>repo('fetch', destination, username, password)</td>
 	</tr>
 
 	<tr>
@@ -107,6 +135,16 @@ SAME AS NELSON SOFTWARE
 <p class="para">a string: a branch name, tag or sha1.</p>
 </dd>
 
+<dt><span class="term">username</span></dt>
+<dd>
+<p class="para">a string: username used if an authentification is required.</p>
+</dd>
+
+<dt><span class="term">password</span></dt>
+<dd>
+<p class="para">a string: password used  if an authentification is required.</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -137,6 +175,16 @@ SAME AS NELSON SOFTWARE
 
   <p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
   <p>checkout command will be forced and remove untracked filed.</p>
+  <p>git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.</p>
+  <p>report('export', ...) clone and remove .git directory.</p>
+  <p/>
+  <p>Tips:</p>
+  <p/>
+  <p>If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.</p>
+  <p>You don't have some  ssh or https redirection.</p>
+  <p>Remove entries:</p>
+  <p>[url "git@github.com:"]</p>
+  <p>  insteadOf = https://github.com/</p>
 
 
 <h3>Used function(s)</h3>

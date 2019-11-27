@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>requiremodule</title>
+	<title>getLastReport</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="removemodule.html">&lt;&lt; removemodule</a></span>
+<span class="top"><a href="error.html">&lt;&lt; error</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_modules_manager.html">modules manager</a></span>
+<span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "semver.html">semver &gt;&gt;</a></span>
+<span class = "next"><a href = "lasterror.html">lasterror &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">requiremodule</h1>
+<h1 class="refname">getLastReport</h1>
 <hr/>
 
-<h3>Returns an error if module is not loaded in Nelson.</h3>
+<h3>Returns last recorded formatted error message.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,18 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>requiremodule(module_short_name)</td>
+		<td>messageText = getLastReport()</td>
 	</tr>
 
 </table>
 
-<h3>Input argument</h3>
+<h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">module_short_name</span></dt>
+<dt><span class="term">messageText</span></dt>
 <dd>
-<p class="para">a string: short module's name.</p>
+<p class="para">a character vector: formatted error message.</p>
 </dd>
 
 </dl>
@@ -71,20 +71,21 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>requiremodule</b> returns an error if desired module is not loaded.</p>
-  <p>This function is usefull to verify a dependency on another module.</p>
+  <p><b>getLastReport</b> returns last formatted error message.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
-<p>See module skeleton for example</p>
 <pre>
-<code class = "nelson">ismodule('module_skeleton')
-requiremodule('module_skeleton')
-addmodule([nelsonroot(), '/module_skeleton'], 'module_skeleton')
-ismodule('module_skeleton')
-requiremodule('module_skeleton')
+<code class = "nelson">lasterror('reset')
+getLastReport()
+</code>
+</pre>
+<pre>
+<code class = "nelson">state = execstr('xxxxxx', 'errcatch')
+l = lasterror()
+getLastReport
 </code>
 </pre>
 
@@ -92,7 +93,7 @@ requiremodule('module_skeleton')
 <hr/>
 
 <p>
-<a href = "ismodule.html" class = "link">ismodule</a>, <a href = "removemodule.html" class = "link">addmodule</a>, <a href = "getmodules.html" class = "link">getmodules</a>.</p>
+<a href = "lasterror.html" class = "link">lasterror</a>, <a href = "error.html" class = "link">error</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -118,15 +119,15 @@ requiremodule('module_skeleton')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="removemodule.html">&lt;&lt; removemodule</a></span>
+<span class="top"><a href="error.html">&lt;&lt; error</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_modules_manager.html">modules manager</a></span>
+<span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "semver.html">semver &gt;&gt;</a></span>
+<span class = "next"><a href = "lasterror.html">lasterror &gt;&gt;</a></span>
 </td>
 
 </tr></table>
