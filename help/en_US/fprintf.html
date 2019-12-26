@@ -200,6 +200,17 @@ R = fileread([tempdir(), 'fprintf.txt'])
 fprintf(2, "an value %g.", pi);
 </code>
 </pre>
+<p>How to use backspace</p>
+<pre>
+<code class = "nelson">reverseStr = '';
+for idx = 1 : 100
+ percentDone = idx;
+ msg = sprintf('Percent done: %3.1f', percentDone);
+ fprintf([reverseStr, msg]);
+ reverseStr = repmat(sprintf('\b'), 1, length(msg));
+end
+</code>
+</pre>
 
 <h3>See also</h3>
 <hr/>

@@ -73,6 +73,10 @@ SAME AS NELSON SOFTWARE
 		<td>nmm('uninstall', module_name)</td>
 	</tr>
 
+	<tr>
+		<td>package_filename = nmm('package', module_name, destination_dir)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -94,6 +98,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">a string: a git url (http/https protocol).</p>
 </dd>
 
+<dt><span class="term">destination_dir</span></dt>
+<dd>
+<p class="para">a string: an existing destination directory where archive will be created.</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -108,6 +117,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">l</span></dt>
 <dd>
 <p class="para">a logical: current state of autoload.</p>
+</dd>
+
+<dt><span class="term">package_filename</span></dt>
+<dd>
+<p class="para">a string: filename.</p>
 </dd>
 
 </dl>
@@ -129,27 +143,39 @@ SAME AS NELSON SOFTWARE
   <p>The commit-ish can be a tag (exact version), and an sha1 (exac commit) or an branch name.</p>
   <p>Without commit-ish, master branch will be used.</p>
   <p/>
+  <p><b>nmm('install', filename_nmz)</b> install an prebuilt external module.</p>
+  <p/>
   <p><b>nmm('load', module_name)</b> load an installed module for current session.</p>
   <p/>
   <p><b>l = nmm('autoload', module_name</b> returns current state autoload for <b>module_name</b>.</p>
   <p/>
   <p><b>nmm('autoload', module_name, state)</b> marks an installed modules "marked" as autoload at startup.</p>
+  <p>By default modules are marked as autoload.</p>
   <p/>
   <p><b>nmm('uninstall', module_name)</b> uninstall an installed module.</p>
   <p/>
+  <p><b>nmm('package', module_name, destination_dir)</b> packages an module as a zip file.</p>
+  <p/>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <p>Deploy module_skeleton_basic template</p>
 <pre>
 <code class = "nelson">if ~ismodule('module_skeleton_basic')
     nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
-    nmm('load', 'module_skeleton_basic')
     macro_sum(3, 4)
     nmm('uninstall', 'module_skeleton_basic')
 end
+</code>
+</pre>
+<p>Package easily a module</p>
+<pre>
+<code class = "nelson">if ~ismodule('module_skeleton_basic')
+    nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
+end
+package_filename = nmm('package', 'module_skeleton_basic', tempdir())
 </code>
 </pre>
 

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>setfield</title>
+	<title>diag</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="rmfield.html">&lt;&lt; rmfield</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
+<span class="top"><a href="chapter_constructors_functions.html">constructors functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "struct.html">struct &gt;&gt;</a></span>
+<span class = "next"><a href = "eps.html">eps &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">setfield</h1>
+<h1 class="refname">diag</h1>
 <hr/>
 
-<h3>Set structure field contents.</h3>
+<h3>Get diagonal elements of matrix or create diagonal matrix.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +46,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>stOut = setfield(stIn, fieldname, fieldvalue)</td>
+		<td>D = diag(V)</td>
 	</tr>
 
 	<tr>
-		<td>stOut = setfield(stIn, fieldname1, fieldvalue1, ..., fieldnameN, fieldvalueN)</td>
+		<td>X = diag(A)</td>
+	</tr>
+
+	<tr>
+		<td>D = diag(V, k)</td>
+	</tr>
+
+	<tr>
+		<td>X = diag(A, k)</td>
 	</tr>
 
 </table>
@@ -63,19 +67,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">stIn</span></dt>
+<dt><span class="term">V</span></dt>
 <dd>
-<p class="para">a structure.</p>
+<p class="para">Diagonal elements</p>
 </dd>
 
-<dt><span class="term">fieldname</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a string or characters vector.</p>
-</dd>
-
-<dt><span class="term">fieldvalue</span></dt>
-<dd>
-<p class="para">a variable value.</p>
+<p class="para">Input matrix</p>
 </dd>
 
 </dl>
@@ -84,9 +83,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">stOut</span></dt>
+<dt><span class="term">D</span></dt>
 <dd>
-<p class="para">a structure: result.</p>
+<p class="para">vector</p>
+</dd>
+
+<dt><span class="term">X</span></dt>
+<dd>
+<p class="para">matrix</p>
 </dd>
 
 </dl>
@@ -96,17 +100,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Set the contents of the specified field to the value.</p>
-  <p>Alternative syntax: S.(fieldname) = fieldvalue</p>
-  <p>Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue</p>
+  <p><b>diag</b> returns diagonal elements of matrix or create diagonal matrix.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = {};
-setfield(A, 'vv', 3)
+<code class = "nelson">diag(eye(3))
+diag(diag(eye(3)))
 </code>
 </pre>
 
@@ -114,7 +116,7 @@ setfield(A, 'vv', 3)
 <hr/>
 
 <p>
-<a href = "struct.html" class = "link">struct</a>, <a href = "getfield.html" class = "link">getfield</a>.</p>
+<a href = "ones.html" class = "link">ones</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -139,16 +141,12 @@ setfield(A, 'vv', 3)
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="rmfield.html">&lt;&lt; rmfield</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
+<span class="top"><a href="chapter_constructors_functions.html">constructors functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "struct.html">struct &gt;&gt;</a></span>
+<span class = "next"><a href = "eps.html">eps &gt;&gt;</a></span>
 </td>
 
 </tr></table>

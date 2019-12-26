@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>setfield</title>
+	<title>rmfield</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rmfield.html">&lt;&lt; rmfield</a></span>
+<span class="top"><a href="namedargs2cell.html">&lt;&lt; namedargs2cell</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "struct.html">struct &gt;&gt;</a></span>
+<span class = "next"><a href = "setfield.html">setfield &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">setfield</h1>
+<h1 class="refname">rmfield</h1>
 <hr/>
 
-<h3>Set structure field contents.</h3>
+<h3>Remove fields from structure.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>stOut = setfield(stIn, fieldname, fieldvalue)</td>
-	</tr>
-
-	<tr>
-		<td>stOut = setfield(stIn, fieldname1, fieldvalue1, ..., fieldnameN, fieldvalueN)</td>
+		<td>s = rmfield(st, field)</td>
 	</tr>
 
 </table>
@@ -63,19 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">stIn</span></dt>
+<dt><span class="term">st</span></dt>
 <dd>
 <p class="para">a structure.</p>
 </dd>
 
-<dt><span class="term">fieldname</span></dt>
+<dt><span class="term">field</span></dt>
 <dd>
-<p class="para">a string or characters vector.</p>
-</dd>
-
-<dt><span class="term">fieldvalue</span></dt>
-<dd>
-<p class="para">a variable value.</p>
+<p class="para">a string, cell of strings, or char.</p>
 </dd>
 
 </dl>
@@ -84,9 +75,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">stOut</span></dt>
+<dt><span class="term">s</span></dt>
 <dd>
-<p class="para">a structure: result.</p>
+<p class="para">a structure without field.</p>
 </dd>
 
 </dl>
@@ -96,17 +87,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Set the contents of the specified field to the value.</p>
-  <p>Alternative syntax: S.(fieldname) = fieldvalue</p>
-  <p>Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue</p>
+  <p><b>s = rmfield(st, field)</b> removes the specified field from structure array.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = {};
-setfield(A, 'vv', 3)
+<code class = "nelson">example.a = 1
+example.b = 'nelson'
+example.c = []
+rmfield(example, 'b')
 </code>
 </pre>
 
@@ -114,7 +105,7 @@ setfield(A, 'vv', 3)
 <hr/>
 
 <p>
-<a href = "struct.html" class = "link">struct</a>, <a href = "getfield.html" class = "link">getfield</a>.</p>
+<a href = "struct.html" class = "link">struct</a>, <a href = "fieldnames.html" class = "link">fieldnames</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -140,7 +131,7 @@ setfield(A, 'vv', 3)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rmfield.html">&lt;&lt; rmfield</a></span>
+<span class="top"><a href="namedargs2cell.html">&lt;&lt; namedargs2cell</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -148,7 +139,7 @@ setfield(A, 'vv', 3)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "struct.html">struct &gt;&gt;</a></span>
+<span class = "next"><a href = "setfield.html">setfield &gt;&gt;</a></span>
 </td>
 
 </tr></table>

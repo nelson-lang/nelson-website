@@ -62,6 +62,10 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
+		<td>addpath(dirname, ..., dirname, '-frozen')</td>
+	</tr>
+
+	<tr>
 		<td>previous = addpath(dirname)</td>
 	</tr>
 
@@ -93,6 +97,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">append dirname at the end or begin of the list.</p>
 </dd>
 
+<dt><span class="term">'-frozen'</span></dt>
+<dd>
+<p class="para">disables folder change detection for the folders being added or modified.</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -114,6 +123,7 @@ SAME AS NELSON SOFTWARE
   <p><b>addpath</b> add directories to search path.</p>
   <p>It is also possible to add lists of directory names separated by pathsep.</p>
   <p>Non-existent path will not be added and a warning will be issued.</p>
+  <p>files watchers is disabled for internal modules.</p>
 
 
 <h3>Example</h3>
