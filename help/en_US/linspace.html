@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>lt</title>
+	<title>linspace</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logspace.html">&lt;&lt; logspace</a></span>
+<span class="top"><a href="length.html">&lt;&lt; length</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "minus.html">minus &gt;&gt;</a></span>
+<span class = "next"><a href = "log.html">log &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">lt</h1>
+<h1 class="refname">linspace</h1>
 <hr/>
 
-<h3>less than, < operator.</h3>
+<h3>linearly spaced vector constructor.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = lt(A, B)</td>
+		<td>V = linspace(s, e)</td>
+	</tr>
+
+	<tr>
+		<td>V = linspace(s, e, n)</td>
 	</tr>
 
 </table>
@@ -59,14 +63,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">s</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">first value: a scalar, single or double.</p>
 </dd>
 
-<dt><span class="term">B</span></dt>
+<dt><span class="term">e</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">last value: a scalar, single or double.</p>
+</dd>
+
+<dt><span class="term">n</span></dt>
+<dd>
+<p class="para">Number of points: a scalar, single or double (by default 100).</p>
 </dd>
 
 </dl>
@@ -75,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">V</span></dt>
 <dd>
-<p class="para">result of lt(A, B)</p>
+<p class="para">result of linspace: an linearly spaced vector.</p>
 </dd>
 
 </dl>
@@ -87,31 +96,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.</p>
-  <p/>
+  <p><b>linspace</b> generates an linearly spaced vector.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">eye(2,2) &#60; ones(2, 2)
-</code>
-</pre>
-<pre>
-<code class = "nelson">0 &#60; i
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' &#60; 'Noslen'
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' &#60; 'l'
-</code>
-</pre>
-<pre>
-<code class = "nelson">lt(0.8 - 0.6 - 0.2, 0)
+<code class = "nelson">V = linspace(1+2i, 10+10i, 4)
 </code>
 </pre>
 
@@ -119,7 +111,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "ne.html" class = "link">ne</a>, <a href = "le.html" class = "link">le</a>, <a href = "ge.html" class = "link">ge</a>, <a href = "gt.html" class = "link">gt</a>, <a href = "eq.html" class = "link">eq</a>.</p>
+<a href = "logspace.html" class = "link">logspace</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -145,7 +137,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logspace.html">&lt;&lt; logspace</a></span>
+<span class="top"><a href="length.html">&lt;&lt; length</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -153,7 +145,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "minus.html">minus &gt;&gt;</a></span>
+<span class = "next"><a href = "log.html">log &gt;&gt;</a></span>
 </td>
 
 </tr></table>

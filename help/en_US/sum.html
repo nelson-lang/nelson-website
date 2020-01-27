@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>lt</title>
+	<title>sum</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logspace.html">&lt;&lt; logspace</a></span>
+<span class="top"><a href="subsindex.html">&lt;&lt; subsindex</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "minus.html">minus &gt;&gt;</a></span>
+<span class = "next"><a href = "swapbytes.html">swapbytes &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">lt</h1>
+<h1 class="refname">sum</h1>
 <hr/>
 
-<h3>less than, < operator.</h3>
+<h3>Sum of array elements.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,23 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = lt(A, B)</td>
+		<td>R = sum(M)</td>
+	</tr>
+
+	<tr>
+		<td>R = sum(M, d)</td>
+	</tr>
+
+	<tr>
+		<td>R = sum(M, d)</td>
+	</tr>
+
+	<tr>
+		<td>R = sum(M, d, t)</td>
+	</tr>
+
+	<tr>
+		<td>R = sum(M, d, t, f)</td>
 	</tr>
 
 </table>
@@ -59,14 +75,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">an array of double, single, integers, ...</p>
 </dd>
 
-<dt><span class="term">B</span></dt>
+<dt><span class="term">d</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">dimension to operate along: positive integer scalar.</p>
+</dd>
+
+<dt><span class="term">t</span></dt>
+<dd>
+<p class="para">a string: 'default', 'double' or 'native'.</p>
+</dd>
+
+<dt><span class="term">f</span></dt>
+<dd>
+<p class="para">a string: 'includenan' or 'omitnan'.</p>
 </dd>
 
 </dl>
@@ -75,9 +101,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result of lt(A, B)</p>
+<p class="para">Sum of array elements.</p>
 </dd>
 
 </dl>
@@ -87,31 +113,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.</p>
-  <p/>
+  <p><b>R = sum(M)</b> returns the sum of the array elements of M.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">eye(2,2) &#60; ones(2, 2)
-</code>
-</pre>
-<pre>
-<code class = "nelson">0 &#60; i
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' &#60; 'Noslen'
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' &#60; 'l'
-</code>
-</pre>
-<pre>
-<code class = "nelson">lt(0.8 - 0.6 - 0.2, 0)
+<code class = "nelson">M = uint8([10:30:70;20:30:80;30:30:90]);
+R = sum(M, 'native')
 </code>
 </pre>
 
@@ -119,7 +129,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "ne.html" class = "link">ne</a>, <a href = "le.html" class = "link">le</a>, <a href = "ge.html" class = "link">ge</a>, <a href = "gt.html" class = "link">gt</a>, <a href = "eq.html" class = "link">eq</a>.</p>
+<a href = "ndims.html" class = "link">ndims</a>, <a href = "prod.html" class = "link">prod</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -145,7 +155,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logspace.html">&lt;&lt; logspace</a></span>
+<span class="top"><a href="subsindex.html">&lt;&lt; subsindex</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -153,7 +163,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "minus.html">minus &gt;&gt;</a></span>
+<span class = "next"><a href = "swapbytes.html">swapbytes &gt;&gt;</a></span>
 </td>
 
 </tr></table>
