@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>lt</title>
+	<title>log2</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logspace.html">&lt;&lt; logspace</a></span>
+<span class="top"><a href="log1p.html">&lt;&lt; log1p</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "max.html">max &gt;&gt;</a></span>
+<span class = "next"><a href = "logspace.html">logspace &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">lt</h1>
+<h1 class="refname">log2</h1>
 <hr/>
 
-<h3>less than, < operator.</h3>
+<h3>dissect floating-point numbers into base 2 exponent and mantissa.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = lt(A, B)</td>
+		<td>R = log2(M)</td>
+	</tr>
+
+	<tr>
+		<td>[F, E] = log2(M)</td>
 	</tr>
 
 </table>
@@ -59,14 +63,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a variable</p>
-</dd>
-
-<dt><span class="term">B</span></dt>
-<dd>
-<p class="para">a variable</p>
+<p class="para">a variable: a matrix</p>
 </dd>
 
 </dl>
@@ -75,9 +74,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result of lt(A, B)</p>
+<p class="para">result of log2: computes the base 2 logarithm of the elements of X.</p>
+</dd>
+
+<dt><span class="term">F</span></dt>
+<dd>
+<p class="para">Mantissa values that satisfy this equation: M= F.*2.^E</p>
+</dd>
+
+<dt><span class="term">E</span></dt>
+<dd>
+<p class="para">Exponent values that satisfy this equation: M= F.*2.^E</p>
 </dd>
 
 </dl>
@@ -87,31 +96,23 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.</p>
-  <p/>
+  <p><b>log2</b> dissects several numbers into the exponent and mantissa.</p>
+  <p>[F, E] = log2(M), any zeros in M produce F = 0 and E = 0.</p>
+  <p>Input values of Inf, -Inf, or NaN are returned unchanged in F with a corresponding exponent of E = 0.</p>
 
 
-<h3>Examples</h3>
+<h3>Used function(s)</h3>
+<hr/>
+
+std::frexp and std::logb C++ functions
+
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">eye(2,2) &#60; ones(2, 2)
-</code>
-</pre>
-<pre>
-<code class = "nelson">0 &#60; i
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' &#60; 'Noslen'
-</code>
-</pre>
-<pre>
-<code class = "nelson">'Nelson' &#60; 'l'
-</code>
-</pre>
-<pre>
-<code class = "nelson">lt(0.8 - 0.6 - 0.2, 0)
+<code class = "nelson">x = [1+i,-i;i,2i];
+R = log2(x)
+[F, E] = log2(x)
 </code>
 </pre>
 
@@ -119,7 +120,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "ne.html" class = "link">ne</a>, <a href = "le.html" class = "link">le</a>, <a href = "ge.html" class = "link">ge</a>, <a href = "gt.html" class = "link">gt</a>, <a href = "eq.html" class = "link">eq</a>.</p>
+<a href = "log.html" class = "link">log</a>, <a href = "log10.html" class = "link">log10</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -145,7 +146,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="logspace.html">&lt;&lt; logspace</a></span>
+<span class="top"><a href="log1p.html">&lt;&lt; log1p</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -153,7 +154,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "max.html">max &gt;&gt;</a></span>
+<span class = "next"><a href = "logspace.html">logspace &gt;&gt;</a></span>
 </td>
 
 </tr></table>
