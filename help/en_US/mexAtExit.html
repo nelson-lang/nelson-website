@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>mex</title>
+	<title>mexAtExit</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dlgeneratemexgateway.html">&lt;&lt; dlgeneratemexgateway</a></span>
+<span class="top"><a href="mex.html">&lt;&lt; mex</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mexAtExit.html">mexAtExit &gt;&gt;</a></span>
+<span class = "next"><a href = "mexCallMATLAB.html">mexCallMATLAB &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">mex</h1>
+<h1 class="refname">mexAtExit</h1>
 <hr/>
 
-<h3>Build MEX function</h3>
+<h3>Register a function to be called when the MEX-file is cleared or when Nelson exits</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>mex(filenames)</td>
+		<td>#include "mex.h"</td>
 	</tr>
 
 	<tr>
-		<td>mex('-output', mexName, filenames)</td>
+		<td>int mexAtExit(void (*ExitFcn)(void));</td>
 	</tr>
 
 </table>
@@ -63,14 +63,20 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">filenames</span></dt>
+<dt><span class="term">ExitFcn</span></dt>
 <dd>
-<p class="para">a string or cell of characters: list of files to use. First filename used as mex name.</p>
+<p class="para">Pointer to function you wish to run on exit.</p>
 </dd>
 
-<dt><span class="term">mexName</span></dt>
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">returned value</span></dt>
 <dd>
-<p class="para">a string: override naming convention.</p>
+<p class="para">returns 0.</p>
 </dd>
 
 </dl>
@@ -80,16 +86,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.</p>
-  <p>A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.</p>
-  <p>Nelson have also his own C++ API to manage more easily internal nelson's objects.</p>
+  <p>Each MEX can register only one active exit subroutine at a time.</p>
+  <p><b>mexAtExit</b> registers a subroutine to be called just when Nelson is finished or <b>clear</b> is called.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">edit([modulepath('mex'), '/tests/test_mexPrintf.nls'])
+<code class = "nelson">edit([modulepath('mex'), '/tests/test_mexAtExit.nls'])
 </code>
 </pre>
 
@@ -97,7 +102,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "dlgenerategateway.html" class = "link">dlgenerategateway</a>.</p>
+<a href = "exit.html" class = "link">exit</a>, <a href = "clear.html" class = "link">clear</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,7 +128,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dlgeneratemexgateway.html">&lt;&lt; dlgeneratemexgateway</a></span>
+<span class="top"><a href="mex.html">&lt;&lt; mex</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -131,7 +136,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "mexAtExit.html">mexAtExit &gt;&gt;</a></span>
+<span class = "next"><a href = "mexCallMATLAB.html">mexCallMATLAB &gt;&gt;</a></span>
 </td>
 
 </tr></table>

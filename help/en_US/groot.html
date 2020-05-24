@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isglobal</title>
+	<title>groot</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="global.html">&lt;&lt; global</a></span>
+<span class="top"><a href="gcf.html">&lt;&lt; gcf</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "isvar.html">isvar &gt;&gt;</a></span>
+<span class="top"><a href="chapter_graphics.html">graphics functions</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isglobal</h1>
+<h1 class="refname">groot</h1>
 <hr/>
 
-<h3>Checks if a variable is global.</h3>
+<h3>graphic root object.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,29 +46,18 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>state = isglobal(variable_name)</td>
+		<td>g = groot()</td>
 	</tr>
 
 </table>
-
-<h3>Input argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">variable_name</span></dt>
-<dd>
-<p class="para">a string: variable name.</p>
-</dd>
-
-</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">state</span></dt>
+<dt><span class="term">g</span></dt>
 <dd>
-<p class="para">a logical: true if variable is global.</p>
+<p class="para">a graphic object: root object.</p>
 </dd>
 
 </dl>
@@ -82,20 +67,25 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.</p>
+  <p><b>groot</b> returns graphic root object.</p>
+  <p>Properties:</p>
+  <p><b>Children</b>: Array of available figure objects.</p>
+  <p><b>CurrentFigure</b>: Current figure graphic object.</p>
+  <p><b>Parent</b>: empty array (No parent)</p>
+  <p><b>PointerLocation</b>: Current location of pointer.</p>
+  <p><b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
+  <p><b>ScreenSize</b>: Size of primary display (vector).</p>
+  <p><b>Tag</b>: String identifier.</p>
+  <p><b>Type</b>: Type 'root'.</p>
+  <p><b>UserData</b>: User data (any array type).</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">y = 3;
-isglobal y
-global b
-b = 3
-isglobal b
-clear global b
-isglobal b
+<code class = "nelson">g = groot()
+g.ScreenDepth
 </code>
 </pre>
 
@@ -103,7 +93,7 @@ isglobal b
 <hr/>
 
 <p>
-<a href = "clear.html" class = "link">clear</a>, <a href = "who.html" class = "link">who</a>, <a href = "global.html" class = "link">global</a>.</p>
+<a href = "figure.html" class = "link">figure</a>, <a href = "gcf.html" class = "link">gcf</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -129,15 +119,11 @@ isglobal b
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="global.html">&lt;&lt; global</a></span>
+<span class="top"><a href="gcf.html">&lt;&lt; gcf</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_memory_manager.html">memory manager functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "isvar.html">isvar &gt;&gt;</a></span>
+<span class="top"><a href="chapter_graphics.html">graphics functions</a></span>
 </td>
 
 </tr></table>

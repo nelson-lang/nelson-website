@@ -49,6 +49,7 @@ Nelson has been developped to be an open/modular system where an user can define
   * [Audio module](AUDIO.md)
   * [UNICODE and charset support](CHARSET.md)
   * [Code editor](CODE_EDITOR.md)
+  * C MEX API support
 
 ## [Sources](https://github.com/Nelson-numerical-software/nelson)
 
