@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>gamma</title>
+	<title>betainc</title>
 
 </head>
 <body>
@@ -24,21 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="betainc.html">&lt;&lt; betainc</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_special_functions.html">special functions</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "gamma.html">gamma &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">gamma</h1>
+<h1 class="refname">betainc</h1>
 <hr/>
 
-<h3>Gamma special function</h3>
+<h3>Incomplete beta function</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,7 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = gamma(M)</td>
+		<td>R = betainc(X, Z, W)</td>
+	</tr>
+
+	<tr>
+		<td>R = betainc(X, Z, W, tail)</td>
 	</tr>
 
 </table>
@@ -55,9 +59,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">X</span></dt>
 <dd>
-<p class="para">a real single or real double matrix.</p>
+<p class="para">a real single or real double matrix. It must be in the closed interval [0, 1].</p>
+</dd>
+
+<dt><span class="term">Z</span></dt>
+<dd>
+<p class="para">a real single or real double matrix. It must be nonnegative.</p>
+</dd>
+
+<dt><span class="term">W</span></dt>
+<dd>
+<p class="para">a real single or real double matrix. It must be nonnegative.</p>
+</dd>
+
+<dt><span class="term">tail</span></dt>
+<dd>
+<p class="para">a string 'upper' or 'lower' (default).</p>
 </dd>
 
 </dl>
@@ -68,7 +87,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result of gamma function.</p>
+<p class="para">result of betainc function.</p>
 </dd>
 
 </dl>
@@ -78,15 +97,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>gamma</b> computes the gamma function.</p>
-  <p><b>gamma</b> is an extension of the <b>factorial</b> function.</p>
+  <p><b>betainc</b> computes the Incomplete beta function.</p>
+  <p>All arrays must be the same size or any of them can be scalar.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">R = gamma([-pi:0.1:pi])
+<code class = "nelson">R = betainc(0.5, 1:10, 3)
 </code>
 </pre>
 
@@ -94,7 +113,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "factorial.html" class = "link">factorial</a>.</p>
+<a href = "gamma.html" class = "link">gamma</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -119,12 +138,12 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="betainc.html">&lt;&lt; betainc</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_special_functions.html">special functions</a></span>
+</td>
+
+<td width = "30%" class = "next">
+<span class = "next"><a href = "gamma.html">gamma &gt;&gt;</a></span>
 </td>
 
 </tr></table>
