@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>getnelsonmode</title>
+	<title>getpid</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="finish.html">&lt;&lt; finish</a></span>
+<span class="top"><a href="getnelsonmode.html">&lt;&lt; getnelsonmode</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getpid.html">getpid &gt;&gt;</a></span>
+<span class = "next"><a href = "isquietmode.html">isquietmode &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">getnelsonmode</h1>
+<h1 class="refname">getpid</h1>
 <hr/>
 
-<h3>Returns current Nelson mode.</h3>
+<h3>Get nelson(s) Process IDentificator.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,38 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>m = getnelsonmode()</td>
+		<td>p = getpid()</td>
+	</tr>
+
+	<tr>
+		<td>v = getpid('running')</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">'running'</span></dt>
+<dd>
+<p class="para">a string.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">m</span></dt>
+<dt><span class="term">p</span></dt>
 <dd>
-<p class="para">a string.</p>
+<p class="para">a double: current Process Identificator.</p>
+</dd>
+
+<dt><span class="term">v</span></dt>
+<dd>
+<p class="para">a vector of double: list of nelson Processes Identification (with same arch) currently running for current user.</p>
 </dd>
 
 </dl>
@@ -71,22 +91,26 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>getnelsonmode()</b> returns current Nelson mode used.</p>
-  <p>There are <b>5</b> modes: </p>
-  <p><b>BASIC_ENGINE</b>: Nelson used as engine without any graphics.</p>
-  <p><b>ADVANCED_ENGINE</b>: Nelson used as engine with graphics/gui.</p>
-  <p><b>BASIC_TERMINAL</b>: Nelson launched as terminal without graphics.</p>
-  <p><b>ADVANCED_TERMINAL</b>: Nelson launched as terminal with graphics/gui.</p>
-  <p><b>BASIC_SIO_CLIENT</b>: Nelson launched as socket IO client.</p>
-  <p><b>ADVANCED_SIO_CLIENT</b>: Nelson launched as socket IO client with graphics/gui.</p>
-  <p><b>GUI</b>: Nelson launched as a graphical application (default).</p>
+  <p><b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
+  <p><b>v = getpid('running')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
+  <p>win64 and win32 are two differents architecture but they can run in same time.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">getnelsonmode()
+<code class = "nelson">p = getpid()
+getpid('running')
+unix('nelson-gui &')
+sleep(5) // detached process need to wait to see available
+getpid('running')
+unix('nelson-gui &')
+sleep(5) // detached process need to wait to see available
+getpid('running')
+unix('nelson-gui &')
+sleep(5) // detached process need to wait to see available
+getpid('running')
 </code>
 </pre>
 
@@ -94,7 +118,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "executable.html" class = "link">executable</a>.</p>
+<a href = "unix.html" class = "link">unix</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,7 +144,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="finish.html">&lt;&lt; finish</a></span>
+<span class="top"><a href="getnelsonmode.html">&lt;&lt; getnelsonmode</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -128,7 +152,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getpid.html">getpid &gt;&gt;</a></span>
+<span class = "next"><a href = "isquietmode.html">isquietmode &gt;&gt;</a></span>
 </td>
 
 </tr></table>
