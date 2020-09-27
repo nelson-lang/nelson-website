@@ -39,6 +39,9 @@
 ### [Message Passing Interface](MPI.md)
 
 
+### [Interprocess communication](IPC.md)
+
+
 ### [JavaScript Object Notation](JSON.md)
 
 
@@ -67,6 +70,7 @@
 
 
 ### [Profiling and Coverage Tools](PROFILER.md)
+
 
 
 [Previous page](README.md)

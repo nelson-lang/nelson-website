@@ -30,27 +30,28 @@ Nelson has been developped to be an open/modular system where an user can define
 
 ## [Features](FEATURES.md)
 
-  * [Internal data types](TYPES.md)
-  * [Overloading](OVERLOADING.md)
-  * [Modularity](MODULARITY.md)
-  * [External modules](EXTERNAL_MODULE.md)
-  * [Build C/C++ code on the fly](EXTERNAL_MODULE.md)
-  * [Foreign Function Interface](FFI.md)
-  * [Fast Fourier Transformation](FFTW.md)
-  * [HDF5 High Level functions I/O](HDF5.md)
+  * [Internal data types](TYPES.md),
+  * [Overloading](OVERLOADING.md),
+  * [Modularity](MODULARITY.md),
+  * [External modules](EXTERNAL_MODULE.md),
+  * [Build C/C++ code on the fly](EXTERNAL_MODULE.md),
+  * [C MEX API support](MEX.md),
+  * [Foreign Function Interface](FFI.md),
+  * [Fast Fourier Transformation](FFTW.md),
+  * [HDF5 High Level functions I/O](HDF5.md),
   * [MAT-Files functions I/O](MATIO.md)
-  * [Subroutine Library in Systems and Control Theory](SLICOT.md)
-  * [QML engine](QML_ENGINE.md)
-  * [COM interface](COM_INTERFACE.md)
-  * [Message Passing Interface](MPI.md)
-  * [JavaScript Object Notation](JSON.md)
-  * [RESTfull web service](REST.md)
-  * [Nelson in the Cloud](CLOUD.md) ☁️
-  * [Audio module](AUDIO.md)
-  * [UNICODE and charset support](CHARSET.md)
-  * [Code editor](CODE_EDITOR.md)
-  * C MEX API support
-
+  * [Subroutine Library in Systems and Control Theory](SLICOT.md),
+  * [QML engine](QML_ENGINE.md),
+  * [COM interface](COM_INTERFACE.md),
+  * [Message Passing Interface](MPI.md),
+  * [Interprocess Communication](IPC.md),
+  * [JavaScript Object Notation](JSON.md),
+  * [RESTfull web service](REST.md),
+  * [Nelson in the Cloud](CLOUD.md) ☁️,
+  * [Audio module](AUDIO.md),
+  * [UNICODE and charset support](CHARSET.md),
+  * [Code editor](CODE_EDITOR.md).
+ 
 ## [Sources](https://github.com/Nelson-numerical-software/nelson)
 
 ## [Download](https://github.com/Nelson-numerical-software/nelson/releases)
