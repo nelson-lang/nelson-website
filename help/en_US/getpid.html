@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isquietmode.html">isquietmode &gt;&gt;</a></span>
+<span class = "next"><a href = "ipc.html">ipc &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -54,7 +54,7 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
-		<td>v = getpid('running')</td>
+		<td>v = getpid('available')</td>
 	</tr>
 
 </table>
@@ -63,7 +63,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">'running'</span></dt>
+<dt><span class="term">'available'</span></dt>
 <dd>
 <p class="para">a string.</p>
 </dd>
@@ -92,7 +92,7 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
-  <p><b>v = getpid('running')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
+  <p><b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
   <p>win64 and win32 are two differents architecture but they can run in same time.</p>
 
 
@@ -101,16 +101,16 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">p = getpid()
-getpid('running')
+getpid('available')
 unix('nelson-gui &')
 sleep(5) // detached process need to wait to see available
-getpid('running')
+getpid('available')
 unix('nelson-gui &')
 sleep(5) // detached process need to wait to see available
-getpid('running')
+getpid('available')
 unix('nelson-gui &')
 sleep(5) // detached process need to wait to see available
-getpid('running')
+getpid('available')
 </code>
 </pre>
 
@@ -152,7 +152,7 @@ getpid('running')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isquietmode.html">isquietmode &gt;&gt;</a></span>
+<span class = "next"><a href = "ipc.html">ipc &gt;&gt;</a></span>
 </td>
 
 </tr></table>

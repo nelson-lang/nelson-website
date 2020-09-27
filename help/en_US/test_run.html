@@ -50,15 +50,79 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
-		<td>status = test_run(module_name)</td>
+		<td>status = test_run([])</td>
 	</tr>
 
 	<tr>
-		<td>status = test_run(module_name, options)</td>
+		<td>status = test_run('minimal_tests')</td>
 	</tr>
 
 	<tr>
-		<td>status = test_run(module_name, options, xunitfile)</td>
+		<td>status = test_run('-stoponfail')</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(file_to_test)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules, '-stoponfail')</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(file_to_test, '-stoponfail')</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules, option)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(file_to_test, option)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run('minimal_tests', '-stoponfail')</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run('minimal_tests', option)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run([], '-stoponfail')</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run([], option)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules, file_output)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(file_to_test, file_output)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run([], file_output)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules, option, xunitfile)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules, '-stoponfail', xunitfile)</td>
+	</tr>
+
+	<tr>
+		<td>status = test_run(modules, option, xunitfile, '-stoponfail')</td>
 	</tr>
 
 </table>
@@ -69,7 +133,12 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">module_name</span></dt>
 <dd>
-<p class="para">a string or a cell of string: module name or list of modules or filename.</p>
+<p class="para">a string or a cell of string: module name or list of modules.</p>
+</dd>
+
+<dt><span class="term">file_to_test</span></dt>
+<dd>
+<p class="para">a string or a cell of string: file to test or list of filenames.</p>
 </dd>
 
 <dt><span class="term">options</span></dt>
@@ -80,6 +149,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">xunitfile</span></dt>
 <dd>
 <p class="para">a string: filename to export results as a .xml or .json file compatible with Xunit format.</p>
+</dd>
+
+<dt><span class="term">'-stoponfail'</span></dt>
+<dd>
+<p class="para">a string: stop tests execution at first 'fails' detected.</p>
 </dd>
 
 </dl>
@@ -125,6 +199,7 @@ SAME AS NELSON SOFTWARE
   <p><b>&lt;--C/C++ COMPILER REQUIRED--&gt;</b> This test will be executed if an C/C++ compiler is available.</p>
   <p><b>&lt;--INDEX 64 BIT REQUIRED--&gt;</b> This test will be executed if 64 bit index is available.</p>
   <p><b>&lt;--NO USER MODULES--&gt;</b> This test will be executed without load user modules.</p>
+  <p><b>&lt;--IPC REQUIRED--&gt;</b> This test will be executed if IPC is available.</p>
   <p/>
   <p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
 
