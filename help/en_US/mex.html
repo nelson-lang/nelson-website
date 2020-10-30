@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dlgeneratemexgateway.html">&lt;&lt; dlgeneratemexgateway</a></span>
+<span class="top"><a href="engPutVariable.html">&lt;&lt; engPutVariable</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -77,12 +77,25 @@ SAME AS NELSON SOFTWARE
 		<td>mex(api, '-output', mexName, filenames, option1, ..., optionN)</td>
 	</tr>
 
+	<tr>
+		<td>mex('-client, 'engine', filenames)</td>
+	</tr>
+
+	<tr>
+		<td>mex('-client', 'engine', 'filenames', api, option1, ..., optionN)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
 <hr/>
 
 <dl>
+<dt><span class="term">'-client', 'engine'</span></dt>
+<dd>
+<p class="para">enable to build C/C++ source files into standalone engine application.</p>
+</dd>
+
 <dt><span class="term">api</span></dt>
 <dd>
 <p class="para">a string: '-R2017b' (separated complex representation) or '-R2018a' (interleaved complex representation).</p>
@@ -133,7 +146,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <pre>
-<code class = "nelson">edit([modulepath('mex'), '/tests/test_mexPrintf.nls'])
+<code class = "nelson">edit([modulepath('mex'), '/tests/test_engine.nls'])
 </code>
 </pre>
 
@@ -167,7 +180,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dlgeneratemexgateway.html">&lt;&lt; dlgeneratemexgateway</a></span>
+<span class="top"><a href="engPutVariable.html">&lt;&lt; engPutVariable</a></span>
 </td>
 
 <td width="40%" class="center">

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isquietmode</title>
+	<title>engOpenSingleUse</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="getnelsonmode.html">&lt;&lt; getnelsonmode</a></span>
+<span class="top"><a href="engOpen.html">&lt;&lt; engOpen</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_engine.html">engine</a></span>
+<span class="top"><a href="chapter_MEX.html">MEX functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "shebang.html">#! shebang &gt;&gt;</a></span>
+<span class = "next"><a href = "engPutVariable.html">engPutVariable &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isquietmode</h1>
+<h1 class="refname">engOpenSingleUse</h1>
 <hr/>
 
-<h3>Return true if Nelson started with --quiet option.</h3>
+<h3>Start Nelson engine session for single and nonshared use.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,43 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = isquietmode()</td>
+		<td>#include "engine.h"</td>
+	</tr>
+
+	<tr>
+		<td>Engine *engOpenSingleUse(const char *startcmd, void *dcom, int *retstatus);</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">startcmd</span></dt>
+<dd>
+<p class="para">Nelson startup command (NULL).</p>
+</dd>
+
+<dt><span class="term">dcom</span></dt>
+<dd>
+<p class="para">must be NULL.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">Engine</span></dt>
 <dd>
-<p class="para">a logical true or false</p>
+<p class="para">handle to Nelson engine or NULL.</p>
+</dd>
+
+<dt><span class="term">retstatus</span></dt>
+<dd>
+<p class="para">status; possible cause of failure.</p>
 </dd>
 
 </dl>
@@ -71,14 +96,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isquietmode</b> returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.</p>
+  <p>engOpenSingleUse start Nelson engine session for single and nonshared use.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">disp(isquietmode());
+<code class = "nelson">edit([modulepath('mex'), '/tests/test_engine.c'])
 </code>
 </pre>
 
@@ -86,7 +111,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "executable.html" class = "link">executable</a>.</p>
+<a href = "mex.html" class = "link">mex</a>, <a href = "engClose.html" class = "link">engClose</a>, <a href = "engOpen.html" class = "link">engOpen</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -112,15 +137,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="getnelsonmode.html">&lt;&lt; getnelsonmode</a></span>
+<span class="top"><a href="engOpen.html">&lt;&lt; engOpen</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_engine.html">engine</a></span>
+<span class="top"><a href="chapter_MEX.html">MEX functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "shebang.html">#! shebang &gt;&gt;</a></span>
+<span class = "next"><a href = "engPutVariable.html">engPutVariable &gt;&gt;</a></span>
 </td>
 
 </tr></table>

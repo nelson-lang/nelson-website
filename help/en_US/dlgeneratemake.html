@@ -57,12 +57,25 @@ SAME AS NELSON SOFTWARE
 		<td>[res, message] = dlgeneratemake(destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)</td>
 	</tr>
 
+	<tr>
+		<td>[res, message] = dlgeneratemake(maketype, destinationdir, libname, c_cpp_files, include)</td>
+	</tr>
+
+	<tr>
+		<td>[res, message] = dlgeneratemake(maketype, destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
 <hr/>
 
 <dl>
+<dt><span class="term">maketype</span></dt>
+<dd>
+<p class="para">a string: 'executable' or 'dynamic_library'.</p>
+</dd>
+
 <dt><span class="term">destinationdir</span></dt>
 <dd>
 <p class="para">a string: destination directory where is generated the makefile.</p>
@@ -70,7 +83,7 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">libname</span></dt>
 <dd>
-<p class="para">a string: destination dynamic library name</p>
+<p class="para">a string: destination dynamic library or executable name.</p>
 </dd>
 
 <dt><span class="term">c_cpp_files</span></dt>
