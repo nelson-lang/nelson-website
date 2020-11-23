@@ -46,7 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>ipc(pid, 'eval', cmd)</td>
+		<td>O = ipc(pid, 'eval', cmd)</td>
 	</tr>
 
 	<tr>
@@ -62,11 +62,27 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
+		<td>TF = ipc(pid, 'minimize')</td>
+	</tr>
+
+	<tr>
+		<td>ipc(pid, 'post', cmd)</td>
+	</tr>
+
+	<tr>
+		<td>ipc(pid, 'post', cmd, scope)</td>
+	</tr>
+
+	<tr>
 		<td>ipc(pid, 'put', var, name)</td>
 	</tr>
 
 	<tr>
-		<td>ipc(pid, 'put', var, name , scope)</td>
+		<td>ipc(pid, 'put', var, name, scope)</td>
+	</tr>
+
+	<tr>
+		<td>ipc(pid, 'minimize', tf)</td>
 	</tr>
 
 </table>
@@ -75,9 +91,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
+<dt><span class="term">'post'</span></dt>
+<dd>
+<p class="para">a string: post a command to evaluate to another nelson's process in base scope (not blocking).</p>
+</dd>
+
 <dt><span class="term">'eval'</span></dt>
 <dd>
-<p class="para">a string: a command to evaluate to another nelson's process in base scope.</p>
+<p class="para">a string: post a command to evaluate to another nelson's process in base scope (blocking).</p>
 </dd>
 
 <dt><span class="term">'isvar'</span></dt>
@@ -93,6 +114,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">'get'</span></dt>
 <dd>
 <p class="para">a string: get a variable from another nelson's process.</p>
+</dd>
+
+<dt><span class="term">'minimize'</span></dt>
+<dd>
+<p class="para">a string: minimize main window from another nelson's process.</p>
 </dd>
 
 </dl>
@@ -111,6 +137,16 @@ SAME AS NELSON SOFTWARE
 <p class="para">a variable from another nelson.</p>
 </dd>
 
+<dt><span class="term">TF</span></dt>
+<dd>
+<p class="para">a logical: true if destination process is minimized.</p>
+</dd>
+
+<dt><span class="term">O</span></dt>
+<dd>
+<p class="para">a character array: output of evaluate string.</p>
+</dd>
+
 </dl>
 
 <h3>Description</h3>
@@ -125,7 +161,7 @@ SAME AS NELSON SOFTWARE
   <p>Current limitation to limit memory usage.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
@@ -153,7 +189,7 @@ n = 0;
 for p = current_pids
     if p ~= master_pid
         cmd = sprintf('rng(%d);M = rand(10, 10); disp(M)', n);
-        ipc(p, 'eval', cmd);
+        ipc(p, 'post', cmd);
         n = n + 1;
     end
 end
@@ -171,9 +207,18 @@ end
 // close all clients
 for p = current_pids
     if p ~= master_pid
-        ipc(p, 'eval', 'exit')
+        ipc(p, 'post', 'exit')
     end
 end
+</code>
+</pre>
+<pre>
+<code class = "nelson">ipc(getpid(), 'eval', 'dir')
+</code>
+</pre>
+<pre>
+<code class = "nelson">ipc(getpid(), 'minimize', true)
+ipc(getpid(), 'minimize')
 </code>
 </pre>
 
@@ -181,7 +226,7 @@ end
 <hr/>
 
 <p>
-<a href = "getpid.html" class = "link">getpid</a>, <a href = "unix.html" class = "link">unix</a>.</p>
+<a href = "getpid.html" class = "link">getpid</a>, <a href = "unix.html" class = "link">unix</a>, <a href = "eval.html" class = "link">eval</a>.</p>
 
 <h3>History</h3>
 <hr/>

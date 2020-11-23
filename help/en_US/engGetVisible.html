@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fullpath</title>
+	<title>engGetVisible</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fullfile.html">&lt;&lt; fullfile</a></span>
+<span class="top"><a href="engGetVariable.html">&lt;&lt; engGetVariable</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_files_folders_functions.html">files and folders functions</a></span>
+<span class="top"><a href="chapter_MEX.html">MEX functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isdir.html">isdir &gt;&gt;</a></span>
+<span class = "next"><a href = "engOpen.html">engOpen &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fullpath</h1>
+<h1 class="refname">engGetVisible</h1>
 <hr/>
 
-<h3>Returns canonical full path.</h3>
+<h3>Determine visibility of Nelson engine session</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = fullpath(path)</td>
+		<td>#include "engine.h"</td>
+	</tr>
+
+	<tr>
+		<td>int engGetVisible(Engine *ep, bool *value);</td>
 	</tr>
 
 </table>
@@ -59,9 +63,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">path</span></dt>
+<dt><span class="term">Engine *ep</span></dt>
 <dd>
-<p class="para">a string or cell of string: filename to normalize.</p>
+<p class="para">handle to Nelson engine.</p>
 </dd>
 
 </dl>
@@ -70,9 +74,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">int</span></dt>
 <dd>
-<p class="para">a string or cell of string: canonical paths.</p>
+<p class="para">0 if successful or 1 if an error occurs.</p>
+</dd>
+
+<dt><span class="term">bool *</span></dt>
+<dd>
+<p class="para">true (visible) or false (minimize).</p>
 </dd>
 
 </dl>
@@ -82,14 +91,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>fullpath(path)</b> returns full path from a relative path.</p>
+  <p>Determine visibility of Nelson engine session</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">fullpath([nelsonroot(), '/../toto'])
+<code class = "nelson">edit([modulepath('mex'), '/tests/test_engine.c'])
 </code>
 </pre>
 
@@ -97,7 +106,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "relativepath.html" class = "link">relativepath</a>.</p>
+<a href = "mex.html" class = "link">mex</a>, <a href = "engSetVisible.html" class = "link">engSetVisible</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,15 +132,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="fullfile.html">&lt;&lt; fullfile</a></span>
+<span class="top"><a href="engGetVariable.html">&lt;&lt; engGetVariable</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_files_folders_functions.html">files and folders functions</a></span>
+<span class="top"><a href="chapter_MEX.html">MEX functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isdir.html">isdir &gt;&gt;</a></span>
+<span class = "next"><a href = "engOpen.html">engOpen &gt;&gt;</a></span>
 </td>
 
 </tr></table>
