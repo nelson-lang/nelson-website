@@ -14,6 +14,9 @@
 
 ### [Build C/C++ code on the fly](EXTERNAL_MODULE.md)
 
+### [C MEX API support](MEX.md)
+
+### [Nelson Engine API for C (compatible with MEX Engine)](MEX_ENGINE.md)
 
 ### [Foreign Function Interface](FFI.md)
 
