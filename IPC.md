@@ -1,9 +1,8 @@
 ## Interprocess Communication
 
+ipc builtin allows to execute, get, put variables between multiple nelson's process.
 
-ipc builtin allows to execute, get, put variables between multiple nelson's process. 
-
-All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning. 
+All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.
 
 Example:
 
@@ -55,6 +54,5 @@ for p = current_pids
 end
 
 ```
-
 
 [Previous page](FEATURES.md)

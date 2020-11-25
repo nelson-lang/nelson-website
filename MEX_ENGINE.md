@@ -4,7 +4,7 @@ Creates easily Engine applications (standalone programs) that allow you to call 
 
 Example:
 
-Save nex content in a file named ```mex_engine_demo_1.c```
+Save nex content in a file named `mex_engine_demo_1.c`
 
 ```
 #include <stdlib.h>
@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 	return EXIT_SUCCESS;
 }
 ```
+
 From Nelson:
 
 It will generate an executable file calling nelson's computation engine.
@@ -55,28 +56,25 @@ Libraries path need to contain nelson path to find Nelson's libraries at runtime
 
 Set the value to the path returned by the following Nelson command:
 
-```res = modulepath(nelsonroot(),'core','bin')```
+`res = modulepath(nelsonroot(),'core','bin')`
 
-(replaces ```res``` by returned value in next command.)
+(replaces `res` by returned value in next command.)
 
 - on linux:
 
-```export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:res```
+`export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:res`
 
-```export PATH=$PATH:res```
+`export PATH=$PATH:res`
 
 - on macos:
-```export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:res```
+  `export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:res`
 
-```export PATH=$PATH:res```
+`export PATH=$PATH:res`
 
 - on windows:
 
-```set PATH=%PATH%;res```
-
-
+`set PATH=%PATH%;res`
 
 [Previous page](FEATURES.md)
-
 
 MATLAB is a registered trademark of The MathWorks, Inc.

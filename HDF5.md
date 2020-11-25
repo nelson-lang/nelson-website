@@ -17,7 +17,7 @@ h5read(h5filename,'/str')
 
 Files with the .nh5 extension are files that are in the binary data container format that Nelson uses.
 
-.nh5 files are categorized as data files that include variables, functions, arrays and other information. 
+.nh5 files are categorized as data files that include variables, functions, arrays and other information.
 
 ```
 A = ["Nelson", "saves"; "string", "array"];

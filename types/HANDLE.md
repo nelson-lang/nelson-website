@@ -32,11 +32,11 @@ Window {
         text: "Hello world!"
         objectName: "text1"
     }
-   
+
 
     Button {
         text: "Button"
-        anchors.centerIn: parent 
+        anchors.centerIn: parent
         onClicked: nelson.evaluate("A = 3")
         objectName: "myBut1"
     }
@@ -138,7 +138,6 @@ Columns 1 to 1
 
 Example how to modify title of the button "Button":
 
-
 Get children of the figure created by 'hello.qml'
 
 ```
@@ -151,8 +150,7 @@ children =
 
 Two children, previously created:
 
- one for text field with "hello world" content,
-
+one for text field with "hello world" content,
 
 ```
 --> text_child = children(1)
@@ -182,7 +180,7 @@ text_child =
 	fontSizeMode: int 0
 	height: double 16
 	horizontalAlignment: int 1
-	hoveredLink: QString 
+	hoveredLink: QString
 	implicitHeight: double 16
 	implicitWidth: double 69
 	layer: QQuickItemLayer* handle
@@ -205,7 +203,7 @@ text_child =
 	rotation: double 0
 	scale: double 1
 	smooth: bool true
-	state: QString 
+	state: QString
 	style: int 0
 	styleColor: QColor #000000
 	text: QString Hello world!
@@ -256,8 +254,8 @@ button_child =
 	focus: bool false
 	height: double 28
 	hovered: bool false
-	iconName: QString 
-	iconSource: QUrl 
+	iconName: QString
+	iconSource: QUrl
 	implicitHeight: double 28
 	implicitWidth: double 93
 	isDefault: bool false
@@ -269,10 +267,10 @@ button_child =
 	rotation: double 0
 	scale: double 1
 	smooth: bool true
-	state: QString 
+	state: QString
 	style: QQmlComponent* handle
 	text: QString Button
-	tooltip: QString 
+	tooltip: QString
 	transformOrigin: int 4
 	transformOriginPoint: QPointF x:46.500000 y:14.000000
 	visible: bool true
@@ -293,6 +291,7 @@ Button
 ```
 
 To set the text of the button:
+
 ```
 // or set(button_child, 'text', 'new button text'); button_child
 --> button_child.text = 'new button text'; button_child
@@ -324,8 +323,8 @@ To set the text of the button:
 	focus: bool false
 	height: double 28
 	hovered: bool false
-	iconName: QString 
-	iconSource: QUrl 
+	iconName: QString
+	iconSource: QUrl
 	implicitHeight: double 28
 	implicitWidth: double 98
 	isDefault: bool false
@@ -337,10 +336,10 @@ To set the text of the button:
 	rotation: double 0
 	scale: double 1
 	smooth: bool true
-	state: QString 
+	state: QString
 	style: QQmlComponent* handle
 	text: QString new button text
-	tooltip: QString 
+	tooltip: QString
 	transformOrigin: int 4
 	transformOriginPoint: QPointF x:49 y:14
 	visible: bool true
@@ -364,6 +363,5 @@ Nelson interaction with QML and D3.js:
 
 Nelson interaction with QML and QCharts.js:
 ![Nelson interaction with QML and QCharts.js](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml-nelson-QCharts.png "Nelson interaction with QML and QCharts.js")
-
 
 [Previous page](../TYPES.md)

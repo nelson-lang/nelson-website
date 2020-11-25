@@ -1,4 +1,4 @@
-  - String Array (Unicode):
+- String Array (Unicode):
 
 ```
 A = ["Nelson" "manages"; "string" "array"]

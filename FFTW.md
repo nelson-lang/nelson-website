@@ -10,5 +10,4 @@ A fast Fourier transform (FFT) algorithm computes the discrete Fourier transform
 R = rand(5000,5000);tic(); Y = fft(R); toc
 ```
 
-
 [Previous page](FEATURES.md)

@@ -6,7 +6,7 @@ An example is better than a long text.
 
 In this example, we want to create an 'complexObj' i.e an special complex number object.
 
-We create an function: 
+We create an function:
 
 ```
 function r = complexObj(a, b)
@@ -103,6 +103,5 @@ real part
 imag part
      8.0000
 ```
-
 
 [Previous page](FEATURES.md)

@@ -1,13 +1,11 @@
 ## Development:
 
-
 Each commit into Nelson Github repository starts a continuous integration process based on Jenkins:
 ![Jenkins screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/Jenkins.png "Nelson Jenkins")
 
 Github actions used to check each commits on Linux:
 ![Github actions CI screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/github_actions.png "Github actions CI")
 [Github actions CI](https://github.com/Nelson-numerical-software/nelson/actions)
-
 
 Travis CI also used to check each commits on Linux & Macos:
 ![Travis CI screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/travis.png "Travis CI")
@@ -22,7 +20,6 @@ Each build process executes all unitary tests and non-regression tests under all
 ![xUnit Result](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/xUnit.png "xUnit")
 
 ![test_run capture](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/test_run.png "test_run")
-
 
 Development documentation is available for internal code.
 [Doxygen](./doxygen/html/index.html)

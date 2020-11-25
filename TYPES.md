@@ -14,5 +14,4 @@
 
 ### [handle object](types/HANDLE.md)
 
-
 [Previous page](FEATURES.md)

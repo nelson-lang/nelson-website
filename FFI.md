@@ -35,7 +35,7 @@ if ispc()
   getpid_symbol = '_getpid';
 else
   lib_c_name = ['libc', getdynlibext()];
-  getpid_symbol = 'getpid';  
+  getpid_symbol = 'getpid';
 end
 libc = dlopen(lib_c_name)
 // getpid C function from standard libc library
@@ -49,6 +49,5 @@ delete(libc);
 clear f
 clear libc
 ```
-
 
 [Previous page](FEATURES.md)

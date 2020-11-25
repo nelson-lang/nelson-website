@@ -1,5 +1,5 @@
-  - Logical:
-  
+- Logical:
+
 Scalar, vector, matrix 2D, N dimensions array, sparse matrix supported.
 
 ```

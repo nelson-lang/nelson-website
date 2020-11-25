@@ -1,6 +1,5 @@
 ## Audio module
 
-
 Audio module provides tools for read and play audio data. ASIO and multichannel supports enable low latency streaming to audio devices.
 
 Example:
@@ -25,6 +24,5 @@ playblocking(playObj)
 delete(playObj)
 clear playObj
 ```
-
 
 [Previous page](FEATURES.md)

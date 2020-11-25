@@ -39,5 +39,4 @@ st =
     age
 ```
 
-
 [Previous page](../TYPES.md)
