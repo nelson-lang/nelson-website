@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>uplus</title>
+	<title>ishermitian</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="uminus.html">&lt;&lt; uminus</a></span>
+<span class="top"><a href="inv.html">&lt;&lt; inv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "var.html">var &gt;&gt;</a></span>
+<span class = "next"><a href = "issymmetric.html">issymmetric &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">uplus</h1>
+<h1 class="refname">ishermitian</h1>
 <hr/>
 
-<h3>Unary plus, + operator</h3>
+<h3>Computes if matrix is hermitian or skew-hermitian.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = uplus(A)</td>
+		<td>res = ishermitian(x)</td>
 	</tr>
 
 	<tr>
-		<td>C = +A</td>
+		<td>res = ishermitian(x, 'skew')</td>
+	</tr>
+
+	<tr>
+		<td>res = ishermitian(x, 'nonskew')</td>
 	</tr>
 
 </table>
@@ -63,9 +67,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">x</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a numeric value: scalar or matrix (double or single, integers, logical).</p>
 </dd>
 
 </dl>
@@ -74,9 +78,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">res</span></dt>
 <dd>
-<p class="para">result of +A</p>
+<p class="para">a logical.</p>
 </dd>
 
 </dl>
@@ -86,15 +90,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = uplus(A)</b> performs unary plus ie +A.</p>
+  <p><b>ishermitian(x)</b> computes if matrix is hermitian or skew-hermitian.</p>
+  <p>A matrix is skew-hermitian if the complex conjugate transpose of the matrix is equal to the negative of the original matrix.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">M =-3;
-+M
+<code class = "nelson">ishermitian([1 0 1i; 0 1 0; -1i 0 1])
 </code>
 </pre>
 
@@ -102,7 +106,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "uminus.html" class = "link">uminus</a>, <a href = "plus.html" class = "link">plus</a>.</p>
+<a href = "issymmetric.html" class = "link">issymmetric</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -128,15 +132,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="uminus.html">&lt;&lt; uminus</a></span>
+<span class="top"><a href="inv.html">&lt;&lt; inv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "var.html">var &gt;&gt;</a></span>
+<span class = "next"><a href = "issymmetric.html">issymmetric &gt;&gt;</a></span>
 </td>
 
 </tr></table>

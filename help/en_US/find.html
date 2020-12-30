@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>uplus</title>
+	<title>find</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="uminus.html">&lt;&lt; uminus</a></span>
+<span class="top"><a href="factorial.html">&lt;&lt; factorial</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "var.html">var &gt;&gt;</a></span>
+<span class = "next"><a href = "fix.html">fix &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">uplus</h1>
+<h1 class="refname">find</h1>
 <hr/>
 
-<h3>Unary plus, + operator</h3>
+<h3>Find Non-zero Elements</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,39 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = uplus(A)</td>
+		<td>K = find(M)</td>
 	</tr>
 
 	<tr>
-		<td>C = +A</td>
+		<td>[R, C] = find(M)</td>
+	</tr>
+
+	<tr>
+		<td>[R, C, V] = find(M)</td>
+	</tr>
+
+	<tr>
+		<td>K = find(M, N)</td>
+	</tr>
+
+	<tr>
+		<td>[R, C] = find(M, N)</td>
+	</tr>
+
+	<tr>
+		<td>[R, C, V] = find(M, N)</td>
+	</tr>
+
+	<tr>
+		<td>K = find(M, N, D)</td>
+	</tr>
+
+	<tr>
+		<td>[R, C] = find(M, N, D)</td>
+	</tr>
+
+	<tr>
+		<td>[R, C, V] = find(M, N, D)</td>
 	</tr>
 
 </table>
@@ -63,9 +91,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a scalar, vector, matrix, or multidimensional array.</p>
+</dd>
+
+<dt><span class="term">N</span></dt>
+<dd>
+<p class="para">positive integer scalar value: number of nonzeros to find.</p>
+</dd>
+
+<dt><span class="term">D</span></dt>
+<dd>
+<p class="para">direction: 'first' (default) or 'last'.</p>
 </dd>
 
 </dl>
@@ -74,9 +112,24 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
+<dt><span class="term">K</span></dt>
+<dd>
+<p class="para">indices to nonzero elements (vector).</p>
+</dd>
+
+<dt><span class="term">R</span></dt>
+<dd>
+<p class="para">row subscripts (vector).</p>
+</dd>
+
 <dt><span class="term">C</span></dt>
 <dd>
-<p class="para">result of +A</p>
+<p class="para">column subscripts (vector).</p>
+</dd>
+
+<dt><span class="term">V</span></dt>
+<dd>
+<p class="para">nonzero elements of M (vector).</p>
 </dd>
 
 </dl>
@@ -86,15 +139,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = uplus(A)</b> performs unary plus ie +A.</p>
+  <p><b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">M =-3;
-+M
+<code class = "nelson">M = rand(4, 3, 5);
+[R, C, V] = find(M > 0.9)
+M(R(1),C(1),V(1))
 </code>
 </pre>
 
@@ -102,7 +156,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "uminus.html" class = "link">uminus</a>, <a href = "plus.html" class = "link">plus</a>.</p>
+<a href = "strfind.html" class = "link">strfind</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -128,7 +182,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="uminus.html">&lt;&lt; uminus</a></span>
+<span class="top"><a href="factorial.html">&lt;&lt; factorial</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -136,7 +190,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "var.html">var &gt;&gt;</a></span>
+<span class = "next"><a href = "fix.html">fix &gt;&gt;</a></span>
 </td>
 
 </tr></table>
