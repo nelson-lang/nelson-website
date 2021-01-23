@@ -1,7 +1,7 @@
 ## Foreign Function Interface:
 
 "A foreign function interface (FFI) is a mechanism by which a program written in one programming language can call routines or make use of services written in another."
-[see Wikipedia for more informations](https://en.wikipedia.org/wiki/Foreign_function_interface)
+[see Wikipedia for more information](https://en.wikipedia.org/wiki/Foreign_function_interface)
 
 Example: Call DASUM blas function from Nelson
 
