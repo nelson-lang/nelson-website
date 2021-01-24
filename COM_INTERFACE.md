@@ -21,6 +21,6 @@ Component Object Model (COM) is a binary-interface standard for software compone
   - COM_xlsread : read a xls/xlsx file.
     ![COM_xlsread example](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/COM_xlsread.jpg "COM_xlsread")
   - COM_xlswrite : write a xls/xlsx file.
-  - COM_xlsfinfo : get informations about xls/xlsx file.
+  - COM_xlsfinfo : get information about xls/xlsx file.
 
 [Previous page](FEATURES.md)
