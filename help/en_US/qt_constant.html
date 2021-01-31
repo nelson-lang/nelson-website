@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>mean</title>
+	<title>qt_constant</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cov.html">&lt;&lt; cov</a></span>
+<span class="top"><a href="QObject_used.html">&lt;&lt; QObject_used</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_statistics.html">statistics</a></span>
+<span class="top"><a href="chapter_qml_engine.html">QML engine</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "var.html">var &gt;&gt;</a></span>
+<span class = "next"><a href = "qt_version.html">qt_version &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">mean</h1>
+<h1 class="refname">qt_constant</h1>
 <hr/>
 
-<h3>Mean of array elements.</h3>
+<h3>Returns Qt constant value.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,31 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = mean(M)</td>
+		<td>v = qt_constant(constant_name)</td>
 	</tr>
 
 	<tr>
-		<td>R = mean(M, d)</td>
-	</tr>
-
-	<tr>
-		<td>R = mean(M, 'all')</td>
-	</tr>
-
-	<tr>
-		<td>R = mean(M, d, t)</td>
-	</tr>
-
-	<tr>
-		<td>R = mean(M, 'all', t)</td>
-	</tr>
-
-	<tr>
-		<td>R = mean(M, d, t, f)</td>
-	</tr>
-
-	<tr>
-		<td>R = mean(M, 'all', t, f)</td>
+		<td>ce = qt_constant()</td>
 	</tr>
 
 </table>
@@ -83,24 +63,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">constant_name</span></dt>
 <dd>
-<p class="para">an array of double, single, integers, ...</p>
-</dd>
-
-<dt><span class="term">d</span></dt>
-<dd>
-<p class="para">dimension to operate along: positive integer scalar.</p>
-</dd>
-
-<dt><span class="term">t</span></dt>
-<dd>
-<p class="para">a string: 'default', 'double' or 'native'.</p>
-</dd>
-
-<dt><span class="term">f</span></dt>
-<dd>
-<p class="para">a string: 'includenan' or 'omitnan'.</p>
+<p class="para">a string: desired Qt constant.</p>
 </dd>
 
 </dl>
@@ -109,9 +74,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">v</span></dt>
 <dd>
-<p class="para">Mean of array elements.</p>
+<p class="para">a scalar integer value (Qt constant value).</p>
+</dd>
+
+<dt><span class="term">ce</span></dt>
+<dd>
+<p class="para">a cell with all constant name available.</p>
 </dd>
 
 </dl>
@@ -121,15 +91,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>R = mean(M)</b> returns the mean of the array elements of M.</p>
+  <p><b>v = qt_version(constant_name)</b> returns Qt constant value.</p>
+  <p>Qt 5 family allows to get constant easily with qml_evaluatestring(constant_name), but it is no more available with Qt 6</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">M = uint8([10:30:70;20:30:80;30:30:90]);
-R = mean(M, 'native')
+<code class = "nelson">qt_constant('Qt.WindowModal')
+c = qt_constant()
 </code>
 </pre>
 
@@ -137,7 +108,7 @@ R = mean(M, 'native')
 <hr/>
 
 <p>
-<a href = "sum.html" class = "link">sum</a>, <a href = "prod.html" class = "link">prod</a>.</p>
+<a href = "qt_version.html" class = "link">qt_version</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -163,15 +134,15 @@ R = mean(M, 'native')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cov.html">&lt;&lt; cov</a></span>
+<span class="top"><a href="QObject_used.html">&lt;&lt; QObject_used</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_statistics.html">statistics</a></span>
+<span class="top"><a href="chapter_qml_engine.html">QML engine</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "var.html">var &gt;&gt;</a></span>
+<span class = "next"><a href = "qt_version.html">qt_version &gt;&gt;</a></span>
 </td>
 
 </tr></table>
