@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>transpose</title>
+	<title>triu</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="times.html">&lt;&lt; mtimes</a></span>
+<span class="top"><a href="tril.html">&lt;&lt; tril</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "tril.html">tril &gt;&gt;</a></span>
+<span class = "next"><a href = "uminus.html">uminus &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">transpose</h1>
+<h1 class="refname">triu</h1>
 <hr/>
 
-<h3>Returns vector or matrix transpose: .' operator.</h3>
+<h3>Upper triangular part of matrix</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C= transpose(A)</td>
+		<td>T = triu(M)</td>
 	</tr>
 
 	<tr>
-		<td>C = A .'</td>
+		<td>T = triu(M, k)</td>
 	</tr>
 
 </table>
@@ -63,9 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">2D input matrix</p>
+</dd>
+
+<dt><span class="term">k</span></dt>
+<dd>
+<p class="para">Diagonals to include: integer real value</p>
 </dd>
 
 </dl>
@@ -74,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result: transpose of A.</p>
+<p class="para">Upper Triangular Portions of Matrix</p>
 </dd>
 
 </dl>
@@ -86,25 +91,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = transpose(A)</b> returns the transpose of A.</p>
+  <p><b>triu</b> computes Upper Triangular Portions of Matrix.</p>
+  <p><b>R = triu(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = 3
-B = A.'
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = -i
-B = A.'
-</code>
-</pre>
-<pre>
-<code class = "nelson">A = sparse(eye(3, 4) * i)
-B = A.'
+<code class = "nelson">x = [1+i,-i;i,2i];
+r = triu(x)
 </code>
 </pre>
 
@@ -112,7 +108,7 @@ B = A.'
 <hr/>
 
 <p>
-<a href = "ctranspose.html" class = "link">ctranspose</a>.</p>
+<a href = "diag.html" class = "link">diag</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -138,7 +134,7 @@ B = A.'
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="times.html">&lt;&lt; mtimes</a></span>
+<span class="top"><a href="tril.html">&lt;&lt; tril</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -146,7 +142,7 @@ B = A.'
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "tril.html">tril &gt;&gt;</a></span>
+<span class = "next"><a href = "uminus.html">uminus &gt;&gt;</a></span>
 </td>
 
 </tr></table>
