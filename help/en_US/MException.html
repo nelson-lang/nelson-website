@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>error</title>
+	<title>MException</title>
 
 </head>
 <body>
@@ -24,21 +24,25 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="lastwarn.html">&lt;&lt; lastwarn</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getLastReport.html">getLastReport &gt;&gt;</a></span>
+<span class = "next"><a href = "rethrow.html">rethrow &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">error</h1>
+<h1 class="refname">MException</h1>
 <hr/>
 
-<h3>Raise an error message.</h3>
+<h3>Matrix Exception information.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,15 +50,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>error(id, msg)</td>
+		<td>ME = MException(identifier, message)</td>
 	</tr>
 
 	<tr>
-		<td>error(msg)</td>
+		<td>ME = MException('last')</td>
 	</tr>
 
 	<tr>
-		<td>error(error_structure)</td>
+		<td>MException('reset')</td>
 	</tr>
 
 </table>
@@ -63,19 +67,25 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">id</span></dt>
+<dt><span class="term">identifier</span></dt>
 <dd>
 <p class="para">a string: error identifier.</p>
 </dd>
 
-<dt><span class="term">msg</span></dt>
+<dt><span class="term">message</span></dt>
 <dd>
 <p class="para">a string.</p>
 </dd>
 
-<dt><span class="term">error_structure</span></dt>
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">ME</span></dt>
 <dd>
-<p class="para">error message structure.</p>
+<p class="para">a MException object.</p>
 </dd>
 
 </dl>
@@ -85,28 +95,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>error</b> stops the current script execution.</p>
-  <p><b>error('')</b> will be ignored and the script will continue to run.</p>
+  <p>All Nelson code that detects an error and throws an exception constructs an MException object.</p>
   <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
+  <p><b>ME = MException('last')</b> return last exception.</p>
+  <p><b>MException('reset')</b> clears last exception.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">error('your error message.')
-error('nelson:identifier', 'your error message.')
-  
-error('')
-</code>
-</pre>
-<pre>
-<code class = "nelson">1 / [1 2 3]
-a = lasterror()
-lasterror('reset')
-b = lasterror()
-error(a)
-c = lasterror()
+<code class = "nelson">ME = MException('nelson:identifier', 'your error message.')
+throw(ME)
 </code>
 </pre>
 
@@ -114,7 +114,7 @@ c = lasterror()
 <hr/>
 
 <p>
-<a href = "MException.html" class = "link">MException</a>, <a href = "lasterror.html" class = "link">lasterror</a>, <a href = "warning.html" class = "link">warning</a>.</p>
+<a href = "error.html" class = "link">error</a>, <a href = "try.html" class = "link">try</a>, <a href = "throw.html" class = "link">throw</a>, <a href = "rethrow.html" class = "link">rethrow</a>, <a href = "throwAsCaller.html" class = "link">throwAsCaller</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -139,12 +139,16 @@ c = lasterror()
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="lastwarn.html">&lt;&lt; lastwarn</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_error_manager.html">error manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "getLastReport.html">getLastReport &gt;&gt;</a></span>
+<span class = "next"><a href = "rethrow.html">rethrow &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>shortcutor</title>
+	<title>sign</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="shortcutand.html">&lt;&lt; shortcutand</a></span>
+<span class="top"><a href="shortcutor.html">&lt;&lt; shortcutor</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "sign.html">sign &gt;&gt;</a></span>
+<span class = "next"><a href = "size.html">size &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">shortcutor</h1>
+<h1 class="refname">sign</h1>
 <hr/>
 
-<h3>Short circuit 'OR' operator, ||</h3>
+<h3>Find the sign function of a number.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = shortcutor(A, B)</td>
-	</tr>
-
-	<tr>
-		<td>C = A || B</td>
+		<td>R = sign(M)</td>
 	</tr>
 
 </table>
@@ -63,12 +59,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">A</span></dt>
-<dd>
-<p class="para">a variable</p>
-</dd>
-
-<dt><span class="term">B</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
 <p class="para">a variable</p>
 </dd>
@@ -79,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">result of A || B</p>
+<p class="para">result of sign.</p>
 </dd>
 
 </dl>
@@ -91,18 +82,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = shortcutor(A, B)</b> performs a logical <b>OR</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
+  <p><b>sign</b> find the sign function of a number.</p>
+  <p>-1 if the corresponding element of M is less than 0.</p>
+  <p>0 if the corresponding element of M equals 0.</p>
+  <p>1 if the corresponding element of M is greater than 0.</p>
+  <p>If input argument is a complex number, <b>sign</b> computes <b>M ./ abs(M)</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = [6 8 0; 0 3 89; 15 0 0]
-B = [66 56 0; 11 33 55; -11 0 0]
-C = A || B
-D = shortcutor(B, A)
-C == D
+<code class = "nelson">V = [-1 0 15 NaN Inf];
+sign(V)
 </code>
 </pre>
 
@@ -110,7 +102,7 @@ C == D
 <hr/>
 
 <p>
-<a href = "or.html" class = "link">or</a>, <a href = "xor.html" class = "link">xor</a>.</p>
+<a href = "conj.html" class = "link">conj</a>, <a href = "abs.html" class = "link">abs</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -136,7 +128,7 @@ C == D
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="shortcutand.html">&lt;&lt; shortcutand</a></span>
+<span class="top"><a href="shortcutor.html">&lt;&lt; shortcutor</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -144,7 +136,7 @@ C == D
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "sign.html">sign &gt;&gt;</a></span>
+<span class = "next"><a href = "size.html">size &gt;&gt;</a></span>
 </td>
 
 </tr></table>

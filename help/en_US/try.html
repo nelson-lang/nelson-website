@@ -53,6 +53,10 @@ SAME AS NELSON SOFTWARE
 		<td>try, statements_1, catch, statements_2, end</td>
 	</tr>
 
+	<tr>
+		<td>try, statements_1, catch exception, statements_2, end</td>
+	</tr>
+
 </table>
 
 <h3>Description</h3>
@@ -61,9 +65,11 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>try</b> and <b>catch</b> statements are used for error handling and control in files.</p>
+  <p><b>exception</b> is an <b>MException</b> object that allows you to identify the error.</p>
+  <p>The catch block assigns the current exception object to the variable in exception.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <p>try/catch in a script file</p>
@@ -75,12 +81,21 @@ catch
 end
 </code>
 </pre>
+<p>try/catch in a script file</p>
+<pre>
+<code class = "nelson">try 
+error('an error')
+catch ME
+  ME
+end
+</code>
+</pre>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "run.html" class = "link">run</a>, <a href = "execstr.html" class = "link">execstr</a>.</p>
+<a href = "run.html" class = "link">run</a>, <a href = "execstr.html" class = "link">execstr</a>, <a href = "MException.html" class = "link">MException</a>.</p>
 
 <h3>History</h3>
 <hr/>
