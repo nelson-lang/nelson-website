@@ -65,6 +65,10 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
+		<td>s = unix(commands, '-parallel')</td>
+	</tr>
+
+	<tr>
 		<td>[status, output] = system(command)</td>
 	</tr>
 
@@ -88,6 +92,10 @@ SAME AS NELSON SOFTWARE
 		<td>[status, output] = unix(command, '-echo')</td>
 	</tr>
 
+	<tr>
+		<td>[s, outputs] = unix(commands, '-parallel')</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -97,6 +105,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">command</span></dt>
 <dd>
 <p class="para">a string: command to execute in command shell.</p>
+</dd>
+
+<dt><span class="term">commands</span></dt>
+<dd>
+<p class="para">a cell of string or a string array: commands to execute in command shell in parallel.</p>
 </dd>
 
 </dl>
@@ -113,6 +126,16 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">output</span></dt>
 <dd>
 <p class="para">a string: output of the command.</p>
+</dd>
+
+<dt><span class="term">s</span></dt>
+<dd>
+<p class="para">an matrix of integer value: exit code value of the commands (same dimensions than commands).</p>
+</dd>
+
+<dt><span class="term">output</span></dt>
+<dd>
+<p class="para">a string array: output of the commands.</p>
 </dd>
 
 </dl>
@@ -135,6 +158,10 @@ SAME AS NELSON SOFTWARE
 <pre>
 <code class = "nelson">[s,w] = system('dir');
 [s,w] = system('dir','-echo');
+</code>
+</pre>
+<pre>
+<code class = "nelson">[s,w] = system(["echo hello", "dir", "echo world"]'-parallel')
 </code>
 </pre>
 <p>To detach an system command, include the trailing character, &, in the command argument.</p>

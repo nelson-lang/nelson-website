@@ -61,6 +61,18 @@ SAME AS NELSON SOFTWARE
 		<td>[r, msg] = assert_checkerror(command, expected_error_message)</td>
 	</tr>
 
+	<tr>
+		<td>assert_checkerror(command, expected_error_message, expected_error_identifier)</td>
+	</tr>
+
+	<tr>
+		<td>r = assert_checkerror(command, expected_error_message, expected_error_identifier)</td>
+	</tr>
+
+	<tr>
+		<td>[r, msg] = assert_checkerror(command, expected_error_message, expected_error_identifier)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -74,7 +86,12 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">expected_error_message</span></dt>
 <dd>
-<p class="para">a string, the expectederror message.</p>
+<p class="para">a string, the expected error message.</p>
+</dd>
+
+<dt><span class="term">expected_error_identifier</span></dt>
+<dd>
+<p class="para">a string, the expected error identifier.</p>
 </dd>
 
 </dl>
@@ -110,6 +127,10 @@ If the command does not raise the expected error message, then assert_checkerror
 </pre>
 <pre>
 <code class = "nelson">assert_checkerror('cos', _('Wrong error message.'));
+</code>
+</pre>
+<pre>
+<code class = "nelson">assert_checkerror('mustBeFinite(NaN)', _('Value must be finite.'), 'Nelson:validators:mustBeFinite')
 </code>
 </pre>
 

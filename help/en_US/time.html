@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>tic</title>
+	<title>time</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="sleep.html">&lt;&lt; sleep</a></span>
+<span class="top"><a href="tic.html">&lt;&lt; tic</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "time.html">time &gt;&gt;</a></span>
+<span class = "next"><a href = "toc.html">toc &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">tic</h1>
+<h1 class="refname">time</h1>
 <hr/>
 
-<h3>Starts a stopwatch timer.</h3>
+<h3>Return the current time as the number of seconds or nanoseconds since the epoch.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tic()</td>
+		<td>t_s = time()</td>
 	</tr>
 
 	<tr>
-		<td>t = tic()</td>
+		<td>t_s = time('s')</td>
+	</tr>
+
+	<tr>
+		<td>t_ns = time('ns')</td>
 	</tr>
 
 </table>
@@ -63,9 +67,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">t</span></dt>
+<dt><span class="term">t_s</span></dt>
 <dd>
-<p class="para">a unsigned integer 64 bit: value of internal timer of the tic function.</p>
+<p class="para">a double: value of current time as the number of seconds since the epoch.</p>
+</dd>
+
+<dt><span class="term">t_ns</span></dt>
+<dd>
+<p class="para">a unsigned integer 64 bit: value of current time as the number of nanoseconds since the epoch.</p>
 </dd>
 
 </dl>
@@ -75,21 +84,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
-  <p>Consecutive <b>tic</b> commands overwrite the tic timer.</p>
+  <p><b>time</b> returns the current time as the number of seconds or nanoseconds since the epoch.</p>
+  <p>The epoch is referenced to 00:00:00 UTC (Coordinated Universal Time) 1 Jan 1970.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">tic()
+<code class = "nelson">t1=time()
 sleep(10)
-toc()
-
-tic()
-sleep(10)
-t = toc()
+t2 = time()
+t2 - t1
 </code>
 </pre>
 
@@ -97,7 +103,7 @@ t = toc()
 <hr/>
 
 <p>
-<a href = "toc.html" class = "link">toc</a>, <a href = "sleep.html" class = "link">sleep</a>, <a href = "time.html" class = "link">time</a>.</p>
+<a href = "tic.html" class = "link">tic</a>, <a href = "sleep.html" class = "link">sleep</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,7 +129,7 @@ t = toc()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="sleep.html">&lt;&lt; sleep</a></span>
+<span class="top"><a href="tic.html">&lt;&lt; tic</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -131,7 +137,7 @@ t = toc()
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "time.html">time &gt;&gt;</a></span>
+<span class = "next"><a href = "toc.html">toc &gt;&gt;</a></span>
 </td>
 
 </tr></table>
