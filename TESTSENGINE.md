@@ -1,6 +1,8 @@
 ## Tests engine
 
 Validate your algorithm using Nelson dedicated [functions](https://nelson-numerical-software.github.io/nelson-website/help/en_US/chapter_assert_functions.html).
+
+Since v0.5.4, tests are executed on multiple workers on all platforms supported (linux, mac and windows).
 ![alt text](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/test_run.png "test_run")
 
 Export the test results under the xUnit reports format.
