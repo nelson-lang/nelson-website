@@ -3,7 +3,7 @@
 The QML engine enables nelson programs to display and manipulate graphical content using Qt's QML framework.
 
 ```
-  qml_demos // for demonstrations
+  qml_demos % for demonstrations
 ```
 
 ![qml_demos screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml_demos.png "qml_demos")

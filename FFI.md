@@ -14,15 +14,15 @@ end
 lib = dlopen(blas_library_name)
 V = [ -2, 1, 3, -5, 4, 0, -1, -3]
 N = length(V)
-// load DASUM blas symbol (L1 Norm)
+% load DASUM blas symbol (L1 Norm)
 f = dlsym(lib,'DASUM','double',{'int32Ptr','doublePtr','int32Ptr'})
-// call DASUM blas symbol with arguments
+% call DASUM blas symbol with arguments
 r = dlcall(f, int32(N), V, int32(1))
 assert(r == 19)
-// release handles
+% release handles
 delete(f);
 delete(lib);
-// clear variables
+% clear variables
 clear f
 clear lib
 ```
@@ -38,14 +38,14 @@ else
   getpid_symbol = 'getpid';
 end
 libc = dlopen(lib_c_name)
-// getpid C function from standard libc library
+% getpid C function from standard libc library
 f = dlsym(libc, getpid_symbol, 'int32', {})
-// call getpid
+% call getpid
 pid = dlcall(f)
-// release handles
+% release handles
 delete(f);
 delete(libc);
-// clear variables
+% clear variables
 clear f
 clear libc
 ```

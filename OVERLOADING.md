@@ -83,7 +83,7 @@ And if you want to add to 'complexObj', you need also to define: 'complexObj_plu
 
 ```
 function r = complexObj_plus_complexObj(a, b)
-  // stupid addition algo.
+  % stupid addition algo.
   R1 = a.r + b.r;
   R2 = a.i + b.i;
   r = complexObj(R1, R2);

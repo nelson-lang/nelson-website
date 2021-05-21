@@ -141,7 +141,7 @@ Example how to modify title of the button "Button":
 Get children of the figure created by 'hello.qml'
 
 ```
-// or children = get(a, 'children')
+% or children = get(a, 'children')
 --> children = a.children
 children =
 
@@ -283,7 +283,7 @@ button_child =
 To get the text of the button:
 
 ```
-// text_button = get(button_child, 'text')
+% text_button = get(button_child, 'text')
 --> text_button = button_child.text
 text_button =
 
@@ -293,7 +293,7 @@ Button
 To set the text of the button:
 
 ```
-// or set(button_child, 'text', 'new button text'); button_child
+% or set(button_child, 'text', 'new button text'); button_child
 --> button_child.text = 'new button text'; button_child
 
 [QML] - size: 1x1
