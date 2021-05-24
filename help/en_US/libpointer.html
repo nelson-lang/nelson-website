@@ -125,7 +125,7 @@ lib = dlopen(path_ref);
 f = dlsym(lib, 'multiplicationDoubleByReference', 'libpointer', {'doublePtr'});
 [r1, r2] = dlcall(f, xPtr);
 r2
-// r1 is an libpointer of type '' (voidPointer) and it need to be change type and size.
+% r1 is an libpointer of type '' (voidPointer) and it need to be change type and size.
 r1.setdatatype('doublePtr');
 r1.reshape(1, 1);
 get(r1)
