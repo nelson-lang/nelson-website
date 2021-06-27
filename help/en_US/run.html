@@ -42,7 +42,7 @@ SAME AS NELSON SOFTWARE
 <h1 class="refname">run</h1>
 <hr/>
 
-<h3>Executes a script file (.nls).</h3>
+<h3>Executes a script file (.m).</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -100,21 +100,21 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>run(script_file)</b> executes a Nelson's script file (.nls file extension).</p>
+  <p><b>run(script_file)</b> executes a Nelson's script file (.m file extension).</p>
 
 
 <h3>Examples</h3>
 <hr/>
 
-<p>Creates two .nls in temp directory to use as example:</p>
+<p>Creates two .m in temp directory to use as example:</p>
 <pre>
-<code class = "nelson">fd = fopen([tempdir(), 'example_run_ok.nls'], 'wt');
+<code class = "nelson">fd = fopen([tempdir(), 'example_run_ok.m'], 'wt');
 fprintf(fd, ['A = 1;', char(10)]);
 fprintf(fd, ['B = 2;', char(10)]);
 fprintf(fd, ['C = A + B', char(10)]);
 fclose(fd);
 
-fd = fopen([tempdir(), 'example_run_not_ok.nls'], 'wt');
+fd = fopen([tempdir(), 'example_run_not_ok.m'], 'wt');
 fprintf(fd, ['AA = 1;', char(10)]);
 fprintf(fd, ['CC = AA + BB', char(10)]);
 fclose(fd);
@@ -122,22 +122,22 @@ fclose(fd);
 </pre>
 <p>run a script without error.</p>
 <pre>
-<code class = "nelson">run([tempdir(), 'example_run_ok.nls']);
+<code class = "nelson">run([tempdir(), 'example_run_ok.m']);
 </code>
 </pre>
 <p>run a script and catch error (no error).</p>
 <pre>
-<code class = "nelson">bsuccess = run([tempdir(), 'example_run_ok.nls'], 'errcatch')
+<code class = "nelson">bsuccess = run([tempdir(), 'example_run_ok.m'], 'errcatch')
 </code>
 </pre>
 <p>run a script and catch error (with error).</p>
 <pre>
-<code class = "nelson">bsuccess = run([tempdir(), 'example_run_not_ok.nls'], 'errcatch')
+<code class = "nelson">bsuccess = run([tempdir(), 'example_run_not_ok.m'], 'errcatch')
 </code>
 </pre>
 <p>run a script and no catch error.</p>
 <pre>
-<code class = "nelson">run([tempdir(), 'example_run_not_ok.nls'], 'nocatch');
+<code class = "nelson">run([tempdir(), 'example_run_not_ok.m'], 'nocatch');
 </code>
 </pre>
 

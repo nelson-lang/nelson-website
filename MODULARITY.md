@@ -3,21 +3,23 @@
 Each "module" (toolboxe) can be disabled or replaced by another:
 
 ```
-¦   loader.nls
+¦   loader.m
 ¦
 +---etc
-¦       finish.nls
-¦       startup.nls
+¦       finish.m
+¦       startup.m
 ¦
 +---functions
-¦       *.nlf
+¦       *.m
 ¦
 +---help
 ¦   +---en_US
 ¦           org.nelson.modules.*.help.qch
 ¦
 +---tests
-        *.nls
+        test_*.m
+        bug_*.m
+        bench_*.m
 ```
 
 ```

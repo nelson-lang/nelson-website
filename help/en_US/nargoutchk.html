@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isinf</title>
+	<title>nargoutchk</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfinite.html">&lt;&lt; isfinite</a></span>
+<span class="top"><a href="nargout.html">&lt;&lt; nargout</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_core.html">core</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isnan.html">isnan &gt;&gt;</a></span>
+<span class = "next"><a href = "nelsonroot.html">nelsonroot &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isinf</h1>
+<h1 class="refname">nargoutchk</h1>
 <hr/>
 
-<h3>Check for Infinity entries.</h3>
+<h3>Checks the number of output arguments.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tf = isinf(M)</td>
+		<td>nargoutchk(minArgs, maxArgs)</td>
+	</tr>
+
+	<tr>
+		<td>msg = nargoutchk(minArgs, maxArgs, numArgs)</td>
+	</tr>
+
+	<tr>
+		<td>st = nargoutchk(minArgs, maxArgs, numArgs, 'struct')</td>
 	</tr>
 
 </table>
@@ -59,9 +67,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">minArgs</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">minimum number of accepted outputs (scalar integer value).</p>
+</dd>
+
+<dt><span class="term">maxArgs</span></dt>
+<dd>
+<p class="para">maximum number of accepted outputs (scalar integer value).</p>
+</dd>
+
+<dt><span class="term">numArgs</span></dt>
+<dd>
+<p class="para">number of function outputs (scalar integer value).</p>
 </dd>
 
 </dl>
@@ -70,9 +88,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">tf</span></dt>
+<dt><span class="term">msg</span></dt>
 <dd>
-<p class="para">logical: result of 'isinf'.</p>
+<p class="para">a string: error message.</p>
+</dd>
+
+<dt><span class="term">st</span></dt>
+<dd>
+<p class="para">a struct with error message and identifier.</p>
 </dd>
 
 </dl>
@@ -82,19 +105,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are Infinity values.</p>
+  <p><b>nargoutchk</b> checks the number of output arguments of an function.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
+<p>With an macro function:</p>
 <pre>
-<code class = "nelson">isnan(pi)
-isinf(Inf)
-isinf(-Inf)
-isinf(int32(3))
-X = sparse([1 2 NaN 3 0 Inf 0 4]);
-R = isinf(X)
+<code class = "nelson">nargoutchk(1, 2, 3)
+nargoutchk(1, 2, 3, 'struct')
 </code>
 </pre>
 
@@ -102,7 +122,7 @@ R = isinf(X)
 <hr/>
 
 <p>
-<a href = "isnan.html" class = "link">isnan</a>.</p>
+<a href = "nargin.html" class = "link">nargout</a>, <a href = "nargoutchk.html" class = "link">narginchk</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -128,15 +148,15 @@ R = isinf(X)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfinite.html">&lt;&lt; isfinite</a></span>
+<span class="top"><a href="nargout.html">&lt;&lt; nargout</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_core.html">core</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isnan.html">isnan &gt;&gt;</a></span>
+<span class = "next"><a href = "nelsonroot.html">nelsonroot &gt;&gt;</a></span>
 </td>
 
 </tr></table>

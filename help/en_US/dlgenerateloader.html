@@ -42,7 +42,7 @@ SAME AS NELSON SOFTWARE
 <h1 class="refname">dlgenerateloader</h1>
 <hr/>
 
-<h3>Generates loader.nls file for C++ gateway.</h3>
+<h3>Generates loader.m file for C++ gateway.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -61,7 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">destinationdir</span></dt>
 <dd>
-<p class="para">a string: destination directory where is generated the loader.nls file.</p>
+<p class="para">a string: destination directory where is generated the loader.m file.</p>
 </dd>
 
 <dt><span class="term">libraryname</span></dt>
@@ -76,7 +76,7 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>dlgenerateloader</b> generates a 'loader.nls' load external dynamic libraries.</p>
+  <p><b>dlgenerateloader</b> generates a 'loader.m' load external dynamic libraries.</p>
 
 
 <h3>Example</h3>
@@ -85,7 +85,7 @@ SAME AS NELSON SOFTWARE
 <p>See module skeleton for example</p>
 <pre>
 <code class = "nelson">dlgenerateloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
-text = fileread([tempdir(), 'loader.nls'])
+text = fileread([tempdir(), 'loader.m'])
 </code>
 </pre>
 
