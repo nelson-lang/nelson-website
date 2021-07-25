@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>ismacro</title>
+	<title>conv2</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isbuiltin.html">&lt;&lt; isbuiltin</a></span>
+<span class="top"><a href="conv.html">&lt;&lt; conv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_functions_manager.html">functions manager</a></span>
+<span class="top"><a href="chapter_data_analysis.html">data analysis</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ismex.html">ismex &gt;&gt;</a></span>
+<span class = "next"><a href = "ismissing.html">ismissing &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">ismacro</h1>
+<h1 class="refname">conv2</h1>
 <hr/>
 
-<h3>Check for the existence of a macro (function).</h3>
+<h3>2-D convolution.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tf = ismacro(name)</td>
+		<td>C = conv2(A, B)</td>
+	</tr>
+
+	<tr>
+		<td>C = conv2(u, v, A)</td>
+	</tr>
+
+	<tr>
+		<td>C = conv2(A, B, shape)</td>
+	</tr>
+
+	<tr>
+		<td>C = conv2(u, v, A, shape)</td>
 	</tr>
 
 </table>
@@ -59,9 +71,29 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">name</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a string: macro name.</p>
+<p class="para">vector or matrix.</p>
+</dd>
+
+<dt><span class="term">B</span></dt>
+<dd>
+<p class="para">vector or matrix.</p>
+</dd>
+
+<dt><span class="term">u</span></dt>
+<dd>
+<p class="para">row or column vector.</p>
+</dd>
+
+<dt><span class="term">v</span></dt>
+<dd>
+<p class="para">row or column vector.</p>
+</dd>
+
+<dt><span class="term">shape</span></dt>
+<dd>
+<p class="para">subsection of convolution: 'full' (default: full 2-D convolution), 'same' (central part of the convolution) or 'valid' (parts of the convolution that are computed without zero-padded edges).</p>
 </dd>
 
 </dl>
@@ -70,9 +102,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">tf</span></dt>
+<dt><span class="term">C</span></dt>
 <dd>
-<p class="para">a logical: true if macro exists.</p>
+<p class="para">2-D convolution, returned as a vector or matrix.</p>
 </dd>
 
 </dl>
@@ -82,15 +114,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isbuiltin</b> checks for the existence of a macro.</p>
+  <p><b>conv2</b> returns the two-dimensional convolution.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">ismacro('isbuiltin')
-ismacro('exist')
+<code class = "nelson">A = magic(3);
+B = magic(4);
+R = conv2(A, B, 'same')
 </code>
 </pre>
 
@@ -98,7 +131,7 @@ ismacro('exist')
 <hr/>
 
 <p>
-<a href = "isbuiltin.html" class = "link">isbuiltin</a>.</p>
+<a href = "conv.html" class = "link">conv</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,15 +157,15 @@ ismacro('exist')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isbuiltin.html">&lt;&lt; isbuiltin</a></span>
+<span class="top"><a href="conv.html">&lt;&lt; conv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_functions_manager.html">functions manager</a></span>
+<span class="top"><a href="chapter_data_analysis.html">data analysis</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ismex.html">ismex &gt;&gt;</a></span>
+<span class = "next"><a href = "ismissing.html">ismissing &gt;&gt;</a></span>
 </td>
 
 </tr></table>
