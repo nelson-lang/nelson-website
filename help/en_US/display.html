@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>exp</title>
+	<title>display</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dec2hex.html">&lt;&lt; dec2hex</a></span>
+<span class="top"><a href="disp.html">&lt;&lt; disp</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "factorial.html">factorial &gt;&gt;</a></span>
+<span class = "next"><a href = "dlmwrite.html">dlmwrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">exp</h1>
+<h1 class="refname">display</h1>
 <hr/>
 
-<h3>Exponential</h3>
+<h3>Show information about variable or result of expression.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = exp(M)</td>
+		<td>display(V)</td>
+	</tr>
+
+	<tr>
+		<td>display(V, name)</td>
 	</tr>
 
 </table>
@@ -59,20 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">V</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">Result of executing a statement or expression</p>
 </dd>
 
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">name</span></dt>
 <dd>
-<p class="para">result of exp: exponential.</p>
+<p class="para">a character vector: variable name displayed.</p>
 </dd>
 
 </dl>
@@ -82,16 +80,27 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>exp</b> computes the exponential value.</p>
-  <p>If input argument is a complex number, <b>exp</b> computes exp(x) * (cos(y) + i * sin(y)) with z = x + i * y.</p>
+  <p><b>display(V)</b> displays information about the variable <b>V</b>.</p>
+  <p>Nelson calls <b>display</b> function whenever an object is referred to in a statement that is not terminated by a semicolon.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">x = [1+i,-i;i,2i];
-r = exp(x)
+<code class = "nelson">display(33, 'Hello')
+</code>
+</pre>
+<pre>
+<code class = "nelson">display('Hello Nelson')
+</code>
+</pre>
+<pre>
+<code class = "nelson">display(pi)
+</code>
+</pre>
+<pre>
+<code class = "nelson">A = eye(3, 3); disp(A)
 </code>
 </pre>
 
@@ -99,7 +108,7 @@ r = exp(x)
 <hr/>
 
 <p>
-<a href = "conj.html" class = "link">conj</a>.</p>
+<a href = "disp.html" class = "link">disp</a>, <a href = "fprintf.html" class = "link">fprintf</a>, <a href = "format.html" class = "link">format</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -125,15 +134,15 @@ r = exp(x)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="dec2hex.html">&lt;&lt; dec2hex</a></span>
+<span class="top"><a href="disp.html">&lt;&lt; disp</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
+<span class="top"><a href="chapter_stream_manager.html">stream manager</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "factorial.html">factorial &gt;&gt;</a></span>
+<span class = "next"><a href = "dlmwrite.html">dlmwrite &gt;&gt;</a></span>
 </td>
 
 </tr></table>
