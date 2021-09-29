@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>imag</title>
+	<title>meshgrid</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hex2dec.html">&lt;&lt; hex2dec</a></span>
+<span class="top"><a href="magic.html">&lt;&lt; magic</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ind2sub.html">ind2sub &gt;&gt;</a></span>
+<span class = "next"><a href = "minus.html">minus &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">imag</h1>
+<h1 class="refname">meshgrid</h1>
 <hr/>
 
-<h3>Imaginary part of an complex number.</h3>
+<h3>Cartesian rectangular grid in 2-D or 3-D.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>im = imag(M)</td>
+		<td>[X, Y] = meshgrid(x, y)</td>
+	</tr>
+
+	<tr>
+		<td>[X, Y] = meshgrid(x)</td>
+	</tr>
+
+	<tr>
+		<td>[X, Y, Z] = meshgrid(x, y, z)</td>
+	</tr>
+
+	<tr>
+		<td>[X, Y, Z] = meshgrid(x)</td>
 	</tr>
 
 </table>
@@ -59,9 +71,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">x</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">x-coordinates of points: vector</p>
+</dd>
+
+<dt><span class="term">y</span></dt>
+<dd>
+<p class="para">y-coordinates of points: vector</p>
+</dd>
+
+<dt><span class="term">z</span></dt>
+<dd>
+<p class="para">z-coordinates of points: vector</p>
 </dd>
 
 </dl>
@@ -70,9 +92,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">X</span></dt>
 <dd>
-<p class="para">imaginary part of the elements of the complex array M.</p>
+<p class="para">x-coordinates over grid: 2-D or 3-D array.</p>
+</dd>
+
+<dt><span class="term">Y</span></dt>
+<dd>
+<p class="para">y-coordinates over grid: 2-D or 3-D array.</p>
+</dd>
+
+<dt><span class="term">Z</span></dt>
+<dd>
+<p class="para">z-coordinates over grid: 3-D array.</p>
 </dd>
 
 </dl>
@@ -82,23 +114,23 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>R = imag(M)</b> Return the imaginary part of M.</p>
+  <p><b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">cplx = 22+34*i;
-r = imag(cplx)
+<code class = "nelson">x = -1:0.4:1;
+y = -1:0.4:1;
+[X, Y] = meshgrid(x, y)
+
+x = 0:2:6;
+y = 0:1:6;
+z = 0:3:6;
+[X,Y,Z] = meshgrid(x, y, z)
 </code>
 </pre>
-
-<h3>See also</h3>
-<hr/>
-
-<p>
-<a href = "real.html" class = "link">real</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,7 +156,7 @@ r = imag(cplx)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hex2dec.html">&lt;&lt; hex2dec</a></span>
+<span class="top"><a href="magic.html">&lt;&lt; magic</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +164,7 @@ r = imag(cplx)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ind2sub.html">ind2sub &gt;&gt;</a></span>
+<span class = "next"><a href = "minus.html">minus &gt;&gt;</a></span>
 </td>
 
 </tr></table>

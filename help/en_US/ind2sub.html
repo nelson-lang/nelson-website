@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>imag</title>
+	<title>ind2sub</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hex2dec.html">&lt;&lt; hex2dec</a></span>
+<span class="top"><a href="imag.html">&lt;&lt; imag</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ind2sub.html">ind2sub &gt;&gt;</a></span>
+<span class = "next"><a href = "isapprox.html">isapprox &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">imag</h1>
+<h1 class="refname">ind2sub</h1>
 <hr/>
 
-<h3>Imaginary part of an complex number.</h3>
+<h3>Linear index to matrix subscript values</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>im = imag(M)</td>
+		<td>[row, col] = ind2sub(sz, ind)</td>
+	</tr>
+
+	<tr>
+		<td>[I1, I2, ..., In] = ind2sub(sz, ind)</td>
 	</tr>
 
 </table>
@@ -59,9 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">sz</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">size of array: vector of positive integers.</p>
+</dd>
+
+<dt><span class="term">ind</span></dt>
+<dd>
+<p class="para">linear indices.</p>
 </dd>
 
 </dl>
@@ -70,9 +79,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">row</span></dt>
 <dd>
-<p class="para">imaginary part of the elements of the complex array M.</p>
+<p class="para">row subscripts.</p>
+</dd>
+
+<dt><span class="term">col</span></dt>
+<dd>
+<p class="para">column subscripts.</p>
+</dd>
+
+<dt><span class="term">I1, I2, ..., In</span></dt>
+<dd>
+<p class="para">multidimensional subscripts.</p>
 </dd>
 
 </dl>
@@ -82,15 +101,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>R = imag(M)</b> Return the imaginary part of M.</p>
+  <p><b>ind2sub</b> converts linear indices to subscript.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">cplx = 22+34*i;
-r = imag(cplx)
+<code class = "nelson">ind = [4 5 6 7];
+sz = [4 4];
+[row,col] = ind2sub(sz,ind)
 </code>
 </pre>
 
@@ -98,7 +118,7 @@ r = imag(cplx)
 <hr/>
 
 <p>
-<a href = "real.html" class = "link">real</a>.</p>
+<a href = "sub2ind.html" class = "link">sub2ind</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,7 +144,7 @@ r = imag(cplx)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hex2dec.html">&lt;&lt; hex2dec</a></span>
+<span class="top"><a href="imag.html">&lt;&lt; imag</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +152,7 @@ r = imag(cplx)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ind2sub.html">ind2sub &gt;&gt;</a></span>
+<span class = "next"><a href = "isapprox.html">isapprox &gt;&gt;</a></span>
 </td>
 
 </tr></table>
