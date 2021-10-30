@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>license</title>
+	<title>poly</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="inputname.html">&lt;&lt; inputname</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_polynomial_functions.html">Polynomials</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "maxNumCompThreads.html">maxNumCompThreads &gt;&gt;</a></span>
+<span class = "next"><a href = "polyder.html">polyder &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">license</h1>
+<h1 class="refname">poly</h1>
 <hr/>
 
-<h3>Get license information for Nelson.</h3>
+<h3>Polynomial with specified roots or characteristic polynomial.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,31 +46,38 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>license</td>
+		<td>p = poly(r)</td>
 	</tr>
 
 	<tr>
-		<td>r = license</td>
-	</tr>
-
-	<tr>
-		<td>[r, txt] = license</td>
+		<td>p = poly(A)</td>
 	</tr>
 
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
 <dt><span class="term">r</span></dt>
 <dd>
-<p class="para">a string: minimal string description about license</p>
+<p class="para">vector: polynomial roots</p>
 </dd>
 
-<dt><span class="term">txt</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a string: complete license text.</p>
+<p class="para">matrix: input matrix</p>
+</dd>
+
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">p</span></dt>
+<dd>
+<p class="para">row vector: polynomial coefficients</p>
 </dd>
 
 </dl>
@@ -84,16 +87,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>license</b> get license information for Nelson.</p>
+  <p>If <b>A</b> is a square matrix, <b>p = poly(A)</b> computes an n+1 element row vector. This result is composed the coefficients of the characteristic polynomial.</p>
+  <p>If <b>r</b> is a vector, <b>p = poly(r)</b> computes a row vector. This result is composed the coefficients of the polynomial roots of which are the elements of <b>r</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">license()
-r = license()
-[r,txt] = license()
+<code class = "nelson">A = [1    2    3;
+4    5    6;
+7    8    1];
+p = poly(A)
 </code>
 </pre>
 
@@ -101,7 +106,7 @@ r = license()
 <hr/>
 
 <p>
-<a href = "banner.html" class = "link">banner</a>.</p>
+<a href = "conv.html" class = "link">conv</a>, <a href = "roots.html" class = "link">roots</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -126,16 +131,12 @@ r = license()
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="inputname.html">&lt;&lt; inputname</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_polynomial_functions.html">Polynomials</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "maxNumCompThreads.html">maxNumCompThreads &gt;&gt;</a></span>
+<span class = "next"><a href = "polyder.html">polyder &gt;&gt;</a></span>
 </td>
 
 </tr></table>

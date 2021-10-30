@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>license</title>
+	<title>polyint</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="inputname.html">&lt;&lt; inputname</a></span>
+<span class="top"><a href="polyfit.html">&lt;&lt; polyfit</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_polynomial_functions.html">Polynomials</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "maxNumCompThreads.html">maxNumCompThreads &gt;&gt;</a></span>
+<span class = "next"><a href = "polyval.html">polyval &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">license</h1>
+<h1 class="refname">polyint</h1>
 <hr/>
 
-<h3>Get license information for Nelson.</h3>
+<h3>Polynomial integration.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,31 +50,38 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>license</td>
+		<td>q = polyint(p, k)</td>
 	</tr>
 
 	<tr>
-		<td>r = license</td>
-	</tr>
-
-	<tr>
-		<td>[r, txt] = license</td>
+		<td>q = polyint(p)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">p</span></dt>
+<dd>
+<p class="para">vector: polynomial coefficients</p>
+</dd>
+
+<dt><span class="term">k</span></dt>
+<dd>
+<p class="para">numeric scalr: constant of integration</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">r</span></dt>
+<dt><span class="term">q</span></dt>
 <dd>
-<p class="para">a string: minimal string description about license</p>
-</dd>
-
-<dt><span class="term">txt</span></dt>
-<dd>
-<p class="para">a string: complete license text.</p>
+<p class="para">row vector: integrated polynomial coefficients</p>
 </dd>
 
 </dl>
@@ -84,16 +91,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>license</b> get license information for Nelson.</p>
+  <p><b>polyint</b> returns the integral of the polynomial represented by the coefficients in <b>p</b> using a constant of integration <b>k</b> (0 by default).</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">license()
-r = license()
-[r,txt] = license()
+<code class = "nelson">p = [10, 0, -10, 0, 0, 10];
+v = [10, 0, 10];
+k = 3;
+q = polyint(conv(p,v),k)
 </code>
 </pre>
 
@@ -101,7 +109,7 @@ r = license()
 <hr/>
 
 <p>
-<a href = "banner.html" class = "link">banner</a>.</p>
+<a href = "polyval.html" class = "link">polyval</a>, <a href = "polyvalm.html" class = "link">polyvalm</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,15 +135,15 @@ r = license()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="inputname.html">&lt;&lt; inputname</a></span>
+<span class="top"><a href="polyfit.html">&lt;&lt; polyfit</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_polynomial_functions.html">Polynomials</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "maxNumCompThreads.html">maxNumCompThreads &gt;&gt;</a></span>
+<span class = "next"><a href = "polyval.html">polyval &gt;&gt;</a></span>
 </td>
 
 </tr></table>
