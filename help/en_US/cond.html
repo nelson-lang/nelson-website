@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>rcond</title>
+	<title>cond</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rank.html">&lt;&lt; rank</a></span>
+<span class="top"><a href="chol.html">&lt;&lt; chol</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+<span class = "next"><a href = "det.html">det &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">rcond</h1>
+<h1 class="refname">cond</h1>
 <hr/>
 
-<h3>Inverse condition number.</h3>
+<h3>Condition number for inversion.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = rcond(x)</td>
+		<td>c = rcond(A, p)</td>
 	</tr>
 
 </table>
@@ -59,9 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">x</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or square matrix (double or single)</p>
+<p class="para">a numeric value: square or rectangular (double or single)</p>
+</dd>
+
+<dt><span class="term">p</span></dt>
+<dd>
+<p class="para">norm type: Inf, 'fro', 1, 2 (default)</p>
 </dd>
 
 </dl>
@@ -70,7 +75,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">c</span></dt>
 <dd>
 <p class="para">a numeric value: a scalar.</p>
 </dd>
@@ -82,7 +87,8 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
+  <p><b>c = cond(A)</b> returns the 2-norm condition number for inversion.</p>
+  <p><b>c = cond(A, p)</b> returns the p-norm condition number, where p can be 1, 2, Inf, or 'fro'.</p>
 
 
 <h3>Example</h3>
@@ -90,7 +96,7 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">X = rand(10, 10);
-r = rcond(X);
+r = cond(X)
 </code>
 </pre>
 
@@ -98,7 +104,7 @@ r = rcond(X);
 <hr/>
 
 <p>
-<a href = "inv.html" class = "link">inv</a>, <a href = "cond.html" class = "link">cond</a>.</p>
+<a href = "rcond.html" class = "link">rcond</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,7 +130,7 @@ r = rcond(X);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rank.html">&lt;&lt; rank</a></span>
+<span class="top"><a href="chol.html">&lt;&lt; chol</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +138,7 @@ r = rcond(X);
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+<span class = "next"><a href = "det.html">det &gt;&gt;</a></span>
 </td>
 
 </tr></table>

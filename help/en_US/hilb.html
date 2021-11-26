@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>rcond</title>
+	<title>hilb</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rank.html">&lt;&lt; rank</a></span>
+<span class="top"><a href="hex2dec.html">&lt;&lt; hex2dec</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+<span class = "next"><a href = "imag.html">imag &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">rcond</h1>
+<h1 class="refname">hilb</h1>
 <hr/>
 
-<h3>Inverse condition number.</h3>
+<h3>Hilbert matrix</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = rcond(x)</td>
+		<td>h = invhilb(n)</td>
+	</tr>
+
+	<tr>
+		<td>h = invhilb(n, className)</td>
 	</tr>
 
 </table>
@@ -59,9 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">x</span></dt>
+<dt><span class="term">n</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or square matrix (double or single)</p>
+<p class="para">a scalar, nonnegative integer.</p>
+</dd>
+
+<dt><span class="term">className</span></dt>
+<dd>
+<p class="para">'single' or 'double' (default).</p>
 </dd>
 
 </dl>
@@ -70,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">h</span></dt>
 <dd>
-<p class="para">a numeric value: a scalar.</p>
+<p class="para">Hilbert matrix.</p>
 </dd>
 
 </dl>
@@ -82,15 +91,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
+  <p><b>hilb</b> computes the exact inverse of the exact Hilbert matrix.</p>
 
+
+<h3>Bibliography</h3>
+<hr/>
+https://en.wikipedia.org/wiki/David_Hilbert, and Thanks to https://nhigham.com/2020/06/30/what-is-the-hilbert-matrix/
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">X = rand(10, 10);
-r = rcond(X);
+<code class = "nelson">h = invhilb(5)
 </code>
 </pre>
 
@@ -98,7 +110,7 @@ r = rcond(X);
 <hr/>
 
 <p>
-<a href = "inv.html" class = "link">inv</a>, <a href = "cond.html" class = "link">cond</a>.</p>
+<a href = "hilb.html" class = "link">hilb</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,15 +136,15 @@ r = rcond(X);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rank.html">&lt;&lt; rank</a></span>
+<span class="top"><a href="hex2dec.html">&lt;&lt; hex2dec</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+<span class = "next"><a href = "imag.html">imag &gt;&gt;</a></span>
 </td>
 
 </tr></table>

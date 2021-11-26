@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>rcond</title>
+	<title>ismatrix</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rank.html">&lt;&lt; rank</a></span>
+<span class="top"><a href="isinf.html">&lt;&lt; isinf</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+<span class = "next"><a href = "isnan.html">isnan &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">rcond</h1>
+<h1 class="refname">ismatrix</h1>
 <hr/>
 
-<h3>Inverse condition number.</h3>
+<h3>determines whether input is matrix or not</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = rcond(x)</td>
+		<td>TF = ismatrix(A)</td>
 	</tr>
 
 </table>
@@ -59,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">x</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or square matrix (double or single)</p>
+<p class="para">input array as a scalar, vector, matrix, or multidimensional array.</p>
 </dd>
 
 </dl>
@@ -70,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">TF</span></dt>
 <dd>
-<p class="para">a numeric value: a scalar.</p>
+<p class="para">a logical: true if it is a matrix.</p>
 </dd>
 
 </dl>
@@ -82,15 +82,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
+  <p><b>TF = ismatrix(A)</b> returns true if A is a matrix.</p>
+  <p>A matrix is a two-dimensional array that has a size of m-by-n, where m and n are nonnegative integers.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">X = rand(10, 10);
-r = rcond(X);
+<code class = "nelson">x = [1+i,-i;i,2i];
+ismatrix(x)
+ismatrix(ones(3,1,2))
 </code>
 </pre>
 
@@ -98,7 +100,7 @@ r = rcond(X);
 <hr/>
 
 <p>
-<a href = "inv.html" class = "link">inv</a>, <a href = "cond.html" class = "link">cond</a>.</p>
+<a href = "isvector.html" class = "link">isvector</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,15 +126,15 @@ r = rcond(X);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="rank.html">&lt;&lt; rank</a></span>
+<span class="top"><a href="isinf.html">&lt;&lt; isinf</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
+<span class = "next"><a href = "isnan.html">isnan &gt;&gt;</a></span>
 </td>
 
 </tr></table>
