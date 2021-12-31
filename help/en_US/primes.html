@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isnan</title>
+	<title>primes</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ismatrix.html">&lt;&lt; ismatrix</a></span>
+<span class="top"><a href="gcd.html">&lt;&lt; gcd</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "isrow.html">isrow &gt;&gt;</a></span>
+<span class="top"><a href="chapter_special_functions.html">special functions</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isnan</h1>
+<h1 class="refname">primes</h1>
 <hr/>
 
-<h3>Check for Not a Number entries.</h3>
+<h3>Prime numbers less than or equal to input value</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tf = isnan(M)</td>
+		<td>p = primes(n)</td>
 	</tr>
 
 </table>
@@ -59,9 +55,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">n</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">scalar, real integer value</p>
 </dd>
 
 </dl>
@@ -70,9 +66,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">tf</span></dt>
+<dt><span class="term">p</span></dt>
 <dd>
-<p class="para">logical: result of 'isnan'.</p>
+<p class="para">vector with prime numbers.</p>
 </dd>
 
 </dl>
@@ -82,18 +78,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
+  <p><b>p = primes(n)</b> returns a row vector containing all the prime numbers less than or equal to n.</p>
+  <p>The data type of p is the same as that of n.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">isnan(pi)
-isnan(NaN)
-isnan(int32(3))
-X = sparse([1 2 NaN 3 0 NaN 0 4]);
-R = isnan(X)
+<code class = "nelson">p = primes(15)
 </code>
 </pre>
 
@@ -101,7 +94,7 @@ R = isnan(X)
 <hr/>
 
 <p>
-<a href = "isinf.html" class = "link">isinf</a>.</p>
+<a href = "factor.html" class = "link">factor</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,15 +120,11 @@ R = isnan(X)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ismatrix.html">&lt;&lt; ismatrix</a></span>
+<span class="top"><a href="gcd.html">&lt;&lt; gcd</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "isrow.html">isrow &gt;&gt;</a></span>
+<span class="top"><a href="chapter_special_functions.html">special functions</a></span>
 </td>
 
 </tr></table>

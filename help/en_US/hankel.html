@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isnan</title>
+	<title>hankel</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ismatrix.html">&lt;&lt; ismatrix</a></span>
+<span class="top"><a href="floor.html">&lt;&lt; floor</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isrow.html">isrow &gt;&gt;</a></span>
+<span class = "next"><a href = "hex2dec.html">hex2dec &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isnan</h1>
+<h1 class="refname">hankel</h1>
 <hr/>
 
-<h3>Check for Not a Number entries.</h3>
+<h3>Hankel matrix</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tf = isnan(M)</td>
+		<td>H = hankel(c)</td>
+	</tr>
+
+	<tr>
+		<td>H = hankel(c, r)</td>
 	</tr>
 
 </table>
@@ -59,9 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">c</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">First column of Hankel matrix: vector or scalar.</p>
+</dd>
+
+<dt><span class="term">r</span></dt>
+<dd>
+<p class="para">Last row of Hankel matrix: vector or scalar.</p>
 </dd>
 
 </dl>
@@ -70,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">tf</span></dt>
+<dt><span class="term">H</span></dt>
 <dd>
-<p class="para">logical: result of 'isnan'.</p>
+<p class="para">Hankel Matrix.</p>
 </dd>
 
 </dl>
@@ -82,18 +91,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
+  <p><b>H = hankel(c)</b> returns a square Hankel Matrix with <b>c</b> the first column of the matrix and the elements are zero below the main anti-diagonal.</p>
+  <p><b>H = hankel(c, r)</b> returns a Hankel matrix with <b>c</b> as its first column and <b>r</b> as its last row.</p>
+  <p>If last element of <b>c</b> differs from the first element of <b>r</b>, then Hankel issues a warning and uses the last element of <b>c</b> for the anti-diagonal.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">isnan(pi)
-isnan(NaN)
-isnan(int32(3))
-X = sparse([1 2 NaN 3 0 NaN 0 4]);
-R = isnan(X)
+<code class = "nelson">c = [1 2 3 4 5];
+hankel(c)
 </code>
 </pre>
 
@@ -101,7 +109,7 @@ R = isnan(X)
 <hr/>
 
 <p>
-<a href = "isinf.html" class = "link">isinf</a>.</p>
+<a href = "hilb.html" class = "link">hilb</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,7 +135,7 @@ R = isnan(X)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ismatrix.html">&lt;&lt; ismatrix</a></span>
+<span class="top"><a href="floor.html">&lt;&lt; floor</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -135,7 +143,7 @@ R = isnan(X)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isrow.html">isrow &gt;&gt;</a></span>
+<span class = "next"><a href = "hex2dec.html">hex2dec &gt;&gt;</a></span>
 </td>
 
 </tr></table>
