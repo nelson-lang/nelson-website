@@ -1,16 +1,19 @@
 # Welcome to Nelson website
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8865bc705b2d459c839b169e580d0526)](https://www.codacy.com/app/Nelson-numerical-software/nelson?utm_source=github.com&utm_medium=referral&utm_content=Nelson-numerical-software/nelson&utm_campaign=badger)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d5f82474da134d979b472fa5fbe7b5b9)](https://www.codacy.com/gh/Nelson-numerical-software/nelson/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Nelson-numerical-software/nelson&utm_campaign=Badge_Grade)
+[![Total alerts](https://img.shields.io/lgtm/grade/cpp/g/Nelson-numerical-software/nelson.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Nelson-numerical-software/nelson/alerts/)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/602/badge)](https://bestpractices.coreinfrastructure.org/projects/602)
-[![Open Hub](https://img.shields.io/badge/Open-Hub-blue.svg)](https://www.openhub.net/p/nelson-interpreter)
 
-[![License (GNU Lesser General Public License (LGPL) v2.1)](<https://img.shields.io/badge/License-GNU%20Lesser%20General%20Public%20License%20(LGPL)%20v2.1-green.svg?style=flat-square>)](https://opensource.org/licenses/LGPL-2.1)[![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
-
-[![Weblate](https://img.shields.io/badge/Weblate--green.svg)](https://hosted.weblate.org/projects/nelson/)
+[![Build Status](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)
 [![Build Status](https://travis-ci.org/Nelson-numerical-software/nelson.svg?branch=master)](https://travis-ci.org/Nelson-numerical-software/nelson)
 [![Build status](https://ci.appveyor.com/api/projects/status/github/Nelson-numerical-software/nelson?svg=true)](https://ci.appveyor.com/project/Nelson-numerical-software/nelson)
 [![CircleCI](https://circleci.com/gh/Nelson-numerical-software/nelson/tree/master.svg?style=svg)](https://circleci.com/gh/Nelson-numerical-software/nelson/tree/master)
 [![Build Status](https://semaphoreci.com/api/v1/nelson-numerical-software/nelson/branches/master/badge.svg)](https://semaphoreci.com/nelson-numerical-software/nelson)
+
+[![GitHub license](https://img.shields.io/badge/license-LGPL2.1-blue.svg)](https://github.com/Nelson-numerical-software/nelson/blob/master/COPYING.LGPLv2.1)
+[![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
+[![Open Hub](https://img.shields.io/badge/Open-Hub-blue.svg)](https://www.openhub.net/p/nelson-interpreter)
+[![Weblate](https://img.shields.io/badge/Weblate--green.svg)](https://hosted.weblate.org/projects/nelson/)
 
 [![Join the chat at https://gitter.im/nelson-numerical-software/Lobby](https://badges.gitter.im/nelson-numerical-software/Lobby.svg)](https://gitter.im/nelson-numerical-software/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
