@@ -25,7 +25,7 @@ o = complexObj(5, 4);
 You can check the new 'user-defined' type:
 
 ```
---> class(o)
+>> class(o)
 
 ans =
 
@@ -35,7 +35,7 @@ complexObj
 If you forget the ";" at the end. You have:
 
 ```
---> o = complexObj(5, 4)
+>> o = complexObj(5, 4)
 o =
 
 function complexObj_disp undefined.
@@ -69,7 +69,7 @@ endfunction
 Result:
 
 ```
---> o = complexObj(5, 4)
+>> o = complexObj(5, 4)
 o =
 
 complexObj_disp:
@@ -93,7 +93,7 @@ endfunction
 Result of o + o:
 
 ```
---> o + o
+>> o + o
 
 ans =
 
