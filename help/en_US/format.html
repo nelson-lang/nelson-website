@@ -25,15 +25,11 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exit.html">&lt;&lt; exit</a></span>
+<span class="top"><a href="echo.html">&lt;&lt; echo</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class="top"><a href="chapter_display_format.html">display format</a></span>
 </td>
 
 </tr></table>
@@ -58,11 +54,11 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
-		<td>format(new_style)</td>
+		<td>format('default')</td>
 	</tr>
 
 	<tr>
-		<td>fmt = format('get')</td>
+		<td>format(new_style)</td>
 	</tr>
 
 </table>
@@ -84,7 +80,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">fmt</span></dt>
 <dd>
-<p class="para">a string: current format used</p>
+<p class="para">DisplayFormatOptions object: format used</p>
 </dd>
 
 </dl>
@@ -95,8 +91,9 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>format(new_style)</b> changes the display format and number printing of the current session.</p>
-  <p><b>format()</b> without output and input arguments will reset to default format (short).</p>
-  <p>Current styles supported:</p>
+  <p><b>format('default')</b> will reset to default format (short, loose).</p>
+  <p/>
+  <p>Styles supported:</p>
   <p>
     <b>short</b>
   </p>
@@ -110,7 +107,27 @@ SAME AS NELSON SOFTWARE
     <b>longE</b>
   </p>
   <p>
+    <b>shortEng</b>
+  </p>
+  <p>
+    <b>longEng</b>
+  </p>
+  <p>
+    <b>plus</b>
+  </p>
+  <p>
+    <b>rational</b>
+  </p>
+  <p>
     <b>hex</b>
+  </p>
+  <p/>
+  <p>Line Spacing Format supported:</p>
+  <p>
+    <b>loose</b>
+  </p>
+  <p>
+    <b>compact</b>
   </p>
 
 
@@ -120,7 +137,6 @@ SAME AS NELSON SOFTWARE
 <p>an example</p>
 <pre>
 <code class = "nelson">current_style = format()
-current_style = format('get')
 pi
 format('short')
 pi
@@ -132,7 +148,14 @@ format('longE')
 pi
 format('hex')
 pi
+format('+')
+pi
+format('rational')
+pi
+format('compact')
+pi
 format(current_style)
+pi
 </code>
 </pre>
 
@@ -140,7 +163,7 @@ format(current_style)
 <hr/>
 
 <p>
-<a href = "disp.html" class = "link">disp</a>.</p>
+<a href = "disp.html" class = "link">disp</a>, <a href = "display.html" class = "link">display</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -166,15 +189,11 @@ format(current_style)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exit.html">&lt;&lt; exit</a></span>
+<span class="top"><a href="echo.html">&lt;&lt; echo</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class="top"><a href="chapter_display_format.html">display format</a></span>
 </td>
 
 </tr></table>

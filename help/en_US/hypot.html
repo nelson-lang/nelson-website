@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>exit</title>
+	<title>hypot</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exist.html">&lt;&lt; exist</a></span>
+<span class="top"><a href="hilb.html">&lt;&lt; hilb</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class = "next"><a href = "imag.html">imag &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">exit</h1>
+<h1 class="refname">hypot</h1>
 <hr/>
 
-<h3>Exit from current Nelson application</h3>
+<h3>Square root of sum of squares</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,22 +50,34 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>exit</td>
-	</tr>
-
-	<tr>
-		<td>exit(status)</td>
+		<td>C = hypot(A, B)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">A</span></dt>
+<dd>
+<p class="para">a variable: scalars, vectors, matrices, multidimensional arrays single or double</p>
+</dd>
+
+<dt><span class="term">B</span></dt>
+<dd>
+<p class="para">a variable: scalars, vectors, matrices, multidimensional arrays single or double</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">status</span></dt>
+<dt><span class="term">R</span></dt>
 <dd>
-<p class="para">an optional integer value passed to the operating system as Nelson’s exit status code.</p>
+<p class="para">result of hypot: hypothenuse.</p>
 </dd>
 
 </dl>
@@ -75,16 +87,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>exit</b> terminates the current session of Nelson.</p>
-  <p>The default value is zero.</p>
+  <p><b>hypot</b> computes the hypothenuse.</p>
+  <p>If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
-<p>Beware this example will close Nelson</p>
 <pre>
-<code class = "nelson">exit(33)
+<code class = "nelson">R = hypot(1e308, 1e308)
+R = hypot(1e309, 1e309)
 </code>
 </pre>
 
@@ -92,7 +104,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "quit.html" class = "link">quit</a>.</p>
+<a href = "abs.html" class = "link">abs</a>, <a href = "sqrt.html" class = "link">sqrt</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -118,15 +130,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exist.html">&lt;&lt; exist</a></span>
+<span class="top"><a href="hilb.html">&lt;&lt; hilb</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class = "next"><a href = "imag.html">imag &gt;&gt;</a></span>
 </td>
 
 </tr></table>

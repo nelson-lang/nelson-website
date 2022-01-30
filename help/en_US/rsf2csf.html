@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>exit</title>
+	<title>rsf2csf</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exist.html">&lt;&lt; exist</a></span>
+<span class="top"><a href="rcond.html">&lt;&lt; rcond</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">exit</h1>
+<h1 class="refname">rsf2csf</h1>
 <hr/>
 
-<h3>Exit from current Nelson application</h3>
+<h3>Convert real Schur form to complex Schur form.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,22 +50,39 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>exit</td>
-	</tr>
-
-	<tr>
-		<td>exit(status)</td>
+		<td>[Uc, Tc] = rsf2csf(U, T)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">U</span></dt>
+<dd>
+<p class="para">unitary matrix (double or single, real or complex)</p>
+</dd>
+
+<dt><span class="term">T</span></dt>
+<dd>
+<p class="para">schur form (double or single, real or complex)</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">status</span></dt>
+<dt><span class="term">Uc</span></dt>
 <dd>
-<p class="para">an optional integer value passed to the operating system as Nelson’s exit status code.</p>
+<p class="para">transformed unitary matrix</p>
+</dd>
+
+<dt><span class="term">Tc</span></dt>
+<dd>
+<p class="para">transformed schur form</p>
 </dd>
 
 </dl>
@@ -75,16 +92,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>exit</b> terminates the current session of Nelson.</p>
-  <p>The default value is zero.</p>
+  <p><b>[Uc, Tc] = rsf2csf(U, T)</b> transforms the outputs of <b>[U, T] = schur(X)</b> for real matrices <b>X</b> from real Schur form to complex Schur form.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
-<p>Beware this example will close Nelson</p>
 <pre>
-<code class = "nelson">exit(33)
+<code class = "nelson">X = [1,     1,     1,     3;
+     1,     2,     1,     1;
+     1,     1,     3,     1;
+    -2,     1,     1,     4];
+[U, T] = schur(X)
+[Uc, Tc] = rsf2csf(U, T)
 </code>
 </pre>
 
@@ -92,7 +112,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "quit.html" class = "link">quit</a>.</p>
+<a href = "schur.html" class = "link">schur</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -118,15 +138,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exist.html">&lt;&lt; exist</a></span>
+<span class="top"><a href="rcond.html">&lt;&lt; rcond</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_linear_algebra.html">linear algebra</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class = "next"><a href = "schur.html">schur &gt;&gt;</a></span>
 </td>
 
 </tr></table>

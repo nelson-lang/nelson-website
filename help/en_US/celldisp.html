@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>exit</title>
+	<title>celldisp</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exist.html">&lt;&lt; exist</a></span>
+<span class="top"><a href="cell2struct.html">&lt;&lt; cell2struct</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class = "next"><a href = "cellfun.html">cellfun &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">exit</h1>
+<h1 class="refname">celldisp</h1>
 <hr/>
 
-<h3>Exit from current Nelson application</h3>
+<h3>Display cell array contents.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,22 +50,27 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>exit</td>
+		<td>celldisp(C)</td>
 	</tr>
 
 	<tr>
-		<td>exit(status)</td>
+		<td>celldisp(C, name)</td>
 	</tr>
 
 </table>
 
-<h3>Output argument</h3>
+<h3>Input argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">status</span></dt>
+<dt><span class="term">C</span></dt>
 <dd>
-<p class="para">an optional integer value passed to the operating system as Nelson’s exit status code.</p>
+<p class="para">cell array.</p>
+</dd>
+
+<dt><span class="term">name</span></dt>
+<dd>
+<p class="para">displayed name of cell array.</p>
 </dd>
 
 </dl>
@@ -75,16 +80,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>exit</b> terminates the current session of Nelson.</p>
-  <p>The default value is zero.</p>
+  <p><b>celldisp</b> recursively display the contents of a cell array.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
-<p>Beware this example will close Nelson</p>
 <pre>
-<code class = "nelson">exit(33)
+<code class = "nelson">C = {2, 22, 'ff', {331, 332}};
+celldisp(C)
+celldisp(C, 'var_name')
 </code>
 </pre>
 
@@ -92,7 +97,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "quit.html" class = "link">quit</a>.</p>
+<a href = "${display_format" class = "link">disp</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -118,15 +123,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="exist.html">&lt;&lt; exist</a></span>
+<span class="top"><a href="cell2struct.html">&lt;&lt; cell2struct</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_data_structures.html">data structures</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "inputname.html">inputname &gt;&gt;</a></span>
+<span class = "next"><a href = "cellfun.html">cellfun &gt;&gt;</a></span>
 </td>
 
 </tr></table>
