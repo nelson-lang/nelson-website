@@ -6,7 +6,7 @@ A fast Fourier transform (FFT) algorithm computes the discrete Fourier transform
 
 [see Wikipedia for more information](https://en.wikipedia.org/wiki/Fast_Fourier_transform)
 
-```
+```matlab
 R = rand(5000,5000);tic(); Y = fft(R); toc
 ```
 

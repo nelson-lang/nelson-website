@@ -2,22 +2,22 @@
 
 ### [cell](https://nelson-numerical-software.github.io/nelson-website/help/en_US/cell.html)
 
-```
+```matlab
 >> ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
 
 ce =
 
   2×3 cell array
 
-        {[85]}      {[50]}         {[68]}
+    {[85]}        {[50]}      {[68]}     
     {'Pierre'}    {'Anna'}    {'Roberto'}
 
 ```
 
 ### [struct](https://nelson-numerical-software.github.io/nelson-website/help/en_US/struct.html)
 
-```
->>  names = {'Pierre', 'Anna', 'Roberto'}
+```matlab
+>> names = {'Pierre', 'Anna', 'Roberto'}
 values =  {45, 42, 13}
 st = struct ('name', names, 'age', values)
 

@@ -4,7 +4,7 @@ Functions to transmit data objects consisting of attribute–value pairs and arr
 
 Example:
 
-```
+```matlab
 field1 = 'f1';  value1 = zeros(1,10);
 field2 = 'f2';  value2 = {'a', 'b'};
 field3 = 'f3';  value3 = {pi, pi*pi};

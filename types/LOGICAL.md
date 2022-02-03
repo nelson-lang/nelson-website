@@ -2,7 +2,7 @@
 
 Scalar, vector, matrix 2D, N dimensions array, sparse matrix supported.
 
-```
+```matlab
 >> logical(sparse(eye(3,2)))
 
 ans =

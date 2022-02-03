@@ -5,7 +5,7 @@
 
 Example: Call DASUM blas function from Nelson
 
-```Matlab
+```matlab
 if ispc()
   blas_library_name = ['libnlsblaslapack', getdynlibext()];
 else
@@ -29,7 +29,7 @@ clear lib
 
 Example: Call C getpid function from Nelson
 
-```Matlab
+```matlab
 if ispc()
   lib_c_name = ['msvcrt', getdynlibext()];
   getpid_symbol = '_getpid';

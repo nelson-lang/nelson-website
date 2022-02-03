@@ -6,7 +6,7 @@ All serializable nelson's types are supported. Unsupported types will be replace
 
 Example:
 
-```
+```matlab
 master_pid = getpid()
 initial_pids = getpid('available')
 

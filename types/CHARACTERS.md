@@ -1,11 +1,11 @@
 - Characters Array (Unicode):
 
-```
+```matlab
 >> disp('Hello: 你好')
 Hello: 你好
 ```
 
-```
+```matlab
 >> int32('你好')
 
 ans =

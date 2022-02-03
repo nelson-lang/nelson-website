@@ -6,11 +6,11 @@ A mex file is a type of computer file that provides an interface between Octave 
 
 Nelson have also his own C++ API to manage more easily internal nelson's objects.
 
-```
+```matlab
 mex('mexPrintf.c');
 ```
 
-```
+```C
 #include <mex.h>
 
 void

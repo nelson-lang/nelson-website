@@ -1,6 +1,6 @@
 - Integers: 8, 16, 32, 64 signed and unsigned: scalar, vector, matrix 2D, N dimensions array supported.
 
-```
+```matlab
 >> intmax('int8')
 
 ans =
@@ -37,7 +37,7 @@ ans =
 
 Integer supports saturation:
 
-```
+```matlab
 >>  int8(200) + int8(60)
 
 ans =

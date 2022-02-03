@@ -4,7 +4,7 @@ Nelson has a built-in profiler that is very useful to profile your code and find
 
 Example:
 
-```
+```matlab
 profile('on')
 run('test_profile.nls')
 profile('off')

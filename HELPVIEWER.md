@@ -1,6 +1,6 @@
 ## Help viewer
 
-```
+```matlab
 >> doc nelson_sum
 ```
 

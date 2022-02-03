@@ -3,17 +3,17 @@
 Property Validation Functions:
 These functions support common use patterns for validation and provide descriptive error messages.
 
-```nelson
+```matlab
 function r = myFunction(arg1, arg2)
     mustBeFloat(arg1, 1)
     mustBeFloat(arg2, 2)
     mustBeScalarOrEmpty(arg1, 1)
     mustBeScalarOrEmpty(arg2, 2)
     r = arg1 + arg2
-endfunction
+end
 ```
 
-```nelson
+```matlab
 r = myFunction('a', 2)
 r = myFunction([1 2], 2)
 r = myFunction(1, [3 2])

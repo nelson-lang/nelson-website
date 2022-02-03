@@ -6,7 +6,7 @@ High-level functions make it easy to read a data set from an HDF5 file or write 
 
 Example:
 
-```
+```matlab
 h5filename = [tempdir(), '/doc_h5write.h5'];
 h5write(h5filename,'/rand', rand(3, 4));
 h5write(h5filename,'/str', 'Hello');
@@ -19,7 +19,7 @@ Files with the .nh5 extension are files that are in the binary data container fo
 
 .nh5 files are categorized as data files that include variables, functions, arrays and other information.
 
-```
+```matlab
 A = ["Nelson", "saves"; "string", "array"];
 nh5filename = [tempdir(), '/doc_nh5.nh5'];
 save(nh5filename, 'A')

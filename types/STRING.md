@@ -1,6 +1,6 @@
 - String Array (Unicode):
 
-```
+```matlab
 >> A = ["Nelson" "manages"; "string" "array"]
 
 A =

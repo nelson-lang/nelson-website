@@ -4,7 +4,7 @@ Files with the .mat extension are files that are in the binary data container fo
 
 .mat files are categorized as data files that include variables, functions, arrays and other information.
 
-```
+```matlab
 A = {"Nelson", "saves"; "cell", "array"};
 matfilename = [tempdir(), '/doc_mat.mat'];
 save(matfilename, 'A')

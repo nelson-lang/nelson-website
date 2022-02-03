@@ -286,7 +286,7 @@ button_child =
 
 To get the text of the button:
 
-```
+```matlab
 % text_button = get(button_child, 'text')
 >> text_button = button_child.text
 
@@ -298,7 +298,7 @@ text_button =
 
 To set the text of the button:
 
-```
+```matlab
 % or set(button_child, 'text', 'new button text'); button_child
 >> button_child.text = 'new button text'; button_child
 

@@ -6,7 +6,7 @@ Example:
 
 Save nex content in a file named `mex_engine_demo_1.c`
 
-```
+```C
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -48,7 +48,7 @@ From Nelson:
 
 It will generate an executable file calling nelson's computation engine.
 
-```
+```matlab
 mex('-client', 'engine', 'mex_engine_demo_1.c');
 ```
 

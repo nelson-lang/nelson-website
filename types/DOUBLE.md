@@ -2,7 +2,7 @@
 
 Scalar:
 
-```
+```matlab
 >>  pi
 
 ans =
@@ -13,7 +13,7 @@ ans =
 
 Vector:
 
-```
+```matlab
 >> [0.2:0.2:1]
 
 ans =
@@ -24,7 +24,7 @@ ans =
 
 Complex:
 
-```
+```matlab
 >>  3*i
 
 ans =
@@ -33,7 +33,7 @@ ans =
 
 ```
 
-```
+```matlab
 >> class(pi)
 
 ans =
@@ -44,7 +44,7 @@ ans =
 
 2D matrix:
 
-```
+```matlab
 >>  rand(3, 3)
 
 ans =
@@ -57,7 +57,7 @@ ans =
 
 N Dimensions matrix:
 
-```
+```matlab
 >> rand(2,2,2)
 
 ans(:,:,1) =
@@ -75,7 +75,7 @@ ans(:,:,2) =
 
 Sparse:
 
-```
+```matlab
 >> sparse(eye(3, 3))
 
 ans =
