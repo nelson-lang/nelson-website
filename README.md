@@ -5,10 +5,6 @@
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/602/badge)](https://bestpractices.coreinfrastructure.org/projects/602)
 
 [![Build Status](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)
-[![Build Status](https://travis-ci.org/Nelson-numerical-software/nelson.svg?branch=master)](https://travis-ci.org/Nelson-numerical-software/nelson)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/Nelson-numerical-software/nelson?svg=true)](https://ci.appveyor.com/project/Nelson-numerical-software/nelson)
-[![CircleCI](https://circleci.com/gh/Nelson-numerical-software/nelson/tree/master.svg?style=svg)](https://circleci.com/gh/Nelson-numerical-software/nelson/tree/master)
-[![Build Status](https://semaphoreci.com/api/v1/nelson-numerical-software/nelson/branches/master/badge.svg)](https://semaphoreci.com/nelson-numerical-software/nelson)
 
 [![GitHub license](https://img.shields.io/badge/license-LGPL2.1-blue.svg)](https://github.com/Nelson-numerical-software/nelson/blob/master/COPYING.LGPLv2.1)
 [![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
@@ -63,7 +59,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 
 ## [Issues](https://github.com/Nelson-numerical-software/nelson/issues)
 
-## Tested and supported platforms:
+## Tested and supported platforms
 
 Systems with ✓ downloads are available on [downloads](https://github.com/Nelson-numerical-software/nelson/releases) page.
 
@@ -73,19 +69,18 @@ The systems listed here without CI or binaries are known to build and operate, b
 
 | Operating System |  Architecture   | CI  | Binaries |
 | :--------------: | :-------------: | :-: | :------: |
-|    Windows 7+    | x86-64 (64-bit) |  ✓  |    ✓     |
+| Windows 7 to 11  | x86-64 (64-bit) |  ✓  |    ✓     |
 |                  |  i686 (32-bit)  |  ✓  |    ✓     |
-|   MacOS 10.10+   | x86-64 (64-bit) |  ✓  |          |
-|   Ubuntu 20.04   | x86-64 (64-bit) |     |          |
+|   MacOS BigSur   | x86-64 (64-bit) |  ✓  |          |
+|  MacOS Catalina  | x86-64 (64-bit) |  ✓  |          |
+|   Ubuntu 20.04   | x86-64 (64-bit) |  ✓  |          |
 |   Ubuntu 18.04   | x86-64 (64-bit) |  ✓  |          |
-|   Ubuntu 16.04   | x86-64 (64-bit) |  ✓  |          |
-|    Debian 10     | x86-64 (64-bit) |  ✓  |          |
-|    Fedora 30     | x86-64 (64-bit) |  ✓  |          |
 |    ArchLinux     | x86-64 (64-bit) |  ✓  |          |
-|                  | ARM v7 (32-bit) |     |          |
-|                  | ARM v8 (64-bit) |     |          |
-| Ubuntu (aarch64) | ARM v8 (64-bit) |     |          |
-|     Raspbian     | ARM v7 (32-bit) |     |          |
+|    Fedora 35     | x86-64 (64-bit) |  ✓  |          |
+|     Raspbian     | ARM v8 (64-bit) |     |          |
+|  MacOS Monterey  |   arm64 (M1)    |     |          |
+
+Allan CORNET (nelson.numerical.computation@gmail.com)
 
 ## [Development](DEVELOPMENT.md)
 
