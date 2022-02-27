@@ -80,8 +80,6 @@ The systems listed here without CI or binaries are known to build and operate, b
 |     Raspbian     | ARM v8 (64-bit) |     |          |
 |  MacOS Monterey  |   arm64 (M1)    |     |          |
 
-Allan CORNET (nelson.numerical.computation@gmail.com)
-
 ## [Development](DEVELOPMENT.md)
 
 [Contact](mailto:nelson.numerical.computation@gmail.com)
