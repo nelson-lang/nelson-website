@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.initHighlightingOnLoad();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>license</title>
+	<title>isunicodesupported</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isunicodesupported.html">&lt;&lt; isunicodesupported</a></span>
+<span class="top"><a href="inputname.html">&lt;&lt; inputname</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "maxNumCompThreads.html">maxNumCompThreads &gt;&gt;</a></span>
+<span class = "next"><a href = "license.html">license &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">license</h1>
+<h1 class="refname">isunicodesupported</h1>
 <hr/>
 
-<h3>Get license information for Nelson.</h3>
+<h3>Detect whether the current terminal supports Unicode.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,15 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>license</td>
-	</tr>
-
-	<tr>
-		<td>r = license</td>
-	</tr>
-
-	<tr>
-		<td>[r, txt] = license</td>
+		<td>tf = isunicodesupported()</td>
 	</tr>
 
 </table>
@@ -67,14 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">r</span></dt>
+<dt><span class="term">tf</span></dt>
 <dd>
-<p class="para">a string: minimal string description about license</p>
-</dd>
-
-<dt><span class="term">txt</span></dt>
-<dd>
-<p class="para">a string: complete license text.</p>
+<p class="para">a logical: true or false.</p>
 </dd>
 
 </dl>
@@ -84,16 +71,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>license</b> get license information for Nelson.</p>
+  <p><b>isunicodesupported</b>: returns if current terminal supports Unicode.</p>
+  <p>value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">license()
-r = license()
-[r,txt] = license()
+<code class = "nelson">isunicodesupported()
 </code>
 </pre>
 
@@ -101,7 +87,7 @@ r = license()
 <hr/>
 
 <p>
-<a href = "banner.html" class = "link">banner</a>.</p>
+<a href = "getnelsonmode.html" class = "link">getnelsonmode</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -127,7 +113,7 @@ r = license()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isunicodesupported.html">&lt;&lt; isunicodesupported</a></span>
+<span class="top"><a href="inputname.html">&lt;&lt; inputname</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -135,7 +121,7 @@ r = license()
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "maxNumCompThreads.html">maxNumCompThreads &gt;&gt;</a></span>
+<span class = "next"><a href = "license.html">license &gt;&gt;</a></span>
 </td>
 
 </tr></table>
