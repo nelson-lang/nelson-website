@@ -6,7 +6,7 @@
 
 [![Build Status](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)
 
-[![GitHub license](https://img.shields.io/badge/license-LGPL2.1-blue.svg)](https://github.com/Nelson-numerical-software/nelson/blob/master/COPYING.LGPLv2.1)
+[![GitHub license](https://img.shields.io/badge/license-LGPL3.0-blue.svg)](https://github.com/Nelson-numerical-software/nelson/blob/master/lgpl-3.0.md)
 [![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
 [![Open Hub](https://img.shields.io/badge/Open-Hub-blue.svg)](https://www.openhub.net/p/nelson-interpreter)
 [![Weblate](https://img.shields.io/badge/Weblate--green.svg)](https://hosted.weblate.org/projects/nelson/)

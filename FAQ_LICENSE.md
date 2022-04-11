@@ -10,20 +10,20 @@ The answers below are mutually redundant for the sake of being easier to find.
 
 Nelson is dual-licensed: at your choice,
 
-- either under the [![License (GNU Lesser General Public License (LGPL) v2.1)](<https://img.shields.io/badge/License-GNU%20Lesser%20General%20Public%20License%20(LGPL)%20v2.1-green.svg?style=flat-square>)](https://opensource.org/licenses/LGPL-2.1),
-- or under the [![License (GNU General Public License (GPL) v2.0)](<https://img.shields.io/badge/license-GNU%20General%20Public%20License%20(GPL)%20v2-blue.svg?style=flat-square>)](https://opensource.org/licenses/GPL-2.0).
+- either under the [![License (GNU Lesser General Public License (LGPL) v3.0)](<https://img.shields.io/badge/License-GNU%20Lesser%20General%20Public%20License%20(LGPL)%20v3.0-green.svg?style=flat-square>)](https://opensource.org/licenses/LGPL-3.0),
+- or under the [![License (GNU General Public License (GPL) v3.0)](<https://img.shields.io/badge/license-GNU%20General%20Public%20License%20(GPL)%20v3-blue.svg?style=flat-square>)](https://opensource.org/licenses/GPL-3.0).
 
 Note that this is an OR, not an AND. You do not need to conform to both licenses, you just pick the one that you prefer.
 
 Typically, almost everybody will regard Nelson as just LGPL-licensed.
 
-## What is the LGPL v2.1?
+## What is the LGPL v3.0?
 
-The [LGPL v2.1](https://opensource.org/licenses/LGPL-2.1) is one of the most popular open source licenses.
+The [LGPL v3.0](https://opensource.org/licenses/LGPL-3.0) is one of the most popular open source licenses.
 
 It is quite permissive, at least much more permissive than the GPL license. It allows any software to use Nelson. For example, proprietary software may use Nelson without disclosing any of its own source code.
 
-## So what does the LGPL v2.1 require me to do?
+## So what does the LGPL v3.0 require me to do?
 
 In the following answer, we're assuming that you're using Nelson ''unmodified''.
 If you are using a ''modified Nelson'', then there's an additional clause.
@@ -31,12 +31,12 @@ If you are using a ''modified Nelson'', then there's an additional clause.
 When you distribute software that ''uses'' Nelson, the LGPL requires you to:
 
 - Say somewhere that that software uses Nelson, and that Nelson is LGPL-licensed.
-- Give a link to the text of the [LGPL v2.1](https://opensource.org/licenses/LGPL-2.1) license.
-  See Section 3 of the[LGPL v2.1](https://opensource.org/licenses/LGPL-2.1).
+- Give a link to the text of the [LGPL v3.0](https://opensource.org/licenses/LGPL-3.0) license.
+  See Section 3 of the [LGPL v3.0](https://opensource.org/licenses/LGPL-3.0).
 
 As long as you're not modifying Nelson's own files, you can safely ignore this. Thus, for almost all of our users, the LGPL is for all practical purposes essentially equivalent to the 2-clause BSD license.
 
-## Why add the GPL v2 as another license choice, since anyway the LGPL v2.1 is more liberal?
+## Why add the GPL v3 as another license choice, since anyway the LGPL v3.0 is more liberal?
 
 There is an circumstance in which the GPL license may be useful. Some optional advanced functionality can be enabled by letting Nelson use external libraries, which we call back-ends. Some such libraries are GPL-licensed. For example, in our FFT module, there is an option to use the FFTW library as a back-end for higher performance. Since FFTW is GPL-licensed, this is only possible if Nelson is used under GPL license. Meanwhile, Users of Nelson can use the Intel MKL back-end and Nelson under LGPL license.
 
@@ -44,11 +44,11 @@ There is an circumstance in which the GPL license may be useful. Some optional a
 
 ### Can Nelson be used in proprietary, closed-source software?
 
-This is entirely welcome. Of course, you do not have to disclose any of your own source code. Using Nelson does not affect the licensing of your own software in any way. The LGPL v2.1 license of Nelson does not extend in any way to your own software.
+This is entirely welcome. Of course, you do not have to disclose any of your own source code. Using Nelson does not affect the licensing of your own software in any way. The LGPL v3.0 license of Nelson does not extend in any way to your own software.
 
-### So is the LGPL v2.1 a perfectly business-friendly license?
+### So is the LGPL v3.0 a perfectly business-friendly license?
 
-LGPL v2.1 is very different from the GPL v2 in this respect. There are countless examples of LGPL-licensed libraries in very wide use by businesses, including in closed-source applications:
+LGPL v3.0 is very different from the GPL v3 in this respect. There are countless examples of LGPL-licensed libraries in very wide use by businesses, including in closed-source applications:
 
 - [https://www.qt.io/faq/ Qt], the C++ application framework.
 - [http://webkit.org/ WebKit] components such as WebCore and JavaScriptCore, see [http://webkit.org/coding/lgpl-license.html this page].
@@ -58,7 +58,7 @@ LGPL v2.1 is very different from the GPL v2 in this respect. There are countless
 
 The fact that your application is proprietary does not make any difference here.
 
-## Are there circumstances in which the LGPL v2.1 puts significant other requirements on me?
+## Are there circumstances in which the LGPL v3.0 puts significant other requirements on me?
 
 There is one such circumstance, this is when you are forking Nelson.
 
