@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>strfind</title>
+	<title>formattedDisplayText</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="strcmpi.html">&lt;&lt; strcmpi</a></span>
+<span class="top"><a href="format.html">&lt;&lt; format</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_string.html">string type</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "string.html">string &gt;&gt;</a></span>
+<span class="top"><a href="chapter_display_format.html">display format</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">strfind</h1>
+<h1 class="refname">formattedDisplayText</h1>
 <hr/>
 
-<h3>Find a string in another.</h3>
+<h3>Capture display output as string.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>occ = strfind(str, pattern)</td>
+		<td>str = formattedDisplayText(V)</td>
 	</tr>
 
 	<tr>
-		<td>occ = strfind(str, pattern,'ForceCellOutput', ouput)</td>
+		<td>str = formattedDisplayText(V, Name, Value)</td>
 	</tr>
 
 </table>
@@ -63,19 +59,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">str</span></dt>
+<dt><span class="term">V</span></dt>
 <dd>
-<p class="para">a string or cell of strings.</p>
+<p class="para">Variable to return as string</p>
 </dd>
 
-<dt><span class="term">pattern</span></dt>
+<dt><span class="term">Name, Value</span></dt>
 <dd>
-<p class="para">a string to find.</p>
-</dd>
-
-<dt><span class="term">output</span></dt>
-<dd>
-<p class="para">a logical.</p>
+<p class="para">Name-Value Pair Arguments, Name: 'NumericFormat' or 'LineSpacing'.</p>
 </dd>
 
 </dl>
@@ -84,9 +75,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">occ</span></dt>
+<dt><span class="term">str</span></dt>
 <dd>
-<p class="para">a cell or matrix of integer values: occurences position.</p>
+<p class="para">a string</p>
 </dd>
 
 </dl>
@@ -95,23 +86,21 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p></p>
-<b>strfind</b> find a string in another.
+
+  <p><b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.</p>
+  <p>The string contains equivalent to <b>disp(V)</b>.</p>
+
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">str = 'To make a mountain out of a molehill';
-k = strfind (str, 'in')
-k= strfind(str, ' ')
-k = strfind ({'abababada', 'beabebe', 'ab'}, 'aba')
-
-A = {'Nel', 'son'; 'Toolboxes', 'Modules'}
-k = strfind(A, 'o')
-
-str = 'No pain no gain.';
-k = strfind(str,'in','ForceCellOutput',true)
-k = strfind(str,'in','ForceCellOutput',false)
+<code class = "nelson">R = eye(3, 3)
+str = formattedDisplayText(R)		
+R = rand(3, 3);
+disp(R)
+str = formattedDisplayText(R)
+str = formattedDisplayText(R, 'NumericFormat', 'bank', 'LineSpacing', 'compact')
 </code>
 </pre>
 
@@ -119,7 +108,7 @@ k = strfind(str,'in','ForceCellOutput',false)
 <hr/>
 
 <p>
-<a href = "strcmp.html" class = "link">strcmp</a>.</p>
+<a href = "display.html" class = "link">display</a>, <a href = "disp.html" class = "link">disp</a>, <a href = "format.html" class = "link">format</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -145,15 +134,11 @@ k = strfind(str,'in','ForceCellOutput',false)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="strcmpi.html">&lt;&lt; strcmpi</a></span>
+<span class="top"><a href="format.html">&lt;&lt; format</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_string.html">string type</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "string.html">string &gt;&gt;</a></span>
+<span class="top"><a href="chapter_display_format.html">display format</a></span>
 </td>
 
 </tr></table>
