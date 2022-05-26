@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>QObject_used</title>
+	<title>pow2</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="QObject_undefine.html">&lt;&lt; QObject_undefine</a></span>
+<span class="top"><a href="pinv.html">&lt;&lt; pinv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_qml_engine.html">QML engine</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "qt_constant.html">qt_constant &gt;&gt;</a></span>
+<span class = "next"><a href = "real.html">real &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">QObject_used</h1>
+<h1 class="refname">pow2</h1>
 <hr/>
 
-<h3>Returns list of current used QObject handle.</h3>
+<h3>Base 2 exponentiation and scaling of floating-point numbers.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,38 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>r = QObject_used()</td>
+		<td>Y = pow2(E)</td>
+	</tr>
+
+	<tr>
+		<td>Y = pow2(X, E)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">E</span></dt>
+<dd>
+<p class="para">Exponent values</p>
+</dd>
+
+<dt><span class="term">X</span></dt>
+<dd>
+<p class="para">Significand values</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">h</span></dt>
+<dt><span class="term">Y</span></dt>
 <dd>
-<p class="para">a vector of QObject handle.</p>
+<p class="para">result of pow2.</p>
 </dd>
 
 </dl>
@@ -71,28 +91,23 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p>Returns list of current used QObject handle.</p>
+  <p><b>Y = pow2(E)</b> computes 2 to the power of <b>E</b>.</p>
+  <p><b>Y = pow2(X, E)</b> computes X times 2 to the power of <b>E</b>.</p>
 
-
-<h3>See also</h3>
-<hr/>
-
-<p>
-<a href = "QObject_set.html" class = "link">QObject_set (set)</a>, <a href = "QObject_get.html" class = "link">QObject_get (get)</a>.</p>
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">h1 = errordlg()
-h2 = errordlg()
-h3 = errordlg()
-used = QObject_used()delete(used)
-used = QObject_used()
-delete(used)
-used = QObject_used()
+<code class = "nelson">R = pow2([1, 2, 3; 4, 5, 6], [6, 5, 4; 3, 2, 1])
 </code>
 </pre>
+
+<h3>See also</h3>
+<hr/>
+
+<p>
+<a href = "log2.html" class = "link">log2</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -118,15 +133,15 @@ used = QObject_used()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="QObject_undefine.html">&lt;&lt; QObject_undefine</a></span>
+<span class="top"><a href="pinv.html">&lt;&lt; pinv</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_qml_engine.html">QML engine</a></span>
+<span class="top"><a href="chapter_elementary_functions.html">elementary functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "qt_constant.html">qt_constant &gt;&gt;</a></span>
+<span class = "next"><a href = "real.html">real &gt;&gt;</a></span>
 </td>
 
 </tr></table>

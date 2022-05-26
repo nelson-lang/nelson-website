@@ -58,7 +58,7 @@ SAME AS NELSON SOFTWARE
 	</tr>
 
 	<tr>
-		<td>h = errordlg(text_error, title, 'on')</td>
+		<td>h = errordlg(text_error, title, mode)</td>
 	</tr>
 
 </table>
@@ -75,6 +75,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">title</span></dt>
 <dd>
 <p class="para">a string: the title of the dialog box.</p>
+</dd>
+
+<dt><span class="term">mode</span></dt>
+<dd>
+<p class="para">a string: 'mode', 'non-modal', 'replace'.</p>
 </dd>
 
 </dl>
@@ -96,7 +101,7 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>errordlg</b> creates an error dialog box.</p>
-  <p><b>h = errordlg(text_error, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+  <p><b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.</p>
   <p>
     <img src="errordlg_1_E21703F7.png"/>
   </p>

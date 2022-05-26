@@ -96,7 +96,7 @@ SAME AS NELSON SOFTWARE
 <p></p>
 
   <p><b>audiorwrite</b> writes an audio file.</p>
-  <p>More 25 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.</p>
+  <p>More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.</p>
 
 
 <h3>Example</h3>
@@ -109,6 +109,10 @@ dest_ogg = [tempdir(), 'haha.ogg'];
 audiowrite(dest_ogg, y, fs);
 dest_flac = [tempdir(), 'haha.flac'];
 audiowrite(dest_flac, y, fs);
+dest_mp3 = [tempdir(), 'haha.mp3'];
+audiowrite(dest_mp3, y, fs);
+dest_caf = [tempdir(), 'haha.caf'];
+audiowrite(dest_caf, y, fs);
 </code>
 </pre>
 
