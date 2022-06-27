@@ -35,6 +35,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 - [C MEX API support](MEX.md),
 - [Nelson Engine API for C (compatible with MEX Engine)](MEX_ENGINE.md),
 - [Foreign Function Interface](FFI.md),
+- [Parallel Computing Module](PARALLEL.md),
 - [Fast Fourier Transformation](FFTW.md),
 - [HDF5 High Level functions I/O](HDF5.md),
 - [MAT-Files functions I/O](MATIO.md)
