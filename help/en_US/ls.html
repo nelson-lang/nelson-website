@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isfolder</title>
+	<title>ls</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfile.html">&lt;&lt; isfile</a></span>
+<span class="top"><a href="isfolder.html">&lt;&lt; isfolder</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ls.html">ls &gt;&gt;</a></span>
+<span class = "next"><a href = "mkdir.html">mkdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isfolder</h1>
+<h1 class="refname">ls</h1>
 <hr/>
 
-<h3>Returns true is the input argument is an directory.</h3>
+<h3>List folder contents.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>r = isfolder(dirname)</td>
+		<td>ls</td>
+	</tr>
+
+	<tr>
+		<td>ls(name)</td>
+	</tr>
+
+	<tr>
+		<td>res = ls()</td>
+	</tr>
+
+	<tr>
+		<td>res = ls(options)</td>
 	</tr>
 
 </table>
@@ -59,9 +71,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">dirname</span></dt>
+<dt><span class="term">name</span></dt>
 <dd>
-<p class="para">a string: directory name to check.</p>
+<p class="para">a string: file or directory name.</p>
+</dd>
+
+<dt><span class="term">options</span></dt>
+<dd>
+<p class="para">vary from system to system.</p>
 </dd>
 
 </dl>
@@ -70,9 +87,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">r</span></dt>
+<dt><span class="term">res</span></dt>
 <dd>
-<p class="para">a logical: true if it is an directory.</p>
+<p class="para">On Windows, res is an m-by-n character array of names. m is the number of names and n is the number of characters in the longest name. On Unix plaftorms is a character vector of names separated by tab and space characters.</p>
 </dd>
 
 </dl>
@@ -82,15 +99,17 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isfolder(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.</p>
+  <p><b>ls</b> is implemented by calling the native operating system's directory listing command—available options will vary from system to system.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">isdir(nelsonroot())
-isdir([nelsonroot(), '/not_exist_dir'])
+<code class = "nelson">res = ls(nelsonroot())
+if ~ispc()
+  res = ls(nelsonroot(), '-l')
+end
 </code>
 </pre>
 
@@ -98,7 +117,7 @@ isdir([nelsonroot(), '/not_exist_dir'])
 <hr/>
 
 <p>
-<a href = "mkdir.html" class = "link">mkdir</a>, <a href = "isfile.html" class = "link">isfile</a>, <a href = "isdir.html" class = "link">isdir</a>.</p>
+<a href = "dir.html" class = "link">dir</a>, <a href = "isdir.html" class = "link">isdir</a>, <a href = "isfile.html" class = "link">isfile</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,7 +143,7 @@ isdir([nelsonroot(), '/not_exist_dir'])
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isfile.html">&lt;&lt; isfile</a></span>
+<span class="top"><a href="isfolder.html">&lt;&lt; isfolder</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +151,7 @@ isdir([nelsonroot(), '/not_exist_dir'])
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "ls.html">ls &gt;&gt;</a></span>
+<span class = "next"><a href = "mkdir.html">mkdir &gt;&gt;</a></span>
 </td>
 
 </tr></table>
