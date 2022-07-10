@@ -1,7 +1,7 @@
 ## External module:
 
 With Nelson, it is easy to call C, C++ or Fortran as if it was built-in functions.
-See [module_skeleton](https://github.com/Nelson-numerical-software/nelson/tree/master/module_skeleton)
+See [module_skeleton](https://github.com/Nelson-numerical-software/module_skeleton)
 delivered with Nelson package for a full example.
 
 ## Build C/C++ code on the fly
