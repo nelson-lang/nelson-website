@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fetchOutputs</title>
+	<title>wait</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cancelAll.html">&lt;&lt; cancelAll</a></span>
+<span class="top"><a href="parfeval.html">&lt;&lt; parfeval</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_parallel.html">parallel</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "parfeval.html">parfeval &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">fetchOutputs</h1>
+<h1 class="refname">wait</h1>
 <hr/>
 
-<h3>Retrieve results from function running in the background pool.</h3>
+<h3>Wait for futures to be completed.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>[y1, ... , ym] = fetchOutputs(f)</td>
+		<td>wait(f)</td>
+	</tr>
+
+	<tr>
+		<td>wait(f, state)</td>
+	</tr>
+
+	<tr>
+		<td>TF = wait(f, state, timeout)</td>
 	</tr>
 
 </table>
@@ -61,7 +65,17 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">f</span></dt>
 <dd>
-<p class="para">FevalFuture object</p>
+<p class="para">FevalFuture object: scalar or array.</p>
+</dd>
+
+<dt><span class="term">state</span></dt>
+<dd>
+<p class="para">state to wait: 'finished' (default) or  'running'</p>
+</dd>
+
+<dt><span class="term">timeout</span></dt>
+<dd>
+<p class="para">seconds to wait: real numeric scalar.</p>
 </dd>
 
 </dl>
@@ -70,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">y1, ... , ym</span></dt>
+<dt><span class="term">TF</span></dt>
 <dd>
-<p class="para">outputs</p>
+<p class="para">logical: If each element of the Future array f finishes before timeout seconds elapse, TF is true. Otherwise, TF is false.</p>
 </dd>
 
 </dl>
@@ -82,38 +96,22 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>[y1, ... , ym] = fetchOutputs(f)</b> retrieves m results from a <b>Future</b> array <b>f</b>.</p>
-  <p/>
-  <p><b>fetchOutputs</b> waits for the function associated to <b>f</b> to finish before retrieving results.</p>
-  <p>If <b>fetchOutputs</b> is called, Read property of each element in <b>f</b> is set to true.</p>
+  <p><b>wait(f)</b> pauses execution until each element of the Future array <b>f</b> is finished.</p>
+  <p><b>wait(f, state)</b> pauses execution until each element of the Future array <b>f</b> has its 'State' property set to state.</p>
+  <p><b>tf = wait(f, state, timeout)</b> pauses execution for a maximum of timeout seconds.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
-<p>Sequential version</p>
 <pre>
-<code class = "nelson">tic()
-R1 = magic(5000);
-R2 = magic(5000);
-toc()
-size(R1)
-</code>
-</pre>
-<p>Parallel version</p>
-<pre>
-<code class = "nelson">b = backgroundPool()
+<code class = "nelson">fptr = str2func('pause');
+for i = 1:15
+ f(i) = parfeval(backgroundPool, fptr, 0, 5);
+end
 tic()
-fptr = str2func('magic');
-f1 = parfeval(b, fptr, 1, 5000);
-f2 = parfeval(b, fptr, 1, 5000);
-b
-r1 = fetchOutputs(f1);
-r2 = fetchOutputs(f2);
+R = wait(f, 'finished');
 toc()
-size(r1)
-f1
-f2
 </code>
 </pre>
 
@@ -121,7 +119,7 @@ f2
 <hr/>
 
 <p>
-<a href = "parfeval.html" class = "link">parfeval</a>, <a href = "backgroundPool.html" class = "link">backgroundPool</a>.</p>
+<a href = "pause.html" class = "link">pause</a>, <a href = "fetchOutputs.html" class = "link">fetchOutputs</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -147,15 +145,11 @@ f2
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cancelAll.html">&lt;&lt; cancelAll</a></span>
+<span class="top"><a href="parfeval.html">&lt;&lt; parfeval</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_parallel.html">parallel</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "parfeval.html">parfeval &gt;&gt;</a></span>
 </td>
 
 </tr></table>

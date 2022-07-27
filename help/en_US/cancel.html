@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>fetchOutputs</title>
+	<title>cancel</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cancelAll.html">&lt;&lt; cancelAll</a></span>
+<span class="top"><a href="backgroundPool.html">&lt;&lt; backgroundPool</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "parfeval.html">parfeval &gt;&gt;</a></span>
+<span class = "next"><a href = "cancelAll.html">cancelAll &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">fetchOutputs</h1>
+<h1 class="refname">cancel</h1>
 <hr/>
 
-<h3>Retrieve results from function running in the background pool.</h3>
+<h3>Stop function running in the background.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>[y1, ... , ym] = fetchOutputs(f)</td>
+		<td>cancel(f)</td>
 	</tr>
 
 </table>
@@ -61,18 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">f</span></dt>
 <dd>
-<p class="para">FevalFuture object</p>
-</dd>
-
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">y1, ... , ym</span></dt>
-<dd>
-<p class="para">outputs</p>
+<p class="para">FevalFuture object: scalar or array.</p>
 </dd>
 
 </dl>
@@ -82,38 +71,22 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>[y1, ... , ym] = fetchOutputs(f)</b> retrieves m results from a <b>Future</b> array <b>f</b>.</p>
-  <p/>
-  <p><b>fetchOutputs</b> waits for the function associated to <b>f</b> to finish before retrieving results.</p>
-  <p>If <b>fetchOutputs</b> is called, Read property of each element in <b>f</b> is set to true.</p>
+  <p><b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
+  <p>Future cancelled Findicates an error as property.</p>
+  <p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
 
 
-<h3>Examples</h3>
+<h3>Example</h3>
 <hr/>
 
-<p>Sequential version</p>
 <pre>
-<code class = "nelson">tic()
-R1 = magic(5000);
-R2 = magic(5000);
-toc()
-size(R1)
-</code>
-</pre>
-<p>Parallel version</p>
-<pre>
-<code class = "nelson">b = backgroundPool()
-tic()
-fptr = str2func('magic');
-f1 = parfeval(b, fptr, 1, 5000);
-f2 = parfeval(b, fptr, 1, 5000);
-b
-r1 = fetchOutputs(f1);
-r2 = fetchOutputs(f2);
-toc()
-size(r1)
-f1
-f2
+<code class = "nelson">fptr = str2func('pause');
+for i = 1:100
+ f(i) = parfeval(backgroundPool, fptr, 0, 5);
+end
+f(70)
+cancel(f(70))
+f(70)
 </code>
 </pre>
 
@@ -121,7 +94,7 @@ f2
 <hr/>
 
 <p>
-<a href = "parfeval.html" class = "link">parfeval</a>, <a href = "backgroundPool.html" class = "link">backgroundPool</a>.</p>
+<a href = "pause.html" class = "link">pause</a>, <a href = "parfeval.html" class = "link">parfeval</a>, <a href = "wait.html" class = "link">wait</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -147,7 +120,7 @@ f2
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cancelAll.html">&lt;&lt; cancelAll</a></span>
+<span class="top"><a href="backgroundPool.html">&lt;&lt; backgroundPool</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -155,7 +128,7 @@ f2
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "parfeval.html">parfeval &gt;&gt;</a></span>
+<span class = "next"><a href = "cancelAll.html">cancelAll &gt;&gt;</a></span>
 </td>
 
 </tr></table>
