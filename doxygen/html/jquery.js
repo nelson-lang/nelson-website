@@ -8063,16 +8063,14 @@
         var e = c.browser.msie && c.browser.version < 7,
           g = e ? 1 : 0,
           h = e ? 2 : -1;
-        this.helper
-          .addClass(this._helper)
-          .css({
-            width: this.element.outerWidth() + h,
-            height: this.element.outerHeight() + h,
-            position: "absolute",
-            left: this.elementOffset.left - g + "px",
-            top: this.elementOffset.top - g + "px",
-            zIndex: ++i.zIndex,
-          });
+        this.helper.addClass(this._helper).css({
+          width: this.element.outerWidth() + h,
+          height: this.element.outerHeight() + h,
+          position: "absolute",
+          left: this.elementOffset.left - g + "px",
+          top: this.elementOffset.top - g + "px",
+          zIndex: ++i.zIndex,
+        });
         this.helper.appendTo("body").disableSelection();
       } else {
         this.helper = this.element;
@@ -10220,15 +10218,13 @@
         if (e && this.opts.overlapControlsInIE && !l.dataSM("ie-shim")) {
           l.dataSM(
             "ie-shim",
-            a("<iframe/>")
-              .attr({ src: "javascript:0", tabindex: -9 })
-              .css({
-                position: "absolute",
-                top: "auto",
-                left: "0",
-                opacity: 0,
-                border: "0",
-              })
+            a("<iframe/>").attr({ src: "javascript:0", tabindex: -9 }).css({
+              position: "absolute",
+              top: "auto",
+              left: "0",
+              opacity: 0,
+              border: "0",
+            })
           );
         }
       },
