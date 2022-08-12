@@ -48,7 +48,7 @@ Window {
 
 a =
 
-  1×1 handle [QObject] 
+  1×1 handle [QObject]
 
 	active: bool true
 	activeFocusItem: QQuickItem* handle
@@ -86,7 +86,7 @@ examples: disp, size, fieldnames, ...
 
 ```
 >> disp(a)
-  1×1 handle [QObject] 
+  1×1 handle [QObject]
 
 	active: bool false
 	activeFocusItem: QQuickItem* handle
@@ -160,7 +160,7 @@ Get children of the figure created by 'hello.qml'
 
 children =
 
-  1×3 handle 
+  1×3 handle
 
 ```
 
@@ -173,7 +173,7 @@ one for text field with "hello world" content,
 
 text_child =
 
-  1×1 handle [QObject] 
+  1×1 handle [QObject]
 
 	activeFocus: bool false
 	activeFocusOnTab: bool false
@@ -191,13 +191,13 @@ text_child =
 	implicitHeight: double 0
 	implicitWidth: double 0
 	layer: QQuickItemLayer* handle
-	objectName: QString 
+	objectName: QString
 	opacity: double 1
 	parent: handle
 	rotation: double 0
 	scale: double 1
 	smooth: bool true
-	state: QString 
+	state: QString
 	transformOrigin: int 4
 	transformOriginPoint: QRectF x:180 y:180
 	visible: bool true
@@ -216,7 +216,7 @@ one for the button with "Button" content:
 
 button_child =
 
-  1×1 handle [QObject] 
+  1×1 handle [QObject]
 
 	activeFocus: bool false
 	activeFocusOnTab: bool false
@@ -242,7 +242,7 @@ button_child =
 	fontSizeMode: int 0
 	height: double 16
 	horizontalAlignment: int 1
-	hoveredLink: QString 
+	hoveredLink: QString
 	implicitHeight: double 16
 	implicitWidth: double 69
 	layer: QQuickItemLayer* handle
@@ -265,7 +265,7 @@ button_child =
 	rotation: double 0
 	scale: double 1
 	smooth: bool true
-	state: QString 
+	state: QString
 	style: int 0
 	styleColor: QColor r:0 g:0 b:0 a:255
 	text: QString Hello world!
@@ -304,7 +304,7 @@ To set the text of the button:
 
 button_child =
 
-  1×1 handle [QObject] 
+  1×1 handle [QObject]
 
 	activeFocus: bool false
 	activeFocusOnTab: bool false
@@ -330,7 +330,7 @@ button_child =
 	fontSizeMode: int 0
 	height: double 16
 	horizontalAlignment: int 1
-	hoveredLink: QString 
+	hoveredLink: QString
 	implicitHeight: double 16
 	implicitWidth: double 89
 	layer: QQuickItemLayer* handle
@@ -353,7 +353,7 @@ button_child =
 	rotation: double 0
 	scale: double 1
 	smooth: bool true
-	state: QString 
+	state: QString
 	style: int 0
 	styleColor: QColor r:0 g:0 b:0 a:255
 	text: QString new button text

@@ -1,5 +1,4 @@
-var indexSectionsWithContent =
-{
+var indexSectionsWithContent = {
   0: "abcdefghijklmnopqrstuvwxyz~",
   1: "abcdefghijklmnopqrstuvwxy",
   2: "n",
@@ -7,11 +6,10 @@ var indexSectionsWithContent =
   4: "acfiklnr",
   5: "v",
   6: "p",
-  7: "h"
+  7: "h",
 };
 
-var indexSectionNames =
-{
+var indexSectionNames = {
   0: "all",
   1: "classes",
   2: "namespaces",
@@ -19,11 +17,10 @@ var indexSectionNames =
   4: "variables",
   5: "typedefs",
   6: "enums",
-  7: "pages"
+  7: "pages",
 };
 
-var indexSectionLabels =
-{
+var indexSectionLabels = {
   0: "All",
   1: "Classes",
   2: "Namespaces",
@@ -31,6 +28,5 @@ var indexSectionLabels =
   4: "Variables",
   5: "Typedefs",
   6: "Enumerations",
-  7: "Pages"
+  7: "Pages",
 };
-

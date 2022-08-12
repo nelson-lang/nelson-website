@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['guiterminal',['GuiTerminal',['../class_gui_terminal.html',1,'']]]
+var searchData = [
+  ["guiterminal", ["GuiTerminal", ["../class_gui_terminal.html", 1, ""]]],
 ];

@@ -1,39 +1,178 @@
-var class_line_manager =
-[
-    [ "outputStyle", "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6", [
-      [ "ERROR_OUTPUT", "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a2bbf6d62f65de7d5834da9c504fdc3d7", null ],
-      [ "WARNING_OUTPUT", "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a41da6f4712b0c1633993efd700d03bf8", null ],
-      [ "STANDARD_OUTPUT", "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a7eb9ef04c84e607b4dd904618487ac9d", null ],
-      [ "STANDARD_INPUT", "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6adf8b32170d146ec51eaaca68298d9135", null ],
-      [ "PROMPT_OUTPUT", "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a9a2fc003ef3c6694b50533de65dfa30d", null ]
-    ] ],
-    [ "LineManager", "class_line_manager.html#a3ac9cac36e39ee542937b58131dbe574", null ],
-    [ "~LineManager", "class_line_manager.html#acd5ba455cf5dd39fe9cb4ff291eee109", null ],
-    [ "addCharacterCurrentLine", "class_line_manager.html#a79e3d4fe01bde10bc2d645f0f9423ab3", null ],
-    [ "clearCurrentLine", "class_line_manager.html#a372fb6d64616bf3c7109058891476945", null ],
-    [ "copyLine", "class_line_manager.html#afcce7a95327ac5ce41b5b9f39e001fb6", null ],
-    [ "deleteCurrentChar", "class_line_manager.html#a0440c319477bf64d167a0c27616c061e", null ],
-    [ "deletePreviousChar", "class_line_manager.html#aed2330eeaf8dc85eaf7b7280c1c5dbcb", null ],
-    [ "displayPrompt", "class_line_manager.html#ae50a991ad819c5703669f08f7928d876", null ],
-    [ "getCurrentLine", "class_line_manager.html#a1cf248b94dbc39d2943565868897dceb", null ],
-    [ "getCurrentPrompt", "class_line_manager.html#a3e5f185be21549f6db414dfecd718a6e", null ],
-    [ "getLineAfterCaret", "class_line_manager.html#a85c922a0778356bbb89bb336167c94f6", null ],
-    [ "getLineBeforeCaret", "class_line_manager.html#a301015bee9d92a863addc51fc53b2fc7", null ],
-    [ "killCurrentPositionToEndLine", "class_line_manager.html#aa64075f74c290cdc10cd102f47fece04", null ],
-    [ "killLastWord", "class_line_manager.html#aaf66fb408fa47ab40a08b50ae5b46b77", null ],
-    [ "moveBackHistory", "class_line_manager.html#add071fba802e01df2d101bb16ec44015", null ],
-    [ "moveBackSingleChar", "class_line_manager.html#aed1b73c77a6c240e479708fbe1f0e7b1", null ],
-    [ "moveBackSingleWord", "class_line_manager.html#a7d1237b006c555de5c299294b0ca25cc", null ],
-    [ "moveBeginningLine", "class_line_manager.html#acb02009156abf16abf39840945ec8dc8", null ],
-    [ "moveEndLine", "class_line_manager.html#aa3e57b2aa8d11a0da5766168889c96a1", null ],
-    [ "moveForwardHistory", "class_line_manager.html#a11a54bbd22c734f23085df0b587c095f", null ],
-    [ "moveForwardSingleChar", "class_line_manager.html#af1469214fecbbe1fe33dbf8301b15cad", null ],
-    [ "moveForwardSingleWord", "class_line_manager.html#a8b37af03f5526f1bda736f28566f9984", null ],
-    [ "newLine", "class_line_manager.html#a5ee7dad38ac991128642dd9c1bf5934f", null ],
-    [ "printCharacters", "class_line_manager.html#acab4ad3e3a48f4538959e287c271e4a8", null ],
-    [ "putCharacter", "class_line_manager.html#aab06f8d1107c50b84acf8726c58eb710", null ],
-    [ "redrawLine", "class_line_manager.html#ae2927115a8fa52b9bd333834a846a138", null ],
-    [ "refreshLine", "class_line_manager.html#a5098ed2ecccaaf4c24e8be6b3211ca9d", null ],
-    [ "setCurrentPrompt", "class_line_manager.html#af839821fd7bb9144047a69ee3f00b595", null ],
-    [ "usesColors", "class_line_manager.html#a51ae7f834823d0248c8e14633667133d", null ]
+var class_line_manager = [
+  [
+    "outputStyle",
+    "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6",
+    [
+      [
+        "ERROR_OUTPUT",
+        "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a2bbf6d62f65de7d5834da9c504fdc3d7",
+        null,
+      ],
+      [
+        "WARNING_OUTPUT",
+        "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a41da6f4712b0c1633993efd700d03bf8",
+        null,
+      ],
+      [
+        "STANDARD_OUTPUT",
+        "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a7eb9ef04c84e607b4dd904618487ac9d",
+        null,
+      ],
+      [
+        "STANDARD_INPUT",
+        "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6adf8b32170d146ec51eaaca68298d9135",
+        null,
+      ],
+      [
+        "PROMPT_OUTPUT",
+        "class_line_manager.html#aa10ffe2108ed7133e7fb4f89ad93dfc6a9a2fc003ef3c6694b50533de65dfa30d",
+        null,
+      ],
+    ],
+  ],
+  [
+    "LineManager",
+    "class_line_manager.html#a3ac9cac36e39ee542937b58131dbe574",
+    null,
+  ],
+  [
+    "~LineManager",
+    "class_line_manager.html#acd5ba455cf5dd39fe9cb4ff291eee109",
+    null,
+  ],
+  [
+    "addCharacterCurrentLine",
+    "class_line_manager.html#a79e3d4fe01bde10bc2d645f0f9423ab3",
+    null,
+  ],
+  [
+    "clearCurrentLine",
+    "class_line_manager.html#a372fb6d64616bf3c7109058891476945",
+    null,
+  ],
+  [
+    "copyLine",
+    "class_line_manager.html#afcce7a95327ac5ce41b5b9f39e001fb6",
+    null,
+  ],
+  [
+    "deleteCurrentChar",
+    "class_line_manager.html#a0440c319477bf64d167a0c27616c061e",
+    null,
+  ],
+  [
+    "deletePreviousChar",
+    "class_line_manager.html#aed2330eeaf8dc85eaf7b7280c1c5dbcb",
+    null,
+  ],
+  [
+    "displayPrompt",
+    "class_line_manager.html#ae50a991ad819c5703669f08f7928d876",
+    null,
+  ],
+  [
+    "getCurrentLine",
+    "class_line_manager.html#a1cf248b94dbc39d2943565868897dceb",
+    null,
+  ],
+  [
+    "getCurrentPrompt",
+    "class_line_manager.html#a3e5f185be21549f6db414dfecd718a6e",
+    null,
+  ],
+  [
+    "getLineAfterCaret",
+    "class_line_manager.html#a85c922a0778356bbb89bb336167c94f6",
+    null,
+  ],
+  [
+    "getLineBeforeCaret",
+    "class_line_manager.html#a301015bee9d92a863addc51fc53b2fc7",
+    null,
+  ],
+  [
+    "killCurrentPositionToEndLine",
+    "class_line_manager.html#aa64075f74c290cdc10cd102f47fece04",
+    null,
+  ],
+  [
+    "killLastWord",
+    "class_line_manager.html#aaf66fb408fa47ab40a08b50ae5b46b77",
+    null,
+  ],
+  [
+    "moveBackHistory",
+    "class_line_manager.html#add071fba802e01df2d101bb16ec44015",
+    null,
+  ],
+  [
+    "moveBackSingleChar",
+    "class_line_manager.html#aed1b73c77a6c240e479708fbe1f0e7b1",
+    null,
+  ],
+  [
+    "moveBackSingleWord",
+    "class_line_manager.html#a7d1237b006c555de5c299294b0ca25cc",
+    null,
+  ],
+  [
+    "moveBeginningLine",
+    "class_line_manager.html#acb02009156abf16abf39840945ec8dc8",
+    null,
+  ],
+  [
+    "moveEndLine",
+    "class_line_manager.html#aa3e57b2aa8d11a0da5766168889c96a1",
+    null,
+  ],
+  [
+    "moveForwardHistory",
+    "class_line_manager.html#a11a54bbd22c734f23085df0b587c095f",
+    null,
+  ],
+  [
+    "moveForwardSingleChar",
+    "class_line_manager.html#af1469214fecbbe1fe33dbf8301b15cad",
+    null,
+  ],
+  [
+    "moveForwardSingleWord",
+    "class_line_manager.html#a8b37af03f5526f1bda736f28566f9984",
+    null,
+  ],
+  [
+    "newLine",
+    "class_line_manager.html#a5ee7dad38ac991128642dd9c1bf5934f",
+    null,
+  ],
+  [
+    "printCharacters",
+    "class_line_manager.html#acab4ad3e3a48f4538959e287c271e4a8",
+    null,
+  ],
+  [
+    "putCharacter",
+    "class_line_manager.html#aab06f8d1107c50b84acf8726c58eb710",
+    null,
+  ],
+  [
+    "redrawLine",
+    "class_line_manager.html#ae2927115a8fa52b9bd333834a846a138",
+    null,
+  ],
+  [
+    "refreshLine",
+    "class_line_manager.html#a5098ed2ecccaaf4c24e8be6b3211ca9d",
+    null,
+  ],
+  [
+    "setCurrentPrompt",
+    "class_line_manager.html#af839821fd7bb9144047a69ee3f00b595",
+    null,
+  ],
+  [
+    "usesColors",
+    "class_line_manager.html#a51ae7f834823d0248c8e14633667133d",
+    null,
+  ],
 ];

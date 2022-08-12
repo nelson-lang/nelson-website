@@ -1,27 +1,122 @@
-var class_nelson_1_1_serialize =
-[
-    [ "Serialize", "class_nelson_1_1_serialize.html#ab18a55f1863c2e66352ddda409648ed3", null ],
-    [ "~Serialize", "class_nelson_1_1_serialize.html#ac2ad8bd274612cabd8fcdff419dff7b5", null ],
-    [ "checkSignature", "class_nelson_1_1_serialize.html#adad07544740b8839239252f0cb92d6f9", null ],
-    [ "getBool", "class_nelson_1_1_serialize.html#a65ab11d1e91022e01f56f9b33a844178", null ],
-    [ "getBools", "class_nelson_1_1_serialize.html#ad3f21dd9bddbc4ba81419ad6a4c6f662", null ],
-    [ "getByte", "class_nelson_1_1_serialize.html#a0e3fdad2e500f1a7f09d6df06db85e9b", null ],
-    [ "getBytes", "class_nelson_1_1_serialize.html#ab86ee17799bae1a06c3f3789a7c45e84", null ],
-    [ "getInt", "class_nelson_1_1_serialize.html#a9d86382cfca00ded581a98cb1e48425b", null ],
-    [ "getInts", "class_nelson_1_1_serialize.html#aee1c41915124dce9e021bf14e953a9a1", null ],
-    [ "getString", "class_nelson_1_1_serialize.html#a5e48c0419802072b8e4540ff5bf2159b", null ],
-    [ "getStringVector", "class_nelson_1_1_serialize.html#a1c75c2ad2095534957bfaa761f80dc4f", null ],
-    [ "getWString", "class_nelson_1_1_serialize.html#ad1c46c1ac6fc2c67bfacd05697194f39", null ],
-    [ "getWStringVector", "class_nelson_1_1_serialize.html#a015341459502d21ee9dc90b4c80b9380", null ],
-    [ "putBool", "class_nelson_1_1_serialize.html#abc226a4d2e7b9d43b186cbffbbdccc28", null ],
-    [ "putBools", "class_nelson_1_1_serialize.html#a0554864530dfc4b993419401cd07bbfd", null ],
-    [ "putByte", "class_nelson_1_1_serialize.html#af50a317b7b430b49b92e6483c8b30e19", null ],
-    [ "putBytes", "class_nelson_1_1_serialize.html#a262eb14aa2c5959e97c2da31371131e2", null ],
-    [ "putInt", "class_nelson_1_1_serialize.html#af7ec53b97e81c3520a4c78296f5ea63d", null ],
-    [ "putInts", "class_nelson_1_1_serialize.html#ac5087117e38a3f4b4db1ab293c78dbac", null ],
-    [ "putString", "class_nelson_1_1_serialize.html#a436ad4268a76e963639437fb8465140d", null ],
-    [ "putStringVector", "class_nelson_1_1_serialize.html#a54e85757475e916f572f4750a103e394", null ],
-    [ "putWString", "class_nelson_1_1_serialize.html#a4b66b3224dec955519abec5315d28c75", null ],
-    [ "putWStringVector", "class_nelson_1_1_serialize.html#ab06691c9ccd77bbffdc2ea2e682e75e6", null ],
-    [ "sendSignature", "class_nelson_1_1_serialize.html#a0a37117a278ead671ffb8677cda40b90", null ]
+var class_nelson_1_1_serialize = [
+  [
+    "Serialize",
+    "class_nelson_1_1_serialize.html#ab18a55f1863c2e66352ddda409648ed3",
+    null,
+  ],
+  [
+    "~Serialize",
+    "class_nelson_1_1_serialize.html#ac2ad8bd274612cabd8fcdff419dff7b5",
+    null,
+  ],
+  [
+    "checkSignature",
+    "class_nelson_1_1_serialize.html#adad07544740b8839239252f0cb92d6f9",
+    null,
+  ],
+  [
+    "getBool",
+    "class_nelson_1_1_serialize.html#a65ab11d1e91022e01f56f9b33a844178",
+    null,
+  ],
+  [
+    "getBools",
+    "class_nelson_1_1_serialize.html#ad3f21dd9bddbc4ba81419ad6a4c6f662",
+    null,
+  ],
+  [
+    "getByte",
+    "class_nelson_1_1_serialize.html#a0e3fdad2e500f1a7f09d6df06db85e9b",
+    null,
+  ],
+  [
+    "getBytes",
+    "class_nelson_1_1_serialize.html#ab86ee17799bae1a06c3f3789a7c45e84",
+    null,
+  ],
+  [
+    "getInt",
+    "class_nelson_1_1_serialize.html#a9d86382cfca00ded581a98cb1e48425b",
+    null,
+  ],
+  [
+    "getInts",
+    "class_nelson_1_1_serialize.html#aee1c41915124dce9e021bf14e953a9a1",
+    null,
+  ],
+  [
+    "getString",
+    "class_nelson_1_1_serialize.html#a5e48c0419802072b8e4540ff5bf2159b",
+    null,
+  ],
+  [
+    "getStringVector",
+    "class_nelson_1_1_serialize.html#a1c75c2ad2095534957bfaa761f80dc4f",
+    null,
+  ],
+  [
+    "getWString",
+    "class_nelson_1_1_serialize.html#ad1c46c1ac6fc2c67bfacd05697194f39",
+    null,
+  ],
+  [
+    "getWStringVector",
+    "class_nelson_1_1_serialize.html#a015341459502d21ee9dc90b4c80b9380",
+    null,
+  ],
+  [
+    "putBool",
+    "class_nelson_1_1_serialize.html#abc226a4d2e7b9d43b186cbffbbdccc28",
+    null,
+  ],
+  [
+    "putBools",
+    "class_nelson_1_1_serialize.html#a0554864530dfc4b993419401cd07bbfd",
+    null,
+  ],
+  [
+    "putByte",
+    "class_nelson_1_1_serialize.html#af50a317b7b430b49b92e6483c8b30e19",
+    null,
+  ],
+  [
+    "putBytes",
+    "class_nelson_1_1_serialize.html#a262eb14aa2c5959e97c2da31371131e2",
+    null,
+  ],
+  [
+    "putInt",
+    "class_nelson_1_1_serialize.html#af7ec53b97e81c3520a4c78296f5ea63d",
+    null,
+  ],
+  [
+    "putInts",
+    "class_nelson_1_1_serialize.html#ac5087117e38a3f4b4db1ab293c78dbac",
+    null,
+  ],
+  [
+    "putString",
+    "class_nelson_1_1_serialize.html#a436ad4268a76e963639437fb8465140d",
+    null,
+  ],
+  [
+    "putStringVector",
+    "class_nelson_1_1_serialize.html#a54e85757475e916f572f4750a103e394",
+    null,
+  ],
+  [
+    "putWString",
+    "class_nelson_1_1_serialize.html#a4b66b3224dec955519abec5315d28c75",
+    null,
+  ],
+  [
+    "putWStringVector",
+    "class_nelson_1_1_serialize.html#ab06691c9ccd77bbffdc2ea2e682e75e6",
+    null,
+  ],
+  [
+    "sendSignature",
+    "class_nelson_1_1_serialize.html#a0a37117a278ead671ffb8677cda40b90",
+    null,
+  ],
 ];
