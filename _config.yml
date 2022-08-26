@@ -1,7 +1,8 @@
-theme: jekyll-theme-architect
+remote_theme: pages-themes/cayman@v0.2.0
 name: Nelson
 description: Nelson
 author: Allan CORNET
 author_email: nelson.numerical.computation@gmail.com
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag

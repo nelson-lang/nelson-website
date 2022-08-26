@@ -29,7 +29,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_core.html">Core</a></span>
 </td>
 
 <td width = "30%" class = "next">
@@ -98,6 +98,7 @@ SAME AS NELSON SOFTWARE
   <p><b>maxNumCompThreads</b> returns the number of threads used by Nelson for computations.</p>
   <p><b>maxNumCompThreads(T)</b> sets the maximum number of computational threads. This modification is only available for current session.</p>
   <p>By default, maxNumCompThreads uses OMP_NUM_THREADS environment variable or numbers of detected physical cores on Windows and logical cores on others platforms.</p>
+  <p>Limitation: On Windows 32 bits, due to MKL and OpenMP, <b>maxNumCompThreads</b> returns 4 max even if there is more core.</p>
 
 
 <h3>Example</h3>
@@ -136,7 +137,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_core.html">core</a></span>
+<span class="top"><a href="chapter_core.html">Core</a></span>
 </td>
 
 <td width = "30%" class = "next">

@@ -25,11 +25,11 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cputime.html">&lt;&lt; cputime</a></span>
+<span class="top"><a href="date.html">&lt;&lt; date</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_time.html">time functions</a></span>
+<span class="top"><a href="chapter_time.html">Time functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
@@ -77,7 +77,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">datevec</span></dt>
 <dd>
-<p class="para">a vector: [Y, M, D, H, MN, S].</p>
+<p class="para">a vector: [Y, M, D, H, MN, S] or matrix N x 6.</p>
 </dd>
 
 <dt><span class="term">format</span></dt>
@@ -87,12 +87,12 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">datestr</span></dt>
 <dd>
-<p class="para">a string: text representing a date.</p>
+<p class="para">a string, cell of string or string array: text representing a date.</p>
 </dd>
 
 <dt><span class="term">Y, M, D, H, MN, S</span></dt>
 <dd>
-<p class="para">double: Year, Month, Day, Hours, Minutes, Secondes.</p>
+<p class="para">double: Year, Month, Day, Hours, Minutes, Secondes (scalar or vector).</p>
 </dd>
 
 </dl>
@@ -140,6 +140,7 @@ SAME AS NELSON SOFTWARE
 <code class = "nelson">d = datenum([1973,8,4,12,1,18])
 datevec(d)
 d = datenum('04–Aug-1973 12:01:18')
+d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 </code>
 </pre>
 
@@ -173,11 +174,11 @@ d = datenum('04–Aug-1973 12:01:18')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cputime.html">&lt;&lt; cputime</a></span>
+<span class="top"><a href="date.html">&lt;&lt; date</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_time.html">time functions</a></span>
+<span class="top"><a href="chapter_time.html">Time functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
