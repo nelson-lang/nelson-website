@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>speye</title>
+	<title>spones</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="sparse.html">&lt;&lt; sparse</a></span>
+<span class="top"><a href="speye.html">&lt;&lt; speye</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_sparse.html">Sparse type</a></span>
 </td>
 
-<td width = "30%" class = "next">
-<span class = "next"><a href = "spones.html">spones &gt;&gt;</a></span>
-</td>
-
 </tr></table>
 <hr />
 
-<h1 class="refname">speye</h1>
+<h1 class="refname">spones</h1>
 <hr/>
 
-<h3>Sparse identity matrix.</h3>
+<h3>Replaces non zero sparse matrix elements with ones.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,19 +46,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>S = speye()</td>
-	</tr>
-
-	<tr>
-		<td>S = speye(n)</td>
-	</tr>
-
-	<tr>
-		<td>S = speye(n, m)</td>
-	</tr>
-
-	<tr>
-		<td>S = speye(sz)</td>
+		<td>s = spones(S)</td>
 	</tr>
 
 </table>
@@ -71,14 +55,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">n, m</span></dt>
+<dt><span class="term">S</span></dt>
 <dd>
-<p class="para">dimension sizes: nonnegative integer scalar.</p>
-</dd>
-
-<dt><span class="term">sz</span></dt>
-<dd>
-<p class="para">dimension sizes: two-element row vector.</p>
+<p class="para">Sparse or 2D matrix.</p>
 </dd>
 
 </dl>
@@ -99,18 +78,15 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>S = speye()</b> returns a sparse scalar 1.</p>
-  <p><b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
-  <p><b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
-  <p><b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.</p>
+  <p><b>s = spones(S)</b> returns a matrix <b>s</b> with the same sparsity structure as <b>S</b>, but with one's in the nonzero positions.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">tic();S = speye(5000, 5000);toc()
-tic();S = sparse(eye(5000, 5000));toc()
+<code class = "nelson">S = sparse([1,0;3,4]);
+R = spones(S)
 </code>
 </pre>
 
@@ -118,7 +94,7 @@ tic();S = sparse(eye(5000, 5000));toc()
 <hr/>
 
 <p>
-<a href = "sparse.html" class = "link">sparse</a>.</p>
+<a href = "speye.html" class = "link">speye</a>, <a href = "sparse.html" class = "link">sparse</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -144,15 +120,11 @@ tic();S = sparse(eye(5000, 5000));toc()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="sparse.html">&lt;&lt; sparse</a></span>
+<span class="top"><a href="speye.html">&lt;&lt; speye</a></span>
 </td>
 
 <td width="40%" class="center">
 <span class="top"><a href="chapter_sparse.html">Sparse type</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "spones.html">spones &gt;&gt;</a></span>
 </td>
 
 </tr></table>
