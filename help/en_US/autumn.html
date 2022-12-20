@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>groot</title>
+	<title>autumn</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="gray.html">&lt;&lt; gray</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isgraphics.html">isgraphics &gt;&gt;</a></span>
+<span class = "next"><a href = "close.html">figure &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">groot</h1>
+<h1 class="refname">autumn</h1>
 <hr/>
 
-<h3>graphic root object.</h3>
+<h3>Autumn colormap array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +46,33 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>g = groot()</td>
+		<td>c = autumn</td>
+	</tr>
+
+	<tr>
+		<td>c = autumn(m)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">m</span></dt>
+<dd>
+<p class="para">a scalar integer value: Number of colors (256 as default value).</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">g</span></dt>
+<dt><span class="term">c</span></dt>
 <dd>
-<p class="para">a graphics object: root object.</p>
+<p class="para">c: Autumn colormap array.</p>
 </dd>
 
 </dl>
@@ -71,26 +82,19 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>groot</b> returns graphic root object.</p>
-  <p>Properties:</p>
-  <p><b>Children</b>: Array of available figure objects.</p>
-  <p><b>CurrentFigure</b>: Current figure graphics object.</p>
-  <p><b>Parent</b>: empty array (No parent)</p>
-  <p><b>PointerLocation</b>: Current location of pointer.</p>
-  <p><b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
-  <p><b>ScreenSize</b>: Size of primary display (vector).</p>
-  <p><b>Tag</b>: String identifier.</p>
-  <p><b>Type</b>: Type 'root'.</p>
-  <p><b>Units</b>: 'pixels'.</p>
-  <p><b>UserData</b>: User data (any array type).</p>
+  <p><b>autumn</b> returns the colormap with autumn colors.</p>
+  <p>
+    <img src="autumn_80D6835B.svg"/>
+  </p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">g = groot()
-g.ScreenDepth
+<code class = "nelson">f = figure();
+surf(peaks);
+colormap('autumn');
 </code>
 </pre>
 
@@ -98,7 +102,7 @@ g.ScreenDepth
 <hr/>
 
 <p>
-<a href = "figure.html" class = "link">figure</a>, <a href = "gcf.html" class = "link">gcf</a>.</p>
+<a href = "colormap.html" class = "link">colormap</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -123,16 +127,12 @@ g.ScreenDepth
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="gray.html">&lt;&lt; gray</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isgraphics.html">isgraphics &gt;&gt;</a></span>
+<span class = "next"><a href = "close.html">figure &gt;&gt;</a></span>
 </td>
 
 </tr></table>

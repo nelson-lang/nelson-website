@@ -1,13 +1,13 @@
 {
   "name": "nelson-website",
-  "version": "0.6.8",
+  "version": "0.6.12",
   "description": "Nelson, an array programming language - website",
   "copyright": "Copyright 2018-present Allan CORNET",
   "scripts": {
     "prettier": "run-s prettier:standard",
-    "prettier:standard": "prettier --write **/*.{js,json,yml,md}",
+    "prettier:standard": "prettier --write \"**/*.{js,json,yml,md}\"",
     "prettier:check": "run-s prettier:check:standard",
-    "prettier:check:standard": "prettier --check **/*.{js,json,yml,md}"
+    "prettier:check:standard": "prettier --check \"**/*.{js,json,yml,md}\""
   },
   "devDependencies": {
     "prettier": "2.7.1",

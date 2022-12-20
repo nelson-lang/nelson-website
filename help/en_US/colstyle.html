@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>groot</title>
+	<title>colstyle</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="gray.html">&lt;&lt; gray</a></span>
+<span class="top"><a href="close.html">&lt;&lt; figure</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isgraphics.html">isgraphics &gt;&gt;</a></span>
+<span class = "next"><a href = "copygraphics.html">copygraphics &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">groot</h1>
+<h1 class="refname">colstyle</h1>
 <hr/>
 
-<h3>graphic root object.</h3>
+<h3>Parse color and style from string.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,18 +50,44 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>g = groot()</td>
+		<td>[linespec, colorspec, markerspec, msg] = colstyle (str)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">str</span></dt>
+<dd>
+<p class="para">a row vector of character or scalar string:  line specification.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
 
 <dl>
-<dt><span class="term">g</span></dt>
+<dt><span class="term">linespec</span></dt>
 <dd>
-<p class="para">a graphics object: root object.</p>
+<p class="para">a string: line type.</p>
+</dd>
+
+<dt><span class="term">colorspec</span></dt>
+<dd>
+<p class="para">a string: color part.</p>
+</dd>
+
+<dt><span class="term">markerspec</span></dt>
+<dd>
+<p class="para">a string: marker part.</p>
+</dd>
+
+<dt><span class="term">msg</span></dt>
+<dd>
+<p class="para">a string: contain the error message string.</p>
 </dd>
 
 </dl>
@@ -71,26 +97,14 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>groot</b> returns graphic root object.</p>
-  <p>Properties:</p>
-  <p><b>Children</b>: Array of available figure objects.</p>
-  <p><b>CurrentFigure</b>: Current figure graphics object.</p>
-  <p><b>Parent</b>: empty array (No parent)</p>
-  <p><b>PointerLocation</b>: Current location of pointer.</p>
-  <p><b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
-  <p><b>ScreenSize</b>: Size of primary display (vector).</p>
-  <p><b>Tag</b>: String identifier.</p>
-  <p><b>Type</b>: Type 'root'.</p>
-  <p><b>Units</b>: 'pixels'.</p>
-  <p><b>UserData</b>: User data (any array type).</p>
+  <p><b>colstyle</b> parses color and style from string.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">g = groot()
-g.ScreenDepth
+<code class = "nelson">[l, c, m, msg] = colstyle('r:x')
 </code>
 </pre>
 
@@ -98,7 +112,7 @@ g.ScreenDepth
 <hr/>
 
 <p>
-<a href = "figure.html" class = "link">figure</a>, <a href = "gcf.html" class = "link">gcf</a>.</p>
+<a href = "colormap.html" class = "link">colormap</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -124,7 +138,7 @@ g.ScreenDepth
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="gray.html">&lt;&lt; gray</a></span>
+<span class="top"><a href="close.html">&lt;&lt; figure</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +146,7 @@ g.ScreenDepth
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "isgraphics.html">isgraphics &gt;&gt;</a></span>
+<span class = "next"><a href = "copygraphics.html">copygraphics &gt;&gt;</a></span>
 </td>
 
 </tr></table>

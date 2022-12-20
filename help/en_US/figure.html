@@ -24,12 +24,16 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="copygraphics.html">&lt;&lt; copygraphics</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "gcf.html">gcf &gt;&gt;</a></span>
+<span class = "next"><a href = "gray.html">gray &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -57,6 +61,10 @@ SAME AS NELSON SOFTWARE
 		<td>f = figure(H)</td>
 	</tr>
 
+	<tr>
+		<td>f = figure(propertyName, propertyValue)</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -70,7 +78,17 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">H</span></dt>
 <dd>
-<p class="para">a scalar graphic object on an existing figure.</p>
+<p class="para">a scalar graphics object on an existing figure.</p>
+</dd>
+
+<dt><span class="term">propertyName</span></dt>
+<dd>
+<p class="para">a scalar string or row vector character.</p>
+</dd>
+
+<dt><span class="term">propertyValue</span></dt>
+<dd>
+<p class="para">a value.</p>
 </dd>
 
 </dl>
@@ -81,7 +99,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">f</span></dt>
 <dd>
-<p class="para">a graphic object: figure handle.</p>
+<p class="para">a graphics object: figure handle.</p>
 </dd>
 
 </dl>
@@ -102,7 +120,7 @@ SAME AS NELSON SOFTWARE
   <p><b>Tag</b>: String identifier.</p>
   <p><b>Type</b>: Type 'figure'.</p>
   <p><b>UserData</b>: User data (any array type).</p>
-  <p><b>Visible</b>: </p>
+  <p><b>Visible</b>: visibility of the figure.</p>
 
 
 <h3>Example</h3>
@@ -114,6 +132,7 @@ g = figure(2)
 h = figure(3)
 figure(g)
 gcf()
+figure('Name', 'Hello')
 </code>
 </pre>
 
@@ -121,7 +140,7 @@ gcf()
 <hr/>
 
 <p>
-<a href = "gcf.html" class = "link">gcf</a>.</p>
+<a href = "gcf.html" class = "link">gcf</a>, <a href = "close.html" class = "link">close</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -146,12 +165,16 @@ gcf()
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="copygraphics.html">&lt;&lt; copygraphics</a></span>
+</td>
+
 <td width="40%" class="center">
 <span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "gcf.html">gcf &gt;&gt;</a></span>
+<span class = "next"><a href = "gray.html">gray &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>gcf</title>
+	<title>figure</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="figure.html">&lt;&lt; figure</a></span>
+<span class="top"><a href="autumn.html">&lt;&lt; autumn</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "groot.html">groot &gt;&gt;</a></span>
+<span class = "next"><a href = "colstyle.html">colstyle &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">gcf</h1>
+<h1 class="refname">figure</h1>
 <hr/>
 
-<h3>Current figure handle.</h3>
+<h3>Creates an figure window.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,10 +50,34 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>f = gcf()</td>
+		<td>f = figure()</td>
+	</tr>
+
+	<tr>
+		<td>f = figure(ID)</td>
+	</tr>
+
+	<tr>
+		<td>f = figure(H)</td>
 	</tr>
 
 </table>
+
+<h3>Input argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">ID</span></dt>
+<dd>
+<p class="para">a scalar integer value: find or creates with ID.</p>
+</dd>
+
+<dt><span class="term">H</span></dt>
+<dd>
+<p class="para">a scalar graphics object on an existing figure.</p>
+</dd>
+
+</dl>
 
 <h3>Output argument</h3>
 <hr/>
@@ -61,7 +85,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">f</span></dt>
 <dd>
-<p class="para">a graphic object: current figure handle.</p>
+<p class="para">a graphics object: figure handle.</p>
 </dd>
 
 </dl>
@@ -71,7 +95,18 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>gcf</b> returns current figure handle.</p>
+  <p><b>figure</b> creates figure.</p>
+  <p>Properties:</p>
+  <p><b>Color</b>:  Background color [R, G, B] or string (example: 'blue').</p>
+  <p><b>InnerPosition</b>: Location and size of drawable area (similar to 'Position').</p>
+  <p><b>Name</b>: Name (default '').</p>
+  <p><b>Number</b>: Figure indentifer (integer).</p>
+  <p><b>OuterPosition</b>: Location and size of outer bounds (vector [X Y W H]).</p>
+  <p><b>Position</b>: Location and size of drawable area.</p>
+  <p><b>Tag</b>: String identifier.</p>
+  <p><b>Type</b>: Type 'figure'.</p>
+  <p><b>UserData</b>: User data (any array type).</p>
+  <p><b>Visible</b>: </p>
 
 
 <h3>Example</h3>
@@ -90,7 +125,7 @@ gcf()
 <hr/>
 
 <p>
-<a href = "figure.html" class = "link">figure</a>.</p>
+<a href = "gcf.html" class = "link">gcf</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -116,7 +151,7 @@ gcf()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="figure.html">&lt;&lt; figure</a></span>
+<span class="top"><a href="autumn.html">&lt;&lt; autumn</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -124,7 +159,7 @@ gcf()
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "groot.html">groot &gt;&gt;</a></span>
+<span class = "next"><a href = "colstyle.html">colstyle &gt;&gt;</a></span>
 </td>
 
 </tr></table>
