@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>figure</title>
+	<title>close</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="autumn.html">&lt;&lt; autumn</a></span>
+<span class="top"><a href="clim.html">&lt;&lt; clim</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "colstyle.html">colstyle &gt;&gt;</a></span>
+<span class = "next"><a href = "colorbar.html">colorbar &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">figure</h1>
+<h1 class="refname">close</h1>
 <hr/>
 
-<h3>Creates an figure window.</h3>
+<h3>Close one or more figures</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,15 +50,27 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>f = figure()</td>
+		<td>close()</td>
 	</tr>
 
 	<tr>
-		<td>f = figure(ID)</td>
+		<td>close('all')</td>
 	</tr>
 
 	<tr>
-		<td>f = figure(H)</td>
+		<td>close(name)</td>
+	</tr>
+
+	<tr>
+		<td>close(ID)</td>
+	</tr>
+
+	<tr>
+		<td>close(GO)</td>
+	</tr>
+
+	<tr>
+		<td>tf = close(...)</td>
 	</tr>
 
 </table>
@@ -69,10 +81,15 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">ID</span></dt>
 <dd>
-<p class="para">a scalar integer value: find or creates with ID.</p>
+<p class="para">a scalar integer value: figure ID.</p>
 </dd>
 
-<dt><span class="term">H</span></dt>
+<dt><span class="term">GO</span></dt>
+<dd>
+<p class="para">a scalar graphics object on an existing figure.</p>
+</dd>
+
+<dt><span class="term">GO</span></dt>
 <dd>
 <p class="para">a scalar graphics object on an existing figure.</p>
 </dd>
@@ -83,9 +100,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">f</span></dt>
+<dt><span class="term">tf</span></dt>
 <dd>
-<p class="para">a graphics object: figure handle.</p>
+<p class="para">a scalar logical: true if figure was closed.</p>
 </dd>
 
 </dl>
@@ -95,18 +112,10 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>figure</b> creates figure.</p>
-  <p>Properties:</p>
-  <p><b>Color</b>:  Background color [R, G, B] or string (example: 'blue').</p>
-  <p><b>InnerPosition</b>: Location and size of drawable area (similar to 'Position').</p>
-  <p><b>Name</b>: Name (default '').</p>
-  <p><b>Number</b>: Figure indentifer (integer).</p>
-  <p><b>OuterPosition</b>: Location and size of outer bounds (vector [X Y W H]).</p>
-  <p><b>Position</b>: Location and size of drawable area.</p>
-  <p><b>Tag</b>: String identifier.</p>
-  <p><b>Type</b>: Type 'figure'.</p>
-  <p><b>UserData</b>: User data (any array type).</p>
-  <p><b>Visible</b>: </p>
+  <p><b>close</b> closes the current figure.</p>
+  <p><b>close(ID)</b> closes the figure specified by figure ID.</p>
+  <p><b>close(GO)</b> closes the figure specified by figure graphics object.</p>
+  <p><b>close('all')</b> closes all figures.</p>
 
 
 <h3>Example</h3>
@@ -114,10 +123,12 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">f = figure(1)
-g = figure(2)
+close();
 h = figure(3)
-figure(g)
-gcf()
+close(h)
+f1 = figure()
+f2 = figure()
+close('all')
 </code>
 </pre>
 
@@ -125,7 +136,7 @@ gcf()
 <hr/>
 
 <p>
-<a href = "gcf.html" class = "link">gcf</a>.</p>
+<a href = "gcf.html" class = "link">gcf</a>, <a href = "figure.html" class = "link">figure</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -151,7 +162,7 @@ gcf()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="autumn.html">&lt;&lt; autumn</a></span>
+<span class="top"><a href="clim.html">&lt;&lt; clim</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -159,7 +170,7 @@ gcf()
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "colstyle.html">colstyle &gt;&gt;</a></span>
+<span class = "next"><a href = "colorbar.html">colorbar &gt;&gt;</a></span>
 </td>
 
 </tr></table>

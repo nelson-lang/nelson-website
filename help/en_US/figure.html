@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="copygraphics.html">&lt;&lt; copygraphics</a></span>
+<span class="top"><a href="cylinder.html">&lt;&lt; cylinder</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "gray.html">gray &gt;&gt;</a></span>
+<span class = "next"><a href = "gca.html">gca &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -63,6 +63,14 @@ SAME AS NELSON SOFTWARE
 
 	<tr>
 		<td>f = figure(propertyName, propertyValue)</td>
+	</tr>
+
+	<tr>
+		<td>f = figure(ID, propertyName, propertyValue)</td>
+	</tr>
+
+	<tr>
+		<td>f = figure(H, propertyName, propertyValue)</td>
 	</tr>
 
 </table>
@@ -117,10 +125,10 @@ SAME AS NELSON SOFTWARE
   <p><b>Number</b>: Figure indentifer (integer).</p>
   <p><b>OuterPosition</b>: Location and size of outer bounds (vector [X Y W H]).</p>
   <p><b>Position</b>: Location and size of drawable area.</p>
-  <p><b>Tag</b>: String identifier.</p>
+  <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
   <p><b>Type</b>: Type 'figure'.</p>
-  <p><b>UserData</b>: User data (any array type).</p>
-  <p><b>Visible</b>: visibility of the figure.</p>
+  <p><b>UserData</b>: User data: array or [] (default).</p>
+  <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
 
 
 <h3>Example</h3>
@@ -166,7 +174,7 @@ figure('Name', 'Hello')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="copygraphics.html">&lt;&lt; copygraphics</a></span>
+<span class="top"><a href="cylinder.html">&lt;&lt; cylinder</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -174,7 +182,7 @@ figure('Name', 'Hello')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "gray.html">gray &gt;&gt;</a></span>
+<span class = "next"><a href = "gca.html">gca &gt;&gt;</a></span>
 </td>
 
 </tr></table>
