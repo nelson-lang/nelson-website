@@ -3,14 +3,14 @@
 Graphics objects are the components used by Nelson to create visualizations of data.
 
 Each graphics window and the drawing it contains are represented by hierarchical entities.
-The hierarchy top level is the `Figure`. Each `Figure` defines at least one child of type `Axes`. 
+The hierarchy top level is the `Figure`. Each `Figure` defines at least one child of type `Axes`.
 
 ```matlab
 >> ax = gca()
 
 ax =
 
-  1×1 [graphics_object] 
+  1×1 [graphics_object]
 
   axes with properties:
 

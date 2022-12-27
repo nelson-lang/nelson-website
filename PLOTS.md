@@ -17,9 +17,11 @@ plot(cos(t), sin(2 * t), '-g', 'MarkerSize', 2);
 axis equal
 legend(_('Circle'), _('Lissajous curve'))
 ```
+
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-1.svg">
 
 subplot:
+
 ```matlab
 f = figure();
 t = linspace(0, 2 * pi, 128);
@@ -36,6 +38,7 @@ hold on
 plot(t, cos(t));
 hold off
 ```
+
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-2.svg">
 
 Demo:
@@ -43,7 +46,6 @@ Demo:
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/butterfly.png">
 
 ### 3D Plots
-
 
 Example:
 
@@ -60,12 +62,12 @@ hold off
 axis equal;
 colormap(autumn)
 ```
+
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-3D-1.svg">
 
 3D Animation
 
 [![3D Animation](https://i.ytimg.com/an_webp/ziM-DlD3LOg/mqdefault_6s.webp?du=3000&sqp=CKDorJ0G&rs=AOn4CLD1sr1RTfwb1JN5_t4tQYXXRV5X3A)](https://www.youtube.com/watch?v=ziM-DlD3LOg)
-
 
 Your imagination is the only limit ;)
 
