@@ -28,6 +28,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 ## [Features](FEATURES.md)
 
 - [Internal data types](TYPES.md),
+- [2D and 3D plotting with high-level plot commands](PLOTS.md),
 - [Overloading](OVERLOADING.md),
 - [Modularity](MODULARITY.md),
 - [External modules](EXTERNAL_MODULE.md),

@@ -2,6 +2,8 @@
 
 ## [Internal data types](TYPES.md)
 
+## [2D and 3D plotting with high-level plot commands](PLOTS.md)
+
 ## [Overloading](OVERLOADING.md)
 
 ## [Modularity](MODULARITY.md)
