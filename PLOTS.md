@@ -22,7 +22,7 @@ legend(_('Circle'), _('Lissajous curve'))
 
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-1.svg">
 
-#### Dubplot
+#### Subplot
 
 ```matlab
 f = figure();
