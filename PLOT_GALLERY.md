@@ -6,6 +6,7 @@
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/bench_plot.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/christmas.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/colormap.png">
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/fractal.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/spy_demo.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/heart.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/surf2.png">
