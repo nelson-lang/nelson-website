@@ -4,9 +4,11 @@ Nelson provides graphics functions to visualize and export data:
 
 You will find all graphical functions documentation: [HERE](https://nelson-numerical-software.github.io/nelson-website/help/en_US/chapter_graphics.html)
 
+Find more plots in [Plot Gallery](PLOT_GALLERY.md)
+
 ### 2D Plots
 
-Examples:
+#### Draw Circle and Lissajous curve
 
 ```matlab
 f = figure();
@@ -20,7 +22,7 @@ legend(_('Circle'), _('Lissajous curve'))
 
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-1.svg">
 
-subplot:
+#### Dubplot
 
 ```matlab
 f = figure();
@@ -41,13 +43,25 @@ hold off
 
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-2.svg">
 
-Demo:
+#### Animate a plot
 
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/butterfly.png">
+```matlab
+f = figure();
+theta = 0:pi/20:2*pi;
+x = cos(theta);
+y = sin(theta);
+h = plot(x,y);
+axis([-1,7,-4,4]);
+for i = 1:100
+    x = x + 0.05;
+    set(h,'xdata',x);
+    pause(0.1);
+end
+```
 
 ### 3D Plots
 
-Example:
+#### meshgrid and surf
 
 ```matlab
 f = figure();
@@ -64,11 +78,5 @@ colormap(autumn)
 ```
 
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-3D-1.svg">
-
-3D Animation
-
-[![3D Animation](https://i.ytimg.com/an_webp/ziM-DlD3LOg/mqdefault_6s.webp?du=3000&sqp=CKDorJ0G&rs=AOn4CLD1sr1RTfwb1JN5_t4tQYXXRV5X3A)](https://www.youtube.com/watch?v=ziM-DlD3LOg)
-
-Your imagination is the only limit ;)
 
 [Previous page](FEATURES.md)
