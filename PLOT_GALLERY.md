@@ -7,7 +7,7 @@
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/christmas.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/colormap.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/spy_demo.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/blob/master/images/gallery/heart.png">
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/heart.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/surf2.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/cylinder.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/cylinder2.png">
