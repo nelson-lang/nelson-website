@@ -139,7 +139,7 @@ SAME AS NELSON SOFTWARE
 
   <p><b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components <b>(U,V)</b> at the point <b>(X, Y)</b>.</p>
   <p><b>quiver</b> try to scale the arrow lengths so that they do not overlap.</p>
-  <p>Current implementation is slow. It will be optimized in next version (builtin).</p>
+  <p>Current implementation is slow but it can be optimized using DrawLater property of figure. It could be optimized in an next version by an builtin.</p>
 
 
 <h3>Examples</h3>
@@ -147,15 +147,18 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">f = figure();
+f.DrawLater = 'on';
 [X, Y] = meshgrid(0:pi/8:pi, -pi:pi/8:pi);
 U1 = sin(X);
 V1 = cos(Y);
 quiver(U1,V1, 'r')
+f.DrawLater = 'off';
 </code>
 </pre>
 <img src="quiver_1_15CC7211.svg" align="middle"/>
 <pre>
 <code class = "nelson">f = figure();
+f.DrawLater = 'on';      
 [X, Y] = meshgrid(0:pi/8:pi, -pi:pi/8:pi);
 U1 = sin(X);
 V1 = cos(Y);
@@ -169,6 +172,7 @@ ax2 = subplot(1, 2, 2);
 quiver(X,Y,U2,V2)
 axis equal
 title(ax2, 'Right Plot')
+f.DrawLater = 'off';
 </code>
 </pre>
 <img src="quiver_2_A6CE0189.svg" align="middle"/>

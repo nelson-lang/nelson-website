@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "copygraphics.html">copygraphics &gt;&gt;</a></span>
+<span class = "next"><a href = "cool.html">cool &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -53,6 +53,10 @@ SAME AS NELSON SOFTWARE
 		<td>[linespec, colorspec, markerspec, msg] = colstyle (str)</td>
 	</tr>
 
+	<tr>
+		<td>[linespec, colorspec, markerspec, msg] = colstyle (str, 'plot')</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -62,6 +66,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">str</span></dt>
 <dd>
 <p class="para">a row vector of character or scalar string:  line specification.</p>
+</dd>
+
+<dt><span class="term">'plot'</span></dt>
+<dd>
+<p class="para">linespec returns 'none' and not '' with this option.</p>
 </dd>
 
 </dl>
@@ -105,6 +114,8 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">[l, c, m, msg] = colstyle('r:x')
+[l, c, m, msg] = colstyle('*')
+[l, c, m, msg] = colstyle('*', 'plot')
 </code>
 </pre>
 
@@ -146,7 +157,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "copygraphics.html">copygraphics &gt;&gt;</a></span>
+<span class = "next"><a href = "cool.html">cool &gt;&gt;</a></span>
 </td>
 
 </tr></table>
