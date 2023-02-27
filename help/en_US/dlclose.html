@@ -87,7 +87,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <pre>
-<code class = "nelson">path_ref = [modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()];
+<code class = "nelson">path_ref = modulepath('dynamic_link', 'builtin');
 lib = dlopen(path_ref)
 isvalid(lib)
 dlclose(lib); // or delete(lib)
