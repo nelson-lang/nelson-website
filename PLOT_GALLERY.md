@@ -1,5 +1,10 @@
 ## [Plot Gallery](PLOT_GALLERY.md)
 
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/flower-patch.jpg">
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/patch.png">
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/image_mixed.png">
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/mesh.png">
+<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/surface.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/butterfly.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/france.png">
 <img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/baboon_rot90.png">
