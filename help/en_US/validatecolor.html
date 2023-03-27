@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>parula</title>
+	<title>validatecolor</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="newplot.html">&lt;&lt; newplot</a></span>
+<span class="top"><a href="turbo.html">&lt;&lt; turbo</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "patch.html">patch &gt;&gt;</a></span>
+<span class = "next"><a href = "view.html">view &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">parula</h1>
+<h1 class="refname">validatecolor</h1>
 <hr/>
 
-<h3>Parula colormap array.</h3>
+<h3>Validate color values.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>c = parula</td>
+		<td>RGB = validatecolor(colors)</td>
 	</tr>
 
 	<tr>
-		<td>c = parula(m)</td>
+		<td>RGB = validatecolor(colors, sz)</td>
 	</tr>
 
 </table>
@@ -63,9 +63,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">m</span></dt>
+<dt><span class="term">colors</span></dt>
 <dd>
-<p class="para">a scalar integer value: Number of colors (256 as default value).</p>
+<p class="para">1-by-3 vector, m-by-3 matrix, character vector, cell array of character vectors or string array.</p>
+</dd>
+
+<dt><span class="term">sz</span></dt>
+<dd>
+<p class="para">'one' (default) or 'multiple'</p>
 </dd>
 
 </dl>
@@ -74,9 +79,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">c</span></dt>
+<dt><span class="term">RGB</span></dt>
 <dd>
-<p class="para">Parula colormap array.</p>
+<p class="para">RGB values: RGB triplet or matrix of RGB triplets.</p>
 </dd>
 
 </dl>
@@ -86,26 +91,20 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>parula</b> returns the colormap with parula colors.</p>
-  <p><b>parula</b> is the default colormap.</p>
+  <p>The <b>validatecolor</b> function is a color validation function that checks whether a given color is valid according to Nelson standards.</p>
+  <p>It takes a color argument as input and returns an error if the color is not valid.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">f = figure();
-surf(peaks);
-colormap('parula');
+<code class = "nelson">RGB = validatecolor('red')
+RGB = validatecolor('purple')
+RGB = validatecolor({'#8000FF','#00FF00','#FF9900'}, 'multiple')
+RGB = validatecolor({'red','green','blue'},'multiple')
 </code>
 </pre>
-<img src="parula_5EC0F3E3.svg" align="middle"/>
-
-<h3>See also</h3>
-<hr/>
-
-<p>
-<a href = "colormap.html" class = "link">colormap</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -131,7 +130,7 @@ colormap('parula');
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="newplot.html">&lt;&lt; newplot</a></span>
+<span class="top"><a href="turbo.html">&lt;&lt; turbo</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -139,7 +138,7 @@ colormap('parula');
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "patch.html">patch &gt;&gt;</a></span>
+<span class = "next"><a href = "view.html">view &gt;&gt;</a></span>
 </td>
 
 </tr></table>

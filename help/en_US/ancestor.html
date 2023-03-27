@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>parula</title>
+	<title>ancestor</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="newplot.html">&lt;&lt; newplot</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "patch.html">patch &gt;&gt;</a></span>
+<span class = "next"><a href = "autumn.html">autumn &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">parula</h1>
+<h1 class="refname">ancestor</h1>
 <hr/>
 
-<h3>Parula colormap array.</h3>
+<h3>Ancestor of graphics object.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>c = parula</td>
+		<td>p = ancestor(h, type)</td>
 	</tr>
 
 	<tr>
-		<td>c = parula(m)</td>
+		<td>p = ancestor(h, type, 'toplevel')</td>
 	</tr>
 
 </table>
@@ -63,9 +59,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">m</span></dt>
+<dt><span class="term">h</span></dt>
 <dd>
-<p class="para">a scalar integer value: Number of colors (256 as default value).</p>
+<p class="para">graphics object</p>
+</dd>
+
+<dt><span class="term">type</span></dt>
+<dd>
+<p class="para">a row vector character or cell of strings:</p>
+</dd>
+
+<dt><span class="term">'toplevel'</span></dt>
+<dd>
+<p class="para">a row vector character: return the highest parent in the object hierarchy that matches the condition.</p>
 </dd>
 
 </dl>
@@ -74,9 +80,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">c</span></dt>
+<dt><span class="term">p</span></dt>
 <dd>
-<p class="para">Parula colormap array.</p>
+<p class="para">a graphics object or []</p>
 </dd>
 
 </dl>
@@ -86,8 +92,7 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>parula</b> returns the colormap with parula colors.</p>
-  <p><b>parula</b> is the default colormap.</p>
+  <p><b>ancestor</b> returns the handle of the specified object's ancestor of a given type.</p>
 
 
 <h3>Example</h3>
@@ -95,17 +100,19 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">f = figure();
-surf(peaks);
-colormap('parula');
+ax = gca();
+s = surf(peaks);
+AX = ancestor(s, 'axes')
+F = ancestor(s, 'figure')
+R = ancestor(s, 'root')
 </code>
 </pre>
-<img src="parula_5EC0F3E3.svg" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "colormap.html" class = "link">colormap</a>.</p>
+<a href = "gcf.html" class = "link">gcf</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -130,16 +137,12 @@ colormap('parula');
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="newplot.html">&lt;&lt; newplot</a></span>
-</td>
-
 <td width="40%" class="center">
 <span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "patch.html">patch &gt;&gt;</a></span>
+<span class = "next"><a href = "autumn.html">autumn &gt;&gt;</a></span>
 </td>
 
 </tr></table>
