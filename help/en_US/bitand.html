@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>ismissing</title>
+	<title>bitand</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cumsum.html">&lt;&lt; cumsum</a></span>
+<span class="top"><a href="any.html">&lt;&lt; any</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_analysis.html">Data analysis</a></span>
+<span class="top"><a href="chapter_operators.html">Operators</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "issorted.html">issorted &gt;&gt;</a></span>
+<span class = "next"><a href = "bitor.html">bitor &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">ismissing</h1>
+<h1 class="refname">bitand</h1>
 <hr/>
 
-<h3>Check for missing values.</h3>
+<h3>Bit-wise AND</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>tf = ismissing(M)</td>
+		<td>C = bitand(A, B)</td>
+	</tr>
+
+	<tr>
+		<td>C = bitand(A, B, assumedtype)</td>
 	</tr>
 
 </table>
@@ -59,9 +63,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">M</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">a variable</p>
+<p class="para">a variable: double, logical, integer</p>
+</dd>
+
+<dt><span class="term">B</span></dt>
+<dd>
+<p class="para">a variable: double, logical, integer</p>
+</dd>
+
+<dt><span class="term">assumedtype</span></dt>
+<dd>
+<p class="para">'int64', 'int32', 'int16', 'int8', 'uint64', 'uint32', 'uint16' or 'uint8'.</p>
 </dd>
 
 </dl>
@@ -70,9 +84,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">tf</span></dt>
+<dt><span class="term">C</span></dt>
 <dd>
-<p class="para">logical: result of 'ismissing'.</p>
+<p class="para">Bit-wise AND result</p>
 </dd>
 
 </dl>
@@ -82,26 +96,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
-  <p>missing data are defined as:</p>
-  <p><b>NaN</b> for double or single</p>
-  <p><b>missing</b> for string array</p>
-  <p><b>' '</b> for character array</p>
-  <p><b>''</b> for cell of character array</p>
+  <p><b>C = bitand(A, B)</b> returns the bit-wise AND of <b>A</b> and <b>B</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = ["Nel", NaN, "son"];
-ismissing(A)
-B = [1 2 NaN Inf];
-ismissing(B)
-C = 'Nel son'
-ismissing(C)
-D = {'Nel' '' 'son'}
-ismissing(D)
+<code class = "nelson">A = uint16([0 1; 0 1]);
+B = uint16([0 0; 1 1]);
+R = bitand(A, B)
 </code>
 </pre>
 
@@ -109,7 +113,7 @@ ismissing(D)
 <hr/>
 
 <p>
-<a href = "isfinite.html" class = "link">isfinite</a>.</p>
+<a href = "bitor.html" class = "link">bitor</a>, <a href = "bitxor.html" class = "link">bitxor</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -135,15 +139,15 @@ ismissing(D)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="cumsum.html">&lt;&lt; cumsum</a></span>
+<span class="top"><a href="any.html">&lt;&lt; any</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_data_analysis.html">Data analysis</a></span>
+<span class="top"><a href="chapter_operators.html">Operators</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "issorted.html">issorted &gt;&gt;</a></span>
+<span class = "next"><a href = "bitor.html">bitor &gt;&gt;</a></span>
 </td>
 
 </tr></table>

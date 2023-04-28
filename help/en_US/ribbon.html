@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>saveas</title>
+	<title>ribbon</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ribbon.html">&lt;&lt; ribbon</a></span>
+<span class="top"><a href="rgbplot.html">&lt;&lt; rgbplot</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "semilogx.html">semilogx &gt;&gt;</a></span>
+<span class = "next"><a href = "saveas.html">saveas &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">saveas</h1>
+<h1 class="refname">ribbon</h1>
 <hr/>
 
-<h3>Save figure to specific file format.</h3>
+<h3>Ribbon plot.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,23 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>saveas(fig, filename)</td>
+		<td>ribbon(Z)</td>
 	</tr>
 
 	<tr>
-		<td>saveas(fig, filename, formattype)</td>
+		<td>ribbon(Y, Z)</td>
+	</tr>
+
+	<tr>
+		<td>ribbon(Y, Z, width)</td>
+	</tr>
+
+	<tr>
+		<td>ribbon(ax, ...)</td>
+	</tr>
+
+	<tr>
+		<td>s = ribbon(...)</td>
 	</tr>
 
 </table>
@@ -63,19 +75,35 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">fig</span></dt>
+<dt><span class="term">Z</span></dt>
 <dd>
-<p class="para">figure object.</p>
+<p class="para">z-coordinates: vector or matrix.</p>
 </dd>
 
-<dt><span class="term">filename</span></dt>
+<dt><span class="term">Y</span></dt>
 <dd>
-<p class="para">character vector or scalar string: destination filename.</p>
+<p class="para">y-coordinates: vector or matrix.</p>
 </dd>
 
-<dt><span class="term">formattype</span></dt>
+<dt><span class="term">width</span></dt>
 <dd>
-<p class="para">character vector or scalar string: extension filename.</p>
+<p class="para">ribbon width.</p>
+</dd>
+
+<dt><span class="term">ax</span></dt>
+<dd>
+<p class="para">a scalar graphics object value: parent container, specified as a axes.</p>
+</dd>
+
+</dl>
+
+<h3>Output argument</h3>
+<hr/>
+
+<dl>
+<dt><span class="term">s</span></dt>
+<dd>
+<p class="para">a vector of surface objects.</p>
 </dd>
 
 </dl>
@@ -85,55 +113,28 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>saveas</b> save figure to specific file format.</p>
-  <p><b>supported formats</b>:</p>
-  <table style="width:100%">
-    <tr>
-      <th>Option</th>
-      <th>Format</th>
-      <th>File extension</th>
-    </tr>
-    <tr>
-      <td>svg</td>
-      <td>SVG (scalable vector graphics)</td>
-      <td>.svg</td>
-    </tr>
-    <tr>
-      <td>pdf</td>
-      <td>Full page Portable Document Format (PDF) color</td>
-      <td>.pdf</td>
-    </tr>
-    <tr>
-      <td>png</td>
-      <td>PNG 24-bit</td>
-      <td>.png</td>
-    </tr>
-    <tr>
-      <td>jpg</td>
-      <td>JPEG 24-bit</td>
-      <td>.jpg</td>
-    </tr>
-  </table>
+  <p><b>ribbon(Z)</b> plots a 3D ribbon graph based on the matrix Z with the values of Y defining the y-axis of the graph.</p>
+  <p><b>ribbon(Y, Z)</b> plots a 3D ribbon graph based on the matrix Y with the values of Z defining the z-axis of the graph.</p>
+  <p><b>s = ribbon(...)</b> returns a vector of surface objects.</p>
+  <p>Note that Y and Z must have the same size.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">x = -2:0.25:2;
-y = x;
-[X,Y] = meshgrid(x);
-F = X.*exp(-X.^2-Y.^2);
-surf(X,Y,F);
-saveas(gcf(), 'svg-file.svg');
+<code class = "nelson">f = figure();
+Y = peaks(25);
+ribbon(Y)
 </code>
 </pre>
+<img src="ribbon_1_60CAE95.svg" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "gcf.html" class = "link">gcf</a>.</p>
+<a href = "surf.html" class = "link">surf</a>, <a href = "meshgrid.html" class = "link">meshgrid</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -159,7 +160,7 @@ saveas(gcf(), 'svg-file.svg');
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="ribbon.html">&lt;&lt; ribbon</a></span>
+<span class="top"><a href="rgbplot.html">&lt;&lt; rgbplot</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -167,7 +168,7 @@ saveas(gcf(), 'svg-file.svg');
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "semilogx.html">semilogx &gt;&gt;</a></span>
+<span class = "next"><a href = "saveas.html">saveas &gt;&gt;</a></span>
 </td>
 
 </tr></table>
