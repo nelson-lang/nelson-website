@@ -1,8 +1,27 @@
 ## [Overloading](OVERLOADING.md)
 
-Nelson allows to overload all operators available in the interpreter.
+Nelson allows to overload all functions and all operators available in the interpreter.
 
-An example is better than a long text.
+Some examples are better than a long text.
+
+### functions
+
+In this example, we want to change behavior of `gamma` function for `double` type.
+
+Creates a function file '@double/gamma.m'
+
+```matlab
+function r = gamma(A)
+ disp('gamma function overload called.')
+ r = builtin('gamma', A + 100 )
+end
+```
+
+add parent directory of '@double' directory and try to call `gamma` with a `double` or `single` type.
+
+If you want to continue to call standard function, see `builtin` function.
+
+### operators
 
 In this example, we want to create an 'complexObj' i.e an special complex number object.
 
@@ -36,16 +55,16 @@ If you forget the ";" at the end. You have:
 
 ```matlab
 >> o = complexObj(5, 4)
-o =
 
-function complexObj_disp undefined.
+Error:
+Check for incorrect argument data type or missing argument in call to function 'cos'.
 ```
 
-It is normal because when you create an overloaded object, you need to also create dedicated display.
+It is normal because when you create an overloaded object, you need to also create dedicated display (@complexObj/display.m).
 
 ```matlab
-function complexObj_disp(obj)
-  disp('complexObj_disp:')
+function display(obj)
+  disp('complexObj display:')
   disp('real part');
   disp(obj.r);
   disp('imag part');
@@ -56,7 +75,7 @@ end
 and extraction function:
 
 ```matlab
-function r = complexObj_extraction(varargin)
+function r = subsref(varargin)
   obj = varargin{1};
   if varargin{2} == 1
    r = obj.r;
@@ -79,10 +98,10 @@ imag part
      4.0000
 ```
 
-And if you want to add to 'complexObj', you need also to define: 'complexObj_plus_complexObj'
+And if you want to add to 'complexObj', you need also to define: '@complexObj/plus.m'
 
 ```matlab
-function r = complexObj_plus_complexObj(a, b)
+function r = plus(a, b)
   % stupid addition algo.
   R1 = a.r + b.r;
   R2 = a.i + b.i;
@@ -103,5 +122,9 @@ real part
 imag part
      8.0000
 ```
+
+This example is available [here](https://github.com/Nelson-numerical-software/nelson/tree/master/modules/overload/examples/complex)
+
+This syntax
 
 [Previous page](FEATURES.md)
