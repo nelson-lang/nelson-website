@@ -50,10 +50,6 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>C = shortcutand(A, B)</td>
-	</tr>
-
-	<tr>
 		<td>C = A && B</td>
 	</tr>
 
@@ -91,7 +87,7 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>C = shortcutand(A, B)</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
+  <p><b>C = A &amp;&amp; B</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
 
 
 <h3>Example</h3>
@@ -101,8 +97,6 @@ SAME AS NELSON SOFTWARE
 <code class = "nelson">A = [6 8 0; 0 3 89; 15 0 0]
 B = [66 56 0; 11 33 55; -11 0 0]
 C = A && B
-D = shortcutand(B, A)
-C == D
 </code>
 </pre>
 
@@ -110,7 +104,7 @@ C == D
 <hr/>
 
 <p>
-<a href = "and.html" class = "link">and</a>.</p>
+<a href = "and.html" class = "link">and</a>, <a href = "shortcutor.html" class = "link">||</a>.</p>
 
 <h3>History</h3>
 <hr/>
