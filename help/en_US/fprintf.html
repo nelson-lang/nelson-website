@@ -177,6 +177,7 @@ SAME AS NELSON SOFTWARE
       <td>Character vector.</td>
     </tr>
   </table>
+  <p>To display a percent sign, you need to use a double percent sign (%%) in the format string.</p>
 
 
 <h3>Examples</h3>
@@ -204,6 +205,11 @@ for idx = 1 : 100
  fprintf([reverseStr, msg]);
  reverseStr = repmat(sprintf('\b'), 1, length(msg));
 end
+</code>
+</pre>
+<p>Display a percent sign</p>
+<pre>
+<code class = "nelson">fprintf(1, '%d%%.', 95)
 </code>
 </pre>
 
