@@ -1,26 +1,26 @@
 ## [Plot Gallery](PLOT_GALLERY.md)
 
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/flower-patch.jpg">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/patch.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/image_mixed.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/mesh.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/surface.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/butterfly.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/france.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/baboon_rot90.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/bench_plot.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/christmas.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/colormap.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/fractal.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/spy_demo.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/heart.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/surf2.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/cylinder.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/cylinder2.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/tubeplot.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/plot3.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/quiver.png">
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/gallery/sphere.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/flower-patch.jpg">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/patch.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/image_mixed.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/mesh.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/surface.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/butterfly.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/france.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/baboon_rot90.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/bench_plot.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/christmas.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/colormap.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/fractal.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/spy_demo.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/heart.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/surf2.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/cylinder.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/cylinder2.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/tubeplot.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/plot3.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/quiver.png">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/gallery/sphere.png">
 
 3D Animation
 

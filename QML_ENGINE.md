@@ -6,9 +6,9 @@ The QML engine enables nelson programs to display and manipulate graphical conte
   qml_demos % for demonstrations
 ```
 
-![qml_demos screenshot](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml_demos.png "qml_demos")
+![qml_demos screenshot](https://github.com/nelson-lang/nelson-website/raw/master/images/qml_demos.png "qml_demos")
 
-![checkboxes screenshot](https://github.com/Nelson-numerical-software/nelson-website/blob/master/images/demo_checkboxes.png "checkboxes demo")
+![checkboxes screenshot](https://github.com/nelson-lang/nelson-website/blob/master/images/demo_checkboxes.png "checkboxes demo")
 
 ### Interacting with Nelson
 

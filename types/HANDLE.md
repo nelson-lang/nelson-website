@@ -78,7 +78,7 @@ a =
 
 ```
 
-![hello QML](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/hello_qml.png "hello")
+![hello QML](https://github.com/nelson-lang/nelson-website/raw/master/images/hello_qml.png "hello")
 
 With overloading, many basic functions come available for handles:
 
@@ -373,17 +373,17 @@ button_child =
 
 The result:
 
-![hello QML modified](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/hello_qml_modified.png "hello modified")
+![hello QML modified](https://github.com/nelson-lang/nelson-website/raw/master/images/hello_qml_modified.png "hello modified")
 
 Others examples about QML capabilities:
 
 Advanced example with QML:
-![Advanced example with QML](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml-nelson-handle-properties.png "Advanced example with QML")
+![Advanced example with QML](https://github.com/nelson-lang/nelson-website/raw/master/images/qml-nelson-handle-properties.png "Advanced example with QML")
 
 Nelson interaction with QML and D3.js:
-![Nelson interaction with QML and D3.js](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml-nelson-d3.png "Nelson interaction with QML and D3.js")
+![Nelson interaction with QML and D3.js](https://github.com/nelson-lang/nelson-website/raw/master/images/qml-nelson-d3.png "Nelson interaction with QML and D3.js")
 
 Nelson interaction with QML and QCharts.js:
-![Nelson interaction with QML and QCharts.js](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/qml-nelson-QCharts.png "Nelson interaction with QML and QCharts.js")
+![Nelson interaction with QML and QCharts.js](https://github.com/nelson-lang/nelson-website/raw/master/images/qml-nelson-QCharts.png "Nelson interaction with QML and QCharts.js")
 
 [Previous page](../TYPES.md)

@@ -22,8 +22,8 @@ s = webread(url, options);
 s.data
 ```
 
-![Get data from Netatmo weather station](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/netatmo.png "Netatmo")
+![Get data from Netatmo weather station](https://github.com/nelson-lang/nelson-website/raw/master/images/netatmo.png "Netatmo")
 
-![Send a message to Slack](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/slack.png "Slack")
+![Send a message to Slack](https://github.com/nelson-lang/nelson-website/raw/master/images/slack.png "Slack")
 
 [Previous page](FEATURES.md)

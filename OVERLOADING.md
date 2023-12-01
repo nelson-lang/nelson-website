@@ -123,7 +123,7 @@ imag part
      8.0000
 ```
 
-This example is available [here](https://github.com/Nelson-numerical-software/nelson/tree/master/modules/overload/examples/complex)
+This example is available [here](https://github.com/nelson-lang/nelson/tree/master/modules/overload/examples/complex)
 
 This syntax
 

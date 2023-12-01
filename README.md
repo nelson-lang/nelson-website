@@ -3,9 +3,9 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d5f82474da134d979b472fa5fbe7b5b9)](https://www.codacy.com/gh/Nelson-numerical-software/nelson/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Nelson-numerical-software/nelson&utm_campaign=Badge_Grade)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/602/badge)](https://bestpractices.coreinfrastructure.org/projects/602)
 
-[![Build Status](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)](https://github.com/Nelson-numerical-software/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)
+[![Build Status](https://github.com/nelson-lang/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)](https://github.com/nelson-lang/nelson/workflows/C%2FC%2B%2B%20CI/badge.svg)
 
-[![GitHub license](https://img.shields.io/badge/license-LGPL3.0-blue.svg)](https://github.com/Nelson-numerical-software/nelson/blob/master/lgpl-3.0.md)
+[![GitHub license](https://img.shields.io/badge/license-LGPL3.0-blue.svg)](https://github.com/nelson-lang/nelson/blob/master/lgpl-3.0.md)
 [![CLA assistant](https://cla-assistant.io/readme/badge/Nelson-numerical-software/nelson)](https://cla-assistant.io/Nelson-numerical-software/nelson)
 [![Open Hub](https://img.shields.io/badge/Open-Hub-blue.svg)](https://www.openhub.net/p/nelson-interpreter)
 [![Weblate](https://img.shields.io/badge/Weblate--green.svg)](https://hosted.weblate.org/projects/nelson/)
@@ -22,7 +22,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 
 ## [Screenshots](SCREENSHOTS.md)
 
-![Nelson](https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/Nelson-windows.png "Nelson")
+![Nelson](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-windows.png "Nelson")
 
 ## [Features](FEATURES.md)
 
@@ -52,25 +52,25 @@ Nelson has been developed to be an open/modular system where an user can define 
 - [validators functions](VALIDATORS.md),
 - [Code editor](CODE_EDITOR.md).
 
-## [Sources](https://github.com/Nelson-numerical-software/nelson)
+## [Sources](https://github.com/nelson-lang/nelson)
 
-## [Download](https://github.com/Nelson-numerical-software/nelson/releases)
+## [Download](https://github.com/nelson-lang/nelson/releases)
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/nelson)
 
-[Latest Windows Installer](https://github.com/Nelson-numerical-software/nelson/releases)
+[Latest Windows Installer](https://github.com/nelson-lang/nelson/releases)
 
 [Get it from the Windows Package Manager](https://winstall.app/apps/NelsonNumericalSoftware.Nelson)
 
 [Get it from the Chocolatey Package Manager](https://community.chocolatey.org/packages/nelson)
 
-## [Documentation online](https://nelson-numerical-software.github.io/nelson-website/help/en_US/index.html)
+## [Documentation online](https://nelson-lang.github.io/nelson-website/help/en_US/index.html)
 
-## [Issues](https://github.com/Nelson-numerical-software/nelson/issues)
+## [Issues](https://github.com/nelson-lang/nelson/issues)
 
 ## Tested and supported platforms
 
-Systems with ✓ downloads are available on [downloads](https://github.com/Nelson-numerical-software/nelson/releases) page.
+Systems with ✓ downloads are available on [downloads](https://github.com/nelson-lang/nelson/releases) page.
 
 Systems with ✓ for CI are tested with continuous integration for every commit.
 

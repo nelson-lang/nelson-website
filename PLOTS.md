@@ -2,7 +2,7 @@
 
 Nelson provides graphics functions to visualize and export data:
 
-You will find all graphical functions documentation: [HERE](https://nelson-numerical-software.github.io/nelson-website/help/en_US/chapter_graphics.html)
+You will find all graphical functions documentation: [HERE](https://nelson-lang.github.io/nelson-website/help/en_US/chapter_graphics.html)
 
 Find more plots in [Plot Gallery](PLOT_GALLERY.md)
 
@@ -20,7 +20,7 @@ axis equal
 legend(_('Circle'), _('Lissajous curve'))
 ```
 
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-1.svg">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/plot-2D-1.svg">
 
 #### Subplot
 
@@ -41,7 +41,7 @@ plot(t, cos(t));
 hold off
 ```
 
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-2D-2.svg">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/plot-2D-2.svg">
 
 #### Animate a plot
 
@@ -77,6 +77,6 @@ axis equal;
 colormap(autumn)
 ```
 
-<img src="https://github.com/Nelson-numerical-software/nelson-website/raw/master/images/plot-3D-1.svg">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/plot-3D-1.svg">
 
 [Previous page](FEATURES.md)

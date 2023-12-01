@@ -1,6 +1,6 @@
 ## data structures
 
-### [cell](https://nelson-numerical-software.github.io/nelson-website/help/en_US/cell.html)
+### [cell](https://nelson-lang.github.io/nelson-website/help/en_US/cell.html)
 
 ```matlab
 >> ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
@@ -14,7 +14,7 @@ ce =
 
 ```
 
-### [struct](https://nelson-numerical-software.github.io/nelson-website/help/en_US/struct.html)
+### [struct](https://nelson-lang.github.io/nelson-website/help/en_US/struct.html)
 
 ```matlab
 >> names = {'Pierre', 'Anna', 'Roberto'}

@@ -11,6 +11,6 @@ profile('off')
 profsave()
 ```
 
-It generates a html report available [here](https://nelson-numerical-software.github.io/nelson-website/profile_result/index.html)
+It generates a html report available [here](https://nelson-lang.github.io/nelson-website/profile_result/index.html)
 
 [Previous page](FEATURES.md)

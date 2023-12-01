@@ -19,6 +19,6 @@ r = myFunction([1 2], 2)
 r = myFunction(1, [3 2])
 ```
 
-See help about [validations function](https://nelson-numerical-software.github.io/nelson-website/help/en_US/chapter_validators.html)
+See help about [validations function](https://nelson-lang.github.io/nelson-website/help/en_US/chapter_validators.html)
 
 [Previous page](FEATURES.md)
