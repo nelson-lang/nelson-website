@@ -26,6 +26,8 @@
 
 ## [Subroutine Library in Systems and Control Theory](SLICOT.md)
 
+## [Control system module](CONTROL.md)
+
 ## [QML engine](QML_ENGINE.md)
 
 ## [COM interface](COM_INTERFACE.md)

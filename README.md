@@ -40,6 +40,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 - [HDF5 High Level functions I/O](HDF5.md),
 - [MAT-Files functions I/O](MATIO.md)
 - [Subroutine Library in Systems and Control Theory](SLICOT.md),
+- [Control system module](CONTROL.md),
 - [QML engine](QML_ENGINE.md),
 - [COM interface](COM_INTERFACE.md),
 - [Message Passing Interface](MPI.md),
