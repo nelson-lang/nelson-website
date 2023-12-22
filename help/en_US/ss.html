@@ -25,15 +25,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="pole.html">&lt;&lt; pole</a></span>
+<span class="top"><a href="series.html">&lt;&lt; series</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_control_system.html">Control System</a></span>
+<span class="top"><a href="chapter_control_system.html">Control System functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "tf.html">tf &gt;&gt;</a></span>
+<span class = "next"><a href = "ss2tf.html">ss2tf &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -59,6 +59,10 @@ SAME AS NELSON SOFTWARE
 
 	<tr>
 		<td>sys = ss(D)</td>
+	</tr>
+
+	<tr>
+		<td>sys = ss(sysIn)</td>
 	</tr>
 
 </table>
@@ -92,6 +96,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">Sample time: scalar.</p>
 </dd>
 
+<dt><span class="term">sysIn</span></dt>
+<dd>
+<p class="para">SISO LTI model.</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -114,7 +123,7 @@ SAME AS NELSON SOFTWARE
   <p>This model is represented as <b>sys = ss(A, B, C, D)</b>.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
@@ -123,6 +132,14 @@ B = [5; 0];
 C = [0, 1];
 D = 0;
 sys = ss(A, B, C, D)
+</code>
+</pre>
+<pre>
+<code class = "nelson">num = [3 4];
+den = [3 1 5];
+Ts = 0.2;
+sysIn = tf(num, den, Ts)
+sys = ss(sysIn)
 </code>
 </pre>
 
@@ -156,15 +173,15 @@ sys = ss(A, B, C, D)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="pole.html">&lt;&lt; pole</a></span>
+<span class="top"><a href="series.html">&lt;&lt; series</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_control_system.html">Control System</a></span>
+<span class="top"><a href="chapter_control_system.html">Control System functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "tf.html">tf &gt;&gt;</a></span>
+<span class = "next"><a href = "ss2tf.html">ss2tf &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -24,12 +24,16 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="acker.html">&lt;&lt; acker</a></span>
+</td>
+
 <td width="40%" class="center">
-<span class="top"><a href="chapter_string.html">String type</a></span>
+<span class="top"><a href="chapter_control_system.html">Control System functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "blanks.html">blanks &gt;&gt;</a></span>
+<span class = "next"><a href = "augstate.html">augstate &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -38,7 +42,7 @@ SAME AS NELSON SOFTWARE
 <h1 class="refname">append</h1>
 <hr/>
 
-<h3>combines strings horizontally.</h3>
+<h3>Appends the inputs and outputs of the two models.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -46,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = append(s1, s2, ..., sN)</td>
+		<td>sys = append(sys1, sys2, ..., sysN)</td>
 	</tr>
 
 </table>
@@ -55,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">s1, s2, ..., sN</span></dt>
+<dt><span class="term">sys1, sys2, ..., sysN</span></dt>
 <dd>
-<p class="para">a string, string array or cell of strings.</p>
+<p class="para">LTI models.</p>
 </dd>
 
 </dl>
@@ -66,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">sys</span></dt>
 <dd>
-<p class="para">a string, string array or cell of strings.</p>
+<p class="para">LTI model.</p>
 </dd>
 
 </dl>
@@ -78,21 +82,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>strcat</b> combines strings horizontally.</p>
-  <p>If all inputs are character arrays, then <b>res</b> is a character array.</p>
-  <p>If any input is a string array, then the <b>res</b> is a string array.</p>
-  <p>If any input is a cell array, and none are string arrays, then <b>res</b> is a cell array of character vectors.</p>
-  <p><b>append</b> does not remove trailing white space.</p>
+  <p><b>sys = append(sys1, sys2, ..., sysN)</b> combines the inputs and outputs of models <b>sys1</b> through <b>sysN</b>, creating an augmented model represented by <b>sys</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">append("Nelson", 'nelSon')
-A = {'abcde','fghi'};
-B = {'jkl','mn'};
-C = append(A, B)
+<code class = "nelson">sys1 = tf(1,[1 0]);
+sys2 = tf([1 -1], [4 2]);
+sys = append(sys1, 10, sys2)
 </code>
 </pre>
 
@@ -100,7 +99,7 @@ C = append(A, B)
 <hr/>
 
 <p>
-<a href = "strcat.html" class = "link">strcat</a>.</p>
+<a href = "feedback.html" class = "link">feedback</a>, <a href = "series.html" class = "link">series</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -125,12 +124,16 @@ C = append(A, B)
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
+<td width="30%" class="previous">
+<span class="top"><a href="acker.html">&lt;&lt; acker</a></span>
+</td>
+
 <td width="40%" class="center">
-<span class="top"><a href="chapter_string.html">String type</a></span>
+<span class="top"><a href="chapter_control_system.html">Control System functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "blanks.html">blanks &gt;&gt;</a></span>
+<span class = "next"><a href = "augstate.html">augstate &gt;&gt;</a></span>
 </td>
 
 </tr></table>
