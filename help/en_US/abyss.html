@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>logm</title>
+	<title>abyss</title>
 
 </head>
 <body>
@@ -24,25 +24,21 @@ SAME AS NELSON SOFTWARE
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="kron.html">&lt;&lt; kron</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">Linear algebra</a></span>
+<span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "lu.html">lu &gt;&gt;</a></span>
+<span class = "next"><a href = "ancestor.html">ancestor &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">logm</h1>
+<h1 class="refname">abyss</h1>
 <hr/>
 
-<h3>Computes the matrix logarithm of a square matrix.</h3>
+<h3>Abyss colormap array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>res = logm(x)</td>
+		<td>c = abyss</td>
+	</tr>
+
+	<tr>
+		<td>c = abyss(m)</td>
 	</tr>
 
 </table>
@@ -59,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">x</span></dt>
+<dt><span class="term">m</span></dt>
 <dd>
-<p class="para">a numeric value: scalar or square matrix (double or single)</p>
+<p class="para">a scalar integer value: Number of colors (256 as default value).</p>
 </dd>
 
 </dl>
@@ -70,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">res</span></dt>
+<dt><span class="term">c</span></dt>
 <dd>
-<p class="para">a numeric value: a square matrix</p>
+<p class="para">Abyss colormap array.</p>
 </dd>
 
 </dl>
@@ -82,19 +82,25 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>expm(x)</b> computes the matrix logarithm of x.</p>
-  <p>The computation is performed by first block-diagonalizing x and then applying a Pade approximation on each block.</p>
+  <p><b>abyss</b> returns the colormap with abyss colors.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">A = eye(3, 3);
-res = logm(A)
-res = logm(A+i)
+<code class = "nelson">f = figure();
+surf(peaks);
+colormap('abyss');
 </code>
 </pre>
+<img src="abyss_60679900.svg" align="middle"/>
+
+<h3>See also</h3>
+<hr/>
+
+<p>
+<a href = "colormap.html" class = "link">colormap</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -119,16 +125,12 @@ res = logm(A+i)
 <div class = "manualnavbar">
 <table width = "100%"><tr>
 
-<td width="30%" class="previous">
-<span class="top"><a href="kron.html">&lt;&lt; kron</a></span>
-</td>
-
 <td width="40%" class="center">
-<span class="top"><a href="chapter_linear_algebra.html">Linear algebra</a></span>
+<span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "lu.html">lu &gt;&gt;</a></span>
+<span class = "next"><a href = "ancestor.html">ancestor &gt;&gt;</a></span>
 </td>
 
 </tr></table>
