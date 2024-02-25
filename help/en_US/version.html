@@ -93,6 +93,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">a string to get release description</p>
 </dd>
 
+<dt><span class="term">'-semantic'</span></dt>
+<dd>
+<p class="para">a string to get semantic version</p>
+</dd>
+
 <dt><span class="term">'-release'</span></dt>
 <dd>
 <p class="para">a string to get release number</p>
@@ -184,7 +189,11 @@ SAME AS NELSON SOFTWARE
 </code>
 </pre>
 <pre>
-<code class = "nelson">[ver_major, ver_minor, ver_maintenance, ver_build] = version('-number')
+<code class = "nelson">ver_version_vector] = version('-semantic')
+</code>
+</pre>
+<pre>
+<code class = "nelson">ver_version_vector = version('-number')
 </code>
 </pre>
 <pre>
@@ -213,6 +222,11 @@ SAME AS NELSON SOFTWARE
 <tr>
 	<td>1.0.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.2.0</td>
+	<td>`-semantic` option added.</td>
 </tr>
 
 </table>

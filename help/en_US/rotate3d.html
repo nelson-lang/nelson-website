@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>zlim</title>
+	<title>rotate3d</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="zlabel.html">&lt;&lt; zlabel</a></span>
+<span class="top"><a href="ribbon.html">&lt;&lt; ribbon</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "zoom.html">zoom &gt;&gt;</a></span>
+<span class = "next"><a href = "saveas.html">saveas &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">zlim</h1>
+<h1 class="refname">rotate3d</h1>
 <hr/>
 
-<h3>set or get z-axis limits.</h3>
+<h3>Enable rotate mode.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,27 +50,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>lims = zlim()</td>
+		<td>rotate3d</td>
 	</tr>
 
 	<tr>
-		<td>zlim([zmin, zmax])</td>
+		<td>rotate3d option</td>
 	</tr>
 
 	<tr>
-		<td>zlim('auto')</td>
+		<td>rotate3d(fig, ...)</td>
 	</tr>
 
 	<tr>
-		<td>zlim('manual')</td>
-	</tr>
-
-	<tr>
-		<td>m = zlim('mode')</td>
-	</tr>
-
-	<tr>
-		<td>zlim(ax, ...)</td>
+		<td>rotate3d(ax, ...)</td>
 	</tr>
 
 </table>
@@ -79,24 +71,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">[zmin, zmax]</span></dt>
+<dt><span class="term">option</span></dt>
 <dd>
-<p class="para">z-coordinates: vector or matrix.</p>
+<p class="para">string: 'on', 'off' or 'toggle'.</p>
 </dd>
 
-<dt><span class="term">'auto'</span></dt>
+<dt><span class="term">fig</span></dt>
 <dd>
-<p class="para">enable automatic limit selection.</p>
-</dd>
-
-<dt><span class="term">'manual'</span></dt>
-<dd>
-<p class="para">freeze the z-axis limits at their current value.</p>
-</dd>
-
-<dt><span class="term">'mode'</span></dt>
-<dd>
-<p class="para">returns the current z-axis limits mode.</p>
+<p class="para">Figure object: Target figure</p>
 </dd>
 
 <dt><span class="term">ax</span></dt>
@@ -106,39 +88,26 @@ SAME AS NELSON SOFTWARE
 
 </dl>
 
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">lims</span></dt>
-<dd>
-<p class="para">two-element vector: [zmin, zmax]</p>
-</dd>
-
-<dt><span class="term">m</span></dt>
-<dd>
-<p class="para">'auto' or 'manual'.</p>
-</dd>
-
-</dl>
-
 <h3>Description</h3>
 <hr/>
 
 <p></p>
 
-  <p><b>zlim</b> get or set the limits of the z-axis for the current plot.</p>
+  <p>Utilize rotate mode to interactively rotate the 3-D view of the axes for data exploration. Enable or disable rotate mode and configure additional basic options using the rotate3d function.</p>
+  <p><b>rotate3d option</b> establishes the rotate mode for all axes within the current figure. For instance, rotate3d on activates rotate mode, while rotate3d off deactivates it.</p>
+  <p/>
+  <p>When rotate mode is enabled, you can adjust the view of axes using the cursor or the keyboard:</p>
+  <p/>
+  <p>Cursor: Click and drag within the axes.</p>
+  <p>Keyboard: Use the right arrow (→) or left arrow (←) keys to adjust azimuth, and the up arrow (↑) or down arrow (↓) keys to modify elevation.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">x = linspace(-1, 1);
-y = sin(2*pi*x);
-plot(x, y);
-lim = zlim()
-m = zlim('mode')
+<code class = "nelson">surf(peaks)
+rotate3d
 </code>
 </pre>
 
@@ -146,7 +115,7 @@ m = zlim('mode')
 <hr/>
 
 <p>
-<a href = "axes.html" class = "link">axes</a>, <a href = "axis.html" class = "link">axis</a>.</p>
+<a href = "zoom.html" class = "link">zoom</a>, <a href = "pan.html" class = "link">pan</a>, <a href = "view.html" class = "link">view</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -157,7 +126,7 @@ m = zlim('mode')
 	<th>Description</th>
 </tr>
 <tr>
-	<td>1.0.0</td>
+	<td>1.2.0</td>
 	<td>initial version</td>
 </tr>
 
@@ -172,7 +141,7 @@ m = zlim('mode')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="zlabel.html">&lt;&lt; zlabel</a></span>
+<span class="top"><a href="ribbon.html">&lt;&lt; ribbon</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -180,7 +149,7 @@ m = zlim('mode')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "zoom.html">zoom &gt;&gt;</a></span>
+<span class = "next"><a href = "saveas.html">saveas &gt;&gt;</a></span>
 </td>
 
 </tr></table>
