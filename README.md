@@ -31,7 +31,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 - [Overloading](OVERLOADING.md),
 - [Modularity](MODULARITY.md),
 - [External modules](EXTERNAL_MODULE.md),
-- [Build C/C++ code on the fly](EXTERNAL_MODULE.md),
+- [Build C/C++ code on the fly](BUILD_C_CPP_ON_FLY.md),
 - [C MEX API support](MEX.md),
 - [Nelson Engine API for C (compatible with MEX Engine)](MEX_ENGINE.md),
 - [Foreign Function Interface](FFI.md),
