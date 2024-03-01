@@ -10,7 +10,7 @@
 
 ## [External modules](EXTERNAL_MODULE.md)
 
-## [Build C/C++ code on the fly](EXTERNAL_MODULE.md)
+## [Build C/C++ code on the fly](BUILD_C_CPP_ON_FLY.md)
 
 ## [C MEX API support](MEX.md)
 
