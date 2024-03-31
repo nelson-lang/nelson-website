@@ -29,11 +29,14 @@ Combining the strengths of Nelson’s digital capabilities with Python’s vast 
 
 You can directly execute Python statements in Nelson using the `pyrun` function.
 
-```Nelson
+```matlab
 
-my_liste_nelson = pyrun("my_list = ['N','el','Fils']", "my_list")
+my_list_nelson = pyrun("my_list = ['N','el','Son']", "my_list")
 
 ```
 
 In conclusion, calling Python from Nelson offers a powerful synergy that combines the strengths of both platforms.
-Whether accessing specialized libraries, prototyping algorithms, or fostering collaboration, integrating Python into Nelson workflows can improve productivity and open up new possibilities for scient
+
+Whether accessing specialized libraries, prototyping algorithms, or fostering collaboration, integrating Python into Nelson workflows can improve productivity and open up new possibilities for scientific computing and data analysis.
+
+[Previous page](FEATURES.md)
