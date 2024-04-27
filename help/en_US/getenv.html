@@ -61,7 +61,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">env_name</span></dt>
 <dd>
-<p class="para">a string: environment variable name.</p>
+<p class="para">string scalar, character vector, string array, cell array of character vectors: environment variable name.</p>
 </dd>
 
 </dl>
@@ -72,7 +72,7 @@ SAME AS NELSON SOFTWARE
 <dl>
 <dt><span class="term">s</span></dt>
 <dd>
-<p class="para">a string: the environment variable value.</p>
+<p class="para">string scalar, character vector, string array, cell array of character vectors: the environment variable value.</p>
 </dd>
 
 </dl>
@@ -84,6 +84,8 @@ SAME AS NELSON SOFTWARE
 
   <p><b>getenv</b> returns the value of an environment variable if it exists.</p>
   <p>If the environment variable does not exist, it will return ''.</p>
+  <p>If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.</p>
+  <p>If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.</p>
 
 
 <h3>Example</h3>
@@ -92,6 +94,8 @@ SAME AS NELSON SOFTWARE
 <pre>
 <code class = "nelson">getenv('OS')
 getenv('myenvvar')
+getenv(["PATH"; "OS"])
+getenv({'PATH'; 'OS'})
 </code>
 </pre>
 
@@ -112,6 +116,11 @@ getenv('myenvvar')
 <tr>
 	<td>1.0.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.4.0</td>
+	<td>Retrieve the values of several environment variables.</td>
 </tr>
 
 </table>

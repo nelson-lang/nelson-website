@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>isfile</title>
+	<title>skip_testsuite</title>
 
 </head>
 <body>
@@ -25,24 +25,20 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isdir.html">&lt;&lt; isdir</a></span>
+<span class="top"><a href="test_run.html">&lt;&lt; test_run</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_files_folders_functions.html">Files and folders functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "isfolder.html">isfolder &gt;&gt;</a></span>
+<span class="top"><a href="chapter_tests_manager.html">Tests manager</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">isfile</h1>
+<h1 class="refname">skip_testsuite</h1>
 <hr/>
 
-<h3>Returns true is the input argument is a file.</h3>
+<h3>Skip test suite on condition</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +46,19 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>r = isfile(name)</td>
+		<td>skip_testsuite()</td>
+	</tr>
+
+	<tr>
+		<td>skip_testsuite(reason)</td>
+	</tr>
+
+	<tr>
+		<td>skip_testsuite(condition)</td>
+	</tr>
+
+	<tr>
+		<td>skip_testsuite(condition, reason)</td>
 	</tr>
 
 </table>
@@ -59,20 +67,14 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">name</span></dt>
+<dt><span class="term">condition</span></dt>
 <dd>
-<p class="para">a string: filename to check.</p>
+<p class="para">logical: true (default) or false</p>
 </dd>
 
-</dl>
-
-<h3>Output argument</h3>
-<hr/>
-
-<dl>
-<dt><span class="term">r</span></dt>
+<dt><span class="term">reason</span></dt>
 <dd>
-<p class="para">a logical: true if it is a file.</p>
+<p class="para">a string: reason to skip test suite</p>
 </dd>
 
 </dl>
@@ -82,15 +84,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>isfile(name)</b> returns <b>true</b> if <b>name</b> is a file.</p>
+  <p>The <b>skip_testsuite</b> function allows you to skip a test suite based on a specified condition.</p>
+  <p><b>condition</b>: A boolean expression that determines whether to skip the test suite. If <b>condition</b> evaluates to <b>true</b>, the test suite will be skipped.</p>
+  <p><b>reason</b>: A string explaining the reason for skipping the test suite. This parameter is useful for providing context to other developers or yourself in case the test suite is skipped.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">isfile(nelsonroot())
-isfile([nelsonroot(), '/etc/finish.m'])
+<code class = "nelson">skip_testsuite(true, 'Test skipped')
 </code>
 </pre>
 
@@ -98,7 +101,7 @@ isfile([nelsonroot(), '/etc/finish.m'])
 <hr/>
 
 <p>
-<a href = "mkdir.html" class = "link">mkdir</a>, <a href = "isfolder.html" class = "link">isfolder</a>.</p>
+<a href = "test_run.html" class = "link">test_run</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -109,13 +112,8 @@ isfile([nelsonroot(), '/etc/finish.m'])
 	<th>Description</th>
 </tr>
 <tr>
-	<td>1.0.0</td>
-	<td>initial version</td>
-</tr>
-
-<tr>
 	<td>1.4.0</td>
-	<td>input arguments support scalar string array type</td>
+	<td>initial version</td>
 </tr>
 
 </table>
@@ -129,15 +127,11 @@ isfile([nelsonroot(), '/etc/finish.m'])
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="isdir.html">&lt;&lt; isdir</a></span>
+<span class="top"><a href="test_run.html">&lt;&lt; test_run</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_files_folders_functions.html">Files and folders functions</a></span>
-</td>
-
-<td width = "30%" class = "next">
-<span class = "next"><a href = "isfolder.html">isfolder &gt;&gt;</a></span>
+<span class="top"><a href="chapter_tests_manager.html">Tests manager</a></span>
 </td>
 
 </tr></table>
