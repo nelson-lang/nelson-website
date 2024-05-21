@@ -44,4 +44,28 @@ st =
 
 ```
 
+### [dictionary](https://nelson-lang.github.io/nelson-website/help/en_US/dictionary.html)
+
+```matlab
+>> names = {'Pierre', 'Anna', 'Roberto'};
+values =  [45, 42, 13];
+d = dictionary(values, names)
+
+d =
+
+  dictionary (double ⟼ cell) with 3 entries:
+
+  45 ⟼ {'Pierre'}
+  42 ⟼ {'Anna'}
+  13 ⟼ {'Roberto'}
+
+>> d(42)
+
+ans =
+
+  1×1 cell array
+
+    {'Anna'}
+```
+
 [Previous page](../TYPES.md)
