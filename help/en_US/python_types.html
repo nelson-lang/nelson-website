@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="pyrunfile.html">&lt;&lt; pyrunfile</a></span>
+<span class="top"><a href="python_overload.html">&lt;&lt; Python operators</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -296,7 +296,7 @@ SAME AS NELSON SOFTWARE
   <p>Nelson incorporates this Python buffer protocol for its arrays.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
@@ -304,12 +304,21 @@ SAME AS NELSON SOFTWARE
 R.double()
 </code>
 </pre>
+<p>dictionary conversion nelson -- python</p>
+<pre>
+<code class = "nelson">wheels = [1 2 3];
+names = ["Monocycle" "Bicycle" "Tricycle"];
+d = dictionary(wheels, names)
+R = pyrun("A = d", "A", 'd', d)
+dictionary(R)
+</code>
+</pre>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "pyrun.html" class = "link">pyrun</a>.</p>
+<a href = "pyrun.html" class = "link">pyrun</a>, <a href = "dictionary.html" class = "link">dictionary</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -335,7 +344,7 @@ R.double()
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="pyrunfile.html">&lt;&lt; pyrunfile</a></span>
+<span class="top"><a href="python_overload.html">&lt;&lt; Python operators</a></span>
 </td>
 
 <td width="40%" class="center">
