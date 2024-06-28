@@ -57,6 +57,10 @@ SAME AS NELSON SOFTWARE
 		<td>R = any(M, dim)</td>
 	</tr>
 
+	<tr>
+		<td>R = any(M, 'all')</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -71,6 +75,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">dim</span></dt>
 <dd>
 <p class="para">a integer value: dimension along it works.</p>
+</dd>
+
+<dt><span class="term">'all'</span></dt>
+<dd>
+<p class="para">tests over all elements of M.</p>
 </dd>
 
 </dl>
@@ -120,6 +129,11 @@ any([33, 22; 11, 0], 2)
 <tr>
 	<td>1.0.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.6.0</td>
+	<td>manages input argument 'all'</td>
 </tr>
 
 </table>

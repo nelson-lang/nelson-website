@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>angle</title>
+	<title>allfinite</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="allfinite.html">&lt;&lt; allfinite</a></span>
+<span class="top"><a href="abs.html">&lt;&lt; abs</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "base2dec.html">base2dec &gt;&gt;</a></span>
+<span class = "next"><a href = "angle.html">angle &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">angle</h1>
+<h1 class="refname">allfinite</h1>
 <hr/>
 
-<h3>Phase angle</h3>
+<h3>Check if all array elements are finite.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>R = angle(Z)</td>
+		<td>tf = allfinite(M)</td>
 	</tr>
 
 </table>
@@ -59,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">Z</span></dt>
+<dt><span class="term">M</span></dt>
 <dd>
-<p class="para">a variable (double, single, complex)</p>
+<p class="para">a variable</p>
 </dd>
 
 </dl>
@@ -70,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">R</span></dt>
+<dt><span class="term">tf</span></dt>
 <dd>
-<p class="para">result of angle function.</p>
+<p class="para">logical: result of 'allfinite'.</p>
 </dd>
 
 </dl>
@@ -82,15 +82,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>angle</b> computes the phase angle, equivalent to <b>atan2(imag(Z), real(Z))</b>.</p>
+  <p><b>allfinite</b> returns a logical scalar which is true where elements of M are all finite values.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">x = [1+i,-i;i,2i];
-r = angle(x)
+<code class = "nelson">X = sparse([1 2 NaN 3 0 Inf 0 4]);
+R = allfinite(X)
+R2 = isfinite(X)
 </code>
 </pre>
 
@@ -98,7 +99,7 @@ r = angle(x)
 <hr/>
 
 <p>
-<a href = "atan2.html" class = "link">atan2</a>.</p>
+<a href = "isfinite.html" class = "link">isfinite</a>, <a href = "isnan.html" class = "link">isnan</a>, <a href = "all.html" class = "link">all</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -109,7 +110,7 @@ r = angle(x)
 	<th>Description</th>
 </tr>
 <tr>
-	<td>1.0.0</td>
+	<td>1.6.0</td>
 	<td>initial version</td>
 </tr>
 
@@ -124,7 +125,7 @@ r = angle(x)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="allfinite.html">&lt;&lt; allfinite</a></span>
+<span class="top"><a href="abs.html">&lt;&lt; abs</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -132,7 +133,7 @@ r = angle(x)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "base2dec.html">base2dec &gt;&gt;</a></span>
+<span class = "next"><a href = "angle.html">angle &gt;&gt;</a></span>
 </td>
 
 </tr></table>
