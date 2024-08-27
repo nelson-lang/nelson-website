@@ -134,7 +134,11 @@ SAME AS NELSON SOFTWARE
   <p><b>XData</b> x values: vector, [0 1] (default).</p>
   <p><b>YData</b> y values: vector, [0 1] (default).</p>
   <p><b>ZData</b> z values: vector, [] (default).</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
   <p/>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 
 <h3>Examples</h3>
@@ -187,6 +191,16 @@ view(3)
 <tr>
 	<td>1.0.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.7.0</td>
+	<td>CreateFcn, DeleteFcn callback added.</td>
+</tr>
+
+<tr>
+	<td>--</td>
+	<td>BeingDeleted property added.</td>
 </tr>
 
 </table>

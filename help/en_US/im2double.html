@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>hot</title>
+	<title>im2double</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hold.html">&lt;&lt; hold</a></span>
+<span class="top"><a href="hot.html">&lt;&lt; hot</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "im2double.html">im2double &gt;&gt;</a></span>
+<span class = "next"><a href = "image.html">image &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">hot</h1>
+<h1 class="refname">im2double</h1>
 <hr/>
 
-<h3>Hot colormap array.</h3>
+<h3>Convert image to double precision.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>c = hot</td>
+		<td>IM = im2double(I)</td>
 	</tr>
 
 	<tr>
-		<td>c = hot(m)</td>
+		<td>IM = im2double(I,'indexed')</td>
 	</tr>
 
 </table>
@@ -63,9 +63,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">m</span></dt>
+<dt><span class="term">I</span></dt>
 <dd>
-<p class="para">a scalar integer value: Number of colors (256 as default value).</p>
+<p class="para">Input image: scalar, vector, matrix or multidimensional array with type single, double, int16, uint8, uint16 or logical.</p>
 </dd>
 
 </dl>
@@ -74,9 +74,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">c</span></dt>
+<dt><span class="term">IM</span></dt>
 <dd>
-<p class="para">Hot colormap array.</p>
+<p class="para">The converted image is returned as a numeric array with the same dimensions as the input image I with type double.</p>
 </dd>
 
 </dl>
@@ -86,25 +86,25 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>hot</b> returns the colormap with hot colors.</p>
+  <p><b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting, <b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1].</p>
+  <p>For an indexed image, <b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">f = figure();
-surf(peaks);
-colormap('hot');
+<code class = "nelson">I = reshape(uint8(linspace(1,255,25)),[5 5]);
+IM1 = im2double(I)
+IM2 = im2double(I, 'indexed')
 </code>
 </pre>
-<img src="hot_9A86D0E9.svg" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "colormap.html" class = "link">colormap</a>.</p>
+<a href = "double.html" class = "link">double</a>, <a href = "imread.html" class = "link">imread</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -130,7 +130,7 @@ colormap('hot');
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hold.html">&lt;&lt; hold</a></span>
+<span class="top"><a href="hot.html">&lt;&lt; hot</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -138,7 +138,7 @@ colormap('hot');
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "im2double.html">im2double &gt;&gt;</a></span>
+<span class = "next"><a href = "image.html">image &gt;&gt;</a></span>
 </td>
 
 </tr></table>

@@ -164,6 +164,10 @@ SAME AS NELSON SOFTWARE
   <p><b>Type</b>: Type of graphics object 'contour'.</p>
   <p><b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
   <p><b>UserData</b>: User data: array or  [] (default).</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 
 <h3>Examples</h3>
@@ -238,6 +242,16 @@ contour(Z)
 <tr>
 	<td>1.3.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.7.0</td>
+	<td>CreateFcn, DeleteFcn callback added.</td>
+</tr>
+
+<tr>
+	<td>--</td>
+	<td>BeingDeleted property added.</td>
 </tr>
 
 </table>
