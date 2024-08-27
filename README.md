@@ -28,6 +28,7 @@ Nelson has been developed to be an open/modular system where an user can define 
 
 - [Internal data types](TYPES.md),
 - [2D and 3D plotting with high-level plot commands](PLOTS.md),
+- [Create User Interface Control](UICONTROL.md),
 - [Overloading](OVERLOADING.md),
 - [Modularity](MODULARITY.md),
 - [External modules](EXTERNAL_MODULE.md),
@@ -84,6 +85,7 @@ The systems listed here without CI or binaries are known to build and operate, b
 |                  |  i686 (32-bit)  |  ✓  |    ✓     |
 |   MacOS BigSur   | x86-64 (64-bit) |  ✓  |          |
 |  MacOS Monterey  | x86-64 (64-bit) |  ✓  |          |
+|   Ubuntu 24.04   | x86-64 (64-bit) |  ✓  | ✓ (snap) |
 |   Ubuntu 22.04   | x86-64 (64-bit) |  ✓  | ✓ (snap) |
 |   Ubuntu 20.04   | x86-64 (64-bit) |  ✓  | ✓ (snap) |
 |   Ubuntu 18.04   | x86-64 (64-bit) |  ✓  | ✓ (snap) |
