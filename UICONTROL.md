@@ -1,4 +1,4 @@
-## [Create User Interface Control]UICONTROL.md)
+## [Create User Interface Control](UICONTROL.md)
 
 Nelson provides graphics functions to visualize and export data:
 
