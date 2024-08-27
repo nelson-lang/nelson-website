@@ -4,6 +4,8 @@
 
 ## [2D and 3D plotting with high-level plot commands](PLOTS.md)
 
+## [Create User Interface Control](UICONTROL.md)
+
 ## [Overloading](OVERLOADING.md)
 
 ## [Modularity](MODULARITY.md)
