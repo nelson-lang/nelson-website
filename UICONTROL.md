@@ -8,7 +8,7 @@ You will find uicontrol documentation: [HERE](https://nelson-lang.github.io/nels
 
 #### Plot interactive with uicontrol
 
-<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/uicontrol-1.svg" alt="uicontrol-1" width="600" height="400">
+<img src="https://github.com/nelson-lang/nelson-website/raw/master/images/uicontrol-1.svg" alt="uicontrol-1">
 
 Main .m file: (uicontrol_demo.m)
 
