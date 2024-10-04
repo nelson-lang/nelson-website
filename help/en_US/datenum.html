@@ -33,7 +33,7 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "datevec.html">datevec &gt;&gt;</a></span>
+<span class = "next"><a href = "datestr.html">datestr &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -59,6 +59,14 @@ SAME AS NELSON SOFTWARE
 
 	<tr>
 		<td>d = datenum(datestr, format)</td>
+	</tr>
+
+	<tr>
+		<td>d = datenum(datestr, pivotYear)</td>
+	</tr>
+
+	<tr>
+		<td>d = datenum(DateString,format,pivotYear)</td>
 	</tr>
 
 	<tr>
@@ -95,6 +103,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">double: Year, Month, Day, Hours, Minutes, Secondes (scalar or vector).</p>
 </dd>
 
+<dt><span class="term">pivotYear: Start year of 100-year date range</span></dt>
+<dd>
+<p class="para">integer value or present minus 50 years (default).</p>
+</dd>
+
 </dl>
 
 <h3>Output argument</h3>
@@ -116,6 +129,7 @@ SAME AS NELSON SOFTWARE
   <p><b>d = datenum()</b> returns the serial date number corresponding to current date.</p>
   <p><b>d = datenum(datevec)</b> converts date vector to serial date number.</p>
   <p><b>d = datenum(datestr)</b> and <b>d = datenum(datestr, format)</b> converts string to serial date number.</p>
+  <p/>
   <p>Supported format conversion:</p>
   <p><b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17</p>
   <p><b>dd-mmm-yyyy</b> 10-Mar-2010</p>
@@ -131,6 +145,99 @@ SAME AS NELSON SOFTWARE
   <p><b>HH:MM:SS PM</b> 3:48:17 PM</p>
   <p><b>HH:MM</b> 16:48</p>
   <p><b>HH:MM PM</b> 3:35 PM</p>
+  <p/>
+  <p>If format is not specified, the default format is <b>dd-mmm-yyyy</b>.</p>
+  <p/>
+  <p>If format is specified and not using predefined format, the format must be specified as a character vector or string scalar composed of symbolic identifiers.</p>
+  <p>The format of the input text for representing dates and times, expressed as a character vector or string scalar composed of symbolic identifiers.</p>
+  <p/>
+  <table border="1">
+    <tr>
+      <th>Symbolic Identifier</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td>yyyy</td>
+      <td>Year in full</td>
+      <td>1995, 2012</td>
+    </tr>
+    <tr>
+      <td>yy</td>
+      <td>Year in two digits</td>
+      <td>89, 01</td>
+    </tr>
+    <tr>
+      <td>QQ</td>
+      <td>Quarter year using letter Q and one digit</td>
+      <td>Q1</td>
+    </tr>
+    <tr>
+      <td>mmmm</td>
+      <td>Month using full name</td>
+      <td>March, December</td>
+    </tr>
+    <tr>
+      <td>mmm</td>
+      <td>Month using first three letters</td>
+      <td>Mar, Dec</td>
+    </tr>
+    <tr>
+      <td>mm</td>
+      <td>Month in two digits</td>
+      <td>04, 12</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>Month using capitalized first letter</td>
+      <td>M, D</td>
+    </tr>
+    <tr>
+      <td>dddd</td>
+      <td>Day using full name</td>
+      <td>Monday, Tuesday</td>
+    </tr>
+    <tr>
+      <td>ddd</td>
+      <td>Day using first three letters</td>
+      <td>Mon, Tue</td>
+    </tr>
+    <tr>
+      <td>dd</td>
+      <td>Day in two digits</td>
+      <td>06, 21</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>Day using capitalized first letter</td>
+      <td>M, T</td>
+    </tr>
+    <tr>
+      <td>HH</td>
+      <td>Hour in two digits (no leading zeros when symbolic identifier AM or PM is used)</td>
+      <td>06, 6 AM</td>
+    </tr>
+    <tr>
+      <td>MM</td>
+      <td>Minute in two digits</td>
+      <td>11, 01</td>
+    </tr>
+    <tr>
+      <td>SS</td>
+      <td>Second in two digits</td>
+      <td>06, 59</td>
+    </tr>
+    <tr>
+      <td>FFF</td>
+      <td>Millisecond in three digits</td>
+      <td>056</td>
+    </tr>
+    <tr>
+      <td>AM or PM</td>
+      <td>AM or PM inserted in text representing time</td>
+      <td>5:46:02 PM</td>
+    </tr>
+  </table>
 
 
 <h3>Example</h3>
@@ -163,6 +270,11 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 	<td>initial version</td>
 </tr>
 
+<tr>
+	<td>1.8.0</td>
+	<td>date string parsing extended.</td>
+</tr>
+
 </table>
 
 <h3>Author</h3>
@@ -182,7 +294,7 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "datevec.html">datevec &gt;&gt;</a></span>
+<span class = "next"><a href = "datestr.html">datestr &gt;&gt;</a></span>
 </td>
 
 </tr></table>

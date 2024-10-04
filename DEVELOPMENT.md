@@ -12,7 +12,4 @@ Each build process executes all unitary tests and non-regression tests under all
 
 ![test_run capture](https://github.com/nelson-lang/nelson-website/raw/master/images/test_run.png "test_run")
 
-Development documentation is available for internal code.
-[Doxygen](./doxygen/html/index.html)
-
 [Previous page](README.md)

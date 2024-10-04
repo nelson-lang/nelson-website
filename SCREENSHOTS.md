@@ -1,15 +1,22 @@
-## Screenshots:
+# Nelson Screenshots
 
-### ARM Linux (Embedded)
+Nelson is a powerful numerical computing environment that runs on various platforms. Here are some screenshots showcasing Nelson in action on different operating systems.
 
-![alt text](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-arm32.png "Nelson on Linux ARM 32 bits")
+## Windows (32-bit and 64-bit)
 
-### MacOs X, Sierra
+![Nelson on Windows](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-windows.png)
+_Nelson running on Windows 32-bit or 64-bit_
 
-![alt text](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-macos.png "Nelson on MacOs")
+## ARM Linux (Embedded Systems)
 
-### Windows 32 or 64 bits
+![Nelson on ARM Linux](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-arm32.png)
+_Nelson operating on a 32-bit ARM Linux system_
 
-![alt text](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-windows.png "Nelson on Windows 32 or 64 bits")
+## macOS
 
-[Previous page](README.md)
+![Nelson on macOS](https://github.com/nelson-lang/nelson-website/raw/master/images/Nelson-macos.png)
+_Nelson in action on macOS Sierra_
+
+These screenshots demonstrate Nelson's versatility across different platforms, showcasing its consistent interface and functionality regardless of the operating system.
+
+For more information about Nelson and its features, please refer to our [main documentation](README.md).
