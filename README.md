@@ -90,10 +90,14 @@ Nelson offers a wide range of powerful features for scientific computing and eng
 ## 📦 **Download Nelson**
 
 Choose your platform and get started with Nelson today!
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/nelson)
-[**Download the latest version for Windows**](https://github.com/nelson-lang/nelson/releases)  
-[**Windows Package Manager**](https://winstall.app/apps/NelsonNumericalSoftware.Nelson)  
+
+[**Download the latest version for Windows**](https://github.com/nelson-lang/nelson/releases)
+
+[**Windows Package Manager**](https://winstall.app/apps/NelsonNumericalSoftware.Nelson)
+
 [**Chocolatey Package Manager**](https://community.chocolatey.org/packages/nelson)
+
+[![**Snap Store**](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/nelson)
 
 ---
 
