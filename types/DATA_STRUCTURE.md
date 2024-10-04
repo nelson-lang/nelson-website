@@ -68,4 +68,55 @@ ans =
     {'Anna'}
 ```
 
+### [table](https://nelson-lang.github.io/nelson-website/help/en_US/table.html)
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the 'ID' column from the table
+ID_column = T.ID
+
+T =
+
+  2×2 table
+
+    ID    Label
+    __    _____
+
+    1     {'A'}
+    2     {'B'}
+
+
+T =
+
+  2×3 table
+
+    ID    Label    Score
+    __    _____    _____
+
+    1     {'A'}    10
+    2     {'B'}    20
+
+
+T =
+
+  2×3 table
+
+    ID    Label    Score
+    __    _____    _____
+
+    1     {'A'}    15
+    2     {'B'}    20
+
+
+ID_column =
+
+     1
+     2
+
+```
+
 [Previous page](../TYPES.md)

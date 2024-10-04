@@ -1,63 +1,56 @@
 # Features
 
-## [Internal data types](TYPES.md)
+### Core Capabilities
 
-## [2D and 3D plotting with high-level plot commands](PLOTS.md)
+- [Advanced Data Structures](TYPES.md): Cell arrays, structs, dictionaries, tables, and linear systems
+- [Internal Data Types](TYPES.md): Flexible and extensible type system
+- [Overloading](OVERLOADING.md): Customizable operator and function behavior
+- [Modularity](MODULARITY.md): Organize and extend functionality
+- [External Modules](EXTERNAL_MODULE.md): Integrate third-party libraries
 
-## [Create User Interface Control](UICONTROL.md)
+### Scientific Computing
 
-## [Overloading](OVERLOADING.md)
+- [2D and 3D Plotting](PLOTS.md): High-level plot commands for data visualization
+- [Fast Fourier Transformation](FFTW.md): Efficient frequency domain analysis
+- [Control Systems](CONTROL.md): Tools for system modeling and analysis
+- [SLICOT Integration](SLICOT.md): Advanced control theory algorithms
 
-## [Modularity](MODULARITY.md)
+### Programming & Development
 
-## [External modules](EXTERNAL_MODULE.md)
+- [Interactive Code Editor](CODE_EDITOR.md): User-friendly development environment
+- [Build C/C++ On-the-Fly](BUILD_C_CPP_ON_FLY.md): Seamless integration with compiled languages
+- [C MEX API Support](MEX.md): Compatibility with existing MEX files
+- [Nelson Engine API](MEX_ENGINE.md): C API compatible with MEX Engine
+- [Foreign Function Interface (FFI)](FFI.md): Call functions from shared libraries
 
-## [Build C/C++ code on the fly](BUILD_C_CPP_ON_FLY.md)
+### High-Performance Computing
 
-## [C MEX API support](MEX.md)
+- [Parallel Computing Module](PARALLEL.md): Leverage multi-core processors
+- [Message Passing Interface (MPI)](MPI.md): Distributed computing support
 
-## [Nelson Engine API for C (compatible with MEX Engine)](MEX_ENGINE.md)
+### Data Handling & Interoperability
 
-## [Foreign Function Interface](FFI.md)
+- [HDF5 I/O](HDF5.md): High-level functions for HDF5 file format
+- [MAT-File I/O](MATIO.md): Read and write MATLAB® compatible files
+- [JSON Support](JSON.md): Parse and generate JSON data
+- [Python Integration](PYTHON.md): Call Python from Nelson
 
-## [Call Python from Nelson](PYTHON.md)
+### User Interface & Graphics
 
-## [Fast Fourier Transformation](FFTW.md)
+- [UI Controls](UICONTROL.md): Create interactive user interfaces
+- [QML Engine](QML_ENGINE.md): Design modern UIs with QML
 
-## [HDF5 High Level functions I/O](HDF5.md)
+### Connectivity & Web
 
-## [MAT-Files functions I/O](MATIO.md)
+- [COM Interface](COM_INTERFACE.md): Interact with COM objects (Windows)
+- [RESTful Web Services](REST.md): Create and consume web APIs
+- [Cloud Computing☁️](CLOUD.md): Harness cloud resources for computation
 
-## [Subroutine Library in Systems and Control Theory](SLICOT.md)
+### Miscellaneous
 
-## [Control system module](CONTROL.md)
-
-## [QML engine](QML_ENGINE.md)
-
-## [COM interface](COM_INTERFACE.md)
-
-## [Message Passing Interface](MPI.md)
-
-## [Interprocess communication](IPC.md)
-
-## [JavaScript Object Notation](JSON.md)
-
-## [RESTfull web service](REST.md)
-
-## [UNICODE and others charset support](CHARSET.md)
-
-## [Nelson in the Cloud](CLOUD.md) ☁️
-
-## [Audio module](AUDIO.md)
-
-## [Code editor](CODE_EDITOR.md)
-
-## [Help engine](HELPENGINE.md)
-
-## [Help viewer](HELPVIEWER.md)
-
-## [Tests engine](TESTSENGINE.md)
-
-## [Profiling and Coverage Tools](PROFILER.md)
+- [Audio Processing](AUDIO.md): Work with audio signals and files
+- [Unicode Support](CHARSET.md): Handle international character sets
+- [Validator Functions](VALIDATORS.md): Ensure data integrity
+- [Interprocess Communication (IPC)](IPC.md): Facilitate process interaction
 
 [Previous page](README.md)
