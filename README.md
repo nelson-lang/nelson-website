@@ -97,7 +97,7 @@ Choose your platform and get started with Nelson today!
 
 [**Chocolatey Package Manager**](https://community.chocolatey.org/packages/nelson)
 
-[![**Snap Store**](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/nelson)
+[**Snap Store**](https://snapcraft.io/nelson)
 
 ---
 
