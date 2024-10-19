@@ -122,14 +122,14 @@ Nelson is tested and supported on a wide range of platforms. **Download** option
 
 | **Operating System** | **Architecture** | **CI** | **Binaries** |
 | :------------------: | :--------------: | :----: | :----------: |
-| **Windows 7 to 11**  |   x86-64, i686   |   ✓    |      ✓       |
-|  **macOS Big Sur**   |      x86-64      |   ✓    |              |
-|  **macOS Monterey**  |  x86-64, ARM64   |   ✓    |              |
+|  **Windows 10, 11**  |   x86-64, i686   |   ✓    |      ✓       |
+|  **macOS Sequoia**   |      ARM64       |   ✓    |              |
+|   **macOS Sonoma**   |      ARM64       |   ✓    |              |
+|  **macOS Ventura**   | x86-64 (64-bit)  |   ✓    |              |
 |   **Ubuntu 24.04**   |      x86-64      |   ✓    |   ✓ (Snap)   |
 |   **Ubuntu 22.04**   |      x86-64      |   ✓    |   ✓ (Snap)   |
 |   **Ubuntu 20.04**   |      x86-64      |   ✓    |   ✓ (Snap)   |
-|   **Ubuntu 18.04**   |      x86-64      |   ✓    |   ✓ (Snap)   |
-|    **Fedora 36**     |      x86-64      |   ✓    |   ✓ (Snap)   |
+|    **Fedora 40**     |      x86-64      |   ✓    |   ✓ (Snap)   |
 |    **ArchLinux**     |      x86-64      |   ✓    |   ✓ (Snap)   |
 |     **Raspbian**     | ARM v8 (64-bit)  |        |              |
 
