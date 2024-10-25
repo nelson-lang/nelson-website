@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>cell2table</title>
+	<title>tail</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="array2table.html">&lt;&lt; array2table</a></span>
+<span class="top"><a href="table2struct.html">&lt;&lt; table2struct</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "head.html">head &gt;&gt;</a></span>
+<span class = "next"><a href = "width.html">width &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">cell2table</h1>
+<h1 class="refname">tail</h1>
 <hr/>
 
-<h3>Convert cell array to table.</h3>
+<h3>Get bottom rows of table or array.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,15 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>T = cell2table(C)</td>
+		<td>tail(A)</td>
+	</tr>
+
+	<tr>
+		<td>tail(A, k)</td>
+	</tr>
+
+	<tr>
+		<td>B = tail(...)</td>
 	</tr>
 
 </table>
@@ -59,9 +67,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">C</span></dt>
+<dt><span class="term">A</span></dt>
 <dd>
-<p class="para">2-D cell array.</p>
+<p class="para">Input array (table or other).</p>
 </dd>
 
 </dl>
@@ -70,9 +78,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">T</span></dt>
+<dt><span class="term">k</span></dt>
 <dd>
-<p class="para">Table object.</p>
+<p class="para">a integer value: Number of rows to extract (k = 8 by default).</p>
 </dd>
 
 </dl>
@@ -82,19 +90,28 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>T = cell2table(C)</b> converts the contents of an m-by-n cell array <b>C</b> into an m-by-n table.</p>
-  <p>Each column of the input cell array becomes the data for a corresponding variable in the output table.</p>
-  <p>To generate variable names in the output table, <b>cell2table</b> appends the column numbers to the name of the input array.</p>
-  <p>If the input array does not have a name, <b>cell2table</b> assigns default variable names in the format <b>"Var1", "Var2", ... , "VarN"</b>, where <b>N</b> is the number of columns in the cell array.</p>
+  <p><b>tail(A)</b> displays the last eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.</p>
+  <p><b>tail(A, k)</b> displays the last k rows of A.</p>
+  <p><b>B = tail(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
-% Convert the cell array to a table
-T = cell2table(C)
+<code class = "nelson">LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
+Age = [38;43;38;40;49];
+Smoker = logical([1;0;1;0;1]);
+Height = [71;69;64;67;64];
+Weight = [176;163;131;133;119];
+BloodPressure = [124 93; 109 77; 125 83; 117 75; 122 80];
+T = table(LastName, Age, Smoker, Height, Weight, BloodPressure)
+tail(T, 2)
+</code>
+</pre>
+<pre>
+<code class = "nelson">A = repmat((1:50)',1, 3);
+tail(A)
 </code>
 </pre>
 
@@ -102,7 +119,7 @@ T = cell2table(C)
 <hr/>
 
 <p>
-<a href = "table2cell.html" class = "link">table2cell</a>, <a href = "table.html" class = "link">table</a>.</p>
+<a href = "head.html" class = "link">head</a>, <a href = "table.html" class = "link">table</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -113,7 +130,7 @@ T = cell2table(C)
 	<th>Description</th>
 </tr>
 <tr>
-	<td>1.8.0</td>
+	<td>1.9.0</td>
 	<td>initial version</td>
 </tr>
 
@@ -128,7 +145,7 @@ T = cell2table(C)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="array2table.html">&lt;&lt; array2table</a></span>
+<span class="top"><a href="table2struct.html">&lt;&lt; table2struct</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -136,7 +153,7 @@ T = cell2table(C)
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "head.html">head &gt;&gt;</a></span>
+<span class = "next"><a href = "width.html">width &gt;&gt;</a></span>
 </td>
 
 </tr></table>
