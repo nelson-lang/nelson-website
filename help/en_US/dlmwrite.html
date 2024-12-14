@@ -25,15 +25,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="diary.html">&lt;&lt; diary</a></span>
+<span class="top"><a href="dlmread.html">&lt;&lt; dlmread</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_stream_manager.html">Stream manager</a></span>
+<span class="top"><a href="chapter_SPREADSHEET.html">Spreadsheet</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fclose.html">fclose &gt;&gt;</a></span>
+<span class = "next"><a href = "readcell.html">readcell &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -140,9 +140,9 @@ SAME AS NELSON SOFTWARE
 
 <pre>
 <code class = "nelson">A = [Inf, -Inf, NaN, 3];
-filename = [tempdir(), 'dlwrite_example.csv'];
+filename = [tempdir(), 'dlmwrite_example.csv'];
 dlmwrite(filename, A);
-R = fileread(filename)
+R = dlmread(filename)
 A = eye(3, 2);
 dlmwrite(filename, A, ';', 4, 5);
 R = fileread(filename)
@@ -153,7 +153,7 @@ R = fileread(filename)
 <hr/>
 
 <p>
-<a href = "fileread.html" class = "link">fileread</a>.</p>
+<a href = "dlmread.html" class = "link">dlmread</a>, <a href = "fileread.html" class = "link">fileread</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -179,15 +179,15 @@ R = fileread(filename)
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="diary.html">&lt;&lt; diary</a></span>
+<span class="top"><a href="dlmread.html">&lt;&lt; dlmread</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_stream_manager.html">Stream manager</a></span>
+<span class="top"><a href="chapter_SPREADSHEET.html">Spreadsheet</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "fclose.html">fclose &gt;&gt;</a></span>
+<span class = "next"><a href = "readcell.html">readcell &gt;&gt;</a></span>
 </td>
 
 </tr></table>
