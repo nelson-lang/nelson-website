@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>COM_delete</title>
+	<title>docroot</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="1_COM_examples.html">&lt;&lt; COM examples</a></span>
+<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_com_engine.html">COM engine</a></span>
+<span class="top"><a href="chapter_help_tools.html">Help tools functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "COM_fieldnames.html">COM_fieldnames &gt;&gt;</a></span>
+<span class = "next"><a href = "headcomments.html">headcomments &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">COM_delete</h1>
+<h1 class="refname">docroot</h1>
 <hr/>
 
-<h3>Removes COM control or server.</h3>
+<h3>Retrieve or update the root directory for Nelson Help system.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>COM_delete(h)</td>
+		<td>r = docroot()</td>
 	</tr>
 
 	<tr>
-		<td>delete(h)</td>
+		<td>r = docroot(new_docroot)</td>
 	</tr>
 
 </table>
@@ -63,9 +63,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">h</span></dt>
+<dt><span class="term">new_docroot</span></dt>
 <dd>
-<p class="para">a handle: a COM object.</p>
+<p class="para">a string: '', '.', or a URL.</p>
 </dd>
 
 </dl>
@@ -75,18 +75,22 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>delete(h)</b> releases all the interfaces derived from the specified COM server or control, and then deletes the server or control itself.</p>
-  <p> This is different from releasing an interface, which releases and invalidates only the particular interface.</p>
-  <p>Do not forget to clear h afterward.</p>
+  <p><b>docroot</b> retrieves or updates the root directory for Nelson Help.</p>
+  <p>When called without an argument, <b>docroot</b> returns the current root directory for Nelson Help. By default, it returns the URL of the help website used by Nelson.</p>
+  <p>When called with an argument, <b>docroot</b> updates the root directory for Nelson Help.</p>
+  <p><b>docroot('')</b> resets the root directory for Nelson Help to the default value.</p>
+  <p><b>docroot('.')</b> uses local help files and the local browser (restores behavior before v1.11.0).</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">pTextToSpeech = actxserver('Sapi.SpVoice')
-delete(pTextToSpeech)
-clear pTextToSpeech
+<code class = "nelson">docroot()
+doc rand
+docroot('.')
+doc rand
+docroot('')
 </code>
 </pre>
 
@@ -94,7 +98,7 @@ clear pTextToSpeech
 <hr/>
 
 <p>
-<a href = "actxserver.html" class = "link">actxserver</a>.</p>
+<a href = "doc.html" class = "link">doc</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -120,15 +124,15 @@ clear pTextToSpeech
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="1_COM_examples.html">&lt;&lt; COM examples</a></span>
+<span class="top"><a href="buildhelpweb.html">&lt;&lt; buildhelpweb</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_com_engine.html">COM engine</a></span>
+<span class="top"><a href="chapter_help_tools.html">Help tools functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "COM_fieldnames.html">COM_fieldnames &gt;&gt;</a></span>
+<span class = "next"><a href = "headcomments.html">headcomments &gt;&gt;</a></span>
 </td>
 
 </tr></table>

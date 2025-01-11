@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>actxGetRunningSrv</title>
+	<title>urlencode</title>
 
 </head>
 <body>
@@ -25,24 +25,24 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="COM_xlswrite.html">&lt;&lt; COM_xlswrite</a></span>
+<span class="top"><a href="repo.html">&lt;&lt; repo</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_com_engine.html">COM engine</a></span>
+<span class="top"><a href="chapter_webtools.html">Web tools</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "actxcontrollist.html">actxcontrollist &gt;&gt;</a></span>
+<span class = "next"><a href = "weboptions.html">weboptions &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">actxGetRunningSrv</h1>
+<h1 class="refname">urlencode</h1>
 <hr/>
 
-<h3>Handle to running instance of Automation server.</h3>
+<h3>Replace special characters in URLs with escape characters.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,7 +50,7 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>h = actxGetRunningSrv(progid)</td>
+		<td>new_url = webread(url)</td>
 	</tr>
 
 </table>
@@ -59,9 +59,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">progid</span></dt>
+<dt><span class="term">url</span></dt>
 <dd>
-<p class="para">a string:  the name of a COM server.</p>
+<p class="para">a string: URL to a web service.</p>
 </dd>
 
 </dl>
@@ -70,9 +70,9 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">h</span></dt>
+<dt><span class="term">new_url</span></dt>
 <dd>
-<p class="para">a COM object.</p>
+<p class="para">a string: encoded url.</p>
 </dd>
 
 </dl>
@@ -82,17 +82,16 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>h = actxGetRunningSrv(progid)</b> gets a reference to a running instance of the OLE/COM Automation server.</p>
-  <p><b>progid</b> is the programmatic identifier of the Automation server object and <b>h</b> is the handle to the default interface of the server object.</p>
-  <p>The function returns an error if the server specified by progid is not currently running or if the server object is not registered.</p>
-  <p>When multiple instances of the Automation server are running, the operating system controls the behavior of this function.</p>
+  <p><b>urlencode</b> replaces special characters in URLs with escape characters.</p>
+  <p>Special characters in URLs need to be replaced with escape characters. For example, spaces should be replaced with '%20'.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">h = actxGetRunningServer('Excel.application')
+<code class = "nelson">url = 'https://httpbin.org/get?query=hello world';
+res = urlencode(url)
 </code>
 </pre>
 
@@ -100,7 +99,7 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <p>
-<a href = "actxserver.html" class = "link">actxserver</a>.</p>
+<a href = "webread.html" class = "link">webread</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -111,7 +110,7 @@ SAME AS NELSON SOFTWARE
 	<th>Description</th>
 </tr>
 <tr>
-	<td>1.0.0</td>
+	<td>1.11.0</td>
 	<td>initial version</td>
 </tr>
 
@@ -126,15 +125,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="COM_xlswrite.html">&lt;&lt; COM_xlswrite</a></span>
+<span class="top"><a href="repo.html">&lt;&lt; repo</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_com_engine.html">COM engine</a></span>
+<span class="top"><a href="chapter_webtools.html">Web tools</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "actxcontrollist.html">actxcontrollist &gt;&gt;</a></span>
+<span class = "next"><a href = "weboptions.html">weboptions &gt;&gt;</a></span>
 </td>
 
 </tr></table>

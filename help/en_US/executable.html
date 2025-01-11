@@ -111,6 +111,11 @@ SAME AS NELSON SOFTWARE
 <p class="para">Return Nelson version.</p>
 </dd>
 
+<dt><span class="term">--vscode</span></dt>
+<dd>
+<p class="para">enable Visual Studio Code mode.</p>
+</dd>
+
 <dt><span class="term">--open</span></dt>
 <dd>
 <p class="para">opens files arg2 ... argN must be valid/existing filenames.</p>
@@ -181,6 +186,9 @@ SAME AS NELSON SOFTWARE
   <p><b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
   <p><b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
   <p><b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
+  <p/>
+  <p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
+  <p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
 
 
 <h3>Examples</h3>
@@ -221,6 +229,16 @@ SAME AS NELSON SOFTWARE
 <tr>
 	<td>1.4.0</td>
 	<td>--without_python added</td>
+</tr>
+
+<tr>
+	<td>1.11.0</td>
+	<td>About NELSON_RUNTIME_PATH environment variable added</td>
+</tr>
+
+<tr>
+	<td>1.11.0</td>
+	<td>--vsocde argument</td>
 </tr>
 
 </table>

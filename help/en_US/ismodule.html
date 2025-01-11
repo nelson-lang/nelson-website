@@ -53,6 +53,10 @@ SAME AS NELSON SOFTWARE
 		<td>state = ismodule(module_short_name)</td>
 	</tr>
 
+	<tr>
+		<td>state = ismodule(module_short_name, 'isprotected')</td>
+	</tr>
+
 </table>
 
 <h3>Input argument</h3>
@@ -62,6 +66,11 @@ SAME AS NELSON SOFTWARE
 <dt><span class="term">module_short_name</span></dt>
 <dd>
 <p class="para">a string: short module's name to test.</p>
+</dd>
+
+<dt><span class="term">'isprotected'</span></dt>
+<dd>
+<p class="para">check module isprotected (ie. internal module).</p>
 </dd>
 
 </dl>
@@ -111,6 +120,11 @@ ismodule('mymodule')
 <tr>
 	<td>1.0.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.11.0</td>
+	<td>'isprotected' second argument.</td>
 </tr>
 
 </table>
