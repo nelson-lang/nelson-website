@@ -104,7 +104,7 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">c</span></dt>
 <dd>
-<p class="para">Marker color: color name, RGB triplet or vector of colormap indices</p>
+<p class="para">Marker color: short color name, color name, RGB triplet or vector of colormap indices</p>
 </dd>
 
 <dt><span class="term">ax</span></dt>
@@ -159,13 +159,13 @@ SAME AS NELSON SOFTWARE
   <p><b>'&lt;'</b>: Right-pointing triangle symbol</p>
   <p/>
   <p>The ColorSpec specifies the marker color to use for each data series:</p>
-  <p><b>'k'</b>: Color Black</p>
-  <p><b>'y'</b>: Color Yellow</p>
-  <p><b>'m'</b>: Color Magenta</p>
-  <p><b>'c'</b>: Color Cyan</p>
-  <p><b>'r'</b>: Color Red</p>
-  <p><b>'b'</b>: Color Blue</p>
-  <p><b>'g'</b>: Color Green</p>
+  <p><b>'k'</b>, <b>'black'</b>: Color Black</p>
+  <p><b>'y'</b>, <b>'yellow'</b>: Color Yellow</p>
+  <p><b>'m'</b>, <b>'magenta'</b>: Color Magenta</p>
+  <p><b>'c'</b>, <b>'cyan'</b>: Color Cyan</p>
+  <p><b>'r'</b>, <b>'red'</b>: Color Red</p>
+  <p><b>'b'</b>, <b>'blue'</b>: Color Blue</p>
+  <p><b>'g'</b>, <b>'green'</b>: Color Green</p>
   <p/>
   <p>see <b>line</b> for more information about properties</p>
 
@@ -250,6 +250,11 @@ s = scatter(x,y, 'filled');
 <tr>
 	<td>1.0.0</td>
 	<td>initial version</td>
+</tr>
+
+<tr>
+	<td>1.12.0</td>
+	<td>color name and short color name managed.</td>
 </tr>
 
 </table>
