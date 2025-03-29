@@ -25,15 +25,15 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="imshow.html">&lt;&lt; imshow</a></span>
+<span class="top"><a href="imread.html">&lt;&lt; imread</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
+<span class="top"><a href="chapter_graphics_io.html">Graphics I/O functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "is2D.html">is2D &gt;&gt;</a></span>
+<span class = "next"><a href = "saveas.html">saveas &gt;&gt;</a></span>
 </td>
 
 </tr></table>
@@ -83,7 +83,7 @@ SAME AS NELSON SOFTWARE
 
 <dt><span class="term">fmt</span></dt>
 <dd>
-<p class="para">Format of output file: 'bmp', 'png', 'jpg', ...</p>
+<p class="para">Format of output file: 'bmp', 'png', 'jpg', 'gif', ...</p>
 </dd>
 
 <dt><span class="term">filename</span></dt>
@@ -116,9 +116,15 @@ SAME AS NELSON SOFTWARE
   <p><b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
   <p><b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
   <p><b>Author</b>: character vector or string scalar: Author information.</p>
+  <p/>
+  <p>Properties for <b>gif</b> format:</p>
+  <p/>
+  <p><b>WriteMode</b>:</p>
+  <p><b>LoopCount</b>:</p>
+  <p><b>DelayTime</b>:</p>
 
 
-<h3>Example</h3>
+<h3>Examples</h3>
 <hr/>
 
 <pre>
@@ -130,12 +136,46 @@ imshow(A);
 imwrite(A, [tempdir, '69x69-RGB.png']);
 </code>
 </pre>
+<p>gif animation</p>
+<pre>
+<code class = "nelson">movie_directory = [modulepath('graphics'), '/examples/', 'movie/'];
+sequences = {'dance', 8; 'leap', 9};
+frameIdx = 0;
+filename_gif = [tempdir, 'gif_animation.gif'];
+for s = 1:size(sequences, 1)
+    action = sequences{s, 1};
+    nb_frames_action = sequences{s, 2};
+    
+    for i = 1:nb_frames_action
+        % Construct the filename for the current frame
+        filename = fullfile(movie_directory, sprintf('%s_%d.png', action, i));
+        
+        % Read the image and store it in the movie structure
+        [image, map] = imread(filename);
+        % Read the image
+        [A, map] = imread(filename);
+        if frameIdx == 1
+            imwrite(A,map,filename_gif,"gif", 'LoopCount', Inf, 'DelayTime', 1);
+        else
+            imwrite(A,map,filename_gif,"gif", 'WriteMode', "append", 'DelayTime', 1)
+        end
+        frameIdx = frameIdx + 1;
+    end
+end
+if ispc()
+  unix(filename_gif);
+else
+  unix(['xdg-open ', filename_gif]);
+end
+</code>
+</pre>
+<img src="imwrite_gif_8CC307B9.gif" align="middle"/>
 
 <h3>See also</h3>
 <hr/>
 
 <p>
-<a href = "imread.html" class = "link">imread</a>, <a href = "imshow.html" class = "link">imshow</a>.</p>
+<a href = "imread.html" class = "link">imread</a>, <a href = "imshow.html" class = "link">imshow</a>, <a href = "imformats.html" class = "link">imformats</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -150,6 +190,11 @@ imwrite(A, [tempdir, '69x69-RGB.png']);
 	<td>initial version</td>
 </tr>
 
+<tr>
+	<td>1.13.0</td>
+	<td>gif animation, pcx format added</td>
+</tr>
+
 </table>
 
 <h3>Author</h3>
@@ -161,15 +206,15 @@ imwrite(A, [tempdir, '69x69-RGB.png']);
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="imshow.html">&lt;&lt; imshow</a></span>
+<span class="top"><a href="imread.html">&lt;&lt; imread</a></span>
 </td>
 
 <td width="40%" class="center">
-<span class="top"><a href="chapter_graphics.html">Graphics functions</a></span>
+<span class="top"><a href="chapter_graphics_io.html">Graphics I/O functions</a></span>
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "is2D.html">is2D &gt;&gt;</a></span>
+<span class = "next"><a href = "saveas.html">saveas &gt;&gt;</a></span>
 </td>
 
 </tr></table>

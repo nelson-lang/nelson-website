@@ -16,7 +16,7 @@ SAME AS NELSON SOFTWARE
 <script type = "text/javascript">hljs.highlightAll();</script>
 </script>
 	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8" />
-	<title>im2double</title>
+	<title>frame2im</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@ SAME AS NELSON SOFTWARE
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hot.html">&lt;&lt; hot</a></span>
+<span class="top"><a href="fill.html">&lt;&lt; fill</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -33,16 +33,16 @@ SAME AS NELSON SOFTWARE
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "im2frame.html">im2frame &gt;&gt;</a></span>
+<span class = "next"><a href = "gca.html">gca &gt;&gt;</a></span>
 </td>
 
 </tr></table>
 <hr />
 
-<h1 class="refname">im2double</h1>
+<h1 class="refname">frame2im</h1>
 <hr/>
 
-<h3>Convert image to double precision.</h3>
+<h3>Retrieve image data from a movie frame.</h3>
 <hr/>
 
 <h3>Syntax</h3>
@@ -50,11 +50,11 @@ SAME AS NELSON SOFTWARE
 
 <table summary="syntax" style="width:50%">
 	<tr>
-		<td>IM = im2double(I)</td>
+		<td>RGB = frame2im(F)</td>
 	</tr>
 
 	<tr>
-		<td>IM = im2double(I,'indexed')</td>
+		<td>[X, map] = frame2im(F)</td>
 	</tr>
 
 </table>
@@ -63,9 +63,12 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">I</span></dt>
+<dt><span class="term">F</span></dt>
 <dd>
-<p class="para">Input image: scalar, vector, matrix or multidimensional array with type single, double, int16, uint8, uint16 or logical.</p>
+<p class="para">a structure: Movie frame, represented as a structure with two fields:
+cdata: An array of uint8 values storing the image data.
+colormap: The colormap. This field is empty ([]) for truecolor (RGB) images.
+A movie frame structure can be created using the im2frame and getframe functions.</p>
 </dd>
 
 </dl>
@@ -74,9 +77,19 @@ SAME AS NELSON SOFTWARE
 <hr/>
 
 <dl>
-<dt><span class="term">IM</span></dt>
+<dt><span class="term">RGB</span></dt>
 <dd>
-<p class="para">The converted image is returned as a numeric array with the same dimensions as the input image I with type double.</p>
+<p class="para">m-by-n-by-3 numeric array: Truecolor image (uint8).</p>
+</dd>
+
+<dt><span class="term">X</span></dt>
+<dd>
+<p class="para">m-by-n numeric matrix: Indexed image (uint8).</p>
+</dd>
+
+<dt><span class="term">map</span></dt>
+<dd>
+<p class="para">c-by-3 numeric matrix: Colormap corresponding to the indexed image X, returned as a c-by-3 numeric matrix with values in the range [0, 1]. Each row of the matrix represents an RGB triplet defining the red, green, and blue components of a colormap color.</p>
 </dd>
 
 </dl>
@@ -86,17 +99,20 @@ SAME AS NELSON SOFTWARE
 
 <p></p>
 
-  <p><b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting, <b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1].</p>
-  <p>For an indexed image, <b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.</p>
+  <p><b>RGB = frame2im(F)</b> extracts the truecolor (RGB) image from the movie frame <b>F</b>.</p>
+  <p><b>[X, map] = frame2im(F)</b> retrieves the indexed image <b>X</b> and its corresponding colormap map from the movie frame <b>F</b>.</p>
 
 
 <h3>Example</h3>
 <hr/>
 
 <pre>
-<code class = "nelson">I = reshape(uint8(linspace(1,255,25)),[5 5]);
-IM1 = im2double(I)
-IM2 = im2double(I, 'indexed')
+<code class = "nelson">f = figure();
+s = surf(peaks);
+F = getframe(f)
+RGB = frame2im(F);
+figure;
+imshow(RGB);
 </code>
 </pre>
 
@@ -104,7 +120,7 @@ IM2 = im2double(I, 'indexed')
 <hr/>
 
 <p>
-<a href = "double.html" class = "link">double</a>, <a href = "imread.html" class = "link">imread</a>.</p>
+<a href = "im2frame.html" class = "link">im2frame</a>.</p>
 
 <h3>History</h3>
 <hr/>
@@ -115,7 +131,7 @@ IM2 = im2double(I, 'indexed')
 	<th>Description</th>
 </tr>
 <tr>
-	<td>1.0.0</td>
+	<td>1.13.0</td>
 	<td>initial version</td>
 </tr>
 
@@ -130,7 +146,7 @@ IM2 = im2double(I, 'indexed')
 <table width = "100%"><tr>
 
 <td width="30%" class="previous">
-<span class="top"><a href="hot.html">&lt;&lt; hot</a></span>
+<span class="top"><a href="fill.html">&lt;&lt; fill</a></span>
 </td>
 
 <td width="40%" class="center">
@@ -138,7 +154,7 @@ IM2 = im2double(I, 'indexed')
 </td>
 
 <td width = "30%" class = "next">
-<span class = "next"><a href = "im2frame.html">im2frame &gt;&gt;</a></span>
+<span class = "next"><a href = "gca.html">gca &gt;&gt;</a></span>
 </td>
 
 </tr></table>
