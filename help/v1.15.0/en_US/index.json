@@ -291,7 +291,7 @@
     "title": "maxNumCompThreads",
     "url": "./core/maxNumCompThreads.html",
     "path": "./core/maxNumCompThreads.html",
-    "content": "Set\/Get maximum number of computional threads."
+    "content": "Set/Get maximum number of computional threads."
   },
   {
     "title": "namelengthmax",
@@ -543,13 +543,13 @@
     "title": "try",
     "url": "./interpreter/try.html",
     "path": "./interpreter/try.html",
-    "content": "try\/catch statement."
+    "content": "try/catch statement."
   },
   {
     "title": "catch",
     "url": "./interpreter/try.html",
     "path": "./interpreter/try.html",
-    "content": "try\/catch statement."
+    "content": "try/catch statement."
   },
   {
     "title": "while",
@@ -1164,7 +1164,7 @@
     "content": ""
   },
   {
-    "title": "Read\/Write table to files",
+    "title": "Read/Write table to files",
     "url": "./table/3_read_write_table.html",
     "path": "./table/3_read_write_table.html",
     "content": ""
@@ -1971,7 +1971,7 @@
     "title": "mrdivide",
     "url": "./operators/mrdivide.html",
     "path": "./operators/mrdivide.html",
-    "content": "Matrix right division, \/ operator."
+    "content": "Matrix right division, / operator."
   },
   {
     "title": "mtimes",
@@ -2013,7 +2013,7 @@
     "title": "rdivide",
     "url": "./operators/rdivide.html",
     "path": "./operators/rdivide.html",
-    "content": "Right division, .\/ operator"
+    "content": "Right division, ./ operator"
   },
   {
     "title": "shortcutand",
@@ -3393,7 +3393,7 @@
     "title": "slicot_ab04md",
     "url": "./slicot/slicot_ab04md.html",
     "path": "./slicot/slicot_ab04md.html",
-    "content": "Discrete-time \/ continuous-time systems conversion by a bilinear transformation."
+    "content": "Discrete-time / continuous-time systems conversion by a bilinear transformation."
   },
   {
     "title": "slicot_ab07nd",
@@ -3633,7 +3633,7 @@
     "title": "FFTWwrapper",
     "url": "./fftw/FFTWwrapper.html",
     "path": "./fftw/FFTWwrapper.html",
-    "content": "load\/free FFTW library dynamically."
+    "content": "load/free FFTW library dynamically."
   },
   {
     "title": "ifft",
@@ -4011,7 +4011,7 @@
     "title": "datenum",
     "url": "./time/datenum.html",
     "path": "./time/datenum.html",
-    "content": "Return the date\/time input as a serial day number."
+    "content": "Return the date/time input as a serial day number."
   },
   {
     "title": "datestr",
@@ -4509,7 +4509,7 @@
     "title": "qt_verbose",
     "url": "./gui/qt_verbose.html",
     "path": "./gui/qt_verbose.html",
-    "content": "show\/hide Qt debug message."
+    "content": "show/hide Qt debug message."
   },
   {
     "title": "questdlg",
@@ -5316,10 +5316,10 @@
     "content": "Enable zoom mode."
   },
   {
-    "title": "Graphics I\/O functions",
+    "title": "Graphics I/O functions",
     "url": "/./index.html",
-    "path": "sections/Graphics I\/O functions",
-    "content": "graphics Input\/Output functions"
+    "path": "sections/Graphics I/O functions",
+    "content": "graphics Input/Output functions"
   },
   {
     "title": "copygraphics",
@@ -5733,7 +5733,7 @@
     "title": "ferror",
     "url": "./stream_manager/ferror.html",
     "path": "./stream_manager/ferror.html",
-    "content": "Test for i\/o read\/write errors."
+    "content": "Test for i/o read/write errors."
   },
   {
     "title": "fgetl",
@@ -5913,7 +5913,7 @@
     "title": "MATIO",
     "url": "/./index.html",
     "path": "sections/MATIO",
-    "content": "MAT-File Read\/Write I\/O Functions"
+    "content": "MAT-File Read/Write I/O Functions"
   },
   {
     "title": "ismatfile",
@@ -6009,7 +6009,7 @@
     "title": "audiometadata",
     "url": "./audio/audiometadata.html",
     "path": "./audio/audiometadata.html",
-    "content": "Get\/Set metadata of audio file ."
+    "content": "Get/Set metadata of audio file ."
   },
   {
     "title": "audioplayer",
@@ -6183,16 +6183,16 @@
     "title": "Dynamic link",
     "url": "/./index.html",
     "path": "sections/Dynamic link",
-    "content": "By default, Nelson does not try to detect a C\/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once."
+    "content": "By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once."
   },
   {
-    "title": "Build C\/C++ code on the fly",
+    "title": "Build C/C++ code on the fly",
     "url": "./dynamic_link/1_c_cpp_build_on_fly.html",
     "path": "./dynamic_link/1_c_cpp_build_on_fly.html",
-    "content": "Build C\/C++ code on the fly"
+    "content": "Build C/C++ code on the fly"
   },
   {
-    "title": "Supported C\/C++ compilers",
+    "title": "Supported C/C++ compilers",
     "url": "./dynamic_link/2_supported_compilers.html",
     "path": "./dynamic_link/2_supported_compilers.html",
     "content": ""
@@ -6219,7 +6219,7 @@
     "title": "libpointer datatype",
     "url": "./dynamic_link/C_datatype.html",
     "path": "./dynamic_link/C_datatype.html",
-    "content": "C\/Nelson equivalent data types"
+    "content": "C/Nelson equivalent data types"
   },
   {
     "title": "dlcall",
@@ -6309,7 +6309,7 @@
     "title": "dlsym",
     "url": "./dynamic_link/dlsym.html",
     "path": "./dynamic_link/dlsym.html",
-    "content": "Loads a C\/Fortran symbol for an dynamic library."
+    "content": "Loads a C/Fortran symbol for an dynamic library."
   },
   {
     "title": "dlsym_delete",
@@ -6339,7 +6339,7 @@
     "title": "havecompiler",
     "url": "./dynamic_link/havecompiler.html",
     "path": "./dynamic_link/havecompiler.html",
-    "content": "Detect if a C\/C++ compiler is configured."
+    "content": "Detect if a C/C++ compiler is configured."
   },
   {
     "title": "libpointer",
