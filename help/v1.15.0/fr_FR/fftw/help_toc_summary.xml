@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>fftw</module>
+    <section name="FFTW">
+      <chapter_description>Fastest Fourier Transform in the West </chapter_description>
+      <keyword name="FFTW License" link="About_FFTW_license.html" description="About FFTW license."/>
+      <keyword name="fft" link="fft.html" description="Fast Fourier transform."/>
+      <keyword name="fft2" link="fft2.html" description="2-D fast Fourier transform."/>
+      <keyword name="fftn" link="fftn.html" description="N-Dimensions fast Fourier transform."/>
+      <keyword name="fftshift" link="fftshift.html" description="Shift the zero-frequency component to the center of the spectrum."/>
+      <keyword name="fftw" link="fftw.html" description="function for determining FFT algorithm."/>
+      <keyword name="FFTWwrapper" link="FFTWwrapper.html" description="load/free FFTW library dynamically."/>
+      <keyword name="ifft" link="ifft.html" description="Inverse Fast Fourier transform."/>
+      <keyword name="ifftn" link="ifftn.html" description="Inverse multidimensional fast Fourier transform."/>
+      <keyword name="ifftshift" link="ifftshift.html" description="inverse of fftshift"/>
+    </section>
+  </toc>
+</help_summary>

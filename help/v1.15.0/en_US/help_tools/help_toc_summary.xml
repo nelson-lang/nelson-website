@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>help_tools</module>
+    <section name="Help tools functions">
+      <chapter_description>help tools</chapter_description>
+      <keyword name="buildhelp" link="buildhelp.html" description="Build help of Nelson's modules."/>
+      <keyword name="buildhelpmd" link="buildhelpmd.html" description="Build help of Nelson's modules for GitBook."/>
+      <keyword name="buildhelpweb" link="buildhelpweb.html" description="Build help of Nelson's modules for website."/>
+      <keyword name="docroot" link="docroot.html" description="Retrieve or update the root directory for Nelson Help system."/>
+      <keyword name="headcomments" link="headcomments.html" description="Display Nelson function header comments."/>
+      <keyword name="htmltopdf" link="htmltopdf.html" description="Convers html page to pdf."/>
+      <keyword name="markdown" link="markdown.html" description="Converts markdown to html."/>
+      <keyword name="xmldocbuild" link="xmldocbuild.html" description="Internal function to convert xml document files to html."/>
+      <keyword name="xmldocchecker" link="xmldocchecker.html" description="Checks a xml documentation file."/>
+      <keyword name="xmldoctohelp" link="xmldoctohelp.html" description="Converts xml Nelson help files to Nelson format."/>
+      <keyword name="xmldoctohtml" link="xmldoctohtml.html" description="Converts xml Nelson help files to html."/>
+      <keyword name="xmldoctomd" link="xmldoctomd.html" description="Converts xml Nelson help files to markdown format."/>
+    </section>
+  </toc>
+</help_summary>

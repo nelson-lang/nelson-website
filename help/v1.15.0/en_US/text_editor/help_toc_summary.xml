@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>text_editor</module>
+    <section name="Text editor">
+      <chapter_description>Embedded Nelson text editor</chapter_description>
+      <keyword name="edit" link="edit.html" description="function editor."/>
+      <keyword name="editor" link="editor.html" description="call the embedded text editor."/>
+      <keyword name="smartindent" link="smartindent.html" description="Smart indent a nelson file"/>
+    </section>
+  </toc>
+</help_summary>

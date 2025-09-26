@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>geometry</module>
+    <section name="Geometry">
+      <chapter_description>Functions about Geometry.</chapter_description>
+      <keyword name="rotx" link="rotx.html" description="3x3 transformation matrix for rotations around x-axis"/>
+      <keyword name="roty" link="roty.html" description="3x3 transformation matrix for rotations around y-axis"/>
+      <keyword name="rotz" link="rotz.html" description="3x3 transformation matrix for rotations around z-axis"/>
+    </section>
+  </toc>
+</help_summary>

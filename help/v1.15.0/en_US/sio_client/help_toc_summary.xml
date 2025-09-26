@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>sio_client</module>
+    <section name="SIO client">
+      <chapter_description>Nelson in the cloud</chapter_description>
+      <keyword name="doc" link="doc.html" description="Displays documentation."/>
+      <keyword name="sioemit" link="sioemit.html" description="Emit an event to web client."/>
+      <keyword name="siogetvariable" link="siogetvariable.html" description="Emit an value of variable to web browser."/>
+    </section>
+  </toc>
+</help_summary>

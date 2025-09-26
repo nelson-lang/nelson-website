@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>double</module>
+    <section name="Double">
+      <chapter_description>double type functions</chapter_description>
+      <keyword name="double" link="double.html" description="Converts a variable to double precision type."/>
+      <keyword name="flintmax" link="flintmax.html" description="Largest consecutive integer in floating-point format."/>
+      <keyword name="realmax" link="realmax.html" description="Largest positive floating-point number."/>
+      <keyword name="realmin" link="realmin.html" description="Smallest positive floating-point number."/>
+    </section>
+  </toc>
+</help_summary>

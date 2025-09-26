@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>single</module>
+    <section name="Single type">
+      <chapter_description>single type functions</chapter_description>
+      <keyword name="single" link="single.html" description="Converts a variable to single precision type."/>
+    </section>
+  </toc>
+</help_summary>

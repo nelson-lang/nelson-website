@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>modules_manager</module>
+    <section name="Modules manager">
+      <chapter_description>modules manager functions</chapter_description>
+      <keyword name="addgateway" link="addgateway.html" description="Adds dynamically builtin at runtime."/>
+      <keyword name="addmodule" link="addmodule.html" description="Add module to Nelson."/>
+      <keyword name="gatewayinfo" link="gatewayinfo.html" description="Returns information about an gateway."/>
+      <keyword name="getmodules" link="getmodules.html" description="Returns list of modules loaded in Nelson."/>
+      <keyword name="ismodule" link="ismodule.html" description="Checks if a module is loaded."/>
+      <keyword name="module.json" link="module-json.html" description="module.json description"/>
+      <keyword name="modulepath" link="modulepath.html" description="Returns path of a module."/>
+      <keyword name="nmm" link="nmm.html" description="Nelson Modules Manager."/>
+      <keyword name="nmm_build_help" link="nmm_build_help.html" description="helper's function to build help of an external module"/>
+      <keyword name="nmm_build_loader" link="nmm_build_loader.html" description="helper's function to build main loader.m of an external module"/>
+      <keyword name="removegateway" link="removegateway.html" description="Removes dynamically builtin at runtime."/>
+      <keyword name="removemodule" link="removemodule.html" description="remove a module from Nelson."/>
+      <keyword name="requiremodule" link="requiremodule.html" description="Returns an error if module is not loaded in Nelson."/>
+      <keyword name="semver" link="semver.html" description="semantic versioner."/>
+      <keyword name="toolboxdir" link="toolboxdir.html" description="Returns path of a module."/>
+      <keyword name="usermodulesdir" link="usermodulesdir.html" description="Returns path where external modules are saved."/>
+    </section>
+  </toc>
+</help_summary>

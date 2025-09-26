@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>initial</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">initial</span></div></div>
+<div class="subtitle">System response to initial states of state-space model.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">[y, t, x] = initial(sys, x0)
+[y, t, x] = initial(sys, x0, Tfinal)
+[y, t, x] = initial(sys, x0, t)
+[y, t, x] = initial(sys, x0, [t0, tFinal])
+initial(...)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">sys</td>
+<td>a lti model.</td>
+</tr>
+<tr>
+<td class="param-name">x0</td>
+<td>Initial state values: vector.</td>
+</tr>
+<tr>
+<td class="param-name">t</td>
+<td>Time samples: vector.</td>
+</tr>
+<tr>
+<td class="param-name">tFinal</td>
+<td>End time for step response: scalar.</td>
+</tr>
+<tr>
+<td class="param-name">[t0, tFinal]</td>
+<td>Time range for step response: two-element vector.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">y</td>
+<td>Simulated response data: matrix or vector.</td>
+</tr>
+<tr>
+<td class="param-name">tOut</td>
+<td>Time vector: vector.</td>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>State trajectories: matrix or vector.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>
+            <b>[y, tOut] = initial(sys, x0)</b> calculates the unforced initial response (y) of the dynamic system <b>sys</b> from the specified initial state <b>x0</b>.</p>
+            <p>The time vector <b>tOut</b> is provided in the time units of <b>sys</b>, and the initial function automatically adapts time steps and simulation duration based on the system dynamics.</p>
+            <p>When you use <b>[y, tOut] = initial(sys, x0, tFinal)</b>, the function simulates the response from t = 0 to the final time t = tFinal.</p>
+            <p>Similarly, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simulates the response from t0 to tFinal.</p>
+            <p>Additionally, <b>[y, tOut] = initial(sys, x0, t)</b> returns the initial response of <b>sys</b> at the specified times provided in the vector <b>t</b>.</p>
+        </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">A = [-10 -20 -30;1  0  0; 0  1  0];
+B = [1;   0;   0];
+C = [0   0   1];
+D = 0;
+T = [0:0.1:1];
+U = zeros(size(T, 1), size(T, 2));    
+X0 = [0.1 0.1 0.1];
+sys = ss(A, B, C, D);    
+initial(sys, X0);
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./initial_3AE59086.svg" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../control_system/gensig.html">step</a><a class="see-also-link" href="../control_system/step.html">lsim</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

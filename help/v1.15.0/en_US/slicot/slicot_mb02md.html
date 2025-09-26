@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>slicot_mb02md</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">slicot_mb02md</span></div></div>
+<div class="subtitle">Solution of Total Least-Squares problem using a SVD approach.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">[RANK_OUT, C_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">JOB</td>
+<td>Determines whether the values of the parameters RANK and TOL are to be specified by the user or computed by the routine as follows: = 'R':  Compute RANK only;  = 'T':  Compute TOL only; = 'B':  Compute both RANK and TOL; = 'N':  Compute neither RANK nor TOL.</td>
+</tr>
+<tr>
+<td class="param-name">M</td>
+<td>The number of rows in the data matrix A and the observation matrix B.</td>
+</tr>
+<tr>
+<td class="param-name">N</td>
+<td>The number of columns in the data matrix A.</td>
+</tr>
+<tr>
+<td class="param-name">L</td>
+<td>The number of columns in the observation matrix B.</td>
+</tr>
+<tr>
+<td class="param-name">RANK_IN</td>
+<td>if JOB = 'T' or JOB = 'N', then RANK must specify r, the rank of the TLS approximation [A + DA | B + DB].</td>
+</tr>
+<tr>
+<td class="param-name">C_IN</td>
+<td>the leading M-by-(N+L) part of this array must contain the matrices A and B.</td>
+</tr>
+<tr>
+<td class="param-name">TOL</td>
+<td>A tolerance used to determine the rank of the TLS approximation [A+DA|B+DB] and to check the multiplicity of the singular values of matrix C.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">RANK_OUT</td>
+<td>if JOB = 'R' or JOB = 'B', and INFO = 0, then RANK contains the computed (effective) rank of the TLS approximation [A + DA | B + DB].</td>
+</tr>
+<tr>
+<td class="param-name">C_OUT</td>
+<td>the leading (N+L)-by-(N+L) part of this array contains the (transformed) right singular vectors, including null space vectors, if any, of C = [A | B].</td>
+</tr>
+<tr>
+<td class="param-name">S</td>
+<td>If INFO = 0, the singular values of matrix C</td>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>If INFO = 0, the leading N-by-L part of this array contains the solution X to the TLS problem specified by A and B.</td>
+</tr>
+<tr>
+<td class="param-name">IWARN</td>
+<td>= 0:  no warnings; = 1:  if the rank of matrix C has been lowered because a singular value of multiplicity greater than 1 was found; = 2:  if the rank of matrix C has been lowered because the upper triangular matrix F is (numerically) singular.</td>
+</tr>
+<tr>
+<td class="param-name">INFO</td>
+<td>= 0:  successful exit;</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>To solve the Total Least Squares (TLS) problem using a Singular Value Decomposition (SVD) approach. The TLS problem assumes an overdetermined set of linear equations AX = B, where both the data matrix A as well as the observation matrix B are inaccurate. The routine also solves determined and underdetermined sets of equations by computing the minimum norm solution. It is assumed that all preprocessing measures (scaling, coordinate transformations, whitening, ... ) of the data have been performed in advance.</p>
+    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">M = 6;
+N = 3;
+L = 1;
+JOB = 'B';
+TOL = 0.0;
+RANK_IN = 1;
+C_IN = [0.80010  0.39985  0.60005  0.89999;
+   0.29996  0.69990  0.39997  0.82997;
+   0.49994  0.60003  0.20012  0.79011;
+   0.90013  0.20016  0.79995  0.85002;
+   0.39998  0.80006  0.49985  0.99016;
+   0.20002  0.90007  0.70009  1.02994];
+[RANK_OUT, C_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>MB02MD</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span> Bibliography</div>
+<div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/MB02MD.html" target="_blank">http://slicot.org/objects/software/shared/doc/MB02MD.html</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>SLICOT Documentation</div>
+</div>
+</body>
+</html>

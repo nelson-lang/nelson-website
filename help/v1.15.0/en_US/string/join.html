@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>join</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">join</span></div></div>
+<div class="subtitle">Combine strings.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">res = join(str)
+res = join(str, delimiter)
+res = join(str, dim)
+res = join(str, delimiter, dim)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">str</td>
+<td>a string, string array or cell of strings.</td>
+</tr>
+<tr>
+<td class="param-name">delimiter</td>
+<td>a string, string array or cell of strings:Characters used to separate and join strings.</td>
+</tr>
+<tr>
+<td class="param-name">dim</td>
+<td>positive integer: Dimension along which to join strings.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">res</td>
+<td>a string, string array or cell of strings.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>
+            <b>res = join(str)</b> combines the elements of <b>str</b> into a single text by joining them with a space character as the default delimiter.</p>
+            <p>The input, <b>str</b>, can be either a string array or a cell array of character vectors. The output, <b>res</b>, has the same data type as <b>str</b>.</p>
+            <p>If <b>str</b> is a 1-by-N or N-by-1 string array or cell array, <b>res</b> will be a string scalar or a cell array containing a single character vector.</p>
+            <p>If <b>str</b> is an M-by-N string array or cell array, res will be an M-by-1 string array or cell array.</p>
+            <p>For arrays of any size, join concatenates elements along the last dimension with a size greater than 1.</p>
+            <p>
+                <b>res = join(str, delimiter)</b> joins the elements of <b>str</b> using the specified delimiter instead of the default space character.</p>
+                <p>If delimiter is an array of multiple delimiters, and <b>str</b> has N elements along the joining dimension, delimiter must have N–1 elements along the same dimension. All other dimensions of delimiter must either have size 1 or match the size of the corresponding dimensions of <b>str</b>.</p>
+                <p>
+                    <b>res = join(str, dim)</b> combines the elements of <b>str</b> along the specified dimension <b>dim</b>.</p>
+                    <p>
+                        <b>res = join(str, delimiter, dim)</b> joins the elements of <b>str</b> along the specified dimension <b>dim</b>, using delimiter to separate them.</p>
+                    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">str = ["x","y","z"; "a","b","c"];
+delimiters = [" + "," = "; " - "," = "];
+R = join(str, delimiters)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../string/append.html">append</a><a class="see-also-link" href="../string/strcat.html">strcat</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.10.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

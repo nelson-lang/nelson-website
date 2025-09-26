@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>imresize</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">imresize</span></div></div>
+<div class="subtitle">Resize image by scale or output size</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">img2 = imresize(img, scale)
+img2 = imresize(img, [numrows numcols])
+[Y, newmap] = imresize(X, map, ...)
+... = imresize(..., method)
+... = imresize(..., Name, Value)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">img</td>
+<td>Image to be resized, specified as a numeric array, logical array of any dimension. Input must be nonsparse, and numeric input must be real.</td>
+</tr>
+<tr>
+<td class="param-name">scale</td>
+<td>Resize factor, specified as a positive number or two-element vector. If scale is between 0 and 1, output is smaller; if greater than 1, output is larger. imresize applies the same scale factor to row and column dimensions unless a vector is specified.</td>
+</tr>
+<tr>
+<td class="param-name">[numrows numcols]</td>
+<td>Row and column dimensions of output image, specified as a two-element vector of positive numbers. NaN can be used for either dimension to preserve aspect ratio.</td>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>Indexed image to be resized, specified as a real, nonsparse numeric array of positive integers.</td>
+</tr>
+<tr>
+<td class="param-name">map</td>
+<td>Colormap associated with indexed image X, specified as a c-by-3 numeric matrix with values in [0, 1].</td>
+</tr>
+<tr>
+<td class="param-name">method</td>
+<td>Interpolation method (optional, default: 'bicubic'): must be always at last position parameter.
+      </td>
+</tr>
+<tr>
+<td class="param-name">Name, Value</td>
+<td>Optional name-value arguments.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">B</td>
+<td>Resized image, returned as a numeric, logical array of the same data type as the input image, A.</td>
+</tr>
+<tr>
+<td class="param-name">Y</td>
+<td>Resized indexed image, returned as a numeric array of the same data type as the input indexed image, X.</td>
+</tr>
+<tr>
+<td class="param-name">newmap</td>
+<td>Colormap of the resized indexed image Y, returned as an m-by-3 numeric matrix. By default, imresize returns a new, optimized colormap with the resized image. To return the original colormap, use the Colormap name-value argument.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.</p>
+        <p>For numeric and logical images, the default interpolation method is 'bicubic'.</p>
+        <p>When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function.</p>
+        <p>For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument.</p>
+        <p>Supported interpolation methods include</p>
+        <ul>
+            'nearest': Nearest neighbor interpolation
+            'bilinear': Bilinear interpolation
+            'bicubic': Bicubic interpolation
+            'box': Box-shaped kernel
+            'lanczos2': Lanczos-2 kernel
+            'lanczos3': Lanczos-3 kernel
+        </ul>
+        <p>Supported Pairs Name, Value:</p>
+        <ul>
+            'Antialiasing': true/false (default: true)
+            'Colormap': 'optimized' (default) or 'original' (indexed image only)
+            'Dither': true (default) or false (indexed image only)
+        </ul>
+        <p>Limitations:</p>
+        <ul>
+            Input must be nonsparse and real for numeric images.
+            For large scale factors, output image size may be significantly larger than input.
+            Bicubic interpolation can produce pixel values outside the original range.
+        </ul>
+    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div class="example-title">imresize example</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">filename = [tempdir, 'apollo_8_earthrise_1968_as08-14-2383.jpg'];
+websave(filename, 'https://www.nasa.gov/wp-content/uploads/2025/05/3dmodels-casa-2025-astro.jpg');
+
+im = imread(filename);
+size(im)
+
+im1 = imresize(im, 0.05, 'bicubic');
+size(im1)
+
+figure;
+
+subplot(1,2,1);          % 1 row, 2 columns, first subplot
+image(im);
+title('Original Image');
+
+subplot(1,2,2);          % second subplot
+image(im1);
+title('Resized Image');</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./imresize_1_2885E2B0.png" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../image_processing/imrotate.html">imrotate</a><a class="see-also-link" href="../image_processing/imshow.html">imshow</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.15.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

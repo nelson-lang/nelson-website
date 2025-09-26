@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dictionary</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">dictionary</span></div></div>
+<div class="subtitle">Object that maps unique keys to values.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">d = dictionary()
+d = dictionary(d1)
+d = dictionary(keys, values)
+d = dictionary(key1, value1, ... , keyN, valueN)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">d1</td>
+<td>a dictionary or py.dict object.</td>
+</tr>
+<tr>
+<td class="param-name">keys</td>
+<td>scalar or array</td>
+</tr>
+<tr>
+<td class="param-name">values</td>
+<td>scalar, array or cell array</td>
+</tr>
+<tr>
+<td class="param-name">key1, value1, ... , keyN, valueN</td>
+<td>Key-value pairs</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">d</td>
+<td>scalar: a dictionary object.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>
+            <b>d = dictionary()</b>: This command initializes an empty dictionary with no keys or values.</p>
+            <p>Initially, the dictionary has no specific data types assigned to its keys or values. Once entries are added, the data types for keys and values are determined based on these entries.</p>
+            <p></p>
+            <p>
+                <b>d = dictionary(keys, values)</b>: This creates a dictionary using the provided keys and values.</p>
+                <p>The resulting dictionary is a 1-by-1 scalar object. If a key appears multiple times, only the last corresponding value is kept. If the values parameter is a scalar, each key is assigned this value. When keys and values are arrays, they must have matching sizes, resulting in key-value pairs accordingly.</p>
+                <p></p>
+                <p>Dictionaries are typed according to their entries. All keys must share the same data type, and all values must share a different, consistent data type. If a new entry has parts that don't match the existing data types, Nelson will attempt to convert them. Keys and values can have different data types, and character row vectors are converted to string scalars.</p>
+                <p></p>
+                <p>
+                    <b>d = dictionary(key1, value1, ... , keyN, valueN)</b>: This syntax creates a dictionary with the specified key-value pairs.</p>
+                    <p>If a key is repeated, only the last key-value pair for that key is kept.</p>
+                    <p>Removing an Entry from a Dictionary:</p>
+                    <p>
+                        <b>d(keys) = []</b>: This command removes the entry associated with the specified key from the dictionary.</p>
+                        <p></p>
+                        <p>Assigning Values to Entries:</p>
+                        <p>
+                            <b>d(keys) = newValues</b>: This command assigns the elements of newValues to the entries specified by the corresponding keys.</p>
+                            <p>If a specified key does not exist in the dictionary, a new entry is created. If a key appears multiple times, only the last assigned value is kept. Assigning a new value to an existing key overwrites its previous value.</p>
+                            <p></p>
+                            <p>Looking Up a Value:</p>
+                            <p>
+                                <b>bvalue = d(keys)</b>: This command retrieves the value corresponding to the specified keys from the dictionary.</p>
+                                <p></p>
+                                <p>Storing Multiple Data Types in a Dictionary:</p>
+                                <p>
+                                    <b>value = d{keys}</b> retrieves the value associated with <b>keys</b> and returns the contents of the cell. If <b>keys</b> is an array, a comma-separated list of the corresponding values is returned. An error is thrown if the dictionary's values are configured to a datatype other than cell.</p>
+                                    <p>
+                                        <b>d{keys} = values</b> assigns cells containing the elements of <b>values</b> to the entries specified by the corresponding <b>keys</b>. An error is thrown if the dictionary's values are configured to a datatype other than cell.</p>
+                                        <p></p>
+                                    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">d = dictionary()
+d('apple') = 1
+d('banana') = 2
+d('kiwi') = 3
+d('banana') = []
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">Values = {{'a','b'},["ff", "cc"],struct,[1 2 3 4]}
+Keys = ["letters" "words" "a structure" "numeric array"]
+d = dictionary(Keys, Values)
+d{"numeric array"}
+d{"a new entry"} = 'table'</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example">
+<div class="example-title">dictionary conversion nelson -- python</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">wheels = [1 2 3];
+names = ["Monocycle" "Bicycle" "Tricycle"];
+d = dictionary(wheels, names)
+R = pyrun("A = d", "A", 'd', d)
+dictionary(R)
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../dictionary/lookup.html">lookup</a><a class="see-also-link" href="../dictionary/remove.html">remove</a><a class="see-also-link" href="../dictionary/insert.html">insert</a><a class="see-also-link" href="../dictionary/keyMatch.html">keyMatch</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.5.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

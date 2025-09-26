@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>debugger</module>
+    <section name="Debugger functions">
+      <chapter_description>debugger functions</chapter_description>
+      <keyword name="dbstack" link="dbstack.html" description="call stack."/>
+    </section>
+  </toc>
+</help_summary>

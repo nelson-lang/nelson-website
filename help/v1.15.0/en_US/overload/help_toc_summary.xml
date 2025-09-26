@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>overload</module>
+    <section name="Overloading">
+      <chapter_description>Overloading capabilities on functions and operators.</chapter_description>
+      <keyword name="overloading" link="overloading.html" description="Customizing Operators and Functions"/>
+    </section>
+  </toc>
+</help_summary>

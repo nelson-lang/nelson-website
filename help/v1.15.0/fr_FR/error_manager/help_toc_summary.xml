@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>error_manager</module>
+    <section name="Error manager">
+      <chapter_description>error handling functions</chapter_description>
+      <keyword name="error" link="error.html" description="Raise an error message."/>
+      <keyword name="getLastReport" link="getLastReport.html" description="Returns last recorded formatted error message."/>
+      <keyword name="lasterror" link="lasterror.html" description="Returns last recorded error message."/>
+      <keyword name="lastwarn" link="lastwarn.html" description="Returns last recorded warning message."/>
+      <keyword name="MException" link="MException.html" description="Matrix Exception information."/>
+      <keyword name="rethrow" link="rethrow.html" description="rethrow error."/>
+      <keyword name="throw" link="throw.html" description="throw error."/>
+      <keyword name="throwAsCaller" link="throwAsCaller.html" description="Throw exception as if occurs within calling function."/>
+      <keyword name="warning" link="warning.html" description="Display a warning message."/>
+    </section>
+  </toc>
+</help_summary>

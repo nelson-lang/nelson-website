@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>image_processing</module>
+    <section name="Image Processing functions">
+      <chapter_description>image processing functions</chapter_description>
+      <keyword name="im2double" link="im2double.html" description="Convert image to double precision."/>
+      <keyword name="imresize" link="imresize.html" description="Resize image by scale or output size"/>
+      <keyword name="imrotate" link="imrotate.html" description="Rotate image by specified angle"/>
+    </section>
+  </toc>
+</help_summary>

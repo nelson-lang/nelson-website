@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>localization</module>
+    <section name="Localization functions">
+      <chapter_description>localization functions</chapter_description>
+      <keyword name="getavailablelanguages" link="getavailablelanguages.html" description="Returns available languages in Nelson."/>
+      <keyword name="getdefaultlanguage" link="getdefaultlanguage.html" description="Returns the default language used in Nelson."/>
+      <keyword name="getlanguage" link="getlanguage.html" description="Returns the current language in Nelson."/>
+      <keyword name="setlanguage" link="setlanguage.html" description="Changes the language used in Nelson."/>
+    </section>
+  </toc>
+</help_summary>

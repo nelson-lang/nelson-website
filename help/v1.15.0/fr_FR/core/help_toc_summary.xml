@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>core</module>
+    <section name="Core">
+      <chapter_description>core functions</chapter_description>
+      <keyword name="banner" link="banner.html" description="Shows Nelson banner."/>
+      <keyword name="crc32" link="crc32.html" description="Get crc32 checksum."/>
+      <keyword name="eval" link="eval.html" description="Evaluate Nelson code in string."/>
+      <keyword name="evalc" link="evalc.html" description="Evaluate Nelson code with console capture."/>
+      <keyword name="evalin" link="evalin.html" description="Evaluate Nelson code in string in an specified scope."/>
+      <keyword name="execstr" link="execstr.html" description="Execute Nelson code in strings."/>
+      <keyword name="exist" link="exist.html" description="Check for the existence."/>
+      <keyword name="exit" link="exit.html" description="Terminate Nelson program (same as quit)"/>
+      <keyword name="feature" link="feature.html" description="undocumented features."/>
+      <keyword name="inputname" link="inputname.html" description="Get variable name of function input."/>
+      <keyword name="isunicodesupported" link="isunicodesupported.html" description="Detect whether the current terminal supports Unicode."/>
+      <keyword name="license" link="license.html" description="Get license information for Nelson."/>
+      <keyword name="maxNumCompThreads" link="maxNumCompThreads.html" description="Set/Get maximum number of computional threads."/>
+      <keyword name="namelengthmax" link="namelengthmax.html" description="Return the maximum variable name length."/>
+      <keyword name="nargin" link="nargin.html" description="Returns the number of input arguments."/>
+      <keyword name="narginchk" link="narginchk.html" description="Checks the number of input arguments."/>
+      <keyword name="nargout" link="nargout.html" description="Returns the number of output arguments."/>
+      <keyword name="nargoutchk" link="nargoutchk.html" description="Checks the number of output arguments."/>
+      <keyword name="nelsonappid" link="nelsonappid.html" description="Returns nelson application ID"/>
+      <keyword name="nelsonroot" link="nelsonroot.html" description="Returns Nelson's root folder."/>
+      <keyword name="nfilename" link="nfilename.html" description="Returns the name of the currently executing file."/>
+      <keyword name="mfilename" link="nfilename.html" description="Returns the name of the currently executing file."/>
+      <keyword name="pause " link="pause.html" description="Pauses script execution."/>
+      <keyword name="prefdir" link="prefdir.html" description="Return the preferences directory used by Nelson."/>
+      <keyword name="quit" link="quit.html" description="Terminate Nelson application"/>
+      <keyword name="run" link="run.html" description="Executes a script file (.m)."/>
+      <keyword name="sha256" link="sha256.html" description="Get sha256 checksum."/>
+      <keyword name="version" link="version.html" description="Return the version of Nelson."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>assert_functions</module>
+    <section name="Assertion functions">
+      <chapter_description>The aim of these functions is to provide tools to test some other functions.</chapter_description>
+      <keyword name="assert" link="assert.html" description="Check that condition is true."/>
+      <keyword name="assert_checkerror" link="assert_checkerror.html" description="Check that an command raises the expected error."/>
+      <keyword name="assert_isapprox" link="assert_isapprox.html" description="Check that computed and expected values are approximately equal."/>
+      <keyword name="assert_isequal" link="assert_isequal.html" description="Check that computed and expected values are equal."/>
+      <keyword name="assert_isfalse" link="assert_isfalse.html" description="Check that condition is false."/>
+      <keyword name="assert_istrue" link="assert_istrue.html" description="Check that condition is true."/>
+    </section>
+  </toc>
+</help_summary>

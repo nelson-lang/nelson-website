@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>file_archiver</module>
+    <section name="File archiver functions">
+      <chapter_description>file archiver functions</chapter_description>
+      <keyword name="unzip" link="unzip.html" description="Decompress zip file."/>
+      <keyword name="zip" link="zip.html" description="Compress files into zip file."/>
+    </section>
+  </toc>
+</help_summary>

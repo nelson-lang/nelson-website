@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>string</module>
+    <section name="String type">
+      <chapter_description>string type functions</chapter_description>
+      <keyword name="append" link="append.html" description="combines strings horizontally."/>
+      <keyword name="blanks" link="blanks.html" description="creates an string of blank characters."/>
+      <keyword name="char" link="char.html" description="Converts to a character array."/>
+      <keyword name="contains" link="contains.html" description="checks if string contains with pattern."/>
+      <keyword name="convertCharsToStrings" link="convertCharsToStrings.html" description="Convert chars arrays to string arrays."/>
+      <keyword name="convertStringsToChars" link="convertStringsToChars.html" description="Convert string arrays to character arrays."/>
+      <keyword name="count" link="count.html" description="Computes the number of occurrences of an pattern."/>
+      <keyword name="deblank" link="deblank.html" description="Remove trailing whitespace."/>
+      <keyword name="endsWith" link="endsWith.html" description="checks if string ends with pattern."/>
+      <keyword name="int2str" link="int2str.html" description="Convert an integer array to a string"/>
+      <keyword name="isletter" link="isletter.html" description="Determine which characters are letters."/>
+      <keyword name="isspace" link="isspace.html" description="Determine which characters are space."/>
+      <keyword name="isStringScalar" link="isStringScalar.html" description="checks if input is string array with one element."/>
+      <keyword name="join" link="join.html" description="Combine strings."/>
+      <keyword name="mat2str" link="mat2str.html" description="Matrix to String."/>
+      <keyword name="matches" link="matches.html" description="Determine if pattern matches with strings."/>
+      <keyword name="newline" link="newline.html" description="Returns a newline character."/>
+      <keyword name="num2str" link="num2str.html" description="Converts numbers to character array."/>
+      <keyword name="replace" link="replace.html" description="Replaces strings in another."/>
+      <keyword name="sprintf" link="sprintf.html" description="Writes data to a string."/>
+      <keyword name="startsWith" link="startsWith.html" description="checks if string starts with pattern."/>
+      <keyword name="str2double" link="str2double.html" description="Converts a string to double."/>
+      <keyword name="strcat" link="strcat.html" description="concatenate strings horizontally."/>
+      <keyword name="strcmp" link="strcmp.html" description="Strings comparaison."/>
+      <keyword name="strcmpi" link="strcmpi.html" description="Strings comparaison (case insensitive)."/>
+      <keyword name="strfind" link="strfind.html" description="Find a string in another."/>
+      <keyword name="string" link="string.html" description="string array constructor."/>
+      <keyword name="strings" link="strings.html" description="Create string array without characters."/>
+      <keyword name="strjust" link="strjust.html" description="Justify strings"/>
+      <keyword name="strlength" link="strlength.html" description="Length of strings in cell of strings or string array."/>
+      <keyword name="strncmp" link="strncmp.html" description="Compares first n characters of strings."/>
+      <keyword name="strncmpi" link="strncmpi.html" description="Compares first n characters of strings (case sensitive)."/>
+      <keyword name="strrep" link="strrep.html" description="Replaces strings in another."/>
+      <keyword name="strtrim" link="strtrim.html" description="Remove leading and trailing whitespace."/>
+      <keyword name="tolower" link="tolower.html" description="Lower case conversion."/>
+      <keyword name="toupper" link="toupper.html" description="Upper case conversion."/>
+    </section>
+  </toc>
+</help_summary>

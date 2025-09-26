@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>help_browser</module>
+    <section name="Help browser functions">
+      <chapter_description>help browser functions</chapter_description>
+      <keyword name="doc" link="doc.html" description="Displays documentation."/>
+      <keyword name="helpbrowser" link="helpbrowser.html" description="internal function used by 'doc'."/>
+    </section>
+  </toc>
+</help_summary>

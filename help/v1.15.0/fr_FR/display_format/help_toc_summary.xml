@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>display_format</module>
+    <section name="Display format">
+      <chapter_description>output display format functions</chapter_description>
+      <keyword name="disp" link="disp.html" description="Display a variable."/>
+      <keyword name="display" link="display.html" description="Show information about variable or result of expression."/>
+      <keyword name="echo" link="echo.html" description="Controls the echoing during their execution."/>
+      <keyword name="format" link="format.html" description="Display format and number printing."/>
+      <keyword name="formattedDisplayText" link="formattedDisplayText.html" description="Capture display output as string."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>nig</module>
+    <section name="NIG">
+      <chapter_description>Nelson Interface Generator</chapter_description>
+      <keyword name="nig" link="nig.html" description="Nelson tool to interface C or Fortran functions with Nelson."/>
+    </section>
+  </toc>
+</help_summary>

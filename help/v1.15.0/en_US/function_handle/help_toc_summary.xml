@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>function_handle</module>
+    <section name="Function_handle functions">
+      <chapter_description>function_handle functions</chapter_description>
+      <keyword name="Anonymous Functions" link="anonymous_function.html" description="Anonymous Functions."/>
+      <keyword name="func2str" link="func2str.html" description="Return a function handle constructed from a string."/>
+      <keyword name="isfunction_handle" link="isfunction_handle.html" description="Checks if value is a function handle."/>
+      <keyword name="str2func" link="str2func.html" description="Returns a function handle from a string."/>
+    </section>
+  </toc>
+</help_summary>

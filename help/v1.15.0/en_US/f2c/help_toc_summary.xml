@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>f2c</module>
+    <section name="Fortran to C">
+      <chapter_description> Converts Fortran 77 to C code</chapter_description>
+      <keyword name="f2c" link="f2c.html" description="Fortran to C converter."/>
+    </section>
+  </toc>
+</help_summary>

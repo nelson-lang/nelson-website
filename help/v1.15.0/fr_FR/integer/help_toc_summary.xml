@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>integer</module>
+    <section name="Integers type">
+      <chapter_description>
+		These functions convert and store data to 1, 2 or 4 bytes integers.
+		These data types are especially useful to store big objects such as images.
+	</chapter_description>
+      <keyword name="int16" link="int16.html" description="Converts to 16-bit signed integer."/>
+      <keyword name="int32" link="int32.html" description="Converts to 32-bit signed integer."/>
+      <keyword name="int64" link="int64.html" description="Converts to 64-bit signed integer."/>
+      <keyword name="int8" link="int8.html" description="Converts to 8-bit signed integer."/>
+      <keyword name="intmax" link="intmax.html" description="Return the largest integer that can be represented in an integer type."/>
+      <keyword name="intmin" link="intmin.html" description="Return the smallest integer that can be represented in an integer type."/>
+      <keyword name="uint16" link="uint16.html" description="Converts to 16-bit unsigned integer."/>
+      <keyword name="uint32" link="uint32.html" description="Converts to 32-bit unsigned integer."/>
+      <keyword name="uint64" link="uint64.html" description="Converts to 64-bit unsigned integer."/>
+      <keyword name="uint8" link="uint8.html" description="Converts to 8-bit unsigned integer."/>
+    </section>
+  </toc>
+</help_summary>

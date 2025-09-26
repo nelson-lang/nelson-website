@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>validators</module>
+    <section name="Validators">
+      <chapter_description>validators functions</chapter_description>
+      <keyword name="mustBeA" link="mustBeA.html" description="Checks that input value comes from one of specified classes."/>
+      <keyword name="mustBeColumn" link="mustBeColumn.html" description="Checks that value is a column vector or raise an error."/>
+      <keyword name="mustBeFile" link="mustBeFile.html" description="Checks that input path refers to file."/>
+      <keyword name="mustBeFinite" link="mustBeFinite.html" description="Checks that value is finite or raise an error."/>
+      <keyword name="mustBeFloat" link="mustBeFloat.html" description="Checks that value is floating-point or raise an error."/>
+      <keyword name="mustBeFolder" link="mustBeFolder.html" description="Checks that input path refers to folder."/>
+      <keyword name="mustBeGreaterThan" link="mustBeGreaterThan.html" description="Checks that value is greater than another value or issue error."/>
+      <keyword name="mustBeGreaterThanOrEqual" link="mustBeGreaterThanOrEqual.html" description="Checks that value is greater than or equal to another value or issue error."/>
+      <keyword name="mustBeInRange" link="mustBeInRange.html" description="Checks that value is in the specified range."/>
+      <keyword name="mustBeInteger" link="mustBeInteger.html" description="Checks that value is integer or raise an error."/>
+      <keyword name="mustBeLessThan" link="mustBeLessThan.html" description="Checks that value is less than another value or issue error."/>
+      <keyword name="mustBeLessThanOrEqual" link="mustBeLessThanOrEqual.html" description="Checks that value is less than or equal to another value or issue error."/>
+      <keyword name="mustBeLogical" link="mustBeLogical.html" description="Checks that value is logical or raise an error."/>
+      <keyword name="mustBeLogicalScalar" link="mustBeLogicalScalar.html" description="Checks that value is logical scalar or raise an error."/>
+      <keyword name="mustBeMatrix" link="mustBeMatrix.html" description="Checks that value is a matrix or raise an error."/>
+      <keyword name="mustBeMember" link="mustBeMember.html" description="Checks that value is member of specified array or issue error."/>
+      <keyword name="mustBeNegative" link="mustBeNegative.html" description="Checks that value is negative or raise an error."/>
+      <keyword name="mustBeNonempty" link="mustBeNonempty.html" description="Checks that value is nonempty or raise an error."/>
+      <keyword name="mustBeNonmissing" link="mustBeNonmissing.html" description="Checks that value is not missing."/>
+      <keyword name="mustBeNonNan" link="mustBeNonNan.html" description="Checks that value is not NaN."/>
+      <keyword name="mustBeNonnegative" link="mustBeNonnegative.html" description="Checks that value is nonnegative or raise an error."/>
+      <keyword name="mustBeNonpositive" link="mustBeNonpositive.html" description="Checks that value is non positive or raise an error."/>
+      <keyword name="mustBeNonSparse" link="mustBeNonSparse.html" description="Checks that value is not sparse."/>
+      <keyword name="mustBeNonZero" link="mustBeNonZero.html" description="Checks that value is not zero."/>
+      <keyword name="mustBeNonzeroLengthText" link="mustBeNonzeroLengthText.html" description="Checks that value is text with nonzero length or raise an error."/>
+      <keyword name="mustBeNumeric" link="mustBeNumeric.html" description="Checks that value is numeric or raise an error."/>
+      <keyword name="mustBeNumericOrLogical" link="mustBeNumericOrLogical.html" description="Checks that input is numeric or logical."/>
+      <keyword name="mustBePositive" link="mustBePositive.html" description="Checks that value is positive or raise an error."/>
+      <keyword name="mustBeReal" link="mustBeReal.html" description="Checks that value is real."/>
+      <keyword name="mustBeRow" link="mustBeRow.html" description="Checks that value is a row vector or raise an error."/>
+      <keyword name="mustBeScalarOrEmpty" link="mustBeScalarOrEmpty.html" description="Checks that value is scalar or empty or raise an error."/>
+      <keyword name="mustBeSparse" link="mustBeSparse.html" description="Checks that value is a sparse matrix or raise an error."/>
+      <keyword name="mustBeText" link="mustBeText.html" description="Checks that value is piece of text or raise an error."/>
+      <keyword name="mustBeTextScalar" link="mustBeTextScalar.html" description="Checks that value is single piece of text or raise an error."/>
+      <keyword name="mustBeValidVariableName" link="mustBeValidVariableName.html" description="Checks that value is valid variable name or raise an error."/>
+      <keyword name="mustBeVector" link="mustBeVector.html" description="Checks that value is vector or raise an error."/>
+    </section>
+  </toc>
+</help_summary>

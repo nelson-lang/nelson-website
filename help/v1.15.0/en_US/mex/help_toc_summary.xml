@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>MEX</module>
+    <section name="MEX functions">
+      <chapter_description>MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality.
+</chapter_description>
+      <keyword name="dlgeneratemexgateway" link="dlgeneratemexgateway.html" description="Generates C MEX gateway (internal function)."/>
+      <keyword name="engClose" link="engClose.html" description="Close Nelson engine session"/>
+      <keyword name="engEvalString" link="engEvalString.html" description="Evaluate expression in string in base scope"/>
+      <keyword name="engGetVariable" link="engGetVariable.html" description="Copy variable from Nelson engine workspace"/>
+      <keyword name="engGetVisible" link="engGetVisible.html" description="Determine visibility of Nelson engine session"/>
+      <keyword name="engOpen" link="engOpen.html" description="Start Nelson process"/>
+      <keyword name="engOpenSingleUse" link="engOpenSingleUse.html" description="Start Nelson engine session for single and nonshared use."/>
+      <keyword name="engOutputBuffer" link="engOutputBuffer.html" description="Specify char buffer for Nelson output"/>
+      <keyword name="engPutVariable" link="engPutVariable.html" description="Put variable into Nelson engine workspace"/>
+      <keyword name="engSetVisible" link="engSetVisible.html" description="Show or hide Nelson engine session"/>
+      <keyword name="mex" link="mex.html" description="Build MEX function"/>
+      <keyword name="mexAtExit" link="mexAtExit.html" description="Register a function to be called when the MEX-file is cleared or when Nelson exits"/>
+      <keyword name="mexCallMATLAB" link="mexCallMATLAB.html" description="Call a NELSON function"/>
+      <keyword name="mexCallMATLABWithTrap" link="mexCallMATLABWithTrap.html" description="Call a NELSON function and capture error."/>
+      <keyword name="mexext" link="mexext.html" description="Binary MEX file-name extension"/>
+    </section>
+  </toc>
+</help_summary>

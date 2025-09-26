@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Accessing and Manipulating Tables in Nelson</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">Accessing and Manipulating Tables in Nelson</span></div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>
+            <b>Insertion into a Table</b>
+        </p>
+        <p>To insert new data into a table, use dot notation or curly braces <b>{}</b> for specific element-wise insertion. You can add new rows, columns, or update existing data.</p>
+        <p>see examples: <b>Adding a New Column</b> and <b>Updating an Existing Element</b>
+    </p>
+    <p></p>
+    <p>
+        <b>Extraction from a Table</b>
+    </p>
+    <p>You can extract specific rows, columns, or individual elements using indexing or by referencing variable names.</p>
+    <p>see examples: <b>Extracting Specific Columns</b> and <b>Extracting Specific Rows</b>
+</p>
+<p></p>
+<p>
+    <b>Removing Data from a Table</b>
+</p>
+<p>In Nelson, you can remove rows, columns, or specific elements from a table by using indexing or the removevars function. Rows or columns can be removed by setting the indices to empty brackets [].</p>
+<p>see examples: <b>Removing Rows</b> and <b>Removing Columns</b>
+</p>
+<p></p>
+<p>
+    <b>Horizontal Concatenation (horzcat)</b>
+</p>
+<p>You can concatenate tables horizontally (side by side) using the horzcat function. This function combines tables by appending the columns of one table to the columns of another table.</p>
+<p>see examples: <b>Horizontal Concatenation</b>
+</p>
+<p></p>
+<p>
+    <b>Vertical Concatenation (vertcat)</b>
+</p>
+<p>You can concatenate tables vertically (one below the other) using the vertcat function. This function combines tables by appending the rows of one table to the rows of another table.</p>
+<p>see examples: <b>Vertical Concatenation</b>
+</p>
+<p></p>
+<p>
+    <b>Convert variable types</b>
+</p>
+<p>You can convert table variables by using the <b>VariableTypes</b> property.</p>
+<p>see examples: <b>VariableTypes</b> example</p>
+<p></p>
+<p>
+    <b>Summary</b>
+</p>
+<p>In Nelson, tables provide a flexible way to store and manipulate heterogeneous data. You can easily insert data, extract parts of the table, and concatenate tables both horizontally and vertically using built-in functionality like dot notation and concatenation functions (horzcat, vertcat), making table manipulation intuitive and powerful for data analysis.</p>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div class="example-title">Adding a New Column</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Updating an Existing Element</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Extracting Specific Columns</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the 'ID' column from the table
+ID_column = T.ID
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Extracting Specific Rows</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the first two rows of the table
+rows_1_2 = T(1:2, :)
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Removing a Column</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Remove the 'Score' column from the table
+T(:, 'Score') = [];
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Removing a Row</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Remove the second row from the table
+T(2, :) = [];
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Horizontal Concatenation</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">% Create two tables with the same number of rows
+T1 = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'});
+T2 = table([10; 20], {'X'; 'Y'}, 'VariableNames', {'Score', 'Grade'});
+
+% Concatenate horizontally
+T_horz = [T1, T2]  % or T_horz = horzcat(T1, T2);
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Vertical Concatenation</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">T1 = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'});
+% Create two tables with the same column names
+T3 = table([3; 4], {'C'; 'D'}, 'VariableNames', {'ID', 'Label'});
+
+% Concatenate vertically
+T_vert = [T1; T3]  % or T_vert = vertcat(T1, T3)
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Convert variable types</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
+Age = [28; 34; 22; 30];
+Height = [175; 160; 180; 165];
+Weight = [70; 55; 80; 60];
+T = table(Names, Age, Height, Weight);
+T.Properties.VariableTypes
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes = ["string"    "int8"    "double"    "double"];
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../table/table.html">table</a><a class="see-also-link" href="../table/2_direct_compution_with_table.html">Direct computation with Table</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.8.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">1.10.0</td>
+<td>VariableTypes property</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

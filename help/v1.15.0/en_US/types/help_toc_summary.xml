@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>types</module>
+    <section name="Types module">
+      <chapter_description>module about types management.</chapter_description>
+      <keyword name="class" link="class.html" description="Return classname of object or creates a named object."/>
+      <keyword name="isa" link="isa.html" description="Return true if var is an object from the class str."/>
+      <keyword name="iscell" link="iscell.html" description="Return true if variable var is a cell array."/>
+      <keyword name="ischar" link="ischar.html" description="Return true if variable var is a char array."/>
+      <keyword name="isclass" link="isclass.html" description="Return true if variable var is a class object."/>
+      <keyword name="isdouble" link="isdouble.html" description="Return true if variable var is a double matrix."/>
+      <keyword name="isempty" link="isempty.html" description="Return true if variable var is an empty matrix."/>
+      <keyword name="isfloat" link="isfloat.html" description="Return true if variable var is a single or double matrix."/>
+      <keyword name="ishandle" link="ishandle.html" description="Return true if variable var is a handle object."/>
+      <keyword name="isint16" link="isint16.html" description="Return true if variable var is a signed 16-bit integer type array."/>
+      <keyword name="isint32" link="isint32.html" description="Return true if variable var is a signed 32-bit integer type array."/>
+      <keyword name="isint64" link="isint64.html" description="Return true if variable var is a signed 64-bit integer type array."/>
+      <keyword name="isint8" link="isint8.html" description="Return true if variable var is a signed 8-bit integer type array."/>
+      <keyword name="isinteger" link="isinteger.html" description="Return true if variable var is a integer type array."/>
+      <keyword name="islogical" link="islogical.html" description="Return true if variable var is a logical."/>
+      <keyword name="isnumeric" link="isnumeric.html" description="Return true if variable var is a numeric array."/>
+      <keyword name="isobject" link="isobject.html" description="Return true if variable var is an object."/>
+      <keyword name="isreal" link="isreal.html" description="Return true if all imaginary part is a zero array."/>
+      <keyword name="issingle" link="issingle.html" description="Return true if variable var is a single matrix."/>
+      <keyword name="issparse" link="issparse.html" description="Return true if variable var is a sparse array."/>
+      <keyword name="isstring" link="isstring.html" description="Return true if variable var is a string array."/>
+      <keyword name="isstruct" link="isstruct.html" description="Return true if variable var is a structure."/>
+      <keyword name="isuint16" link="isuint16.html" description="Return true if variable var is an unsigned 16-bit integer type array."/>
+      <keyword name="isuint32" link="isuint32.html" description="Return true if variable var is an unsigned 32-bit integer type array."/>
+      <keyword name="isuint64" link="isuint64.html" description="Return true if variable var is an unsigned 64-bit integer type array."/>
+      <keyword name="isuint8" link="isuint8.html" description="Return true if variable var is an unsigned 8-bit integer type array."/>
+      <keyword name="isvarname" link="isvarname.html" description="Return true if input is valid variable name."/>
+      <keyword name="missing" link="missing.html" description="Return a missing value."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>matio</module>
+    <section name="MATIO">
+      <chapter_description>MAT-File Read/Write I/O Functions</chapter_description>
+      <keyword name="ismatfile" link="ismatfile.html" description="Checks if filename a valid .mat file"/>
+      <keyword name="loadmat" link="loadmat.html" description="load data from .mat file into Nelson's workspace."/>
+      <keyword name="savemat" link="savemat.html" description="save workspace variables to .mat file"/>
+      <keyword name="whomat" link="whomat.html" description="List variables in an valid .mat file."/>
+      <keyword name="whosmat" link="whosmat.html" description="List variables in an valid .mat file with sizes and types."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>stairs</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">stairs</span></div></div>
+<div class="subtitle">Stairstep graph.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">stairs(Y)
+stairs(X, Y)
+stairs(..., LineSpec)
+stairs(..., Name, Value)
+stairs(ax, ...)
+h = stairs(...)
+[xb, yb] = stairs(...)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>x values.</td>
+</tr>
+<tr>
+<td class="param-name">Y</td>
+<td>y values.</td>
+</tr>
+<tr>
+<td class="param-name">LineSpec</td>
+<td>Line style, marker and/or color: character vector or scalar string.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName</td>
+<td>a scalar string or row vector character.</td>
+</tr>
+<tr>
+<td class="param-name">propertyValue</td>
+<td>a value.</td>
+</tr>
+<tr>
+<td class="param-name">ax</td>
+<td>Axes object.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">h</td>
+<td>line object.</td>
+</tr>
+<tr>
+<td class="param-name">xb</td>
+<td>x values for use with plot</td>
+</tr>
+<tr>
+<td class="param-name">yb</td>
+<td>y values for use with plot</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>Stairstep graphs are a valuable tool for creating time-history plots of digitally sampled data.</p>
+        <p>
+            <b>stairs(Y)</b> function is used to generate such graphs by plotting the elements of the vector <b>Y.</b>
+        </p>
+        <p>If <b>Y</b> is a matrix, it draws one line for each column, with the color of the lines determined by the ColorOrder property of the axes.</p>
+        <p>In the case of a vector <b>Y</b>, the x-axis scale spans from 1 to the length of <b>Y</b>, while for a matrix <b>Y</b>, the x-axis scale ranges from 1 to the number of rows in <b>Y</b>.</p>
+        <p>
+            <b>stairs(X, Y)</b> allows you to plot the elements in <b>Y</b> at specific locations defined by the vector <b>X</b>.</p>
+            <p>It's important to note that the elements in <b>X</b> must be in a monotonic order to create a valid stairstep graph.</p>
+        </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
+f = figure();
+x1 = linspace(0,2*pi)';
+x2 = linspace(0,pi)';
+X = [x1,x2];
+Y = [sin(5*x1),exp(x2).*sin(5*x2)];
+ax = gca();
+stairs(ax, X,Y)
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./stairs_1_F17087DF.svg" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">X = linspace(0,1,45)';
+Y = [cos(3*X), exp(X).*sin(9*X)];
+h = stairs(X,Y);
+h(1).Marker = 'o';
+h(1).MarkerSize = 5;
+h(2).Marker = '+';
+h(2).MarkerFaceColor = 'm';
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./stairs_2_CF83A4A1.svg" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div><a class="see-also-link" href="../graphics/plot.html">plot</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

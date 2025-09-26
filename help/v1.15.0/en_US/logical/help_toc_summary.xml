@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>logical</module>
+    <section name="Logical type functions">
+      <chapter_description>logical type functions</chapter_description>
+      <keyword name="false" link="false.html" description="Logical false."/>
+      <keyword name="logical" link="logical.html" description="Converts a numeric value to logical type."/>
+      <keyword name="true" link="true.html" description="Logical true."/>
+      <keyword name="xor" link="xor.html" description="Exclusive or."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>graphics_io</module>
+    <section name="Graphics I/O functions">
+      <chapter_description>graphics Input/Output functions</chapter_description>
+      <keyword name="copygraphics" link="copygraphics.html" description="Copy plot to clipboard."/>
+      <keyword name="imformats" link="imformats.html" description="Manage supported image formats."/>
+      <keyword name="imread" link="imread.html" description="Read image from graphics file."/>
+      <keyword name="imwrite" link="imwrite.html" description="Write image to graphics file."/>
+      <keyword name="saveas" link="saveas.html" description="Save figure to specific file format."/>
+    </section>
+  </toc>
+</help_summary>

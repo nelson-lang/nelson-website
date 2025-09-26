@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>constructors_functions</module>
+    <section name="Constructors functions">
+      <chapter_description>Create scalars, vectors, or matrices</chapter_description>
+      <keyword name="diag" link="diag.html" description="Get diagonal elements of matrix or create diagonal matrix."/>
+      <keyword name="eps" link="eps.html" description="Creates an epsilon (machine precision)"/>
+      <keyword name="eye" link="eye.html" description="Creates an identity matrix."/>
+      <keyword name="i" link="i.html" description="Pure Imaginary number."/>
+      <keyword name="Inf" link="Inf.html" description="Infinity"/>
+      <keyword name="NaN" link="NaN.html" description="Creates an Not-a-Number"/>
+      <keyword name="ones" link="ones.html" description="Creates an matrix made of ones."/>
+      <keyword name="pi" link="pi.html" description="Ratio of circle's circumference to its diameter."/>
+      <keyword name="zeros" link="zeros.html" description="Creates an matrix made of zeros."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>JSON</module>
+    <section name="JavaScript Object Notation">
+      <chapter_description>Functions to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value).</chapter_description>
+      <keyword name="jsondecode" link="jsondecode.html" description="decodes a JSON string to Nelson object."/>
+      <keyword name="jsonencode" link="jsonencode.html" description="encodes a Nelson object into a JSON string."/>
+      <keyword name="jsonprettyprint" link="jsonprettyprint.html" description="format an JSON string."/>
+    </section>
+  </toc>
+</help_summary>

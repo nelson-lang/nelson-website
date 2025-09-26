@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>handle</module>
+    <section name="Handle">
+      <chapter_description>handle object functions</chapter_description>
+      <keyword name="delete" link="delete.html" description="delete handle objects."/>
+      <keyword name="get" link="get.html" description="Retrieve a property value from an handle object."/>
+      <keyword name="invoke" link="invoke.html" description="Invoke method on an handle object."/>
+      <keyword name="ismethod" link="ismethod.html" description="Return true if method of handle object."/>
+      <keyword name="isprop" link="isprop.html" description="Return true if property of handle object."/>
+      <keyword name="isvalid" link="isvalid.html" description="Return true if variable h is a valid handle."/>
+      <keyword name="methods" link="methods.html" description="Returns the methods name of an object handle."/>
+      <keyword name="properties" link="properties.html" description="Returns the properties name of an object handle."/>
+      <keyword name="set" link="set.html" description="Set a property value of an handle object."/>
+    </section>
+  </toc>
+</help_summary>

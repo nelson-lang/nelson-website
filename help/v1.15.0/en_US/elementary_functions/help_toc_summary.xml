@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>elementary_functions</module>
+    <section name="Elementary functions">
+      <chapter_description>elementary functions</chapter_description>
+      <keyword name="abs" link="abs.html" description="Absolute value"/>
+      <keyword name="allfinite" link="allfinite.html" description="Check if all array elements are finite."/>
+      <keyword name="angle" link="angle.html" description="Phase angle"/>
+      <keyword name="base2dec" link="base2dec.html" description="Convert number in a base to decimal."/>
+      <keyword name="bernsteinMatrix" link="bernsteinMatrix.html" description="Bernstein matrix"/>
+      <keyword name="bin2dec" link="bin2dec.html" description="Convert number in base 2 to decimal."/>
+      <keyword name="bin2num" link="bin2num.html" description="Convert two's complement binary string to number."/>
+      <keyword name="blkdiag" link="blkdiag.html" description="Block diagonal matrix"/>
+      <keyword name="cast" link="cast.html" description="Converts variable to a different data type"/>
+      <keyword name="ceil" link="ceil.html" description="Round up"/>
+      <keyword name="circshift" link="circshift.html" description="Circular shift"/>
+      <keyword name="complex" link="complex.html" description="Creates an complex number."/>
+      <keyword name="conj" link="conj.html" description="Complex conjugate"/>
+      <keyword name="deal" link="deal.html" description="Distribute inputs to outputs."/>
+      <keyword name="dec2base" link="dec2base.html" description="Convert decimal number to another base."/>
+      <keyword name="dec2bin" link="dec2bin.html" description="Convert decimal number to base 2."/>
+      <keyword name="dec2hex" link="dec2hex.html" description="Convert decimal number to base 16."/>
+      <keyword name="exp" link="exp.html" description="Exponential"/>
+      <keyword name="factorial" link="factorial.html" description="Factorial function"/>
+      <keyword name="filter" link="filter.html" description="1-D digital filter"/>
+      <keyword name="find" link="find.html" description="Find Non-zero Elements"/>
+      <keyword name="fix" link="fix.html" description="Round towards zero"/>
+      <keyword name="flip" link="flip.html" description="Flip order of elements"/>
+      <keyword name="flipdim" link="flipdim.html" description="Flip array along specified dimension"/>
+      <keyword name="fliplr" link="fliplr.html" description="Flip order of elements left to right"/>
+      <keyword name="flipud" link="flipud.html" description="Flip order of elements up to dow"/>
+      <keyword name="floor" link="floor.html" description="Round down"/>
+      <keyword name="hadamard" link="hadamard.html" description="Hadamard matrix"/>
+      <keyword name="hankel" link="hankel.html" description="Hankel matrix"/>
+      <keyword name="hex2dec" link="hex2dec.html" description="Convert number in base 16 to decimal."/>
+      <keyword name="hilb" link="hilb.html" description="Hilbert matrix"/>
+      <keyword name="hypot" link="hypot.html" description="Square root of sum of squares"/>
+      <keyword name="imag" link="imag.html" description="Imaginary part of an complex number."/>
+      <keyword name="ind2sub" link="ind2sub.html" description="Linear index to matrix subscript values"/>
+      <keyword name="invhilb" link="invhilb.html" description="Inverse of Hilbert matrix"/>
+      <keyword name="ipermute" link="ipermute.html" description="Inverse permute array dimensions."/>
+      <keyword name="isapprox" link="isapprox.html" description="Return true if arguments are approximately equal, within the precision."/>
+      <keyword name="iscolumn" link="iscolumn.html" description="Determine whether input is column vector."/>
+      <keyword name="istriu" link="isdiag.html" description="Checks if matrix is diagonal."/>
+      <keyword name="isequal" link="isequal.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values)."/>
+      <keyword name="isequaln" link="isequaln.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs)."/>
+      <keyword name="isequalto" link="isequalto.html" description="Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs)."/>
+      <keyword name="isfinite" link="isfinite.html" description="Check for finite entries."/>
+      <keyword name="isinf" link="isinf.html" description="Check for Infinity entries."/>
+      <keyword name="ismatrix" link="ismatrix.html" description="determines whether input is matrix or not"/>
+      <keyword name="isnan" link="isnan.html" description="Check for Not a Number entries."/>
+      <keyword name="isrow" link="isrow.html" description="Determine whether input is row vector."/>
+      <keyword name="isscalar" link="isscalar.html" description="Check if the input is a scalar"/>
+      <keyword name="istril" link="istril.html" description="Checks if matrix is lower triangular."/>
+      <keyword name="istriu" link="istriu.html" description="Checks if matrix is upper triangular."/>
+      <keyword name="isvector" link="isvector.html" description="Checks input is vector."/>
+      <keyword name="length" link="length.html" description="Length of an object."/>
+      <keyword name="linspace" link="linspace.html" description="linearly spaced vector constructor."/>
+      <keyword name="log" link="log.html" description="Natural logarithm."/>
+      <keyword name="log10" link="log10.html" description="Common logarithm (base 10)."/>
+      <keyword name="log1p" link="log1p.html" description="log(1 + x) accurately for small values of x."/>
+      <keyword name="log2" link="log2.html" description="dissect floating-point numbers into base 2 exponent and mantissa."/>
+      <keyword name="logspace" link="logspace.html" description="logarithmically spaced vector constructor."/>
+      <keyword name="magic" link="magic.html" description="Magic square"/>
+      <keyword name="meshgrid" link="meshgrid.html" description="Cartesian rectangular grid in 2-D or 3-D."/>
+      <keyword name="minus" link="minus.html" description="Subtraction, - operator"/>
+      <keyword name="mod" link="mod.html" description="Modulus after division."/>
+      <keyword name="ndgrid" link="ndgrid.html" description="Rectangular grid in N-D space"/>
+      <keyword name="ndims" link="ndims.html" description="Number of dimensions of an array."/>
+      <keyword name="nextpow2" link="nextpow2.html" description="Exponent of next higher power of 2"/>
+      <keyword name="norm" link="norm.html" description="Matrix and vector norms"/>
+      <keyword name="normest" link="normest.html" description="2-norm estimate"/>
+      <keyword name="nthroot" link="nthroot.html" description="The real 𝑛th root of real number."/>
+      <keyword name="num2bin" link="num2bin.html" description="Convert number to binary representation."/>
+      <keyword name="numel" link="numel.html" description="Number of elements."/>
+      <keyword name="permute" link="permute.html" description="Permute array dimensions."/>
+      <keyword name="pinv" link="pinv.html" description="Moore-Penrose pseudoinverse"/>
+      <keyword name="pow2" link="pow2.html" description="Base 2 exponentiation and scaling of floating-point numbers."/>
+      <keyword name="real" link="real.html" description="Real part of an complex number."/>
+      <keyword name="rem" link="rem.html" description="Remainder after division."/>
+      <keyword name="repmat" link="repmat.html" description="Replicate and tile an array."/>
+      <keyword name="reshape" link="reshape.html" description="Reshapes a vector or a matrix to a different size matrix."/>
+      <keyword name="rosser" link="rosser.html" description="Classic symmetric eigenvalue test problem."/>
+      <keyword name="rot90" link="rot90.html" description="Rotate array 90 degrees."/>
+      <keyword name="round" link="round.html" description="Round to nearest integer"/>
+      <keyword name="shiftdim" link="shiftdim.html" description="Shift array dimensions"/>
+      <keyword name="sign" link="sign.html" description="Find the sign function of a number."/>
+      <keyword name="size" link="size.html" description="Size of an object."/>
+      <keyword name="sqrt" link="sqrt.html" description="Square root."/>
+      <keyword name="squeeze" link="squeeze.html" description="Remove dimensions of length 1."/>
+      <keyword name="sub2ind" link="sub2ind.html" description="Matrix subscript values to linear index"/>
+      <keyword name="substruct" link="substruct.html" description="Create structure argument for subsasgn or subsref"/>
+      <keyword name="swapbytes" link="swapbytes.html" description="Swap byte ordering."/>
+      <keyword name="toeplitz" link="toeplitz.html" description="Toeplitz matrix"/>
+      <keyword name="tril" link="tril.html" description="Lower triangular part of matrix"/>
+      <keyword name="triu" link="triu.html" description="Upper triangular part of matrix"/>
+      <keyword name="vander" link="vander.html" description="Vandermonde matrix"/>
+      <keyword name="wilkinson" link="wilkinson.html" description="Wilkinson's eigenvalue test matrix"/>
+    </section>
+  </toc>
+</help_summary>

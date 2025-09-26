@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>ipc</module>
+    <section name="Inter Process Communication">
+      <chapter_description>Inter Process Communication functions</chapter_description>
+      <keyword name="getpid" link="getpid.html" description="Get nelson(s) Process IDentificator."/>
+      <keyword name="ipc" link="ipc.html" description="Inter process communicator."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>tests_manager</module>
+    <section name="Tests manager">
+      <chapter_description>Tests framework for Nelson</chapter_description>
+      <keyword name="test_makeref" link="test_makeref.html" description="Creates a '.ref' file for a test"/>
+      <keyword name="test_run" link="test_run.html" description="Runs tests"/>
+      <keyword name="skip_testsuite" link="test_skip_testsuite.html" description="Skip test suite on condition"/>
+    </section>
+  </toc>
+</help_summary>

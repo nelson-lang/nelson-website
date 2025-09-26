@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>python_engine</module>
+    <section name="Python engine">
+      <chapter_description>
+    <p>The Python Engine in Nelson provides seamless integration with Python, enabling users to combine the strengths of both environments.</p>
+    <p>This chapter introduces the available functions for running Python code, managing interpreter environments, and handling data exchange between Nelson and Python.</p>
+    </chapter_description>
+      <keyword name="The power of calling Python from Nelson" link="1_The_power_of_Python.html" description=""/>
+      <keyword name="How to install python package" link="2_How_to_install_python_package.html" description=""/>
+      <keyword name="Python Nelson types" link="3_python_types.html" description="Managing Data between Python and Nelson."/>
+      <keyword name="Python operators" link="4_python_overload.html" description="The representation of Python operators in Nelson."/>
+      <keyword name="pyargs" link="pyargs.html" description="Change default environment of Python interpreter."/>
+      <keyword name="pyenv" link="pyenv.html" description="Change default environment of Python interpreter."/>
+      <keyword name="pyrun" link="pyrun.html" description="Run Python statements from Nelson."/>
+      <keyword name="pyrunfile" link="pyrunfile.html" description="Run Python file from Nelson."/>
+    </section>
+  </toc>
+</help_summary>

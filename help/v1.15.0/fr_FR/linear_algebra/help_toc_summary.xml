@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>linear_algebra</module>
+    <section name="Linear algebra">
+      <chapter_description>linear algebra functions</chapter_description>
+      <keyword name="balance" link="balance.html" description="Diagonal scaling to improve eigenvalue accuracy."/>
+      <keyword name="bandwidth" link="bandwidth.html" description="Lower and upper matrix bandwidth."/>
+      <keyword name="chol" link="chol.html" description="Cholesky factorization."/>
+      <keyword name="cond" link="cond.html" description="Condition number for inversion."/>
+      <keyword name="condeig" link="condeig.html" description="Condition number with respect to eigenvalues."/>
+      <keyword name="det" link="det.html" description="Matrix determinant."/>
+      <keyword name="diff" link="diff.html" description="Differences and approximate derivatives."/>
+      <keyword name="eig" link="eig.html" description="Eigenvalues and eigenvectors."/>
+      <keyword name="expm" link="expm.html" description="Computes the matrix exponential of a square matrix."/>
+      <keyword name="gradient" link="gradient.html" description="Numerical gradient."/>
+      <keyword name="inv" link="inv.html" description="Matrix inverse."/>
+      <keyword name="isbanded" link="isbanded.html" description="Determine if matrix is within specific bandwidth."/>
+      <keyword name="ishermitian" link="ishermitian.html" description="Computes if matrix is hermitian or skew-hermitian."/>
+      <keyword name="issymmetric" link="issymmetric.html" description="Computes if matrix is symmetric."/>
+      <keyword name="kron" link="kron.html" description="Kronecker tensor product."/>
+      <keyword name="logm" link="logm.html" description="Computes the matrix logarithm of a square matrix."/>
+      <keyword name="lu" link="lu.html" description="LU matrix factorization."/>
+      <keyword name="orth" link="orth.html" description="Range space of a matrix."/>
+      <keyword name="planerot" link="planerot.html" description="Givens plane rotation."/>
+      <keyword name="rank" link="rank.html" description="Rank of matrix."/>
+      <keyword name="rcond" link="rcond.html" description="Inverse condition number."/>
+      <keyword name="rref" link="rref.html" description="Gauss-Jordan elimination."/>
+      <keyword name="rsf2csf" link="rsf2csf.html" description="Convert real Schur form to complex Schur form."/>
+      <keyword name="schur" link="schur.html" description="Schur decomposition."/>
+      <keyword name="sqrtm" link="sqrtm.html" description="Computes the matrix square root of a square matrix."/>
+      <keyword name="subspace" link="subspace.html" description="Angle between two subspaces."/>
+      <keyword name="svd" link="svd.html" description="Singular Value Decomposition."/>
+      <keyword name="trace" link="trace.html" description="Matrix trace."/>
+      <keyword name="vecnorm" link="vecnorm.html" description="Vector-wise norm."/>
+    </section>
+  </toc>
+</help_summary>

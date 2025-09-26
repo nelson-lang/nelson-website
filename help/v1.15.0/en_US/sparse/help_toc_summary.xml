@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>sparse</module>
+    <section name="Sparse type">
+      <chapter_description>sparse type functions</chapter_description>
+      <keyword name="full" link="full.html" description="Sparse to full matrix conversion."/>
+      <keyword name="IJV" link="IJV.html" description="Returns I,J,V triplets from a sparse matrix."/>
+      <keyword name="nnz" link="nnz.html" description="Return the number of nonzero elements."/>
+      <keyword name="nzmax" link="nzmax.html" description="Reserved size for nonzero elements."/>
+      <keyword name="sparse" link="sparse.html" description="Sparse matrix definition."/>
+      <keyword name="speye" link="speye.html" description="Sparse identity matrix."/>
+      <keyword name="spones" link="spones.html" description="Replaces non zero sparse matrix elements with ones."/>
+      <keyword name="sprand" link="sprand.html" description="Sparse uniformly distributed random matrix."/>
+      <keyword name="sprandn" link="sprandn.html" description="Sparse normally distributed random matrix."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>console</module>
+    <section name="Console">
+      <chapter_description>Console</chapter_description>
+      <keyword name="clc" link="clc.html" description="Clear Command Window."/>
+      <keyword name="input" link="input.html" description="Display prompt and wait for user input."/>
+      <keyword name="terminal_size" link="terminal_size.html" description="Query the size of the terminal window."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>random</module>
+    <section name="Random">
+      <chapter_description>random functions</chapter_description>
+      <keyword name="rand" link="rand.html" description="Random Number."/>
+      <keyword name="randi" link="randi.html" description="Random Integer."/>
+      <keyword name="randn" link="randn.html" description="Normally distributed random number."/>
+      <keyword name="randperm" link="randperm.html" description="Random permutation of integers values."/>
+      <keyword name="rng" link="rng.html" description="Random Number Generator."/>
+    </section>
+  </toc>
+</help_summary>

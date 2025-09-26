@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>profiler</module>
+    <section name="Profiling tools">
+      <chapter_description>Profile to Improve Performance</chapter_description>
+      <keyword name="profile" link="profile.html" description="Profile execution time for Macro functions."/>
+      <keyword name="profsave" link="profsave.html" description="Save profile result to HTML format."/>
+    </section>
+  </toc>
+</help_summary>

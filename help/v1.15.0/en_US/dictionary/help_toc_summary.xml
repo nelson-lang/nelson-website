@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>dictionary</module>
+    <section name="Dictionaries">
+      <chapter_description>Map data with keys that index values.</chapter_description>
+      <keyword name="configureDictionary" link="configureDictionary.html" description="Generate a dictionary with defined key and value types."/>
+      <keyword name="dictionary" link="dictionary.html" description="Object that maps unique keys to values."/>
+      <keyword name="entries" link="entries.html" description="Key-value pairs of dictionary."/>
+      <keyword name="insert" link="insert.html" description="Add entries to a dictionary."/>
+      <keyword name="isConfigured" link="isConfigured.html" description="Check if dictionary has types assigned to keys and values."/>
+      <keyword name="isKey" link="isKey.html" description="Check if dictionary contains key"/>
+      <keyword name="keyHash" link="keyHash.html" description="Create a hash code for a dictionary key."/>
+      <keyword name="keyMatch" link="keyMatch.html" description="Check whether two dictionary keys are same."/>
+      <keyword name="keys" link="keys.html" description="Keys of dictionary."/>
+      <keyword name="lookup" link="lookup.html" description="Find value in dictionary by key."/>
+      <keyword name="numEntries" link="numEntries.html" description="Number of key-value pairs in dictionary."/>
+      <keyword name="remove" link="remove.html" description="Remove dictionary entries."/>
+      <keyword name="types" link="types.html" description="Types of dictionary keys and values."/>
+      <keyword name="values" link="values.html" description="Values of dictionary."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>text</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">text</span></div></div>
+<div class="subtitle">creates text descriptions to data points.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">text(x, y, txt)
+text(x, y, z, txt)
+text(... , propertyName, propertyValue)
+text(ax, ...)
+go = text(...)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>x-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">y</td>
+<td>y-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">z</td>
+<td>z-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">parent</td>
+<td>a scalar graphics object value: parent container, specified as a axes.</td>
+</tr>
+<tr>
+<td class="param-name">text</td>
+<td>Text to display: character vector, string scalar, string array or cell array.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName</td>
+<td>a scalar string or row vector character.</td>
+</tr>
+<tr>
+<td class="param-name">propertyValue</td>
+<td>a value.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">go</td>
+<td>a graphics object: text type.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>
+            <b>figure</b> creates figure.</p>
+            <p>Properties:</p>
+            <p></p>
+            <p>
+                <b>BackgroundColor</b>: Color of text box background: RGB triplet.</p>
+                <p>
+                    <b>Children</b>:  Children: [].</p>
+                    <p>
+                        <b>Color</b>: Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.</p>
+                        <p>
+                            <b>EdgeColor</b>: Color of box outline: RGB triplet.</p>
+                            <p>
+                                <b>Extent</b>: Size and location of rectangle that encloses text: four-element vector.</p>
+                                <p>
+                                    <b>FontAngle</b>: Character slant: 'italic' or 'normal' (default).</p>
+                                    <p>
+                                        <b>FontName</b>: Font name: </p>
+                                        <p>
+                                            <b>FontSize</b>: Font size: scalar value greater than zero.</p>
+                                            <p>
+                                                <b>FontUnits</b>: Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).</p>
+                                                <p>
+                                                    <b>FontWeight</b>: Character thickness: 'bold' or 'normal' (default).</p>
+                                                    <p>
+                                                        <b>HorizontalAlignment</b>: Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).</p>
+                                                        <p>
+                                                            <b>Interpreter</b>: 'tex' (default) interpreter or 'none'.</p>
+                                                            <p>
+                                                                <b>LineStyle</b>: Line style of box outline:  'none', '--', ':',  '-.' or '-' (default).</p>
+                                                                <p>
+                                                                    <b>LineWidth</b>: Width of box outline: scalar numeric value.</p>
+                                                                    <p>
+                                                                        <b>Margin</b>: Space around text within the text box: scalar numeric value.</p>
+                                                                        <p>
+                                                                            <b>Parent</b>: Parent: axes object.</p>
+                                                                            <p>
+                                                                                <b>Position</b>: Location of text: two-element vector of form [x y] or three-element vector of form [x y z].</p>
+                                                                                <p>
+                                                                                    <b>Rotation</b>: Text orientation: scalar value in degrees.</p>
+                                                                                    <p>
+                                                                                        <b>String</b>: Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).</p>
+                                                                                        <p>
+                                                                                            <b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
+                                                                                            <p>
+                                                                                                <b>Type</b>: Type of graphics object: 'text'.</p>
+                                                                                                <p>
+                                                                                                    <b>Units</b>: Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).</p>
+                                                                                                    <p>
+                                                                                                        <b>UserData</b>: User data: array or [] (default).</p>
+                                                                                                        <p>
+                                                                                                            <b>VerticalAlignment</b>: Vertical alignment of text with respect to position point.</p>
+                                                                                                            <p>
+                                                                                                                <b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
+                                                                                                                <p>
+                                                                                                                    <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+                                                                                                                    <p>
+                                                                                                                        <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+                                                                                                                        <p></p>
+                                                                                                                        <p>
+                                                                                                                            <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+                                                                                                                            <p>Some properties are available only for compatibility and have currently no effect on the text.</p>
+                                                                                                                            <p>lists of the supported special characters for the 'tex' interpreter:</p>
+                                                                                                                            <p>Superscript: ^{ }   'text^{superscript}'</p>
+                                                                                                                            <p>Subscript: _{ }   'text_{subscript}'</p>
+                                                                                                                            <p></p>
+                                                                                                                            
+                                                                                                                                
+                                                                                                                                    Character Sequence
+                                                                                                                                    Symbol
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \alpha
+                                                                                                                                    α
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \upsilon
+                                                                                                                                    υ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \sim
+                                                                                                                                    ~
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \angle
+                                                                                                                                    ∠
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \phi
+                                                                                                                                    ϕ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \leq
+                                                                                                                                    ≤
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \ast
+                                                                                                                                    *
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \chi
+                                                                                                                                    χ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \infty
+                                                                                                                                    ∞
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \beta
+                                                                                                                                    β
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \psi
+                                                                                                                                    ψ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \clubsuit
+                                                                                                                                    ♣
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \gamma
+                                                                                                                                    γ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \omega
+                                                                                                                                    ω
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \diamondsuit
+                                                                                                                                    ♦
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \delta
+                                                                                                                                    δ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Gamma
+                                                                                                                                    Γ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \heartsuit
+                                                                                                                                    ♥
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \epsilon
+                                                                                                                                    ϵ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Delta
+                                                                                                                                    Δ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \spadesuit
+                                                                                                                                    ♠
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \zeta
+                                                                                                                                    ζ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Theta
+                                                                                                                                    Θ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \leftrightarrow
+                                                                                                                                    ↔
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \eta
+                                                                                                                                    η
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Lambda
+                                                                                                                                    Λ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \leftarrow
+                                                                                                                                    ←
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \theta
+                                                                                                                                    θ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Xi
+                                                                                                                                    Ξ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Leftarrow
+                                                                                                                                    ⇐
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \vartheta
+                                                                                                                                    ϑ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Pi
+                                                                                                                                    Π
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \uparrow
+                                                                                                                                    ↑
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \iota
+                                                                                                                                    ι
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Sigma
+                                                                                                                                    Σ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \rightarrow
+                                                                                                                                    →
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \kappa
+                                                                                                                                    κ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Upsilon
+                                                                                                                                    ϒ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Rightarrow
+                                                                                                                                    ⇒
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \lambda
+                                                                                                                                    λ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Phi
+                                                                                                                                    Φ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \downarrow
+                                                                                                                                    ↓
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \mu
+                                                                                                                                    µ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Psi
+                                                                                                                                    Ψ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \circ
+                                                                                                                                    º
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \nu
+                                                                                                                                    ν
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Omega
+                                                                                                                                    Ω
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \pm
+                                                                                                                                    ±
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \xi
+                                                                                                                                    ξ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \forall
+                                                                                                                                    ∀
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \geq
+                                                                                                                                    ≥
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \pi
+                                                                                                                                    π
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \exists
+                                                                                                                                    ∃
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \propto
+                                                                                                                                    ∝
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \rho
+                                                                                                                                    ρ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \ni
+                                                                                                                                    ∍
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \partial
+                                                                                                                                    ∂
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \sigma
+                                                                                                                                    σ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \cong
+                                                                                                                                    ≅
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \bullet
+                                                                                                                                    •
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \varsigma
+                                                                                                                                    ς
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \approx
+                                                                                                                                    ≈
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \div
+                                                                                                                                    ÷
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \tau
+                                                                                                                                    τ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Re
+                                                                                                                                    ℜ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \neq
+                                                                                                                                    ≠
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \equiv
+                                                                                                                                    ≡
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \oplus
+                                                                                                                                    ⊕
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \aleph
+                                                                                                                                    ℵ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \Im
+                                                                                                                                    ℑ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \cup
+                                                                                                                                    ∪
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \wp
+                                                                                                                                    ℘
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \otimes
+                                                                                                                                    ⊗
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \subseteq
+                                                                                                                                    ⊆
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \oslash
+                                                                                                                                    ∅
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \cap
+                                                                                                                                    ∩
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \in
+                                                                                                                                    ∈
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \supseteq
+                                                                                                                                    ⊇
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \supset
+                                                                                                                                    ⊃
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \lceil
+                                                                                                                                    ⌈
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \subset
+                                                                                                                                    ⊂
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \int
+                                                                                                                                    ∫
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \cdot
+                                                                                                                                    ·
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \o
+                                                                                                                                    ο
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \rfloor
+                                                                                                                                    ⌋
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \neg
+                                                                                                                                    ¬
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \nabla
+                                                                                                                                    ∇
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \lfloor
+                                                                                                                                    ⌊
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \times
+                                                                                                                                    x
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \ldots
+                                                                                                                                    ...
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \perp
+                                                                                                                                    ⊥
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \surd
+                                                                                                                                    √
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \prime
+                                                                                                                                    ´
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \wedge
+                                                                                                                                    ∧
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \varpi
+                                                                                                                                    ϖ
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \0
+                                                                                                                                    ∅
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \rceil
+                                                                                                                                    ⌉
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \rangle
+                                                                                                                                    〉
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \mid
+                                                                                                                                    |
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \vee
+                                                                                                                                    ∨
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \langle
+                                                                                                                                    〈
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                    \copyright
+                                                                                                                                    ©
+                                                                                                                                
+                                                                                                                            
+                                                                                                                        </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">f = figure(1)
+t = text(0.5, 0.5, 'text here');
+s = t.FontSize;
+t.FontSize = 12;
+t.Color = 'red';
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./text_1_1F5DE711.svg" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">figure();
+ha = {'left', 'center', 'right'};
+va = {'bottom', 'middle', 'top'};
+color = {'red', 'green', 'blue'};
+x = [0.25 0.5 0.75];
+y = x;
+for t = 0:45:359;
+  for nh = 1:numel (ha)
+    for nv = 1:numel (va)
+      text (x(nh), y(nv), 'Nelson', ...
+      'Rotation', t, ...
+      'HorizontalAlignment', ha{nh}, ...
+      'VerticalAlignment', va{nv}, ...
+      'Color', color{nv});
+    end
+  end
+end
+axis([0 1 0 1]);
+title (_('Text alignment and rotation (0:45:360 degrees)'));
+xlabel(_('Horizontal alignment'));
+ylabel (_('Vertical alignment'));</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./text_2_7E6236BA.svg" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">figure();
+h1 = text(0.5, 0.5, 'Nelson \copyright')
+h1.String
+% Nelson is full unicode, so
+h2 = text(0.5, 0.3, 'OR Nelson ©')
+h2.String</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div><a class="see-also-link" href="../graphics/title.html">title</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">1.7.0</td>
+<td>CreateFcn, DeleteFcn callback added.</td>
+</tr>
+<tr>
+<td class="version">--</td>
+<td>BeingDeleted property added.</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

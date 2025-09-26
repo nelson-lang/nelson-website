@@ -1,0 +1,896 @@
+<h1>Changelog</h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2>1.15.0 - (UNRELEASED)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p>Enhanced random number generation engine with new algorithms: <code>simdTwister</code>, <code>combRecursive</code>, <code>philox</code>, and <code>threefry</code>.</p>
+</li>
+<li>
+<p><code>sprand</code>: Function for generating sparse matrices with uniformly distributed random values.</p>
+</li>
+<li>
+<p><code>sprandn</code>: Function for generating sparse matrices with normally distributed random values.</p>
+</li>
+<li>
+<p><code>randi</code>: Function for generating uniformly distributed random integers.</p>
+</li>
+<li>
+<p><code>imresize</code>: Added a function to resize images by scale or to a specified output size, supporting both upscaling and downscaling for flexible image processing workflows.</p>
+</li>
+<li>
+<p>Variable Editor: Major redesign, now accessible via <code>openvar</code> or the GUI. Supports structured variables, tables, arrays, and nested data. Features a dynamic table view, real-time updates from the execution context, and improved performance for large datasets. Copy-paste compatibility with Excel, LibreOffice, and OpenOffice in both directions.</p>
+</li>
+<li>
+<p>Continuation prompt: Introduced context-aware continuation prompts to enhance interactive command workflows.</p>
+</li>
+<li>
+<p>Type support: Expanded support for missing types, increasing compatibility across functions and data structures.</p>
+</li>
+<li>
+<p><code>missing</code> function: Added to create missing values for arrays and tables, improving data handling and interoperability.</p>
+</li>
+<li>
+<p><code>renameStructField</code>: New function to rename fields in structures, simplifying data manipulation and refactoring.</p>
+</li>
+<li>
+<p><code>jsondecode(filename, '-file')</code>: Added '-file' argument to allow direct reading and decoding of JSON files from disk.</p>
+</li>
+<li>
+<p><code>tdigest</code>: Introduced t-digest algorithm data structure for accurate quantile estimation
+with configurable compression parameters.</p>
+</li>
+<li>
+<p><code>crc32</code> builtin: get crc32 checksum of a file or a string.</p>
+</li>
+<li>
+<p>macOS Tahoe 26: CI setup and platform support.</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>
+<p>help framework fully reworked:</p>
+<ul>
+<li>faster build (on multithread)</li>
+<li>faster and extended search</li>
+<li>easier to maintain and evolve (based on Extensible Stylesheet Language Transformations)</li>
+<li>stylesheet reworked (same online and offline)</li>
+<li>qt help support used internally removed</li>
+</ul>
+</li>
+<li>
+<p><code>jsondecode</code>: Significantly improved performance by integrating <a href="https://simdjson.org/">simdjson</a>, enabling faster and more efficient JSON parsing.</p>
+</li>
+<li>
+<p><code>fileread</code>: Enhanced performance for reading large files, reducing memory usage and increasing speed for file operations.</p>
+</li>
+<li>
+<p>i18nExtractor: Reworked for greater speed and modernized codebase, improving internationalization extraction reliability.</p>
+</li>
+<li>
+<p>Browser variable: Refactored for improved usability, reliability, and consistency in variable inspection.</p>
+</li>
+<li>
+<p>Third-party libraries on Windows: Updated support for HDF5, zlib, and matio, improving compatibility and stability for Windows users.</p>
+</li>
+<li>
+<p>Qt: Upgraded to version 6.9.1 on Windows x64, providing better UI performance and compatibility with modern systems.</p>
+</li>
+<li>
+<p>Benchmarks: <code>bench_jsonencode.json</code> updated to include larger datasets for more robust and realistic performance testing.</p>
+</li>
+<li>
+<p>Improved <code>xmldocchecker</code> with XSD schema validation for XML files.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/1458">#1458</a>: Eigen 5.0.0 used if detected.</p>
+</li>
+<li>
+<p>GitHub CI MacOS Ventura removed and replaced by MacOS 15 intel (<a href="http://github.com/nelson-lang/nelson/issues/1457">#1457</a>)</p>
+</li>
+<li>
+<p>markdown renderer changed to use cmark library.</p>
+</li>
+<li>
+<p>Install a nelson's external package will switch to local embedded help.</p>
+</li>
+<li>
+<p>External packages required to be rebuild with this version to use new help format.</p>
+</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>
+<p><code>ans</code> variable: Fixed issue to ensure 'ans' is only created for expressions, preventing unintended variable creation in the workspace.</p>
+</li>
+<li>
+<p><code>jsondecode</code>: Corrected parsing of arrays containing empty arrays, improving reliability and correctness of JSON decoding.</p>
+</li>
+</ul>
+<h2>1.14.0 - (2025-05-30)</h2>
+<h3>Added</h3>
+<ul>
+<li>New functions:
+<ul>
+<li><code>imrotate</code>: Rotate an image.</li>
+<li><code>scatter3</code>: 3D scatter plot.</li>
+<li><code>colormaplist</code>: List available colormaps.</li>
+<li><code>arrayfun</code>: Apply a function to each element of an array.</li>
+<li><code>nelsonappid</code>: Return the Nelson application ID.</li>
+</ul>
+</li>
+<li>New colormaps:
+<ul>
+<li><code>nebula</code>, <code>flag</code>, <code>prism</code>.</li>
+</ul>
+</li>
+<li>New properties:
+<ul>
+<li><code>WindowState</code> for <code>Figure</code> objects.</li>
+<li><code>Units</code> for <code>UIControl</code> objects.</li>
+<li><code>DefaultFigureAlphamap</code>, <code>DefaultFigureColormap</code> as root properties.</li>
+</ul>
+</li>
+<li>Support for <code>nix develop</code>, providing a reproducible Bash shell preconfigured with Nelson’s build environment.<br />
+See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
+<li>A <a href="https://just.systems/man/en/"><code>justfile</code></a> to streamline and standardize the build process across platforms.</li>
+<li>Support for:
+<ul>
+<li>Fedora 42.</li>
+<li><a href="https://flathub.org/apps/io.github.nelson_lang.Nelson">Flatpak</a> package distribution.</li>
+</ul>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><code>scatter</code> improvements:
+<ul>
+<li>Now returns a scatter graphic object (instead of a line graphic object).</li>
+<li>Improved rendering precision for scatter symbols (pixel-perfect accuracy).</li>
+<li>Supports alpha channel (transparency).</li>
+</ul>
+</li>
+<li><code>scatter3</code> now supports alpha channel.</li>
+<li><code>spy</code> now uses <code>scatter</code> instead of <code>plot</code> for better accuracy.</li>
+<li>Colormap handling updated to use the new <code>DefaultFigureColormap</code> root property.</li>
+<li>Improved error message when parsing invalid anonymous functions.</li>
+<li>Boost:
+<ul>
+<li>Now supports Boost 1.88 (<a href="http://github.com/nelson-lang/nelson/issues/1378">#1378</a>).</li>
+<li>Minimum required version set to 1.71.</li>
+</ul>
+</li>
+<li>Updated dependencies and platform support:
+<ul>
+<li>Qt 6.9.0 on Windows x64.</li>
+<li>JSON for Modern C++ updated to v3.12.0.</li>
+<li>Mozilla CA certificates updated (Tue May 20 03:12:02 2025 GMT).</li>
+</ul>
+</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1413">#1413</a>: <code>axes</code> function did not properly manage figure objects.</li>
+</ul>
+<h3>Technical Improvements</h3>
+<ul>
+<li>Application ID changed to <code>io.github.nelson_lang.Nelson</code>.</li>
+<li>GitHub CI:
+<ul>
+<li>Now uses Windows 2025 for Windows builds.</li>
+<li>Major workflow rework for improved reliability and maintainability.</li>
+</ul>
+</li>
+<li>Build system:
+<ul>
+<li>Updated to latest Prettier version.</li>
+<li>Added use of shared library suffix via a CMake macro.</li>
+<li>Included CPU target name in Linux packages.</li>
+<li>Minimized dependencies on SLICOT.</li>
+</ul>
+</li>
+</ul>
+<h2>1.13.0 - (2025-03-29)</h2>
+<p>This release introduces performance improvements and new graphical capabilities while deprecating support for 32-bit Windows versions.</p>
+<h3>Changed</h3>
+<ul>
+<li>
+<p><strong>Windows x64 Compatibility</strong>: Now requires the <a href="https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2">AVX2</a> instruction set.</p>
+</li>
+<li>
+<p><strong>Windows 32-bit Support</strong>: Official distribution of 32-bit Windows binary versions has been discontinued.</p>
+</li>
+<li>
+<p><strong>macOS Optimization</strong>: Builds for macOS with M-series chips now leverage native optimizations for improved performance.</p>
+</li>
+<li>
+<p><strong>Plot Performance</strong>: Optimized <code>plot</code> and <code>plot3</code> functions for increased speed. Example:</p>
+<pre><code class="language-matlab">tic(); plot(rand(300,300), rand(300,300)); toc();
+</code></pre>
+</li>
+<li>
+<p><strong>Dependencies Updated</strong>:</p>
+<ul>
+<li>Upgraded <code>fmtlib</code> to version 11.1.3.</li>
+<li>Intel Math Kernel Library (MKL) updated to 2025.0.1 on Windows.</li>
+</ul>
+</li>
+<li>
+<p><strong>Internal Enhancements</strong>:</p>
+<ul>
+<li>OpenMP multithreading macros have been reworked for better efficiency.</li>
+</ul>
+</li>
+<li>
+<p><code>SLICOT</code> module incorporates SLICOT library 5.9, which is distributed under the BSD-3-Clause license.</p>
+<ul>
+<li><code>SLICOT</code> module available on all platforms by default.</li>
+</ul>
+</li>
+<li>
+<p>python 3.13.2 embedded on Windows</p>
+</li>
+</ul>
+<h3>Added</h3>
+<ul>
+<li>
+<p><strong>Double Buffering for Plots</strong>:</p>
+<ul>
+<li>Implemented double buffering to enhance the smoothness and responsiveness of graphical plots.</li>
+<li>Significantly reduces flickering during graphical updates.</li>
+</ul>
+</li>
+<li>
+<p><strong>New Graphics Functions</strong>:</p>
+<ul>
+<li><code>getframe</code>: Captures an axes or figure as a movie frame.</li>
+<li><code>movie</code>: Plays recorded movie frames.</li>
+<li><code>im2frame</code>: Converts an image to a movie frame.</li>
+<li><code>frame2im</code>: Returns image data associated with a movie frame.</li>
+<li><code>DevicePixelRatio</code>: New figure property to handle display scaling.</li>
+</ul>
+</li>
+<li>
+<p><strong>Graphics IO</strong> module:</p>
+<ul>
+<li><code>imwrite</code>: create gif animations.</li>
+<li><code>imwrite</code>, <code>imread</code>: pcx, tiff file formats managed.</li>
+<li><code>imformats</code>: Manage image file format registry.</li>
+</ul>
+</li>
+<li>
+<p><strong>New Example</strong>:</p>
+<ul>
+<li>Added an example for connecting <code>ollama</code> with Nelson:
+<pre><code class="language-matlab">edit([modulepath('webtools'), '/examples/ollama/readme.md'])
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CMake Enhancement</strong>:</p>
+<ul>
+<li>Introduced <code>ENABLE_AVX2</code> CMake option for systems that support AVX2.</li>
+<li>CMake dependencies reworked.</li>
+</ul>
+</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>
+<p>MacOs: Default terminal did not use monospaced font.</p>
+</li>
+<li>
+<p>Some warnings detected with PVS-studio</p>
+</li>
+</ul>
+<h2>1.12.0 (2025-02-16)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p>Julia interface (part 1):</p>
+<ul>
+<li><code>jlenv</code>: Change default environment of Julia interpreter.</li>
+<li><code>jlrun</code>: Run Julia statements from Nelson.</li>
+<li><code>jlrunfile</code>: Run Julia file from Nelson.</li>
+<li>Major types conversions are available.</li>
+<li>CMake: Optional Julia engine detection.</li>
+</ul>
+</li>
+<li>
+<p><code>bar</code>, <code>scatter</code> manage color name and short colorname.</p>
+</li>
+<li>
+<p>Github CI Ubuntu 24.04 arm64 (Cobalt 100 processor).</p>
+</li>
+<li>
+<p>Github CI Snapcraft build amd64 and arm64.</p>
+</li>
+<li>
+<p>Snapcraft arm64.</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Completion .m files allows execution without extension.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1342">#1342</a> Github CI - Ubuntu-20.04 hosted runner image removed.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1346">#1346</a> [display] integer in cell are displayed as double and not as integer.</li>
+</ul>
+<h2>1.11.0 (2025-01-11)</h2>
+<h3>Added</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1321">#1321</a> <code>mustBeSparse</code> validator function.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1322">#1322</a> <code>cmdsep</code>: Command separator for current operating system.</li>
+<li><code>urlencode</code>: Replace special characters in URLs with escape characters.</li>
+<li><code>docroot</code>: Utility to retrieve or define the root directory of Nelson Help.</li>
+<li><code>ismodule</code>: second input argument <code>isprotected</code> added.</li>
+<li><code>editor('editor_command', cmd)</code> allows to change text editor in Nelson (for example: VS Code).</li>
+<li><code>NELSON_RUNTIME_PATH</code> environment variable added by installer on Windows.</li>
+<li><code>--vscode</code> command line argument added.</li>
+<li>NixOS 24.11 packaging (see <a href="https://github.com/nelson-lang/nelson/blob/master/BUILDING_Linux.md">BUILDING_Linux.md</a>).</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Help Center: Access documentation in your system's web browser. Previously, the documentation was opened in the embedded Help browser.</li>
+<li>CA certificate store update.</li>
+<li>fmt library dependency updated.</li>
+<li>BS::threadpool library dependency updated.</li>
+<li>Advanced terminal updated (common for all platforms without GUI, auto completion, search history).</li>
+<li>Python 3.13.1 supported.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1324">#1324</a> Cell display could not be interrupted.</li>
+</ul>
+<h2>1.10.0 (2024-12-14)</h2>
+<h3>Added</h3>
+<ul>
+<li><code>detectImportOptions</code>: Generate import options from the file's content.</li>
+<li><code>readtable</code>: Read table from file.</li>
+<li><code>writetable</code>: Write table to file.</li>
+<li><code>readcell</code>: Read cell array from file.</li>
+<li><code>writecell</code>: write cell array to file.</li>
+<li><code>readmatrix</code>: read matrix from file.</li>
+<li><code>writematrix</code>: write matrix to file.</li>
+<li><code>csvread</code>: Read comma-separated value (CSV) file.</li>
+<li><code>csvwrite</code>: Write comma-separated value (CSV) file.</li>
+<li><code>dlmread</code>: Read ASCII-delimited file of numeric data into matrix.</li>
+<li><code>realmin</code>: Smallest normalized floating-point number.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1288">#1288</a> <code>mustBeMatrix</code>, <code>mustBeRow</code>, <code>mustBeColumn</code> validator functions.</li>
+<li><code>join</code>: Combine strings.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1292">#1292</a> Large Table Display.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1290">#1290</a> <code>VariableTypes</code> property for table: Specify the data types of table in Nelson.</li>
+<li><code>hour</code>, <code>minute</code>, <code>second</code> component of input date and time.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><code>narginchk</code>, <code>nargoutchk</code> support for check only minimun arguments <code>narginchk(3, Inf)</code>.</li>
+<li>Fedora 41 CI</li>
+<li><code>title</code>: <code>Visible</code> property is inherited from the parent if not explicitly defined.</li>
+<li>i18n: migration PO files to JSON.</li>
+<li><code>dlmwrite</code>: rework the function to be more fast and robust.</li>
+<li><code>strjust</code>: rework the function to be more fast and robust.</li>
+<li><code>datenum</code>: support '' as format for compatibility.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1303">#1303</a> <code>datevec</code> result must be normalized.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1297">#1297</a> some features have no help files.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1276">#1276</a> micromamba macos build.</li>
+</ul>
+<h2>1.9.0 (2024-10-26)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p>Table direct computation:</p>
+<ul>
+<li>unary functions: <code>abs</code>, <code>acos</code>, <code>acosh</code>, <code>acot</code>, <code>acotd</code>, <code>acoth</code>,
+<code>acsc</code>, <code>acscd</code>, <code>acsch</code>, <code>asec</code>, <code>asecd</code>, <code>asech</code>,
+<code>asin</code>, <code>asind</code>, <code>asinh</code>, <code>atan</code>, <code>atand</code>, <code>atanh</code>,
+<code>ceil</code>, <code>cosd</code>, <code>cosh</code>, <code>cospi</code>, <code>cot</code>, <code>cotd</code>,
+<code>coth</code>, <code>csc</code>, <code>cscd</code>, <code>csch</code>, <code>exp</code>, <code>fix</code>,
+<code>floor</code>, <code>log</code>, <code>log10</code>, <code>log1p</code>, <code>log2</code>, <code>nextpow2</code>,
+<code>round</code>, <code>sec</code>, <code>secd</code>, <code>sech</code>, <code>sin</code>, <code>sind</code>,
+<code>sinh</code>, <code>sinpi</code>, <code>sqrt</code>, <code>tan</code>, <code>tand</code>, <code>tanh</code>,
+<code>var</code>, <code>acosd</code>, <code>not</code>.</li>
+<li>binary functions: <code>plus</code>, <code>minus</code>, <code>times</code>, <code>eq</code>, <code>ge</code>, <code>gt</code>, <code>le</code>,
+<code>ne</code>, <code>lt</code>, <code>rdivide</code>, <code>rem</code>, <code>power</code>, <code>pow2</code>, <code>or</code>, <code>mod</code>, <code>ldivide</code>.</li>
+</ul>
+</li>
+<li>
+<p><code>end</code> magic keyword can be overloaded for classes (applied to <code>table</code> class).</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/1250">#1250</a> <code>head</code>, <code>tail</code> functions for table and array.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/1248">#1248</a> <code>removevars</code>, <code>renamevars</code> functions for table.</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1259">#1259</a> Add macOS Sequoia and remove macOS Monterey CI support.</li>
+<li>Qt 6.8 LTS support (used on Windows 64 bits binary).</li>
+<li>Python 3.13.0 on Windows.</li>
+<li>Boost 1.86 on Windows.</li>
+</ul>
+<h2>1.8.0 (2024-10-04)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p><strong><code>table</code> Data Type</strong>:</p>
+<ul>
+<li>
+<p>Introduced the <code>table</code> data type, offering enhanced functionality for structured data manipulation.</p>
+</li>
+<li>
+<p>Overloaded methods specific to the <code>table</code> data type:</p>
+<ul>
+<li><code>disp</code>, <code>display</code> for table display.</li>
+<li><code>horzcat</code>, <code>vertcat</code> for horizontal and vertical concatenation.</li>
+<li><code>isempty</code> to check if the table is empty.</li>
+<li><code>isequal</code>, <code>isequalto</code> for table comparison.</li>
+<li><code>properties</code> for accessing table metadata.</li>
+<li><code>subsasgn</code> for subscripted assignment.</li>
+<li><code>subsref</code> for subscripted referencing.</li>
+</ul>
+</li>
+<li>
+<p>Conversion functions added:</p>
+<ul>
+<li><code>array2table</code>: Convert an array to a table.</li>
+<li><code>cell2table</code>: Convert a cell array to a table.</li>
+<li><code>struct2table</code>: Convert a structure to a table.</li>
+<li><code>table2array</code>: Convert a table to an array.</li>
+<li><code>table2cell</code>: Convert a table to a cell array.</li>
+<li><code>table2struct</code>: Convert a table to a structure.</li>
+</ul>
+</li>
+<li>
+<p>Utility functions introduced:</p>
+<ul>
+<li><code>width</code>: Retrieve the number of columns in the table</li>
+<li><code>height</code>: Retrieve the number of rows in the table</li>
+<li><code>istable</code>: Check if a variable is of the <code>table</code> data type</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Resize</code> - Resize figure property.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/36">#36</a> <code>datenum</code> format compatibility extended.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/37">#37</a> <code>datestr</code> Convert date and time to string format.</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>CodeQL Github action updated.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>fix 'units' refresh for 'axes' object.</li>
+</ul>
+<h2>1.7.0 (2024-08-28)</h2>
+<h3>Added</h3>
+<ul>
+<li><code>uicontrol</code> Create user interface control (button, slider, edit, list box, etc.).</li>
+<li><code>waitfor</code> Block execution and wait for condition.</li>
+<li><code>waitforbuttonpress</code> — Wait for click or key press.</li>
+<li><code>im2double</code> — Convert image to double.</li>
+<li><code>CloseRequestFcn</code> — Close request callback for <code>figure</code>.</li>
+<li><code>CreateFcn</code> — Create callback for all graphic objects.</li>
+<li><code>DeleteFcn</code> — Delete callback for all graphic objects.</li>
+<li><code>BusyAction</code> — Busy action for all graphic objects.</li>
+<li><code>Interruptible</code> — Interruptible property for all graphic objects.</li>
+<li><code>BeingDeleted</code> — Being deleted property for all graphic objects.</li>
+<li><code>KeyPressFcn</code>, <code>KeyReleaseFcn</code>, <code>ButtonDownFcn</code> properties for <code>figure</code>.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>
+<p>Refactor the internal implementation of the 'system' built-in function.</p>
+</li>
+<li>
+<p>Python 3.12.5 on Windows.</p>
+</li>
+</ul>
+<h2>1.6.0 (2024-06-29)</h2>
+<h3>Added</h3>
+<ul>
+<li><code>unique</code>: Unique values.</li>
+<li><code>ndgrid</code>: Rectangular grid in N-D space.</li>
+<li><code>nthroot</code>: Real nth root of real numbers.</li>
+<li><code>allfinite</code>: Check if all array elements are finite.</li>
+<li><code>j</code> as imaginary unit number is also supported. example <code>3+2j</code> equivalent to <code>3+2i</code>.</li>
+<li><code>FollowLocation</code> option for <code>weboptions</code></li>
+<li>oneAPI Threading Building Blocks optional dependency.</li>
+<li>Ubuntu 24.04 debian package.</li>
+<li>Ubuntu 24.04 CI</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>
+<p><code>sort</code>: speed optimization.</p>
+</li>
+<li>
+<p>Windows dependencies updated and rebuild with minimal dependencies:</p>
+<ul>
+<li>Qt 6.7.1,</li>
+<li>Visual C++ 2022 Redistributable v14.40.33810.00,</li>
+<li>boost 1.85,</li>
+<li>Python 3.12.4,</li>
+<li>Intel Math Kernel Library 2024.1.1,</li>
+<li>Intel runtime,</li>
+<li>SLICOT,</li>
+<li>gettext 0.22.5,</li>
+<li>cmake 3.30.0 rc3,</li>
+<li>libsndfile 1.2.2,</li>
+<li>portaudio 19.7.5,</li>
+<li>taglib 2.0,</li>
+<li>libzip1 1.3.1,</li>
+<li>libcurl 8.8.0,</li>
+<li>icu4c 74.2,</li>
+<li>libffi 3.4.6,</li>
+<li>libxml2 2.11.7</li>
+</ul>
+</li>
+<li>
+<p>Unicode® Standard, Version 15.1 support</p>
+</li>
+<li>
+<p>simdutf 5.2.8</p>
+</li>
+<li>
+<p>fast_float 6.1.1</p>
+</li>
+<li>
+<p>dtl 1.2.0</p>
+</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1210">#1210</a> <code>bode</code> did not unwrap phase.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1206">#1206</a> <code>balance</code> yields wrong Transformation Matrix.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1205">#1205</a> <code>diag</code> may return wrong sub-diagonals.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1202">#1202</a> buildhelpmd does not generate SUMMARY as expected.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1201">#1201</a> Matrix Exponential <code>expm</code> might give wrong results.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1200">#1200</a> Matrix Parsing/Evaluation trouble.</li>
+</ul>
+<h2>1.5.0 (2024-05-31)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p><code>dictionary</code> data type.</p>
+<ul>
+<li><code>dictionary</code>: Object that maps unique keys to values.</li>
+<li><code>configureDictionary</code>: Create dictionary with specified key and value types.</li>
+<li><code>insert</code>: Add entries to a dictionary.</li>
+<li><code>lookup</code>: Find value in dictionary by key.</li>
+<li><code>remove</code>: Remove dictionary entries.</li>
+<li><code>entries</code>: Key-value pairs of dictionary.</li>
+<li><code>keys</code>: Keys of dictionary.</li>
+<li><code>values</code>: Values of dictionary.</li>
+<li><code>types</code>: Types of dictionary keys and values.</li>
+<li><code>numEntries</code>: Number of key-value pairs in dictionary.</li>
+<li><code>isConfigured</code>: Determine if dictionary has types assigned to keys and values.</li>
+<li><code>isKey</code>: Determine if dictionary contains key.</li>
+<li><code>keyHash</code>: Generate hash code for dictionary key.</li>
+<li><code>keyMatch</code>: Determine if two dictionary keys are the same.</li>
+</ul>
+</li>
+<li>
+<p><code>bernsteinMatrix</code>: Bernstein matrix.</p>
+</li>
+<li>
+<p><code>orderedfields</code>: Order fields of structure array.</p>
+</li>
+<li>
+<p>Python interface (part 3):</p>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1160">#1160</a> Python operators in Nelson.</li>
+<li><code>keyHash</code>, <code>keyMatch</code> for python objects.</li>
+<li><code>isa</code> builtin support python types.</li>
+<li>python dictionary to Nelson dictionary <code>dictionary(pyDict)</code></li>
+<li>conversion dictionary to python dictionary.</li>
+</ul>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>help files generated sorted by name on all platforms.</li>
+<li>on windows, Qt libraries used are in debug mode.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1195">#1195</a> <code>strcmp({'a'},[&quot;a&quot;])</code> did not return expected value.</li>
+</ul>
+<h2>1.4.0 (2024-04-27)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p>Python interface (part 2):</p>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1168">#1168</a> Run Python script file from Nelson.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1141">#1141</a> Help about Managing Data between Python and Nelson.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1149">#1149</a> python bytes, and bytearray types were not managed.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1163">#1163</a> pyenv searchs python by version on Windows.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1164">#1164</a> Embed python distribution on Windows.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1167">#1167</a> Help about how to install Python package from Nelson.</li>
+<li>numpy types support if numpy available.</li>
+<li><code>pyenv</code>: can use environment variables to set values.</li>
+</ul>
+</li>
+<li>
+<p><code>getenv</code>: Retrieve the values of several environment variables.</p>
+</li>
+<li>
+<p><code>pyrun</code>: Python code object allowed as first input argument.</p>
+</li>
+<li>
+<p><code>nelson --without_python</code> starts nelson without python engine.</p>
+</li>
+<li>
+<p><code>skip_testsuite</code>: allows to skip test suite dynamically on condition.</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Allow to call method of a variable of CLASS/HANDLE type like a function (currently, only plugged for python subtype).</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1142">#1142</a> Github Actions updated.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1157">#1157</a> Qt 6.7 support (used on Windows 64 bits binary).</li>
+<li><code>copyfile</code>, <code>isfile</code>, <code>isdir</code>, <code>mkdir</code> allow string array type as input.</li>
+<li>warning about 'Matrix is singular to working precision' for inv matrix.</li>
+<li>tests webtools skipped if connection fails or not available.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1144">#1144</a> test_run markdown help file had a typo.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1143">#1143</a> Linux Snapcraft version did not allow to use python.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1148">#1148</a> pyrun('print(A)','A','A',string(NaN)) did not return expected value.</li>
+<li><code>single(int64([1 2; 3 4]))</code> returned a wrong value.</li>
+<li><code>py.tuple</code>, <code>py.list</code> compatibility increased.</li>
+<li><code>pyenv</code> did not manage python's path with space on Windows.</li>
+<li>Matio 1.5.27 compatibility on ArchLinux.</li>
+<li>Ubuntu 24.04 LTS support.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1178">#1178</a> Fedora 40 support (CI).</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura restored.</li>
+</ul>
+<h2>1.3.0 (2024-03-30)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p>Python interface (part 1):</p>
+<ul>
+<li>CMake: Optional Python3 detection.</li>
+<li><code>pyenv</code> Change default environment of Python interpreter.</li>
+<li><code>pyrun</code> Run Python statements from Nelson.</li>
+<li>Major types conversions are compatible (numpy in the next upcoming version).</li>
+</ul>
+</li>
+<li>
+<p>ArchLinux packaging (https://aur.archlinux.org/packages/nelson-git).</p>
+</li>
+<li>
+<p><code>contour</code> Contour plot of matrix.</p>
+</li>
+<li>
+<p><code>contour3</code> 3-D contour plot.</p>
+</li>
+<li>
+<p><code>shiftdim</code> Shift array dimensions.</p>
+</li>
+<li>
+<p><code>xcorr2</code> 2-D cross-correlation.</p>
+</li>
+<li>
+<p><code>deconv</code> Deconvolution and polynomial division.</p>
+</li>
+<li>
+<p><code>vecnorm</code> Vector-wise norm.</p>
+</li>
+<li>
+<p><code>normpdf</code> Normal probability density function.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/310">#310</a> <code>gammaln</code> Logarithm of gamma function.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/1112">#1112</a> <code>gradient</code> Numerical gradient.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/1126">#1126</a> <code>isspace</code> Determine which characters are space characters.</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1110">#1110</a> Eigen master branch (352ede96e4c331daae4e1be9a5f3f50fff951b8d) ready to use.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura disabled (Install dependencies fails)</li>
+<li><code>struct</code> supports scalar string array as field name.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1110">#1110</a> add help about build and use C/C++ on fly.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1124">#1124</a> unexpected result from long statements on Multiple Lines.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1127">#1127</a> Nelson could crash if an mxn characters is displayed in the variable browser.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1125">#1125</a> Unsupported colon operator with char operands.</li>
+<li>Missing 'zoom in', 'zoom out' icons for help viewer in linux package.</li>
+<li><code>gcd</code> without argument returned wrong error message.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1133">#1133</a> [CI] [ARCH LINUX] Warning about MPI.</li>
+</ul>
+<h2>1.2.0 (2024-02-25)</h2>
+<h3>Added</h3>
+<ul>
+<li>Recursive completion on Graphic handle, struct, handle, class (properties, methods).</li>
+<li>Adding links between documents about mex and supported compilers.</li>
+<li>GitHub CI for macOS Sonoma (Apple Silicon) support.</li>
+<li><code>Export to ...</code> context menu for console and text editor as pdf.</li>
+<li><code>CTRL + Mouse wheel</code> or <code>CTRL + +/-</code> to zoom in/out on console, editor, help.</li>
+<li>Toolbar for figure with print, zoom in, zoom out, rotation, pan, restore axes.</li>
+<li><code>zoom </code>, <code>pan </code>, <code>rotate3d </code> functions.</li>
+<li><code>MenuBar</code>, <code>ToolBar</code> figure properties.</li>
+<li>Window menu on graphic window, list all others available windows.</li>
+<li><code>feature</code> builtin (undocument features, debug, tests, ...) content can change with next releases.</li>
+<li><code>GridAlpha</code>, <code>GridColor</code>, <code>View</code> properties for Axes.</li>
+<li>CTRL+C in help viewer, copy selected text.</li>
+<li><code>checkupdate</code> function and check update menu.</li>
+<li><code>isScalarStringArray</code> iinternal API C++ method.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Clicking on an axis automatically sets it as the current axes object.</li>
+<li>Clicking on an figure automatically sets it as the current figure object.</li>
+<li><code>saveas</code> exports the figure as a PDF page with centered alignment.</li>
+<li>Default color of grid for axes.</li>
+<li>Default figure size updated.</li>
+<li>Default <code>MarkerFaceColor</code> value for compatibility.</li>
+<li>view function returns azimuth and elevation values.</li>
+<li>Camera view reworked.</li>
+<li>Minimal screen resolution supported 800x600.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Change directory with file browser line editor did not work as expected.</li>
+<li>Template to create a function with file browser was wrong.</li>
+<li>Do not allow to select multiple variable in workspace browser.</li>
+<li>File browser checks if files with the extension &quot;.m&quot; have a valid name before enable 'run' context menu.</li>
+<li>Paste in editor with multiple tab.</li>
+<li>Starting the Nelson desktop was taking longer than necessary.</li>
+</ul>
+<h2>1.1.0 (2024-01-29)</h2>
+<h3>Added</h3>
+<ul>
+<li>Nelson Desktop environment: file browser, command history, workspace browser, desktop layout.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1074">#1074</a> Roadmap v2.0.0</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1044">#1044</a>: LU matrix factorization.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1080">#1080</a> <code>LineStyle</code>, <code>LineWidth</code> properties were not implemented for surface objects.</li>
+<li><code>sky</code>, <code>abyss</code> colormaps.</li>
+</ul>
+<h2>1.0.0 (2024-01-04)</h2>
+<p>Nelson 1.0.0 has been released.</p>
+<p>Nelson is an interactive, fully functional environment for engineering and scientific applications. It implements a matrix-driven language (which is largely compatible with MATLAB and GNU Octave), with advanced features such as 2-D 3-D plotting, image manipulation and viewing, a codeless interface to external C/C++/FORTRAN libraries, native support for various C types, and a host of other features.</p>
+<h3>Features</h3>
+<ul>
+<li>
+<p>Types managed by Nelson:</p>
+<ul>
+<li>double and double complex: scalar, vector, matrix 2D, N dimensions array, sparse matrix.</li>
+<li>single and single complex: scalar, vector, matrix 2D, N dimensions array, sparse matrix.</li>
+<li>logical: scalar, vector, matrix 2D, N dimensions array, sparse matrix.</li>
+<li>character array (UNICODE supported).</li>
+<li>string array (UNICODE supported).</li>
+<li>integers 8, 16, 32, 64 signed and unsigned: scalar, vector, matrix 2D, N dimensions array.</li>
+<li>handle objects.</li>
+<li>anonymous functions,</li>
+<li>all types can be overloaded.</li>
+</ul>
+</li>
+<li>
+<p><code>OpenMP</code> and <code>SIMD</code> extensions used.</p>
+</li>
+<li>
+<p>2D and 3D plotting with high-level plot commands.</p>
+</li>
+<li>
+<p>Parallel Computing Module.</p>
+</li>
+<li>
+<p>Fast Fourrier Transformation functions based on FFTW and MKL wrapper.</p>
+</li>
+<li>
+<p>SLICOT (Subroutine Library in Systems and Control Theory) interfaces (optional).</p>
+</li>
+<li>
+<p>Control System module.</p>
+</li>
+<li>
+<p>Message Passing Interface (MPI): functions for parallel computing.</p>
+</li>
+<li>
+<p>JSON decode/encode data support.</p>
+</li>
+<li>
+<p>HDF5 high-level functions I/O,</p>
+</li>
+<li>
+<p>HDF5 used as default data file format (.nh5) load/save workspace,</p>
+</li>
+<li>
+<p>MAT-file compatible load/save workspace,</p>
+</li>
+<li>
+<p>Foreign Function Interface C/Fortran.</p>
+</li>
+<li>
+<p>Interfacing C/C++ or Fortran with Nelson (build and load external code on the fly).</p>
+</li>
+<li>
+<p>MEX C API compatibility.</p>
+</li>
+<li>
+<p>Nelson Engine API for C (compatible with MEX Engine). Call Nelson from your C code as engine.</p>
+</li>
+<li>
+<p>RESTful API web service.</p>
+</li>
+<li>
+<p>Inter-process communication between Nelson's process.</p>
+</li>
+<li>
+<p>The QML engine enables nelson programs to display and manipulate graphical content using Qt's QML framework.</p>
+</li>
+<li>
+<p>Component Object Model (COM) client interface: binary-interface standard for software components on Windows.</p>
+</li>
+<li>
+<p>Write/Read xlsx files on Windows using COM.</p>
+</li>
+<li>
+<p>Embedded Nelson code editor.</p>
+</li>
+<li>
+<p>Help engine:</p>
+<p>Generate help files using Nelson dedicated functions.
+View your generated help files as html, markdown, pdf, gitbook or directly in Nelson help viewer.</p>
+</li>
+<li>
+<p>Tests engine:</p>
+<p>Validate your algorithm using Nelson dedicated functions.
+Export the test results under the xUnit reports format.</p>
+</li>
+<li>
+<p>Profiling and Code coverage tools for Nelson's language:</p>
+<p>Nelson has a built-in profiler that is very useful to profile your code and find out what script or function is taking the most time.</p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/package/nelson-cloud">Nelson cloud</a>:
+Instant access to Nelson anywhere from an web browser.</p>
+</li>
+<li>
+<p>Module skeleton to extend Nelson available here:</p>
+<ul>
+<li><a href="https://github.com/nelson-lang/module_skeleton">template macros and builtin</a>,</li>
+<li><a href="https://github.com/nelson-lang/module_skeleton_basic">basic template macros only</a>.</li>
+</ul>
+</li>
+<li>
+<p>Nelson Modules Manager (nmm) : package manager for Nelson</p>
+</li>
+</ul>
+<h2>Previous changelog</h2>
+<p><a href="CHANGELOG-0.7.x.html">Changelog v0.7.x</a></p>
+<p><a href="CHANGELOG-0.6.x.html">Changelog v0.6.x</a></p>
+<p><a href="CHANGELOG-0.5.x.html">Changelog v0.5.x</a></p>
+<p><a href="CHANGELOG-0.4.x.html">Changelog v0.4.x</a></p>
+<p><a href="CHANGELOG-0.3.x.html">Changelog v0.3.x</a></p>
+<p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
+<p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>

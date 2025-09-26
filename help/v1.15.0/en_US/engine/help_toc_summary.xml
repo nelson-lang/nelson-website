@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>engine</module>
+    <section name="Engine">
+      <chapter_description>nelson engine functions</chapter_description>
+      <keyword name="argv" link="argv.html" description="Nelson command line arguments."/>
+      <keyword name="executable" link="executable.html" description="Executables to start Nelson software."/>
+      <keyword name="finish" link="finish.html" description="User-defined termination script for Nelson."/>
+      <keyword name="getnelsonmode" link="getnelsonmode.html" description="Returns current Nelson mode."/>
+      <keyword name="isquietmode" link="isquietmode.html" description="Return true if Nelson started with --quiet option."/>
+      <keyword name="System Requirements" link="nelson_system_requirement.html" description="System Requirements by platforms."/>
+      <keyword name="#! shebang" link="shebang.html" description="On Unix, Linux operating systems, Parses the rest of the script's initial line as an interpreter directive."/>
+      <keyword name="startup" link="startup.html" description="User-defined startup script for Nelson."/>
+    </section>
+  </toc>
+</help_summary>

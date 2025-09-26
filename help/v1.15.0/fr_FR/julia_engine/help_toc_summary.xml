@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>julia_engine</module>
+    <section name="Julia engine">
+      <chapter_description>julia_engine functions</chapter_description>
+      <keyword name="jlenv" link="jlenv.html" description="Change default environment of Julia interpreter."/>
+      <keyword name="jlrun" link="jlrun.html" description="Run Julia statements from Nelson."/>
+      <keyword name="jlrunfile" link="jlrunfile.html" description="Run Julia file from Nelson."/>
+      <keyword name="Julia Nelson types" link="julia_types.html" description="Managing Data between Julia and Nelson."/>
+    </section>
+  </toc>
+</help_summary>

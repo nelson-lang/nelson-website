@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>history_manager</module>
+    <section name="History manager">
+      <chapter_description>history functions</chapter_description>
+      <keyword name="history" link="history.html" description="history manager."/>
+    </section>
+  </toc>
+</help_summary>

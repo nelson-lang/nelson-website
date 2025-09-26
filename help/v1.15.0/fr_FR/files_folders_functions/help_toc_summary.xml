@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>files_folders_functions</module>
+    <section name="Files and folders functions">
+      <chapter_description>files, folders and paths functions</chapter_description>
+      <keyword name="cd" link="cd.html" description="Changes Nelson current directory."/>
+      <keyword name="copyfile" link="copyfile.html" description="Copy files or folder."/>
+      <keyword name="diff_file" link="diff_file.html" description="diff two files or strings."/>
+      <keyword name="dir" link="dir.html" description="Returns file list."/>
+      <keyword name="fileparts" link="fileparts.html" description="Returns the path, filename and extension of a file path."/>
+      <keyword name="filesep" link="filesep.html" description="Return the file separator character for the current platform."/>
+      <keyword name="fullfile" link="fullfile.html" description="Build full file name from parts."/>
+      <keyword name="fullpath" link="fullpath.html" description="Returns canonical full path."/>
+      <keyword name="isdir" link="isdir.html" description="Returns true is the input argument is an directory."/>
+      <keyword name="isfile" link="isfile.html" description="Returns true is the input argument is a file."/>
+      <keyword name="isfolder" link="isfolder.html" description="Returns true is the input argument is an directory."/>
+      <keyword name="ls" link="ls.html" description="List folder contents."/>
+      <keyword name="mkdir" link="mkdir.html" description="Creates a new directory."/>
+      <keyword name="pathsep" link="pathsep.html" description="Return the search path separator character for the current platform."/>
+      <keyword name="pwd" link="pwd.html" description="Returns current directory."/>
+      <keyword name="relativepath" link="relativepath.html" description="Returns the relative path from an actual path to the target path."/>
+      <keyword name="rmdir" link="rmdir.html" description="Removes a directory."/>
+      <keyword name="rmfile" link="rmfile.html" description="Removes a file."/>
+      <keyword name="tempdir" link="tempdir.html" description="Returns the temporary directory path."/>
+      <keyword name="tempname" link="tempname.html" description="Returns an unique temporary filename."/>
+      <keyword name="userdir" link="userdir.html" description="Returns the current user's path."/>
+    </section>
+  </toc>
+</help_summary>

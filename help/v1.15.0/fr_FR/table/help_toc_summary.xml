@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>table</module>
+    <section name="Tables">
+      <chapter_description>Tables of arrays with named columns, each potentially containing different data types.</chapter_description>
+      <keyword name="Accessing and Manipulating Tables in Nelson" link="1_accessing_manipulating_table.html" description=""/>
+      <keyword name="Direct computation with Table" link="2_direct_compution_with_table.html" description=""/>
+      <keyword name="Read/Write table to files" link="3_read_write_table.html" description=""/>
+      <keyword name="array2table" link="array2table.html" description="Convert homogeneous array to table."/>
+      <keyword name="cell2table" link="cell2table.html" description="Convert cell array to table."/>
+      <keyword name="head" link="head.html" description="Get top rows of table or array."/>
+      <keyword name="height" link="height.html" description="Number of table rows"/>
+      <keyword name="istable" link="istable.html" description="Determine if input is table."/>
+      <keyword name="removevars" link="removevars.html" description="Delete variables from table."/>
+      <keyword name="renamevars" link="renamevars.html" description="Rename variables in table."/>
+      <keyword name="struct2table" link="struct2table.html" description="Convert a structure array into a tabular format."/>
+      <keyword name="table" link="table.html" description="A table-like array with named variables, capable of holding different data types"/>
+      <keyword name="table2array" link="table2array.html" description="Convert table to homogeneous array."/>
+      <keyword name="table2cell" link="table2cell.html" description="Convert table to cell array"/>
+      <keyword name="table2struct" link="table2struct.html" description="Convert table to structure array"/>
+      <keyword name="tail" link="tail.html" description="Get bottom rows of table or array."/>
+      <keyword name="width" link="width.html" description="Number of table variables"/>
+    </section>
+  </toc>
+</help_summary>

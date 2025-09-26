@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>characters_encoding</module>
+    <section name="Characters encoding">
+      <chapter_description>characters encoding functions</chapter_description>
+      <keyword name="native2unicode" link="native2unicode.html" description="Converts bytes representation to unicode characters"/>
+      <keyword name="nativecharset" link="nativecharset.html" description="Find all charset matches that appear to be consistent with the input"/>
+      <keyword name="unicode2native" link="unicode2native.html" description="Converts unicode characters representation to bytes"/>
+    </section>
+  </toc>
+</help_summary>

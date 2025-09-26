@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Managing Callback Interruptions in Nelson</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">Managing Callback Interruptions in Nelson</span></div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>You can assign a callback function to a callback property using one of the following methods:</p>
+        <p>
+            <b>Function handle</b>: Use this approach when your callback does not need extra input arguments.</p>
+            <p>
+                <b>Cell array</b>: Ideal for situations where your callback requires additional input arguments. The cell array should include the function handle as the first element, followed by the input arguments.</p>
+                <p>
+                    <b>Anonymous function</b>: This method is suitable for simple callback code or when you want to reuse a function that isn't exclusively used as a callback.</p>
+                    <p>
+                        <b>Characters vector or scalar string</b> containing commands.</p>
+                        <p></p>
+                        <p>Nelson provides control over whether a callback function can be interrupted during its execution. In some cases, allowing interruptions might be desirable, such as enabling users to stop an animation loop through an interrupting callback. However, in scenarios where the execution order of callbacks is crucial, it might be necessary to prevent interruptions to maintain the intended behavior, such as ensuring smooth responsiveness in applications that respond to pointer movements.</p>
+                        <p></p>
+                        <p>Callback Interruption Behavior:</p>
+                        <p></p>
+                        <p>Callbacks are executed in the order they are queued. When a callback is running and another user action triggers a second callback, this second callback attempts to interrupt the first one. The first callback is referred to as the "running callback," while the second is the "interrupting callback."</p>
+                        <p></p>
+                        <p>In some cases, specific commands within the running callback prompt Nelson to process any pending callbacks in the queue.</p>
+                        <p>When Nelson encounters one of these commands such as <b>drawnow</b>, <b>figure</b>, <b>waitfor</b>, or <b>pause</b> it evaluates whether an interruption should occur.</p>
+                        <p></p>
+                        <p>No Interruption: If the running callback does not include any of these commands, Nelson will complete the running callback before executing the interrupting callback.</p>
+                        <p></p>
+                        <p>Interruption Conditions: If the running callback includes any of these commands, the behavior depends on the Interruptible property of the object that owns the running callback:</p>
+                        <p></p>
+                        <p>If <b>Interruptible</b> is set to <b>'on'</b>, Nelson allows the interruption. The running callback is paused, the interrupting callback is executed, and once it is finished, Nelson resumes the execution of the running callback.</p>
+                        <p>If <b>Interruptible</b> is set to <b>'off'</b>, the interruption is blocked. The <b>BusyAction</b> property of the interrupting callback then dictates the next step:</p>
+                        <p>If <b>BusyAction</b> is <b>'queue'</b>, the interrupting callback will be executed after the running callback completes.</p>
+                        <p>If <b>BusyAction</b> is <b>'cancel'</b>, the interrupting callback is discarded and not executed.</p>
+                        <p>By default, the <b>Interruptible</b> property is <b>'on'</b>, and <b>BusyAction</b> is <b>'queue'</b>.</p>
+                        <p></p>
+                        <p>Notably, certain callbacks specifically <b>DeleteFcn</b>, <b>CloseRequestFcn</b>, and <b>SizeChangedFcn</b> will interrupt the running callback regardless of the Interruptible property's value.</p>
+                    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div class="example-title">uicontrol demo Interruptible</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">
+addpath([modulepath('graphics','root'), '/examples/uicontrol'])
+edit uicontrol_demo_interruptible
+uicontrol_demo_interruptible
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./uicontrol_6_E87E65E2.png" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../graphics/uicontrol.html">uicontrol</a><a class="see-also-link" href="../graphics/drawnow.html">drawnow</a><a class="see-also-link" href="../graphics/waitfor.html">waitfor</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

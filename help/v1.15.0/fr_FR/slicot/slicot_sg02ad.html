@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>slicot_sg02ad</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">slicot_sg02ad</span></div></div>
+<div class="subtitle">Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">[RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">DICO</td>
+<td>Specifies the type of Riccati equation to be solved as follows: = 'C':  Equation (1), continuous-time case; = 'D':  Equation (2), discrete-time case.</td>
+</tr>
+<tr>
+<td class="param-name">JOBB</td>
+<td>Specifies whether or not the matrix G is given, instead of the matrices B and R, as follows: = 'B':  B and R are given; = 'G':  G is given.</td>
+</tr>
+<tr>
+<td class="param-name">FACT</td>
+<td>Specifies whether or not the matrices Q and/or R (if JOBB = 'B') are factored, as follows: = 'N':  Not factored, Q and R are given; = 'C':  C is given, and Q = C'C; = 'D':  D is given, and R = D'D; = 'B':  Both factors C and D are given, Q = C'C, R = D'D.</td>
+</tr>
+<tr>
+<td class="param-name">UPLO</td>
+<td>If JOBB = 'G', or FACT = 'N', specifies which triangle of the matrices G, or Q and R, is stored, as follows: = 'U':  Upper triangle is stored; = 'L':  Lower triangle is stored.</td>
+</tr>
+<tr>
+<td class="param-name">JOBL</td>
+<td>Specifies whether or not the matrix L is zero, as follows: = 'Z':  L is zero; = 'N':  L is nonzero. JOBL is not used if JOBB = 'G' and JOBL = 'Z' is assumed. SLICOT Library routine SB02MT should be called just before SG02AD, for obtaining the results when JOBB = 'G' and JOBL = 'N'.</td>
+</tr>
+<tr>
+<td class="param-name">SCAL</td>
+<td>If JOBB = 'B', specifies whether or not a scaling strategy should be used to scale Q, R, and L, as follows: = 'G':  General scaling should be used; = 'N':  No scaling should be used. SCAL is not used if JOBB = 'G'.</td>
+</tr>
+<tr>
+<td class="param-name">SORT</td>
+<td>Specifies which eigenvalues should be obtained in the top of the generalized Schur form, as follows: = 'S':  Stable   eigenvalues come first; = 'U':  Unstable eigenvalues come first.</td>
+</tr>
+<tr>
+<td class="param-name">ACC</td>
+<td>Specifies whether or not iterative refinement should be used to solve the system of algebraic equations giving the solution matrix X, as follows: = 'R':  Use iterative refinement; = 'N':  Do not use iterative refinement.</td>
+</tr>
+<tr>
+<td class="param-name">P</td>
+<td>The number of system outputs. If FACT = 'C' or 'D' or 'B', P is the number of rows of the matrices C and/or D.</td>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>The leading N-by-N part of this array must contain the state matrix A of the descriptor system.</td>
+</tr>
+<tr>
+<td class="param-name">E</td>
+<td>The leading N-by-N part of this array must contain the matrix E of the descriptor system.</td>
+</tr>
+<tr>
+<td class="param-name">B</td>
+<td>If JOBB = 'B', the leading N-by-M part of this array must contain the input matrix B of the system.</td>
+</tr>
+<tr>
+<td class="param-name">Q</td>
+<td>If FACT = 'N' or 'D', the leading N-by-N upper triangular part (if UPLO = 'U') or lower triangular part (if UPLO = 'L') of this array must contain the upper triangular part or lower triangular part, respectively, of the symmetric state weighting matrix Q. The stricly lower triangular part (if UPLO = 'U') or stricly upper triangular part (if UPLO = 'L') is not referenced. If FACT = 'C' or 'B', the leading P-by-N part of this array must contain the output matrix C of the system. If JOBB = 'B' and SCAL = 'G', then Q is modified internally, but is restored on exit.</td>
+</tr>
+<tr>
+<td class="param-name">R</td>
+<td>If FACT = 'N' or 'C', the leading M-by-M upper triangular part (if UPLO = 'U') or lower triangular part (if UPLO = 'L') of this array must contain the upper triangular part or lower triangular part, respectively, of the symmetric input weighting matrix R. The stricly lower triangular part (if UPLO = 'U') or stricly upper triangular part (if UPLO = 'L') is not referenced. If FACT = 'D' or 'B', the leading P-by-M part of this array must contain the direct transmission matrix D of the system. If JOBB = 'B' and SCAL = 'G', then R is modified internally, but is restored on exit.</td>
+</tr>
+<tr>
+<td class="param-name">L</td>
+<td>If JOBL = 'N' and JOBB = 'B', the leading N-by-M part of this array must contain the cross weighting matrix L. If JOBB = 'B' and SCAL = 'G', then L is modified internally, but is restored on exit.</td>
+</tr>
+<tr>
+<td class="param-name">TOL</td>
+<td>The tolerance to be used to test for near singularity of the original matrix pencil, specifically of the triangular M-by-M factor obtained during the reduction process.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">RCONDU</td>
+<td>If N &gt; 0 and INFO = 0 or INFO = 7, an estimate of the reciprocal of the condition number (in the 1-norm) of the N-th order system of algebraic equations from which the solution matrix X is obtained.</td>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>If INFO = 0, the leading N-by-N part of this array contains the solution matrix X of the problem.</td>
+</tr>
+<tr>
+<td class="param-name">ALFAR</td>
+<td>The generalized eigenvalues of the 2N-by-2N matrix pair, ordered as specified by SORT (if INFO = 0, or INFO &gt;= 5).</td>
+</tr>
+<tr>
+<td class="param-name">ALFAI</td>
+<td>The generalized eigenvalues of the 2N-by-2N matrix pair, ordered as specified by SORT (if INFO = 0, or INFO &gt;= 5).</td>
+</tr>
+<tr>
+<td class="param-name">BETA</td>
+<td>The generalized eigenvalues of the 2N-by-2N matrix pair, ordered as specified by SORT (if INFO = 0, or INFO &gt;= 5).</td>
+</tr>
+<tr>
+<td class="param-name">S</td>
+<td>The leading 2N-by-2N part of this array contains the ordered real Schur form S of the first matrix in the reduced matrix pencil associated to the optimal problem, corresponding to the scaled Q, R, and L, if JOBB = 'B' and SCAL = 'G'.</td>
+</tr>
+<tr>
+<td class="param-name">T</td>
+<td>The leading 2N-by-2N part of this array contains the ordered upper triangular form T of the second matrix in the reduced matrix pencil associated to the optimal problem, corresponding to the scaled Q, R, and L, if JOBB = 'B' and SCAL = 'G'.</td>
+</tr>
+<tr>
+<td class="param-name">U</td>
+<td>The leading 2N-by-2N part of this array contains the right transformation matrix U which reduces the 2N-by-2N matrix pencil to the ordered generalized real Schur form (S,T).</td>
+</tr>
+<tr>
+<td class="param-name">IWARN</td>
+<td> = 0:  no warning; = 1:  the computed solution may be inaccurate due to poor scaling or eigenvalues too close to the boundary of the stability domain (the imaginary axis, if DICO = 'C', or the unit circle, if DICO = 'D').</td>
+</tr>
+<tr>
+<td class="param-name">INFO</td>
+<td> = 0:  successful exit; = 1:  if the computed extended matrix pencil is singular, possibly due to rounding errors; = 2:  if the QZ algorithm failed; = 3:  if reordering of the generalized eigenvalues failed; = 4:  if after reordering, roundoff changed values of some complex eigenvalues so that leading eigenvalues in the generalized Schur form no longer satisfy the stability condition; this could also be caused due to scaling; = 5:  if the computed dimension of the solution does not equal N; = 6:  if the spectrum is too close to the boundary of the stability domain; = 7:  if a singular matrix was encountered during the computation of the solution matrix X.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p> To solve for X either the continuous-time algebraic Riccatiequation or the discrete-time algebraic Riccati equation</p>
+    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">N = 2;
+M = 1;
+P = 3;
+TOL = 0.0;
+DICO = 'C';
+JOBB = 'B';
+FACT = 'B';
+UPLO = 'U';
+JOBL = 'Z';
+SCAL = 'N';
+SORT = 'S';
+ACC = 'N';
+A = [0.0  1.0;
+   0.0  0.0];
+E = [1.0  0.0;
+   0.0  1.0];
+B = [0.0;
+   1.0];
+Q = [1.0  0.0;
+   0.0  1.0;
+   0.0  0.0];
+R = [0.0;
+   0.0;
+   1.0];
+L = zeros(N, N);
+[RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>SG02AD</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span> Bibliography</div>
+<div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/SG02AD.html" target="_blank">http://slicot.org/objects/software/shared/doc/SG02AD.html</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>SLICOT Documentation</div>
+</div>
+</body>
+</html>

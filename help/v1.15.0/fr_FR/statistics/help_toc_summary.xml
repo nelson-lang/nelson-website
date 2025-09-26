@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>statistics</module>
+    <section name="Statistics">
+      <chapter_description>statistics functions</chapter_description>
+      <keyword name="corrcoef" link="corrcoef.html" description="Correlation coefficients"/>
+      <keyword name="cov" link="cov.html" description="Covariance"/>
+      <keyword name="mean" link="mean.html" description="Mean of array elements."/>
+      <keyword name="normpdf" link="normpdf.html" description="Normal probability density function"/>
+      <keyword name="tdigest" link="tdigest.html" description="t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters"/>
+      <keyword name="var" link="var.html" description="Variance"/>
+    </section>
+  </toc>
+</help_summary>

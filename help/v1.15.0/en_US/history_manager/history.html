@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>history</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">history</span></div></div>
+<div class="subtitle">history manager.</div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span> Syntax
+                </div>
+<pre class="syntax-block">history()
+c = history()
+s = history('size')
+f = history('filename')
+l = history('enable_save')
+c = history('get')
+history('display')
+history('save')
+history('load')
+history('clear')
+history('duplicated')
+history('saveafter')
+history('removeexit')
+history('size', new_size)
+history('enable_save', true_false)
+history('delete', lines)
+history('append', str)
+history('filename', name)
+history('load', filename_history)
+history('save', filename_history)
+history('duplicated', true_false)
+history('removeexit', true_false)
+history('get', lines)
+history('saveafter', nb_commands)
+</pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span> Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">new_size</td>
+<td>a integer value: new size max of history.</td>
+</tr>
+<tr>
+<td class="param-name">true_false</td>
+<td>a logical.</td>
+</tr>
+<tr>
+<td class="param-name">lines</td>
+<td>a integer value or a vector of size 1x2.</td>
+</tr>
+<tr>
+<td class="param-name">str</td>
+<td>a string.</td>
+</tr>
+<tr>
+<td class="param-name">name</td>
+<td>a string: new default history filename</td>
+</tr>
+<tr>
+<td class="param-name">filename_history</td>
+<td>a string: filename</td>
+</tr>
+<tr>
+<td class="param-name">nb_commands</td>
+<td>a integer value: number of commands.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span> Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">c</td>
+<td>a cell of strings.</td>
+</tr>
+<tr>
+<td class="param-name">l</td>
+<td>a logical.</td>
+</tr>
+<tr>
+<td class="param-name">s</td>
+<td>a integer value.</td>
+</tr>
+<tr>
+<td class="param-name">f</td>
+<td>a string.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>
+            <b>history()</b> displays the current Nelson history.</p>
+            <p>
+                <b>c = history()</b> returns the current Nelson history in a cell of strings.</p>
+                <p>
+                    <b>s = history('size')</b> returns history size max.</p>
+                    <p>
+                        <b>f = history('filename')</b> returns the history filename.</p>
+                        <p>
+                            <b>l = history('enable_save')</b> returns the history manager state.</p>
+                            <p>
+                                <b>c = history('get')</b> returns the current Nelson history in a cell of strings.</p>
+                                <p>
+                                    <b>history('display')</b> displays the current Nelson history.</p>
+                                    <p>
+                                        <b>history('save')</b> saves current history file.</p>
+                                        <p>
+                                            <b>history('load')</b> load current history file.</p>
+                                            <p>
+                                                <b>history('clear')</b> clears history.</p>
+                                                <p>
+                                                    <b>history('duplicated')</b> get state about save of consecutive duplicated commands.</p>
+                                                    <p>
+                                                        <b>history('saveafter')</b> get state about save the history after nth commands.</p>
+                                                        <p>
+                                                            <b>history('removeexit')</b> get state about do not save exit in history file.</p>
+                                                            <p>
+                                                                <b>history('size', new_size)</b> set history size max with <b>new_size</b>.</p>
+                                                                <p>
+                                                                    <b>history('enable_save', true_false)</b> set the history manager state: false for 'off', true for 'on'.</p>
+                                                                    <p>
+                                                                        <b>history('delete', lines)</b> deletes lines by index: a scalar value or a vector 1x2.</p>
+                                                                        <p>
+                                                                            <b>history('append', str)</b> append command to history.</p>
+                                                                            <p>
+                                                                                <b>history('filename', name)</b> set the history filename.</p>
+                                                                                <p>
+                                                                                    <b>history('load', filename_history)</b> load history file.</p>
+                                                                                    <p>
+                                                                                        <b>history('save', filename_history)</b> save history file</p>
+                                                                                        <p>
+                                                                                            <b>history('duplicated', true_false)</b> set state about consecutive duplicated commands. true remove duplicated.</p>
+                                                                                            <p>
+                                                                                                <b>history('removeexit', true_false)</b> set state about do not save exit in history file.</p>
+                                                                                                <p>
+                                                                                                    <b>history('get', lines)</b>returns the current Nelson history in a cell of strings by index: a scalar value or a vector 1x2.</p>
+                                                                                                    <p>
+                                                                                                        <b>history('saveafter', nb_commands)</b> saves the history file after <b>nb_commands</b> statements are added to the file.</p>
+                                                                                                        <p>
+                                                                                                            <b>Tips</b>: You can easily share your history file in the cloud by adding few lines code in your user startup file.</p>
+                                                                                                            <p>If nelson launched with '--nouserstartup' option, history file will be not loaded at startup and not saved at exit.</p>
+                                                                                                        </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div class="example-title">Example to share your history file in OneDrive cloud</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">OneDrivePath = getenv('OneDrive');
+if (strcmp(OneDrivePath, '') == false)
+  NelsonOneDrivePath = [OneDrivePath, '/Nelson'];
+  mkdir(NelsonOneDrivePath);
+  NelsonOneDrivePathFilename = [NelsonOneDrivePath, '/', 'Nelson.history'];
+ history('filename', NelsonOneDrivePathFilename);
+  history('load', NelsonOneDrivePathFilename);
+end</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">history()
+c = history()</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div><a class="see-also-link" href="../stream_manager/diary.html">diary</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

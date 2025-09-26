@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>overloading</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('code.matlab').forEach(function(block) {
+                        if (window.hljs) hljs.highlightElement(block);
+                    });
+                });
+            </script><script type="text/javascript">
+                function copyExample(btn) {
+                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
+                    if (codeBlock) {
+                        var text = codeBlock.textContent;
+                        navigator.clipboard.writeText(text).then(function() {
+                            btn.setAttribute('data-copied', 'true');
+                            btn.setAttribute('aria-label', 'Copied!');
+                            btn.title = 'Copied!';
+                            setTimeout(function(){ 
+                                btn.removeAttribute('data-copied');
+                                btn.setAttribute('aria-label', 'Copy');
+                                btn.title = 'Copy';
+                            }, 1200);
+                        }, function() {
+                            btn.setAttribute('aria-label', 'Error');
+                            btn.title = 'Error';
+                        });
+                    }
+                }
+            </script>
+</head>
+<body>
+<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">overloading</span></div></div>
+<div class="subtitle">Customizing Operators and Functions</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span> Description</div>
+<div>
+        <p>In various scenarios, you may find it necessary to modify the behavior of Nelson's operators and functions when they operate on objects or basic types.</p>
+        <p>This customization can be achieved by overloading the relevant functions, allowing them to handle diverse types and quantities of input arguments and execute the appropriate operation for the highest-priority object.</p>
+        <p></p>
+        <p>Overloading Operators:</p>
+        <p></p>
+        <p>Each built-in operator corresponds to a specific function name (e.g., the <b>-</b> operator is associated with the minus.m function).</p>
+        <p>You can overload any operator by creating an M-file with the appropriate name within the class directory.</p>
+        <p>For instance, if either <b>A</b> or <b>B</b> is an object of type <b>classname</b>, the expression <b>A - B</b> triggers a call to a function <b>@classname/minus.m</b>, provided it exists.</p>
+        <p>When <b>A</b> and <b>B</b> belong to different classes, Nelson employs precedence rules to determine which method to apply.</p>
+        <p></p>
+        <p>The table below provides a list of function names associated with most of the Nelson operators:</p>
+        <p></p>
+        
+            
+                Description
+                Operator
+                Function
+            
+            
+                Binary addition
+                a + b
+                plus(a, b)
+            
+            
+                Binary subtraction
+                a - b
+                minus(a, b)
+            
+            
+                Unary minus
+                -a
+                uminus(a)
+            
+            
+                Unary plus
+                +a
+                uplus(a)
+            
+            
+                Element-wise multiplication
+                a .* b
+                times(a, b)
+            
+            
+                Matrix multiplication
+                a * b
+                mtimes(a, b)
+            
+            
+                Right element-wise division
+                a ./ b
+                rdivide(a, b)
+            
+            
+                Left element-wise division
+                a .\ b
+                ldivide(a, b)
+            
+            
+                Matrix right division
+                a / b
+                mrdivide(a, b)
+            
+            
+                Matrix left division
+                a \ b
+                mldivide(a, b)
+            
+            
+                Element-wise power
+                a .^ b
+                power(a, b)
+            
+            
+                Matrix power
+                a ^ b
+                mpower(a, b)
+            
+            
+                Less than
+                a &lt; b
+                lt(a, b)
+            
+            
+                Greater than
+                a &gt; b
+                gt(a, b)
+            
+            
+                Less than or equal to
+                a &lt;= b
+                le(a, b)
+            
+            
+                Greater than or equal to
+                a &gt;= b
+                ge(a, b)
+            
+            
+                Not equal to
+                a ~= b
+                ne(a, b)
+            
+            
+                Equality
+                a == b
+                eq(a, b)
+            
+            
+                Logical AND
+                a &amp; b
+                and(a, b)
+            
+            
+                Logical OR
+                a | b
+                or(a, b)
+            
+            
+                Logical NOT
+                ~a
+                not(a)
+            
+            
+                Colon operator
+                a:d:b
+                colon(a, d, b)
+            
+            
+                Complex conjugate transpose
+                a'
+                ctranspose(a)
+            
+            
+                Matrix transpose
+                a.'
+                transpose(a)
+            
+            
+                Display method
+                command window output
+                display(a)
+            
+            
+                Horizontal concatenation
+                [a, b]
+                horzcat(a, b, ...)
+            
+            
+                Vertical concatenation
+                [a; b]
+                vertcat(a, b, ...)
+            
+            
+                Subscripted reference
+                a(s1, s2, ... , sn)
+                subsref(a, s)
+            
+            
+                Subscripted assignment
+                a(s1, ... , sn) = b
+                subsasgn(a, s, b)
+            
+            
+                Subscript index
+                b(a)
+                subsindex(a)
+            
+        
+    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span> Examples</div>
+<div class="example">
+<div class="example-title">Overload minus operator with double</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">% save in @double directory, as minus.m
+function r = minus(A, B)
+  disp('minus was called')
+  % to call minus builtin
+  r = builtin('minus', A, B)
+end
+</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span> See Also</div>
+<div>
+<a class="see-also-link" href="../operators/plus.html">plus</a><a class="see-also-link" href="../operators/minus.html">minus</a><a class="see-also-link" href="../operators/uminus.html">uminus</a><a class="see-also-link" href="../operators/uplus.html">uplus</a><a class="see-also-link" href="../operators/times.html">times</a><a class="see-also-link" href="../operators/mtimes.html">mtimes</a><a class="see-also-link" href="../operators/rdivide.html">rdivide</a><a class="see-also-link" href="../operators/ldivide.html">ldivide</a><a class="see-also-link" href="../operators/mrdivide.html">mrdivide</a><a class="see-also-link" href="../operators/mldivide.html">mldivide</a><a class="see-also-link" href="../operators/power.html">power</a><a class="see-also-link" href="../operators/mpower.html">mpower</a><a class="see-also-link" href="../operators/lt.html">lt</a><a class="see-also-link" href="../operators/gt.html">gt</a><a class="see-also-link" href="../operators/le.html">le</a><a class="see-also-link" href="../operators/ge.html">ge</a><a class="see-also-link" href="../operators/ne.html">ne</a><a class="see-also-link" href="../operators/eq.html">eq</a><a class="see-also-link" href="../operators/and.html">and</a><a class="see-also-link" href="../operators/or.html">or</a><a class="see-also-link" href="../operators/not.html">not</a><a class="see-also-link" href="../operators/colon.html">colon</a><a class="see-also-link" href="../operators/ctranspose.html">ctranspose</a><a class="see-also-link" href="../operators/transpose.html">transpose</a><a class="see-also-link" href="../display_format/display.html">display</a><a class="see-also-link" href="../operators/horzcat.html">horzcat</a><a class="see-also-link" href="../operators/vertcat.html">vertcat</a><a class="see-also-link" href="../operators/subsref.html">subsref</a><a class="see-also-link" href="../operators/subsasgn.html">subsasgn</a><a class="see-also-link" href="../operators/subsindex.html">subsindex</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span> Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span> Author</div>
+<div>Allan CORNET</div>
+</div>
+</body>
+</html>

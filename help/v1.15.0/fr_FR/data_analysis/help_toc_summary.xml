@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>data_analysis</module>
+    <section name="Data analysis">
+      <chapter_description>data analysis</chapter_description>
+      <keyword name="conv" link="conv.html" description="Convolution and polynomial multiplication."/>
+      <keyword name="conv2" link="conv2.html" description="2-D convolution."/>
+      <keyword name="cumprod" link="cumprod.html" description="Cumulative product of array elements."/>
+      <keyword name="cumsum" link="cumsum.html" description="Cumulative sum of array elements."/>
+      <keyword name="ismissing" link="ismissing.html" description="Check for missing values."/>
+      <keyword name="issorted" link="issorted.html" description="Determine if array is sorted."/>
+      <keyword name="max" link="max.html" description="Maximum elements of an array."/>
+      <keyword name="min" link="min.html" description="Minimum elements of an array."/>
+      <keyword name="prod" link="prod.html" description="Product of array elements."/>
+      <keyword name="sort" link="sort.html" description="Sort array elements by quick sort algorithm."/>
+      <keyword name="sum" link="sum.html" description="Sum of array elements."/>
+      <keyword name="unique" link="unique.html" description="Unique values."/>
+    </section>
+  </toc>
+</help_summary>
