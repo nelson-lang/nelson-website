@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <help_summary>
   <toc>
-    <module>MEX</module>
+    <module>mex</module>
     <section name="MEX functions">
       <chapter_description>MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality.
 </chapter_description>

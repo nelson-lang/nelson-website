@@ -2,7 +2,7 @@
   {
     "title": "Functions manager",
     "url": "/./index.html",
-    "path": "sections/Functions manager",
+    "path": "sections/functions_manager",
     "content": "Functions manager provides tools to manage and interact with Nelson's function search path and function types. It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more. Utilities are available to check for the existence of built-in, macro, or mex functions."
   },
   {
@@ -110,7 +110,7 @@
   {
     "title": "Modules manager",
     "url": "/./index.html",
-    "path": "sections/Modules manager",
+    "path": "sections/modules_manager",
     "content": "modules manager functions"
   },
   {
@@ -212,7 +212,7 @@
   {
     "title": "Core",
     "url": "/./index.html",
-    "path": "sections/Core",
+    "path": "sections/core",
     "content": "core functions"
   },
   {
@@ -386,7 +386,7 @@
   {
     "title": "Engine",
     "url": "/./index.html",
-    "path": "sections/Engine",
+    "path": "sections/engine",
     "content": "nelson engine functions"
   },
   {
@@ -440,7 +440,7 @@
   {
     "title": "Interpreter functions",
     "url": "/./index.html",
-    "path": "sections/Interpreter functions",
+    "path": "sections/interpreter",
     "content": "interpreter functions"
   },
   {
@@ -560,7 +560,7 @@
   {
     "title": "Display format",
     "url": "/./index.html",
-    "path": "sections/Display format",
+    "path": "sections/display_format",
     "content": "output display format functions"
   },
   {
@@ -596,7 +596,7 @@
   {
     "title": "Localization functions",
     "url": "/./index.html",
-    "path": "sections/Localization functions",
+    "path": "sections/localization",
     "content": "localization functions"
   },
   {
@@ -626,7 +626,7 @@
   {
     "title": "I18n functions",
     "url": "/./index.html",
-    "path": "sections/I18n functions",
+    "path": "sections/i18n",
     "content": "internalization functions"
   },
   {
@@ -656,7 +656,7 @@
   {
     "title": "Characters encoding",
     "url": "/./index.html",
-    "path": "sections/Characters encoding",
+    "path": "sections/characters_encoding",
     "content": "characters encoding functions"
   },
   {
@@ -680,7 +680,7 @@
   {
     "title": "Types module",
     "url": "/./index.html",
-    "path": "sections/Types module",
+    "path": "sections/types",
     "content": "module about types management."
   },
   {
@@ -854,7 +854,7 @@
   {
     "title": "Overloading",
     "url": "/./index.html",
-    "path": "sections/Overloading",
+    "path": "sections/overload",
     "content": "Overloading capabilities on functions and operators."
   },
   {
@@ -866,7 +866,7 @@
   {
     "title": "Logical type functions",
     "url": "/./index.html",
-    "path": "sections/Logical type functions",
+    "path": "sections/logical",
     "content": "logical type functions"
   },
   {
@@ -896,7 +896,7 @@
   {
     "title": "Single type",
     "url": "/./index.html",
-    "path": "sections/Single type",
+    "path": "sections/single",
     "content": "single type functions"
   },
   {
@@ -908,7 +908,7 @@
   {
     "title": "Double",
     "url": "/./index.html",
-    "path": "sections/Double",
+    "path": "sections/double",
     "content": "double type functions"
   },
   {
@@ -938,7 +938,7 @@
   {
     "title": "Data structures",
     "url": "/./index.html",
-    "path": "sections/Data structures",
+    "path": "sections/data_structures",
     "content": "data structures functions"
   },
   {
@@ -1058,7 +1058,7 @@
   {
     "title": "Dictionaries",
     "url": "/./index.html",
-    "path": "sections/Dictionaries",
+    "path": "sections/dictionary",
     "content": "Map data with keys that index values."
   },
   {
@@ -1148,7 +1148,7 @@
   {
     "title": "Tables",
     "url": "/./index.html",
-    "path": "sections/Tables",
+    "path": "sections/table",
     "content": "Tables of arrays with named columns, each potentially containing different data types."
   },
   {
@@ -1256,7 +1256,7 @@
   {
     "title": "Integers type",
     "url": "/./index.html",
-    "path": "sections/Integers type",
+    "path": "sections/integer",
     "content": "These functions convert and store data to 1, 2 or 4 bytes integers. These data types are especially useful to store big objects such as images."
   },
   {
@@ -1322,7 +1322,7 @@
   {
     "title": "Sparse type",
     "url": "/./index.html",
-    "path": "sections/Sparse type",
+    "path": "sections/sparse",
     "content": "sparse type functions"
   },
   {
@@ -1382,7 +1382,7 @@
   {
     "title": "String type",
     "url": "/./index.html",
-    "path": "sections/String type",
+    "path": "sections/string",
     "content": "string type functions"
   },
   {
@@ -1604,7 +1604,7 @@
   {
     "title": "Function_handle functions",
     "url": "/./index.html",
-    "path": "sections/Function_handle functions",
+    "path": "sections/function_handle",
     "content": "function_handle functions"
   },
   {
@@ -1634,7 +1634,7 @@
   {
     "title": "Handle",
     "url": "/./index.html",
-    "path": "sections/Handle",
+    "path": "sections/handle",
     "content": "handle object functions"
   },
   {
@@ -1694,7 +1694,7 @@
   {
     "title": "Error manager",
     "url": "/./index.html",
-    "path": "sections/Error manager",
+    "path": "sections/error_manager",
     "content": "error handling functions"
   },
   {
@@ -1754,7 +1754,7 @@
   {
     "title": "Debugger functions",
     "url": "/./index.html",
-    "path": "sections/Debugger functions",
+    "path": "sections/debugger",
     "content": "debugger functions"
   },
   {
@@ -1766,7 +1766,7 @@
   {
     "title": "Profiling tools",
     "url": "/./index.html",
-    "path": "sections/Profiling tools",
+    "path": "sections/profiler",
     "content": "Profile to Improve Performance"
   },
   {
@@ -1784,7 +1784,7 @@
   {
     "title": "Constructors functions",
     "url": "/./index.html",
-    "path": "sections/Constructors functions",
+    "path": "sections/constructors_functions",
     "content": "Create scalars, vectors, or matrices"
   },
   {
@@ -1844,7 +1844,7 @@
   {
     "title": "Operators",
     "url": "/./index.html",
-    "path": "sections/Operators",
+    "path": "sections/operators",
     "content": "Operators"
   },
   {
@@ -2078,7 +2078,7 @@
   {
     "title": "Elementary functions",
     "url": "/./index.html",
-    "path": "sections/Elementary functions",
+    "path": "sections/elementary_functions",
     "content": "elementary functions"
   },
   {
@@ -2642,7 +2642,7 @@
   {
     "title": "Data analysis",
     "url": "/./index.html",
-    "path": "sections/Data analysis",
+    "path": "sections/data_analysis",
     "content": "data analysis"
   },
   {
@@ -2720,7 +2720,7 @@
   {
     "title": "Trigonometric functions",
     "url": "/./index.html",
-    "path": "sections/Trigonometric functions",
+    "path": "sections/trigonometric_functions",
     "content": "module about sine, cosine, and related functions."
   },
   {
@@ -3020,7 +3020,7 @@
   {
     "title": "Linear algebra",
     "url": "/./index.html",
-    "path": "sections/Linear algebra",
+    "path": "sections/linear_algebra",
     "content": "linear algebra functions"
   },
   {
@@ -3200,7 +3200,7 @@
   {
     "title": "Statistics",
     "url": "/./index.html",
-    "path": "sections/Statistics",
+    "path": "sections/statistics",
     "content": "statistics functions"
   },
   {
@@ -3242,7 +3242,7 @@
   {
     "title": "Polynomials",
     "url": "/./index.html",
-    "path": "sections/Polynomials",
+    "path": "sections/polynomial_functions",
     "content": "Polynomial functions"
   },
   {
@@ -3296,7 +3296,7 @@
   {
     "title": "Signal Processing",
     "url": "/./index.html",
-    "path": "sections/Signal Processing",
+    "path": "sections/signal_processing",
     "content": "Functions to analyze sampled signals."
   },
   {
@@ -3374,7 +3374,7 @@
   {
     "title": "Subroutine Library In COntrol Theory",
     "url": "/./index.html",
-    "path": "sections/Subroutine Library In COntrol Theory",
+    "path": "sections/slicot",
     "content": "SLICOT provides numerical algorithms for computations in systems and control theory."
   },
   {
@@ -3524,7 +3524,7 @@
   {
     "title": "Special functions",
     "url": "/./index.html",
-    "path": "sections/Special functions",
+    "path": "sections/special_functions",
     "content": "special functions"
   },
   {
@@ -3590,7 +3590,7 @@
   {
     "title": "FFTW",
     "url": "/./index.html",
-    "path": "sections/FFTW",
+    "path": "sections/fftw",
     "content": "Fastest Fourier Transform in the West"
   },
   {
@@ -3656,7 +3656,7 @@
   {
     "title": "OS functions",
     "url": "/./index.html",
-    "path": "sections/OS functions",
+    "path": "sections/os_functions",
     "content": "operating system functions"
   },
   {
@@ -3758,7 +3758,7 @@
   {
     "title": "Files and folders functions",
     "url": "/./index.html",
-    "path": "sections/Files and folders functions",
+    "path": "sections/files_folders_functions",
     "content": "files, folders and paths functions"
   },
   {
@@ -3890,7 +3890,7 @@
   {
     "title": "Memory manager functions",
     "url": "/./index.html",
-    "path": "sections/Memory manager functions",
+    "path": "sections/memory_manager",
     "content": "memory manager functions"
   },
   {
@@ -3974,7 +3974,7 @@
   {
     "title": "Time functions",
     "url": "/./index.html",
-    "path": "sections/Time functions",
+    "path": "sections/time",
     "content": "time functions"
   },
   {
@@ -4106,7 +4106,7 @@
   {
     "title": "Random",
     "url": "/./index.html",
-    "path": "sections/Random",
+    "path": "sections/random",
     "content": "random functions"
   },
   {
@@ -4142,7 +4142,7 @@
   {
     "title": "Message Passing Interface",
     "url": "/./index.html",
-    "path": "sections/Message Passing Interface",
+    "path": "sections/mpi",
     "content": "In the world of parallel computing the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors."
   },
   {
@@ -4280,7 +4280,7 @@
   {
     "title": "Parallel",
     "url": "/./index.html",
-    "path": "sections/Parallel",
+    "path": "sections/parallel",
     "content": "parallel functions"
   },
   {
@@ -4340,7 +4340,7 @@
   {
     "title": "Help tools functions",
     "url": "/./index.html",
-    "path": "sections/Help tools functions",
+    "path": "sections/help_tools",
     "content": "help tools"
   },
   {
@@ -4418,7 +4418,7 @@
   {
     "title": "History manager",
     "url": "/./index.html",
-    "path": "sections/History manager",
+    "path": "sections/history_manager",
     "content": "history functions"
   },
   {
@@ -4430,7 +4430,7 @@
   {
     "title": "Console",
     "url": "/./index.html",
-    "path": "sections/Console",
+    "path": "sections/console",
     "content": "Console"
   },
   {
@@ -4454,7 +4454,7 @@
   {
     "title": "Gui module",
     "url": "/./index.html",
-    "path": "sections/Gui module",
+    "path": "sections/gui",
     "content": "functions about gui"
   },
   {
@@ -4538,7 +4538,7 @@
   {
     "title": "QML engine",
     "url": "/./index.html",
-    "path": "sections/QML engine",
+    "path": "sections/qml_engine",
     "content": "The QML engine enables nelson programs to display and manipulate graphical content using Qt's QML framework."
   },
   {
@@ -4706,7 +4706,7 @@
   {
     "title": "Graphics functions",
     "url": "/./index.html",
-    "path": "sections/Graphics functions",
+    "path": "sections/graphics",
     "content": "graphics functions"
   },
   {
@@ -5318,7 +5318,7 @@
   {
     "title": "Graphics I/O functions",
     "url": "/./index.html",
-    "path": "sections/Graphics I/O functions",
+    "path": "sections/graphics_io",
     "content": "graphics Input/Output functions"
   },
   {
@@ -5354,7 +5354,7 @@
   {
     "title": "Image Processing functions",
     "url": "/./index.html",
-    "path": "sections/Image Processing functions",
+    "path": "sections/image_processing",
     "content": "image processing functions"
   },
   {
@@ -5378,7 +5378,7 @@
   {
     "title": "Help browser functions",
     "url": "/./index.html",
-    "path": "sections/Help browser functions",
+    "path": "sections/help_browser",
     "content": "help browser functions"
   },
   {
@@ -5396,7 +5396,7 @@
   {
     "title": "Text editor",
     "url": "/./index.html",
-    "path": "sections/Text editor",
+    "path": "sections/text_editor",
     "content": "Embedded Nelson text editor"
   },
   {
@@ -5420,7 +5420,7 @@
   {
     "title": "Tests manager",
     "url": "/./index.html",
-    "path": "sections/Tests manager",
+    "path": "sections/tests_manager",
     "content": "Tests framework for Nelson"
   },
   {
@@ -5444,7 +5444,7 @@
   {
     "title": "Validators",
     "url": "/./index.html",
-    "path": "sections/Validators",
+    "path": "sections/validators",
     "content": "validators functions"
   },
   {
@@ -5666,7 +5666,7 @@
   {
     "title": "Assertion functions",
     "url": "/./index.html",
-    "path": "sections/Assertion functions",
+    "path": "sections/assert_functions",
     "content": "The aim of these functions is to provide tools to test some other functions."
   },
   {
@@ -5708,7 +5708,7 @@
   {
     "title": "Stream manager",
     "url": "/./index.html",
-    "path": "sections/Stream manager",
+    "path": "sections/stream_manager",
     "content": "stream functions"
   },
   {
@@ -5834,7 +5834,7 @@
   {
     "title": "HDF5",
     "url": "/./index.html",
-    "path": "sections/HDF5",
+    "path": "sections/hdf5",
     "content": "Hierarchical Data Format"
   },
   {
@@ -5912,7 +5912,7 @@
   {
     "title": "MATIO",
     "url": "/./index.html",
-    "path": "sections/MATIO",
+    "path": "sections/matio",
     "content": "MAT-File Read/Write I/O Functions"
   },
   {
@@ -5948,7 +5948,7 @@
   {
     "title": "JavaScript Object Notation",
     "url": "/./index.html",
-    "path": "sections/JavaScript Object Notation",
+    "path": "sections/JSON",
     "content": "Functions to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value)."
   },
   {
@@ -5972,7 +5972,7 @@
   {
     "title": "File archiver functions",
     "url": "/./index.html",
-    "path": "sections/File archiver functions",
+    "path": "sections/file_archiver",
     "content": "file archiver functions"
   },
   {
@@ -5990,7 +5990,7 @@
   {
     "title": "Audio playback",
     "url": "/./index.html",
-    "path": "sections/Audio playback",
+    "path": "sections/audio",
     "content": "Audio playback functions."
   },
   {
@@ -6140,7 +6140,7 @@
   {
     "title": "SIO client",
     "url": "/./index.html",
-    "path": "sections/SIO client",
+    "path": "sections/sio_client",
     "content": "Nelson in the cloud"
   },
   {
@@ -6164,7 +6164,7 @@
   {
     "title": "Inter Process Communication",
     "url": "/./index.html",
-    "path": "sections/Inter Process Communication",
+    "path": "sections/ipc",
     "content": "Inter Process Communication functions"
   },
   {
@@ -6182,7 +6182,7 @@
   {
     "title": "Dynamic link",
     "url": "/./index.html",
-    "path": "sections/Dynamic link",
+    "path": "sections/dynamic_link",
     "content": "By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once."
   },
   {
@@ -6404,103 +6404,103 @@
   {
     "title": "MEX functions",
     "url": "/./index.html",
-    "path": "sections/MEX functions",
+    "path": "sections/mex",
     "content": "MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality."
   },
   {
     "title": "dlgeneratemexgateway",
-    "url": "./MEX/dlgeneratemexgateway.html",
-    "path": "./MEX/dlgeneratemexgateway.html",
+    "url": "./mex/dlgeneratemexgateway.html",
+    "path": "./mex/dlgeneratemexgateway.html",
     "content": "Generates C MEX gateway (internal function)."
   },
   {
     "title": "engClose",
-    "url": "./MEX/engClose.html",
-    "path": "./MEX/engClose.html",
+    "url": "./mex/engClose.html",
+    "path": "./mex/engClose.html",
     "content": "Close Nelson engine session"
   },
   {
     "title": "engEvalString",
-    "url": "./MEX/engEvalString.html",
-    "path": "./MEX/engEvalString.html",
+    "url": "./mex/engEvalString.html",
+    "path": "./mex/engEvalString.html",
     "content": "Evaluate expression in string in base scope"
   },
   {
     "title": "engGetVariable",
-    "url": "./MEX/engGetVariable.html",
-    "path": "./MEX/engGetVariable.html",
+    "url": "./mex/engGetVariable.html",
+    "path": "./mex/engGetVariable.html",
     "content": "Copy variable from Nelson engine workspace"
   },
   {
     "title": "engGetVisible",
-    "url": "./MEX/engGetVisible.html",
-    "path": "./MEX/engGetVisible.html",
+    "url": "./mex/engGetVisible.html",
+    "path": "./mex/engGetVisible.html",
     "content": "Determine visibility of Nelson engine session"
   },
   {
     "title": "engOpen",
-    "url": "./MEX/engOpen.html",
-    "path": "./MEX/engOpen.html",
+    "url": "./mex/engOpen.html",
+    "path": "./mex/engOpen.html",
     "content": "Start Nelson process"
   },
   {
     "title": "engOpenSingleUse",
-    "url": "./MEX/engOpenSingleUse.html",
-    "path": "./MEX/engOpenSingleUse.html",
+    "url": "./mex/engOpenSingleUse.html",
+    "path": "./mex/engOpenSingleUse.html",
     "content": "Start Nelson engine session for single and nonshared use."
   },
   {
     "title": "engOutputBuffer",
-    "url": "./MEX/engOutputBuffer.html",
-    "path": "./MEX/engOutputBuffer.html",
+    "url": "./mex/engOutputBuffer.html",
+    "path": "./mex/engOutputBuffer.html",
     "content": "Specify char buffer for Nelson output"
   },
   {
     "title": "engPutVariable",
-    "url": "./MEX/engPutVariable.html",
-    "path": "./MEX/engPutVariable.html",
+    "url": "./mex/engPutVariable.html",
+    "path": "./mex/engPutVariable.html",
     "content": "Put variable into Nelson engine workspace"
   },
   {
     "title": "engSetVisible",
-    "url": "./MEX/engSetVisible.html",
-    "path": "./MEX/engSetVisible.html",
+    "url": "./mex/engSetVisible.html",
+    "path": "./mex/engSetVisible.html",
     "content": "Show or hide Nelson engine session"
   },
   {
     "title": "mex",
-    "url": "./MEX/mex.html",
-    "path": "./MEX/mex.html",
+    "url": "./mex/mex.html",
+    "path": "./mex/mex.html",
     "content": "Build MEX function"
   },
   {
     "title": "mexAtExit",
-    "url": "./MEX/mexAtExit.html",
-    "path": "./MEX/mexAtExit.html",
+    "url": "./mex/mexAtExit.html",
+    "path": "./mex/mexAtExit.html",
     "content": "Register a function to be called when the MEX-file is cleared or when Nelson exits"
   },
   {
     "title": "mexCallMATLAB",
-    "url": "./MEX/mexCallMATLAB.html",
-    "path": "./MEX/mexCallMATLAB.html",
+    "url": "./mex/mexCallMATLAB.html",
+    "path": "./mex/mexCallMATLAB.html",
     "content": "Call a NELSON function"
   },
   {
     "title": "mexCallMATLABWithTrap",
-    "url": "./MEX/mexCallMATLABWithTrap.html",
-    "path": "./MEX/mexCallMATLABWithTrap.html",
+    "url": "./mex/mexCallMATLABWithTrap.html",
+    "path": "./mex/mexCallMATLABWithTrap.html",
     "content": "Call a NELSON function and capture error."
   },
   {
     "title": "mexext",
-    "url": "./MEX/mexext.html",
-    "path": "./MEX/mexext.html",
+    "url": "./mex/mexext.html",
+    "path": "./mex/mexext.html",
     "content": "Binary MEX file-name extension"
   },
   {
     "title": "Fortran to C",
     "url": "/./index.html",
-    "path": "sections/Fortran to C",
+    "path": "sections/f2c",
     "content": "Converts Fortran 77 to C code"
   },
   {
@@ -6512,7 +6512,7 @@
   {
     "title": "NIG",
     "url": "/./index.html",
-    "path": "sections/NIG",
+    "path": "sections/nig",
     "content": "Nelson Interface Generator"
   },
   {
@@ -6524,7 +6524,7 @@
   {
     "title": "Web tools",
     "url": "/./index.html",
-    "path": "sections/Web tools",
+    "path": "sections/webtools",
     "content": "Transferring data with URLs"
   },
   {
@@ -6572,7 +6572,7 @@
   {
     "title": "Geometry",
     "url": "/./index.html",
-    "path": "sections/Geometry",
+    "path": "sections/geometry",
     "content": "Functions about Geometry."
   },
   {
@@ -6596,7 +6596,7 @@
   {
     "title": "COM engine",
     "url": "/./index.html",
-    "path": "sections/COM engine",
+    "path": "sections/com_engine",
     "content": "Component Object Model (COM) client interface: binary-interface standard for software components on Windows."
   },
   {
@@ -6716,7 +6716,7 @@
   {
     "title": "Control System functions",
     "url": "/./index.html",
-    "path": "sections/Control System functions",
+    "path": "sections/control_system",
     "content": "Algorithms for designing, analyzing and tuning linear control systems."
   },
   {
@@ -7088,7 +7088,7 @@
   {
     "title": "Python engine",
     "url": "/./index.html",
-    "path": "sections/Python engine",
+    "path": "sections/python_engine",
     "content": "The Python Engine in Nelson provides seamless integration with Python, enabling users to combine the strengths of both environments. This chapter introduces the available functions for running Python code, managing interpreter environments, and handling data exchange between Nelson and Python."
   },
   {
@@ -7142,7 +7142,7 @@
   {
     "title": "Spreadsheet",
     "url": "/./index.html",
-    "path": "sections/Spreadsheet",
+    "path": "sections/SPREADSHEET",
     "content": ""
   },
   {
@@ -7214,7 +7214,7 @@
   {
     "title": "Julia engine",
     "url": "/./index.html",
-    "path": "sections/Julia engine",
+    "path": "sections/julia_engine",
     "content": "julia_engine functions"
   },
   {

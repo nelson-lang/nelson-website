@@ -1212,21 +1212,21 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
     <section name="MEX functions">
       <chapter_description>MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality.
 </chapter_description>
-      <keyword name="dlgeneratemexgateway" link="./MEX/dlgeneratemexgateway.html" description="Generates C MEX gateway (internal function)."></keyword>
-      <keyword name="engClose" link="./MEX/engClose.html" description="Close Nelson engine session"></keyword>
-      <keyword name="engEvalString" link="./MEX/engEvalString.html" description="Evaluate expression in string in base scope"></keyword>
-      <keyword name="engGetVariable" link="./MEX/engGetVariable.html" description="Copy variable from Nelson engine workspace"></keyword>
-      <keyword name="engGetVisible" link="./MEX/engGetVisible.html" description="Determine visibility of Nelson engine session"></keyword>
-      <keyword name="engOpen" link="./MEX/engOpen.html" description="Start Nelson process"></keyword>
-      <keyword name="engOpenSingleUse" link="./MEX/engOpenSingleUse.html" description="Start Nelson engine session for single and nonshared use."></keyword>
-      <keyword name="engOutputBuffer" link="./MEX/engOutputBuffer.html" description="Specify char buffer for Nelson output"></keyword>
-      <keyword name="engPutVariable" link="./MEX/engPutVariable.html" description="Put variable into Nelson engine workspace"></keyword>
-      <keyword name="engSetVisible" link="./MEX/engSetVisible.html" description="Show or hide Nelson engine session"></keyword>
-      <keyword name="mex" link="./MEX/mex.html" description="Build MEX function"></keyword>
-      <keyword name="mexAtExit" link="./MEX/mexAtExit.html" description="Register a function to be called when the MEX-file is cleared or when Nelson exits"></keyword>
-      <keyword name="mexCallMATLAB" link="./MEX/mexCallMATLAB.html" description="Call a NELSON function"></keyword>
-      <keyword name="mexCallMATLABWithTrap" link="./MEX/mexCallMATLABWithTrap.html" description="Call a NELSON function and capture error."></keyword>
-      <keyword name="mexext" link="./MEX/mexext.html" description="Binary MEX file-name extension"></keyword>
+      <keyword name="dlgeneratemexgateway" link="./mex/dlgeneratemexgateway.html" description="Generates C MEX gateway (internal function)."></keyword>
+      <keyword name="engClose" link="./mex/engClose.html" description="Close Nelson engine session"></keyword>
+      <keyword name="engEvalString" link="./mex/engEvalString.html" description="Evaluate expression in string in base scope"></keyword>
+      <keyword name="engGetVariable" link="./mex/engGetVariable.html" description="Copy variable from Nelson engine workspace"></keyword>
+      <keyword name="engGetVisible" link="./mex/engGetVisible.html" description="Determine visibility of Nelson engine session"></keyword>
+      <keyword name="engOpen" link="./mex/engOpen.html" description="Start Nelson process"></keyword>
+      <keyword name="engOpenSingleUse" link="./mex/engOpenSingleUse.html" description="Start Nelson engine session for single and nonshared use."></keyword>
+      <keyword name="engOutputBuffer" link="./mex/engOutputBuffer.html" description="Specify char buffer for Nelson output"></keyword>
+      <keyword name="engPutVariable" link="./mex/engPutVariable.html" description="Put variable into Nelson engine workspace"></keyword>
+      <keyword name="engSetVisible" link="./mex/engSetVisible.html" description="Show or hide Nelson engine session"></keyword>
+      <keyword name="mex" link="./mex/mex.html" description="Build MEX function"></keyword>
+      <keyword name="mexAtExit" link="./mex/mexAtExit.html" description="Register a function to be called when the MEX-file is cleared or when Nelson exits"></keyword>
+      <keyword name="mexCallMATLAB" link="./mex/mexCallMATLAB.html" description="Call a NELSON function"></keyword>
+      <keyword name="mexCallMATLABWithTrap" link="./mex/mexCallMATLABWithTrap.html" description="Call a NELSON function and capture error."></keyword>
+      <keyword name="mexext" link="./mex/mexext.html" description="Binary MEX file-name extension"></keyword>
     </section>
     <section name="Fortran to C">
       <chapter_description> Converts Fortran 77 to C code</chapter_description>
