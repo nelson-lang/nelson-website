@@ -3,7 +3,11 @@
   <toc>
     <module>slicot</module>
     <section name="Subroutine Library In COntrol Theory">
-      <chapter_description>SLICOT provides numerical algorithms for computations in systems and control theory.</chapter_description>
+      <chapter_description>
+      <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p>
+      <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.</p>
+      <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.</p>
+    </chapter_description>
       <keyword name="SLICOT License" link="About_SLICOT_license.html" description="About SLICOT license."/>
       <keyword name="slicot_ab01od" link="slicot_ab01od.html" description="Staircase form for multi-input systems using orthogonal state and input transformations."/>
       <keyword name="slicot_ab04md" link="slicot_ab04md.html" description="Discrete-time / continuous-time systems conversion by a bilinear transformation."/>

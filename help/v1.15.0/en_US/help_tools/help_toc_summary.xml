@@ -2,11 +2,18 @@
 <help_summary>
   <toc>
     <module>help_tools</module>
-    <section name="Help tools functions">
-      <chapter_description>help tools</chapter_description>
+    <section name="Documentation and Help Management">
+      <chapter_description>
+        <p>The Help Tools module provides functions to create, convert, and manage documentation for
+            Nelson.</p>
+        <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF,
+            and website-ready formats, enabling developers to maintain and distribute comprehensive
+            documentation efficiently.</p>
+    </chapter_description>
       <keyword name="buildhelp" link="buildhelp.html" description="Build help of Nelson's modules."/>
       <keyword name="buildhelpmd" link="buildhelpmd.html" description="Build help of Nelson's modules for GitBook."/>
       <keyword name="buildhelpweb" link="buildhelpweb.html" description="Build help of Nelson's modules for website."/>
+      <keyword name="doc" link="doc.html" description="Displays documentation."/>
       <keyword name="docroot" link="docroot.html" description="Retrieve or update the root directory for Nelson Help system."/>
       <keyword name="headcomments" link="headcomments.html" description="Display Nelson function header comments."/>
       <keyword name="htmltopdf" link="htmltopdf.html" description="Convers html page to pdf."/>

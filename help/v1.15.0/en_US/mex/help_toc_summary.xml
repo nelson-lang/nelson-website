@@ -3,8 +3,10 @@
   <toc>
     <module>mex</module>
     <section name="MEX functions">
-      <chapter_description>MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality.
-</chapter_description>
+      <chapter_description>
+    <p>The MEX (MATLAB Executable) module allows C/C++ code to interface with Nelson, extending its
+      functionality and enabling access to Nelson’s engine, variables, and functions.</p>
+  </chapter_description>
       <keyword name="dlgeneratemexgateway" link="dlgeneratemexgateway.html" description="Generates C MEX gateway (internal function)."/>
       <keyword name="engClose" link="engClose.html" description="Close Nelson engine session"/>
       <keyword name="engEvalString" link="engEvalString.html" description="Evaluate expression in string in base scope"/>

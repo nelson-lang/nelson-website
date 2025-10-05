@@ -4,14 +4,16 @@
     <module>dynamic_link</module>
     <section name="Dynamic link">
       <chapter_description>
-By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.
-  	</chapter_description>
+        <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p>
+        <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p>
+        <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p>
+    </chapter_description>
       <keyword name="Build C/C++ code on the fly" link="1_c_cpp_build_on_fly.html" description="Build C/C++ code on the fly"/>
       <keyword name="Supported C/C++ compilers" link="2_supported_compilers.html" description=""/>
+      <keyword name="libpointer datatype" link="C_datatype.html" description="C/Nelson equivalent data types"/>
       <keyword name="cmake" link="cmake.html" description="call CMake tool"/>
       <keyword name="configuremingw" link="configuremingw.html" description="Configure Nelson to use MinGW as default C compiler"/>
       <keyword name="configuremsvc" link="configuremsvc.html" description="Configure Nelson to use visual studio as default compiler"/>
-      <keyword name="libpointer datatype" link="C_datatype.html" description="C/Nelson equivalent data types"/>
       <keyword name="dlcall" link="dlcall.html" description="C or Fortran Foreign function call."/>
       <keyword name="dlclose" link="dlclose.html" description="Removes dllib object."/>
       <keyword name="dlgeneratecleaner" link="dlgeneratecleaner.html" description="Generates cleaner.m file for C++ gateway."/>
@@ -21,9 +23,9 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
       <keyword name="dlgenerateunloader" link="dlgenerateunloader.html" description="Generates unloader.m file for C++ gateway."/>
       <keyword name="dlgetnelsonincludes" link="dlgetnelsonincludes.html" description="Returns paths of Nelson include directories."/>
       <keyword name="dlgetnelsonlibraries" link="dlgetnelsonlibraries.html" description="Returns paths to Nelson library files."/>
+      <keyword name="dllib_used" link="dllib_used.html" description="Returns list of current used dllib handle."/>
       <keyword name="dllibinfo" link="dllibinfo.html" description="Returns list of available symbols in an shared library."/>
       <keyword name="dllibisloaded" link="dllibisloaded.html" description="Checks if shared library is loaded."/>
-      <keyword name="dllib_used" link="dllib_used.html" description="Returns list of current used dllib handle."/>
       <keyword name="dlmake" link="dlmake.html" description="call make or nmake tool"/>
       <keyword name="dlopen" link="dlopen.html" description="Loads an dynamic library."/>
       <keyword name="dlsym" link="dlsym.html" description="Loads a C/Fortran symbol for an dynamic library."/>

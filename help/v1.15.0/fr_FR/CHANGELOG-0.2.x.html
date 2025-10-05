@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h2>0.2.12 (2018-12-31)</h2>
 <h2>Features:</h2>
 <p>HDF5 high-level functions:</p>
@@ -13,10 +53,10 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/170">#170</a>: Travis CI Macos X (mojave) build failed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/170">#170</a>: Travis CI Macos X (mojave) build failed.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/168">#168</a>: integer display was not interruptable.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/168">#168</a>: integer display was not interruptable.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -31,8 +71,8 @@
 <p>Nelson in the cloud:</p>
 <ul>
 <li>easy way to deploy (<a href="https://www.npmjs.com/package/nelson-cloud">npm package</a> and <a href="https://hub.docker.com/r/nelsonsoftware/nelson-sio-cli/">docker</a>)</li>
-<li>add 'sioemit' builtin. Send data from Nelson to client.</li>
-<li>add 'siogetvariable' function. Send variable value to cliend.</li>
+<li>add ‘sioemit’ builtin. Send data from Nelson to client.</li>
+<li>add ‘siogetvariable’ function. Send variable value to cliend.</li>
 <li>add nelson_sio_client executable used by Nelson in the cloud framework.</li>
 </ul>
 </li>
@@ -100,22 +140,22 @@
 <li>
 <p>internal API C++ methods renamed:</p>
 <ul>
-<li>&quot;stringConstructor&quot; --&gt; &quot;characterArrayConstructor&quot;.</li>
-<li>&quot;isString&quot; --&gt; &quot;isCharacterArray&quot;</li>
-<li>&quot;isSingleString&quot; --&gt; &quot;isRowVectorCharacterArray&quot;</li>
+<li>“stringConstructor” –&gt; “characterArrayConstructor”.</li>
+<li>“isString” –&gt; “isCharacterArray”</li>
+<li>“isSingleString” –&gt; “isRowVectorCharacterArray”</li>
 </ul>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/164">#164</a>: operators ==, ~=, &lt;, &gt;, &gt;=, &lt;= code factorized.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/164">#164</a>: operators ==, ~=, &lt;, &gt;, &gt;=, &lt;= code factorized.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/159">#159</a>: addpath must return an warning and not an error for an non existing path.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/159">#159</a>: addpath must return an warning and not an error for an non existing path.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/157">#157</a>: fix warnings detected by LGTM.com.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/157">#157</a>: fix warnings detected by LGTM.com.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/156">#156</a>: Moves dbstack in 'debugger' module.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/156">#156</a>: Moves dbstack in ‘debugger’ module.</p>
 </li>
 </ul>
 <h2>0.2.9 (2018-09-23)</h2>
@@ -139,7 +179,7 @@
 <p>ndarray subclass no more exists. class merged with basic type (speed optimization).</p>
 </li>
 <li>
-<p>isequalto builtin added (returns true if all arguments x1, x2, ... , xn are equal i.e same type, same dimensions, same values or NaNs).</p>
+<p>isequalto builtin added (returns true if all arguments x1, x2, … , xn are equal i.e same type, same dimensions, same values or NaNs).</p>
 </li>
 <li>
 <p>tanm, sinm builtin added.</p>
@@ -165,16 +205,16 @@ for i = A(:)', x = i + 1, end
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/133">#133</a>: Replaced uncommon term &quot;trinary&quot; by &quot;ternary&quot;.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/133">#133</a>: Replaced uncommon term “trinary” by “ternary”.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/119">#119</a>: Execution of simple expression &quot;1+2+3&quot; was rather slow.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/119">#119</a>: Execution of simple expression “1+2+3” was rather slow.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/115">#115</a>:code about single &amp; double operators was factorized</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/115">#115</a>:code about single &amp; double operators was factorized</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/114">#114</a>: Move gamma function in a dedicated module &quot;special_functions&quot;.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/114">#114</a>: Move gamma function in a dedicated module “special_functions”.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -192,22 +232,22 @@ for i = A(:)', x = i + 1, end
 </ul>
 </li>
 <li>
-<p>'dbstack' builtin get current instruction calling tree.</p>
+<p>‘dbstack’ builtin get current instruction calling tree.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/16">#16</a>: lastwarn builtin (Last recorded warning message).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/16">#16</a>: lastwarn builtin (Last recorded warning message).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/15">#15</a>: warning builtin was extended (state and identifier added).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/15">#15</a>: warning builtin was extended (state and identifier added).</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/152">#152</a>: insertion did not return expected result for empty matrix.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/152">#152</a>: insertion did not return expected result for empty matrix.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/138">#138</a>: colon operator did not return expected for non scalar element.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/138">#138</a>: colon operator did not return expected for non scalar element.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -233,7 +273,7 @@ for i = A(:)', x = i + 1, end
 <p>exp builtin (exponential)</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/142">#142</a>: clear('functionName') clears all persistent variables of functionName function.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/142">#142</a>: clear(‘functionName’) clears all persistent variables of functionName function.</p>
 </li>
 <li>
 <p>addition, substraction reworked (Compatiblity Array Sizes increased, code factorized).</p>
@@ -248,10 +288,10 @@ for i = A(:)', x = i + 1, end
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/145">#145</a>: int32(NaN) did not return 0.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/145">#145</a>: int32(NaN) did not return 0.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/131">#131</a>: for, parfor, switch, try keywords were not documented.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/131">#131</a>: for, parfor, switch, try keywords were not documented.</p>
 </li>
 </ul>
 <h2>0.2.6 (2018-06-26)</h2>
@@ -261,7 +301,7 @@ for i = A(:)', x = i + 1, end
 <p>Nelson provides a cross-platform command-line tool written in Nelson for compiling native addon modules for Nelson. It takes away the pain of dealing with the various differences in build platforms:</p>
 <ul>
 <li>
-<p>helper's functions to build C/C++ code easily on Windows, Linux, MacOS X:</p>
+<p>helper’s functions to build C/C++ code easily on Windows, Linux, MacOS X:</p>
 <ul>
 <li>dlgeneratemake: generates a makefile for building a dynamic library.</li>
 <li>dlgeneratecleaner: generates cleaner.nls file for C++ gateway.</li>
@@ -282,7 +322,7 @@ for i = A(:)', x = i + 1, end
 <li>VS 2017 Professional, Entreprise, Community supported.</li>
 <li>MinGW-W64 for 32 and 64 bit supported.</li>
 <li>By default, Nelson does not try to detect a C/C++ compiler on Windows.
-Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
+Do not forget to run ‘configuremsvc’ or ‘configuremingw’ once.</li>
 </ul>
 </li>
 <li>
@@ -326,31 +366,31 @@ Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
 <p>sprintf, fprintf functions: format data into a string or a file.</p>
 </li>
 <li>
-<p>add &quot;&lt;--C/C++ COMPILER REQUIRED--&gt;&quot; tag managed by test engine.</p>
+<p>add “&lt;–C/C++ COMPILER REQUIRED–&gt;” tag managed by test engine.</p>
 </li>
 <li>
-<p>add &quot;&lt;--INDEX 64 BIT REQUIRED--&gt;&quot; tag managed by test engine.</p>
+<p>add “&lt;–INDEX 64 BIT REQUIRED–&gt;” tag managed by test engine.</p>
 </li>
 <li>
 <p>norm function: matrix and vectors norms.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/128">#128</a>: code indented with clang-format (webkit coding style)</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/128">#128</a>: code indented with clang-format (webkit coding style)</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/139">#139</a>: fix(1e10) returned a wrong value.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/139">#139</a>: fix(1e10) returned a wrong value.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/136">#136</a>: Corrected predecence of Colon &quot;:&quot; operator.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/136">#136</a>: Corrected predecence of Colon “:” operator.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/134">#134</a>: Evaluation of Non-Scalar If-Condition Expression was not managed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/134">#134</a>: Evaluation of Non-Scalar If-Condition Expression was not managed.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/116">#116</a>: fix display size of big sparse matrix.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/116">#116</a>: fix display size of big sparse matrix.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -372,27 +412,27 @@ Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
 <li>le, ne, ge, gt, lt, eq for mixed single &amp; double types.</li>
 <li>add generic overload mechanism for all integers: integer keyword.</li>
 <li>vertcat and horzcat: mixed concatenations logical with integers, single and double added.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/110">#110</a>: add isproperty &amp; ismethod to all handle types.</li>
-<li>add &quot;isHandleProperty&quot;, &quot;isHandleMethod&quot;, &quot;getHandleCategory&quot; C++ API Methods.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/108">#108</a>: cast function: converts variable to a different data type.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/110">#110</a>: add isproperty &amp; ismethod to all handle types.</li>
+<li>add “isHandleProperty”, “isHandleMethod”, “getHandleCategory” C++ API Methods.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/108">#108</a>: cast function: converts variable to a different data type.</li>
 <li>MPI Module loaded if MPI dependency is available.</li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/125">#125</a>: cosm function was slow.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/125">#125</a>: cosm function was slow.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/123">#123</a>: addpath stopped to work after repeatedly call to the same path.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/123">#123</a>: addpath stopped to work after repeatedly call to the same path.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/121">#121</a>: home key did not work in GUI terminal on prompt.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/121">#121</a>: home key did not work in GUI terminal on prompt.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/118">#118</a>: add information in DEVELOPMENT.md about how to buid Boost on old Ubuntu versions.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/118">#118</a>: add information in DEVELOPMENT.md about how to buid Boost on old Ubuntu versions.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/109">#109</a>: add missing horzcat, vertcat for all handle types.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/109">#109</a>: add missing horzcat, vertcat for all handle types.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -418,48 +458,48 @@ Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
 </ul>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/101">#101</a>: allows cell_vertcat_generic &amp; cell_horzcat_generic.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/101">#101</a>: allows cell_vertcat_generic &amp; cell_horzcat_generic.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/106">#106</a>: update slicot url references.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/104">#104</a>: mpiexec did not work on some linux.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/106">#106</a>: update slicot url references.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/104">#104</a>: mpiexec did not work on some linux.</p>
 <h2>0.2.3 (2018-03-22)</h2>
 <h2>Features:</h2>
 <ul>
 <li>
-<p>'strlength': length of strings in an cell of strings.</p>
+<p>‘strlength’: length of strings in an cell of strings.</p>
 </li>
 <li>
-<p>'strrep' and 'replace' builtin : replace substring in a string.</p>
+<p>‘strrep’ and ‘replace’ builtin : replace substring in a string.</p>
 </li>
 <li>
 <p>export AUDIODEV=null disables audio module (used for Travis CI)</p>
 </li>
 <li>
-<p>'xmldoctomd' : Converts xml Nelson help files to markdown format.</p>
+<p>‘xmldoctomd’ : Converts xml Nelson help files to markdown format.</p>
 </li>
 <li>
-<p>'buildhelpmd' : Build help of Nelson's modules for GitBook.</p>
-<p>see <a href="https://nelson-9.gitbook.io/nelson/en">Nelson's GitBook</a>.</p>
+<p>‘buildhelpmd’ : Build help of Nelson’s modules for GitBook.</p>
+<p>see <a href="https://nelson-9.gitbook.io/nelson/en">Nelson’s GitBook</a>.</p>
 </li>
 </ul>
 <h2>0.2.2 (2018-02-25)</h2>
 <h2>Features:</h2>
 <ul>
-<li>'count' : computes the number of occurrences of an pattern.</li>
-<li>'startsWith' : checks if string starts with pattern.</li>
-<li>'endsWith' : checks if string ends with pattern.</li>
-<li>'contains' : checks if string contains a pattern.</li>
+<li>‘count’ : computes the number of occurrences of an pattern.</li>
+<li>‘startsWith’ : checks if string starts with pattern.</li>
+<li>‘endsWith’ : checks if string ends with pattern.</li>
+<li>‘contains’ : checks if string contains a pattern.</li>
 <li>audiometadata can modify metadata tags.</li>
 <li>Qt 5.10 used on Windows binaries</li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/98">#98</a>: jsonencode was slow with a big file (&gt; 60 Mo).</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/97">#97</a>: fileread was slow with a big file (&gt; 60 Mo).</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/93">#93</a>: playblocking updated to manage range.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/92">#92</a>: play updated to manage range.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/90">#90</a>: factorize handle objects methods.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/98">#98</a>: jsonencode was slow with a big file (&gt; 60 Mo).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/97">#97</a>: fileread was slow with a big file (&gt; 60 Mo).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/93">#93</a>: playblocking updated to manage range.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/92">#92</a>: play updated to manage range.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/90">#90</a>: factorize handle objects methods.</p>
 <h2>0.2.1 (2018-01-30)</h2>
 <h2>Features:</h2>
 <ul>
@@ -496,13 +536,13 @@ Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
 </ul>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/89">#89</a>: extends fileread behavior.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/89">#89</a>: extends fileread behavior.</p>
 </li>
 <li>
-<p>'filewrite' builtin allows to easily write to file a string array or a cell of strings.</p>
+<p>‘filewrite’ builtin allows to easily write to file a string array or a cell of strings.</p>
 </li>
 <li>
-<p>'newline' function: returns newline character i.e char(10).</p>
+<p>‘newline’ function: returns newline character i.e char(10).</p>
 </li>
 <li>
 <p>ndarraychar_disp was missing.</p>
@@ -513,10 +553,21 @@ Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
 </ul>
 <h2>Bug Fixes:</h2>
 <p>Regenerates help files index if database is empty or wrong (&gt;= Qt 5.9)</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/87">#87</a>: struct did not support sparse matrix.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/87">#87</a>: struct did not support sparse matrix.</p>
 <h2>Compilation:</h2>
 <ul>
 <li>Update VS 2017 solution to VS 2017 15.5.4</li>
 </ul>
 <h2>Previous changelog:</h2>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

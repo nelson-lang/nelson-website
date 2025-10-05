@@ -3,7 +3,10 @@
   <toc>
     <module>single</module>
     <section name="Single type">
-      <chapter_description>single type functions</chapter_description>
+      <chapter_description>
+        <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p>
+        <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p>
+    </chapter_description>
       <keyword name="single" link="single.html" description="Converts a variable to single precision type."/>
     </section>
   </toc>

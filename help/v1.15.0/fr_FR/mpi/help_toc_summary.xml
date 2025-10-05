@@ -3,8 +3,13 @@
   <toc>
     <module>mpi</module>
     <section name="Message Passing Interface">
-      <chapter_description>In the world of parallel computing the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.</chapter_description>
-      <keyword name="mpiexec" link="mpiexec.html" description="Run an MPI script."/>
+      <chapter_description>
+    <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto
+      standard for implementing programs on multiple processors.</p>
+    <p>This module provides functions to initialize, manage, and finalize MPI environments, as well
+      as to perform communication between processes, both point-to-point and collective.</p>
+    <p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.</p>
+  </chapter_description>
       <keyword name="MPI_Allreduce" link="MPI_Allreduce.html" description="Combines values from all processes and distributes the result back to all processes."/>
       <keyword name="MPI_Barrier" link="MPI_Barrier.html" description="Blocks until all processes in the communicator have reached this routine."/>
       <keyword name="MPI_Bcast" link="MPI_Bcast.html" description="Broadcasts a message from the process with rank &quot;root&quot; to all other processes of the communicator"/>
@@ -26,6 +31,7 @@
       <keyword name="MPI_Recv" link="MPI_Recv.html" description="Blocking receive for a message."/>
       <keyword name="MPI_Reduce" link="MPI_Reduce.html" description="Reduces values on all processes to a single value."/>
       <keyword name="MPI_Send" link="MPI_Send.html" description="Performs a blocking send."/>
+      <keyword name="mpiexec" link="mpiexec.html" description="Run an MPI script."/>
     </section>
   </toc>
 </help_summary>

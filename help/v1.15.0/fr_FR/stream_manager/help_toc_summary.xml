@@ -3,7 +3,11 @@
   <toc>
     <module>stream_manager</module>
     <section name="Stream manager">
-      <chapter_description>stream functions</chapter_description>
+      <chapter_description>
+        <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p>
+        <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p>
+        <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p>
+   </chapter_description>
       <keyword name="diary" link="diary.html" description="Diary of a session."/>
       <keyword name="fclose" link="fclose.html" description="Close an opened file."/>
       <keyword name="feof" link="feof.html" description="Checks end of file."/>

@@ -3,7 +3,11 @@
   <toc>
     <module>SPREADSHEET</module>
     <section name="Spreadsheet">
-      <chapter_description/>
+      <chapter_description>
+        <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p>
+        <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p>
+        <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p>
+    </chapter_description>
       <keyword name="csvread" link="csvread.html" description="Read comma-separated value (CSV) file."/>
       <keyword name="csvwrite" link="csvwrite.html" description="Write comma-separated value file."/>
       <keyword name="detectImportOptions" link="detectImportOptions.html" description="Create import options based on file content."/>

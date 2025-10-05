@@ -3,7 +3,12 @@
   <toc>
     <module>parallel</module>
     <section name="Parallel">
-      <chapter_description>parallel functions</chapter_description>
+      <chapter_description>
+        <p>The parallel module provides tools for running computations asynchronously in the
+            background, managing task scheduling, and retrieving results.</p>
+        <p>It enables Nelson programs to execute functions concurrently, improving efficiency and
+            responsiveness by offloading work to background workers.</p>
+    </chapter_description>
       <keyword name="afterAll" link="afterAll.html" description="Run function after all functions finish running in the background."/>
       <keyword name="afterEach" link="afterEach.html" description="Run function after each function finish running in the background."/>
       <keyword name="backgroundPool" link="backgroundPool.html" description="Environment for running nelson's code in the background."/>

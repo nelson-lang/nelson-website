@@ -3,7 +3,11 @@
   <toc>
     <module>linear_algebra</module>
     <section name="Linear algebra">
-      <chapter_description>linear algebra functions</chapter_description>
+      <chapter_description>
+        <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.</p>
+        <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.</p>
+        <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.</p>
+    </chapter_description>
       <keyword name="balance" link="balance.html" description="Diagonal scaling to improve eigenvalue accuracy."/>
       <keyword name="bandwidth" link="bandwidth.html" description="Lower and upper matrix bandwidth."/>
       <keyword name="chol" link="chol.html" description="Cholesky factorization."/>

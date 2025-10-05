@@ -3,7 +3,11 @@
   <toc>
     <module>trigonometric_functions</module>
     <section name="Trigonometric functions">
-      <chapter_description>module about sine, cosine, and related functions.</chapter_description>
+      <chapter_description>
+        <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.</p>
+        <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.</p>
+        <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.</p>
+    </chapter_description>
       <keyword name="acos" link="acos.html" description="Computes the inverse cosine in radians for each element of x."/>
       <keyword name="acosd" link="acosd.html" description="Inverse cosine in degrees."/>
       <keyword name="acosh" link="acosh.html" description="Inverse hyperbolic cosine."/>

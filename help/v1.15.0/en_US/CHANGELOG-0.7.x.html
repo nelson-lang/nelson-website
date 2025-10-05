@@ -1,11 +1,51 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h1>Changelog</h1>
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>.</p>
 <h2>0.7.12 (2023-12-23)</h2>
 <h3>Changed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/674">#674</a> Migrate sources to nelson-lang github organization.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/775">#775</a> <code>quit</code>, <code>exit</code>, <code>startup.m</code>, <code>finish.m</code> behavior reworked for compatibility.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/674">#674</a> Migrate sources to nelson-lang github organization.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/775">#775</a> <code>quit</code>, <code>exit</code>, <code>startup.m</code>, <code>finish.m</code> behavior reworked for compatibility.</li>
 <li>JSON for Modern C++ version 3.11.3 used on all platforms.</li>
 <li>{fmt} 10.1.1 (6f95000) used.</li>
 <li>Fedora 39 CI support.</li>
@@ -49,21 +89,21 @@
 <li><code>damp</code> Natural frequency and damping ratio.</li>
 <li><code>balreal</code> Gramian-based balancing of state-space realizations.</li>
 <li><code>lqry</code> Form linear-quadratic (LQ) state-feedback regulator with output weighting.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/957">#957</a> <code>dlqr</code> Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/961">#961</a> <code>lqed</code> Discrete Kalman estimator design from continuous cost function.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/960">#960</a> <code>lqe</code> Kalman estimator design for continuous-time systems.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/955">#955</a> <code>lqr</code> Linear-Quadratic Regulator (LQR) design.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/943">#943</a> <code>dare</code> Solve discrete-time algebraic Riccati equations.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/951">#951</a> <code>care</code> Continuous-time algebraic Riccati equation solution.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/945">#945</a> <code>ctrbf</code> Compute controllability staircase form.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/946">#946</a> <code>ctrb</code> Controllability of state-space model.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/963">#963</a> <code>obsv</code> Observability matrix.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/964">#964</a> <code>obsvf</code> Compute observability staircase form.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/949">#949</a> <code>acker</code> Pole placement gain selection using Ackermann's formula.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/950">#950</a> <code>bdschur</code> Block-diagonal Schur factorization.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/952">#952</a> <code>cloop</code> Close unity feedback loops.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/953">#953</a> <code>compreal</code> Companion realization of transfer functions.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/959">#959</a> <code>gensig</code> Create periodic signals for simulating system response.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/957">#957</a> <code>dlqr</code> Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/961">#961</a> <code>lqed</code> Discrete Kalman estimator design from continuous cost function.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/960">#960</a> <code>lqe</code> Kalman estimator design for continuous-time systems.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/955">#955</a> <code>lqr</code> Linear-Quadratic Regulator (LQR) design.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/943">#943</a> <code>dare</code> Solve discrete-time algebraic Riccati equations.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/951">#951</a> <code>care</code> Continuous-time algebraic Riccati equation solution.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/945">#945</a> <code>ctrbf</code> Compute controllability staircase form.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/946">#946</a> <code>ctrb</code> Controllability of state-space model.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/963">#963</a> <code>obsv</code> Observability matrix.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/964">#964</a> <code>obsvf</code> Compute observability staircase form.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/949">#949</a> <code>acker</code> Pole placement gain selection using Ackermann’s formula.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/950">#950</a> <code>bdschur</code> Block-diagonal Schur factorization.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/952">#952</a> <code>cloop</code> Close unity feedback loops.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/953">#953</a> <code>compreal</code> Companion realization of transfer functions.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/959">#959</a> <code>gensig</code> Create periodic signals for simulating system response.</li>
 </ul>
 </li>
 </ul>
@@ -90,11 +130,11 @@
 <li>function_handle parenthese precedence.</li>
 <li><code>patch</code> and <code>fill</code> manages <code>FaceAlpha</code>.</li>
 <li>visibility title and labels.</li>
-<li>object constructor must be in '@' directory and no more in parent directory (compatibility).</li>
+<li>object constructor must be in ‘@’ directory and no more in parent directory (compatibility).</li>
 <li><code>subsref</code>, <code>subsasgn</code> compatibility with <code>substruct</code>.</li>
 <li>To display a percent sign, you need to use a double percent sign (%%) in the format string (compatibility).</li>
 <li>French translation updated (100%, Thanks to weblate contributors)</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/997">#997</a> Macos BigSur Github CI support removed.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/997">#997</a> Macos BigSur Github CI support removed.</li>
 <li>Qt 6.6.1 on win64 CI build.</li>
 </ul>
 <h3>Fixed</h3>
@@ -120,7 +160,7 @@
 <p><code>int64</code>, <code>uint64</code> warning about double-precision.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/570">#570</a> balance: Diagonal scaling to improve eigenvalue accuracy.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/570">#570</a> balance: Diagonal scaling to improve eigenvalue accuracy.</p>
 </li>
 <li>
 <p><code>isobject</code> Check whether the input is an object.</p>
@@ -129,7 +169,7 @@
 <p><code>cell2mat</code> Convert cell array of matrices to single matrix.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/948">#948</a> <code>blkdiag</code> Create a block diagonal matrix from 2D matrices of different sizes.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/948">#948</a> <code>blkdiag</code> Create a block diagonal matrix from 2D matrices of different sizes.</p>
 </li>
 <li>
 <p><code>kron</code> Kronecker tensor product.</p>
@@ -140,14 +180,14 @@
 <li>
 <p>control system module (part 1):</p>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/967">#967</a> control system module template.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/944">#944</a> <code>mag2db</code>, <code>db2mag</code>, <code>pow2db</code>, <code>db2pow</code> functions.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/968">#968</a> <code>zp2tf</code>: Zero-pole to transfer function conversion.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/954">#954</a> <code>dcgain</code>: Low-frequency (DC) gain of LTI system.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/965">#965</a> <code>padecoef</code>: Padé approximation of time delays.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/958">#958</a> <code>esort</code>: Sort continuous-time poles by real part.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/967">#967</a> control system module template.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/944">#944</a> <code>mag2db</code>, <code>db2mag</code>, <code>pow2db</code>, <code>db2pow</code> functions.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/968">#968</a> <code>zp2tf</code>: Zero-pole to transfer function conversion.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/954">#954</a> <code>dcgain</code>: Low-frequency (DC) gain of LTI system.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/965">#965</a> <code>padecoef</code>: Padé approximation of time delays.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/958">#958</a> <code>esort</code>: Sort continuous-time poles by real part.</li>
 <li><code>dsort</code>: Sort discrete-time poles by magnitude.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/962">#962</a> <code>lyap</code>: Continuous Lyapunov equation solution.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/962">#962</a> <code>lyap</code>: Continuous Lyapunov equation solution.</li>
 <li><code>dlyap</code>: Discret Lyapunov equation solution.</li>
 <li><code>abcdchk</code> Verifies the dimensional compatibility of matrices A, B, C, and D.</li>
 <li><code>ss</code>: State-space model.</li>
@@ -170,21 +210,21 @@
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/940">#940</a> title bar on dark theme on Windows.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/940">#940</a> title bar on dark theme on Windows.</li>
 <li>help viewer using dark theme.</li>
 <li>adjust position <code>xlabel</code> on <code>figure</code>.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/976">#976</a> wrong output when reading a file with fscanf with size argument.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/975">#975</a> Legend color (and width) is not matching that of curve in figure.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/988">#988</a> anonymous function serialization '.^' and '^' are inversed.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/976">#976</a> wrong output when reading a file with fscanf with size argument.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/975">#975</a> Legend color (and width) is not matching that of curve in figure.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/988">#988</a> anonymous function serialization ‘.^’ and ‘^’ are inversed.</li>
 </ul>
 <h2>0.7.9 (2023-09-18)</h2>
 <h3>Changed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/488">#488</a> overloading functions:</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/488">#488</a> overloading functions:</p>
 <ul>
 <li>all types including basic types can be overloaded.</li>
-<li>overload is now fully compatible using '@' syntax and precedence.</li>
+<li>overload is now fully compatible using ‘@’ syntax and precedence.</li>
 <li>all operators were reworked to support compatible overload.</li>
 </ul>
 </li>
@@ -215,14 +255,14 @@
 </ul>
 <h3>Added</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/491">#491</a> Anonymous functions</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/491">#491</a> Anonymous functions</li>
 <li><code>--withoutfilewatcher</code> executable argument. disable file watcher for current session.</li>
 <li><code>&lt;--FILE WATCHER REQUIRED --&gt;</code> test_run option.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/853">#853</a> MacOs 13 ventura CI</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/853">#853</a> MacOs 13 ventura CI</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/916">#916</a> openblas micromamba on macos required to link libgfortran</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/916">#916</a> openblas micromamba on macos required to link libgfortran</li>
 </ul>
 <h2>0.7.5 (2023-05-27)</h2>
 <h3>Changed</h3>
@@ -239,7 +279,7 @@
 <h3>Added</h3>
 <ul>
 <li>Qt 6.5 support.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/802">#802</a>: <code>bitand</code>, <code>bitor</code>, <code>bitxor</code> functions.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/802">#802</a>: <code>bitand</code>, <code>bitor</code>, <code>bitxor</code> functions.</li>
 <li><code>issorted</code> Determine if array is sorted.</li>
 <li><code>num2cell</code> Convert array to cell array with consistently sized cells.</li>
 <li><code>hggroup</code> Create group object.</li>
@@ -274,16 +314,16 @@
 <ul>
 <li><code>weboptions</code> did not manage HeaderFields as expected.</li>
 <li>update <code>cacert.pem</code>.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/895">#895</a>: Micromamba linux build fails after packages updates.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/895">#895</a>: Micromamba linux build fails after packages updates.</li>
 </ul>
 <h2>0.7.3 (2023-03-28)</h2>
 <h3>Added</h3>
 <ul>
 <li><code>patch</code> Create patches of colored polygons.</li>
 <li><code>ancestor</code> Ancestor of graphics object.</li>
-<li>hexadecimal color code managed example: '#DDFF00'.</li>
+<li>hexadecimal color code managed example: ‘#DDFF00’.</li>
 <li><code>validatecolor</code> Validate color values.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/851">#851</a>: Build with micromamba environment (linux and macOS)</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/851">#851</a>: Build with micromamba environment (linux and macOS)</li>
 </ul>
 <h3>Changed</h3>
 <ul>
@@ -294,10 +334,10 @@
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/866">#866</a>: Close menu on figure can crash on linux.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/866">#866</a>: Close menu on figure can crash on linux.</li>
 <li>graphic hierarchy was not fully destroyed after <code>close</code> or <code>delete</code>.</li>
 <li>labels were not displayed correctly when the logarithmic scale was enabled.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/869">#869</a>: missing help files in linux package.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/869">#869</a>: missing help files in linux package.</li>
 </ul>
 <h2>0.7.2 (2023-02-27)</h2>
 <h3>Changed</h3>
@@ -325,11 +365,11 @@
 <li><code>drawnow</code>: Update figures and process callbacks.</li>
 <li><code>DrawLater</code> property added to <code>figure</code> graphics object.</li>
 <li><code>interp1</code> linear interpolation 1D.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/736">#736</a>: <code>bone</code>, <code>cool</code>, <code>copper</code>, <code>hot</code>, <code>jet</code>, <code>pink</code>, <code>turbo</code>, <code>viridis</code>, <code>white</code> colormaps.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/736">#736</a>: <code>bone</code>, <code>cool</code>, <code>copper</code>, <code>hot</code>, <code>jet</code>, <code>pink</code>, <code>turbo</code>, <code>viridis</code>, <code>white</code> colormaps.</li>
 <li><code>Visible</code> property to <code>figure</code> graphics object.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/809">#809</a>: <code>NumberTitle</code> property to <code>figure</code> graphics object.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/809">#809</a>: <code>NumberTitle</code> property to <code>figure</code> graphics object.</li>
 <li><code>AlphaMap</code> and <code>Colormap</code> properties added to <code>Axes</code> graphics object.</li>
-<li><code>LineStyleOrder</code> property of 'axes' used for <code>plot</code> and <code>plot3</code>.</li>
+<li><code>LineStyleOrder</code> property of ‘axes’ used for <code>plot</code> and <code>plot3</code>.</li>
 <li><code>ColorOrderIndex</code> and <code>LineStyleOrderIndex</code> properties added to <code>axes</code> graphics object.</li>
 <li><code>Interpreter</code> property added to <code>text</code> graphics object.</li>
 <li>tex special characters support for <code>text</code> and <code>ticks</code> graphics object.</li>
@@ -338,10 +378,10 @@
 <li><code>imwrite</code> Write image to graphics file.</li>
 <li><code>imshow</code> Display image.</li>
 <li><code>surface</code> Primitive surface plot.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/808">#808</a>: <code>pcolor</code> Pseudocolor plot.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/808">#808</a>: <code>pcolor</code> Pseudocolor plot.</li>
 <li><code>mesh</code> Mesh surface plot.</li>
 <li><code>meshz</code> Mesh surface plot with curtain.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/807">#807</a>: <code>loglog</code> Log-log scale plot.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/807">#807</a>: <code>loglog</code> Log-log scale plot.</li>
 <li><code>CHANGELOG</code> 0.7.x family.</li>
 </ul>
 <h3>Changed</h3>
@@ -352,11 +392,11 @@
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/823">#823</a>: default LineStyle for a line was wrong with marker.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/823">#823</a>: default LineStyle for a line was wrong with marker.</li>
 <li><code>CTRL+C</code> was not catched on advanced cli for linux and macos.</li>
 <li>colors in <code>colorbar</code> were not in the good order.</li>
 <li>warnings detected by CodeQL.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/824">#824</a>: VariableCompleter was not filtered by prefix.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/824">#824</a>: VariableCompleter was not filtered by prefix.</li>
 </ul>
 <h2>Previous changelog</h2>
 <p><a href="CHANGELOG-0.6.x.html">Changelog v0.6.x</a></p>
@@ -365,3 +405,14 @@
 <p><a href="CHANGELOG-0.3.x.html">Changelog v0.3.x</a></p>
 <p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

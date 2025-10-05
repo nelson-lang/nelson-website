@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h1>0.5.12 (2021-12-31)</h1>
 <h2>Added</h2>
 <ul>
@@ -10,10 +50,10 @@
 <h2>Fixed</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/544">#544</a>: add <code>folder</code> fieldname to <code>dir</code> output.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/544">#544</a>: add <code>folder</code> fieldname to <code>dir</code> output.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/541">#541</a>: common class between two elements for operators, horzcat and vertcat.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/541">#541</a>: common class between two elements for operators, horzcat and vertcat.</p>
 </li>
 </ul>
 <h2>Compilation</h2>
@@ -42,8 +82,8 @@
 <h2>Fixed</h2>
 <ul>
 <li><code>vercat</code>, <code>horzcat</code> returns an empty array whose size is equal to the output size as when the inputs are nonempty.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/533">#533</a>: <code>find</code> with one lhs did not return expected result with complex.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/536">#536</a>: <code>test_websave_3</code> failed randomly due to distant server.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/533">#533</a>: <code>find</code> with one lhs did not return expected result with complex.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/536">#536</a>: <code>test_websave_3</code> failed randomly due to distant server.</li>
 </ul>
 <h1>0.5.10 (2021-10-30)</h1>
 <ul>
@@ -63,16 +103,16 @@
 <p><code>pinv</code>: Moore-Penrose pseudoinverse.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/520">#520</a>: <code>inputname</code> get variable name of function input.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/520">#520</a>: <code>inputname</code> get variable name of function input.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/525">#525</a>: use <a href="https://github.com/fastfloat/fast_float"><code>fast_float</code></a> library to parse numbers .</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/525">#525</a>: use <a href="https://github.com/fastfloat/fast_float"><code>fast_float</code></a> library to parse numbers .</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/528">#528</a>: Assignment in cell did not work in this case <code>[c{:}] = ind2sub (dv, i)</code></p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/528">#528</a>: Assignment in cell did not work in this case <code>[c{:}] = ind2sub (dv, i)</code></p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/534">#534</a>: <code>diag(ones(0, 1), -1)</code> did not return zero as result.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/534">#534</a>: <code>diag(ones(0, 1), -1)</code> did not return zero as result.</p>
 </li>
 </ul>
 <h1>0.5.9 (2021-09-29)</h1>
@@ -90,34 +130,34 @@
 <p><code>ind2sub</code> function: matrix subscript values to linear index.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/518">#518</a>: <code>isStringScalar</code> checks if input is string array with one element.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/518">#518</a>: <code>isStringScalar</code> checks if input is string array with one element.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/516">#516</a>: <code>ind = 2; ind(false)</code> logical extraction on scalar should return empty matrix.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/516">#516</a>: <code>ind = 2; ind(false)</code> logical extraction on scalar should return empty matrix.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/514">#514</a>: <code>C{3} = 4</code> should create a cell with good dimensions.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/514">#514</a>: <code>C{3} = 4</code> should create a cell with good dimensions.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/512">#512</a>: Assign must not change left assign type when it is possible.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/512">#512</a>: Assign must not change left assign type when it is possible.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/509">#509</a>: horzcat vertcat generic support for class object.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/509">#509</a>: horzcat vertcat generic support for class object.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/508">#508</a>: Change default seed for 'rand' with Mersenne Twister algo.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/508">#508</a>: Change default seed for ‘rand’ with Mersenne Twister algo.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/506">#506</a>: Modernize windows installer style.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/506">#506</a>: Modernize windows installer style.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/496">#496</a>: Eigen 3.4 used.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/496">#496</a>: Eigen 3.4 used.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/503">#503</a>: Boost 1.77 support (default on Windows).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/503">#503</a>: Boost 1.77 support (default on Windows).</p>
 </li>
 </ul>
 <h1>0.5.8 (2021-08-25)</h1>
@@ -136,34 +176,34 @@
 <p>allows .m file empty to be called.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/477">#477</a>: update files watcher algo.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/477">#477</a>: update files watcher algo.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/489">#489</a>: display builtin and associated overload.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/489">#489</a>: display builtin and associated overload.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/490">#490</a>: update default prompt.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/490">#490</a>: update default prompt.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/480">#480</a>: publisher name updated for windows installer.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/480">#480</a>: publisher name updated for windows installer.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/483">#483</a>: extern modules no more build if boost not available.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/483">#483</a>: extern modules no more build if boost not available.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/486">#486</a>: <code>inmem</code> help was missing.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/486">#486</a>: <code>inmem</code> help was missing.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/464">#464</a>: simplify macos build (catalina &amp; BigSur support only).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/464">#464</a>: simplify macos build (catalina &amp; BigSur support only).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/499">#499</a>: rename <code>getContentAsUnsignedInt64Scalar</code> to <code>getContentAsUnsignedInteger64Scalar</code>.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/499">#499</a>: rename <code>getContentAsUnsignedInt64Scalar</code> to <code>getContentAsUnsignedInteger64Scalar</code>.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/495">#495</a>: some mtimes call failed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/495">#495</a>: some mtimes call failed.</p>
 </li>
 </ul>
 <h1>0.5.7 (2021-07-24)</h1>
@@ -203,15 +243,15 @@
 <p><code>nargin</code>, <code>nargout</code> behavior with mex updated.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/474">#474</a>: <code>exist</code>: extended to manage mex function.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/474">#474</a>: <code>exist</code>: extended to manage mex function.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/449">#449</a>: <code>conv2</code>: 2-D convolution and <code>conv</code>: Convolution and polynomial multiplication.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/449">#449</a>: <code>conv2</code>: 2-D convolution and <code>conv</code>: Convolution and polynomial multiplication.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/468">#468</a>: A(':') = [] was not managed.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/468">#468</a>: A(‘:’) = [] was not managed.</li>
 </ul>
 <h1>0.5.6 (2021-06-27)</h1>
 <p>BREAKING CHANGE:</p>
@@ -250,7 +290,7 @@
 <p><code>nargoutchk</code> builtin: checks number of outnput arguments.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/448">#448</a>: data analysis module (Code refactoring).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/448">#448</a>: data analysis module (Code refactoring).</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
@@ -259,13 +299,13 @@
 <p><code>nmm('install', existing_module_directory)</code> did not work as expected.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/451">#451</a>: var() returns an unexpected error.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/451">#451</a>: var() returns an unexpected error.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/455">#455</a>: M1 macOS apple native support. It works but some gui features can crash due to young Qt support on M1.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/455">#455</a>: M1 macOS apple native support. It works but some gui features can crash due to young Qt support on M1.</p>
 </li>
 <li>
 <p>Update fmt library to 8.0.</p>
@@ -302,16 +342,16 @@
 <p><code>ismember</code> builtin: Array elements that are members of another array.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/439">#439</a>: split elementary_functions module and creates operators modules.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/439">#439</a>: split elementary_functions module and creates operators modules.</p>
 </li>
 </ul>
 <h2>Changed:</h2>
 <ul>
-<li>comment symbol is '%'. others previous supported comment symbol removed.</li>
+<li>comment symbol is ‘%’. others previous supported comment symbol removed.</li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/435">#435</a>: <code>maxNumCompThreads</code> did not return number of threads but number of cores.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/435">#435</a>: <code>maxNumCompThreads</code> did not return number of threads but number of cores.</li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
@@ -319,10 +359,10 @@
 <p>Move Windows build to GitHub CI. Appveyor is no more the principal build CI for Windows.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/441">#441</a>: Circle CI (ArchLinux build) fixed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/441">#441</a>: Circle CI (ArchLinux build) fixed.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/357">#357</a>: Curl 7.76.1 on Windows.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/357">#357</a>: Curl 7.76.1 on Windows.</p>
 </li>
 </ul>
 <h1>0.5.4 (2021-04-24)</h1>
@@ -373,20 +413,20 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/352">#352</a>: number of input arguments checked in macro.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/352">#352</a>: number of input arguments checked in macro.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/382">#382</a>: optimize <code>corrcoef</code>.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/382">#382</a>: optimize <code>corrcoef</code>.</p>
 </li>
 </ul>
 <h1>0.5.3 (2021-03-24)</h1>
 <h2>Features:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/373">#373</a>: <code>sign</code> builtin.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/373">#373</a>: <code>sign</code> builtin.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/313">#313</a>: <code>atanh</code> builtin: inverse hyperbolic tangent.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/313">#313</a>: <code>atanh</code> builtin: inverse hyperbolic tangent.</p>
 </li>
 <li>
 <p><code>MException</code> comes default exception in Nelson.</p>
@@ -422,10 +462,10 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/413">#413</a>: circle CI Arch docker did not work.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/413">#413</a>: circle CI Arch docker did not work.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/412">#412</a> docker fedora 35 support.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/412">#412</a> docker fedora 35 support.</p>
 </li>
 </ul>
 <h1>0.5.2 (2021-02-27)</h1>
@@ -475,16 +515,16 @@
 <p><code>qt_constant</code> builtin: returns value of an Qt constant.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/374">#374</a>: <code>num2str</code> builtin: converts numbers to character array.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/374">#374</a>: <code>num2str</code> builtin: converts numbers to character array.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/388">#388</a>: Windows x64 build failed (elementary_functions module was too big).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/388">#388</a>: Windows x64 build failed (elementary_functions module was too big).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/385">#385</a>: <code>corrcoef</code>, <code>mean</code>, <code>var</code>, <code>cov</code> moved in statistics module.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/385">#385</a>: <code>corrcoef</code>, <code>mean</code>, <code>var</code>, <code>cov</code> moved in statistics module.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -505,19 +545,19 @@
 <p>fix cirle CI build.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/394">#394</a>: Upgrade socket.IO dependency to v3.0.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/394">#394</a>: Upgrade socket.IO dependency to v3.0.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/367">#367</a>: add fftw_init_threads and fftw_plan_with_nthreads to MKL wrapper for FFTW.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/367">#367</a>: add fftw_init_threads and fftw_plan_with_nthreads to MKL wrapper for FFTW.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/356">#356</a>: MKL OneAPI v2021 support.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/356">#356</a>: MKL OneAPI v2021 support.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/355">#355</a>: Qt6 support.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/355">#355</a>: Qt6 support.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/317">#317</a>: uses fmtlib.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/317">#317</a>: uses fmtlib.</p>
 </li>
 </ul>
 <h2>Previous changelog:</h2>
@@ -525,3 +565,14 @@
 <p><a href="CHANGELOG-0.3.x.html">Changelog v0.3.x</a></p>
 <p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

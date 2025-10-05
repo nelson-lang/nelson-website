@@ -5,7 +5,17 @@
 <title>tdigest</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+<script type="text/javascript">
+                document.addEventListener('click', function(e) {
+                  var a = (typeof e.target.closest === 'function') ? e.target.closest('a[href]') : null;
+                  if (!a) return;
+                  var href = a.getAttribute('href');
+                  if (/^https?:\/\//i.test(href)) {
+                    e.preventDefault();
+                    window.open(href, '_blank', 'noopener');
+                  }
+                }, true);
+            </script><script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
                 document.addEventListener('DOMContentLoaded', function() {
                     document.querySelectorAll('code.matlab').forEach(function(block) {
                         if (window.hljs) hljs.highlightElement(block);
@@ -34,8 +44,8 @@
             </script>
 </head>
 <body>
-<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">tdigest</span></div></div>
-<div class="subtitle">t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters</div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">tdigest</span></div></div>
+<div class="section syntax-section"><div class="subtitle">t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters</div></div>
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span> Syntax
@@ -86,24 +96,29 @@ td = tdigest(compression, X)
         <p>TDigest is a data structure for accurate on-line accumulation of rank-based statistics such as quantiles and cumulative distribution functions. It is particularly effective for large data sets and for estimating extreme quantiles. The algorithm is described in detail in the paper "Computing Extremely Accurate Quantiles Using t-Digests" by Ted Dunning and Otmar Ertl.</p>
         <p>The t-digest is particularly useful for:</p>
         <ul>
-            Large datasets where you need memory-efficient quantile estimation
-            Streaming data where data arrives continuously
-            Accurate extreme quantiles (like 99th percentile) even with limited memory
-            Online algorithms where you can't store all the data
+            <li>Large datasets where you need memory-efficient quantile estimation</li>
+            <li>Streaming data where data arrives continuously</li>
+            <li>Accurate extreme quantiles (like 99th percentile) even with limited memory</li>
+            <li>Online algorithms where you can't store all the data</li>
         </ul>
         <p>The compression factor (100 in the examples) controls the trade-off between accuracy and memory usage - higher values give more accuracy but use more memory.</p>
         <p>Once you have a t-digest object, you can add new data points to it using the + operator, and compute percentiles or quantiles using the percentile or quantile methods.</p>
         <p>For more details, see the original paper linked in the bibliography.</p>
         <p>Methods available:</p>
         <ul>
-            <b>percentile(p)</b>: Returns the value(s) at the given percentile(s) p (in [0, 100]).
-            <b>quantile(q)</b>: Returns the value(s) at the given quantile(s) q (in [0, 1]).
-            <b>+</b>: Adds new data points to the t-digest object.
+            <li>
+<b>percentile(p)</b>: Returns the value(s) at the given percentile(s) p (in [0, 100]).</li>
+            <li>
+<b>quantile(q)</b>: Returns the value(s) at the given quantile(s) q (in [0, 1]).</li>
+            <li>
+<b>+</b>: Adds new data points to the t-digest object.</li>
         </ul>
         <p>Properties:</p>
         <ul>
-            <b>compression</b>: The compression factor used to create the t-digest.
-            <b>totalWeight</b>: The total weight of all the centroids in the t-digest.
+            <li>
+<b>compression</b>: The compression factor used to create the t-digest.</li>
+            <li>
+<b>totalWeight</b>: The total weight of all the centroids in the t-digest.</li>
         </ul>
     </div>
 </div>
@@ -120,8 +135,7 @@ td.quantile([0.05 0.5 0.95])</code><button class="copy-btn" type="button" onclic
 <div class="example">
 <div class="example-title">streaming updates</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">
-td = tdigest(100);
+<code class="matlab syntax-block" style="flex:1 1 auto;">td = tdigest(100);
 while(1)
   td = td + randn();
   td.percentile([5, 50, 95])

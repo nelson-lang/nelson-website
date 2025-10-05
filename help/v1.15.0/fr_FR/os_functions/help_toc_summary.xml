@@ -3,7 +3,11 @@
   <toc>
     <module>os_functions</module>
     <section name="OS functions">
-      <chapter_description>operating system functions</chapter_description>
+      <chapter_description>
+        <p>The OS Functions module provides tools for interacting with the operating system in Nelson.</p>
+        <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.</p>
+        <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux/Unix platforms.</p>
+    </chapter_description>
       <keyword name="cmdsep" link="cmdsep.html" description="Command separator for current operating system."/>
       <keyword name="computer" link="computer.html" description="System information."/>
       <keyword name="createGUID" link="createGUID.html" description="Creates a GUID."/>

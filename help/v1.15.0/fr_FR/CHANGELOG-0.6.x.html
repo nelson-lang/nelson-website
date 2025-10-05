@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h1>Changelog</h1>
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>.</p>
@@ -87,7 +127,7 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <p><code>--noaudio</code> CLI argument disable audio (module) in Nelson.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/783">#783</a>: Fedora 37 support.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/783">#783</a>: Fedora 37 support.</p>
 </li>
 <li>
 <p>an example to build mexFunction using Rust.</p>
@@ -119,7 +159,7 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <p><code>exit</code> does not allow value &gt; 255 on Linux and MacOS.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/776">#776</a>: internal dependencies between modules reworked.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/776">#776</a>: internal dependencies between modules reworked.</p>
 </li>
 <li>
 <p>Uses MKL or OpenBlas if detected on linux and MacOs (Nelson is faster on Linux and MacOs).</p>
@@ -134,29 +174,29 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <p>Github Actions CI warnings.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/778">#778</a>: ArchLinux Github CI was broken.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/778">#778</a>: ArchLinux Github CI was broken.</p>
 </li>
 </ul>
 <h2>0.6.10 (2022-10-31)</h2>
 <h3>Added</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/750">#750</a>: Qt 6.4.0 support (win64 release embed Qt6.4.0).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/750">#750</a>: Qt 6.4.0 support (win64 release embed Qt6.4.0).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/733">#733</a>: minimal build and optional installation on MacOs, Linux and Windows.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/733">#733</a>: minimal build and optional installation on MacOs, Linux and Windows.</p>
 </li>
 </ul>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/762">#762</a>: MacOs CI was broken (libomp no more detected).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/762">#762</a>: MacOs CI was broken (libomp no more detected).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/776">#776</a>: CodeQL Analyze was broken.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/776">#776</a>: CodeQL Analyze was broken.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/739">#739</a>: special case with empty cell.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/739">#739</a>: special case with empty cell.</p>
 </li>
 <li>
 <p>buildhelp did not return some errors.</p>
@@ -165,10 +205,10 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <h3>Changed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/755">#755</a>: Boost 1.80 support (default on Windows)</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/755">#755</a>: Boost 1.80 support (default on Windows)</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/753">#753</a>: move from boost::filesystem to std::filesystem. (It should have no impact for users ...)</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/753">#753</a>: move from boost::filesystem to std::filesystem. (It should have no impact for users …)</p>
 </li>
 <li>
 <p>Path functions returns sensitive path on Windows. <code>cd ('c:/program files')</code> returns true path <code>C:/Program Files</code>.</p>
@@ -212,7 +252,7 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <ul>
 <li><code>toeplitz</code>: Toeplitz matrix.</li>
 <li><code>hadamard</code>: Hadamard matrix.</li>
-<li><code>wilkinson</code>: Wilkinson's eigenvalue test matrix.</li>
+<li><code>wilkinson</code>: Wilkinson’s eigenvalue test matrix.</li>
 <li><code>vander</code>: Vandermonde matrix.</li>
 <li><code>rosser</code>: Classic symmetric eigenvalue test problem.</li>
 <li><code>nextpow2</code>: Next higher power of 2.</li>
@@ -245,7 +285,7 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <h3>Changed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/715">#715</a>: update <code>{fmt}</code> to 9.1.0.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/715">#715</a>: update <code>{fmt}</code> to 9.1.0.</p>
 </li>
 <li>
 <p>Nelson uses <a href="https://github.com/simdutf/simdutf"><code>simdutf</code></a> library to convert characters encoding faster.</p>
@@ -257,13 +297,13 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <p>assign behavior with empty matrix.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/702">#702</a>: Ubuntu 18.04 CI removed on Github.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/702">#702</a>: Ubuntu 18.04 CI removed on Github.</p>
 </li>
 <li>
 <p>Remove definitively Appveyor CI.</p>
 </li>
 <li>
-<p>C++ API: <code>getContentAsDoubleScalar</code>, <code>getContentAsSingleScalar</code>, <code>getContentAsInteger8Scalar</code>, ... , <code>getContentAsInteger64Scalar</code> can check if it is an integer value.</p>
+<p>C++ API: <code>getContentAsDoubleScalar</code>, <code>getContentAsSingleScalar</code>, <code>getContentAsInteger8Scalar</code>, … , <code>getContentAsInteger64Scalar</code> can check if it is an integer value.</p>
 </li>
 <li>
 <p><code>addgateway</code>, <code>removegateway</code>, <code>gatewayinfo</code> builtin moved in <code>modules_manager</code> module (reduces dependency)</p>
@@ -272,26 +312,26 @@ Current version is usable and show plots possibilities of Nelson.</p>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/722">#722</a>: MS MPI runtime v10.1.2.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/722">#722</a>: MS MPI runtime v10.1.2.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/723">#723</a>: MacOS CI was broken.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/723">#723</a>: MacOS CI was broken.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/737">#737</a>: profiler failed with <code>sind</code> example.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/737">#737</a>: profiler failed with <code>sind</code> example.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/739">#739</a>: special case with empty cell.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/739">#739</a>: special case with empty cell.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/741">#741</a>: <code>ones</code> and <code>zeros</code> do not manager logical as typename.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/741">#741</a>: <code>ones</code> and <code>zeros</code> do not manager logical as typename.</p>
 </li>
 </ul>
 <h2>0.6.8 (2022-08-27)</h2>
 <h3>Added</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/574">#573</a>: <code>diff</code> differences and discret derivatives.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/574">#573</a>: <code>diff</code> differences and discret derivatives.</p>
 </li>
 <li>
 <p><code>peaks</code>: peaks function.</p>
@@ -381,27 +421,27 @@ Current version is usable and show plots possibilities of Nelson.</p>
 </ul>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/687">#687</a>: Uses BS thread pool 3.3.0.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/687">#687</a>: Uses BS thread pool 3.3.0.</p>
 </li>
 <li>
 <p>Windows 32 bits threads support: due to threading limitations with MKL, openMP and others threads
 computation threads are limited to 4 threads on Windows 32 bits.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/683">#683</a>: MacOS Catalina removed on Github CI (no more officially supported).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/683">#683</a>: MacOS Catalina removed on Github CI (no more officially supported).</p>
 </li>
 <li>
 <p>Help chapter titles all start with a capital letter.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/771">#771</a>: Fedora 36 Github CI replaces Fedora 35 Github CI.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/771">#771</a>: Fedora 36 Github CI replaces Fedora 35 Github CI.</p>
 </li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/689">#689</a>: <code>c = computer</code> returns an error.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/691">#691</a>: help generation crashs if copyright tag is empty.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/35">#35</a>: datenum does not support vectorization.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/689">#689</a>: <code>c = computer</code> returns an error.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/691">#691</a>: help generation crashs if copyright tag is empty.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/35">#35</a>: datenum does not support vectorization.</li>
 <li><code>or</code>, <code>and</code> do not manage matrix operator scalar case.</li>
 </ul>
 <h2>0.6.7 (2022-07-27)</h2>
@@ -429,7 +469,7 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/679">#679</a>: uniformize path for includes and libraries.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/679">#679</a>: uniformize path for includes and libraries.</li>
 </ul>
 <h2>0.6.6 (2022-06-27)</h2>
 <h3>Added</h3>
@@ -443,10 +483,10 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 </ul>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/666">#666</a>: <code>ls</code> function: List folder contents.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/666">#666</a>: <code>ls</code> function: List folder contents.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/655">#655</a>: help viewer embedded (available on all platforms).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/655">#655</a>: help viewer embedded (available on all platforms).</p>
 </li>
 </ul>
 <h3>Changed</h3>
@@ -455,32 +495,32 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p>LGTM replaced by CodeQL (Thanks to Github for their support)</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/662">#662</a>: Snap uses Core22 and Qt6 (all dependencies are up-to-date).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/662">#662</a>: Snap uses Core22 and Qt6 (all dependencies are up-to-date).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/668">#668</a>: <code>maxNumCompThreads</code> detects numbers of physical cores on Windows.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/668">#668</a>: <code>maxNumCompThreads</code> detects numbers of physical cores on Windows.</p>
 </li>
 <li>
 <p>matrix of handles supported.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/676">#676</a>: use fmtlib 9.0</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/676">#676</a>: use fmtlib 9.0</p>
 </li>
 </ul>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/659">#659</a>: qhelpgenerator on macOs after brew Qt6.3.0 update.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/659">#659</a>: qhelpgenerator on macOs after brew Qt6.3.0 update.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/661">#661</a>: CodeQL warnings.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/661">#661</a>: CodeQL warnings.</p>
 </li>
 </ul>
 <h2>0.6.5 (2022-05-26)</h2>
 <h3>Added</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/572">#572</a>: <code>pow2</code>: Base 2 exponentiation.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/572">#572</a>: <code>pow2</code>: Base 2 exponentiation.</p>
 </li>
 <li>
 <p><code>audioread</code>, <code>audiowrite</code> supports new file formats <code>.mp3</code>, <code>.flac</code>, <code>.caf</code> (Thanks to libsndfile).</p>
@@ -489,13 +529,13 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p>MacOs 12 Monterey Github CI.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/634">#634</a>: Ubuntu 22.04 CI.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/634">#634</a>: Ubuntu 22.04 CI.</p>
 </li>
 </ul>
 <h3>Changed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/631">#631</a>: Qt6 used as default distribution on some OS platforms.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/631">#631</a>: Qt6 used as default distribution on some OS platforms.</p>
 <p>For backport compatibility only Qt5.15.x and Qt6.3 (or more) are supported.</p>
 <ul>
 <li>Windows 64 bits: Qt6.3</li>
@@ -508,19 +548,19 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 </ul>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/636">#636</a>: docker image uses bullseye image.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/636">#636</a>: docker image uses bullseye image.</p>
 </li>
 <li>
 <p><code>system</code> builtin: multithread rework.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/633">#633</a>: libsndfile 1.1.0 used.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/633">#633</a>: libsndfile 1.1.0 used.</p>
 </li>
 <li>
 <p>Windows build uses <code>/permissive-</code> option.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/646">#646</a>: <code>warndlg</code>, <code>questdlg</code>, <code>errordlg</code>, <code>helpdlg</code> reworked to better Qt6 support.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/646">#646</a>: <code>warndlg</code>, <code>questdlg</code>, <code>errordlg</code>, <code>helpdlg</code> reworked to better Qt6 support.</p>
 </li>
 </ul>
 <h3>Fixed</h3>
@@ -529,20 +569,20 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p>Dark theme detection with Gnome.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/642">#642</a>: <code>rand</code> was not thread safe.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/642">#642</a>: <code>rand</code> was not thread safe.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/648">#648</a>: Ubuntu 18.04 CI failed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/648">#648</a>: Ubuntu 18.04 CI failed.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/651">#651</a>: MacOs monterey crashs at exit with mpi module.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/651">#651</a>: MacOs monterey crashs at exit with mpi module.</p>
 </li>
 </ul>
 <h2>0.6.4 (2022-04-24)</h2>
 <h3>Changed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/590">#590</a>: Nelson's license moved to LGPL v3.0 and GPL v3.0 and uses SPDX format.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/590">#590</a>: Nelson’s license moved to LGPL v3.0 and GPL v3.0 and uses SPDX format.</p>
 </li>
 <li>
 <p>Nelson uses <a href="https://sourcefoundry.org/hack/">Hack</a> font.</p>
@@ -551,13 +591,13 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p>Linux 64 bits and 32 bits uses same main script.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/594">#594</a>: <code>.pot</code> used to generate en_US.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/594">#594</a>: <code>.pot</code> used to generate en_US.</p>
 </li>
 </ul>
 <h3>Added</h3>
 <ul>
 <li>
-<p>'sscanf' reworked to manage unicode characters and speed optimization.</p>
+<p>‘sscanf’ reworked to manage unicode characters and speed optimization.</p>
 </li>
 <li>
 <p>French translations imported from Weblate (Thanks to contributors)</p>
@@ -566,7 +606,7 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p>Dark theme detected and applied on Linux, MacOS and Windows.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/559">#559</a>: <code>formattedDisplayText</code> function: Capture display output as string.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/559">#559</a>: <code>formattedDisplayText</code> function: Capture display output as string.</p>
 </li>
 <li>
 <p>Better detection Qt6 or Qt5 with CMake.</p>
@@ -575,28 +615,28 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p>Main Nelson's font was not applied on some OS platforms (ex: MacOS Catalina)</p>
+<p>Main Nelson’s font was not applied on some OS platforms (ex: MacOS Catalina)</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/622">#622</a>: <code>isreal(sqrt(i^4))</code> did not return true.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/622">#622</a>: <code>isreal(sqrt(i^4))</code> did not return true.</p>
 </li>
 <li>
-<p>Nelson's help indexing is faster (x100).</p>
+<p>Nelson’s help indexing is faster (x100).</p>
 </li>
 </ul>
 <h2>0.6.3 (2022-03-26)</h2>
 <h3>Changed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/596">#596</a>: Tests results display use emoji if terminal supports Unicode.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/596">#596</a>: Tests results display use emoji if terminal supports Unicode.</li>
 </ul>
 <h3>Added</h3>
 <ul>
 <li>
 <p>Packaging:</p>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/603">#603</a>: Nelson as snap package for Linux.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/605">#605</a>: [Package request] Chocolatey package manager for Windows.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/582">#582</a>: Nelson available as Portable apps.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/603">#603</a>: Nelson as snap package for Linux.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/605">#605</a>: [Package request] Chocolatey package manager for Windows.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/582">#582</a>: Nelson available as Portable apps.</li>
 </ul>
 </li>
 <li>
@@ -615,61 +655,61 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p><code>terminal_size</code> function:Query the size of the terminal window.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/598">#598</a>: <code>sscanf</code> function read formatted data from strings.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/598">#598</a>: <code>sscanf</code> function read formatted data from strings.</p>
 </li>
 </ul>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/599">#599</a>: <code>make install</code> step in CI for linux and MacOs.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/599">#599</a>: <code>make install</code> step in CI for linux and MacOs.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/601">#601</a>: embed all tests on linux and macos install.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/601">#601</a>: embed all tests on linux and macos install.</p>
 </li>
 </ul>
 <h2>0.6.2 (2022-02-26)</h2>
 <h3>Changed</h3>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/576">#576</a>: C++17 Compiler required to build Nelson.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/576">#576</a>: C++17 Compiler required to build Nelson.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/581">#581</a>: Github CI platforms list extended (ArchLinux, Fedora, Ubuntu 18.04, MacOs BigSur).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/581">#581</a>: Github CI platforms list extended (ArchLinux, Fedora, Ubuntu 18.04, MacOs BigSur).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/539">#539</a>: Visual studio 2022 build on Windows</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/539">#539</a>: Visual studio 2022 build on Windows</p>
 <ul>
 <li>Visual studio 2022 solution upgraded,</li>
 <li>Github CI and Appveyor use VS 2022 image,</li>
 <li>boost 1.78 (VS 2022 x86, x64 build),</li>
 <li>Eigen 3.4 stable branch (Feb 06/22),</li>
-<li>MSVC 2022 support added to build C/C++ code easily &quot;on fly&quot; on Windows,</li>
+<li>MSVC 2022 support added to build C/C++ code easily “on fly” on Windows,</li>
 <li>slicot 5.0 (VS 2022 x86, x64 build),</li>
 <li>libffi (VS 2022 x86, x64 build),</li>
 <li>taglib 1.12 (VS 2022 x86, x64 build),</li>
 <li>hdf5 1.12.1 (VS 2022 x86, x64 build),</li>
 <li>matio 1.5.21 (VS 2022 x86, x64 build),</li>
 <li>all others windows dependencies rebuilt with VS 2022.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/505">#505</a>: libCurl 7.81 on Windows.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/524">#524</a>: oneApi 2022.1 on Windows.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/505">#505</a>: libCurl 7.81 on Windows.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/524">#524</a>: oneApi 2022.1 on Windows.</li>
 </ul>
 </li>
 </ul>
 <h3>Added</h3>
 <ul>
 <li>Nelson uses <code>JuliaMono-Regular</code> font as default.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/567">#567</a>: <code>...</code> in cells if character vector is too long.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/567">#567</a>: <code>...</code> in cells if character vector is too long.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/587">#587</a>: implicit cast to string array for horzcat and vertcat operators.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/562">#562</a>: <code>format long</code> complex do not display expected precision.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/587">#587</a>: implicit cast to string array for horzcat and vertcat operators.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/562">#562</a>: <code>format long</code> complex do not display expected precision.</li>
 <li>scale factor for integer values did not display as expected.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/561">#561</a>: <code>0^0</code> did not return expected value.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/560">#560</a>: many warnings fixed (Thanks to new PVS-Studio and cppcheck).</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/561">#561</a>: <code>0^0</code> did not return expected value.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/560">#560</a>: many warnings fixed (Thanks to new PVS-Studio and cppcheck).</li>
 <li>cmake <code>WITH_SLICOT</code>, <code>WITH_FFTW</code>, <code>ENABLE_CLANG_TIDY_FIX</code> were not documented.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/584">#584</a>: docker files updated to support C++17 and new libraries.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/591">#591</a>: Innosetup display glitch with <code>Nelson's website</code> button.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/584">#584</a>: docker files updated to support C++17 and new libraries.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/591">#591</a>: Innosetup display glitch with <code>Nelson's website</code> button.</li>
 </ul>
 <h2>0.6.1 (2022-01-31)</h2>
 <h3>Changed</h3>
@@ -679,9 +719,9 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <h3>Added</h3>
 <ul>
 <li><code>format</code> extended to manage: <code>compact</code>, <code>loose</code>, <code>longE</code>, <code>longG</code>, <code>hex</code>, <code>bank</code>, <code>rational</code>.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/507">#507</a>: <code>celldisp</code>: Display cell array contents.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/548">#548</a>: <code>hypot</code> builtin: Square root of sum of squares.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/555">#555</a>: <code>rsf2csf</code> function: Convert real Schur form to complex Schur form.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/507">#507</a>: <code>celldisp</code>: Display cell array contents.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/548">#548</a>: <code>hypot</code> builtin: Square root of sum of squares.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/555">#555</a>: <code>rsf2csf</code> function: Convert real Schur form to complex Schur form.</li>
 <li><code>CHANGELOG</code> 0.6.x family.</li>
 </ul>
 <h2>Previous changelog</h2>
@@ -690,3 +730,14 @@ computation threads are limited to 4 threads on Windows 32 bits.</p>
 <p><a href="CHANGELOG-0.3.x.html">Changelog v0.3.x</a></p>
 <p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

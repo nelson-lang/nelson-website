@@ -3,7 +3,12 @@
   <toc>
     <module>graphics</module>
     <section name="Graphics functions">
-      <chapter_description>graphics functions</chapter_description>
+      <chapter_description>
+        <p>The graphics module provides functions for creating, customizing, and managing plots,
+            figures, colormaps, and graphical objects.</p>
+        <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
+            utilities for working with colors, legends, axes, and text annotations.</p>
+    </chapter_description>
       <keyword name="abyss" link="abyss.html" description="Abyss colormap array."/>
       <keyword name="ancestor" link="ancestor.html" description="Ancestor of graphics object."/>
       <keyword name="autumn" link="autumn.html" description="Autumn colormap array."/>
@@ -45,9 +50,9 @@
       <keyword name="imagesc" link="imagesc.html" description="Display image from array with scaled colors."/>
       <keyword name="imshow" link="imshow.html" description="Display image."/>
       <keyword name="is2D" link="is2D.html" description="Checks if ax is a 2-D Polar or Cartesian axes."/>
+      <keyword name="isValidGraphicsProperty" link="isValidGraphicsProperty.html" description="Check property name is valid."/>
       <keyword name="isgraphics" link="isgraphics.html" description="Check for graphics object."/>
       <keyword name="ishold" link="ishold.html" description="Get current hold state."/>
-      <keyword name="isValidGraphicsProperty" link="isValidGraphicsProperty.html" description="Check property name is valid."/>
       <keyword name="jet" link="jet.html" description="Jet colormap array."/>
       <keyword name="legend" link="legend.html" description="Add legend to axes."/>
       <keyword name="line" link="line.html" description="Create primitive line."/>

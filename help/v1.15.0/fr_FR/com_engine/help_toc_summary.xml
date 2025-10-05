@@ -2,13 +2,13 @@
 <help_summary>
   <toc>
     <module>com_engine</module>
-    <section name="COM engine">
-      <chapter_description>Component Object Model (COM) client interface: binary-interface standard for software components on Windows.</chapter_description>
+    <section name="Component Object Model (COM) Client Interface">
+      <chapter_description>
+      <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p>
+      <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p>
+      <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p>
+    </chapter_description>
       <keyword name="COM examples" link="1_COM_examples.html" description="Some example to show how to use COM interface."/>
-      <keyword name="actxcontrollist" link="actxcontrollist.html" description="Get available ActiveX controls."/>
-      <keyword name="actxGetRunningServer" link="actxGetRunningServer.html" description="Handle to running instance of Automation server."/>
-      <keyword name="actxserver" link="actxserver.html" description="Creates COM server."/>
-      <keyword name="actxserverlist" link="actxserverlist.html" description="Get available ActiveX servers."/>
       <keyword name="COM_delete" link="COM_delete.html" description="Removes COM control or server."/>
       <keyword name="COM_fieldnames" link="COM_fieldnames.html" description="Returns the properties name of an COM object."/>
       <keyword name="COM_get" link="COM_get.html" description="Get property value from COM interface."/>
@@ -22,6 +22,10 @@
       <keyword name="COM_xlsfinfo" link="COM_xlsfinfo.html" description="Determines if file contains Microsoft Excel spreadsheet."/>
       <keyword name="COM_xlsread" link="COM_xlsread.html" description="Read Microsoft Excel spreadsheet file using COM."/>
       <keyword name="COM_xlswrite" link="COM_xlswrite.html" description="Write Microsoft Excel spreadsheet file using COM."/>
+      <keyword name="actxGetRunningServer" link="actxGetRunningServer.html" description="Handle to running instance of Automation server."/>
+      <keyword name="actxcontrollist" link="actxcontrollist.html" description="Get available ActiveX controls."/>
+      <keyword name="actxserver" link="actxserver.html" description="Creates COM server."/>
+      <keyword name="actxserverlist" link="actxserverlist.html" description="Get available ActiveX servers."/>
       <keyword name="iscom" link="iscom.html" description="Determine whether input is COM or ActiveX object."/>
     </section>
   </toc>

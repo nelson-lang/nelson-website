@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h1>0.3.12 (2019-12-27)</h1>
 <ul>
 <li>
@@ -10,19 +50,19 @@
 <p>Continous Integration tools for external modules (see module skeleton example).</p>
 </li>
 <li>
-<p>modules installed with nmm are 'autoload' by default.</p>
+<p>modules installed with nmm are ‘autoload’ by default.</p>
 </li>
 <li>
 <p>.nmz file extension used as module container.</p>
 </li>
 <li>
-<p>nmm('package', module_name, destination_dir) package an external module.</p>
+<p>nmm(‘package’, module_name, destination_dir) package an external module.</p>
 </li>
 <li>
-<p>nmm('install', module.nmz) installs a prebuilt external module.</p>
+<p>nmm(‘install’, module.nmz) installs a prebuilt external module.</p>
 </li>
 <li>
-<p>'-frozen' option added to addpath builtin.</p>
+<p>‘-frozen’ option added to addpath builtin.</p>
 </li>
 <li>
 <p>rmfield builtin: Remove fields from structure.</p>
@@ -36,7 +76,7 @@
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/260">#260</a>: disable files watch for internal modules.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/260">#260</a>: disable files watch for internal modules.</li>
 </ul>
 <h1>0.3.11 (2019-11-26)</h1>
 <ul>
@@ -45,7 +85,7 @@
 <ul>
 <li>list : get list of installed modules,</li>
 <li>load : load an installed module for current session,</li>
-<li>autoload : load modules &quot;marked&quot; as autoload at startup,</li>
+<li>autoload : load modules “marked” as autoload at startup,</li>
 <li>install : install a distant module,</li>
 <li>uninstall : uninstall an installed module.</li>
 </ul>
@@ -58,25 +98,25 @@
 </ul>
 </li>
 <li>
-<p>usermodulesdir builtin: returns directory where user's modules are saved.</p>
+<p>usermodulesdir builtin: returns directory where user’s modules are saved.</p>
 </li>
 <li>
 <p>toolboxdir builtin: Root folder for specified toolbox.</p>
 </li>
 <li>
-<p>nmm_build_help, nmm_build_loader: helper's functions to build module skeleton.</p>
+<p>nmm_build_help, nmm_build_loader: helper’s functions to build module skeleton.</p>
 </li>
 <li>
 <p>semver builtin: semantic versioner.</p>
 </li>
 <li>
-<p>executable option added: '--nousermodules' disables load of user's modules.</p>
+<p>executable option added: ‘–nousermodules’ disables load of user’s modules.</p>
 </li>
 <li>
-<p>add capability to load some user's modules: see nmm('autoload', ...) and nmm('load', ...)</p>
+<p>add capability to load some user’s modules: see nmm(‘autoload’, …) and nmm(‘load’, …)</p>
 </li>
 <li>
-<p>add // &lt;--NO USER MODULES--&gt; tag for test_run (disable load of user modules for a test)</p>
+<p>add // &lt;–NO USER MODULES–&gt; tag for test_run (disable load of user modules for a test)</p>
 </li>
 <li>
 <p>fullpath builtin: converts an relative path to full path name.</p>
@@ -88,7 +128,7 @@
 <p>extends repo to manage plain text authentification.</p>
 </li>
 <li>
-<p>repo('export', ...) exports an git repository without .git directory.</p>
+<p>repo(‘export’, …) exports an git repository without .git directory.</p>
 </li>
 <li>
 <p>getfield macro replaced by an builtin.</p>
@@ -100,16 +140,16 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/261">#261</a>: add a detailed documentation about module.json used in external modules.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/261">#261</a>: add a detailed documentation about module.json used in external modules.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/259">#259</a>: extraction decomplexify values.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/259">#259</a>: extraction decomplexify values.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/257">#257</a>: dllibisloaded optimized.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/257">#257</a>: dllibisloaded optimized.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/49">#49</a>: Some qml demos crashed on Windows 32 bits.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/49">#49</a>: Some qml demos crashed on Windows 32 bits.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -119,10 +159,10 @@
 <h1>0.3.10 (2019-10-29)</h1>
 <ul>
 <li>
-<p>extends 'getmodules' to return module versions using new required 'module.json' (see module's template).</p>
+<p>extends ‘getmodules’ to return module versions using new required ‘module.json’ (see module’s template).</p>
 </li>
 <li>
-<p>all core's modules are protected and cannot removed during an nelson's session.</p>
+<p>all core’s modules are protected and cannot removed during an nelson’s session.</p>
 </li>
 <li>
 <p>increase max execution time for tests (2 minutes) and benchs (6 minutes).</p>
@@ -131,7 +171,7 @@
 <p>split benchs and tests execution for CI.</p>
 </li>
 <li>
-<p>repo builtin: clone, checkout branch or tag, ... from an GIT repository.</p>
+<p>repo builtin: clone, checkout branch or tag, … from an GIT repository.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -160,16 +200,16 @@ Dependencies updated:</p>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/254">#254</a>: fix Innosetup 6 warnings.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/254">#254</a>: fix Innosetup 6 warnings.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/252">#252</a>: help files of external modules were not loaded.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/252">#252</a>: help files of external modules were not loaded.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/245">#245</a>: Update MKL 2019 dependencies.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/245">#245</a>: Update MKL 2019 dependencies.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/202">#202</a>: Migrate to VS 2019.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/202">#202</a>: Migrate to VS 2019.</p>
 </li>
 </ul>
 <h1>0.3.9 (2019-09-25)</h1>
@@ -179,7 +219,7 @@ Dependencies updated:</p>
 <p>namedargs2cell builtin: Converts a struct containing name-value pairs to a cell.</p>
 </li>
 <li>
-<p>extends 'size' builtin to find lengths of multiple array dimensions at a time.</p>
+<p>extends ‘size’ builtin to find lengths of multiple array dimensions at a time.</p>
 </li>
 <li>
 <p>matches builtin: Determine if pattern matches with strings.</p>
@@ -188,7 +228,7 @@ Dependencies updated:</p>
 <p>webwrite function: Write data to RESTful web service.</p>
 </li>
 <li>
-<p>improves error message raised by 'run' builtin.</p>
+<p>improves error message raised by ‘run’ builtin.</p>
 </li>
 <li>
 <p>extends size, length, ndims to manage function_handle type.</p>
@@ -200,22 +240,22 @@ Dependencies updated:</p>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/249">#249</a>: refactor code.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/249">#249</a>: refactor code.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/236">#236</a>: mpiexec returned warning on docker as root user.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/236">#236</a>: mpiexec returned warning on docker as root user.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/235">#235</a>: add example about function_handle with webread.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/235">#235</a>: add example about function_handle with webread.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/233">#233</a>: fix typo in native2unicode help file.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/233">#233</a>: fix typo in native2unicode help file.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/227">#227</a>: Qt 5.13 support.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/227">#227</a>: Qt 5.13 support.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/220">#220</a>: setfield function added.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/220">#220</a>: setfield function added.</p>
 </li>
 <li>
 <p>revert b22ae88a6536cd614f555af7fbd865cc607bea7f due to HDFFV-10579.</p>
@@ -233,7 +273,7 @@ Dependencies updated:</p>
 <p>GitHub Actions CI (Ubuntu 18.04)</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/244">#244</a>: Remove semaphore CI 2.0 build.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/244">#244</a>: Remove semaphore CI 2.0 build.</p>
 </li>
 </ul>
 <h1>0.3.8 (2019-08-24)</h1>
@@ -244,7 +284,7 @@ Dependencies updated:</p>
 <ul>
 <li>weboptions function: Set parameters for RESTful API web service.</li>
 <li>websave builtin: Save content from RESTful API web service to file.</li>
-<li>webread builtin: Read content from RESTful API web service to nelson's variable.</li>
+<li>webread builtin: Read content from RESTful API web service to nelson’s variable.</li>
 </ul>
 </li>
 <li>
@@ -274,10 +314,10 @@ Dependencies updated:</p>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/226">#226</a>: tempdir() did not include a final slash.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/226">#226</a>: tempdir() did not include a final slash.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/224">#224</a>: cd 當第一個按讚的人 crashed Nelson.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/224">#224</a>: cd 當第一個按讚的人 crashed Nelson.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -323,25 +363,25 @@ Dependencies updated:</p>
 <p>realmax builtin: Largest positive floating-point number.</p>
 </li>
 <li>
-<p>struct builtin extended to convert object created by 'class' to structure.</p>
+<p>struct builtin extended to convert object created by ‘class’ to structure.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/214">#214</a>: nargin, nargin were slower than 0.3.5.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/214">#214</a>: nargin, nargin were slower than 0.3.5.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/213">#213</a>: fix typo in banner help.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/213">#213</a>: fix typo in banner help.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/212">#212</a>: MATIO 1.5.16 used all platforms.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/212">#212</a>: MATIO 1.5.16 used all platforms.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/211">#211</a>: BOOST 1.70 on Windows platforms.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/211">#211</a>: BOOST 1.70 on Windows platforms.</p>
 </li>
 <li>
 <p>allocateArrayOf and new_with_exception no more set memory to zero by default. This speed up array constructors.</p>
@@ -354,7 +394,7 @@ Dependencies updated:</p>
 <p>num2bin builtin: Convert number to binary representation.</p>
 </li>
 <li>
-<p>bin2num builtin: Convert two's complement binary string to number.</p>
+<p>bin2num builtin: Convert two’s complement binary string to number.</p>
 </li>
 <li>
 <p>swapbytes builtin: endian converter.</p>
@@ -392,16 +432,16 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 <p>unix, dos, system builtin reworked (asynchronious, better pipes redirection, detached process). This function can be interrupted with CTRL-C key.</p>
 </li>
 <li>
-<p>MSVC 2019 support added to build C/C++ code easily &quot;on fly&quot; on Windows.</p>
+<p>MSVC 2019 support added to build C/C++ code easily “on fly” on Windows.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/198">#198</a>: history load and save will be disable if nelson is started with '--nouserstartup'.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/198">#198</a>: history load and save will be disable if nelson is started with ‘–nouserstartup’.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/196">#196</a>: call cmake 3.11 from Nelson fails on linux.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/196">#196</a>: call cmake 3.11 from Nelson fails on linux.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -419,14 +459,14 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 <p>add Dockerfile for Arch, Debian, Fedora images used for CI.</p>
 </li>
 <li>
-<p>SLICOT library removed from Nelson's source and moved <a href="http://github.com/nelson-lang/slicot_f2c">here</a>.</p>
+<p>SLICOT library removed from Nelson’s source and moved <a href="https://github.com/nelson-lang/slicot_f2c">here</a>.</p>
 </li>
 </ul>
 <h1>0.3.4 (2019-04-27)</h1>
 <h2>Features:</h2>
 <ul>
 <li>
-<p>Coverage and Profiling Tools for Nelson's language:</p>
+<p>Coverage and Profiling Tools for Nelson’s language:</p>
 <ul>
 <li>profile function: Profile execution time for functions</li>
 <li>profsave function: Save profile report in HTML format</li>
@@ -444,7 +484,7 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/193">#193</a>: func2str help was wrong.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/193">#193</a>: func2str help was wrong.</li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
@@ -475,8 +515,8 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 <li>save overloads savenh5, savemat functions.</li>
 <li>.mat file extension support added: data formatted (Nelson workspace).</li>
 <li>.mat file association on Windows. load MAT file as data formatted for Nelson.</li>
-<li>loadmat: load mat-file into Nelson's workspace</li>
-<li>savemat: save Nelson's workspace to .mat file.</li>
+<li>loadmat: load mat-file into Nelson’s workspace</li>
+<li>savemat: save Nelson’s workspace to .mat file.</li>
 <li>rename h5save to savenh5, h5load to loadnh5</li>
 </ul>
 </li>
@@ -488,7 +528,7 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 </ul>
 </li>
 <li>
-<p>extends who to manage '-file' option.</p>
+<p>extends who to manage ‘-file’ option.</p>
 <ul>
 <li>whomat: list variables in an valid .mat file.</li>
 <li>whonh5: list variables in an valid .nh5 file.</li>
@@ -518,10 +558,10 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 <h2>Features:</h2>
 <ul>
 <li>
-<p>h5save: save Nelson's workspace to .nh5 file.</p>
+<p>h5save: save Nelson’s workspace to .nh5 file.</p>
 </li>
 <li>
-<p>h5load: load data form .nh5 file into Nelson's workspace.</p>
+<p>h5load: load data form .nh5 file into Nelson’s workspace.</p>
 </li>
 <li>
 <p>save, load alias on h5save and h5load.</p>
@@ -545,27 +585,27 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 <h2>0.3.1 (2019-01-26)</h2>
 <h2>Features:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/173">#173</a>: convertStringsToChars and convertCharsToStrings builtin.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/173">#173</a>: convertStringsToChars and convertCharsToStrings builtin.</li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/182">#182</a>: Nelson did not start without hdf5 dependency.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/182">#182</a>: Nelson did not start without hdf5 dependency.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/179">#179</a>: isfolder alias on isdir.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/179">#179</a>: isfolder alias on isdir.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/177">#177</a>: some tests failed when it executed from a binary version on windows.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/177">#177</a>: some tests failed when it executed from a binary version on windows.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/176">#176</a>: nfilename did not return canonical path name in some cases.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/176">#176</a>: nfilename did not return canonical path name in some cases.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/9">#9</a>: tests were not embedded in linux &amp; macos binaries (make package).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/9">#9</a>: tests were not embedded in linux &amp; macos binaries (make package).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/4">#4</a>: nelson.pot generated from sources.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/4">#4</a>: nelson.pot generated from sources.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -589,3 +629,14 @@ cmake -DLGPL21_ONLY=ON -G &quot;Unix Makefiles&quot; .
 <h2>Previous changelog:</h2>
 <p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

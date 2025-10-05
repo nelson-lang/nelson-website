@@ -2,8 +2,12 @@
 <help_summary>
   <toc>
     <module>audio</module>
-    <section name="Audio playback">
-      <chapter_description>Audio playback functions.</chapter_description>
+    <section name="Audio playback functions">
+      <chapter_description>
+		<p>The audio module provides functions for reading, writing, analyzing, and playing audio files.</p>
+		<p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.</p>
+		<p>It also includes utilities for signal conversion and sound generation.</p>
+	</chapter_description>
       <keyword name="audiodevinfo" link="audiodevinfo.html" description="Get audio devices information."/>
       <keyword name="audioinfo" link="audioinfo.html" description="Get audio file information."/>
       <keyword name="audiometadata" link="audiometadata.html" description="Get/Set metadata of audio file ."/>

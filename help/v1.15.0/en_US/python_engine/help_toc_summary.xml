@@ -4,8 +4,10 @@
     <module>python_engine</module>
     <section name="Python engine">
       <chapter_description>
-    <p>The Python Engine in Nelson provides seamless integration with Python, enabling users to combine the strengths of both environments.</p>
-    <p>This chapter introduces the available functions for running Python code, managing interpreter environments, and handling data exchange between Nelson and Python.</p>
+        <p>The Python Engine module allows Nelson users to seamlessly interface with Python,
+            leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.</p>
+        <p>It provides functions to run Python code, manage interpreter environments, and exchange
+            data between Nelson and Python.</p>
     </chapter_description>
       <keyword name="The power of calling Python from Nelson" link="1_The_power_of_Python.html" description=""/>
       <keyword name="How to install python package" link="2_How_to_install_python_package.html" description=""/>

@@ -14,37 +14,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Search Results</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2em;
-      background: #f9f9f9;
-    }
-    h1 {
-      color: #333;
-    }
-    #results {
-      margin-top: 1em;
-      background: #fff;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 1em;
-    }
-    .result-item {
-      margin-bottom: 1em;
-      padding-bottom: 1em;
-      border-bottom: 1px solid #eee;
-    }
-    .result-item:last-child {
-      border-bottom: none;
-    }
-  </style>
+  <link rel="stylesheet" href="nelson_common.css">
 </head>
-<body>
+<body class="search-results-body">
   <!-- Help Summary Button at top right -->
-  <a href="./homepage.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;">
-    <button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;">
+  <a href="./homepage.html" class="home-summary-link">
+    <button class="home-summary-btn" aria-label="Back to help homepage">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 12L12 3l9 9"/>
         <path d="M9 21V12h6v9"/>
@@ -53,8 +28,8 @@
     </button>
   </a>
   
-  <h1>Search Results</h1>
-  <div id="results">
+  <h1 class="search-results-title">Search Results</h1>
+  <div id="results" class="search-results-panel">
   </div>
   <script src="index.js"></script>
   
@@ -68,35 +43,32 @@
     
     function search(query) {
       if (!query) return [];
-      
+
       query = query.toLowerCase();
-      
-      return helpIndex.filter(item => {
-        return item.title.toLowerCase().includes(query) || 
+
+      let results = helpIndex.filter(item => {
+        return item.title.toLowerCase().includes(query) ||
                item.content.toLowerCase().includes(query);
       }).map(item => {
         let snippet = item.content;
-        
         const contentLower = item.content.toLowerCase();
         const queryIndex = contentLower.indexOf(query);
-        
+
         if (queryIndex !== -1) {
           const start = Math.max(0, queryIndex - 40);
           const end = Math.min(item.content.length, queryIndex + query.length + 40);
-          snippet = (start > 0 ? '...' : '') + 
-                    item.content.substring(start, end) + 
+          snippet = (start > 0 ? '...' : '') +
+                    item.content.substring(start, end) +
                     (end < item.content.length ? '...' : '');
-          
           const highlightedSnippet = snippet.replace(
-            new RegExp(query, 'gi'), 
+            new RegExp(query, 'gi'),
             match => `<strong>${match}</strong>`
           );
-          
           snippet = highlightedSnippet;
         } else {
           snippet = item.content.substring(0, 100) + (item.content.length > 100 ? '...' : '');
         }
-        
+
         return {
           title: item.title,
           url: item.url,
@@ -104,6 +76,15 @@
           snippet: snippet
         };
       });
+
+      // Move exact match to the front if present
+      const exactIndex = results.findIndex(r => r.title.toLowerCase() === query);
+      if (exactIndex > -1) {
+        const [exactResult] = results.splice(exactIndex, 1);
+        results.unshift(exactResult);
+      }
+
+      return results;
     }
     
     function loadHelpIndex() {

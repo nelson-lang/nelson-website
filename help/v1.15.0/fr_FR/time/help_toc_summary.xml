@@ -3,7 +3,11 @@
   <toc>
     <module>time</module>
     <section name="Time functions">
-      <chapter_description>time functions</chapter_description>
+      <chapter_description>
+        <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p>
+        <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p>
+        <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p>
+    </chapter_description>
       <keyword name="addtodate" link="addtodate.html" description="Modify date number by field."/>
       <keyword name="calendar" link="calendar.html" description="Calendar."/>
       <keyword name="clock" link="clock.html" description="Return the current local date and time as a date vector."/>

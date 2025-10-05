@@ -3,7 +3,11 @@
   <toc>
     <module>data_structures</module>
     <section name="Data structures">
-      <chapter_description>data structures functions</chapter_description>
+      <chapter_description>
+        <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.</p>
+        <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.</p>
+        <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.</p>
+    </chapter_description>
       <keyword name="arrayfun" link="arrayfun.html" description="Apply a function to each element of an array."/>
       <keyword name="cell" link="cell.html" description="Create cell array of empty matrices."/>
       <keyword name="cell2mat" link="cell2mat.html" description="Transform a cell array containing matrices into a single, concatenated matrix."/>

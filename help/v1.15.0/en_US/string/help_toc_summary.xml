@@ -3,7 +3,11 @@
   <toc>
     <module>string</module>
     <section name="String type">
-      <chapter_description>string type functions</chapter_description>
+      <chapter_description>
+        <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.</p>
+        <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.</p>
+        <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.</p>
+    </chapter_description>
       <keyword name="append" link="append.html" description="combines strings horizontally."/>
       <keyword name="blanks" link="blanks.html" description="creates an string of blank characters."/>
       <keyword name="char" link="char.html" description="Converts to a character array."/>
@@ -14,9 +18,9 @@
       <keyword name="deblank" link="deblank.html" description="Remove trailing whitespace."/>
       <keyword name="endsWith" link="endsWith.html" description="checks if string ends with pattern."/>
       <keyword name="int2str" link="int2str.html" description="Convert an integer array to a string"/>
+      <keyword name="isStringScalar" link="isStringScalar.html" description="checks if input is string array with one element."/>
       <keyword name="isletter" link="isletter.html" description="Determine which characters are letters."/>
       <keyword name="isspace" link="isspace.html" description="Determine which characters are space."/>
-      <keyword name="isStringScalar" link="isStringScalar.html" description="checks if input is string array with one element."/>
       <keyword name="join" link="join.html" description="Combine strings."/>
       <keyword name="mat2str" link="mat2str.html" description="Matrix to String."/>
       <keyword name="matches" link="matches.html" description="Determine if pattern matches with strings."/>

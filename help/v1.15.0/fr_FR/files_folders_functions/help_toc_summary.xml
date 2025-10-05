@@ -3,7 +3,11 @@
   <toc>
     <module>files_folders_functions</module>
     <section name="Files and folders functions">
-      <chapter_description>files, folders and paths functions</chapter_description>
+      <chapter_description>
+      <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.</p>
+      <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.</p>
+      <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.</p>
+    </chapter_description>
       <keyword name="cd" link="cd.html" description="Changes Nelson current directory."/>
       <keyword name="copyfile" link="copyfile.html" description="Copy files or folder."/>
       <keyword name="diff_file" link="diff_file.html" description="diff two files or strings."/>

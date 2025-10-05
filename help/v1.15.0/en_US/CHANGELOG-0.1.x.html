@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h2>0.1.12 (2017-12-24)</h2>
 <h2>Features:</h2>
 <ul>
@@ -12,7 +52,7 @@
 <li>MPI_Recv : Blocking receive for a message.</li>
 <li>MPI_Send : Performs a blocking send.</li>
 <li>MPI_Barrier : Blocks until all processes in the communicator have reached this routine.</li>
-<li>MPI_Bcast : Broadcasts a message from the process with rank &quot;root&quot; to all other processes of the communicator.</li>
+<li>MPI_Bcast : Broadcasts a message from the process with rank “root” to all other processes of the communicator.</li>
 <li>MPI_Reduce : Reduces values on all processes to a single value.</li>
 <li>MPI_Allreduce : Combines values from all processes and distributes the result back to all processes.</li>
 <li>MPI_Probe : Blocking test for a message.</li>
@@ -31,10 +71,10 @@
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/85">#85</a>: paste in text editor should be limited to the text only.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/84">#84</a>: CTRL + A action in text editor.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/83">#83</a>: save action in text editor do a popup to reload file.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/82">#82</a>: home, end, page down, page up keys shorcut not implement in editor.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/85">#85</a>: paste in text editor should be limited to the text only.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/84">#84</a>: CTRL + A action in text editor.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/83">#83</a>: save action in text editor do a popup to reload file.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/82">#82</a>: home, end, page down, page up keys shorcut not implement in editor.</p>
 <h2>Compilation:</h2>
 <ul>
 <li>Update VS 2017 solution to VS 2017 15.5.1</li>
@@ -43,15 +83,15 @@
 <h2>Features:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/75">#75</a>: Intel Math Kernel Library can be used to replace OpenBLAS and FFTW on Windows.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/75">#75</a>: Intel Math Kernel Library can be used to replace OpenBLAS and FFTW on Windows.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/72">#72</a>: Add a script to check missing help files.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/72">#72</a>: Add a script to check missing help files.</p>
 </li>
 <li>
 <p>add an embedded script editor for Nelson:</p>
 <ul>
-<li>'edit' builtin added.</li>
+<li>‘edit’ builtin added.</li>
 <li>syntax colorization.</li>
 <li>text completion.</li>
 <li>smart indentation.</li>
@@ -61,15 +101,15 @@
 </ul>
 </li>
 <li>
-<p>add 'smartindent' builtin to indent a .nls or .nlf files.</p>
+<p>add ‘smartindent’ builtin to indent a .nls or .nlf files.</p>
 </li>
 <li>
 <p>drag &amp; drop .nls (run), .nlf (open with editor) in gui main window.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/80">#80</a>: code editor: keys up, down, left, right behavior</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/78">#78</a>: [p,f,e]=fileparts('c:/') did not return the good result</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/80">#80</a>: code editor: keys up, down, left, right behavior</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/78">#78</a>: [p,f,e]=fileparts(‘c:/’) did not return the good result</p>
 <h2>Compilation:</h2>
 <ul>
 <li>BOOST 1.65.1 on Windows</li>
@@ -158,35 +198,35 @@
 <p>Nelson Interface Generator (NIG) allows to generate Nelson builtin from C/Fortran code.</p>
 </li>
 <li>
-<p>add 'isfield' function to check existence of a fieldname in a struct.</p>
+<p>add ‘isfield’ function to check existence of a fieldname in a struct.</p>
 </li>
 <li>
-<p>add 'exist' function to check existence of variable, builtin, function, file or directory.</p>
+<p>add ‘exist’ function to check existence of variable, builtin, function, file or directory.</p>
 </li>
 <li>
-<p>add 'isvar' function to check existence of variable.</p>
+<p>add ‘isvar’ function to check existence of variable.</p>
 </li>
 <li>
-<p>add 'ismacro' function to check existence of macro.</p>
+<p>add ‘ismacro’ function to check existence of macro.</p>
 </li>
 <li>
-<p>add 'isbuiltin' function to check existence of builtin.</p>
+<p>add ‘isbuiltin’ function to check existence of builtin.</p>
 </li>
 <li>
-<p>add 'f2c' function to convert fortran code to C from Nelson</p>
+<p>add ‘f2c’ function to convert fortran code to C from Nelson</p>
 </li>
 <li>
-<p>optimize 'vertcat' and 'horzcat' builtin (remove duplicated code).</p>
+<p>optimize ‘vertcat’ and ‘horzcat’ builtin (remove duplicated code).</p>
 </li>
 <li>
-<p>history file saved on your cloud drive if 'OneDrive' environment variable defined.</p>
+<p>history file saved on your cloud drive if ‘OneDrive’ environment variable defined.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/74">#74</a>: A=[]; A(end + 1) = 8 failed.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/71">#71</a>: unix &amp; dos did not have help files.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/68">#68</a>: display of nd array of integer were not defined.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/14">#14</a>: error(error_struct) throws an error using the fields of error_struct.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/74">#74</a>: A=[]; A(end + 1) = 8 failed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/71">#71</a>: unix &amp; dos did not have help files.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/68">#68</a>: display of nd array of integer were not defined.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/14">#14</a>: error(error_struct) throws an error using the fields of error_struct.</p>
 <h2>Compilation:</h2>
 <ul>
 <li>
@@ -200,28 +240,28 @@
 <h2>Features:</h2>
 <ul>
 <li>
-<p>add 'fftshift' and 'ifftshift' functions to shift the zero-frequency component to the center of the spectrum.</p>
+<p>add ‘fftshift’ and ‘ifftshift’ functions to shift the zero-frequency component to the center of the spectrum.</p>
 </li>
 <li>
-<p>add 'circshift' function.</p>
+<p>add ‘circshift’ function.</p>
 </li>
 <li>
 <p>colon as string managed for deletion, extraction and insertion.</p>
 </li>
 <li>
-<p>add 'rem' builtin. Remainder after division.</p>
+<p>add ‘rem’ builtin. Remainder after division.</p>
 </li>
 <li>
-<p>add 'abs' builtin. Absolute value.</p>
+<p>add ‘abs’ builtin. Absolute value.</p>
 </li>
 <li>
-<p>add 'repmat' builtin. Replicates and tiles an array.</p>
+<p>add ‘repmat’ builtin. Replicates and tiles an array.</p>
 </li>
 <li>
-<p>add 'mod' builtin. Modulus after division.</p>
+<p>add ‘mod’ builtin. Modulus after division.</p>
 </li>
 <li>
-<p>add 'maxNumCompThreads' builtin. Set/Get maximum number of computional threads.</p>
+<p>add ‘maxNumCompThreads’ builtin. Set/Get maximum number of computional threads.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -237,8 +277,8 @@
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/60">#60</a>: Y = complex(rand(500), rand(500)) crashed Nelson.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/58">#58</a>: Manages ICU4C 59.1 on macos X.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/60">#60</a>: Y = complex(rand(500), rand(500)) crashed Nelson.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/58">#58</a>: Manages ICU4C 59.1 on macos X.</p>
 <h2>0.1.8 alpha (2017-08-15)</h2>
 <h2>Features:</h2>
 <ul>
@@ -280,28 +320,28 @@
 <li>actxserverlist : get list all available active X services installed on current Windows.</li>
 <li>actxGetRunningServer : get COM handle of an existing COM server.</li>
 <li>actxserver : creates a COM server.</li>
-<li>COM_used : get list of COM handle currently used in current Nelson's session.</li>
+<li>COM_used : get list of COM handle currently used in current Nelson’s session.</li>
 <li>iscom : determines if it is a COM handle.</li>
 <li>overload on : class, delete, disp, fieldnames, get, set, invoke, ismethod, isprop, isvalid, methods.</li>
 <li>add COM handle.</li>
-<li>see examples in [modulepath('com_engine'), '/examples/'] directory.</li>
+<li>see examples in [modulepath(‘com_engine’), ‘/examples/’] directory.</li>
 </ul>
 </li>
 <li>
 <p>Better management of varargout without output.</p>
 </li>
 <li>
-<p>Add &quot;&lt;--EXCEL REQUIRED--&gt;&quot; tag managed by test engine.</p>
+<p>Add “&lt;–EXCEL REQUIRED–&gt;” tag managed by test engine.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/53">#53</a>: COM_xlsread did not support path with dot '.'</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/50">#50</a>: qml demos did not start on adv-cli mode.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/53">#53</a>: COM_xlsread did not support path with dot ‘.’</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/50">#50</a>: qml demos did not start on adv-cli mode.</p>
 <h2>0.1.6 alpha (2017-06-19)</h2>
 <h2>Features:</h2>
 <ul>
 <li>
-<p>The QML engine enables nelson programs to display and manipulate graphical content using Qt's QML framework.</p>
+<p>The QML engine enables nelson programs to display and manipulate graphical content using Qt’s QML framework.</p>
 <pre><code>qml_demos // for demonstrations
 </code></pre>
 </li>
@@ -312,13 +352,13 @@
 <p>add CONTRIBUTING.md , CODE_OF_CONDUCT.md and ROADMAP.md files</p>
 </li>
 <li>
-<p>add 'heldlg', 'msgbox', 'errordlg', 'warndlg' functions based on QML.</p>
+<p>add ‘heldlg’, ‘msgbox’, ‘errordlg’, ‘warndlg’ functions based on QML.</p>
 </li>
 <li>
-<p>add 'questdlg' function (Creates a question dialog box) based on QML.</p>
+<p>add ‘questdlg’ function (Creates a question dialog box) based on QML.</p>
 </li>
 <li>
-<p>add '==', '~=', 'isequal', 'isequaln' overload for handle and QObject.</p>
+<p>add ‘==’, ‘~=’, ‘isequal’, ‘isequaln’ overload for handle and QObject.</p>
 </li>
 <li>
 <p>add ishandle, isprop, ismethod, method, properties builtin.</p>
@@ -327,7 +367,7 @@
 <p>add set, get, invoke, isvalid builtin used by handle objects.</p>
 </li>
 <li>
-<p>extends clear function to call delete if 'TYPEHANDLE_clear' function is defined.</p>
+<p>extends clear function to call delete if ‘TYPEHANDLE_clear’ function is defined.</p>
 </li>
 <li>
 <p>add handle object type.</p>
@@ -336,78 +376,89 @@
 <p>gui module also loaded in advanced cli mode.</p>
 </li>
 <li>
-<p>add 'sind', 'cosd', 'tand' functions.</p>
+<p>add ‘sind’, ‘cosd’, ‘tand’ functions.</p>
 </li>
 <li>
 <p>add more output information in the result file of test_run function.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/47">#47</a>: add isfinite builtin.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/43">#43</a>: rename getContentsAsWideString to getContentAsWideString.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/27">#27</a>: &gt;= operator was not implemented.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/47">#47</a>: add isfinite builtin.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/43">#43</a>: rename getContentsAsWideString to getContentAsWideString.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/27">#27</a>: &gt;= operator was not implemented.</p>
 <h2>0.1.5 alpha (2017-04-17)</h2>
 <h2>Features:</h2>
 <ul>
 <li>Optimize constructors allocation for eye, ones, Inf, NaN, rand, randn functions.</li>
-<li>Add 'issymmetric' function.</li>
-<li>Add 'svd' function.</li>
-<li>Add 'rcond' function.</li>
+<li>Add ‘issymmetric’ function.</li>
+<li>Add ‘svd’ function.</li>
+<li>Add ‘rcond’ function.</li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/41">#41</a>: test_makeref starts a new clear session to create a ref file.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/39">#39</a>: inv([0 0;i() 3]) did not return [Inf, Inf; Inf, Inf] on ARM platform.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/25">#25</a>: ndims added.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/24">#24</a>: isnan &amp; isinf added.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/41">#41</a>: test_makeref starts a new clear session to create a ref file.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/39">#39</a>: inv([0 0;i() 3]) did not return [Inf, Inf; Inf, Inf] on ARM platform.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/25">#25</a>: ndims added.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/24">#24</a>: isnan &amp; isinf added.</p>
 <h2>0.1.4 alpha (2017-03-19)</h2>
 <h2>Compilation:</h2>
 <p>LAPACKE used for linear algebra functions. On Windows, OpenBLAS used. On others platforms reference library LAPACKE used.</p>
 <h2>Features:</h2>
 <ul>
-<li>Add 'isnan' function.</li>
+<li>Add ‘isnan’ function.</li>
 <li>Rework double and single matrix 2D display.</li>
-<li>Add 'trace' function.</li>
-<li>Add 'schur' function.</li>
-<li>Add 'inv' function.</li>
-<li>Add 'expm' function (single, double, sparse double managed).</li>
-<li>Rename 'string' type to 'char' type, 'string' type will be added later.</li>
-<li>Add 'dlmwrite' function.</li>
-<li>Add 'mat2str' function (sparse managed).</li>
-<li>Add 'str2double' function.</li>
-<li>Add 'cosm' function.</li>
-<li>which(function_name, '-all') without output argument display paths.</li>
+<li>Add ‘trace’ function.</li>
+<li>Add ‘schur’ function.</li>
+<li>Add ‘inv’ function.</li>
+<li>Add ‘expm’ function (single, double, sparse double managed).</li>
+<li>Rename ‘string’ type to ‘char’ type, ‘string’ type will be added later.</li>
+<li>Add ‘dlmwrite’ function.</li>
+<li>Add ‘mat2str’ function (sparse managed).</li>
+<li>Add ‘str2double’ function.</li>
+<li>Add ‘cosm’ function.</li>
+<li>which(function_name, ‘-all’) without output argument display paths.</li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/34">#34</a>: Windows installer did not copy module_skeleton help files at the good place.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/31">#31</a>: doc function was too slow (indexing at each restart).</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/30">#30</a>: Search path order for functions was wrong.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/34">#34</a>: Windows installer did not copy module_skeleton help files at the good place.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/31">#31</a>: doc function was too slow (indexing at each restart).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/30">#30</a>: Search path order for functions was wrong.</p>
 <h2>0.1.3 alpha (2017-02-11)</h2>
 <h2>Features:</h2>
 <ul>
 <li>datevec updated to manage vectors, matrix.</li>
-<li>Add 'nnz', 'nzmax', 'numel' functions.</li>
-<li>Rework 'searchenv' to return a cell of strings.</li>
+<li>Add ‘nnz’, ‘nzmax’, ‘numel’ functions.</li>
+<li>Rework ‘searchenv’ to return a cell of strings.</li>
 <li>Update persistent variables behavior (clear functions).</li>
-<li>Add 'ceil', 'floor', 'round', 'fix' functions.</li>
+<li>Add ‘ceil’, ‘floor’, ‘round’, ‘fix’ functions.</li>
 <li>Add sparse support for acos, asin, atan, cos, cosh, sin, sinh, tan, tanh.</li>
 <li>Add website and bug reports link in help menu.</li>
 </ul>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/28">#28</a>: Each public builtin have a help file.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/26">#26</a>: 7.853981633974482790D-01 was not correctly parsed.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/22">#22</a>: last output argument of 'IJV' did not return nzmax.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/19">#19</a>: rand &amp; randn did not use Column-major order.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/17">#17</a>: 'locales' directory renamed as 'locale' (more standard).</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/13">#13</a>: mldivide and mrdivide builtin were missing.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/28">#28</a>: Each public builtin have a help file.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/26">#26</a>: 7.853981633974482790D-01 was not correctly parsed.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/22">#22</a>: last output argument of ‘IJV’ did not return nzmax.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/19">#19</a>: rand &amp; randn did not use Column-major order.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/17">#17</a>: ‘locales’ directory renamed as ‘locale’ (more standard).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/13">#13</a>: mldivide and mrdivide builtin were missing.</p>
 <h2>0.1.2 alpha (2017-01-01)</h2>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/11">#11</a>: colon constructor failed with some special values.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/10">#10</a>: module_skeleton did not build/load.</p>
-<p><a href="http://github.com/nelson-lang/nelson/issues/8">#8</a>: test_nargin &amp; test_nargout failed in Windows binary version.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/11">#11</a>: colon constructor failed with some special values.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/10">#10</a>: module_skeleton did not build/load.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/8">#8</a>: test_nargin &amp; test_nargout failed in Windows binary version.</p>
 <h2>0.1.1 alpha (2016-12-30)</h2>
 <h2>Bug Fixes:</h2>
-<p><a href="http://github.com/nelson-lang/nelson/issues/5">#5</a>: help browser did not work on some Windows</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/5">#5</a>: help browser did not work on some Windows</p>
 <h2>0.1.0 alpha (2016-12-28)</h2>
 <ul>
 <li>Initial import in github of Nelson</li>
 </ul>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

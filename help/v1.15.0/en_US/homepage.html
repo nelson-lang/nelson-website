@@ -1,10 +1,50 @@
-<p><img src="banner_homepage.png#center" alt="banner" /></p>
-<h1>🚀 The Nelson language</h1>
-<!-- raw HTML omitted -->
-<h2>🎓 <strong>Introduction</strong></h2>
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
+<img src="banner_homepage.png" alt="banner" style="display:block; margin-left:auto; margin-right:auto;" />
+<h3>Nelson 1.15.0.0</h3>
+<p>The main homepage for Nelson can be found at <a href="https://nelson-lang.github.io/nelson-website/">https://nelson-lang.github.io/nelson-website/</a>.</p>
+<h2><strong>Introduction</strong></h2>
 <p>Nelson is a powerful, open-source numerical computational language, developed to provide a comprehensive and intuitive environment for engineers, scientists, and students. With over 1,200 built-in functions, Nelson supports a wide range of tasks, from basic algebra to advanced numerical simulations.</p>
 <p>Originally inspired by languages like MATLAB© and GNU Octave, Nelson offers users a lightweight yet feature-rich experience. It is designed to be easy to learn and use, with an emphasis on performance and flexibility.</p>
-<h2>🛠️ <strong>Features</strong></h2>
+<h2><strong>Features</strong></h2>
 <h3>Data Types Managed by Nelson</h3>
 <ul>
 <li><strong>Double and Complex Double</strong>: Supports scalars, vectors, 2D matrices, N-dimensional arrays, and sparse matrices.</li>
@@ -94,3 +134,14 @@
 <ul>
 <li><a href="license.html">Nelson license</a></li>
 </ul>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

@@ -5,7 +5,17 @@
 <title>writetable</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
+<script type="text/javascript">
+                document.addEventListener('click', function(e) {
+                  var a = (typeof e.target.closest === 'function') ? e.target.closest('a[href]') : null;
+                  if (!a) return;
+                  var href = a.getAttribute('href');
+                  if (/^https?:\/\//i.test(href)) {
+                    e.preventDefault();
+                    window.open(href, '_blank', 'noopener');
+                  }
+                }, true);
+            </script><script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
                 document.addEventListener('DOMContentLoaded', function() {
                     document.querySelectorAll('code.matlab').forEach(function(block) {
                         if (window.hljs) hljs.highlightElement(block);
@@ -34,8 +44,8 @@
             </script>
 </head>
 <body>
-<a href="./index.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span style="font-weight:700; color:#222;">writetable</span></div></div>
-<div class="subtitle">Write table to file.</div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">writetable</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Write table to file.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span> Syntax
@@ -73,39 +83,39 @@ writetable(..., Name, Value)
             <p>If the file name cannot be derived from the table name, the default file name table.txt is used.</p>
             <p>Output formats supported:</p>
             <ul>
-                
-                    <b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.
-                    
-                        <b>XML files:</b> Each variable in <b>T</b> becomes an XML node, with variable names as element node names.
+                <li>
+                    <b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.</li>
+                    <li>
+                        <b>XML files:</b> Each variable in <b>T</b> becomes an XML node, with variable names as element node names.</li>
                     </ul>
                     <p>To specify the file name explicitly, use <b>writetable(T, filename)</b>. The file format is determined by the file extension:</p>
                     <ul>
-                        
-                            <b>.txt</b>, <b>.dat</b>, <b>.csv</b>: Delimited text files.
-                            
-                                <b>.xml</b>: XML files.
+                        <li>
+                            <b>.txt</b>, <b>.dat</b>, <b>.csv</b>: Delimited text files.</li>
+                            <li>
+                                <b>.xml</b>: XML files.</li>
                             </ul>
                             <p>
                                 <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:</p>
                                 <ul>
-                                    
-                                        <b>WriteRowNames:</b> Include row names in the output file (default: false).
-                                        
-                                            <b>FileType:</b> Specify file format ('text' or 'xml').
-                                            
-                                                <b>WriteVariableNames:</b> Include variable names as column headings in text files (default: true).
-                                                
-                                                    <b>WriteMode:</b> Specify writing mode ('overwrite' or 'append').
-                                                    
-                                                        <b>Delimiter:</b> Define the field delimiter for text files (',', '\t', etc.).
-                                                        
-                                                            <b>QuoteStrings:</b> Control how text is quoted in text files ('minimal', 'all', or 'none').
-                                                            
-                                                                <b>AttributeSuffix:</b> Specify attribute suffix for XML files (default: 'Attribute').
-                                                                
-                                                                    <b>RowNodeName:</b> Specify XML row node names (default: 'row').
-                                                                    
-                                                                        <b>TableNodeName:</b> Specify XML root node name (default: 'table').
+                                    <li>
+                                        <b>WriteRowNames:</b> Include row names in the output file (default: false).</li>
+                                        <li>
+                                            <b>FileType:</b> Specify file format ('text' or 'xml').</li>
+                                            <li>
+                                                <b>WriteVariableNames:</b> Include variable names as column headings in text files (default: true).</li>
+                                                <li>
+                                                    <b>WriteMode:</b> Specify writing mode ('overwrite' or 'append').</li>
+                                                    <li>
+                                                        <b>Delimiter:</b> Define the field delimiter for text files (',', '\t', etc.).</li>
+                                                        <li>
+                                                            <b>QuoteStrings:</b> Control how text is quoted in text files ('minimal', 'all', or 'none').</li>
+                                                            <li>
+                                                                <b>AttributeSuffix:</b> Specify attribute suffix for XML files (default: 'Attribute').</li>
+                                                                <li>
+                                                                    <b>RowNodeName:</b> Specify XML row node names (default: 'row').</li>
+                                                                    <li>
+                                                                        <b>TableNodeName:</b> Specify XML root node name (default: 'table').</li>
                                                                     </ul>
                                                                 </div>
 </div>

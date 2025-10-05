@@ -3,7 +3,10 @@
   <toc>
     <module>gui</module>
     <section name="Gui module">
-      <chapter_description>functions about gui</chapter_description>
+      <chapter_description>
+        <p>The GUI module provides functions to create and interact with graphical user interface
+            components, dialogs, and application windows.</p>
+    </chapter_description>
       <keyword name="commandhistory" link="commandhistory.html" description="Command History"/>
       <keyword name="errordlg" link="errordlg.html" description="Creates a error dialog box."/>
       <keyword name="filebrowser" link="filebrowser.html" description="Current Folder Browser"/>

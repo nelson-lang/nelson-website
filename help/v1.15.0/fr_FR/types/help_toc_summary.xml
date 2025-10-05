@@ -3,7 +3,11 @@
   <toc>
     <module>types</module>
     <section name="Types module">
-      <chapter_description>module about types management.</chapter_description>
+      <chapter_description>
+        <p>The Types module provides tools for managing and inspecting data types in Nelson.</p>
+        <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.</p>
+        <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.</p>
+    </chapter_description>
       <keyword name="class" link="class.html" description="Return classname of object or creates a named object."/>
       <keyword name="isa" link="isa.html" description="Return true if var is an object from the class str."/>
       <keyword name="iscell" link="iscell.html" description="Return true if variable var is a cell array."/>

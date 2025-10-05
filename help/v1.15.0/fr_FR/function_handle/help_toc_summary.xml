@@ -3,7 +3,11 @@
   <toc>
     <module>function_handle</module>
     <section name="Function_handle functions">
-      <chapter_description>function_handle functions</chapter_description>
+      <chapter_description>
+        <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.</p>
+        <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.</p>
+        <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.</p>
+    </chapter_description>
       <keyword name="Anonymous Functions" link="anonymous_function.html" description="Anonymous Functions."/>
       <keyword name="func2str" link="func2str.html" description="Return a function handle constructed from a string."/>
       <keyword name="isfunction_handle" link="isfunction_handle.html" description="Checks if value is a function handle."/>

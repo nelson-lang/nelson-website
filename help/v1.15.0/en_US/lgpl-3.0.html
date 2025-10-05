@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h3>GNU LESSER GENERAL PUBLIC LICENSE</h3>
 <p>Version 3, 29 June 2007</p>
 <p>Copyright (C) 2007 Free Software Foundation, Inc.
@@ -8,24 +48,24 @@ license document, but changing it is not allowed.</p>
 terms and conditions of version 3 of the GNU General Public License,
 supplemented by the additional permissions listed below.</p>
 <h4>0. Additional Definitions.</h4>
-<p>As used herein, &quot;this License&quot; refers to version 3 of the GNU Lesser
-General Public License, and the &quot;GNU GPL&quot; refers to version 3 of the
+<p>As used herein, “this License” refers to version 3 of the GNU Lesser
+General Public License, and the “GNU GPL” refers to version 3 of the
 GNU General Public License.</p>
-<p>&quot;The Library&quot; refers to a covered work governed by this License, other
+<p>“The Library” refers to a covered work governed by this License, other
 than an Application or a Combined Work as defined below.</p>
-<p>An &quot;Application&quot; is any work that makes use of an interface provided
+<p>An “Application” is any work that makes use of an interface provided
 by the Library, but which is not otherwise based on the Library.
 Defining a subclass of a class defined by the Library is deemed a mode
 of using an interface provided by the Library.</p>
-<p>A &quot;Combined Work&quot; is a work produced by combining or linking an
+<p>A “Combined Work” is a work produced by combining or linking an
 Application with the Library. The particular version of the Library
-with which the Combined Work was made is also called the &quot;Linked
-Version&quot;.</p>
-<p>The &quot;Minimal Corresponding Source&quot; for a Combined Work means the
+with which the Combined Work was made is also called the “Linked
+Version”.</p>
+<p>The “Minimal Corresponding Source” for a Combined Work means the
 Corresponding Source for the Combined Work, excluding any source code
 for portions of the Combined Work that, considered in isolation, are
 based on the Application, and not on the Linked Version.</p>
-<p>The &quot;Corresponding Application Code&quot; for a Combined Work means the
+<p>The “Corresponding Application Code” for a Combined Work means the
 object code and/or source code for the Application, including any data
 and utility programs needed for reproducing the Combined Work from the
 Application, but excluding the System Libraries of the Combined Work.</p>
@@ -92,7 +132,7 @@ Corresponding Source.</li>
 <ol>
 <li>Use a suitable shared library mechanism for linking with
 the Library. A suitable mechanism is one that (a) uses at run
-time a copy of the Library already present on the user's
+time a copy of the Library already present on the user’s
 computer system, and (b) will operate properly with a modified
 version of the Library that is interface-compatible with the
 Linked Version.</li>
@@ -133,7 +173,7 @@ versions will be similar in spirit to the present version, but may
 differ in detail to address new problems or concerns.</p>
 <p>Each version is given a distinguishing version number. If the Library
 as you received it specifies that a certain numbered version of the
-GNU Lesser General Public License &quot;or any later version&quot; applies to
+GNU Lesser General Public License “or any later version” applies to
 it, you have the option of following the terms and conditions either
 of that published version or of any later version published by the
 Free Software Foundation. If the Library as you received it does not
@@ -142,6 +182,17 @@ may choose any version of the GNU Lesser General Public License ever
 published by the Free Software Foundation.</p>
 <p>If the Library as you received it specifies that a proxy can decide
 whether future versions of the GNU Lesser General Public License shall
-apply, that proxy's public statement of acceptance of any version is
+apply, that proxy’s public statement of acceptance of any version is
 permanent authorization for you to choose that version for the
 Library.</p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

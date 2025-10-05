@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h1>0.4.12 (2020-12-30)</h1>
 <ul>
 <li>
@@ -58,19 +98,19 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/364">#364</a>: <code>isinf</code>, <code>isnan</code>, <code>conj</code>, <code>double</code>, <code>single</code>, <code>real</code>, <code>imag</code> are faster.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/364">#364</a>: <code>isinf</code>, <code>isnan</code>, <code>conj</code>, <code>double</code>, <code>single</code>, <code>real</code>, <code>imag</code> are faster.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/361">#361</a>: <code>abs</code> is faster.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/361">#361</a>: <code>abs</code> is faster.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/360">#360</a>: <code>ctranpose</code> and <code>transpose</code> are faster.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/360">#360</a>: <code>ctranpose</code> and <code>transpose</code> are faster.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/353">#353</a>: <code>N = i; N(1)</code> returned wrong value.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/353">#353</a>: <code>N = i; N(1)</code> returned wrong value.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/351">#351</a>: binary operators and empty matrix (behavior described in book of Carl de Boor in An Empty Exercise)</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/351">#351</a>: binary operators and empty matrix (behavior described in book of Carl de Boor in An Empty Exercise)</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -101,13 +141,13 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/342">#342</a>: disable slicot on Macos CI.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/342">#342</a>: disable slicot on Macos CI.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/341">#341</a>: extend <code>ipc(pid, 'post', cmd, scope)</code> to manage scope destination.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/341">#341</a>: extend <code>ipc(pid, 'post', cmd, scope)</code> to manage scope destination.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/314">#314</a>: Nelson crashs randomly at exit with Qt 5.15.0</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/314">#314</a>: Nelson crashs randomly at exit with Qt 5.15.0</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -140,16 +180,16 @@
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/340">#340</a>: <code>evalin</code> did not restore correctly variables after call.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/340">#340</a>: <code>evalin</code> did not restore correctly variables after call.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/339">#339</a>: <code>cd</code>, <code>dir</code>, <code>ls</code> had some compatibility troubles.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/339">#339</a>: <code>cd</code>, <code>dir</code>, <code>ls</code> had some compatibility troubles.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/332">#332</a>: removes connect(2) call to /dev/shm/jack-0/default/jack_0 failed (err=No such file or directory).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/332">#332</a>: removes connect(2) call to /dev/shm/jack-0/default/jack_0 failed (err=No such file or directory).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/331">#331</a>: move ipc features to detected module</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/331">#331</a>: move ipc features to detected module</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -170,13 +210,13 @@
 <h1>0.4.9 (2020-09-27)</h1>
 <ul>
 <li>
-<p>ipc builtin: Inter-process communication between Nelson's process</p>
+<p>ipc builtin: Inter-process communication between Nelson’s process</p>
 </li>
 <li>
-<p>getpid('running') renamed getpid('available').</p>
+<p>getpid(‘running’) renamed getpid(‘available’).</p>
 </li>
 <li>
-<p>--noipc command line argument added. disable IPC features.</p>
+<p>–noipc command line argument added. disable IPC features.</p>
 </li>
 <li>
 <p>dark theme detected and used on Macos X.</p>
@@ -185,7 +225,7 @@
 <p>test_run reworked (faster to start).</p>
 </li>
 <li>
-<p>test_run extended with '-stoponfail' option.</p>
+<p>test_run extended with ‘-stoponfail’ option.</p>
 </li>
 <li>
 <p>jsonencode faster for string encoding.</p>
@@ -196,12 +236,12 @@
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/330">#330</a>: removes ALSA errors and warnings on linux.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/330">#330</a>: removes ALSA errors and warnings on linux.</li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/322">#322</a>: fix build with gcc 4.8 (ubuntu 14.04).</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/322">#322</a>: fix build with gcc 4.8 (ubuntu 14.04).</p>
 <p>Nelson 0.4.9 will be last to support gcc 4.8</p>
 </li>
 <li>
@@ -212,7 +252,7 @@
 <ul>
 <li>
 <p>multiplatforms files association based on Inter-process communication.
-open, load, execute files in latest created Nelson's process.</p>
+open, load, execute files in latest created Nelson’s process.</p>
 </li>
 <li>
 <p>event loop and command queue updated.</p>
@@ -224,7 +264,7 @@ open, load, execute files in latest created Nelson's process.</p>
 <p>getpid() returns current process identificator.</p>
 </li>
 <li>
-<p>getpid('running') returns all nelson processes identificators currently running for current user.</p>
+<p>getpid(‘running’) returns all nelson processes identificators currently running for current user.</p>
 </li>
 <li>
 <p>hostname() returns current host name of your computer.</p>
@@ -266,7 +306,7 @@ open, load, execute files in latest created Nelson's process.</p>
 <h1>0.4.7 (2020-07-31)</h1>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/311">#311</a>: betainc builtin: Incomplete beta function.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/311">#311</a>: betainc builtin: Incomplete beta function.</p>
 </li>
 <li>
 <p>add icon to figure</p>
@@ -275,12 +315,12 @@ open, load, execute files in latest created Nelson's process.</p>
 <p>some doxygen comments about mex functions.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/299">#299</a>: extends &quot;complex&quot; to manage sparse matrix.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/299">#299</a>: extends “complex” to manage sparse matrix.</p>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/300">#300</a>: nmm returns wrong error.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/300">#300</a>: nmm returns wrong error.</li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
@@ -382,14 +422,14 @@ mxGetUint64s, mxSetUint64s, mxGetComplexUint64s, mxSetComplexUint64s functions.<
 <p>mxGetClassName, mxSetClassName fully supported.</p>
 </li>
 <li>
-<p>mxGetProperty, mxSetProperty fully supported (handle, graphics object, ...).</p>
+<p>mxGetProperty, mxSetProperty fully supported (handle, graphics object, …).</p>
 </li>
 </ul>
 </li>
 </ul>
 <h2>Bug Fixes:</h2>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/295">#295</a>: sort did not return an wrong error message for struct.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/295">#295</a>: sort did not return an wrong error message for struct.</li>
 </ul>
 <h2>Compilation:</h2>
 <ul>
@@ -432,7 +472,7 @@ mxGetUint64s, mxSetUint64s, mxGetComplexUint64s, mxSetComplexUint64s functions.<
 <h1>0.4.3 (2020-03-30)</h1>
 <ul>
 <li>
-<p>mean builtin: Mean elements of an array with nanflag and 'all' support.</p>
+<p>mean builtin: Mean elements of an array with nanflag and ‘all’ support.</p>
 </li>
 <li>
 <p>sum and prod optimized.</p>
@@ -450,13 +490,13 @@ mxGetUint64s, mxSetUint64s, mxGetComplexUint64s, mxSetComplexUint64s functions.<
 <h2>Bug Fixes:</h2>
 <ul>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/287">#287</a>: Parser error message are not localized.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/287">#287</a>: Parser error message are not localized.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/286">#286</a>: [end] = sin(1) did not return an syntax error.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/286">#286</a>: [end] = sin(1) did not return an syntax error.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/284">#284</a>: Nth dimensions assignation of an empty array with 2d matrix did not work.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/284">#284</a>: Nth dimensions assignation of an empty array with 2d matrix did not work.</p>
 </li>
 </ul>
 <h2>Compilation:</h2>
@@ -474,7 +514,7 @@ mxGetUint64s, mxSetUint64s, mxGetComplexUint64s, mxSetComplexUint64s functions.<
 <h1>0.4.2 (2020-02-25)</h1>
 <ul>
 <li>
-<p>min, max builtin: Minimum/Maximum elements of an array with nanflag and 'all' support.</p>
+<p>min, max builtin: Minimum/Maximum elements of an array with nanflag and ‘all’ support.</p>
 </li>
 <li>
 <p>flipud: Flip array up to down.</p>
@@ -547,3 +587,14 @@ mxGetUint64s, mxSetUint64s, mxGetComplexUint64s, mxSetComplexUint64s functions.<
 <p><a href="CHANGELOG-0.3.x.html">Changelog v0.3.x</a></p>
 <p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

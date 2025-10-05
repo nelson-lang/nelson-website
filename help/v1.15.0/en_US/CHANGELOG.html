@@ -1,3 +1,43 @@
+<style>
+:root {
+color-scheme: light dark;
+}
+body {
+background: #fff;
+color: #222;
+font-family: 'Segoe UI', Arial, sans-serif;
+line-height: 1.7;
+margin: 0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(0,0,0,0);
+}
+a {
+color: #1976d2;
+}
+a:hover {
+color: #0d47a1;
+}
+hr {
+border-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+body {
+background: #181a1b;
+color: #e0e0e0;
+padding: 0 24px 40px 24px;
+border-left: 4px solid rgba(255,255,255,0);
+}
+a {
+color: #90caf9;
+}
+a:hover {
+color: #42a5f5;
+}
+hr {
+border-color: #333;
+}
+}
+</style>
 <h1>Changelog</h1>
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
@@ -36,7 +76,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <p><code>renameStructField</code>: New function to rename fields in structures, simplifying data manipulation and refactoring.</p>
 </li>
 <li>
-<p><code>jsondecode(filename, '-file')</code>: Added '-file' argument to allow direct reading and decoding of JSON files from disk.</p>
+<p><code>jsondecode(filename, '-file')</code>: Added ‘-file’ argument to allow direct reading and decoding of JSON files from disk.</p>
 </li>
 <li>
 <p><code>tdigest</code>: Introduced t-digest algorithm data structure for accurate quantile estimation
@@ -44,6 +84,9 @@ with configurable compression parameters.</p>
 </li>
 <li>
 <p><code>crc32</code> builtin: get crc32 checksum of a file or a string.</p>
+</li>
+<li>
+<p><code>markdown</code>: option to select output generated format (‘secure’ or ‘advanced’).</p>
 </li>
 <li>
 <p>macOS Tahoe 26: CI setup and platform support.</p>
@@ -59,6 +102,8 @@ with configurable compression parameters.</p>
 <li>easier to maintain and evolve (based on Extensible Stylesheet Language Transformations)</li>
 <li>stylesheet reworked (same online and offline)</li>
 <li>qt help support used internally removed</li>
+<li><code>http://</code> replaced by <code>https://</code></li>
+<li><code>help_browser</code> module removed</li>
 </ul>
 </li>
 <li>
@@ -86,16 +131,16 @@ with configurable compression parameters.</p>
 <p>Improved <code>xmldocchecker</code> with XSD schema validation for XML files.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/1458">#1458</a>: Eigen 5.0.0 used if detected.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1458">#1458</a>: Eigen 5.0.0 used if detected.</p>
 </li>
 <li>
-<p>GitHub CI MacOS Ventura removed and replaced by MacOS 15 intel (<a href="http://github.com/nelson-lang/nelson/issues/1457">#1457</a>)</p>
+<p>GitHub CI MacOS Ventura removed and replaced by MacOS 15 intel (<a href="https://github.com/nelson-lang/nelson/issues/1457">#1457</a>)</p>
 </li>
 <li>
 <p>markdown renderer changed to use cmark library.</p>
 </li>
 <li>
-<p>Install a nelson's external package will switch to local embedded help.</p>
+<p>Install a nelson’s external package will switch to local embedded help.</p>
 </li>
 <li>
 <p>External packages required to be rebuild with this version to use new help format.</p>
@@ -104,7 +149,7 @@ with configurable compression parameters.</p>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p><code>ans</code> variable: Fixed issue to ensure 'ans' is only created for expressions, preventing unintended variable creation in the workspace.</p>
+<p><code>ans</code> variable: Fixed issue to ensure ‘ans’ is only created for expressions, preventing unintended variable creation in the workspace.</p>
 </li>
 <li>
 <p><code>jsondecode</code>: Corrected parsing of arrays containing empty arrays, improving reliability and correctness of JSON decoding.</p>
@@ -159,7 +204,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li>Improved error message when parsing invalid anonymous functions.</li>
 <li>Boost:
 <ul>
-<li>Now supports Boost 1.88 (<a href="http://github.com/nelson-lang/nelson/issues/1378">#1378</a>).</li>
+<li>Now supports Boost 1.88 (<a href="https://github.com/nelson-lang/nelson/issues/1378">#1378</a>).</li>
 <li>Minimum required version set to 1.71.</li>
 </ul>
 </li>
@@ -173,7 +218,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1413">#1413</a>: <code>axes</code> function did not properly manage figure objects.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1413">#1413</a>: <code>axes</code> function did not properly manage figure objects.</li>
 </ul>
 <h3>Technical Improvements</h3>
 <ul>
@@ -316,17 +361,17 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <h3>Changed</h3>
 <ul>
 <li>Completion .m files allows execution without extension.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1342">#1342</a> Github CI - Ubuntu-20.04 hosted runner image removed.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1342">#1342</a> Github CI - Ubuntu-20.04 hosted runner image removed.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1346">#1346</a> [display] integer in cell are displayed as double and not as integer.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1346">#1346</a> [display] integer in cell are displayed as double and not as integer.</li>
 </ul>
 <h2>1.11.0 (2025-01-11)</h2>
 <h3>Added</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1321">#1321</a> <code>mustBeSparse</code> validator function.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1322">#1322</a> <code>cmdsep</code>: Command separator for current operating system.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1321">#1321</a> <code>mustBeSparse</code> validator function.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1322">#1322</a> <code>cmdsep</code>: Command separator for current operating system.</li>
 <li><code>urlencode</code>: Replace special characters in URLs with escape characters.</li>
 <li><code>docroot</code>: Utility to retrieve or define the root directory of Nelson Help.</li>
 <li><code>ismodule</code>: second input argument <code>isprotected</code> added.</li>
@@ -337,7 +382,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>Help Center: Access documentation in your system's web browser. Previously, the documentation was opened in the embedded Help browser.</li>
+<li>Help Center: Access documentation in your system’s web browser. Previously, the documentation was opened in the embedded Help browser.</li>
 <li>CA certificate store update.</li>
 <li>fmt library dependency updated.</li>
 <li>BS::threadpool library dependency updated.</li>
@@ -346,12 +391,12 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1324">#1324</a> Cell display could not be interrupted.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1324">#1324</a> Cell display could not be interrupted.</li>
 </ul>
 <h2>1.10.0 (2024-12-14)</h2>
 <h3>Added</h3>
 <ul>
-<li><code>detectImportOptions</code>: Generate import options from the file's content.</li>
+<li><code>detectImportOptions</code>: Generate import options from the file’s content.</li>
 <li><code>readtable</code>: Read table from file.</li>
 <li><code>writetable</code>: Write table to file.</li>
 <li><code>readcell</code>: Read cell array from file.</li>
@@ -362,10 +407,10 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li><code>csvwrite</code>: Write comma-separated value (CSV) file.</li>
 <li><code>dlmread</code>: Read ASCII-delimited file of numeric data into matrix.</li>
 <li><code>realmin</code>: Smallest normalized floating-point number.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1288">#1288</a> <code>mustBeMatrix</code>, <code>mustBeRow</code>, <code>mustBeColumn</code> validator functions.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1288">#1288</a> <code>mustBeMatrix</code>, <code>mustBeRow</code>, <code>mustBeColumn</code> validator functions.</li>
 <li><code>join</code>: Combine strings.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1292">#1292</a> Large Table Display.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1290">#1290</a> <code>VariableTypes</code> property for table: Specify the data types of table in Nelson.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1292">#1292</a> Large Table Display.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1290">#1290</a> <code>VariableTypes</code> property for table: Specify the data types of table in Nelson.</li>
 <li><code>hour</code>, <code>minute</code>, <code>second</code> component of input date and time.</li>
 </ul>
 <h3>Changed</h3>
@@ -376,13 +421,13 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li>i18n: migration PO files to JSON.</li>
 <li><code>dlmwrite</code>: rework the function to be more fast and robust.</li>
 <li><code>strjust</code>: rework the function to be more fast and robust.</li>
-<li><code>datenum</code>: support '' as format for compatibility.</li>
+<li><code>datenum</code>: support ‘’ as format for compatibility.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1303">#1303</a> <code>datevec</code> result must be normalized.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1297">#1297</a> some features have no help files.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1276">#1276</a> micromamba macos build.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1303">#1303</a> <code>datevec</code> result must be normalized.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1297">#1297</a> some features have no help files.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1276">#1276</a> micromamba macos build.</li>
 </ul>
 <h2>1.9.0 (2024-10-26)</h2>
 <h3>Added</h3>
@@ -407,15 +452,15 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <p><code>end</code> magic keyword can be overloaded for classes (applied to <code>table</code> class).</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/1250">#1250</a> <code>head</code>, <code>tail</code> functions for table and array.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1250">#1250</a> <code>head</code>, <code>tail</code> functions for table and array.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/1248">#1248</a> <code>removevars</code>, <code>renamevars</code> functions for table.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1248">#1248</a> <code>removevars</code>, <code>renamevars</code> functions for table.</p>
 </li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1259">#1259</a> Add macOS Sequoia and remove macOS Monterey CI support.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1259">#1259</a> Add macOS Sequoia and remove macOS Monterey CI support.</li>
 <li>Qt 6.8 LTS support (used on Windows 64 bits binary).</li>
 <li>Python 3.13.0 on Windows.</li>
 <li>Boost 1.86 on Windows.</li>
@@ -466,10 +511,10 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <p><code>Resize</code> - Resize figure property.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/36">#36</a> <code>datenum</code> format compatibility extended.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/36">#36</a> <code>datenum</code> format compatibility extended.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/37">#37</a> <code>datestr</code> Convert date and time to string format.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/37">#37</a> <code>datestr</code> Convert date and time to string format.</p>
 </li>
 </ul>
 <h3>Changed</h3>
@@ -478,7 +523,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>fix 'units' refresh for 'axes' object.</li>
+<li>fix ‘units’ refresh for ‘axes’ object.</li>
 </ul>
 <h2>1.7.0 (2024-08-28)</h2>
 <h3>Added</h3>
@@ -498,7 +543,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <h3>Changed</h3>
 <ul>
 <li>
-<p>Refactor the internal implementation of the 'system' built-in function.</p>
+<p>Refactor the internal implementation of the ‘system’ built-in function.</p>
 </li>
 <li>
 <p>Python 3.12.5 on Windows.</p>
@@ -559,12 +604,12 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1210">#1210</a> <code>bode</code> did not unwrap phase.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1206">#1206</a> <code>balance</code> yields wrong Transformation Matrix.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1205">#1205</a> <code>diag</code> may return wrong sub-diagonals.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1202">#1202</a> buildhelpmd does not generate SUMMARY as expected.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1201">#1201</a> Matrix Exponential <code>expm</code> might give wrong results.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1200">#1200</a> Matrix Parsing/Evaluation trouble.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1210">#1210</a> <code>bode</code> did not unwrap phase.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1206">#1206</a> <code>balance</code> yields wrong Transformation Matrix.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1205">#1205</a> <code>diag</code> may return wrong sub-diagonals.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1202">#1202</a> buildhelpmd does not generate SUMMARY as expected.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1201">#1201</a> Matrix Exponential <code>expm</code> might give wrong results.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1200">#1200</a> Matrix Parsing/Evaluation trouble.</li>
 </ul>
 <h2>1.5.0 (2024-05-31)</h2>
 <h3>Added</h3>
@@ -597,7 +642,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li>
 <p>Python interface (part 3):</p>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1160">#1160</a> Python operators in Nelson.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1160">#1160</a> Python operators in Nelson.</li>
 <li><code>keyHash</code>, <code>keyMatch</code> for python objects.</li>
 <li><code>isa</code> builtin support python types.</li>
 <li>python dictionary to Nelson dictionary <code>dictionary(pyDict)</code></li>
@@ -612,7 +657,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1195">#1195</a> <code>strcmp({'a'},[&quot;a&quot;])</code> did not return expected value.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1195">#1195</a> <code>strcmp({'a'},[&quot;a&quot;])</code> did not return expected value.</li>
 </ul>
 <h2>1.4.0 (2024-04-27)</h2>
 <h3>Added</h3>
@@ -620,8 +665,8 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li>
 <p>Python interface (part 2):</p>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1168">#1168</a> Run Python script file from Nelson.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1141">#1141</a> Help about Managing Data between Python and Nelson.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1168">#1168</a> Run Python script file from Nelson.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1141">#1141</a> Help about Managing Data between Python and Nelson.</li>
 <li><a href="https://github.com/nelson-lang/nelson/issues/1149">#1149</a> python bytes, and bytearray types were not managed.</li>
 <li><a href="https://github.com/nelson-lang/nelson/issues/1163">#1163</a> pyenv searchs python by version on Windows.</li>
 <li><a href="https://github.com/nelson-lang/nelson/issues/1164">#1164</a> Embed python distribution on Windows.</li>
@@ -646,24 +691,24 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <h3>Changed</h3>
 <ul>
 <li>Allow to call method of a variable of CLASS/HANDLE type like a function (currently, only plugged for python subtype).</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1142">#1142</a> Github Actions updated.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1157">#1157</a> Qt 6.7 support (used on Windows 64 bits binary).</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1142">#1142</a> Github Actions updated.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1157">#1157</a> Qt 6.7 support (used on Windows 64 bits binary).</li>
 <li><code>copyfile</code>, <code>isfile</code>, <code>isdir</code>, <code>mkdir</code> allow string array type as input.</li>
-<li>warning about 'Matrix is singular to working precision' for inv matrix.</li>
+<li>warning about ‘Matrix is singular to working precision’ for inv matrix.</li>
 <li>tests webtools skipped if connection fails or not available.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1144">#1144</a> test_run markdown help file had a typo.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1143">#1143</a> Linux Snapcraft version did not allow to use python.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1148">#1148</a> pyrun('print(A)','A','A',string(NaN)) did not return expected value.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1144">#1144</a> test_run markdown help file had a typo.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1143">#1143</a> Linux Snapcraft version did not allow to use python.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1148">#1148</a> pyrun(‘print(A)’,‘A’,‘A’,string(NaN)) did not return expected value.</li>
 <li><code>single(int64([1 2; 3 4]))</code> returned a wrong value.</li>
 <li><code>py.tuple</code>, <code>py.list</code> compatibility increased.</li>
-<li><code>pyenv</code> did not manage python's path with space on Windows.</li>
+<li><code>pyenv</code> did not manage python’s path with space on Windows.</li>
 <li>Matio 1.5.27 compatibility on ArchLinux.</li>
 <li>Ubuntu 24.04 LTS support.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1178">#1178</a> Fedora 40 support (CI).</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura restored.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1178">#1178</a> Fedora 40 support (CI).</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura restored.</li>
 </ul>
 <h2>1.3.0 (2024-03-30)</h2>
 <h3>Added</h3>
@@ -702,30 +747,30 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <p><code>normpdf</code> Normal probability density function.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/310">#310</a> <code>gammaln</code> Logarithm of gamma function.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/310">#310</a> <code>gammaln</code> Logarithm of gamma function.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/1112">#1112</a> <code>gradient</code> Numerical gradient.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1112">#1112</a> <code>gradient</code> Numerical gradient.</p>
 </li>
 <li>
-<p><a href="http://github.com/nelson-lang/nelson/issues/1126">#1126</a> <code>isspace</code> Determine which characters are space characters.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1126">#1126</a> <code>isspace</code> Determine which characters are space characters.</p>
 </li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1110">#1110</a> Eigen master branch (352ede96e4c331daae4e1be9a5f3f50fff951b8d) ready to use.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura disabled (Install dependencies fails)</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1110">#1110</a> Eigen master branch (352ede96e4c331daae4e1be9a5f3f50fff951b8d) ready to use.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura disabled (Install dependencies fails)</li>
 <li><code>struct</code> supports scalar string array as field name.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1110">#1110</a> add help about build and use C/C++ on fly.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1124">#1124</a> unexpected result from long statements on Multiple Lines.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1127">#1127</a> Nelson could crash if an mxn characters is displayed in the variable browser.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1125">#1125</a> Unsupported colon operator with char operands.</li>
-<li>Missing 'zoom in', 'zoom out' icons for help viewer in linux package.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1110">#1110</a> add help about build and use C/C++ on fly.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1124">#1124</a> unexpected result from long statements on Multiple Lines.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1127">#1127</a> Nelson could crash if an mxn characters is displayed in the variable browser.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1125">#1125</a> Unsupported colon operator with char operands.</li>
+<li>Missing ‘zoom in’, ‘zoom out’ icons for help viewer in linux package.</li>
 <li><code>gcd</code> without argument returned wrong error message.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1133">#1133</a> [CI] [ARCH LINUX] Warning about MPI.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1133">#1133</a> [CI] [ARCH LINUX] Warning about MPI.</li>
 </ul>
 <h2>1.2.0 (2024-02-25)</h2>
 <h3>Added</h3>
@@ -739,7 +784,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li><code>zoom </code>, <code>pan </code>, <code>rotate3d </code> functions.</li>
 <li><code>MenuBar</code>, <code>ToolBar</code> figure properties.</li>
 <li>Window menu on graphic window, list all others available windows.</li>
-<li><code>feature</code> builtin (undocument features, debug, tests, ...) content can change with next releases.</li>
+<li><code>feature</code> builtin (undocument features, debug, tests, …) content can change with next releases.</li>
 <li><code>GridAlpha</code>, <code>GridColor</code>, <code>View</code> properties for Axes.</li>
 <li>CTRL+C in help viewer, copy selected text.</li>
 <li><code>checkupdate</code> function and check update menu.</li>
@@ -762,7 +807,7 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li>Change directory with file browser line editor did not work as expected.</li>
 <li>Template to create a function with file browser was wrong.</li>
 <li>Do not allow to select multiple variable in workspace browser.</li>
-<li>File browser checks if files with the extension &quot;.m&quot; have a valid name before enable 'run' context menu.</li>
+<li>File browser checks if files with the extension “.m” have a valid name before enable ‘run’ context menu.</li>
 <li>Paste in editor with multiple tab.</li>
 <li>Starting the Nelson desktop was taking longer than necessary.</li>
 </ul>
@@ -770,9 +815,9 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <h3>Added</h3>
 <ul>
 <li>Nelson Desktop environment: file browser, command history, workspace browser, desktop layout.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1074">#1074</a> Roadmap v2.0.0</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1044">#1044</a>: LU matrix factorization.</li>
-<li><a href="http://github.com/nelson-lang/nelson/issues/1080">#1080</a> <code>LineStyle</code>, <code>LineWidth</code> properties were not implemented for surface objects.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1074">#1074</a> Roadmap v2.0.0</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1044">#1044</a>: LU matrix factorization.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1080">#1080</a> <code>LineStyle</code>, <code>LineWidth</code> properties were not implemented for surface objects.</li>
 <li><code>sky</code>, <code>abyss</code> colormaps.</li>
 </ul>
 <h2>1.0.0 (2024-01-04)</h2>
@@ -843,10 +888,10 @@ See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <p>RESTful API web service.</p>
 </li>
 <li>
-<p>Inter-process communication between Nelson's process.</p>
+<p>Inter-process communication between Nelson’s process.</p>
 </li>
 <li>
-<p>The QML engine enables nelson programs to display and manipulate graphical content using Qt's QML framework.</p>
+<p>The QML engine enables nelson programs to display and manipulate graphical content using Qt’s QML framework.</p>
 </li>
 <li>
 <p>Component Object Model (COM) client interface: binary-interface standard for software components on Windows.</p>
@@ -868,7 +913,7 @@ View your generated help files as html, markdown, pdf, gitbook or directly in Ne
 Export the test results under the xUnit reports format.</p>
 </li>
 <li>
-<p>Profiling and Code coverage tools for Nelson's language:</p>
+<p>Profiling and Code coverage tools for Nelson’s language:</p>
 <p>Nelson has a built-in profiler that is very useful to profile your code and find out what script or function is taking the most time.</p>
 </li>
 <li>
@@ -894,3 +939,14 @@ Instant access to Nelson anywhere from an web browser.</p>
 <p><a href="CHANGELOG-0.3.x.html">Changelog v0.3.x</a></p>
 <p><a href="CHANGELOG-0.2.x.html">Changelog v0.2.x</a></p>
 <p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var win = window.open(this.href, '_blank', 'noopener');
+        if (win) win.focus();
+      });
+    });
+  });
+</script>

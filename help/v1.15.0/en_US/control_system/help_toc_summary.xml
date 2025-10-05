@@ -3,7 +3,12 @@
   <toc>
     <module>control_system</module>
     <section name="Control System functions">
-      <chapter_description>Algorithms for designing, analyzing and tuning linear control systems.</chapter_description>
+      <chapter_description>
+      <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p>
+      <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p>
+      <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p>
+      <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.</p>
+    </chapter_description>
       <keyword name="abcdchk" link="abcdchk.html" description="Verifies the dimensional compatibility of matrices A, B, C, and D."/>
       <keyword name="acker" link="acker.html" description="Pole placement gain selection using Ackermann's formula."/>
       <keyword name="append" link="append.html" description="Appends the inputs and outputs of the two models."/>

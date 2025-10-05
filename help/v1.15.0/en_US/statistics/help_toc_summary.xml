@@ -3,7 +3,11 @@
   <toc>
     <module>statistics</module>
     <section name="Statistics">
-      <chapter_description>statistics functions</chapter_description>
+      <chapter_description>
+        <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.</p>
+        <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.</p>
+        <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.</p>
+    </chapter_description>
       <keyword name="corrcoef" link="corrcoef.html" description="Correlation coefficients"/>
       <keyword name="cov" link="cov.html" description="Covariance"/>
       <keyword name="mean" link="mean.html" description="Mean of array elements."/>

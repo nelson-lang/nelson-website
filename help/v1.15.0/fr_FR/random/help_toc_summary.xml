@@ -3,7 +3,11 @@
   <toc>
     <module>random</module>
     <section name="Random">
-      <chapter_description>random functions</chapter_description>
+      <chapter_description>
+        <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p>
+        <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p>
+        <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p>
+    </chapter_description>
       <keyword name="rand" link="rand.html" description="Random Number."/>
       <keyword name="randi" link="randi.html" description="Random Integer."/>
       <keyword name="randn" link="randn.html" description="Normally distributed random number."/>
