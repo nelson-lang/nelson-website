@@ -3,7 +3,7 @@
     "title": "Functions manager",
     "url": "/./index.html",
     "path": "sections/functions_manager",
-    "content": "<chapter_description> <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.<\/p> <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.<\/p> <p>Utilities are available to check for the existence of built-in, macro, or mex functions.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.</p> <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.</p> <p>Utilities are available to check for the existence of built-in, macro, or mex functions.</p> </chapter_description>"
   },
   {
     "title": "addpath",
@@ -111,7 +111,7 @@
     "title": "Modules manager",
     "url": "/./index.html",
     "path": "sections/modules_manager",
-    "content": "<chapter_description> <p>The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.<\/p> <p>It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.<\/p> <p>With support for both internal and external modules, the manager handles module metadata, paths, and versioning.<\/p> <p>It also provides utilities for organizing user-defined toolboxes, managing gateways, and ensuring that dependencies are properly loaded.<\/p> <p>This framework simplifies module distribution, integration, and maintenance, forming the backbone of Nelson’s modular architecture.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.</p> <p>It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.</p> <p>With support for both internal and external modules, the manager handles module metadata, paths, and versioning.</p> <p>It also provides utilities for organizing user-defined toolboxes, managing gateways, and ensuring that dependencies are properly loaded.</p> <p>This framework simplifies module distribution, integration, and maintenance, forming the backbone of Nelson’s modular architecture.</p> </chapter_description>"
   },
   {
     "title": "addgateway",
@@ -213,7 +213,7 @@
     "title": "Core",
     "url": "/./index.html",
     "path": "sections/core",
-    "content": "<chapter_description> <p>The Core module provides the fundamental building blocks of the Nelson environment.<\/p> <p>It includes essential services for program execution, environment management, and system interaction.<\/p> <p>Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.<\/p> <p>It also offers basic utilities for file identification, checksums, and terminal capabilities.<\/p> <p>Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Core module provides the fundamental building blocks of the Nelson environment.</p> <p>It includes essential services for program execution, environment management, and system interaction.</p> <p>Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.</p> <p>It also offers basic utilities for file identification, checksums, and terminal capabilities.</p> <p>Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.</p> </chapter_description>"
   },
   {
     "title": "banner",
@@ -291,7 +291,7 @@
     "title": "maxNumCompThreads",
     "url": "./core/maxNumCompThreads.html",
     "path": "./core/maxNumCompThreads.html",
-    "content": "Set\/Get maximum number of computional threads."
+    "content": "Set/Get maximum number of computional threads."
   },
   {
     "title": "namelengthmax",
@@ -387,7 +387,7 @@
     "title": "Engine",
     "url": "/./index.html",
     "path": "sections/engine",
-    "content": "<chapter_description> <p>The Engine module manages the execution environment of Nelson itself.<\/p> <p>It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.<\/p> <p>This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.<\/p> <p>It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Engine module manages the execution environment of Nelson itself.</p> <p>It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.</p> <p>This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.</p> <p>It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.</p> </chapter_description>"
   },
   {
     "title": "argv",
@@ -441,7 +441,7 @@
     "title": "Interpreter functions",
     "url": "/./index.html",
     "path": "sections/interpreter",
-    "content": "<chapter_description> <p>The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.<\/p> <p>It includes essential elements such as loops, conditional branching, error handling, and function declarations.<\/p> <p>The module also offers tools for parsing code, working with keywords, and managing recursion limits.<\/p> <p>Together, these features establish the fundamental syntax and semantics of the Nelson language, enabling users to write structured, dynamic, and reliable programs.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.</p> <p>It includes essential elements such as loops, conditional branching, error handling, and function declarations.</p> <p>The module also offers tools for parsing code, working with keywords, and managing recursion limits.</p> <p>Together, these features establish the fundamental syntax and semantics of the Nelson language, enabling users to write structured, dynamic, and reliable programs.</p> </chapter_description>"
   },
   {
     "title": "abort",
@@ -543,13 +543,13 @@
     "title": "try",
     "url": "./interpreter/try.html",
     "path": "./interpreter/try.html",
-    "content": "try\/catch statement."
+    "content": "try/catch statement."
   },
   {
     "title": "catch",
     "url": "./interpreter/try.html",
     "path": "./interpreter/try.html",
-    "content": "try\/catch statement."
+    "content": "try/catch statement."
   },
   {
     "title": "while",
@@ -561,7 +561,7 @@
     "title": "Error manager",
     "url": "/./index.html",
     "path": "sections/error_manager",
-    "content": "<chapter_description> <p>The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.<\/p> <p>It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.<\/p> <p>This module ensures that users can manage execution flow in the presence of failures, capture meaningful error reports, and display warnings without interrupting program execution.<\/p> <p>It forms the foundation for robust error handling and debugging in Nelson applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.</p> <p>It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.</p> <p>This module ensures that users can manage execution flow in the presence of failures, capture meaningful error reports, and display warnings without interrupting program execution.</p> <p>It forms the foundation for robust error handling and debugging in Nelson applications.</p> </chapter_description>"
   },
   {
     "title": "MException",
@@ -621,7 +621,7 @@
     "title": "Console",
     "url": "/./index.html",
     "path": "sections/console",
-    "content": "<chapter_description> <p>The Console module manages interaction with Nelson’s command window.<\/p> <p>It provides tools to control the display, handle user input, and query terminal properties.<\/p> <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Console module manages interaction with Nelson’s command window.</p> <p>It provides tools to control the display, handle user input, and query terminal properties.</p> <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p> </chapter_description>"
   },
   {
     "title": "clc",
@@ -645,7 +645,7 @@
     "title": "Display format",
     "url": "/./index.html",
     "path": "sections/display_format",
-    "content": "<chapter_description> <p>The Display Format module defines how values, variables, and expressions are presented in Nelson.<\/p> <p>It offers control over numeric formatting, text representation, and the way results are shown in the console.<\/p> <p>The module also provides mechanisms for capturing formatted output programmatically, enabling both human-readable display and programmatic handling of results.<\/p> <p>This ensures flexibility in how information is presented and reused within scripts and applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Display Format module defines how values, variables, and expressions are presented in Nelson.</p> <p>It offers control over numeric formatting, text representation, and the way results are shown in the console.</p> <p>The module also provides mechanisms for capturing formatted output programmatically, enabling both human-readable display and programmatic handling of results.</p> <p>This ensures flexibility in how information is presented and reused within scripts and applications.</p> </chapter_description>"
   },
   {
     "title": "disp",
@@ -681,7 +681,7 @@
     "title": "Characters encoding",
     "url": "/./index.html",
     "path": "sections/characters_encoding",
-    "content": "<chapter_description> <p>The Characters Encoding module provides tools for converting between native byte representations and Unicode characters.<\/p> <p>It enables scripts to correctly interpret and manipulate text in various encodings, ensuring compatibility across different platforms and locales.<\/p> <p>The module also includes functionality for detecting character sets that match a given input, facilitating reliable text processing and internationalization.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Characters Encoding module provides tools for converting between native byte representations and Unicode characters.</p> <p>It enables scripts to correctly interpret and manipulate text in various encodings, ensuring compatibility across different platforms and locales.</p> <p>The module also includes functionality for detecting character sets that match a given input, facilitating reliable text processing and internationalization.</p> </chapter_description>"
   },
   {
     "title": "native2unicode",
@@ -705,7 +705,7 @@
     "title": "Localization functions",
     "url": "/./index.html",
     "path": "sections/localization",
-    "content": "<chapter_description> <p>The Localization module manages language settings and internationalization in Nelson.<\/p> <p>It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.<\/p> <p>This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Localization module manages language settings and internationalization in Nelson.</p> <p>It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.</p> <p>This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.</p> </chapter_description>"
   },
   {
     "title": "getavailablelanguages",
@@ -735,7 +735,7 @@
     "title": "I18n functions",
     "url": "/./index.html",
     "path": "sections/i18n",
-    "content": "<chapter_description> <p>The i18n module provides tools for internationalization and localization of text within Nelson.<\/p> <p>It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.<\/p> <p>This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The i18n module provides tools for internationalization and localization of text within Nelson.</p> <p>It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.</p> <p>This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.</p> </chapter_description>"
   },
   {
     "title": "gettext",
@@ -765,7 +765,7 @@
     "title": "Types module",
     "url": "/./index.html",
     "path": "sections/types",
-    "content": "<chapter_description> <p>The Types module provides tools for managing and inspecting data types in Nelson.<\/p> <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.<\/p> <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Types module provides tools for managing and inspecting data types in Nelson.</p> <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.</p> <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.</p> </chapter_description>"
   },
   {
     "title": "class",
@@ -939,7 +939,7 @@
     "title": "Logical type functions",
     "url": "/./index.html",
     "path": "sections/logical",
-    "content": "<chapter_description> <p>The Logical Type module provides tools for working with Boolean values and logical operations in Nelson.<\/p> <p>It enables the creation, conversion, and manipulation of logical data, supporting fundamental logical operations that are essential for control flow, conditional evaluation, and decision-making in scripts and programs.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Logical Type module provides tools for working with Boolean values and logical operations in Nelson.</p> <p>It enables the creation, conversion, and manipulation of logical data, supporting fundamental logical operations that are essential for control flow, conditional evaluation, and decision-making in scripts and programs.</p> </chapter_description>"
   },
   {
     "title": "false",
@@ -969,7 +969,7 @@
     "title": "Single type",
     "url": "/./index.html",
     "path": "sections/single",
-    "content": "<chapter_description> <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.<\/p> <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p> <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p> </chapter_description>"
   },
   {
     "title": "single",
@@ -981,7 +981,7 @@
     "title": "Double",
     "url": "/./index.html",
     "path": "sections/double",
-    "content": "<chapter_description> <p>The Double Type module provides tools for handling double-precision numeric values in Nelson.<\/p> <p>It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Double Type module provides tools for handling double-precision numeric values in Nelson.</p> <p>It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.</p> </chapter_description>"
   },
   {
     "title": "double",
@@ -1011,7 +1011,7 @@
     "title": "Integers type",
     "url": "/./index.html",
     "path": "sections/integer",
-    "content": "<chapter_description> <p>The Integer Types module provides tools for working with signed and unsigned integers of various sizes in Nelson.<\/p> <p>These types are particularly useful for efficiently storing and processing large datasets, such as images or large numeric arrays.<\/p> <p>The module supports conversions between integer formats and provides access to the minimum and maximum values representable for each integer type, ensuring safe and precise integer arithmetic.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Integer Types module provides tools for working with signed and unsigned integers of various sizes in Nelson.</p> <p>These types are particularly useful for efficiently storing and processing large datasets, such as images or large numeric arrays.</p> <p>The module supports conversions between integer formats and provides access to the minimum and maximum values representable for each integer type, ensuring safe and precise integer arithmetic.</p> </chapter_description>"
   },
   {
     "title": "int16",
@@ -1077,7 +1077,7 @@
     "title": "Sparse type",
     "url": "/./index.html",
     "path": "sections/sparse",
-    "content": "<chapter_description> <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.<\/p> <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.<\/p> <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.</p> <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.</p> <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.</p> </chapter_description>"
   },
   {
     "title": "IJV",
@@ -1137,7 +1137,7 @@
     "title": "String type",
     "url": "/./index.html",
     "path": "sections/string",
-    "content": "<chapter_description> <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.<\/p> <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.<\/p> <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.</p> <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.</p> <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.</p> </chapter_description>"
   },
   {
     "title": "append",
@@ -1359,7 +1359,7 @@
     "title": "Function_handle functions",
     "url": "/./index.html",
     "path": "sections/function_handle",
-    "content": "<chapter_description> <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.<\/p> <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.<\/p> <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.</p> <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.</p> <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.</p> </chapter_description>"
   },
   {
     "title": "Anonymous Functions",
@@ -1389,7 +1389,7 @@
     "title": "Handle",
     "url": "/./index.html",
     "path": "sections/handle",
-    "content": "<chapter_description> <p>The Handle module provides tools for creating and manipulating handle objects in Nelson.<\/p> <p>Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.<\/p> <p>This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Handle module provides tools for creating and manipulating handle objects in Nelson.</p> <p>Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.</p> <p>This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.</p> </chapter_description>"
   },
   {
     "title": "delete",
@@ -1449,7 +1449,7 @@
     "title": "Data structures",
     "url": "/./index.html",
     "path": "sections/data_structures",
-    "content": "<chapter_description> <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.<\/p> <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.<\/p> <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.</p> <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.</p> <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.</p> </chapter_description>"
   },
   {
     "title": "arrayfun",
@@ -1569,7 +1569,7 @@
     "title": "Dictionaries",
     "url": "/./index.html",
     "path": "sections/dictionary",
-    "content": "<chapter_description> <p>The Dictionary module provides tools for working with key-value mappings in Nelson.<\/p> <p>It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.<\/p> <p>This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Dictionary module provides tools for working with key-value mappings in Nelson.</p> <p>It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.</p> <p>This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.</p> </chapter_description>"
   },
   {
     "title": "configureDictionary",
@@ -1659,7 +1659,7 @@
     "title": "Tables",
     "url": "/./index.html",
     "path": "sections/table",
-    "content": "<chapter_description> <p>The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.<\/p> <p>Tables are array-like structures with named variables (columns), each capable of holding different data types.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.</p> <p>Tables are array-like structures with named variables (columns), each capable of holding different data types.</p> </chapter_description>"
   },
   {
     "title": "Accessing and Manipulating Tables in Nelson",
@@ -1674,7 +1674,7 @@
     "content": ""
   },
   {
-    "title": "Read\/Write table to files",
+    "title": "Read/Write table to files",
     "url": "./table/3_read_write_table.html",
     "path": "./table/3_read_write_table.html",
     "content": ""
@@ -1767,7 +1767,7 @@
     "title": "Overloading",
     "url": "/./index.html",
     "path": "sections/overload",
-    "content": "<chapter_description> <p>The Overloading module provides mechanisms for customizing the behavior of functions and operators in Nelson.<\/p> <p>It allows users to define how standard operations or built-in functions should behave when applied to user-defined types or objects.<\/p> <p>This capability enables the extension of Nelson’s language features, supporting more natural and expressive use of custom data structures.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Overloading module provides mechanisms for customizing the behavior of functions and operators in Nelson.</p> <p>It allows users to define how standard operations or built-in functions should behave when applied to user-defined types or objects.</p> <p>This capability enables the extension of Nelson’s language features, supporting more natural and expressive use of custom data structures.</p> </chapter_description>"
   },
   {
     "title": "overloading",
@@ -1779,7 +1779,7 @@
     "title": "Operators",
     "url": "/./index.html",
     "path": "sections/operators",
-    "content": "<chapter_description> <p>The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.<\/p> <p>It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.<\/p> <p>This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.</p> <p>It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.</p> <p>This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.</p> </chapter_description>"
   },
   {
     "title": "all",
@@ -1905,7 +1905,7 @@
     "title": "mrdivide",
     "url": "./operators/mrdivide.html",
     "path": "./operators/mrdivide.html",
-    "content": "Matrix right division, \/ operator."
+    "content": "Matrix right division, / operator."
   },
   {
     "title": "mtimes",
@@ -1947,7 +1947,7 @@
     "title": "rdivide",
     "url": "./operators/rdivide.html",
     "path": "./operators/rdivide.html",
-    "content": "Right division, .\/ operator"
+    "content": "Right division, ./ operator"
   },
   {
     "title": "shortcutand",
@@ -2013,7 +2013,7 @@
     "title": "Constructors functions",
     "url": "/./index.html",
     "path": "sections/constructors_functions",
-    "content": "<chapter_description> <p>The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.<\/p> <p>It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.<\/p> <p>This module forms the basis for initializing data structures and performing mathematical and numerical computations.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.</p> <p>It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.</p> <p>This module forms the basis for initializing data structures and performing mathematical and numerical computations.</p> </chapter_description>"
   },
   {
     "title": "Inf",
@@ -2073,7 +2073,7 @@
     "title": "Elementary functions",
     "url": "/./index.html",
     "path": "sections/elementary_functions",
-    "content": "<chapter_description> <p>The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.<\/p> <p>It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.<\/p> <p>The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.</p> <p>It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.</p> <p>The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.</p> </chapter_description>"
   },
   {
     "title": "abs",
@@ -2637,7 +2637,7 @@
     "title": "Trigonometric functions",
     "url": "/./index.html",
     "path": "sections/trigonometric_functions",
-    "content": "<chapter_description> <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.<\/p> <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.<\/p> <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.</p> <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.</p> <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.</p> </chapter_description>"
   },
   {
     "title": "acos",
@@ -2937,7 +2937,7 @@
     "title": "Special functions",
     "url": "/./index.html",
     "path": "sections/special_functions",
-    "content": "<chapter_description> <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.<\/p> <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.<\/p> <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.</p> <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.</p> <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.</p> </chapter_description>"
   },
   {
     "title": "betainc",
@@ -3003,7 +3003,7 @@
     "title": "Linear algebra",
     "url": "/./index.html",
     "path": "sections/linear_algebra",
-    "content": "<chapter_description> <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.<\/p> <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.<\/p> <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.</p> <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.</p> <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.</p> </chapter_description>"
   },
   {
     "title": "balance",
@@ -3183,7 +3183,7 @@
     "title": "Statistics",
     "url": "/./index.html",
     "path": "sections/statistics",
-    "content": "<chapter_description> <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.<\/p> <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.<\/p> <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.</p> <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.</p> <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.</p> </chapter_description>"
   },
   {
     "title": "corrcoef",
@@ -3225,7 +3225,7 @@
     "title": "Data analysis",
     "url": "/./index.html",
     "path": "sections/data_analysis",
-    "content": "<chapter_description> <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.<\/p> <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.<\/p> <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.</p> <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.</p> <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.</p> </chapter_description>"
   },
   {
     "title": "conv",
@@ -3303,7 +3303,7 @@
     "title": "Polynomials",
     "url": "/./index.html",
     "path": "sections/polynomial_functions",
-    "content": "<chapter_description> <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.<\/p> <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.<\/p> <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.</p> <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.</p> <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.</p> </chapter_description>"
   },
   {
     "title": "deconv",
@@ -3357,7 +3357,7 @@
     "title": "Geometry",
     "url": "/./index.html",
     "path": "sections/geometry",
-    "content": "<chapter_description> <p>The Geometry module provides tools for performing geometric transformations and computations in Nelson.<\/p> <p>It supports rotation operations in three-dimensional space, enabling the construction of transformation matrices for manipulating objects and coordinate systems.<\/p> <p>This module is useful for applications in computer graphics, robotics, and spatial analysis.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Geometry module provides tools for performing geometric transformations and computations in Nelson.</p> <p>It supports rotation operations in three-dimensional space, enabling the construction of transformation matrices for manipulating objects and coordinate systems.</p> <p>This module is useful for applications in computer graphics, robotics, and spatial analysis.</p> </chapter_description>"
   },
   {
     "title": "rotx",
@@ -3381,7 +3381,7 @@
     "title": "Control System functions",
     "url": "/./index.html",
     "path": "sections/control_system",
-    "content": "<chapter_description> <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.<\/p> <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.<\/p> <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.<\/p> <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p> <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p> <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p> <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.</p> </chapter_description>"
   },
   {
     "title": "abcdchk",
@@ -3753,7 +3753,7 @@
     "title": "Signal Processing",
     "url": "/./index.html",
     "path": "sections/signal_processing",
-    "content": "<chapter_description> <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.<\/p> <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.<\/p> <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p> <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p> <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p> </chapter_description>"
   },
   {
     "title": "bartlett",
@@ -3831,7 +3831,7 @@
     "title": "Subroutine Library In COntrol Theory",
     "url": "/./index.html",
     "path": "sections/slicot",
-    "content": "<chapter_description> <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.<\/p> <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.<\/p> <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p> <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.</p> <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.</p> </chapter_description>"
   },
   {
     "title": "SLICOT License",
@@ -3849,7 +3849,7 @@
     "title": "slicot_ab04md",
     "url": "./slicot/slicot_ab04md.html",
     "path": "./slicot/slicot_ab04md.html",
-    "content": "Discrete-time \/ continuous-time systems conversion by a bilinear transformation."
+    "content": "Discrete-time / continuous-time systems conversion by a bilinear transformation."
   },
   {
     "title": "slicot_ab07nd",
@@ -3981,7 +3981,7 @@
     "title": "FFTW",
     "url": "/./index.html",
     "path": "sections/fftw",
-    "content": "<chapter_description> <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.<\/p> <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.<\/p> <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.</p> <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.</p> <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.</p> </chapter_description>"
   },
   {
     "title": "FFTW License",
@@ -3993,7 +3993,7 @@
     "title": "FFTWwrapper",
     "url": "./fftw/FFTWwrapper.html",
     "path": "./fftw/FFTWwrapper.html",
-    "content": "load\/free FFTW library dynamically."
+    "content": "load/free FFTW library dynamically."
   },
   {
     "title": "fft",
@@ -4047,7 +4047,7 @@
     "title": "Random",
     "url": "/./index.html",
     "path": "sections/random",
-    "content": "<chapter_description> <p>The Random module provides tools for generating random numbers and random sequences in Nelson.<\/p> <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.<\/p> <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p> <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p> <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p> </chapter_description>"
   },
   {
     "title": "rand",
@@ -4083,7 +4083,7 @@
     "title": "OS functions",
     "url": "/./index.html",
     "path": "sections/os_functions",
-    "content": "<chapter_description> <p>The OS Functions module provides tools for interacting with the operating system in Nelson.<\/p> <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.<\/p> <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux\/Unix platforms.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The OS Functions module provides tools for interacting with the operating system in Nelson.</p> <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.</p> <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux/Unix platforms.</p> </chapter_description>"
   },
   {
     "title": "cmdsep",
@@ -4185,7 +4185,7 @@
     "title": "Files and folders functions",
     "url": "/./index.html",
     "path": "sections/files_folders_functions",
-    "content": "<chapter_description> <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.<\/p> <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.<\/p> <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.</p> <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.</p> <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.</p> </chapter_description>"
   },
   {
     "title": "cd",
@@ -4317,7 +4317,7 @@
     "title": "File archiver functions",
     "url": "/./index.html",
     "path": "sections/file_archiver",
-    "content": "<chapter_description> <p>The File Archiver module provides tools for compressing and decompressing files in Nelson.<\/p> <p>It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The File Archiver module provides tools for compressing and decompressing files in Nelson.</p> <p>It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.</p> </chapter_description>"
   },
   {
     "title": "unzip",
@@ -4335,7 +4335,7 @@
     "title": "Memory manager functions",
     "url": "/./index.html",
     "path": "sections/memory_manager",
-    "content": "<chapter_description> <p>The Memory Manager module provides tools for managing variables and memory in Nelson.<\/p> <p>It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.<\/p> <p>The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Memory Manager module provides tools for managing variables and memory in Nelson.</p> <p>It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.</p> <p>The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.</p> </chapter_description>"
   },
   {
     "title": "acquirevar",
@@ -4419,7 +4419,7 @@
     "title": "Time functions",
     "url": "/./index.html",
     "path": "sections/time",
-    "content": "<chapter_description> <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.<\/p> <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.<\/p> <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p> <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p> <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p> </chapter_description>"
   },
   {
     "title": "addtodate",
@@ -4455,7 +4455,7 @@
     "title": "datenum",
     "url": "./time/datenum.html",
     "path": "./time/datenum.html",
-    "content": "Return the date\/time input as a serial day number."
+    "content": "Return the date/time input as a serial day number."
   },
   {
     "title": "datestr",
@@ -4551,7 +4551,7 @@
     "title": "Stream manager",
     "url": "/./index.html",
     "path": "sections/stream_manager",
-    "content": "<chapter_description> <p>The Stream Manager module provides tools for managing input and output streams in Nelson.<\/p> <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.<\/p> <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I\/O operations within scripts and applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p> <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p> <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p> </chapter_description>"
   },
   {
     "title": "diary",
@@ -4575,7 +4575,7 @@
     "title": "ferror",
     "url": "./stream_manager/ferror.html",
     "path": "./stream_manager/ferror.html",
-    "content": "Test for i\/o read\/write errors."
+    "content": "Test for i/o read/write errors."
   },
   {
     "title": "fgetl",
@@ -4677,7 +4677,7 @@
     "title": "HDF5",
     "url": "/./index.html",
     "path": "sections/hdf5",
-    "content": "<chapter_description> <p>The HDF5 module provides support for working with Hierarchical Data Format (HDF5) files in Nelson.<\/p> <p>It allows users to create datasets, read and write data and attributes, and explore file contents.<\/p> <p>In addition to standard HDF5 support, it includes utilities for Nelson's native .nh5 format, enabling users to save, load, and inspect workspace variables efficiently.<\/p> <p>This module is essential for managing large, structured, and portable scientific data.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The HDF5 module provides support for working with Hierarchical Data Format (HDF5) files in Nelson.</p> <p>It allows users to create datasets, read and write data and attributes, and explore file contents.</p> <p>In addition to standard HDF5 support, it includes utilities for Nelson's native .nh5 format, enabling users to save, load, and inspect workspace variables efficiently.</p> <p>This module is essential for managing large, structured, and portable scientific data.</p> </chapter_description>"
   },
   {
     "title": "h5create",
@@ -4755,7 +4755,7 @@
     "title": "MATIO",
     "url": "/./index.html",
     "path": "sections/matio",
-    "content": "<chapter_description> <p>The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.<\/p> <p>It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.<\/p> <p>With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.</p> <p>It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.</p> <p>With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.</p> </chapter_description>"
   },
   {
     "title": "ismatfile",
@@ -4791,7 +4791,7 @@
     "title": "JavaScript Object Notation",
     "url": "/./index.html",
     "path": "sections/JSON",
-    "content": "<chapter_description> <p>The JSON module provides functions to encode, decode, and format JSON data, allowing easy exchange of structured information between Nelson and external systems.<\/p> <p>JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used for transmitting attribute-value pairs and arrays.<\/p> <p>This module enables Nelson to interoperate with web services, configuration files, and applications that rely on JSON.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The JSON module provides functions to encode, decode, and format JSON data, allowing easy exchange of structured information between Nelson and external systems.</p> <p>JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used for transmitting attribute-value pairs and arrays.</p> <p>This module enables Nelson to interoperate with web services, configuration files, and applications that rely on JSON.</p> </chapter_description>"
   },
   {
     "title": "jsondecode",
@@ -4815,7 +4815,7 @@
     "title": "Spreadsheet",
     "url": "/./index.html",
     "path": "sections/SPREADSHEET",
-    "content": "<chapter_description> <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.<\/p> <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.<\/p> <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p> <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p> <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p> </chapter_description>"
   },
   {
     "title": "csvread",
@@ -4887,7 +4887,7 @@
     "title": "Message Passing Interface",
     "url": "/./index.html",
     "path": "sections/mpi",
-    "content": "<chapter_description> <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.<\/p> <p>This module provides functions to initialize, manage, and finalize MPI environments, as well as to perform communication between processes, both point-to-point and collective.<\/p> <p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.</p> <p>This module provides functions to initialize, manage, and finalize MPI environments, as well as to perform communication between processes, both point-to-point and collective.</p> <p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.</p> </chapter_description>"
   },
   {
     "title": "MPI_Allreduce",
@@ -5025,7 +5025,7 @@
     "title": "Parallel",
     "url": "/./index.html",
     "path": "sections/parallel",
-    "content": "<chapter_description> <p>The parallel module provides tools for running computations asynchronously in the background, managing task scheduling, and retrieving results.<\/p> <p>It enables Nelson programs to execute functions concurrently, improving efficiency and responsiveness by offloading work to background workers.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The parallel module provides tools for running computations asynchronously in the background, managing task scheduling, and retrieving results.</p> <p>It enables Nelson programs to execute functions concurrently, improving efficiency and responsiveness by offloading work to background workers.</p> </chapter_description>"
   },
   {
     "title": "afterAll",
@@ -5085,7 +5085,7 @@
     "title": "Inter Process Communication",
     "url": "/./index.html",
     "path": "sections/ipc",
-    "content": "<chapter_description> <p>The ipc module provides basic tools for interacting with processes and enabling communication between them.<\/p> <p>It allows retrieving process identifiers and using a communicator object for exchanging information across Nelson processes.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The ipc module provides basic tools for interacting with processes and enabling communication between them.</p> <p>It allows retrieving process identifiers and using a communicator object for exchanging information across Nelson processes.</p> </chapter_description>"
   },
   {
     "title": "getpid",
@@ -5103,7 +5103,7 @@
     "title": "Audio playback functions",
     "url": "/./index.html",
     "path": "sections/audio",
-    "content": "<chapter_description> <p>The audio module provides functions for reading, writing, analyzing, and playing audio files.<\/p> <p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.<\/p> <p>It also includes utilities for signal conversion and sound generation.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The audio module provides functions for reading, writing, analyzing, and playing audio files.</p> <p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.</p> <p>It also includes utilities for signal conversion and sound generation.</p> </chapter_description>"
   },
   {
     "title": "audiodevinfo",
@@ -5121,7 +5121,7 @@
     "title": "audiometadata",
     "url": "./audio/audiometadata.html",
     "path": "./audio/audiometadata.html",
-    "content": "Get\/Set metadata of audio file ."
+    "content": "Get/Set metadata of audio file ."
   },
   {
     "title": "audioplayer",
@@ -5253,7 +5253,7 @@
     "title": "Graphics functions",
     "url": "/./index.html",
     "path": "sections/graphics",
-    "content": "<chapter_description> <p>The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.<\/p> <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.</p> <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.</p> </chapter_description>"
   },
   {
     "title": "abyss",
@@ -5862,10 +5862,10 @@
     "content": "Enable zoom mode."
   },
   {
-    "title": "Graphics I\/O functions",
+    "title": "Graphics I/O functions",
     "url": "/./index.html",
     "path": "sections/graphics_io",
-    "content": "<chapter_description> <p>The Graphics I\/O module provides functions for importing, exporting, and managing graphical content and image formats.<\/p> <p>It supports reading and writing image files, copying figures, and saving plots in various file formats for interoperability with other applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Graphics I/O module provides functions for importing, exporting, and managing graphical content and image formats.</p> <p>It supports reading and writing image files, copying figures, and saving plots in various file formats for interoperability with other applications.</p> </chapter_description>"
   },
   {
     "title": "copygraphics",
@@ -5901,7 +5901,7 @@
     "title": "Image Processing functions",
     "url": "/./index.html",
     "path": "sections/image_processing",
-    "content": "<chapter_description> <p>The Image Processing module provides basic operations for manipulating images, including format conversion, resizing, and rotation.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Image Processing module provides basic operations for manipulating images, including format conversion, resizing, and rotation.</p> </chapter_description>"
   },
   {
     "title": "im2double",
@@ -5925,7 +5925,7 @@
     "title": "Gui module",
     "url": "/./index.html",
     "path": "sections/gui",
-    "content": "<chapter_description> <p>The GUI module provides functions to create and interact with graphical user interface components, dialogs, and application windows.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The GUI module provides functions to create and interact with graphical user interface components, dialogs, and application windows.</p> </chapter_description>"
   },
   {
     "title": "commandhistory",
@@ -5979,7 +5979,7 @@
     "title": "qt_verbose",
     "url": "./gui/qt_verbose.html",
     "path": "./gui/qt_verbose.html",
-    "content": "show\/hide Qt debug message."
+    "content": "show/hide Qt debug message."
   },
   {
     "title": "questdlg",
@@ -6009,7 +6009,7 @@
     "title": "QML engine",
     "url": "/./index.html",
     "path": "sections/qml_engine",
-    "content": "<chapter_description> <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.<\/p> <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p> <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p> </chapter_description>"
   },
   {
     "title": "QObject_classname",
@@ -6177,7 +6177,7 @@
     "title": "Text editor",
     "url": "/./index.html",
     "path": "sections/text_editor",
-    "content": "<chapter_description> <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and formatting Nelson scripts and files.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and formatting Nelson scripts and files.</p> </chapter_description>"
   },
   {
     "title": "edit",
@@ -6201,7 +6201,7 @@
     "title": "Web tools",
     "url": "/./index.html",
     "path": "sections/webtools",
-    "content": "<chapter_description> <p>The WebTools module provides functions to interact with web resources, transfer data via URLs, and work with RESTful web services.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The WebTools module provides functions to interact with web resources, transfer data via URLs, and work with RESTful web services.</p> </chapter_description>"
   },
   {
     "title": "checkupdate",
@@ -6249,7 +6249,7 @@
     "title": "Nelson in the cloud",
     "url": "/./index.html",
     "path": "sections/sio_client",
-    "content": "<chapter_description> <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.</p> </chapter_description>"
   },
   {
     "title": "sioemit",
@@ -6267,16 +6267,16 @@
     "title": "Dynamic link",
     "url": "/./index.html",
     "path": "sections/dynamic_link",
-    "content": "<chapter_description> <p>The Dynamic Link module enables Nelson to build, load, and call C\/C++ and Fortran code at runtime.<\/p> <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.<\/p> <p>By default, Nelson does not try to detect a C\/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p> <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p> <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p> </chapter_description>"
   },
   {
-    "title": "Build C\/C++ code on the fly",
+    "title": "Build C/C++ code on the fly",
     "url": "./dynamic_link/1_c_cpp_build_on_fly.html",
     "path": "./dynamic_link/1_c_cpp_build_on_fly.html",
-    "content": "Build C\/C++ code on the fly"
+    "content": "Build C/C++ code on the fly"
   },
   {
-    "title": "Supported C\/C++ compilers",
+    "title": "Supported C/C++ compilers",
     "url": "./dynamic_link/2_supported_compilers.html",
     "path": "./dynamic_link/2_supported_compilers.html",
     "content": ""
@@ -6285,7 +6285,7 @@
     "title": "libpointer datatype",
     "url": "./dynamic_link/C_datatype.html",
     "path": "./dynamic_link/C_datatype.html",
-    "content": "C\/Nelson equivalent data types"
+    "content": "C/Nelson equivalent data types"
   },
   {
     "title": "cmake",
@@ -6393,7 +6393,7 @@
     "title": "dlsym",
     "url": "./dynamic_link/dlsym.html",
     "path": "./dynamic_link/dlsym.html",
-    "content": "Loads a C\/Fortran symbol for an dynamic library."
+    "content": "Loads a C/Fortran symbol for an dynamic library."
   },
   {
     "title": "dlsym_delete",
@@ -6423,7 +6423,7 @@
     "title": "havecompiler",
     "url": "./dynamic_link/havecompiler.html",
     "path": "./dynamic_link/havecompiler.html",
-    "content": "Detect if a C\/C++ compiler is configured."
+    "content": "Detect if a C/C++ compiler is configured."
   },
   {
     "title": "libpointer",
@@ -6489,7 +6489,7 @@
     "title": "MEX functions",
     "url": "/./index.html",
     "path": "sections/mex",
-    "content": "<chapter_description> <p>The MEX (MATLAB Executable) module allows C\/C++ code to interface with Nelson, extending its functionality and enabling access to Nelson’s engine, variables, and functions.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The MEX (MATLAB Executable) module allows C/C++ code to interface with Nelson, extending its functionality and enabling access to Nelson’s engine, variables, and functions.</p> </chapter_description>"
   },
   {
     "title": "dlgeneratemexgateway",
@@ -6585,7 +6585,7 @@
     "title": "Fortran to C",
     "url": "/./index.html",
     "path": "sections/f2c",
-    "content": "<chapter_description> <p>The F2C module allows Nelson users to convert legacy Fortran 77 source files into C code.<\/p> <p>This enables seamless integration of older Fortran routines into Nelson workflows, supporting compilation, execution, and interaction with Nelson variables.<\/p> <p>It is particularly useful for leveraging existing numerical algorithms or legacy scientific codebases within a modern Nelson environment.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The F2C module allows Nelson users to convert legacy Fortran 77 source files into C code.</p> <p>This enables seamless integration of older Fortran routines into Nelson workflows, supporting compilation, execution, and interaction with Nelson variables.</p> <p>It is particularly useful for leveraging existing numerical algorithms or legacy scientific codebases within a modern Nelson environment.</p> </chapter_description>"
   },
   {
     "title": "f2c",
@@ -6597,7 +6597,7 @@
     "title": "NIG",
     "url": "/./index.html",
     "path": "sections/nig",
-    "content": "<chapter_description> <p>The NIG module provides tools to easily interface C or Fortran functions with Nelson.<\/p> <p>It simplifies the process of creating gateways that allow compiled routines to be called directly from Nelson scripts or functions, enabling high-performance computation and reuse of existing numerical libraries.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The NIG module provides tools to easily interface C or Fortran functions with Nelson.</p> <p>It simplifies the process of creating gateways that allow compiled routines to be called directly from Nelson scripts or functions, enabling high-performance computation and reuse of existing numerical libraries.</p> </chapter_description>"
   },
   {
     "title": "nig",
@@ -6609,7 +6609,7 @@
     "title": "Component Object Model (COM) Client Interface",
     "url": "/./index.html",
     "path": "sections/com_engine",
-    "content": "<chapter_description> <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.<\/p> <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.<\/p> <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p> <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p> <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p> </chapter_description>"
   },
   {
     "title": "COM examples",
@@ -6729,7 +6729,7 @@
     "title": "Python engine",
     "url": "/./index.html",
     "path": "sections/python_engine",
-    "content": "<chapter_description> <p>The Python Engine module allows Nelson users to seamlessly interface with Python, leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.<\/p> <p>It provides functions to run Python code, manage interpreter environments, and exchange data between Nelson and Python.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Python Engine module allows Nelson users to seamlessly interface with Python, leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.</p> <p>It provides functions to run Python code, manage interpreter environments, and exchange data between Nelson and Python.</p> </chapter_description>"
   },
   {
     "title": "The power of calling Python from Nelson",
@@ -6783,7 +6783,7 @@
     "title": "Julia engine",
     "url": "/./index.html",
     "path": "sections/julia_engine",
-    "content": "<chapter_description> <p>The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.<\/p> <p>It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.</p> <p>It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.</p> </chapter_description>"
   },
   {
     "title": "jlenv",
@@ -6813,7 +6813,7 @@
     "title": "History manager",
     "url": "/./index.html",
     "path": "sections/history_manager",
-    "content": "<chapter_description> <p>The History Manager module in Nelson provides tools to access and manage the command history of your session.<\/p> <p>It allows users to review previously executed commands, recall them for reuse, and maintain an organized workflow.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The History Manager module in Nelson provides tools to access and manage the command history of your session.</p> <p>It allows users to review previously executed commands, recall them for reuse, and maintain an organized workflow.</p> </chapter_description>"
   },
   {
     "title": "history",
@@ -6825,7 +6825,7 @@
     "title": "Debugger functions",
     "url": "/./index.html",
     "path": "sections/debugger",
-    "content": "<chapter_description> <p>The Debugger module in Nelson provides functions to inspect and analyze program execution.<\/p> <p>It is designed to help users identify errors, trace the flow of execution, and better understand the state of variables during runtime.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Debugger module in Nelson provides functions to inspect and analyze program execution.</p> <p>It is designed to help users identify errors, trace the flow of execution, and better understand the state of variables during runtime.</p> </chapter_description>"
   },
   {
     "title": "dbstack",
@@ -6837,7 +6837,7 @@
     "title": "Profiling tools",
     "url": "/./index.html",
     "path": "sections/profiler",
-    "content": "<chapter_description> <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.<\/p> <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.</p> <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.</p> </chapter_description>"
   },
   {
     "title": "profile",
@@ -6855,7 +6855,7 @@
     "title": "Tests framework for Nelson",
     "url": "/./index.html",
     "path": "sections/tests_manager",
-    "content": "<chapter_description> <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.<\/p> <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.</p> <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.</p> </chapter_description>"
   },
   {
     "title": "test_makeref",
@@ -6879,7 +6879,7 @@
     "title": "Validators",
     "url": "/./index.html",
     "path": "sections/validators",
-    "content": "<chapter_description> <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.<\/p> <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.<\/p> <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p> <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p> <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p> </chapter_description>"
   },
   {
     "title": "mustBeA",
@@ -7101,7 +7101,7 @@
     "title": "Assertion functions",
     "url": "/./index.html",
     "path": "sections/assert_functions",
-    "content": "<chapter_description> <p>The Asserts Functions module in Nelson provides tools for validating program behavior and verifying conditions during development or testing.<\/p> <p>These functions help ensure that computations and logical conditions meet expected criteria, improving code reliability and catching errors early.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Asserts Functions module in Nelson provides tools for validating program behavior and verifying conditions during development or testing.</p> <p>These functions help ensure that computations and logical conditions meet expected criteria, improving code reliability and catching errors early.</p> </chapter_description>"
   },
   {
     "title": "assert",
@@ -7143,7 +7143,7 @@
     "title": "Documentation and Help Management",
     "url": "/./index.html",
     "path": "sections/help_tools",
-    "content": "<chapter_description> <p>The Help Tools module provides functions to create, convert, and manage documentation for Nelson.<\/p> <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF, and website-ready formats, enabling developers to maintain and distribute comprehensive documentation efficiently.<\/p> <\/chapter_description>"
+    "content": "<chapter_description> <p>The Help Tools module provides functions to create, convert, and manage documentation for Nelson.</p> <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF, and website-ready formats, enabling developers to maintain and distribute comprehensive documentation efficiently.</p> </chapter_description>"
   },
   {
     "title": "buildhelp",

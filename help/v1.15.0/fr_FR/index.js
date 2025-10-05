@@ -1,7230 +1,7369 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1759693350
+// Auto-generated on 1759693899
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
   {
-    "title": "Functions manager",
-    "url": "./functions_manager/index.html",
-    "path": "sections/functions_manager",
-    "content": "<chapter_description> <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.<\/p> <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.<\/p> <p>Utilities are available to check for the existence of built-in, macro, or mex functions.<\/p> <\/chapter_description>"
+    title: "Functions manager",
+    url: "./functions_manager/index.html",
+    path: "sections/functions_manager",
+    content:
+      "<chapter_description> <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.</p> <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.</p> <p>Utilities are available to check for the existence of built-in, macro, or mex functions.</p> </chapter_description>",
   },
   {
-    "title": "addpath",
-    "url": "./functions_manager/addpath.html",
-    "path": "./functions_manager/addpath.html",
-    "content": "Add directories to functions search path."
+    title: "addpath",
+    url: "./functions_manager/addpath.html",
+    path: "./functions_manager/addpath.html",
+    content: "Add directories to functions search path.",
   },
   {
-    "title": "builtin",
-    "url": "./functions_manager/builtin.html",
-    "path": "./functions_manager/builtin.html",
-    "content": "Executes built-in function."
+    title: "builtin",
+    url: "./functions_manager/builtin.html",
+    path: "./functions_manager/builtin.html",
+    content: "Executes built-in function.",
   },
   {
-    "title": "clearfun",
-    "url": "./functions_manager/clearfun.html",
-    "path": "./functions_manager/clearfun.html",
-    "content": "Clear an built-in function."
+    title: "clearfun",
+    url: "./functions_manager/clearfun.html",
+    path: "./functions_manager/clearfun.html",
+    content: "Clear an built-in function.",
   },
   {
-    "title": "feval",
-    "url": "./functions_manager/feval.html",
-    "path": "./functions_manager/feval.html",
-    "content": "Evaluates function."
+    title: "feval",
+    url: "./functions_manager/feval.html",
+    path: "./functions_manager/feval.html",
+    content: "Evaluates function.",
   },
   {
-    "title": "inmem",
-    "url": "./functions_manager/inmem.html",
-    "path": "./functions_manager/inmem.html",
-    "content": "Names of functions, MEX-files."
+    title: "inmem",
+    url: "./functions_manager/inmem.html",
+    path: "./functions_manager/inmem.html",
+    content: "Names of functions, MEX-files.",
   },
   {
-    "title": "isbuiltin",
-    "url": "./functions_manager/isbuiltin.html",
-    "path": "./functions_manager/isbuiltin.html",
-    "content": "Check for the existence of a builtin."
+    title: "isbuiltin",
+    url: "./functions_manager/isbuiltin.html",
+    path: "./functions_manager/isbuiltin.html",
+    content: "Check for the existence of a builtin.",
   },
   {
-    "title": "ismacro",
-    "url": "./functions_manager/ismacro.html",
-    "path": "./functions_manager/ismacro.html",
-    "content": "Check for the existence of a macro (function)."
+    title: "ismacro",
+    url: "./functions_manager/ismacro.html",
+    path: "./functions_manager/ismacro.html",
+    content: "Check for the existence of a macro (function).",
   },
   {
-    "title": "ismex",
-    "url": "./functions_manager/ismex.html",
-    "path": "./functions_manager/ismex.html",
-    "content": "Check for the existence of a mex function."
+    title: "ismex",
+    url: "./functions_manager/ismex.html",
+    path: "./functions_manager/ismex.html",
+    content: "Check for the existence of a mex function.",
   },
   {
-    "title": "macroargs",
-    "url": "./functions_manager/macroargs.html",
-    "path": "./functions_manager/macroargs.html",
-    "content": "Returns variables names of a function."
+    title: "macroargs",
+    url: "./functions_manager/macroargs.html",
+    path: "./functions_manager/macroargs.html",
+    content: "Returns variables names of a function.",
   },
   {
-    "title": "path",
-    "url": "./functions_manager/path.html",
-    "path": "./functions_manager/path.html",
-    "content": "Modify or display Nelson’s load path."
+    title: "path",
+    url: "./functions_manager/path.html",
+    path: "./functions_manager/path.html",
+    content: "Modify or display Nelson’s load path.",
   },
   {
-    "title": "private functions",
-    "url": "./functions_manager/private_functions.html",
-    "path": "./functions_manager/private_functions.html",
-    "content": "Private functions."
+    title: "private functions",
+    url: "./functions_manager/private_functions.html",
+    path: "./functions_manager/private_functions.html",
+    content: "Private functions.",
   },
   {
-    "title": "rehash",
-    "url": "./functions_manager/rehash.html",
-    "path": "./functions_manager/rehash.html",
-    "content": "Reinitialize Nelson’s search path directory cache."
+    title: "rehash",
+    url: "./functions_manager/rehash.html",
+    path: "./functions_manager/rehash.html",
+    content: "Reinitialize Nelson’s search path directory cache.",
   },
   {
-    "title": "restoredefaultpath",
-    "url": "./functions_manager/restoredefaultpath.html",
-    "path": "./functions_manager/restoredefaultpath.html",
-    "content": "Restore Nelson’s path to its initial state at startup."
+    title: "restoredefaultpath",
+    url: "./functions_manager/restoredefaultpath.html",
+    path: "./functions_manager/restoredefaultpath.html",
+    content: "Restore Nelson’s path to its initial state at startup.",
   },
   {
-    "title": "rmpath",
-    "url": "./functions_manager/rmpath.html",
-    "path": "./functions_manager/rmpath.html",
-    "content": "Remove directory from search path."
+    title: "rmpath",
+    url: "./functions_manager/rmpath.html",
+    path: "./functions_manager/rmpath.html",
+    content: "Remove directory from search path.",
   },
   {
-    "title": "userpath",
-    "url": "./functions_manager/userpath.html",
-    "path": "./functions_manager/userpath.html",
-    "content": "Displays or modify default user functions directory."
+    title: "userpath",
+    url: "./functions_manager/userpath.html",
+    path: "./functions_manager/userpath.html",
+    content: "Displays or modify default user functions directory.",
   },
   {
-    "title": "what",
-    "url": "./functions_manager/what.html",
-    "path": "./functions_manager/what.html",
-    "content": "Get Nelson builtin and macro list."
+    title: "what",
+    url: "./functions_manager/what.html",
+    path: "./functions_manager/what.html",
+    content: "Get Nelson builtin and macro list.",
   },
   {
-    "title": "which",
-    "url": "./functions_manager/which.html",
-    "path": "./functions_manager/which.html",
-    "content": "Locates functions and built-in."
+    title: "which",
+    url: "./functions_manager/which.html",
+    path: "./functions_manager/which.html",
+    content: "Locates functions and built-in.",
   },
   {
-    "title": "Modules manager",
-    "url": "./modules_manager/index.html",
-    "path": "sections/modules_manager",
-    "content": "<chapter_description> <p>The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.<\/p> <p>It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.<\/p> <p>With support for both internal and external modules, the manager handles module metadata, paths, and versioning.<\/p> <p>It also provides utilities for organizing user-defined toolboxes, managing gateways, and ensuring that dependencies are properly loaded.<\/p> <p>This framework simplifies module distribution, integration, and maintenance, forming the backbone of Nelson’s modular architecture.<\/p> <\/chapter_description>"
+    title: "Modules manager",
+    url: "./modules_manager/index.html",
+    path: "sections/modules_manager",
+    content:
+      "<chapter_description> <p>The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.</p> <p>It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.</p> <p>With support for both internal and external modules, the manager handles module metadata, paths, and versioning.</p> <p>It also provides utilities for organizing user-defined toolboxes, managing gateways, and ensuring that dependencies are properly loaded.</p> <p>This framework simplifies module distribution, integration, and maintenance, forming the backbone of Nelson’s modular architecture.</p> </chapter_description>",
   },
   {
-    "title": "addgateway",
-    "url": "./modules_manager/addgateway.html",
-    "path": "./modules_manager/addgateway.html",
-    "content": "Adds dynamically builtin at runtime."
+    title: "addgateway",
+    url: "./modules_manager/addgateway.html",
+    path: "./modules_manager/addgateway.html",
+    content: "Adds dynamically builtin at runtime.",
   },
   {
-    "title": "addmodule",
-    "url": "./modules_manager/addmodule.html",
-    "path": "./modules_manager/addmodule.html",
-    "content": "Add module to Nelson."
+    title: "addmodule",
+    url: "./modules_manager/addmodule.html",
+    path: "./modules_manager/addmodule.html",
+    content: "Add module to Nelson.",
   },
   {
-    "title": "gatewayinfo",
-    "url": "./modules_manager/gatewayinfo.html",
-    "path": "./modules_manager/gatewayinfo.html",
-    "content": "Returns information about an gateway."
+    title: "gatewayinfo",
+    url: "./modules_manager/gatewayinfo.html",
+    path: "./modules_manager/gatewayinfo.html",
+    content: "Returns information about an gateway.",
   },
   {
-    "title": "getmodules",
-    "url": "./modules_manager/getmodules.html",
-    "path": "./modules_manager/getmodules.html",
-    "content": "Returns list of modules loaded in Nelson."
+    title: "getmodules",
+    url: "./modules_manager/getmodules.html",
+    path: "./modules_manager/getmodules.html",
+    content: "Returns list of modules loaded in Nelson.",
   },
   {
-    "title": "ismodule",
-    "url": "./modules_manager/ismodule.html",
-    "path": "./modules_manager/ismodule.html",
-    "content": "Checks if a module is loaded."
+    title: "ismodule",
+    url: "./modules_manager/ismodule.html",
+    path: "./modules_manager/ismodule.html",
+    content: "Checks if a module is loaded.",
   },
   {
-    "title": "module.json",
-    "url": "./modules_manager/module-json.html",
-    "path": "./modules_manager/module-json.html",
-    "content": "module.json description"
+    title: "module.json",
+    url: "./modules_manager/module-json.html",
+    path: "./modules_manager/module-json.html",
+    content: "module.json description",
   },
   {
-    "title": "modulepath",
-    "url": "./modules_manager/modulepath.html",
-    "path": "./modules_manager/modulepath.html",
-    "content": "Returns path of a module."
+    title: "modulepath",
+    url: "./modules_manager/modulepath.html",
+    path: "./modules_manager/modulepath.html",
+    content: "Returns path of a module.",
   },
   {
-    "title": "nmm",
-    "url": "./modules_manager/nmm.html",
-    "path": "./modules_manager/nmm.html",
-    "content": "Nelson Modules Manager."
+    title: "nmm",
+    url: "./modules_manager/nmm.html",
+    path: "./modules_manager/nmm.html",
+    content: "Nelson Modules Manager.",
   },
   {
-    "title": "nmm_build_help",
-    "url": "./modules_manager/nmm_build_help.html",
-    "path": "./modules_manager/nmm_build_help.html",
-    "content": "helper's function to build help of an external module"
+    title: "nmm_build_help",
+    url: "./modules_manager/nmm_build_help.html",
+    path: "./modules_manager/nmm_build_help.html",
+    content: "helper's function to build help of an external module",
   },
   {
-    "title": "nmm_build_loader",
-    "url": "./modules_manager/nmm_build_loader.html",
-    "path": "./modules_manager/nmm_build_loader.html",
-    "content": "helper's function to build main loader.m of an external module"
+    title: "nmm_build_loader",
+    url: "./modules_manager/nmm_build_loader.html",
+    path: "./modules_manager/nmm_build_loader.html",
+    content: "helper's function to build main loader.m of an external module",
   },
   {
-    "title": "removegateway",
-    "url": "./modules_manager/removegateway.html",
-    "path": "./modules_manager/removegateway.html",
-    "content": "Removes dynamically builtin at runtime."
+    title: "removegateway",
+    url: "./modules_manager/removegateway.html",
+    path: "./modules_manager/removegateway.html",
+    content: "Removes dynamically builtin at runtime.",
   },
   {
-    "title": "removemodule",
-    "url": "./modules_manager/removemodule.html",
-    "path": "./modules_manager/removemodule.html",
-    "content": "remove a module from Nelson."
+    title: "removemodule",
+    url: "./modules_manager/removemodule.html",
+    path: "./modules_manager/removemodule.html",
+    content: "remove a module from Nelson.",
   },
   {
-    "title": "requiremodule",
-    "url": "./modules_manager/requiremodule.html",
-    "path": "./modules_manager/requiremodule.html",
-    "content": "Returns an error if module is not loaded in Nelson."
+    title: "requiremodule",
+    url: "./modules_manager/requiremodule.html",
+    path: "./modules_manager/requiremodule.html",
+    content: "Returns an error if module is not loaded in Nelson.",
   },
   {
-    "title": "semver",
-    "url": "./modules_manager/semver.html",
-    "path": "./modules_manager/semver.html",
-    "content": "semantic versioner."
+    title: "semver",
+    url: "./modules_manager/semver.html",
+    path: "./modules_manager/semver.html",
+    content: "semantic versioner.",
   },
   {
-    "title": "toolboxdir",
-    "url": "./modules_manager/toolboxdir.html",
-    "path": "./modules_manager/toolboxdir.html",
-    "content": "Returns path of a module."
+    title: "toolboxdir",
+    url: "./modules_manager/toolboxdir.html",
+    path: "./modules_manager/toolboxdir.html",
+    content: "Returns path of a module.",
   },
   {
-    "title": "usermodulesdir",
-    "url": "./modules_manager/usermodulesdir.html",
-    "path": "./modules_manager/usermodulesdir.html",
-    "content": "Returns path where external modules are saved."
+    title: "usermodulesdir",
+    url: "./modules_manager/usermodulesdir.html",
+    path: "./modules_manager/usermodulesdir.html",
+    content: "Returns path where external modules are saved.",
   },
   {
-    "title": "Core",
-    "url": "./core/index.html",
-    "path": "sections/core",
-    "content": "<chapter_description> <p>The Core module provides the fundamental building blocks of the Nelson environment.<\/p> <p>It includes essential services for program execution, environment management, and system interaction.<\/p> <p>Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.<\/p> <p>It also offers basic utilities for file identification, checksums, and terminal capabilities.<\/p> <p>Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.<\/p> <\/chapter_description>"
+    title: "Core",
+    url: "./core/index.html",
+    path: "sections/core",
+    content:
+      "<chapter_description> <p>The Core module provides the fundamental building blocks of the Nelson environment.</p> <p>It includes essential services for program execution, environment management, and system interaction.</p> <p>Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.</p> <p>It also offers basic utilities for file identification, checksums, and terminal capabilities.</p> <p>Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.</p> </chapter_description>",
   },
   {
-    "title": "banner",
-    "url": "./core/banner.html",
-    "path": "./core/banner.html",
-    "content": "Shows Nelson banner."
+    title: "banner",
+    url: "./core/banner.html",
+    path: "./core/banner.html",
+    content: "Shows Nelson banner.",
   },
   {
-    "title": "crc32",
-    "url": "./core/crc32.html",
-    "path": "./core/crc32.html",
-    "content": "Get crc32 checksum."
+    title: "crc32",
+    url: "./core/crc32.html",
+    path: "./core/crc32.html",
+    content: "Get crc32 checksum.",
   },
   {
-    "title": "eval",
-    "url": "./core/eval.html",
-    "path": "./core/eval.html",
-    "content": "Evaluate Nelson code in string."
+    title: "eval",
+    url: "./core/eval.html",
+    path: "./core/eval.html",
+    content: "Evaluate Nelson code in string.",
   },
   {
-    "title": "evalc",
-    "url": "./core/evalc.html",
-    "path": "./core/evalc.html",
-    "content": "Evaluate Nelson code with console capture."
+    title: "evalc",
+    url: "./core/evalc.html",
+    path: "./core/evalc.html",
+    content: "Evaluate Nelson code with console capture.",
   },
   {
-    "title": "evalin",
-    "url": "./core/evalin.html",
-    "path": "./core/evalin.html",
-    "content": "Evaluate Nelson code in string in an specified scope."
+    title: "evalin",
+    url: "./core/evalin.html",
+    path: "./core/evalin.html",
+    content: "Evaluate Nelson code in string in an specified scope.",
   },
   {
-    "title": "execstr",
-    "url": "./core/execstr.html",
-    "path": "./core/execstr.html",
-    "content": "Execute Nelson code in strings."
+    title: "execstr",
+    url: "./core/execstr.html",
+    path: "./core/execstr.html",
+    content: "Execute Nelson code in strings.",
   },
   {
-    "title": "exist",
-    "url": "./core/exist.html",
-    "path": "./core/exist.html",
-    "content": "Check for the existence."
+    title: "exist",
+    url: "./core/exist.html",
+    path: "./core/exist.html",
+    content: "Check for the existence.",
   },
   {
-    "title": "exit",
-    "url": "./core/exit.html",
-    "path": "./core/exit.html",
-    "content": "Terminate Nelson program (same as quit)"
+    title: "exit",
+    url: "./core/exit.html",
+    path: "./core/exit.html",
+    content: "Terminate Nelson program (same as quit)",
   },
   {
-    "title": "feature",
-    "url": "./core/feature.html",
-    "path": "./core/feature.html",
-    "content": "undocumented features."
+    title: "feature",
+    url: "./core/feature.html",
+    path: "./core/feature.html",
+    content: "undocumented features.",
   },
   {
-    "title": "inputname",
-    "url": "./core/inputname.html",
-    "path": "./core/inputname.html",
-    "content": "Get variable name of function input."
+    title: "inputname",
+    url: "./core/inputname.html",
+    path: "./core/inputname.html",
+    content: "Get variable name of function input.",
   },
   {
-    "title": "isunicodesupported",
-    "url": "./core/isunicodesupported.html",
-    "path": "./core/isunicodesupported.html",
-    "content": "Detect whether the current terminal supports Unicode."
+    title: "isunicodesupported",
+    url: "./core/isunicodesupported.html",
+    path: "./core/isunicodesupported.html",
+    content: "Detect whether the current terminal supports Unicode.",
   },
   {
-    "title": "license",
-    "url": "./core/license.html",
-    "path": "./core/license.html",
-    "content": "Get license information for Nelson."
+    title: "license",
+    url: "./core/license.html",
+    path: "./core/license.html",
+    content: "Get license information for Nelson.",
   },
   {
-    "title": "maxNumCompThreads",
-    "url": "./core/maxNumCompThreads.html",
-    "path": "./core/maxNumCompThreads.html",
-    "content": "Set\/Get maximum number of computional threads."
+    title: "maxNumCompThreads",
+    url: "./core/maxNumCompThreads.html",
+    path: "./core/maxNumCompThreads.html",
+    content: "Set/Get maximum number of computional threads.",
   },
   {
-    "title": "namelengthmax",
-    "url": "./core/namelengthmax.html",
-    "path": "./core/namelengthmax.html",
-    "content": "Return the maximum variable name length."
+    title: "namelengthmax",
+    url: "./core/namelengthmax.html",
+    path: "./core/namelengthmax.html",
+    content: "Return the maximum variable name length.",
   },
   {
-    "title": "nargin",
-    "url": "./core/nargin.html",
-    "path": "./core/nargin.html",
-    "content": "Returns the number of input arguments."
+    title: "nargin",
+    url: "./core/nargin.html",
+    path: "./core/nargin.html",
+    content: "Returns the number of input arguments.",
   },
   {
-    "title": "narginchk",
-    "url": "./core/narginchk.html",
-    "path": "./core/narginchk.html",
-    "content": "Checks the number of input arguments."
+    title: "narginchk",
+    url: "./core/narginchk.html",
+    path: "./core/narginchk.html",
+    content: "Checks the number of input arguments.",
   },
   {
-    "title": "nargout",
-    "url": "./core/nargout.html",
-    "path": "./core/nargout.html",
-    "content": "Returns the number of output arguments."
+    title: "nargout",
+    url: "./core/nargout.html",
+    path: "./core/nargout.html",
+    content: "Returns the number of output arguments.",
   },
   {
-    "title": "nargoutchk",
-    "url": "./core/nargoutchk.html",
-    "path": "./core/nargoutchk.html",
-    "content": "Checks the number of output arguments."
+    title: "nargoutchk",
+    url: "./core/nargoutchk.html",
+    path: "./core/nargoutchk.html",
+    content: "Checks the number of output arguments.",
   },
   {
-    "title": "nelsonappid",
-    "url": "./core/nelsonappid.html",
-    "path": "./core/nelsonappid.html",
-    "content": "Returns nelson application ID"
+    title: "nelsonappid",
+    url: "./core/nelsonappid.html",
+    path: "./core/nelsonappid.html",
+    content: "Returns nelson application ID",
   },
   {
-    "title": "nelsonroot",
-    "url": "./core/nelsonroot.html",
-    "path": "./core/nelsonroot.html",
-    "content": "Returns Nelson's root folder."
+    title: "nelsonroot",
+    url: "./core/nelsonroot.html",
+    path: "./core/nelsonroot.html",
+    content: "Returns Nelson's root folder.",
   },
   {
-    "title": "nfilename",
-    "url": "./core/nfilename.html",
-    "path": "./core/nfilename.html",
-    "content": "Returns the name of the currently executing file."
+    title: "nfilename",
+    url: "./core/nfilename.html",
+    path: "./core/nfilename.html",
+    content: "Returns the name of the currently executing file.",
   },
   {
-    "title": "mfilename",
-    "url": "./core/nfilename.html",
-    "path": "./core/nfilename.html",
-    "content": "Returns the name of the currently executing file."
+    title: "mfilename",
+    url: "./core/nfilename.html",
+    path: "./core/nfilename.html",
+    content: "Returns the name of the currently executing file.",
   },
   {
-    "title": "pause",
-    "url": "./core/pause.html",
-    "path": "./core/pause.html",
-    "content": "Pauses script execution."
+    title: "pause",
+    url: "./core/pause.html",
+    path: "./core/pause.html",
+    content: "Pauses script execution.",
   },
   {
-    "title": "prefdir",
-    "url": "./core/prefdir.html",
-    "path": "./core/prefdir.html",
-    "content": "Return the preferences directory used by Nelson."
+    title: "prefdir",
+    url: "./core/prefdir.html",
+    path: "./core/prefdir.html",
+    content: "Return the preferences directory used by Nelson.",
   },
   {
-    "title": "quit",
-    "url": "./core/quit.html",
-    "path": "./core/quit.html",
-    "content": "Terminate Nelson application"
+    title: "quit",
+    url: "./core/quit.html",
+    path: "./core/quit.html",
+    content: "Terminate Nelson application",
   },
   {
-    "title": "run",
-    "url": "./core/run.html",
-    "path": "./core/run.html",
-    "content": "Executes a script file (.m)."
+    title: "run",
+    url: "./core/run.html",
+    path: "./core/run.html",
+    content: "Executes a script file (.m).",
   },
   {
-    "title": "sha256",
-    "url": "./core/sha256.html",
-    "path": "./core/sha256.html",
-    "content": "Get sha256 checksum."
+    title: "sha256",
+    url: "./core/sha256.html",
+    path: "./core/sha256.html",
+    content: "Get sha256 checksum.",
   },
   {
-    "title": "version",
-    "url": "./core/version.html",
-    "path": "./core/version.html",
-    "content": "Return the version of Nelson."
+    title: "version",
+    url: "./core/version.html",
+    path: "./core/version.html",
+    content: "Return the version of Nelson.",
   },
   {
-    "title": "Engine",
-    "url": "./engine/index.html",
-    "path": "sections/engine",
-    "content": "<chapter_description> <p>The Engine module manages the execution environment of Nelson itself.<\/p> <p>It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.<\/p> <p>This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.<\/p> <p>It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.<\/p> <\/chapter_description>"
+    title: "Engine",
+    url: "./engine/index.html",
+    path: "sections/engine",
+    content:
+      "<chapter_description> <p>The Engine module manages the execution environment of Nelson itself.</p> <p>It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.</p> <p>This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.</p> <p>It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.</p> </chapter_description>",
   },
   {
-    "title": "argv",
-    "url": "./engine/argv.html",
-    "path": "./engine/argv.html",
-    "content": "Nelson command line arguments."
+    title: "argv",
+    url: "./engine/argv.html",
+    path: "./engine/argv.html",
+    content: "Nelson command line arguments.",
   },
   {
-    "title": "executable",
-    "url": "./engine/executable.html",
-    "path": "./engine/executable.html",
-    "content": "Executables to start Nelson software."
+    title: "executable",
+    url: "./engine/executable.html",
+    path: "./engine/executable.html",
+    content: "Executables to start Nelson software.",
   },
   {
-    "title": "finish",
-    "url": "./engine/finish.html",
-    "path": "./engine/finish.html",
-    "content": "User-defined termination script for Nelson."
+    title: "finish",
+    url: "./engine/finish.html",
+    path: "./engine/finish.html",
+    content: "User-defined termination script for Nelson.",
   },
   {
-    "title": "getnelsonmode",
-    "url": "./engine/getnelsonmode.html",
-    "path": "./engine/getnelsonmode.html",
-    "content": "Returns current Nelson mode."
+    title: "getnelsonmode",
+    url: "./engine/getnelsonmode.html",
+    path: "./engine/getnelsonmode.html",
+    content: "Returns current Nelson mode.",
   },
   {
-    "title": "isquietmode",
-    "url": "./engine/isquietmode.html",
-    "path": "./engine/isquietmode.html",
-    "content": "Return true if Nelson started with --quiet option."
+    title: "isquietmode",
+    url: "./engine/isquietmode.html",
+    path: "./engine/isquietmode.html",
+    content: "Return true if Nelson started with --quiet option.",
   },
   {
-    "title": "System Requirements",
-    "url": "./engine/nelson_system_requirement.html",
-    "path": "./engine/nelson_system_requirement.html",
-    "content": "System Requirements by platforms."
+    title: "System Requirements",
+    url: "./engine/nelson_system_requirement.html",
+    path: "./engine/nelson_system_requirement.html",
+    content: "System Requirements by platforms.",
   },
   {
-    "title": "#! shebang",
-    "url": "./engine/shebang.html",
-    "path": "./engine/shebang.html",
-    "content": "On Unix, Linux operating systems, Parses the rest of the script's initial line as an interpreter directive."
+    title: "#! shebang",
+    url: "./engine/shebang.html",
+    path: "./engine/shebang.html",
+    content:
+      "On Unix, Linux operating systems, Parses the rest of the script's initial line as an interpreter directive.",
   },
   {
-    "title": "startup",
-    "url": "./engine/startup.html",
-    "path": "./engine/startup.html",
-    "content": "User-defined startup script for Nelson."
+    title: "startup",
+    url: "./engine/startup.html",
+    path: "./engine/startup.html",
+    content: "User-defined startup script for Nelson.",
   },
   {
-    "title": "Interpreter functions",
-    "url": "./interpreter/index.html",
-    "path": "sections/interpreter",
-    "content": "<chapter_description> <p>The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.<\/p> <p>It includes essential elements such as loops, conditional branching, error handling, and function declarations.<\/p> <p>The module also offers tools for parsing code, working with keywords, and managing recursion limits.<\/p> <p>Together, these features establish the fundamental syntax and semantics of the Nelson language, enabling users to write structured, dynamic, and reliable programs.<\/p> <\/chapter_description>"
+    title: "Interpreter functions",
+    url: "./interpreter/index.html",
+    path: "sections/interpreter",
+    content:
+      "<chapter_description> <p>The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.</p> <p>It includes essential elements such as loops, conditional branching, error handling, and function declarations.</p> <p>The module also offers tools for parsing code, working with keywords, and managing recursion limits.</p> <p>Together, these features establish the fundamental syntax and semantics of the Nelson language, enabling users to write structured, dynamic, and reliable programs.</p> </chapter_description>",
   },
   {
-    "title": "abort",
-    "url": "./interpreter/abort.html",
-    "path": "./interpreter/abort.html",
-    "content": "stop evaluation."
+    title: "abort",
+    url: "./interpreter/abort.html",
+    path: "./interpreter/abort.html",
+    content: "stop evaluation.",
   },
   {
-    "title": "return",
-    "url": "./interpreter/abort.html",
-    "path": "./interpreter/abort.html",
-    "content": "stop evaluation."
+    title: "return",
+    url: "./interpreter/abort.html",
+    path: "./interpreter/abort.html",
+    content: "stop evaluation.",
   },
   {
-    "title": "break",
-    "url": "./interpreter/break.html",
-    "path": "./interpreter/break.html",
-    "content": "exit evaluation loop."
+    title: "break",
+    url: "./interpreter/break.html",
+    path: "./interpreter/break.html",
+    content: "exit evaluation loop.",
   },
   {
-    "title": "continue",
-    "url": "./interpreter/continue.html",
-    "path": "./interpreter/continue.html",
-    "content": "continue evaluation in loop."
+    title: "continue",
+    url: "./interpreter/continue.html",
+    path: "./interpreter/continue.html",
+    content: "continue evaluation in loop.",
   },
   {
-    "title": "for",
-    "url": "./interpreter/for.html",
-    "path": "./interpreter/for.html",
-    "content": "for loop."
+    title: "for",
+    url: "./interpreter/for.html",
+    path: "./interpreter/for.html",
+    content: "for loop.",
   },
   {
-    "title": "parfor",
-    "url": "./interpreter/for.html",
-    "path": "./interpreter/for.html",
-    "content": "for loop."
+    title: "parfor",
+    url: "./interpreter/for.html",
+    path: "./interpreter/for.html",
+    content: "for loop.",
   },
   {
-    "title": "function",
-    "url": "./interpreter/function.html",
-    "path": "./interpreter/function.html",
-    "content": "function declaration."
+    title: "function",
+    url: "./interpreter/function.html",
+    path: "./interpreter/function.html",
+    content: "function declaration.",
   },
   {
-    "title": "endfunction",
-    "url": "./interpreter/function.html",
-    "path": "./interpreter/function.html",
-    "content": "function declaration."
+    title: "endfunction",
+    url: "./interpreter/function.html",
+    path: "./interpreter/function.html",
+    content: "function declaration.",
   },
   {
-    "title": "if",
-    "url": "./interpreter/if.html",
-    "path": "./interpreter/if.html",
-    "content": "conditional statement."
+    title: "if",
+    url: "./interpreter/if.html",
+    path: "./interpreter/if.html",
+    content: "conditional statement.",
   },
   {
-    "title": "iskeyword",
-    "url": "./interpreter/iskeyword.html",
-    "path": "./interpreter/iskeyword.html",
-    "content": "Returns all Nelson keywords."
+    title: "iskeyword",
+    url: "./interpreter/iskeyword.html",
+    path: "./interpreter/iskeyword.html",
+    content: "Returns all Nelson keywords.",
   },
   {
-    "title": "keyboard",
-    "url": "./interpreter/keyboard.html",
-    "path": "./interpreter/keyboard.html",
-    "content": "Stops script execution and enter in debug mode."
+    title: "keyboard",
+    url: "./interpreter/keyboard.html",
+    path: "./interpreter/keyboard.html",
+    content: "Stops script execution and enter in debug mode.",
   },
   {
-    "title": "max_recursion_depth",
-    "url": "./interpreter/max_recursion_depth.html",
-    "path": "./interpreter/max_recursion_depth.html",
-    "content": "Internal limit on the number of times a function may be called recursively."
+    title: "max_recursion_depth",
+    url: "./interpreter/max_recursion_depth.html",
+    path: "./interpreter/max_recursion_depth.html",
+    content:
+      "Internal limit on the number of times a function may be called recursively.",
   },
   {
-    "title": "numeric types",
-    "url": "./interpreter/numeric_types.html",
-    "path": "./interpreter/numeric_types.html",
-    "content": "About integer and floating-point data."
+    title: "numeric types",
+    url: "./interpreter/numeric_types.html",
+    path: "./interpreter/numeric_types.html",
+    content: "About integer and floating-point data.",
   },
   {
-    "title": "parsefile",
-    "url": "./interpreter/parsefile.html",
-    "path": "./interpreter/parsefile.html",
-    "content": "Parse a Nelson file."
+    title: "parsefile",
+    url: "./interpreter/parsefile.html",
+    path: "./interpreter/parsefile.html",
+    content: "Parse a Nelson file.",
   },
   {
-    "title": "parsestring",
-    "url": "./interpreter/parsestring.html",
-    "path": "./interpreter/parsestring.html",
-    "content": "Parse a string."
+    title: "parsestring",
+    url: "./interpreter/parsestring.html",
+    path: "./interpreter/parsestring.html",
+    content: "Parse a string.",
   },
   {
-    "title": "switch",
-    "url": "./interpreter/switch.html",
-    "path": "./interpreter/switch.html",
-    "content": "switch statement."
+    title: "switch",
+    url: "./interpreter/switch.html",
+    path: "./interpreter/switch.html",
+    content: "switch statement.",
   },
   {
-    "title": "try",
-    "url": "./interpreter/try.html",
-    "path": "./interpreter/try.html",
-    "content": "try\/catch statement."
+    title: "try",
+    url: "./interpreter/try.html",
+    path: "./interpreter/try.html",
+    content: "try/catch statement.",
   },
   {
-    "title": "catch",
-    "url": "./interpreter/try.html",
-    "path": "./interpreter/try.html",
-    "content": "try\/catch statement."
+    title: "catch",
+    url: "./interpreter/try.html",
+    path: "./interpreter/try.html",
+    content: "try/catch statement.",
   },
   {
-    "title": "while",
-    "url": "./interpreter/while.html",
-    "path": "./interpreter/while.html",
-    "content": "while loop."
+    title: "while",
+    url: "./interpreter/while.html",
+    path: "./interpreter/while.html",
+    content: "while loop.",
   },
   {
-    "title": "Error manager",
-    "url": "./error_manager/index.html",
-    "path": "sections/error_manager",
-    "content": "<chapter_description> <p>The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.<\/p> <p>It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.<\/p> <p>This module ensures that users can manage execution flow in the presence of failures, capture meaningful error reports, and display warnings without interrupting program execution.<\/p> <p>It forms the foundation for robust error handling and debugging in Nelson applications.<\/p> <\/chapter_description>"
+    title: "Error manager",
+    url: "./error_manager/index.html",
+    path: "sections/error_manager",
+    content:
+      "<chapter_description> <p>The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.</p> <p>It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.</p> <p>This module ensures that users can manage execution flow in the presence of failures, capture meaningful error reports, and display warnings without interrupting program execution.</p> <p>It forms the foundation for robust error handling and debugging in Nelson applications.</p> </chapter_description>",
   },
   {
-    "title": "MException",
-    "url": "./error_manager/MException.html",
-    "path": "./error_manager/MException.html",
-    "content": "Matrix Exception information."
+    title: "MException",
+    url: "./error_manager/MException.html",
+    path: "./error_manager/MException.html",
+    content: "Matrix Exception information.",
   },
   {
-    "title": "error",
-    "url": "./error_manager/error.html",
-    "path": "./error_manager/error.html",
-    "content": "Raise an error message."
+    title: "error",
+    url: "./error_manager/error.html",
+    path: "./error_manager/error.html",
+    content: "Raise an error message.",
   },
   {
-    "title": "getLastReport",
-    "url": "./error_manager/getLastReport.html",
-    "path": "./error_manager/getLastReport.html",
-    "content": "Returns last recorded formatted error message."
+    title: "getLastReport",
+    url: "./error_manager/getLastReport.html",
+    path: "./error_manager/getLastReport.html",
+    content: "Returns last recorded formatted error message.",
   },
   {
-    "title": "lasterror",
-    "url": "./error_manager/lasterror.html",
-    "path": "./error_manager/lasterror.html",
-    "content": "Returns last recorded error message."
+    title: "lasterror",
+    url: "./error_manager/lasterror.html",
+    path: "./error_manager/lasterror.html",
+    content: "Returns last recorded error message.",
   },
   {
-    "title": "lastwarn",
-    "url": "./error_manager/lastwarn.html",
-    "path": "./error_manager/lastwarn.html",
-    "content": "Returns last recorded warning message."
+    title: "lastwarn",
+    url: "./error_manager/lastwarn.html",
+    path: "./error_manager/lastwarn.html",
+    content: "Returns last recorded warning message.",
   },
   {
-    "title": "rethrow",
-    "url": "./error_manager/rethrow.html",
-    "path": "./error_manager/rethrow.html",
-    "content": "rethrow error."
+    title: "rethrow",
+    url: "./error_manager/rethrow.html",
+    path: "./error_manager/rethrow.html",
+    content: "rethrow error.",
   },
   {
-    "title": "throw",
-    "url": "./error_manager/throw.html",
-    "path": "./error_manager/throw.html",
-    "content": "throw error."
+    title: "throw",
+    url: "./error_manager/throw.html",
+    path: "./error_manager/throw.html",
+    content: "throw error.",
   },
   {
-    "title": "throwAsCaller",
-    "url": "./error_manager/throwAsCaller.html",
-    "path": "./error_manager/throwAsCaller.html",
-    "content": "Throw exception as if occurs within calling function."
+    title: "throwAsCaller",
+    url: "./error_manager/throwAsCaller.html",
+    path: "./error_manager/throwAsCaller.html",
+    content: "Throw exception as if occurs within calling function.",
   },
   {
-    "title": "warning",
-    "url": "./error_manager/warning.html",
-    "path": "./error_manager/warning.html",
-    "content": "Display a warning message."
+    title: "warning",
+    url: "./error_manager/warning.html",
+    path: "./error_manager/warning.html",
+    content: "Display a warning message.",
   },
   {
-    "title": "Console",
-    "url": "./console/index.html",
-    "path": "sections/console",
-    "content": "<chapter_description> <p>The Console module manages interaction with Nelson’s command window.<\/p> <p>It provides tools to control the display, handle user input, and query terminal properties.<\/p> <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.<\/p> <\/chapter_description>"
+    title: "Console",
+    url: "./console/index.html",
+    path: "sections/console",
+    content:
+      "<chapter_description> <p>The Console module manages interaction with Nelson’s command window.</p> <p>It provides tools to control the display, handle user input, and query terminal properties.</p> <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p> </chapter_description>",
   },
   {
-    "title": "clc",
-    "url": "./console/clc.html",
-    "path": "./console/clc.html",
-    "content": "Clear Command Window."
+    title: "clc",
+    url: "./console/clc.html",
+    path: "./console/clc.html",
+    content: "Clear Command Window.",
   },
   {
-    "title": "input",
-    "url": "./console/input.html",
-    "path": "./console/input.html",
-    "content": "Display prompt and wait for user input."
+    title: "input",
+    url: "./console/input.html",
+    path: "./console/input.html",
+    content: "Display prompt and wait for user input.",
   },
   {
-    "title": "terminal_size",
-    "url": "./console/terminal_size.html",
-    "path": "./console/terminal_size.html",
-    "content": "Query the size of the terminal window."
+    title: "terminal_size",
+    url: "./console/terminal_size.html",
+    path: "./console/terminal_size.html",
+    content: "Query the size of the terminal window.",
   },
   {
-    "title": "Display format",
-    "url": "./display_format/index.html",
-    "path": "sections/display_format",
-    "content": "<chapter_description> <p>The Display Format module defines how values, variables, and expressions are presented in Nelson.<\/p> <p>It offers control over numeric formatting, text representation, and the way results are shown in the console.<\/p> <p>The module also provides mechanisms for capturing formatted output programmatically, enabling both human-readable display and programmatic handling of results.<\/p> <p>This ensures flexibility in how information is presented and reused within scripts and applications.<\/p> <\/chapter_description>"
+    title: "Display format",
+    url: "./display_format/index.html",
+    path: "sections/display_format",
+    content:
+      "<chapter_description> <p>The Display Format module defines how values, variables, and expressions are presented in Nelson.</p> <p>It offers control over numeric formatting, text representation, and the way results are shown in the console.</p> <p>The module also provides mechanisms for capturing formatted output programmatically, enabling both human-readable display and programmatic handling of results.</p> <p>This ensures flexibility in how information is presented and reused within scripts and applications.</p> </chapter_description>",
   },
   {
-    "title": "disp",
-    "url": "./display_format/disp.html",
-    "path": "./display_format/disp.html",
-    "content": "Display a variable."
+    title: "disp",
+    url: "./display_format/disp.html",
+    path: "./display_format/disp.html",
+    content: "Display a variable.",
   },
   {
-    "title": "display",
-    "url": "./display_format/display.html",
-    "path": "./display_format/display.html",
-    "content": "Show information about variable or result of expression."
+    title: "display",
+    url: "./display_format/display.html",
+    path: "./display_format/display.html",
+    content: "Show information about variable or result of expression.",
   },
   {
-    "title": "echo",
-    "url": "./display_format/echo.html",
-    "path": "./display_format/echo.html",
-    "content": "Controls the echoing during their execution."
+    title: "echo",
+    url: "./display_format/echo.html",
+    path: "./display_format/echo.html",
+    content: "Controls the echoing during their execution.",
   },
   {
-    "title": "format",
-    "url": "./display_format/format.html",
-    "path": "./display_format/format.html",
-    "content": "Display format and number printing."
+    title: "format",
+    url: "./display_format/format.html",
+    path: "./display_format/format.html",
+    content: "Display format and number printing.",
   },
   {
-    "title": "formattedDisplayText",
-    "url": "./display_format/formattedDisplayText.html",
-    "path": "./display_format/formattedDisplayText.html",
-    "content": "Capture display output as string."
+    title: "formattedDisplayText",
+    url: "./display_format/formattedDisplayText.html",
+    path: "./display_format/formattedDisplayText.html",
+    content: "Capture display output as string.",
   },
   {
-    "title": "Characters encoding",
-    "url": "./characters_encoding/index.html",
-    "path": "sections/characters_encoding",
-    "content": "<chapter_description> <p>The Characters Encoding module provides tools for converting between native byte representations and Unicode characters.<\/p> <p>It enables scripts to correctly interpret and manipulate text in various encodings, ensuring compatibility across different platforms and locales.<\/p> <p>The module also includes functionality for detecting character sets that match a given input, facilitating reliable text processing and internationalization.<\/p> <\/chapter_description>"
+    title: "Characters encoding",
+    url: "./characters_encoding/index.html",
+    path: "sections/characters_encoding",
+    content:
+      "<chapter_description> <p>The Characters Encoding module provides tools for converting between native byte representations and Unicode characters.</p> <p>It enables scripts to correctly interpret and manipulate text in various encodings, ensuring compatibility across different platforms and locales.</p> <p>The module also includes functionality for detecting character sets that match a given input, facilitating reliable text processing and internationalization.</p> </chapter_description>",
   },
   {
-    "title": "native2unicode",
-    "url": "./characters_encoding/native2unicode.html",
-    "path": "./characters_encoding/native2unicode.html",
-    "content": "Converts bytes representation to unicode characters"
+    title: "native2unicode",
+    url: "./characters_encoding/native2unicode.html",
+    path: "./characters_encoding/native2unicode.html",
+    content: "Converts bytes representation to unicode characters",
   },
   {
-    "title": "nativecharset",
-    "url": "./characters_encoding/nativecharset.html",
-    "path": "./characters_encoding/nativecharset.html",
-    "content": "Find all charset matches that appear to be consistent with the input"
+    title: "nativecharset",
+    url: "./characters_encoding/nativecharset.html",
+    path: "./characters_encoding/nativecharset.html",
+    content:
+      "Find all charset matches that appear to be consistent with the input",
   },
   {
-    "title": "unicode2native",
-    "url": "./characters_encoding/unicode2native.html",
-    "path": "./characters_encoding/unicode2native.html",
-    "content": "Converts unicode characters representation to bytes"
+    title: "unicode2native",
+    url: "./characters_encoding/unicode2native.html",
+    path: "./characters_encoding/unicode2native.html",
+    content: "Converts unicode characters representation to bytes",
   },
   {
-    "title": "Localization functions",
-    "url": "./localization/index.html",
-    "path": "sections/localization",
-    "content": "<chapter_description> <p>The Localization module manages language settings and internationalization in Nelson.<\/p> <p>It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.<\/p> <p>This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.<\/p> <\/chapter_description>"
+    title: "Localization functions",
+    url: "./localization/index.html",
+    path: "sections/localization",
+    content:
+      "<chapter_description> <p>The Localization module manages language settings and internationalization in Nelson.</p> <p>It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.</p> <p>This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.</p> </chapter_description>",
   },
   {
-    "title": "getavailablelanguages",
-    "url": "./localization/getavailablelanguages.html",
-    "path": "./localization/getavailablelanguages.html",
-    "content": "Returns available languages in Nelson."
+    title: "getavailablelanguages",
+    url: "./localization/getavailablelanguages.html",
+    path: "./localization/getavailablelanguages.html",
+    content: "Returns available languages in Nelson.",
   },
   {
-    "title": "getdefaultlanguage",
-    "url": "./localization/getdefaultlanguage.html",
-    "path": "./localization/getdefaultlanguage.html",
-    "content": "Returns the default language used in Nelson."
+    title: "getdefaultlanguage",
+    url: "./localization/getdefaultlanguage.html",
+    path: "./localization/getdefaultlanguage.html",
+    content: "Returns the default language used in Nelson.",
   },
   {
-    "title": "getlanguage",
-    "url": "./localization/getlanguage.html",
-    "path": "./localization/getlanguage.html",
-    "content": "Returns the current language in Nelson."
+    title: "getlanguage",
+    url: "./localization/getlanguage.html",
+    path: "./localization/getlanguage.html",
+    content: "Returns the current language in Nelson.",
   },
   {
-    "title": "setlanguage",
-    "url": "./localization/setlanguage.html",
-    "path": "./localization/setlanguage.html",
-    "content": "Changes the language used in Nelson."
+    title: "setlanguage",
+    url: "./localization/setlanguage.html",
+    path: "./localization/setlanguage.html",
+    content: "Changes the language used in Nelson.",
   },
   {
-    "title": "I18n functions",
-    "url": "./i18n/index.html",
-    "path": "sections/i18n",
-    "content": "<chapter_description> <p>The i18n module provides tools for internationalization and localization of text within Nelson.<\/p> <p>It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.<\/p> <p>This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.<\/p> <\/chapter_description>"
+    title: "I18n functions",
+    url: "./i18n/index.html",
+    path: "sections/i18n",
+    content:
+      "<chapter_description> <p>The i18n module provides tools for internationalization and localization of text within Nelson.</p> <p>It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.</p> <p>This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.</p> </chapter_description>",
   },
   {
-    "title": "gettext",
-    "url": "./i18n/gettext.html",
-    "path": "./i18n/gettext.html",
-    "content": "Get text translated into the current locale."
+    title: "gettext",
+    url: "./i18n/gettext.html",
+    path: "./i18n/gettext.html",
+    content: "Get text translated into the current locale.",
   },
   {
-    "title": "_",
-    "url": "./i18n/gettext.html",
-    "path": "./i18n/gettext.html",
-    "content": "Get text translated into the current locale."
+    title: "_",
+    url: "./i18n/gettext.html",
+    path: "./i18n/gettext.html",
+    content: "Get text translated into the current locale.",
   },
   {
-    "title": "i18nHelpers",
-    "url": "./i18n/i18nHelpers.html",
-    "path": "./i18n/i18nHelpers.html",
-    "content": "Internationalization (i18n) utility functions"
+    title: "i18nHelpers",
+    url: "./i18n/i18nHelpers.html",
+    path: "./i18n/i18nHelpers.html",
+    content: "Internationalization (i18n) utility functions",
   },
   {
-    "title": "poheader",
-    "url": "./i18n/poheader.html",
-    "path": "./i18n/poheader.html",
-    "content": "Generates po file header."
+    title: "poheader",
+    url: "./i18n/poheader.html",
+    path: "./i18n/poheader.html",
+    content: "Generates po file header.",
   },
   {
-    "title": "Types module",
-    "url": "./types/index.html",
-    "path": "sections/types",
-    "content": "<chapter_description> <p>The Types module provides tools for managing and inspecting data types in Nelson.<\/p> <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.<\/p> <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.<\/p> <\/chapter_description>"
+    title: "Types module",
+    url: "./types/index.html",
+    path: "sections/types",
+    content:
+      "<chapter_description> <p>The Types module provides tools for managing and inspecting data types in Nelson.</p> <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.</p> <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.</p> </chapter_description>",
   },
   {
-    "title": "class",
-    "url": "./types/class.html",
-    "path": "./types/class.html",
-    "content": "Return classname of object or creates a named object."
+    title: "class",
+    url: "./types/class.html",
+    path: "./types/class.html",
+    content: "Return classname of object or creates a named object.",
   },
   {
-    "title": "isa",
-    "url": "./types/isa.html",
-    "path": "./types/isa.html",
-    "content": "Return true if var is an object from the class str."
+    title: "isa",
+    url: "./types/isa.html",
+    path: "./types/isa.html",
+    content: "Return true if var is an object from the class str.",
   },
   {
-    "title": "iscell",
-    "url": "./types/iscell.html",
-    "path": "./types/iscell.html",
-    "content": "Return true if variable var is a cell array."
+    title: "iscell",
+    url: "./types/iscell.html",
+    path: "./types/iscell.html",
+    content: "Return true if variable var is a cell array.",
   },
   {
-    "title": "ischar",
-    "url": "./types/ischar.html",
-    "path": "./types/ischar.html",
-    "content": "Return true if variable var is a char array."
+    title: "ischar",
+    url: "./types/ischar.html",
+    path: "./types/ischar.html",
+    content: "Return true if variable var is a char array.",
   },
   {
-    "title": "isclass",
-    "url": "./types/isclass.html",
-    "path": "./types/isclass.html",
-    "content": "Return true if variable var is a class object."
+    title: "isclass",
+    url: "./types/isclass.html",
+    path: "./types/isclass.html",
+    content: "Return true if variable var is a class object.",
   },
   {
-    "title": "isdouble",
-    "url": "./types/isdouble.html",
-    "path": "./types/isdouble.html",
-    "content": "Return true if variable var is a double matrix."
+    title: "isdouble",
+    url: "./types/isdouble.html",
+    path: "./types/isdouble.html",
+    content: "Return true if variable var is a double matrix.",
   },
   {
-    "title": "isempty",
-    "url": "./types/isempty.html",
-    "path": "./types/isempty.html",
-    "content": "Return true if variable var is an empty matrix."
+    title: "isempty",
+    url: "./types/isempty.html",
+    path: "./types/isempty.html",
+    content: "Return true if variable var is an empty matrix.",
   },
   {
-    "title": "isfloat",
-    "url": "./types/isfloat.html",
-    "path": "./types/isfloat.html",
-    "content": "Return true if variable var is a single or double matrix."
+    title: "isfloat",
+    url: "./types/isfloat.html",
+    path: "./types/isfloat.html",
+    content: "Return true if variable var is a single or double matrix.",
   },
   {
-    "title": "ishandle",
-    "url": "./types/ishandle.html",
-    "path": "./types/ishandle.html",
-    "content": "Return true if variable var is a handle object."
+    title: "ishandle",
+    url: "./types/ishandle.html",
+    path: "./types/ishandle.html",
+    content: "Return true if variable var is a handle object.",
   },
   {
-    "title": "isint16",
-    "url": "./types/isint16.html",
-    "path": "./types/isint16.html",
-    "content": "Return true if variable var is a signed 16-bit integer type array."
+    title: "isint16",
+    url: "./types/isint16.html",
+    path: "./types/isint16.html",
+    content:
+      "Return true if variable var is a signed 16-bit integer type array.",
   },
   {
-    "title": "isint32",
-    "url": "./types/isint32.html",
-    "path": "./types/isint32.html",
-    "content": "Return true if variable var is a signed 32-bit integer type array."
+    title: "isint32",
+    url: "./types/isint32.html",
+    path: "./types/isint32.html",
+    content:
+      "Return true if variable var is a signed 32-bit integer type array.",
   },
   {
-    "title": "isint64",
-    "url": "./types/isint64.html",
-    "path": "./types/isint64.html",
-    "content": "Return true if variable var is a signed 64-bit integer type array."
+    title: "isint64",
+    url: "./types/isint64.html",
+    path: "./types/isint64.html",
+    content:
+      "Return true if variable var is a signed 64-bit integer type array.",
   },
   {
-    "title": "isint8",
-    "url": "./types/isint8.html",
-    "path": "./types/isint8.html",
-    "content": "Return true if variable var is a signed 8-bit integer type array."
+    title: "isint8",
+    url: "./types/isint8.html",
+    path: "./types/isint8.html",
+    content:
+      "Return true if variable var is a signed 8-bit integer type array.",
   },
   {
-    "title": "isinteger",
-    "url": "./types/isinteger.html",
-    "path": "./types/isinteger.html",
-    "content": "Return true if variable var is a integer type array."
+    title: "isinteger",
+    url: "./types/isinteger.html",
+    path: "./types/isinteger.html",
+    content: "Return true if variable var is a integer type array.",
   },
   {
-    "title": "islogical",
-    "url": "./types/islogical.html",
-    "path": "./types/islogical.html",
-    "content": "Return true if variable var is a logical."
+    title: "islogical",
+    url: "./types/islogical.html",
+    path: "./types/islogical.html",
+    content: "Return true if variable var is a logical.",
   },
   {
-    "title": "isnumeric",
-    "url": "./types/isnumeric.html",
-    "path": "./types/isnumeric.html",
-    "content": "Return true if variable var is a numeric array."
+    title: "isnumeric",
+    url: "./types/isnumeric.html",
+    path: "./types/isnumeric.html",
+    content: "Return true if variable var is a numeric array.",
   },
   {
-    "title": "isobject",
-    "url": "./types/isobject.html",
-    "path": "./types/isobject.html",
-    "content": "Return true if variable var is an object."
+    title: "isobject",
+    url: "./types/isobject.html",
+    path: "./types/isobject.html",
+    content: "Return true if variable var is an object.",
   },
   {
-    "title": "isreal",
-    "url": "./types/isreal.html",
-    "path": "./types/isreal.html",
-    "content": "Return true if all imaginary part is a zero array."
+    title: "isreal",
+    url: "./types/isreal.html",
+    path: "./types/isreal.html",
+    content: "Return true if all imaginary part is a zero array.",
   },
   {
-    "title": "issingle",
-    "url": "./types/issingle.html",
-    "path": "./types/issingle.html",
-    "content": "Return true if variable var is a single matrix."
+    title: "issingle",
+    url: "./types/issingle.html",
+    path: "./types/issingle.html",
+    content: "Return true if variable var is a single matrix.",
   },
   {
-    "title": "issparse",
-    "url": "./types/issparse.html",
-    "path": "./types/issparse.html",
-    "content": "Return true if variable var is a sparse array."
+    title: "issparse",
+    url: "./types/issparse.html",
+    path: "./types/issparse.html",
+    content: "Return true if variable var is a sparse array.",
   },
   {
-    "title": "isstring",
-    "url": "./types/isstring.html",
-    "path": "./types/isstring.html",
-    "content": "Return true if variable var is a string array."
+    title: "isstring",
+    url: "./types/isstring.html",
+    path: "./types/isstring.html",
+    content: "Return true if variable var is a string array.",
   },
   {
-    "title": "isstruct",
-    "url": "./types/isstruct.html",
-    "path": "./types/isstruct.html",
-    "content": "Return true if variable var is a structure."
+    title: "isstruct",
+    url: "./types/isstruct.html",
+    path: "./types/isstruct.html",
+    content: "Return true if variable var is a structure.",
   },
   {
-    "title": "isuint16",
-    "url": "./types/isuint16.html",
-    "path": "./types/isuint16.html",
-    "content": "Return true if variable var is an unsigned 16-bit integer type array."
+    title: "isuint16",
+    url: "./types/isuint16.html",
+    path: "./types/isuint16.html",
+    content:
+      "Return true if variable var is an unsigned 16-bit integer type array.",
   },
   {
-    "title": "isuint32",
-    "url": "./types/isuint32.html",
-    "path": "./types/isuint32.html",
-    "content": "Return true if variable var is an unsigned 32-bit integer type array."
+    title: "isuint32",
+    url: "./types/isuint32.html",
+    path: "./types/isuint32.html",
+    content:
+      "Return true if variable var is an unsigned 32-bit integer type array.",
   },
   {
-    "title": "isuint64",
-    "url": "./types/isuint64.html",
-    "path": "./types/isuint64.html",
-    "content": "Return true if variable var is an unsigned 64-bit integer type array."
+    title: "isuint64",
+    url: "./types/isuint64.html",
+    path: "./types/isuint64.html",
+    content:
+      "Return true if variable var is an unsigned 64-bit integer type array.",
   },
   {
-    "title": "isuint8",
-    "url": "./types/isuint8.html",
-    "path": "./types/isuint8.html",
-    "content": "Return true if variable var is an unsigned 8-bit integer type array."
+    title: "isuint8",
+    url: "./types/isuint8.html",
+    path: "./types/isuint8.html",
+    content:
+      "Return true if variable var is an unsigned 8-bit integer type array.",
   },
   {
-    "title": "isvarname",
-    "url": "./types/isvarname.html",
-    "path": "./types/isvarname.html",
-    "content": "Return true if input is valid variable name."
+    title: "isvarname",
+    url: "./types/isvarname.html",
+    path: "./types/isvarname.html",
+    content: "Return true if input is valid variable name.",
   },
   {
-    "title": "missing",
-    "url": "./types/missing.html",
-    "path": "./types/missing.html",
-    "content": "Return a missing value."
+    title: "missing",
+    url: "./types/missing.html",
+    path: "./types/missing.html",
+    content: "Return a missing value.",
   },
   {
-    "title": "Logical type functions",
-    "url": "./logical/index.html",
-    "path": "sections/logical",
-    "content": "<chapter_description> <p>The Logical Type module provides tools for working with Boolean values and logical operations in Nelson.<\/p> <p>It enables the creation, conversion, and manipulation of logical data, supporting fundamental logical operations that are essential for control flow, conditional evaluation, and decision-making in scripts and programs.<\/p> <\/chapter_description>"
+    title: "Logical type functions",
+    url: "./logical/index.html",
+    path: "sections/logical",
+    content:
+      "<chapter_description> <p>The Logical Type module provides tools for working with Boolean values and logical operations in Nelson.</p> <p>It enables the creation, conversion, and manipulation of logical data, supporting fundamental logical operations that are essential for control flow, conditional evaluation, and decision-making in scripts and programs.</p> </chapter_description>",
   },
   {
-    "title": "false",
-    "url": "./logical/false.html",
-    "path": "./logical/false.html",
-    "content": "Logical false."
+    title: "false",
+    url: "./logical/false.html",
+    path: "./logical/false.html",
+    content: "Logical false.",
   },
   {
-    "title": "logical",
-    "url": "./logical/logical.html",
-    "path": "./logical/logical.html",
-    "content": "Converts a numeric value to logical type."
+    title: "logical",
+    url: "./logical/logical.html",
+    path: "./logical/logical.html",
+    content: "Converts a numeric value to logical type.",
   },
   {
-    "title": "true",
-    "url": "./logical/true.html",
-    "path": "./logical/true.html",
-    "content": "Logical true."
+    title: "true",
+    url: "./logical/true.html",
+    path: "./logical/true.html",
+    content: "Logical true.",
   },
   {
-    "title": "xor",
-    "url": "./logical/xor.html",
-    "path": "./logical/xor.html",
-    "content": "Exclusive or."
+    title: "xor",
+    url: "./logical/xor.html",
+    path: "./logical/xor.html",
+    content: "Exclusive or.",
   },
   {
-    "title": "Single type",
-    "url": "./single/index.html",
-    "path": "sections/single",
-    "content": "<chapter_description> <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.<\/p> <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.<\/p> <\/chapter_description>"
+    title: "Single type",
+    url: "./single/index.html",
+    path: "sections/single",
+    content:
+      "<chapter_description> <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p> <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p> </chapter_description>",
   },
   {
-    "title": "single",
-    "url": "./single/single.html",
-    "path": "./single/single.html",
-    "content": "Converts a variable to single precision type."
+    title: "single",
+    url: "./single/single.html",
+    path: "./single/single.html",
+    content: "Converts a variable to single precision type.",
   },
   {
-    "title": "Double",
-    "url": "./double/index.html",
-    "path": "sections/double",
-    "content": "<chapter_description> <p>The Double Type module provides tools for handling double-precision numeric values in Nelson.<\/p> <p>It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.<\/p> <\/chapter_description>"
+    title: "Double",
+    url: "./double/index.html",
+    path: "sections/double",
+    content:
+      "<chapter_description> <p>The Double Type module provides tools for handling double-precision numeric values in Nelson.</p> <p>It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.</p> </chapter_description>",
   },
   {
-    "title": "double",
-    "url": "./double/double.html",
-    "path": "./double/double.html",
-    "content": "Converts a variable to double precision type."
+    title: "double",
+    url: "./double/double.html",
+    path: "./double/double.html",
+    content: "Converts a variable to double precision type.",
   },
   {
-    "title": "flintmax",
-    "url": "./double/flintmax.html",
-    "path": "./double/flintmax.html",
-    "content": "Largest consecutive integer in floating-point format."
+    title: "flintmax",
+    url: "./double/flintmax.html",
+    path: "./double/flintmax.html",
+    content: "Largest consecutive integer in floating-point format.",
   },
   {
-    "title": "realmax",
-    "url": "./double/realmax.html",
-    "path": "./double/realmax.html",
-    "content": "Largest positive floating-point number."
+    title: "realmax",
+    url: "./double/realmax.html",
+    path: "./double/realmax.html",
+    content: "Largest positive floating-point number.",
   },
   {
-    "title": "realmin",
-    "url": "./double/realmin.html",
-    "path": "./double/realmin.html",
-    "content": "Smallest positive floating-point number."
+    title: "realmin",
+    url: "./double/realmin.html",
+    path: "./double/realmin.html",
+    content: "Smallest positive floating-point number.",
   },
   {
-    "title": "Integers type",
-    "url": "./integer/index.html",
-    "path": "sections/integer",
-    "content": "<chapter_description> <p>The Integer Types module provides tools for working with signed and unsigned integers of various sizes in Nelson.<\/p> <p>These types are particularly useful for efficiently storing and processing large datasets, such as images or large numeric arrays.<\/p> <p>The module supports conversions between integer formats and provides access to the minimum and maximum values representable for each integer type, ensuring safe and precise integer arithmetic.<\/p> <\/chapter_description>"
+    title: "Integers type",
+    url: "./integer/index.html",
+    path: "sections/integer",
+    content:
+      "<chapter_description> <p>The Integer Types module provides tools for working with signed and unsigned integers of various sizes in Nelson.</p> <p>These types are particularly useful for efficiently storing and processing large datasets, such as images or large numeric arrays.</p> <p>The module supports conversions between integer formats and provides access to the minimum and maximum values representable for each integer type, ensuring safe and precise integer arithmetic.</p> </chapter_description>",
   },
   {
-    "title": "int16",
-    "url": "./integer/int16.html",
-    "path": "./integer/int16.html",
-    "content": "Converts to 16-bit signed integer."
+    title: "int16",
+    url: "./integer/int16.html",
+    path: "./integer/int16.html",
+    content: "Converts to 16-bit signed integer.",
   },
   {
-    "title": "int32",
-    "url": "./integer/int32.html",
-    "path": "./integer/int32.html",
-    "content": "Converts to 32-bit signed integer."
+    title: "int32",
+    url: "./integer/int32.html",
+    path: "./integer/int32.html",
+    content: "Converts to 32-bit signed integer.",
   },
   {
-    "title": "int64",
-    "url": "./integer/int64.html",
-    "path": "./integer/int64.html",
-    "content": "Converts to 64-bit signed integer."
+    title: "int64",
+    url: "./integer/int64.html",
+    path: "./integer/int64.html",
+    content: "Converts to 64-bit signed integer.",
   },
   {
-    "title": "int8",
-    "url": "./integer/int8.html",
-    "path": "./integer/int8.html",
-    "content": "Converts to 8-bit signed integer."
+    title: "int8",
+    url: "./integer/int8.html",
+    path: "./integer/int8.html",
+    content: "Converts to 8-bit signed integer.",
   },
   {
-    "title": "intmax",
-    "url": "./integer/intmax.html",
-    "path": "./integer/intmax.html",
-    "content": "Return the largest integer that can be represented in an integer type."
+    title: "intmax",
+    url: "./integer/intmax.html",
+    path: "./integer/intmax.html",
+    content:
+      "Return the largest integer that can be represented in an integer type.",
   },
   {
-    "title": "intmin",
-    "url": "./integer/intmin.html",
-    "path": "./integer/intmin.html",
-    "content": "Return the smallest integer that can be represented in an integer type."
+    title: "intmin",
+    url: "./integer/intmin.html",
+    path: "./integer/intmin.html",
+    content:
+      "Return the smallest integer that can be represented in an integer type.",
   },
   {
-    "title": "uint16",
-    "url": "./integer/uint16.html",
-    "path": "./integer/uint16.html",
-    "content": "Converts to 16-bit unsigned integer."
+    title: "uint16",
+    url: "./integer/uint16.html",
+    path: "./integer/uint16.html",
+    content: "Converts to 16-bit unsigned integer.",
   },
   {
-    "title": "uint32",
-    "url": "./integer/uint32.html",
-    "path": "./integer/uint32.html",
-    "content": "Converts to 32-bit unsigned integer."
+    title: "uint32",
+    url: "./integer/uint32.html",
+    path: "./integer/uint32.html",
+    content: "Converts to 32-bit unsigned integer.",
   },
   {
-    "title": "uint64",
-    "url": "./integer/uint64.html",
-    "path": "./integer/uint64.html",
-    "content": "Converts to 64-bit unsigned integer."
+    title: "uint64",
+    url: "./integer/uint64.html",
+    path: "./integer/uint64.html",
+    content: "Converts to 64-bit unsigned integer.",
   },
   {
-    "title": "uint8",
-    "url": "./integer/uint8.html",
-    "path": "./integer/uint8.html",
-    "content": "Converts to 8-bit unsigned integer."
+    title: "uint8",
+    url: "./integer/uint8.html",
+    path: "./integer/uint8.html",
+    content: "Converts to 8-bit unsigned integer.",
   },
   {
-    "title": "Sparse type",
-    "url": "./sparse/index.html",
-    "path": "sections/sparse",
-    "content": "<chapter_description> <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.<\/p> <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.<\/p> <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.<\/p> <\/chapter_description>"
+    title: "Sparse type",
+    url: "./sparse/index.html",
+    path: "sections/sparse",
+    content:
+      "<chapter_description> <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.</p> <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.</p> <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.</p> </chapter_description>",
   },
   {
-    "title": "IJV",
-    "url": "./sparse/IJV.html",
-    "path": "./sparse/IJV.html",
-    "content": "Returns I,J,V triplets from a sparse matrix."
+    title: "IJV",
+    url: "./sparse/IJV.html",
+    path: "./sparse/IJV.html",
+    content: "Returns I,J,V triplets from a sparse matrix.",
   },
   {
-    "title": "full",
-    "url": "./sparse/full.html",
-    "path": "./sparse/full.html",
-    "content": "Sparse to full matrix conversion."
+    title: "full",
+    url: "./sparse/full.html",
+    path: "./sparse/full.html",
+    content: "Sparse to full matrix conversion.",
   },
   {
-    "title": "nnz",
-    "url": "./sparse/nnz.html",
-    "path": "./sparse/nnz.html",
-    "content": "Return the number of nonzero elements."
+    title: "nnz",
+    url: "./sparse/nnz.html",
+    path: "./sparse/nnz.html",
+    content: "Return the number of nonzero elements.",
   },
   {
-    "title": "nzmax",
-    "url": "./sparse/nzmax.html",
-    "path": "./sparse/nzmax.html",
-    "content": "Reserved size for nonzero elements."
+    title: "nzmax",
+    url: "./sparse/nzmax.html",
+    path: "./sparse/nzmax.html",
+    content: "Reserved size for nonzero elements.",
   },
   {
-    "title": "sparse",
-    "url": "./sparse/sparse.html",
-    "path": "./sparse/sparse.html",
-    "content": "Sparse matrix definition."
+    title: "sparse",
+    url: "./sparse/sparse.html",
+    path: "./sparse/sparse.html",
+    content: "Sparse matrix definition.",
   },
   {
-    "title": "speye",
-    "url": "./sparse/speye.html",
-    "path": "./sparse/speye.html",
-    "content": "Sparse identity matrix."
+    title: "speye",
+    url: "./sparse/speye.html",
+    path: "./sparse/speye.html",
+    content: "Sparse identity matrix.",
   },
   {
-    "title": "spones",
-    "url": "./sparse/spones.html",
-    "path": "./sparse/spones.html",
-    "content": "Replaces non zero sparse matrix elements with ones."
+    title: "spones",
+    url: "./sparse/spones.html",
+    path: "./sparse/spones.html",
+    content: "Replaces non zero sparse matrix elements with ones.",
   },
   {
-    "title": "sprand",
-    "url": "./sparse/sprand.html",
-    "path": "./sparse/sprand.html",
-    "content": "Sparse uniformly distributed random matrix."
+    title: "sprand",
+    url: "./sparse/sprand.html",
+    path: "./sparse/sprand.html",
+    content: "Sparse uniformly distributed random matrix.",
   },
   {
-    "title": "sprandn",
-    "url": "./sparse/sprandn.html",
-    "path": "./sparse/sprandn.html",
-    "content": "Sparse normally distributed random matrix."
+    title: "sprandn",
+    url: "./sparse/sprandn.html",
+    path: "./sparse/sprandn.html",
+    content: "Sparse normally distributed random matrix.",
   },
   {
-    "title": "String type",
-    "url": "./string/index.html",
-    "path": "sections/string",
-    "content": "<chapter_description> <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.<\/p> <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.<\/p> <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.<\/p> <\/chapter_description>"
+    title: "String type",
+    url: "./string/index.html",
+    path: "sections/string",
+    content:
+      "<chapter_description> <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.</p> <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.</p> <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.</p> </chapter_description>",
   },
   {
-    "title": "append",
-    "url": "./string/append.html",
-    "path": "./string/append.html",
-    "content": "combines strings horizontally."
+    title: "append",
+    url: "./string/append.html",
+    path: "./string/append.html",
+    content: "combines strings horizontally.",
   },
   {
-    "title": "blanks",
-    "url": "./string/blanks.html",
-    "path": "./string/blanks.html",
-    "content": "creates an string of blank characters."
+    title: "blanks",
+    url: "./string/blanks.html",
+    path: "./string/blanks.html",
+    content: "creates an string of blank characters.",
   },
   {
-    "title": "char",
-    "url": "./string/char.html",
-    "path": "./string/char.html",
-    "content": "Converts to a character array."
+    title: "char",
+    url: "./string/char.html",
+    path: "./string/char.html",
+    content: "Converts to a character array.",
   },
   {
-    "title": "contains",
-    "url": "./string/contains.html",
-    "path": "./string/contains.html",
-    "content": "checks if string contains with pattern."
+    title: "contains",
+    url: "./string/contains.html",
+    path: "./string/contains.html",
+    content: "checks if string contains with pattern.",
   },
   {
-    "title": "convertCharsToStrings",
-    "url": "./string/convertCharsToStrings.html",
-    "path": "./string/convertCharsToStrings.html",
-    "content": "Convert chars arrays to string arrays."
+    title: "convertCharsToStrings",
+    url: "./string/convertCharsToStrings.html",
+    path: "./string/convertCharsToStrings.html",
+    content: "Convert chars arrays to string arrays.",
   },
   {
-    "title": "convertStringsToChars",
-    "url": "./string/convertStringsToChars.html",
-    "path": "./string/convertStringsToChars.html",
-    "content": "Convert string arrays to character arrays."
+    title: "convertStringsToChars",
+    url: "./string/convertStringsToChars.html",
+    path: "./string/convertStringsToChars.html",
+    content: "Convert string arrays to character arrays.",
   },
   {
-    "title": "count",
-    "url": "./string/count.html",
-    "path": "./string/count.html",
-    "content": "Computes the number of occurrences of an pattern."
+    title: "count",
+    url: "./string/count.html",
+    path: "./string/count.html",
+    content: "Computes the number of occurrences of an pattern.",
   },
   {
-    "title": "deblank",
-    "url": "./string/deblank.html",
-    "path": "./string/deblank.html",
-    "content": "Remove trailing whitespace."
+    title: "deblank",
+    url: "./string/deblank.html",
+    path: "./string/deblank.html",
+    content: "Remove trailing whitespace.",
   },
   {
-    "title": "endsWith",
-    "url": "./string/endsWith.html",
-    "path": "./string/endsWith.html",
-    "content": "checks if string ends with pattern."
+    title: "endsWith",
+    url: "./string/endsWith.html",
+    path: "./string/endsWith.html",
+    content: "checks if string ends with pattern.",
   },
   {
-    "title": "int2str",
-    "url": "./string/int2str.html",
-    "path": "./string/int2str.html",
-    "content": "Convert an integer array to a string"
+    title: "int2str",
+    url: "./string/int2str.html",
+    path: "./string/int2str.html",
+    content: "Convert an integer array to a string",
   },
   {
-    "title": "isStringScalar",
-    "url": "./string/isStringScalar.html",
-    "path": "./string/isStringScalar.html",
-    "content": "checks if input is string array with one element."
+    title: "isStringScalar",
+    url: "./string/isStringScalar.html",
+    path: "./string/isStringScalar.html",
+    content: "checks if input is string array with one element.",
   },
   {
-    "title": "isletter",
-    "url": "./string/isletter.html",
-    "path": "./string/isletter.html",
-    "content": "Determine which characters are letters."
+    title: "isletter",
+    url: "./string/isletter.html",
+    path: "./string/isletter.html",
+    content: "Determine which characters are letters.",
   },
   {
-    "title": "isspace",
-    "url": "./string/isspace.html",
-    "path": "./string/isspace.html",
-    "content": "Determine which characters are space."
+    title: "isspace",
+    url: "./string/isspace.html",
+    path: "./string/isspace.html",
+    content: "Determine which characters are space.",
   },
   {
-    "title": "join",
-    "url": "./string/join.html",
-    "path": "./string/join.html",
-    "content": "Combine strings."
+    title: "join",
+    url: "./string/join.html",
+    path: "./string/join.html",
+    content: "Combine strings.",
   },
   {
-    "title": "mat2str",
-    "url": "./string/mat2str.html",
-    "path": "./string/mat2str.html",
-    "content": "Matrix to String."
+    title: "mat2str",
+    url: "./string/mat2str.html",
+    path: "./string/mat2str.html",
+    content: "Matrix to String.",
   },
   {
-    "title": "matches",
-    "url": "./string/matches.html",
-    "path": "./string/matches.html",
-    "content": "Determine if pattern matches with strings."
+    title: "matches",
+    url: "./string/matches.html",
+    path: "./string/matches.html",
+    content: "Determine if pattern matches with strings.",
   },
   {
-    "title": "newline",
-    "url": "./string/newline.html",
-    "path": "./string/newline.html",
-    "content": "Returns a newline character."
+    title: "newline",
+    url: "./string/newline.html",
+    path: "./string/newline.html",
+    content: "Returns a newline character.",
   },
   {
-    "title": "num2str",
-    "url": "./string/num2str.html",
-    "path": "./string/num2str.html",
-    "content": "Converts numbers to character array."
+    title: "num2str",
+    url: "./string/num2str.html",
+    path: "./string/num2str.html",
+    content: "Converts numbers to character array.",
   },
   {
-    "title": "replace",
-    "url": "./string/replace.html",
-    "path": "./string/replace.html",
-    "content": "Replaces strings in another."
+    title: "replace",
+    url: "./string/replace.html",
+    path: "./string/replace.html",
+    content: "Replaces strings in another.",
   },
   {
-    "title": "sprintf",
-    "url": "./string/sprintf.html",
-    "path": "./string/sprintf.html",
-    "content": "Writes data to a string."
+    title: "sprintf",
+    url: "./string/sprintf.html",
+    path: "./string/sprintf.html",
+    content: "Writes data to a string.",
   },
   {
-    "title": "startsWith",
-    "url": "./string/startsWith.html",
-    "path": "./string/startsWith.html",
-    "content": "checks if string starts with pattern."
+    title: "startsWith",
+    url: "./string/startsWith.html",
+    path: "./string/startsWith.html",
+    content: "checks if string starts with pattern.",
   },
   {
-    "title": "str2double",
-    "url": "./string/str2double.html",
-    "path": "./string/str2double.html",
-    "content": "Converts a string to double."
+    title: "str2double",
+    url: "./string/str2double.html",
+    path: "./string/str2double.html",
+    content: "Converts a string to double.",
   },
   {
-    "title": "strcat",
-    "url": "./string/strcat.html",
-    "path": "./string/strcat.html",
-    "content": "concatenate strings horizontally."
+    title: "strcat",
+    url: "./string/strcat.html",
+    path: "./string/strcat.html",
+    content: "concatenate strings horizontally.",
   },
   {
-    "title": "strcmp",
-    "url": "./string/strcmp.html",
-    "path": "./string/strcmp.html",
-    "content": "Strings comparaison."
+    title: "strcmp",
+    url: "./string/strcmp.html",
+    path: "./string/strcmp.html",
+    content: "Strings comparaison.",
   },
   {
-    "title": "strcmpi",
-    "url": "./string/strcmpi.html",
-    "path": "./string/strcmpi.html",
-    "content": "Strings comparaison (case insensitive)."
+    title: "strcmpi",
+    url: "./string/strcmpi.html",
+    path: "./string/strcmpi.html",
+    content: "Strings comparaison (case insensitive).",
   },
   {
-    "title": "strfind",
-    "url": "./string/strfind.html",
-    "path": "./string/strfind.html",
-    "content": "Find a string in another."
+    title: "strfind",
+    url: "./string/strfind.html",
+    path: "./string/strfind.html",
+    content: "Find a string in another.",
   },
   {
-    "title": "string",
-    "url": "./string/string.html",
-    "path": "./string/string.html",
-    "content": "string array constructor."
+    title: "string",
+    url: "./string/string.html",
+    path: "./string/string.html",
+    content: "string array constructor.",
   },
   {
-    "title": "strings",
-    "url": "./string/strings.html",
-    "path": "./string/strings.html",
-    "content": "Create string array without characters."
+    title: "strings",
+    url: "./string/strings.html",
+    path: "./string/strings.html",
+    content: "Create string array without characters.",
   },
   {
-    "title": "strjust",
-    "url": "./string/strjust.html",
-    "path": "./string/strjust.html",
-    "content": "Justify strings"
+    title: "strjust",
+    url: "./string/strjust.html",
+    path: "./string/strjust.html",
+    content: "Justify strings",
   },
   {
-    "title": "strlength",
-    "url": "./string/strlength.html",
-    "path": "./string/strlength.html",
-    "content": "Length of strings in cell of strings or string array."
+    title: "strlength",
+    url: "./string/strlength.html",
+    path: "./string/strlength.html",
+    content: "Length of strings in cell of strings or string array.",
   },
   {
-    "title": "strncmp",
-    "url": "./string/strncmp.html",
-    "path": "./string/strncmp.html",
-    "content": "Compares first n characters of strings."
+    title: "strncmp",
+    url: "./string/strncmp.html",
+    path: "./string/strncmp.html",
+    content: "Compares first n characters of strings.",
   },
   {
-    "title": "strncmpi",
-    "url": "./string/strncmpi.html",
-    "path": "./string/strncmpi.html",
-    "content": "Compares first n characters of strings (case sensitive)."
+    title: "strncmpi",
+    url: "./string/strncmpi.html",
+    path: "./string/strncmpi.html",
+    content: "Compares first n characters of strings (case sensitive).",
   },
   {
-    "title": "strrep",
-    "url": "./string/strrep.html",
-    "path": "./string/strrep.html",
-    "content": "Replaces strings in another."
+    title: "strrep",
+    url: "./string/strrep.html",
+    path: "./string/strrep.html",
+    content: "Replaces strings in another.",
   },
   {
-    "title": "strtrim",
-    "url": "./string/strtrim.html",
-    "path": "./string/strtrim.html",
-    "content": "Remove leading and trailing whitespace."
+    title: "strtrim",
+    url: "./string/strtrim.html",
+    path: "./string/strtrim.html",
+    content: "Remove leading and trailing whitespace.",
   },
   {
-    "title": "tolower",
-    "url": "./string/tolower.html",
-    "path": "./string/tolower.html",
-    "content": "Lower case conversion."
+    title: "tolower",
+    url: "./string/tolower.html",
+    path: "./string/tolower.html",
+    content: "Lower case conversion.",
   },
   {
-    "title": "toupper",
-    "url": "./string/toupper.html",
-    "path": "./string/toupper.html",
-    "content": "Upper case conversion."
+    title: "toupper",
+    url: "./string/toupper.html",
+    path: "./string/toupper.html",
+    content: "Upper case conversion.",
   },
   {
-    "title": "Function_handle functions",
-    "url": "./function_handle/index.html",
-    "path": "sections/function_handle",
-    "content": "<chapter_description> <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.<\/p> <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.<\/p> <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.<\/p> <\/chapter_description>"
+    title: "Function_handle functions",
+    url: "./function_handle/index.html",
+    path: "sections/function_handle",
+    content:
+      "<chapter_description> <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.</p> <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.</p> <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.</p> </chapter_description>",
   },
   {
-    "title": "Anonymous Functions",
-    "url": "./function_handle/anonymous_function.html",
-    "path": "./function_handle/anonymous_function.html",
-    "content": "Anonymous Functions."
+    title: "Anonymous Functions",
+    url: "./function_handle/anonymous_function.html",
+    path: "./function_handle/anonymous_function.html",
+    content: "Anonymous Functions.",
   },
   {
-    "title": "func2str",
-    "url": "./function_handle/func2str.html",
-    "path": "./function_handle/func2str.html",
-    "content": "Return a function handle constructed from a string."
+    title: "func2str",
+    url: "./function_handle/func2str.html",
+    path: "./function_handle/func2str.html",
+    content: "Return a function handle constructed from a string.",
   },
   {
-    "title": "isfunction_handle",
-    "url": "./function_handle/isfunction_handle.html",
-    "path": "./function_handle/isfunction_handle.html",
-    "content": "Checks if value is a function handle."
+    title: "isfunction_handle",
+    url: "./function_handle/isfunction_handle.html",
+    path: "./function_handle/isfunction_handle.html",
+    content: "Checks if value is a function handle.",
   },
   {
-    "title": "str2func",
-    "url": "./function_handle/str2func.html",
-    "path": "./function_handle/str2func.html",
-    "content": "Returns a function handle from a string."
+    title: "str2func",
+    url: "./function_handle/str2func.html",
+    path: "./function_handle/str2func.html",
+    content: "Returns a function handle from a string.",
   },
   {
-    "title": "Handle",
-    "url": "./handle/index.html",
-    "path": "sections/handle",
-    "content": "<chapter_description> <p>The Handle module provides tools for creating and manipulating handle objects in Nelson.<\/p> <p>Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.<\/p> <p>This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.<\/p> <\/chapter_description>"
+    title: "Handle",
+    url: "./handle/index.html",
+    path: "sections/handle",
+    content:
+      "<chapter_description> <p>The Handle module provides tools for creating and manipulating handle objects in Nelson.</p> <p>Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.</p> <p>This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.</p> </chapter_description>",
   },
   {
-    "title": "delete",
-    "url": "./handle/delete.html",
-    "path": "./handle/delete.html",
-    "content": "delete handle objects."
+    title: "delete",
+    url: "./handle/delete.html",
+    path: "./handle/delete.html",
+    content: "delete handle objects.",
   },
   {
-    "title": "get",
-    "url": "./handle/get.html",
-    "path": "./handle/get.html",
-    "content": "Retrieve a property value from an handle object."
+    title: "get",
+    url: "./handle/get.html",
+    path: "./handle/get.html",
+    content: "Retrieve a property value from an handle object.",
   },
   {
-    "title": "invoke",
-    "url": "./handle/invoke.html",
-    "path": "./handle/invoke.html",
-    "content": "Invoke method on an handle object."
+    title: "invoke",
+    url: "./handle/invoke.html",
+    path: "./handle/invoke.html",
+    content: "Invoke method on an handle object.",
   },
   {
-    "title": "ismethod",
-    "url": "./handle/ismethod.html",
-    "path": "./handle/ismethod.html",
-    "content": "Return true if method of handle object."
+    title: "ismethod",
+    url: "./handle/ismethod.html",
+    path: "./handle/ismethod.html",
+    content: "Return true if method of handle object.",
   },
   {
-    "title": "isprop",
-    "url": "./handle/isprop.html",
-    "path": "./handle/isprop.html",
-    "content": "Return true if property of handle object."
+    title: "isprop",
+    url: "./handle/isprop.html",
+    path: "./handle/isprop.html",
+    content: "Return true if property of handle object.",
   },
   {
-    "title": "isvalid",
-    "url": "./handle/isvalid.html",
-    "path": "./handle/isvalid.html",
-    "content": "Return true if variable h is a valid handle."
+    title: "isvalid",
+    url: "./handle/isvalid.html",
+    path: "./handle/isvalid.html",
+    content: "Return true if variable h is a valid handle.",
   },
   {
-    "title": "methods",
-    "url": "./handle/methods.html",
-    "path": "./handle/methods.html",
-    "content": "Returns the methods name of an object handle."
+    title: "methods",
+    url: "./handle/methods.html",
+    path: "./handle/methods.html",
+    content: "Returns the methods name of an object handle.",
   },
   {
-    "title": "properties",
-    "url": "./handle/properties.html",
-    "path": "./handle/properties.html",
-    "content": "Returns the properties name of an object handle."
+    title: "properties",
+    url: "./handle/properties.html",
+    path: "./handle/properties.html",
+    content: "Returns the properties name of an object handle.",
   },
   {
-    "title": "set",
-    "url": "./handle/set.html",
-    "path": "./handle/set.html",
-    "content": "Set a property value of an handle object."
+    title: "set",
+    url: "./handle/set.html",
+    path: "./handle/set.html",
+    content: "Set a property value of an handle object.",
   },
   {
-    "title": "Data structures",
-    "url": "./data_structures/index.html",
-    "path": "sections/data_structures",
-    "content": "<chapter_description> <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.<\/p> <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.<\/p> <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.<\/p> <\/chapter_description>"
+    title: "Data structures",
+    url: "./data_structures/index.html",
+    path: "sections/data_structures",
+    content:
+      "<chapter_description> <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.</p> <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.</p> <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.</p> </chapter_description>",
   },
   {
-    "title": "arrayfun",
-    "url": "./data_structures/arrayfun.html",
-    "path": "./data_structures/arrayfun.html",
-    "content": "Apply a function to each element of an array."
+    title: "arrayfun",
+    url: "./data_structures/arrayfun.html",
+    path: "./data_structures/arrayfun.html",
+    content: "Apply a function to each element of an array.",
   },
   {
-    "title": "cell",
-    "url": "./data_structures/cell.html",
-    "path": "./data_structures/cell.html",
-    "content": "Create cell array of empty matrices."
+    title: "cell",
+    url: "./data_structures/cell.html",
+    path: "./data_structures/cell.html",
+    content: "Create cell array of empty matrices.",
   },
   {
-    "title": "cell2mat",
-    "url": "./data_structures/cell2mat.html",
-    "path": "./data_structures/cell2mat.html",
-    "content": "Transform a cell array containing matrices into a single, concatenated matrix."
+    title: "cell2mat",
+    url: "./data_structures/cell2mat.html",
+    path: "./data_structures/cell2mat.html",
+    content:
+      "Transform a cell array containing matrices into a single, concatenated matrix.",
   },
   {
-    "title": "cell2struct",
-    "url": "./data_structures/cell2struct.html",
-    "path": "./data_structures/cell2struct.html",
-    "content": "Creates a struct from a cell."
+    title: "cell2struct",
+    url: "./data_structures/cell2struct.html",
+    path: "./data_structures/cell2struct.html",
+    content: "Creates a struct from a cell.",
   },
   {
-    "title": "celldisp",
-    "url": "./data_structures/celldisp.html",
-    "path": "./data_structures/celldisp.html",
-    "content": "Display cell array contents."
+    title: "celldisp",
+    url: "./data_structures/celldisp.html",
+    path: "./data_structures/celldisp.html",
+    content: "Display cell array contents.",
   },
   {
-    "title": "cellfun",
-    "url": "./data_structures/cellfun.html",
-    "path": "./data_structures/cellfun.html",
-    "content": "Evaluates an function on a cell."
+    title: "cellfun",
+    url: "./data_structures/cellfun.html",
+    path: "./data_structures/cellfun.html",
+    content: "Evaluates an function on a cell.",
   },
   {
-    "title": "cellstr",
-    "url": "./data_structures/cellstr.html",
-    "path": "./data_structures/cellstr.html",
-    "content": "Converts to cell of character array."
+    title: "cellstr",
+    url: "./data_structures/cellstr.html",
+    path: "./data_structures/cellstr.html",
+    content: "Converts to cell of character array.",
   },
   {
-    "title": "fieldnames",
-    "url": "./data_structures/fieldnames.html",
-    "path": "./data_structures/fieldnames.html",
-    "content": "Returns field names of a structure or an handle."
+    title: "fieldnames",
+    url: "./data_structures/fieldnames.html",
+    path: "./data_structures/fieldnames.html",
+    content: "Returns field names of a structure or an handle.",
   },
   {
-    "title": "getfield",
-    "url": "./data_structures/getfield.html",
-    "path": "./data_structures/getfield.html",
-    "content": "Returns value of a field in a struct."
+    title: "getfield",
+    url: "./data_structures/getfield.html",
+    path: "./data_structures/getfield.html",
+    content: "Returns value of a field in a struct.",
   },
   {
-    "title": "iscellstr",
-    "url": "./data_structures/iscellstr.html",
-    "path": "./data_structures/iscellstr.html",
-    "content": "Returns if a variable is a cell of strings."
+    title: "iscellstr",
+    url: "./data_structures/iscellstr.html",
+    path: "./data_structures/iscellstr.html",
+    content: "Returns if a variable is a cell of strings.",
   },
   {
-    "title": "isfield",
-    "url": "./data_structures/isfield.html",
-    "path": "./data_structures/isfield.html",
-    "content": "Checks if a fieldname exists in a struct."
+    title: "isfield",
+    url: "./data_structures/isfield.html",
+    path: "./data_structures/isfield.html",
+    content: "Checks if a fieldname exists in a struct.",
   },
   {
-    "title": "namedargs2cell",
-    "url": "./data_structures/namedargs2cell.html",
-    "path": "./data_structures/namedargs2cell.html",
-    "content": "Converts a struct containing name-value pairs to a cell."
+    title: "namedargs2cell",
+    url: "./data_structures/namedargs2cell.html",
+    path: "./data_structures/namedargs2cell.html",
+    content: "Converts a struct containing name-value pairs to a cell.",
   },
   {
-    "title": "num2cell",
-    "url": "./data_structures/num2cell.html",
-    "path": "./data_structures/num2cell.html",
-    "content": "Convert array to cell array with consistently sized cells."
+    title: "num2cell",
+    url: "./data_structures/num2cell.html",
+    path: "./data_structures/num2cell.html",
+    content: "Convert array to cell array with consistently sized cells.",
   },
   {
-    "title": "orderfields",
-    "url": "./data_structures/orderfields.html",
-    "path": "./data_structures/orderfields.html",
-    "content": "Reorganize the fields of a structured array."
+    title: "orderfields",
+    url: "./data_structures/orderfields.html",
+    path: "./data_structures/orderfields.html",
+    content: "Reorganize the fields of a structured array.",
   },
   {
-    "title": "renameStructField",
-    "url": "./data_structures/renameStructField.html",
-    "path": "./data_structures/renameStructField.html",
-    "content": "Rename field names of a struct or struct array."
+    title: "renameStructField",
+    url: "./data_structures/renameStructField.html",
+    path: "./data_structures/renameStructField.html",
+    content: "Rename field names of a struct or struct array.",
   },
   {
-    "title": "rmfield",
-    "url": "./data_structures/rmfield.html",
-    "path": "./data_structures/rmfield.html",
-    "content": "Remove fields from structure."
+    title: "rmfield",
+    url: "./data_structures/rmfield.html",
+    path: "./data_structures/rmfield.html",
+    content: "Remove fields from structure.",
   },
   {
-    "title": "setfield",
-    "url": "./data_structures/setfield.html",
-    "path": "./data_structures/setfield.html",
-    "content": "Set structure field contents."
+    title: "setfield",
+    url: "./data_structures/setfield.html",
+    path: "./data_structures/setfield.html",
+    content: "Set structure field contents.",
   },
   {
-    "title": "struct",
-    "url": "./data_structures/struct.html",
-    "path": "./data_structures/struct.html",
-    "content": "Creates a struct."
+    title: "struct",
+    url: "./data_structures/struct.html",
+    path: "./data_structures/struct.html",
+    content: "Creates a struct.",
   },
   {
-    "title": "struct2cell",
-    "url": "./data_structures/struct2cell.html",
-    "path": "./data_structures/struct2cell.html",
-    "content": "Creates a cell from a structure."
+    title: "struct2cell",
+    url: "./data_structures/struct2cell.html",
+    path: "./data_structures/struct2cell.html",
+    content: "Creates a cell from a structure.",
   },
   {
-    "title": "Dictionaries",
-    "url": "./dictionary/index.html",
-    "path": "sections/dictionary",
-    "content": "<chapter_description> <p>The Dictionary module provides tools for working with key-value mappings in Nelson.<\/p> <p>It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.<\/p> <p>This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.<\/p> <\/chapter_description>"
+    title: "Dictionaries",
+    url: "./dictionary/index.html",
+    path: "sections/dictionary",
+    content:
+      "<chapter_description> <p>The Dictionary module provides tools for working with key-value mappings in Nelson.</p> <p>It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.</p> <p>This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.</p> </chapter_description>",
   },
   {
-    "title": "configureDictionary",
-    "url": "./dictionary/configureDictionary.html",
-    "path": "./dictionary/configureDictionary.html",
-    "content": "Generate a dictionary with defined key and value types."
+    title: "configureDictionary",
+    url: "./dictionary/configureDictionary.html",
+    path: "./dictionary/configureDictionary.html",
+    content: "Generate a dictionary with defined key and value types.",
   },
   {
-    "title": "dictionary",
-    "url": "./dictionary/dictionary.html",
-    "path": "./dictionary/dictionary.html",
-    "content": "Object that maps unique keys to values."
+    title: "dictionary",
+    url: "./dictionary/dictionary.html",
+    path: "./dictionary/dictionary.html",
+    content: "Object that maps unique keys to values.",
   },
   {
-    "title": "entries",
-    "url": "./dictionary/entries.html",
-    "path": "./dictionary/entries.html",
-    "content": "Key-value pairs of dictionary."
+    title: "entries",
+    url: "./dictionary/entries.html",
+    path: "./dictionary/entries.html",
+    content: "Key-value pairs of dictionary.",
   },
   {
-    "title": "insert",
-    "url": "./dictionary/insert.html",
-    "path": "./dictionary/insert.html",
-    "content": "Add entries to a dictionary."
+    title: "insert",
+    url: "./dictionary/insert.html",
+    path: "./dictionary/insert.html",
+    content: "Add entries to a dictionary.",
   },
   {
-    "title": "isConfigured",
-    "url": "./dictionary/isConfigured.html",
-    "path": "./dictionary/isConfigured.html",
-    "content": "Check if dictionary has types assigned to keys and values."
+    title: "isConfigured",
+    url: "./dictionary/isConfigured.html",
+    path: "./dictionary/isConfigured.html",
+    content: "Check if dictionary has types assigned to keys and values.",
   },
   {
-    "title": "isKey",
-    "url": "./dictionary/isKey.html",
-    "path": "./dictionary/isKey.html",
-    "content": "Check if dictionary contains key"
+    title: "isKey",
+    url: "./dictionary/isKey.html",
+    path: "./dictionary/isKey.html",
+    content: "Check if dictionary contains key",
   },
   {
-    "title": "keyHash",
-    "url": "./dictionary/keyHash.html",
-    "path": "./dictionary/keyHash.html",
-    "content": "Create a hash code for a dictionary key."
+    title: "keyHash",
+    url: "./dictionary/keyHash.html",
+    path: "./dictionary/keyHash.html",
+    content: "Create a hash code for a dictionary key.",
   },
   {
-    "title": "keyMatch",
-    "url": "./dictionary/keyMatch.html",
-    "path": "./dictionary/keyMatch.html",
-    "content": "Check whether two dictionary keys are same."
+    title: "keyMatch",
+    url: "./dictionary/keyMatch.html",
+    path: "./dictionary/keyMatch.html",
+    content: "Check whether two dictionary keys are same.",
   },
   {
-    "title": "keys",
-    "url": "./dictionary/keys.html",
-    "path": "./dictionary/keys.html",
-    "content": "Keys of dictionary."
+    title: "keys",
+    url: "./dictionary/keys.html",
+    path: "./dictionary/keys.html",
+    content: "Keys of dictionary.",
   },
   {
-    "title": "lookup",
-    "url": "./dictionary/lookup.html",
-    "path": "./dictionary/lookup.html",
-    "content": "Find value in dictionary by key."
+    title: "lookup",
+    url: "./dictionary/lookup.html",
+    path: "./dictionary/lookup.html",
+    content: "Find value in dictionary by key.",
   },
   {
-    "title": "numEntries",
-    "url": "./dictionary/numEntries.html",
-    "path": "./dictionary/numEntries.html",
-    "content": "Number of key-value pairs in dictionary."
+    title: "numEntries",
+    url: "./dictionary/numEntries.html",
+    path: "./dictionary/numEntries.html",
+    content: "Number of key-value pairs in dictionary.",
   },
   {
-    "title": "remove",
-    "url": "./dictionary/remove.html",
-    "path": "./dictionary/remove.html",
-    "content": "Remove dictionary entries."
+    title: "remove",
+    url: "./dictionary/remove.html",
+    path: "./dictionary/remove.html",
+    content: "Remove dictionary entries.",
   },
   {
-    "title": "types",
-    "url": "./dictionary/types.html",
-    "path": "./dictionary/types.html",
-    "content": "Types of dictionary keys and values."
+    title: "types",
+    url: "./dictionary/types.html",
+    path: "./dictionary/types.html",
+    content: "Types of dictionary keys and values.",
   },
   {
-    "title": "values",
-    "url": "./dictionary/values.html",
-    "path": "./dictionary/values.html",
-    "content": "Values of dictionary."
+    title: "values",
+    url: "./dictionary/values.html",
+    path: "./dictionary/values.html",
+    content: "Values of dictionary.",
   },
   {
-    "title": "Tables",
-    "url": "./table/index.html",
-    "path": "sections/table",
-    "content": "<chapter_description> <p>The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.<\/p> <p>Tables are array-like structures with named variables (columns), each capable of holding different data types.<\/p> <\/chapter_description>"
+    title: "Tables",
+    url: "./table/index.html",
+    path: "sections/table",
+    content:
+      "<chapter_description> <p>The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.</p> <p>Tables are array-like structures with named variables (columns), each capable of holding different data types.</p> </chapter_description>",
   },
   {
-    "title": "Accessing and Manipulating Tables in Nelson",
-    "url": "./table/1_accessing_manipulating_table.html",
-    "path": "./table/1_accessing_manipulating_table.html",
-    "content": ""
+    title: "Accessing and Manipulating Tables in Nelson",
+    url: "./table/1_accessing_manipulating_table.html",
+    path: "./table/1_accessing_manipulating_table.html",
+    content: "",
   },
   {
-    "title": "Direct computation with Table",
-    "url": "./table/2_direct_compution_with_table.html",
-    "path": "./table/2_direct_compution_with_table.html",
-    "content": ""
+    title: "Direct computation with Table",
+    url: "./table/2_direct_compution_with_table.html",
+    path: "./table/2_direct_compution_with_table.html",
+    content: "",
   },
   {
-    "title": "Read\/Write table to files",
-    "url": "./table/3_read_write_table.html",
-    "path": "./table/3_read_write_table.html",
-    "content": ""
+    title: "Read/Write table to files",
+    url: "./table/3_read_write_table.html",
+    path: "./table/3_read_write_table.html",
+    content: "",
   },
   {
-    "title": "array2table",
-    "url": "./table/array2table.html",
-    "path": "./table/array2table.html",
-    "content": "Convert homogeneous array to table."
+    title: "array2table",
+    url: "./table/array2table.html",
+    path: "./table/array2table.html",
+    content: "Convert homogeneous array to table.",
   },
   {
-    "title": "cell2table",
-    "url": "./table/cell2table.html",
-    "path": "./table/cell2table.html",
-    "content": "Convert cell array to table."
+    title: "cell2table",
+    url: "./table/cell2table.html",
+    path: "./table/cell2table.html",
+    content: "Convert cell array to table.",
   },
   {
-    "title": "head",
-    "url": "./table/head.html",
-    "path": "./table/head.html",
-    "content": "Get top rows of table or array."
+    title: "head",
+    url: "./table/head.html",
+    path: "./table/head.html",
+    content: "Get top rows of table or array.",
   },
   {
-    "title": "height",
-    "url": "./table/height.html",
-    "path": "./table/height.html",
-    "content": "Number of table rows"
+    title: "height",
+    url: "./table/height.html",
+    path: "./table/height.html",
+    content: "Number of table rows",
   },
   {
-    "title": "istable",
-    "url": "./table/istable.html",
-    "path": "./table/istable.html",
-    "content": "Determine if input is table."
+    title: "istable",
+    url: "./table/istable.html",
+    path: "./table/istable.html",
+    content: "Determine if input is table.",
   },
   {
-    "title": "removevars",
-    "url": "./table/removevars.html",
-    "path": "./table/removevars.html",
-    "content": "Delete variables from table."
+    title: "removevars",
+    url: "./table/removevars.html",
+    path: "./table/removevars.html",
+    content: "Delete variables from table.",
   },
   {
-    "title": "renamevars",
-    "url": "./table/renamevars.html",
-    "path": "./table/renamevars.html",
-    "content": "Rename variables in table."
+    title: "renamevars",
+    url: "./table/renamevars.html",
+    path: "./table/renamevars.html",
+    content: "Rename variables in table.",
   },
   {
-    "title": "struct2table",
-    "url": "./table/struct2table.html",
-    "path": "./table/struct2table.html",
-    "content": "Convert a structure array into a tabular format."
+    title: "struct2table",
+    url: "./table/struct2table.html",
+    path: "./table/struct2table.html",
+    content: "Convert a structure array into a tabular format.",
   },
   {
-    "title": "table",
-    "url": "./table/table.html",
-    "path": "./table/table.html",
-    "content": "A table-like array with named variables, capable of holding different data types"
+    title: "table",
+    url: "./table/table.html",
+    path: "./table/table.html",
+    content:
+      "A table-like array with named variables, capable of holding different data types",
   },
   {
-    "title": "table2array",
-    "url": "./table/table2array.html",
-    "path": "./table/table2array.html",
-    "content": "Convert table to homogeneous array."
+    title: "table2array",
+    url: "./table/table2array.html",
+    path: "./table/table2array.html",
+    content: "Convert table to homogeneous array.",
   },
   {
-    "title": "table2cell",
-    "url": "./table/table2cell.html",
-    "path": "./table/table2cell.html",
-    "content": "Convert table to cell array"
+    title: "table2cell",
+    url: "./table/table2cell.html",
+    path: "./table/table2cell.html",
+    content: "Convert table to cell array",
   },
   {
-    "title": "table2struct",
-    "url": "./table/table2struct.html",
-    "path": "./table/table2struct.html",
-    "content": "Convert table to structure array"
+    title: "table2struct",
+    url: "./table/table2struct.html",
+    path: "./table/table2struct.html",
+    content: "Convert table to structure array",
   },
   {
-    "title": "tail",
-    "url": "./table/tail.html",
-    "path": "./table/tail.html",
-    "content": "Get bottom rows of table or array."
+    title: "tail",
+    url: "./table/tail.html",
+    path: "./table/tail.html",
+    content: "Get bottom rows of table or array.",
   },
   {
-    "title": "width",
-    "url": "./table/width.html",
-    "path": "./table/width.html",
-    "content": "Number of table variables"
+    title: "width",
+    url: "./table/width.html",
+    path: "./table/width.html",
+    content: "Number of table variables",
   },
   {
-    "title": "Overloading",
-    "url": "./overload/index.html",
-    "path": "sections/overload",
-    "content": "<chapter_description> <p>The Overloading module provides mechanisms for customizing the behavior of functions and operators in Nelson.<\/p> <p>It allows users to define how standard operations or built-in functions should behave when applied to user-defined types or objects.<\/p> <p>This capability enables the extension of Nelson’s language features, supporting more natural and expressive use of custom data structures.<\/p> <\/chapter_description>"
+    title: "Overloading",
+    url: "./overload/index.html",
+    path: "sections/overload",
+    content:
+      "<chapter_description> <p>The Overloading module provides mechanisms for customizing the behavior of functions and operators in Nelson.</p> <p>It allows users to define how standard operations or built-in functions should behave when applied to user-defined types or objects.</p> <p>This capability enables the extension of Nelson’s language features, supporting more natural and expressive use of custom data structures.</p> </chapter_description>",
   },
   {
-    "title": "overloading",
-    "url": "./overload/overloading.html",
-    "path": "./overload/overloading.html",
-    "content": "Customizing Operators and Functions"
+    title: "overloading",
+    url: "./overload/overloading.html",
+    path: "./overload/overloading.html",
+    content: "Customizing Operators and Functions",
   },
   {
-    "title": "Operators",
-    "url": "./operators/index.html",
-    "path": "sections/operators",
-    "content": "<chapter_description> <p>The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.<\/p> <p>It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.<\/p> <p>This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.<\/p> <\/chapter_description>"
+    title: "Operators",
+    url: "./operators/index.html",
+    path: "sections/operators",
+    content:
+      "<chapter_description> <p>The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.</p> <p>It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.</p> <p>This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.</p> </chapter_description>",
   },
   {
-    "title": "all",
-    "url": "./operators/all.html",
-    "path": "./operators/all.html",
-    "content": "all of the elements of a matrix satisfy some condition."
+    title: "all",
+    url: "./operators/all.html",
+    path: "./operators/all.html",
+    content: "all of the elements of a matrix satisfy some condition.",
   },
   {
-    "title": "and",
-    "url": "./operators/and.html",
-    "path": "./operators/and.html",
-    "content": "logical 'AND' operator, &"
+    title: "and",
+    url: "./operators/and.html",
+    path: "./operators/and.html",
+    content: "logical 'AND' operator, &",
   },
   {
-    "title": "any",
-    "url": "./operators/any.html",
-    "path": "./operators/any.html",
-    "content": "any of the elements of a matrix satisfy some condition."
+    title: "any",
+    url: "./operators/any.html",
+    path: "./operators/any.html",
+    content: "any of the elements of a matrix satisfy some condition.",
   },
   {
-    "title": "bitand",
-    "url": "./operators/bitand.html",
-    "path": "./operators/bitand.html",
-    "content": "Bit-wise AND"
+    title: "bitand",
+    url: "./operators/bitand.html",
+    path: "./operators/bitand.html",
+    content: "Bit-wise AND",
   },
   {
-    "title": "bitor",
-    "url": "./operators/bitor.html",
-    "path": "./operators/bitor.html",
-    "content": "Bit-wise OR"
+    title: "bitor",
+    url: "./operators/bitor.html",
+    path: "./operators/bitor.html",
+    content: "Bit-wise OR",
   },
   {
-    "title": "bitxor",
-    "url": "./operators/bitxor.html",
-    "path": "./operators/bitxor.html",
-    "content": "Bit-wise XOR"
+    title: "bitxor",
+    url: "./operators/bitxor.html",
+    path: "./operators/bitxor.html",
+    content: "Bit-wise XOR",
   },
   {
-    "title": "cat",
-    "url": "./operators/cat.html",
-    "path": "./operators/cat.html",
-    "content": "Concatenate arrays."
+    title: "cat",
+    url: "./operators/cat.html",
+    path: "./operators/cat.html",
+    content: "Concatenate arrays.",
   },
   {
-    "title": "colon",
-    "url": "./operators/colon.html",
-    "path": "./operators/colon.html",
-    "content": "colon operator ':'."
+    title: "colon",
+    url: "./operators/colon.html",
+    path: "./operators/colon.html",
+    content: "colon operator ':'.",
   },
   {
-    "title": "ctranspose",
-    "url": "./operators/ctranspose.html",
-    "path": "./operators/ctranspose.html",
-    "content": "Returns complex conjugate transpose: ' operator."
+    title: "ctranspose",
+    url: "./operators/ctranspose.html",
+    path: "./operators/ctranspose.html",
+    content: "Returns complex conjugate transpose: ' operator.",
   },
   {
-    "title": "eq",
-    "url": "./operators/eq.html",
-    "path": "./operators/eq.html",
-    "content": "equality, == operator."
+    title: "eq",
+    url: "./operators/eq.html",
+    path: "./operators/eq.html",
+    content: "equality, == operator.",
   },
   {
-    "title": "ge",
-    "url": "./operators/ge.html",
-    "path": "./operators/ge.html",
-    "content": "greater than or equal, >= operator."
+    title: "ge",
+    url: "./operators/ge.html",
+    path: "./operators/ge.html",
+    content: "greater than or equal, >= operator.",
   },
   {
-    "title": "gt",
-    "url": "./operators/gt.html",
-    "path": "./operators/gt.html",
-    "content": "greater than, > operator."
+    title: "gt",
+    url: "./operators/gt.html",
+    path: "./operators/gt.html",
+    content: "greater than, > operator.",
   },
   {
-    "title": "horzcat",
-    "url": "./operators/horzcat.html",
-    "path": "./operators/horzcat.html",
-    "content": "Horizontal concatenation."
+    title: "horzcat",
+    url: "./operators/horzcat.html",
+    path: "./operators/horzcat.html",
+    content: "Horizontal concatenation.",
   },
   {
-    "title": "ismember",
-    "url": "./operators/ismember.html",
-    "path": "./operators/ismember.html",
-    "content": "Array elements that are members of another array."
+    title: "ismember",
+    url: "./operators/ismember.html",
+    path: "./operators/ismember.html",
+    content: "Array elements that are members of another array.",
   },
   {
-    "title": "ldivide",
-    "url": "./operators/ldivide.html",
-    "path": "./operators/ldivide.html",
-    "content": "Left division, .\\ operator."
+    title: "ldivide",
+    url: "./operators/ldivide.html",
+    path: "./operators/ldivide.html",
+    content: "Left division, .\\ operator.",
   },
   {
-    "title": "le",
-    "url": "./operators/le.html",
-    "path": "./operators/le.html",
-    "content": "less than or equal, = operator."
+    title: "le",
+    url: "./operators/le.html",
+    path: "./operators/le.html",
+    content: "less than or equal, = operator.",
   },
   {
-    "title": "lt",
-    "url": "./operators/lt.html",
-    "path": "./operators/lt.html",
-    "content": "less than, < operator."
+    title: "lt",
+    url: "./operators/lt.html",
+    path: "./operators/lt.html",
+    content: "less than, < operator.",
   },
   {
-    "title": "minus",
-    "url": "./operators/minus.html",
-    "path": "./operators/minus.html",
-    "content": "Subtraction, - operator"
+    title: "minus",
+    url: "./operators/minus.html",
+    path: "./operators/minus.html",
+    content: "Subtraction, - operator",
   },
   {
-    "title": "mldivide",
-    "url": "./operators/mldivide.html",
-    "path": "./operators/mldivide.html",
-    "content": "Matrix left division, \\ operator."
+    title: "mldivide",
+    url: "./operators/mldivide.html",
+    path: "./operators/mldivide.html",
+    content: "Matrix left division, \\ operator.",
   },
   {
-    "title": "mpower",
-    "url": "./operators/mpower.html",
-    "path": "./operators/mpower.html",
-    "content": "Matrix power, ^ operator"
+    title: "mpower",
+    url: "./operators/mpower.html",
+    path: "./operators/mpower.html",
+    content: "Matrix power, ^ operator",
   },
   {
-    "title": "mrdivide",
-    "url": "./operators/mrdivide.html",
-    "path": "./operators/mrdivide.html",
-    "content": "Matrix right division, \/ operator."
+    title: "mrdivide",
+    url: "./operators/mrdivide.html",
+    path: "./operators/mrdivide.html",
+    content: "Matrix right division, / operator.",
   },
   {
-    "title": "mtimes",
-    "url": "./operators/mtimes.html",
-    "path": "./operators/mtimes.html",
-    "content": "Matrix multiplication, * operator"
+    title: "mtimes",
+    url: "./operators/mtimes.html",
+    path: "./operators/mtimes.html",
+    content: "Matrix multiplication, * operator",
   },
   {
-    "title": "ne",
-    "url": "./operators/ne.html",
-    "path": "./operators/ne.html",
-    "content": "Inequality, ~= operator"
+    title: "ne",
+    url: "./operators/ne.html",
+    path: "./operators/ne.html",
+    content: "Inequality, ~= operator",
   },
   {
-    "title": "not",
-    "url": "./operators/not.html",
-    "path": "./operators/not.html",
-    "content": "not logical, ~ operator"
+    title: "not",
+    url: "./operators/not.html",
+    path: "./operators/not.html",
+    content: "not logical, ~ operator",
   },
   {
-    "title": "or",
-    "url": "./operators/or.html",
-    "path": "./operators/or.html",
-    "content": "logical 'OR' operator, |"
+    title: "or",
+    url: "./operators/or.html",
+    path: "./operators/or.html",
+    content: "logical 'OR' operator, |",
   },
   {
-    "title": "plus",
-    "url": "./operators/plus.html",
-    "path": "./operators/plus.html",
-    "content": "Addition, + operator"
+    title: "plus",
+    url: "./operators/plus.html",
+    path: "./operators/plus.html",
+    content: "Addition, + operator",
   },
   {
-    "title": "power",
-    "url": "./operators/power.html",
-    "path": "./operators/power.html",
-    "content": "Element wise power, .^ operator"
+    title: "power",
+    url: "./operators/power.html",
+    path: "./operators/power.html",
+    content: "Element wise power, .^ operator",
   },
   {
-    "title": "rdivide",
-    "url": "./operators/rdivide.html",
-    "path": "./operators/rdivide.html",
-    "content": "Right division, .\/ operator"
+    title: "rdivide",
+    url: "./operators/rdivide.html",
+    path: "./operators/rdivide.html",
+    content: "Right division, ./ operator",
   },
   {
-    "title": "shortcutand",
-    "url": "./operators/shortcutand.html",
-    "path": "./operators/shortcutand.html",
-    "content": "Short circuit 'AND' operator, &&"
+    title: "shortcutand",
+    url: "./operators/shortcutand.html",
+    path: "./operators/shortcutand.html",
+    content: "Short circuit 'AND' operator, &&",
   },
   {
-    "title": "shortcutor",
-    "url": "./operators/shortcutor.html",
-    "path": "./operators/shortcutor.html",
-    "content": "Short circuit 'OR' operator, ||"
+    title: "shortcutor",
+    url: "./operators/shortcutor.html",
+    path: "./operators/shortcutor.html",
+    content: "Short circuit 'OR' operator, ||",
   },
   {
-    "title": "subsasgn",
-    "url": "./operators/subsasgn.html",
-    "path": "./operators/subsasgn.html",
-    "content": "Redefine subscripted assignment."
+    title: "subsasgn",
+    url: "./operators/subsasgn.html",
+    path: "./operators/subsasgn.html",
+    content: "Redefine subscripted assignment.",
   },
   {
-    "title": "subsindex",
-    "url": "./operators/subsindex.html",
-    "path": "./operators/subsindex.html",
-    "content": "Convert an object to an index vector."
+    title: "subsindex",
+    url: "./operators/subsindex.html",
+    path: "./operators/subsindex.html",
+    content: "Convert an object to an index vector.",
   },
   {
-    "title": "subsref",
-    "url": "./operators/subsref.html",
-    "path": "./operators/subsref.html",
-    "content": "Subscripted reference."
+    title: "subsref",
+    url: "./operators/subsref.html",
+    path: "./operators/subsref.html",
+    content: "Subscripted reference.",
   },
   {
-    "title": "mtimes",
-    "url": "./operators/times.html",
-    "path": "./operators/times.html",
-    "content": "Element wise multiplication, .* operator"
+    title: "mtimes",
+    url: "./operators/times.html",
+    path: "./operators/times.html",
+    content: "Element wise multiplication, .* operator",
   },
   {
-    "title": "transpose",
-    "url": "./operators/transpose.html",
-    "path": "./operators/transpose.html",
-    "content": "Returns vector or matrix transpose: .' operator."
+    title: "transpose",
+    url: "./operators/transpose.html",
+    path: "./operators/transpose.html",
+    content: "Returns vector or matrix transpose: .' operator.",
   },
   {
-    "title": "uminus",
-    "url": "./operators/uminus.html",
-    "path": "./operators/uminus.html",
-    "content": "Unary minus, - operator"
+    title: "uminus",
+    url: "./operators/uminus.html",
+    path: "./operators/uminus.html",
+    content: "Unary minus, - operator",
   },
   {
-    "title": "uplus",
-    "url": "./operators/uplus.html",
-    "path": "./operators/uplus.html",
-    "content": "Unary plus, + operator"
+    title: "uplus",
+    url: "./operators/uplus.html",
+    path: "./operators/uplus.html",
+    content: "Unary plus, + operator",
   },
   {
-    "title": "vertcat",
-    "url": "./operators/vertcat.html",
-    "path": "./operators/vertcat.html",
-    "content": "Vertical concatenation."
+    title: "vertcat",
+    url: "./operators/vertcat.html",
+    path: "./operators/vertcat.html",
+    content: "Vertical concatenation.",
   },
   {
-    "title": "Constructors functions",
-    "url": "./constructors_functions/index.html",
-    "path": "sections/constructors_functions",
-    "content": "<chapter_description> <p>The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.<\/p> <p>It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.<\/p> <p>This module forms the basis for initializing data structures and performing mathematical and numerical computations.<\/p> <\/chapter_description>"
+    title: "Constructors functions",
+    url: "./constructors_functions/index.html",
+    path: "sections/constructors_functions",
+    content:
+      "<chapter_description> <p>The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.</p> <p>It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.</p> <p>This module forms the basis for initializing data structures and performing mathematical and numerical computations.</p> </chapter_description>",
   },
   {
-    "title": "Inf",
-    "url": "./constructors_functions/Inf.html",
-    "path": "./constructors_functions/Inf.html",
-    "content": "Infinity"
+    title: "Inf",
+    url: "./constructors_functions/Inf.html",
+    path: "./constructors_functions/Inf.html",
+    content: "Infinity",
   },
   {
-    "title": "NaN",
-    "url": "./constructors_functions/NaN.html",
-    "path": "./constructors_functions/NaN.html",
-    "content": "Creates an Not-a-Number"
+    title: "NaN",
+    url: "./constructors_functions/NaN.html",
+    path: "./constructors_functions/NaN.html",
+    content: "Creates an Not-a-Number",
   },
   {
-    "title": "diag",
-    "url": "./constructors_functions/diag.html",
-    "path": "./constructors_functions/diag.html",
-    "content": "Get diagonal elements of matrix or create diagonal matrix."
+    title: "diag",
+    url: "./constructors_functions/diag.html",
+    path: "./constructors_functions/diag.html",
+    content: "Get diagonal elements of matrix or create diagonal matrix.",
   },
   {
-    "title": "eps",
-    "url": "./constructors_functions/eps.html",
-    "path": "./constructors_functions/eps.html",
-    "content": "Creates an epsilon (machine precision)"
+    title: "eps",
+    url: "./constructors_functions/eps.html",
+    path: "./constructors_functions/eps.html",
+    content: "Creates an epsilon (machine precision)",
   },
   {
-    "title": "eye",
-    "url": "./constructors_functions/eye.html",
-    "path": "./constructors_functions/eye.html",
-    "content": "Creates an identity matrix."
+    title: "eye",
+    url: "./constructors_functions/eye.html",
+    path: "./constructors_functions/eye.html",
+    content: "Creates an identity matrix.",
   },
   {
-    "title": "i",
-    "url": "./constructors_functions/i.html",
-    "path": "./constructors_functions/i.html",
-    "content": "Pure Imaginary number."
+    title: "i",
+    url: "./constructors_functions/i.html",
+    path: "./constructors_functions/i.html",
+    content: "Pure Imaginary number.",
   },
   {
-    "title": "ones",
-    "url": "./constructors_functions/ones.html",
-    "path": "./constructors_functions/ones.html",
-    "content": "Creates an matrix made of ones."
+    title: "ones",
+    url: "./constructors_functions/ones.html",
+    path: "./constructors_functions/ones.html",
+    content: "Creates an matrix made of ones.",
   },
   {
-    "title": "pi",
-    "url": "./constructors_functions/pi.html",
-    "path": "./constructors_functions/pi.html",
-    "content": "Ratio of circle's circumference to its diameter."
+    title: "pi",
+    url: "./constructors_functions/pi.html",
+    path: "./constructors_functions/pi.html",
+    content: "Ratio of circle's circumference to its diameter.",
   },
   {
-    "title": "zeros",
-    "url": "./constructors_functions/zeros.html",
-    "path": "./constructors_functions/zeros.html",
-    "content": "Creates an matrix made of zeros."
+    title: "zeros",
+    url: "./constructors_functions/zeros.html",
+    path: "./constructors_functions/zeros.html",
+    content: "Creates an matrix made of zeros.",
   },
   {
-    "title": "Elementary functions",
-    "url": "./elementary_functions/index.html",
-    "path": "sections/elementary_functions",
-    "content": "<chapter_description> <p>The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.<\/p> <p>It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.<\/p> <p>The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.<\/p> <\/chapter_description>"
+    title: "Elementary functions",
+    url: "./elementary_functions/index.html",
+    path: "sections/elementary_functions",
+    content:
+      "<chapter_description> <p>The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.</p> <p>It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.</p> <p>The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.</p> </chapter_description>",
   },
   {
-    "title": "abs",
-    "url": "./elementary_functions/abs.html",
-    "path": "./elementary_functions/abs.html",
-    "content": "Absolute value"
+    title: "abs",
+    url: "./elementary_functions/abs.html",
+    path: "./elementary_functions/abs.html",
+    content: "Absolute value",
   },
   {
-    "title": "allfinite",
-    "url": "./elementary_functions/allfinite.html",
-    "path": "./elementary_functions/allfinite.html",
-    "content": "Check if all array elements are finite."
+    title: "allfinite",
+    url: "./elementary_functions/allfinite.html",
+    path: "./elementary_functions/allfinite.html",
+    content: "Check if all array elements are finite.",
   },
   {
-    "title": "angle",
-    "url": "./elementary_functions/angle.html",
-    "path": "./elementary_functions/angle.html",
-    "content": "Phase angle"
+    title: "angle",
+    url: "./elementary_functions/angle.html",
+    path: "./elementary_functions/angle.html",
+    content: "Phase angle",
   },
   {
-    "title": "base2dec",
-    "url": "./elementary_functions/base2dec.html",
-    "path": "./elementary_functions/base2dec.html",
-    "content": "Convert number in a base to decimal."
+    title: "base2dec",
+    url: "./elementary_functions/base2dec.html",
+    path: "./elementary_functions/base2dec.html",
+    content: "Convert number in a base to decimal.",
   },
   {
-    "title": "bernsteinMatrix",
-    "url": "./elementary_functions/bernsteinMatrix.html",
-    "path": "./elementary_functions/bernsteinMatrix.html",
-    "content": "Bernstein matrix"
+    title: "bernsteinMatrix",
+    url: "./elementary_functions/bernsteinMatrix.html",
+    path: "./elementary_functions/bernsteinMatrix.html",
+    content: "Bernstein matrix",
   },
   {
-    "title": "bin2dec",
-    "url": "./elementary_functions/bin2dec.html",
-    "path": "./elementary_functions/bin2dec.html",
-    "content": "Convert number in base 2 to decimal."
+    title: "bin2dec",
+    url: "./elementary_functions/bin2dec.html",
+    path: "./elementary_functions/bin2dec.html",
+    content: "Convert number in base 2 to decimal.",
   },
   {
-    "title": "bin2num",
-    "url": "./elementary_functions/bin2num.html",
-    "path": "./elementary_functions/bin2num.html",
-    "content": "Convert two's complement binary string to number."
+    title: "bin2num",
+    url: "./elementary_functions/bin2num.html",
+    path: "./elementary_functions/bin2num.html",
+    content: "Convert two's complement binary string to number.",
   },
   {
-    "title": "blkdiag",
-    "url": "./elementary_functions/blkdiag.html",
-    "path": "./elementary_functions/blkdiag.html",
-    "content": "Block diagonal matrix"
+    title: "blkdiag",
+    url: "./elementary_functions/blkdiag.html",
+    path: "./elementary_functions/blkdiag.html",
+    content: "Block diagonal matrix",
   },
   {
-    "title": "cast",
-    "url": "./elementary_functions/cast.html",
-    "path": "./elementary_functions/cast.html",
-    "content": "Converts variable to a different data type"
+    title: "cast",
+    url: "./elementary_functions/cast.html",
+    path: "./elementary_functions/cast.html",
+    content: "Converts variable to a different data type",
   },
   {
-    "title": "ceil",
-    "url": "./elementary_functions/ceil.html",
-    "path": "./elementary_functions/ceil.html",
-    "content": "Round up"
+    title: "ceil",
+    url: "./elementary_functions/ceil.html",
+    path: "./elementary_functions/ceil.html",
+    content: "Round up",
   },
   {
-    "title": "circshift",
-    "url": "./elementary_functions/circshift.html",
-    "path": "./elementary_functions/circshift.html",
-    "content": "Circular shift"
+    title: "circshift",
+    url: "./elementary_functions/circshift.html",
+    path: "./elementary_functions/circshift.html",
+    content: "Circular shift",
   },
   {
-    "title": "complex",
-    "url": "./elementary_functions/complex.html",
-    "path": "./elementary_functions/complex.html",
-    "content": "Creates an complex number."
+    title: "complex",
+    url: "./elementary_functions/complex.html",
+    path: "./elementary_functions/complex.html",
+    content: "Creates an complex number.",
   },
   {
-    "title": "conj",
-    "url": "./elementary_functions/conj.html",
-    "path": "./elementary_functions/conj.html",
-    "content": "Complex conjugate"
+    title: "conj",
+    url: "./elementary_functions/conj.html",
+    path: "./elementary_functions/conj.html",
+    content: "Complex conjugate",
   },
   {
-    "title": "deal",
-    "url": "./elementary_functions/deal.html",
-    "path": "./elementary_functions/deal.html",
-    "content": "Distribute inputs to outputs."
+    title: "deal",
+    url: "./elementary_functions/deal.html",
+    path: "./elementary_functions/deal.html",
+    content: "Distribute inputs to outputs.",
   },
   {
-    "title": "dec2base",
-    "url": "./elementary_functions/dec2base.html",
-    "path": "./elementary_functions/dec2base.html",
-    "content": "Convert decimal number to another base."
+    title: "dec2base",
+    url: "./elementary_functions/dec2base.html",
+    path: "./elementary_functions/dec2base.html",
+    content: "Convert decimal number to another base.",
   },
   {
-    "title": "dec2bin",
-    "url": "./elementary_functions/dec2bin.html",
-    "path": "./elementary_functions/dec2bin.html",
-    "content": "Convert decimal number to base 2."
+    title: "dec2bin",
+    url: "./elementary_functions/dec2bin.html",
+    path: "./elementary_functions/dec2bin.html",
+    content: "Convert decimal number to base 2.",
   },
   {
-    "title": "dec2hex",
-    "url": "./elementary_functions/dec2hex.html",
-    "path": "./elementary_functions/dec2hex.html",
-    "content": "Convert decimal number to base 16."
+    title: "dec2hex",
+    url: "./elementary_functions/dec2hex.html",
+    path: "./elementary_functions/dec2hex.html",
+    content: "Convert decimal number to base 16.",
   },
   {
-    "title": "exp",
-    "url": "./elementary_functions/exp.html",
-    "path": "./elementary_functions/exp.html",
-    "content": "Exponential"
+    title: "exp",
+    url: "./elementary_functions/exp.html",
+    path: "./elementary_functions/exp.html",
+    content: "Exponential",
   },
   {
-    "title": "factorial",
-    "url": "./elementary_functions/factorial.html",
-    "path": "./elementary_functions/factorial.html",
-    "content": "Factorial function"
+    title: "factorial",
+    url: "./elementary_functions/factorial.html",
+    path: "./elementary_functions/factorial.html",
+    content: "Factorial function",
   },
   {
-    "title": "filter",
-    "url": "./elementary_functions/filter.html",
-    "path": "./elementary_functions/filter.html",
-    "content": "1-D digital filter"
+    title: "filter",
+    url: "./elementary_functions/filter.html",
+    path: "./elementary_functions/filter.html",
+    content: "1-D digital filter",
   },
   {
-    "title": "find",
-    "url": "./elementary_functions/find.html",
-    "path": "./elementary_functions/find.html",
-    "content": "Find Non-zero Elements"
+    title: "find",
+    url: "./elementary_functions/find.html",
+    path: "./elementary_functions/find.html",
+    content: "Find Non-zero Elements",
   },
   {
-    "title": "fix",
-    "url": "./elementary_functions/fix.html",
-    "path": "./elementary_functions/fix.html",
-    "content": "Round towards zero"
+    title: "fix",
+    url: "./elementary_functions/fix.html",
+    path: "./elementary_functions/fix.html",
+    content: "Round towards zero",
   },
   {
-    "title": "flip",
-    "url": "./elementary_functions/flip.html",
-    "path": "./elementary_functions/flip.html",
-    "content": "Flip order of elements"
+    title: "flip",
+    url: "./elementary_functions/flip.html",
+    path: "./elementary_functions/flip.html",
+    content: "Flip order of elements",
   },
   {
-    "title": "flipdim",
-    "url": "./elementary_functions/flipdim.html",
-    "path": "./elementary_functions/flipdim.html",
-    "content": "Flip array along specified dimension"
+    title: "flipdim",
+    url: "./elementary_functions/flipdim.html",
+    path: "./elementary_functions/flipdim.html",
+    content: "Flip array along specified dimension",
   },
   {
-    "title": "fliplr",
-    "url": "./elementary_functions/fliplr.html",
-    "path": "./elementary_functions/fliplr.html",
-    "content": "Flip order of elements left to right"
+    title: "fliplr",
+    url: "./elementary_functions/fliplr.html",
+    path: "./elementary_functions/fliplr.html",
+    content: "Flip order of elements left to right",
   },
   {
-    "title": "flipud",
-    "url": "./elementary_functions/flipud.html",
-    "path": "./elementary_functions/flipud.html",
-    "content": "Flip order of elements up to dow"
+    title: "flipud",
+    url: "./elementary_functions/flipud.html",
+    path: "./elementary_functions/flipud.html",
+    content: "Flip order of elements up to dow",
   },
   {
-    "title": "floor",
-    "url": "./elementary_functions/floor.html",
-    "path": "./elementary_functions/floor.html",
-    "content": "Round down"
+    title: "floor",
+    url: "./elementary_functions/floor.html",
+    path: "./elementary_functions/floor.html",
+    content: "Round down",
   },
   {
-    "title": "hadamard",
-    "url": "./elementary_functions/hadamard.html",
-    "path": "./elementary_functions/hadamard.html",
-    "content": "Hadamard matrix"
+    title: "hadamard",
+    url: "./elementary_functions/hadamard.html",
+    path: "./elementary_functions/hadamard.html",
+    content: "Hadamard matrix",
   },
   {
-    "title": "hankel",
-    "url": "./elementary_functions/hankel.html",
-    "path": "./elementary_functions/hankel.html",
-    "content": "Hankel matrix"
+    title: "hankel",
+    url: "./elementary_functions/hankel.html",
+    path: "./elementary_functions/hankel.html",
+    content: "Hankel matrix",
   },
   {
-    "title": "hex2dec",
-    "url": "./elementary_functions/hex2dec.html",
-    "path": "./elementary_functions/hex2dec.html",
-    "content": "Convert number in base 16 to decimal."
+    title: "hex2dec",
+    url: "./elementary_functions/hex2dec.html",
+    path: "./elementary_functions/hex2dec.html",
+    content: "Convert number in base 16 to decimal.",
   },
   {
-    "title": "hilb",
-    "url": "./elementary_functions/hilb.html",
-    "path": "./elementary_functions/hilb.html",
-    "content": "Hilbert matrix"
+    title: "hilb",
+    url: "./elementary_functions/hilb.html",
+    path: "./elementary_functions/hilb.html",
+    content: "Hilbert matrix",
   },
   {
-    "title": "hypot",
-    "url": "./elementary_functions/hypot.html",
-    "path": "./elementary_functions/hypot.html",
-    "content": "Square root of sum of squares"
+    title: "hypot",
+    url: "./elementary_functions/hypot.html",
+    path: "./elementary_functions/hypot.html",
+    content: "Square root of sum of squares",
   },
   {
-    "title": "imag",
-    "url": "./elementary_functions/imag.html",
-    "path": "./elementary_functions/imag.html",
-    "content": "Imaginary part of an complex number."
+    title: "imag",
+    url: "./elementary_functions/imag.html",
+    path: "./elementary_functions/imag.html",
+    content: "Imaginary part of an complex number.",
   },
   {
-    "title": "ind2sub",
-    "url": "./elementary_functions/ind2sub.html",
-    "path": "./elementary_functions/ind2sub.html",
-    "content": "Linear index to matrix subscript values"
+    title: "ind2sub",
+    url: "./elementary_functions/ind2sub.html",
+    path: "./elementary_functions/ind2sub.html",
+    content: "Linear index to matrix subscript values",
   },
   {
-    "title": "invhilb",
-    "url": "./elementary_functions/invhilb.html",
-    "path": "./elementary_functions/invhilb.html",
-    "content": "Inverse of Hilbert matrix"
+    title: "invhilb",
+    url: "./elementary_functions/invhilb.html",
+    path: "./elementary_functions/invhilb.html",
+    content: "Inverse of Hilbert matrix",
   },
   {
-    "title": "ipermute",
-    "url": "./elementary_functions/ipermute.html",
-    "path": "./elementary_functions/ipermute.html",
-    "content": "Inverse permute array dimensions."
+    title: "ipermute",
+    url: "./elementary_functions/ipermute.html",
+    path: "./elementary_functions/ipermute.html",
+    content: "Inverse permute array dimensions.",
   },
   {
-    "title": "isapprox",
-    "url": "./elementary_functions/isapprox.html",
-    "path": "./elementary_functions/isapprox.html",
-    "content": "Return true if arguments are approximately equal, within the precision."
+    title: "isapprox",
+    url: "./elementary_functions/isapprox.html",
+    path: "./elementary_functions/isapprox.html",
+    content:
+      "Return true if arguments are approximately equal, within the precision.",
   },
   {
-    "title": "iscolumn",
-    "url": "./elementary_functions/iscolumn.html",
-    "path": "./elementary_functions/iscolumn.html",
-    "content": "Determine whether input is column vector."
+    title: "iscolumn",
+    url: "./elementary_functions/iscolumn.html",
+    path: "./elementary_functions/iscolumn.html",
+    content: "Determine whether input is column vector.",
   },
   {
-    "title": "istriu",
-    "url": "./elementary_functions/isdiag.html",
-    "path": "./elementary_functions/isdiag.html",
-    "content": "Checks if matrix is diagonal."
+    title: "istriu",
+    url: "./elementary_functions/isdiag.html",
+    path: "./elementary_functions/isdiag.html",
+    content: "Checks if matrix is diagonal.",
   },
   {
-    "title": "isequal",
-    "url": "./elementary_functions/isequal.html",
-    "path": "./elementary_functions/isequal.html",
-    "content": "Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values)."
+    title: "isequal",
+    url: "./elementary_functions/isequal.html",
+    path: "./elementary_functions/isequal.html",
+    content:
+      "Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).",
   },
   {
-    "title": "isequaln",
-    "url": "./elementary_functions/isequaln.html",
-    "path": "./elementary_functions/isequaln.html",
-    "content": "Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs)."
+    title: "isequaln",
+    url: "./elementary_functions/isequaln.html",
+    path: "./elementary_functions/isequaln.html",
+    content:
+      "Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).",
   },
   {
-    "title": "isequalto",
-    "url": "./elementary_functions/isequalto.html",
-    "path": "./elementary_functions/isequalto.html",
-    "content": "Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs)."
+    title: "isequalto",
+    url: "./elementary_functions/isequalto.html",
+    path: "./elementary_functions/isequalto.html",
+    content:
+      "Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).",
   },
   {
-    "title": "isfinite",
-    "url": "./elementary_functions/isfinite.html",
-    "path": "./elementary_functions/isfinite.html",
-    "content": "Check for finite entries."
+    title: "isfinite",
+    url: "./elementary_functions/isfinite.html",
+    path: "./elementary_functions/isfinite.html",
+    content: "Check for finite entries.",
   },
   {
-    "title": "isinf",
-    "url": "./elementary_functions/isinf.html",
-    "path": "./elementary_functions/isinf.html",
-    "content": "Check for Infinity entries."
+    title: "isinf",
+    url: "./elementary_functions/isinf.html",
+    path: "./elementary_functions/isinf.html",
+    content: "Check for Infinity entries.",
   },
   {
-    "title": "ismatrix",
-    "url": "./elementary_functions/ismatrix.html",
-    "path": "./elementary_functions/ismatrix.html",
-    "content": "determines whether input is matrix or not"
+    title: "ismatrix",
+    url: "./elementary_functions/ismatrix.html",
+    path: "./elementary_functions/ismatrix.html",
+    content: "determines whether input is matrix or not",
   },
   {
-    "title": "isnan",
-    "url": "./elementary_functions/isnan.html",
-    "path": "./elementary_functions/isnan.html",
-    "content": "Check for Not a Number entries."
+    title: "isnan",
+    url: "./elementary_functions/isnan.html",
+    path: "./elementary_functions/isnan.html",
+    content: "Check for Not a Number entries.",
   },
   {
-    "title": "isrow",
-    "url": "./elementary_functions/isrow.html",
-    "path": "./elementary_functions/isrow.html",
-    "content": "Determine whether input is row vector."
+    title: "isrow",
+    url: "./elementary_functions/isrow.html",
+    path: "./elementary_functions/isrow.html",
+    content: "Determine whether input is row vector.",
   },
   {
-    "title": "isscalar",
-    "url": "./elementary_functions/isscalar.html",
-    "path": "./elementary_functions/isscalar.html",
-    "content": "Check if the input is a scalar"
+    title: "isscalar",
+    url: "./elementary_functions/isscalar.html",
+    path: "./elementary_functions/isscalar.html",
+    content: "Check if the input is a scalar",
   },
   {
-    "title": "istril",
-    "url": "./elementary_functions/istril.html",
-    "path": "./elementary_functions/istril.html",
-    "content": "Checks if matrix is lower triangular."
+    title: "istril",
+    url: "./elementary_functions/istril.html",
+    path: "./elementary_functions/istril.html",
+    content: "Checks if matrix is lower triangular.",
   },
   {
-    "title": "istriu",
-    "url": "./elementary_functions/istriu.html",
-    "path": "./elementary_functions/istriu.html",
-    "content": "Checks if matrix is upper triangular."
+    title: "istriu",
+    url: "./elementary_functions/istriu.html",
+    path: "./elementary_functions/istriu.html",
+    content: "Checks if matrix is upper triangular.",
   },
   {
-    "title": "isvector",
-    "url": "./elementary_functions/isvector.html",
-    "path": "./elementary_functions/isvector.html",
-    "content": "Checks input is vector."
+    title: "isvector",
+    url: "./elementary_functions/isvector.html",
+    path: "./elementary_functions/isvector.html",
+    content: "Checks input is vector.",
   },
   {
-    "title": "length",
-    "url": "./elementary_functions/length.html",
-    "path": "./elementary_functions/length.html",
-    "content": "Length of an object."
+    title: "length",
+    url: "./elementary_functions/length.html",
+    path: "./elementary_functions/length.html",
+    content: "Length of an object.",
   },
   {
-    "title": "linspace",
-    "url": "./elementary_functions/linspace.html",
-    "path": "./elementary_functions/linspace.html",
-    "content": "linearly spaced vector constructor."
+    title: "linspace",
+    url: "./elementary_functions/linspace.html",
+    path: "./elementary_functions/linspace.html",
+    content: "linearly spaced vector constructor.",
   },
   {
-    "title": "log",
-    "url": "./elementary_functions/log.html",
-    "path": "./elementary_functions/log.html",
-    "content": "Natural logarithm."
+    title: "log",
+    url: "./elementary_functions/log.html",
+    path: "./elementary_functions/log.html",
+    content: "Natural logarithm.",
   },
   {
-    "title": "log10",
-    "url": "./elementary_functions/log10.html",
-    "path": "./elementary_functions/log10.html",
-    "content": "Common logarithm (base 10)."
+    title: "log10",
+    url: "./elementary_functions/log10.html",
+    path: "./elementary_functions/log10.html",
+    content: "Common logarithm (base 10).",
   },
   {
-    "title": "log1p",
-    "url": "./elementary_functions/log1p.html",
-    "path": "./elementary_functions/log1p.html",
-    "content": "log(1 + x) accurately for small values of x."
+    title: "log1p",
+    url: "./elementary_functions/log1p.html",
+    path: "./elementary_functions/log1p.html",
+    content: "log(1 + x) accurately for small values of x.",
   },
   {
-    "title": "log2",
-    "url": "./elementary_functions/log2.html",
-    "path": "./elementary_functions/log2.html",
-    "content": "dissect floating-point numbers into base 2 exponent and mantissa."
+    title: "log2",
+    url: "./elementary_functions/log2.html",
+    path: "./elementary_functions/log2.html",
+    content:
+      "dissect floating-point numbers into base 2 exponent and mantissa.",
   },
   {
-    "title": "logspace",
-    "url": "./elementary_functions/logspace.html",
-    "path": "./elementary_functions/logspace.html",
-    "content": "logarithmically spaced vector constructor."
+    title: "logspace",
+    url: "./elementary_functions/logspace.html",
+    path: "./elementary_functions/logspace.html",
+    content: "logarithmically spaced vector constructor.",
   },
   {
-    "title": "magic",
-    "url": "./elementary_functions/magic.html",
-    "path": "./elementary_functions/magic.html",
-    "content": "Magic square"
+    title: "magic",
+    url: "./elementary_functions/magic.html",
+    path: "./elementary_functions/magic.html",
+    content: "Magic square",
   },
   {
-    "title": "meshgrid",
-    "url": "./elementary_functions/meshgrid.html",
-    "path": "./elementary_functions/meshgrid.html",
-    "content": "Cartesian rectangular grid in 2-D or 3-D."
+    title: "meshgrid",
+    url: "./elementary_functions/meshgrid.html",
+    path: "./elementary_functions/meshgrid.html",
+    content: "Cartesian rectangular grid in 2-D or 3-D.",
   },
   {
-    "title": "minus",
-    "url": "./elementary_functions/minus.html",
-    "path": "./elementary_functions/minus.html",
-    "content": "Subtraction, - operator"
+    title: "minus",
+    url: "./elementary_functions/minus.html",
+    path: "./elementary_functions/minus.html",
+    content: "Subtraction, - operator",
   },
   {
-    "title": "mod",
-    "url": "./elementary_functions/mod.html",
-    "path": "./elementary_functions/mod.html",
-    "content": "Modulus after division."
+    title: "mod",
+    url: "./elementary_functions/mod.html",
+    path: "./elementary_functions/mod.html",
+    content: "Modulus after division.",
   },
   {
-    "title": "ndgrid",
-    "url": "./elementary_functions/ndgrid.html",
-    "path": "./elementary_functions/ndgrid.html",
-    "content": "Rectangular grid in N-D space"
+    title: "ndgrid",
+    url: "./elementary_functions/ndgrid.html",
+    path: "./elementary_functions/ndgrid.html",
+    content: "Rectangular grid in N-D space",
   },
   {
-    "title": "ndims",
-    "url": "./elementary_functions/ndims.html",
-    "path": "./elementary_functions/ndims.html",
-    "content": "Number of dimensions of an array."
+    title: "ndims",
+    url: "./elementary_functions/ndims.html",
+    path: "./elementary_functions/ndims.html",
+    content: "Number of dimensions of an array.",
   },
   {
-    "title": "nextpow2",
-    "url": "./elementary_functions/nextpow2.html",
-    "path": "./elementary_functions/nextpow2.html",
-    "content": "Exponent of next higher power of 2"
+    title: "nextpow2",
+    url: "./elementary_functions/nextpow2.html",
+    path: "./elementary_functions/nextpow2.html",
+    content: "Exponent of next higher power of 2",
   },
   {
-    "title": "norm",
-    "url": "./elementary_functions/norm.html",
-    "path": "./elementary_functions/norm.html",
-    "content": "Matrix and vector norms"
+    title: "norm",
+    url: "./elementary_functions/norm.html",
+    path: "./elementary_functions/norm.html",
+    content: "Matrix and vector norms",
   },
   {
-    "title": "normest",
-    "url": "./elementary_functions/normest.html",
-    "path": "./elementary_functions/normest.html",
-    "content": "2-norm estimate"
+    title: "normest",
+    url: "./elementary_functions/normest.html",
+    path: "./elementary_functions/normest.html",
+    content: "2-norm estimate",
   },
   {
-    "title": "nthroot",
-    "url": "./elementary_functions/nthroot.html",
-    "path": "./elementary_functions/nthroot.html",
-    "content": "The real 𝑛th root of real number."
+    title: "nthroot",
+    url: "./elementary_functions/nthroot.html",
+    path: "./elementary_functions/nthroot.html",
+    content: "The real 𝑛th root of real number.",
   },
   {
-    "title": "num2bin",
-    "url": "./elementary_functions/num2bin.html",
-    "path": "./elementary_functions/num2bin.html",
-    "content": "Convert number to binary representation."
+    title: "num2bin",
+    url: "./elementary_functions/num2bin.html",
+    path: "./elementary_functions/num2bin.html",
+    content: "Convert number to binary representation.",
   },
   {
-    "title": "numel",
-    "url": "./elementary_functions/numel.html",
-    "path": "./elementary_functions/numel.html",
-    "content": "Number of elements."
+    title: "numel",
+    url: "./elementary_functions/numel.html",
+    path: "./elementary_functions/numel.html",
+    content: "Number of elements.",
   },
   {
-    "title": "permute",
-    "url": "./elementary_functions/permute.html",
-    "path": "./elementary_functions/permute.html",
-    "content": "Permute array dimensions."
+    title: "permute",
+    url: "./elementary_functions/permute.html",
+    path: "./elementary_functions/permute.html",
+    content: "Permute array dimensions.",
   },
   {
-    "title": "pinv",
-    "url": "./elementary_functions/pinv.html",
-    "path": "./elementary_functions/pinv.html",
-    "content": "Moore-Penrose pseudoinverse"
+    title: "pinv",
+    url: "./elementary_functions/pinv.html",
+    path: "./elementary_functions/pinv.html",
+    content: "Moore-Penrose pseudoinverse",
   },
   {
-    "title": "pow2",
-    "url": "./elementary_functions/pow2.html",
-    "path": "./elementary_functions/pow2.html",
-    "content": "Base 2 exponentiation and scaling of floating-point numbers."
+    title: "pow2",
+    url: "./elementary_functions/pow2.html",
+    path: "./elementary_functions/pow2.html",
+    content: "Base 2 exponentiation and scaling of floating-point numbers.",
   },
   {
-    "title": "real",
-    "url": "./elementary_functions/real.html",
-    "path": "./elementary_functions/real.html",
-    "content": "Real part of an complex number."
+    title: "real",
+    url: "./elementary_functions/real.html",
+    path: "./elementary_functions/real.html",
+    content: "Real part of an complex number.",
   },
   {
-    "title": "rem",
-    "url": "./elementary_functions/rem.html",
-    "path": "./elementary_functions/rem.html",
-    "content": "Remainder after division."
+    title: "rem",
+    url: "./elementary_functions/rem.html",
+    path: "./elementary_functions/rem.html",
+    content: "Remainder after division.",
   },
   {
-    "title": "repmat",
-    "url": "./elementary_functions/repmat.html",
-    "path": "./elementary_functions/repmat.html",
-    "content": "Replicate and tile an array."
+    title: "repmat",
+    url: "./elementary_functions/repmat.html",
+    path: "./elementary_functions/repmat.html",
+    content: "Replicate and tile an array.",
   },
   {
-    "title": "reshape",
-    "url": "./elementary_functions/reshape.html",
-    "path": "./elementary_functions/reshape.html",
-    "content": "Reshapes a vector or a matrix to a different size matrix."
+    title: "reshape",
+    url: "./elementary_functions/reshape.html",
+    path: "./elementary_functions/reshape.html",
+    content: "Reshapes a vector or a matrix to a different size matrix.",
   },
   {
-    "title": "rosser",
-    "url": "./elementary_functions/rosser.html",
-    "path": "./elementary_functions/rosser.html",
-    "content": "Classic symmetric eigenvalue test problem."
+    title: "rosser",
+    url: "./elementary_functions/rosser.html",
+    path: "./elementary_functions/rosser.html",
+    content: "Classic symmetric eigenvalue test problem.",
   },
   {
-    "title": "rot90",
-    "url": "./elementary_functions/rot90.html",
-    "path": "./elementary_functions/rot90.html",
-    "content": "Rotate array 90 degrees."
+    title: "rot90",
+    url: "./elementary_functions/rot90.html",
+    path: "./elementary_functions/rot90.html",
+    content: "Rotate array 90 degrees.",
   },
   {
-    "title": "round",
-    "url": "./elementary_functions/round.html",
-    "path": "./elementary_functions/round.html",
-    "content": "Round to nearest integer"
+    title: "round",
+    url: "./elementary_functions/round.html",
+    path: "./elementary_functions/round.html",
+    content: "Round to nearest integer",
   },
   {
-    "title": "shiftdim",
-    "url": "./elementary_functions/shiftdim.html",
-    "path": "./elementary_functions/shiftdim.html",
-    "content": "Shift array dimensions"
+    title: "shiftdim",
+    url: "./elementary_functions/shiftdim.html",
+    path: "./elementary_functions/shiftdim.html",
+    content: "Shift array dimensions",
   },
   {
-    "title": "sign",
-    "url": "./elementary_functions/sign.html",
-    "path": "./elementary_functions/sign.html",
-    "content": "Find the sign function of a number."
+    title: "sign",
+    url: "./elementary_functions/sign.html",
+    path: "./elementary_functions/sign.html",
+    content: "Find the sign function of a number.",
   },
   {
-    "title": "size",
-    "url": "./elementary_functions/size.html",
-    "path": "./elementary_functions/size.html",
-    "content": "Size of an object."
+    title: "size",
+    url: "./elementary_functions/size.html",
+    path: "./elementary_functions/size.html",
+    content: "Size of an object.",
   },
   {
-    "title": "sqrt",
-    "url": "./elementary_functions/sqrt.html",
-    "path": "./elementary_functions/sqrt.html",
-    "content": "Square root."
+    title: "sqrt",
+    url: "./elementary_functions/sqrt.html",
+    path: "./elementary_functions/sqrt.html",
+    content: "Square root.",
   },
   {
-    "title": "squeeze",
-    "url": "./elementary_functions/squeeze.html",
-    "path": "./elementary_functions/squeeze.html",
-    "content": "Remove dimensions of length 1."
+    title: "squeeze",
+    url: "./elementary_functions/squeeze.html",
+    path: "./elementary_functions/squeeze.html",
+    content: "Remove dimensions of length 1.",
   },
   {
-    "title": "sub2ind",
-    "url": "./elementary_functions/sub2ind.html",
-    "path": "./elementary_functions/sub2ind.html",
-    "content": "Matrix subscript values to linear index"
+    title: "sub2ind",
+    url: "./elementary_functions/sub2ind.html",
+    path: "./elementary_functions/sub2ind.html",
+    content: "Matrix subscript values to linear index",
   },
   {
-    "title": "substruct",
-    "url": "./elementary_functions/substruct.html",
-    "path": "./elementary_functions/substruct.html",
-    "content": "Create structure argument for subsasgn or subsref"
+    title: "substruct",
+    url: "./elementary_functions/substruct.html",
+    path: "./elementary_functions/substruct.html",
+    content: "Create structure argument for subsasgn or subsref",
   },
   {
-    "title": "swapbytes",
-    "url": "./elementary_functions/swapbytes.html",
-    "path": "./elementary_functions/swapbytes.html",
-    "content": "Swap byte ordering."
+    title: "swapbytes",
+    url: "./elementary_functions/swapbytes.html",
+    path: "./elementary_functions/swapbytes.html",
+    content: "Swap byte ordering.",
   },
   {
-    "title": "toeplitz",
-    "url": "./elementary_functions/toeplitz.html",
-    "path": "./elementary_functions/toeplitz.html",
-    "content": "Toeplitz matrix"
+    title: "toeplitz",
+    url: "./elementary_functions/toeplitz.html",
+    path: "./elementary_functions/toeplitz.html",
+    content: "Toeplitz matrix",
   },
   {
-    "title": "tril",
-    "url": "./elementary_functions/tril.html",
-    "path": "./elementary_functions/tril.html",
-    "content": "Lower triangular part of matrix"
+    title: "tril",
+    url: "./elementary_functions/tril.html",
+    path: "./elementary_functions/tril.html",
+    content: "Lower triangular part of matrix",
   },
   {
-    "title": "triu",
-    "url": "./elementary_functions/triu.html",
-    "path": "./elementary_functions/triu.html",
-    "content": "Upper triangular part of matrix"
+    title: "triu",
+    url: "./elementary_functions/triu.html",
+    path: "./elementary_functions/triu.html",
+    content: "Upper triangular part of matrix",
   },
   {
-    "title": "vander",
-    "url": "./elementary_functions/vander.html",
-    "path": "./elementary_functions/vander.html",
-    "content": "Vandermonde matrix"
+    title: "vander",
+    url: "./elementary_functions/vander.html",
+    path: "./elementary_functions/vander.html",
+    content: "Vandermonde matrix",
   },
   {
-    "title": "wilkinson",
-    "url": "./elementary_functions/wilkinson.html",
-    "path": "./elementary_functions/wilkinson.html",
-    "content": "Wilkinson's eigenvalue test matrix"
+    title: "wilkinson",
+    url: "./elementary_functions/wilkinson.html",
+    path: "./elementary_functions/wilkinson.html",
+    content: "Wilkinson's eigenvalue test matrix",
   },
   {
-    "title": "Trigonometric functions",
-    "url": "./trigonometric_functions/index.html",
-    "path": "sections/trigonometric_functions",
-    "content": "<chapter_description> <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.<\/p> <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.<\/p> <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.<\/p> <\/chapter_description>"
+    title: "Trigonometric functions",
+    url: "./trigonometric_functions/index.html",
+    path: "sections/trigonometric_functions",
+    content:
+      "<chapter_description> <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.</p> <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.</p> <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.</p> </chapter_description>",
   },
   {
-    "title": "acos",
-    "url": "./trigonometric_functions/acos.html",
-    "path": "./trigonometric_functions/acos.html",
-    "content": "Computes the inverse cosine in radians for each element of x."
+    title: "acos",
+    url: "./trigonometric_functions/acos.html",
+    path: "./trigonometric_functions/acos.html",
+    content: "Computes the inverse cosine in radians for each element of x.",
   },
   {
-    "title": "acosd",
-    "url": "./trigonometric_functions/acosd.html",
-    "path": "./trigonometric_functions/acosd.html",
-    "content": "Inverse cosine in degrees."
+    title: "acosd",
+    url: "./trigonometric_functions/acosd.html",
+    path: "./trigonometric_functions/acosd.html",
+    content: "Inverse cosine in degrees.",
   },
   {
-    "title": "acosh",
-    "url": "./trigonometric_functions/acosh.html",
-    "path": "./trigonometric_functions/acosh.html",
-    "content": "Inverse hyperbolic cosine."
+    title: "acosh",
+    url: "./trigonometric_functions/acosh.html",
+    path: "./trigonometric_functions/acosh.html",
+    content: "Inverse hyperbolic cosine.",
   },
   {
-    "title": "acot",
-    "url": "./trigonometric_functions/acot.html",
-    "path": "./trigonometric_functions/acot.html",
-    "content": "Inverse cotangent of angle in radians"
+    title: "acot",
+    url: "./trigonometric_functions/acot.html",
+    path: "./trigonometric_functions/acot.html",
+    content: "Inverse cotangent of angle in radians",
   },
   {
-    "title": "acotd",
-    "url": "./trigonometric_functions/acotd.html",
-    "path": "./trigonometric_functions/acotd.html",
-    "content": "Inverse cotangent of angle in degrees"
+    title: "acotd",
+    url: "./trigonometric_functions/acotd.html",
+    path: "./trigonometric_functions/acotd.html",
+    content: "Inverse cotangent of angle in degrees",
   },
   {
-    "title": "acoth",
-    "url": "./trigonometric_functions/acoth.html",
-    "path": "./trigonometric_functions/acoth.html",
-    "content": "Inverse hyperbolic cotangent."
+    title: "acoth",
+    url: "./trigonometric_functions/acoth.html",
+    path: "./trigonometric_functions/acoth.html",
+    content: "Inverse hyperbolic cotangent.",
   },
   {
-    "title": "acsc",
-    "url": "./trigonometric_functions/acsc.html",
-    "path": "./trigonometric_functions/acsc.html",
-    "content": "Inverse cosecant in radians."
+    title: "acsc",
+    url: "./trigonometric_functions/acsc.html",
+    path: "./trigonometric_functions/acsc.html",
+    content: "Inverse cosecant in radians.",
   },
   {
-    "title": "acscd",
-    "url": "./trigonometric_functions/acscd.html",
-    "path": "./trigonometric_functions/acscd.html",
-    "content": "Inverse cosecant in degrees."
+    title: "acscd",
+    url: "./trigonometric_functions/acscd.html",
+    path: "./trigonometric_functions/acscd.html",
+    content: "Inverse cosecant in degrees.",
   },
   {
-    "title": "acsch",
-    "url": "./trigonometric_functions/acsch.html",
-    "path": "./trigonometric_functions/acsch.html",
-    "content": "Inverse hyperbolic cosecant."
+    title: "acsch",
+    url: "./trigonometric_functions/acsch.html",
+    path: "./trigonometric_functions/acsch.html",
+    content: "Inverse hyperbolic cosecant.",
   },
   {
-    "title": "asec",
-    "url": "./trigonometric_functions/asec.html",
-    "path": "./trigonometric_functions/asec.html",
-    "content": "Inverse secant of angle in radians."
+    title: "asec",
+    url: "./trigonometric_functions/asec.html",
+    path: "./trigonometric_functions/asec.html",
+    content: "Inverse secant of angle in radians.",
   },
   {
-    "title": "asecd",
-    "url": "./trigonometric_functions/asecd.html",
-    "path": "./trigonometric_functions/asecd.html",
-    "content": "Inverse secant of argument in degrees."
+    title: "asecd",
+    url: "./trigonometric_functions/asecd.html",
+    path: "./trigonometric_functions/asecd.html",
+    content: "Inverse secant of argument in degrees.",
   },
   {
-    "title": "asech",
-    "url": "./trigonometric_functions/asech.html",
-    "path": "./trigonometric_functions/asech.html",
-    "content": "Inverse hyperbolic secant of angle in radians."
+    title: "asech",
+    url: "./trigonometric_functions/asech.html",
+    path: "./trigonometric_functions/asech.html",
+    content: "Inverse hyperbolic secant of angle in radians.",
   },
   {
-    "title": "asin",
-    "url": "./trigonometric_functions/asin.html",
-    "path": "./trigonometric_functions/asin.html",
-    "content": "Computes the inverse sine in radians for each element of x."
+    title: "asin",
+    url: "./trigonometric_functions/asin.html",
+    path: "./trigonometric_functions/asin.html",
+    content: "Computes the inverse sine in radians for each element of x.",
   },
   {
-    "title": "asind",
-    "url": "./trigonometric_functions/asind.html",
-    "path": "./trigonometric_functions/asind.html",
-    "content": "Inverse sine in degrees."
+    title: "asind",
+    url: "./trigonometric_functions/asind.html",
+    path: "./trigonometric_functions/asind.html",
+    content: "Inverse sine in degrees.",
   },
   {
-    "title": "asinh",
-    "url": "./trigonometric_functions/asinh.html",
-    "path": "./trigonometric_functions/asinh.html",
-    "content": "Inverse hyperbolic sine function"
+    title: "asinh",
+    url: "./trigonometric_functions/asinh.html",
+    path: "./trigonometric_functions/asinh.html",
+    content: "Inverse hyperbolic sine function",
   },
   {
-    "title": "atan",
-    "url": "./trigonometric_functions/atan.html",
-    "path": "./trigonometric_functions/atan.html",
-    "content": "Computes the inverse tangent in radians for each element of x."
+    title: "atan",
+    url: "./trigonometric_functions/atan.html",
+    path: "./trigonometric_functions/atan.html",
+    content: "Computes the inverse tangent in radians for each element of x.",
   },
   {
-    "title": "atan2",
-    "url": "./trigonometric_functions/atan2.html",
-    "path": "./trigonometric_functions/atan2.html",
-    "content": "Computes the four-quadrant inverse tangent."
+    title: "atan2",
+    url: "./trigonometric_functions/atan2.html",
+    path: "./trigonometric_functions/atan2.html",
+    content: "Computes the four-quadrant inverse tangent.",
   },
   {
-    "title": "atan2d",
-    "url": "./trigonometric_functions/atan2d.html",
-    "path": "./trigonometric_functions/atan2d.html",
-    "content": "Four-quadrant inverse tangent in degrees."
+    title: "atan2d",
+    url: "./trigonometric_functions/atan2d.html",
+    path: "./trigonometric_functions/atan2d.html",
+    content: "Four-quadrant inverse tangent in degrees.",
   },
   {
-    "title": "atand",
-    "url": "./trigonometric_functions/atand.html",
-    "path": "./trigonometric_functions/atand.html",
-    "content": "Inverse tangent in degrees."
+    title: "atand",
+    url: "./trigonometric_functions/atand.html",
+    path: "./trigonometric_functions/atand.html",
+    content: "Inverse tangent in degrees.",
   },
   {
-    "title": "atanh",
-    "url": "./trigonometric_functions/atanh.html",
-    "path": "./trigonometric_functions/atanh.html",
-    "content": "Computes the inverse hyperbolic tangent."
+    title: "atanh",
+    url: "./trigonometric_functions/atanh.html",
+    path: "./trigonometric_functions/atanh.html",
+    content: "Computes the inverse hyperbolic tangent.",
   },
   {
-    "title": "cart2pol",
-    "url": "./trigonometric_functions/cart2pol.html",
-    "path": "./trigonometric_functions/cart2pol.html",
-    "content": "Transforms Cartesian coordinates to polar or cylindrical."
+    title: "cart2pol",
+    url: "./trigonometric_functions/cart2pol.html",
+    path: "./trigonometric_functions/cart2pol.html",
+    content: "Transforms Cartesian coordinates to polar or cylindrical.",
   },
   {
-    "title": "cart2sph",
-    "url": "./trigonometric_functions/cart2sph.html",
-    "path": "./trigonometric_functions/cart2sph.html",
-    "content": "Transforms Cartesian to spherical coordinates."
+    title: "cart2sph",
+    url: "./trigonometric_functions/cart2sph.html",
+    path: "./trigonometric_functions/cart2sph.html",
+    content: "Transforms Cartesian to spherical coordinates.",
   },
   {
-    "title": "cos",
-    "url": "./trigonometric_functions/cos.html",
-    "path": "./trigonometric_functions/cos.html",
-    "content": "Computes the cosine in radians for each element of x."
+    title: "cos",
+    url: "./trigonometric_functions/cos.html",
+    path: "./trigonometric_functions/cos.html",
+    content: "Computes the cosine in radians for each element of x.",
   },
   {
-    "title": "cosd",
-    "url": "./trigonometric_functions/cosd.html",
-    "path": "./trigonometric_functions/cosd.html",
-    "content": "Computes the cosine in degree for each element of x."
+    title: "cosd",
+    url: "./trigonometric_functions/cosd.html",
+    path: "./trigonometric_functions/cosd.html",
+    content: "Computes the cosine in degree for each element of x.",
   },
   {
-    "title": "cosh",
-    "url": "./trigonometric_functions/cosh.html",
-    "path": "./trigonometric_functions/cosh.html",
-    "content": "Computes the hyperbolic cosine in radians for each element of x."
+    title: "cosh",
+    url: "./trigonometric_functions/cosh.html",
+    path: "./trigonometric_functions/cosh.html",
+    content: "Computes the hyperbolic cosine in radians for each element of x.",
   },
   {
-    "title": "cosm",
-    "url": "./trigonometric_functions/cosm.html",
-    "path": "./trigonometric_functions/cosm.html",
-    "content": "Computes the matrix cosine of a square matrix."
+    title: "cosm",
+    url: "./trigonometric_functions/cosm.html",
+    path: "./trigonometric_functions/cosm.html",
+    content: "Computes the matrix cosine of a square matrix.",
   },
   {
-    "title": "cospi",
-    "url": "./trigonometric_functions/cospi.html",
-    "path": "./trigonometric_functions/cospi.html",
-    "content": "Computes cos(X * pi) accurately."
+    title: "cospi",
+    url: "./trigonometric_functions/cospi.html",
+    path: "./trigonometric_functions/cospi.html",
+    content: "Computes cos(X * pi) accurately.",
   },
   {
-    "title": "cot",
-    "url": "./trigonometric_functions/cot.html",
-    "path": "./trigonometric_functions/cot.html",
-    "content": "Cotangent of angle in radians"
+    title: "cot",
+    url: "./trigonometric_functions/cot.html",
+    path: "./trigonometric_functions/cot.html",
+    content: "Cotangent of angle in radians",
   },
   {
-    "title": "cotd",
-    "url": "./trigonometric_functions/cotd.html",
-    "path": "./trigonometric_functions/cotd.html",
-    "content": "Cotangent of argument in degrees"
+    title: "cotd",
+    url: "./trigonometric_functions/cotd.html",
+    path: "./trigonometric_functions/cotd.html",
+    content: "Cotangent of argument in degrees",
   },
   {
-    "title": "coth",
-    "url": "./trigonometric_functions/coth.html",
-    "path": "./trigonometric_functions/coth.html",
-    "content": "Hyperbolic cotangent."
+    title: "coth",
+    url: "./trigonometric_functions/coth.html",
+    path: "./trigonometric_functions/coth.html",
+    content: "Hyperbolic cotangent.",
   },
   {
-    "title": "csc",
-    "url": "./trigonometric_functions/csc.html",
-    "path": "./trigonometric_functions/csc.html",
-    "content": "Cosecant of input angle in radians."
+    title: "csc",
+    url: "./trigonometric_functions/csc.html",
+    path: "./trigonometric_functions/csc.html",
+    content: "Cosecant of input angle in radians.",
   },
   {
-    "title": "cscd",
-    "url": "./trigonometric_functions/cscd.html",
-    "path": "./trigonometric_functions/cscd.html",
-    "content": "Cosecant of argument in degrees."
+    title: "cscd",
+    url: "./trigonometric_functions/cscd.html",
+    path: "./trigonometric_functions/cscd.html",
+    content: "Cosecant of argument in degrees.",
   },
   {
-    "title": "csch",
-    "url": "./trigonometric_functions/csch.html",
-    "path": "./trigonometric_functions/csch.html",
-    "content": "Hyperbolic cosecant."
+    title: "csch",
+    url: "./trigonometric_functions/csch.html",
+    path: "./trigonometric_functions/csch.html",
+    content: "Hyperbolic cosecant.",
   },
   {
-    "title": "deg2rad",
-    "url": "./trigonometric_functions/deg2rad.html",
-    "path": "./trigonometric_functions/deg2rad.html",
-    "content": "Convert angle from degrees to radians."
+    title: "deg2rad",
+    url: "./trigonometric_functions/deg2rad.html",
+    path: "./trigonometric_functions/deg2rad.html",
+    content: "Convert angle from degrees to radians.",
   },
   {
-    "title": "pol2cart",
-    "url": "./trigonometric_functions/pol2cart.html",
-    "path": "./trigonometric_functions/pol2cart.html",
-    "content": "Transforms polar or cylindrical coordinates to Cartesian."
+    title: "pol2cart",
+    url: "./trigonometric_functions/pol2cart.html",
+    path: "./trigonometric_functions/pol2cart.html",
+    content: "Transforms polar or cylindrical coordinates to Cartesian.",
   },
   {
-    "title": "rad2deg",
-    "url": "./trigonometric_functions/rad2deg.html",
-    "path": "./trigonometric_functions/rad2deg.html",
-    "content": "Convert angle from radians to degrees."
+    title: "rad2deg",
+    url: "./trigonometric_functions/rad2deg.html",
+    path: "./trigonometric_functions/rad2deg.html",
+    content: "Convert angle from radians to degrees.",
   },
   {
-    "title": "sec",
-    "url": "./trigonometric_functions/sec.html",
-    "path": "./trigonometric_functions/sec.html",
-    "content": "Secant of angle in radians."
+    title: "sec",
+    url: "./trigonometric_functions/sec.html",
+    path: "./trigonometric_functions/sec.html",
+    content: "Secant of angle in radians.",
   },
   {
-    "title": "secd",
-    "url": "./trigonometric_functions/secd.html",
-    "path": "./trigonometric_functions/secd.html",
-    "content": "Secant of argument in degrees."
+    title: "secd",
+    url: "./trigonometric_functions/secd.html",
+    path: "./trigonometric_functions/secd.html",
+    content: "Secant of argument in degrees.",
   },
   {
-    "title": "sech",
-    "url": "./trigonometric_functions/sech.html",
-    "path": "./trigonometric_functions/sech.html",
-    "content": "Hyperbolic secant."
+    title: "sech",
+    url: "./trigonometric_functions/sech.html",
+    path: "./trigonometric_functions/sech.html",
+    content: "Hyperbolic secant.",
   },
   {
-    "title": "sin",
-    "url": "./trigonometric_functions/sin.html",
-    "path": "./trigonometric_functions/sin.html",
-    "content": "Computes the sine in radians for each element of x."
+    title: "sin",
+    url: "./trigonometric_functions/sin.html",
+    path: "./trigonometric_functions/sin.html",
+    content: "Computes the sine in radians for each element of x.",
   },
   {
-    "title": "sind",
-    "url": "./trigonometric_functions/sind.html",
-    "path": "./trigonometric_functions/sind.html",
-    "content": "Computes the sine in degree for each element of x."
+    title: "sind",
+    url: "./trigonometric_functions/sind.html",
+    path: "./trigonometric_functions/sind.html",
+    content: "Computes the sine in degree for each element of x.",
   },
   {
-    "title": "sinh",
-    "url": "./trigonometric_functions/sinh.html",
-    "path": "./trigonometric_functions/sinh.html",
-    "content": "Computes the hyperbolic sine in radians for each element of x."
+    title: "sinh",
+    url: "./trigonometric_functions/sinh.html",
+    path: "./trigonometric_functions/sinh.html",
+    content: "Computes the hyperbolic sine in radians for each element of x.",
   },
   {
-    "title": "sinm",
-    "url": "./trigonometric_functions/sinm.html",
-    "path": "./trigonometric_functions/sinm.html",
-    "content": "Computes the matrix sinus of a square matrix."
+    title: "sinm",
+    url: "./trigonometric_functions/sinm.html",
+    path: "./trigonometric_functions/sinm.html",
+    content: "Computes the matrix sinus of a square matrix.",
   },
   {
-    "title": "sinpi",
-    "url": "./trigonometric_functions/sinpi.html",
-    "path": "./trigonometric_functions/sinpi.html",
-    "content": "Computes sin(X * pi) accurately."
+    title: "sinpi",
+    url: "./trigonometric_functions/sinpi.html",
+    path: "./trigonometric_functions/sinpi.html",
+    content: "Computes sin(X * pi) accurately.",
   },
   {
-    "title": "sph2cart",
-    "url": "./trigonometric_functions/sph2cart.html",
-    "path": "./trigonometric_functions/sph2cart.html",
-    "content": "Transform spherical coordinates to Cartesian."
+    title: "sph2cart",
+    url: "./trigonometric_functions/sph2cart.html",
+    path: "./trigonometric_functions/sph2cart.html",
+    content: "Transform spherical coordinates to Cartesian.",
   },
   {
-    "title": "tan",
-    "url": "./trigonometric_functions/tan.html",
-    "path": "./trigonometric_functions/tan.html",
-    "content": "Computes the tangent in radians for each element of x."
+    title: "tan",
+    url: "./trigonometric_functions/tan.html",
+    path: "./trigonometric_functions/tan.html",
+    content: "Computes the tangent in radians for each element of x.",
   },
   {
-    "title": "tand",
-    "url": "./trigonometric_functions/tand.html",
-    "path": "./trigonometric_functions/tand.html",
-    "content": "Computes the tangent in degree for each element of x."
+    title: "tand",
+    url: "./trigonometric_functions/tand.html",
+    path: "./trigonometric_functions/tand.html",
+    content: "Computes the tangent in degree for each element of x.",
   },
   {
-    "title": "tanh",
-    "url": "./trigonometric_functions/tanh.html",
-    "path": "./trigonometric_functions/tanh.html",
-    "content": "Computes the hyperbolic tangent in radians for each element of x."
+    title: "tanh",
+    url: "./trigonometric_functions/tanh.html",
+    path: "./trigonometric_functions/tanh.html",
+    content:
+      "Computes the hyperbolic tangent in radians for each element of x.",
   },
   {
-    "title": "tanm",
-    "url": "./trigonometric_functions/tanm.html",
-    "path": "./trigonometric_functions/tanm.html",
-    "content": "Computes the matrix tangent of a square matrix."
+    title: "tanm",
+    url: "./trigonometric_functions/tanm.html",
+    path: "./trigonometric_functions/tanm.html",
+    content: "Computes the matrix tangent of a square matrix.",
   },
   {
-    "title": "Special functions",
-    "url": "./special_functions/index.html",
-    "path": "sections/special_functions",
-    "content": "<chapter_description> <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.<\/p> <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.<\/p> <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.<\/p> <\/chapter_description>"
+    title: "Special functions",
+    url: "./special_functions/index.html",
+    path: "sections/special_functions",
+    content:
+      "<chapter_description> <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.</p> <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.</p> <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.</p> </chapter_description>",
   },
   {
-    "title": "betainc",
-    "url": "./special_functions/betainc.html",
-    "path": "./special_functions/betainc.html",
-    "content": "Incomplete beta function"
+    title: "betainc",
+    url: "./special_functions/betainc.html",
+    path: "./special_functions/betainc.html",
+    content: "Incomplete beta function",
   },
   {
-    "title": "cross",
-    "url": "./special_functions/cross.html",
-    "path": "./special_functions/cross.html",
-    "content": "Cross product."
+    title: "cross",
+    url: "./special_functions/cross.html",
+    path: "./special_functions/cross.html",
+    content: "Cross product.",
   },
   {
-    "title": "dot",
-    "url": "./special_functions/dot.html",
-    "path": "./special_functions/dot.html",
-    "content": "Dot product."
+    title: "dot",
+    url: "./special_functions/dot.html",
+    path: "./special_functions/dot.html",
+    content: "Dot product.",
   },
   {
-    "title": "factor",
-    "url": "./special_functions/factor.html",
-    "path": "./special_functions/factor.html",
-    "content": "Prime factors"
+    title: "factor",
+    url: "./special_functions/factor.html",
+    path: "./special_functions/factor.html",
+    content: "Prime factors",
   },
   {
-    "title": "gamma",
-    "url": "./special_functions/gamma.html",
-    "path": "./special_functions/gamma.html",
-    "content": "Gamma special function"
+    title: "gamma",
+    url: "./special_functions/gamma.html",
+    path: "./special_functions/gamma.html",
+    content: "Gamma special function",
   },
   {
-    "title": "gammaln",
-    "url": "./special_functions/gammaln.html",
-    "path": "./special_functions/gammaln.html",
-    "content": "Logarithm of gamma function"
+    title: "gammaln",
+    url: "./special_functions/gammaln.html",
+    path: "./special_functions/gammaln.html",
+    content: "Logarithm of gamma function",
   },
   {
-    "title": "gcd",
-    "url": "./special_functions/gcd.html",
-    "path": "./special_functions/gcd.html",
-    "content": "Greatest common divisor"
+    title: "gcd",
+    url: "./special_functions/gcd.html",
+    path: "./special_functions/gcd.html",
+    content: "Greatest common divisor",
   },
   {
-    "title": "interp1",
-    "url": "./special_functions/interp1.html",
-    "path": "./special_functions/interp1.html",
-    "content": "Linear 1-D data interpolation"
+    title: "interp1",
+    url: "./special_functions/interp1.html",
+    path: "./special_functions/interp1.html",
+    content: "Linear 1-D data interpolation",
   },
   {
-    "title": "peaks",
-    "url": "./special_functions/peaks.html",
-    "path": "./special_functions/peaks.html",
-    "content": "Peaks function"
+    title: "peaks",
+    url: "./special_functions/peaks.html",
+    path: "./special_functions/peaks.html",
+    content: "Peaks function",
   },
   {
-    "title": "primes",
-    "url": "./special_functions/primes.html",
-    "path": "./special_functions/primes.html",
-    "content": "Prime numbers less than or equal to input value"
+    title: "primes",
+    url: "./special_functions/primes.html",
+    path: "./special_functions/primes.html",
+    content: "Prime numbers less than or equal to input value",
   },
   {
-    "title": "Linear algebra",
-    "url": "./linear_algebra/index.html",
-    "path": "sections/linear_algebra",
-    "content": "<chapter_description> <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.<\/p> <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.<\/p> <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.<\/p> <\/chapter_description>"
+    title: "Linear algebra",
+    url: "./linear_algebra/index.html",
+    path: "sections/linear_algebra",
+    content:
+      "<chapter_description> <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.</p> <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.</p> <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.</p> </chapter_description>",
   },
   {
-    "title": "balance",
-    "url": "./linear_algebra/balance.html",
-    "path": "./linear_algebra/balance.html",
-    "content": "Diagonal scaling to improve eigenvalue accuracy."
+    title: "balance",
+    url: "./linear_algebra/balance.html",
+    path: "./linear_algebra/balance.html",
+    content: "Diagonal scaling to improve eigenvalue accuracy.",
   },
   {
-    "title": "bandwidth",
-    "url": "./linear_algebra/bandwidth.html",
-    "path": "./linear_algebra/bandwidth.html",
-    "content": "Lower and upper matrix bandwidth."
+    title: "bandwidth",
+    url: "./linear_algebra/bandwidth.html",
+    path: "./linear_algebra/bandwidth.html",
+    content: "Lower and upper matrix bandwidth.",
   },
   {
-    "title": "chol",
-    "url": "./linear_algebra/chol.html",
-    "path": "./linear_algebra/chol.html",
-    "content": "Cholesky factorization."
+    title: "chol",
+    url: "./linear_algebra/chol.html",
+    path: "./linear_algebra/chol.html",
+    content: "Cholesky factorization.",
   },
   {
-    "title": "cond",
-    "url": "./linear_algebra/cond.html",
-    "path": "./linear_algebra/cond.html",
-    "content": "Condition number for inversion."
+    title: "cond",
+    url: "./linear_algebra/cond.html",
+    path: "./linear_algebra/cond.html",
+    content: "Condition number for inversion.",
   },
   {
-    "title": "condeig",
-    "url": "./linear_algebra/condeig.html",
-    "path": "./linear_algebra/condeig.html",
-    "content": "Condition number with respect to eigenvalues."
+    title: "condeig",
+    url: "./linear_algebra/condeig.html",
+    path: "./linear_algebra/condeig.html",
+    content: "Condition number with respect to eigenvalues.",
   },
   {
-    "title": "det",
-    "url": "./linear_algebra/det.html",
-    "path": "./linear_algebra/det.html",
-    "content": "Matrix determinant."
+    title: "det",
+    url: "./linear_algebra/det.html",
+    path: "./linear_algebra/det.html",
+    content: "Matrix determinant.",
   },
   {
-    "title": "diff",
-    "url": "./linear_algebra/diff.html",
-    "path": "./linear_algebra/diff.html",
-    "content": "Differences and approximate derivatives."
+    title: "diff",
+    url: "./linear_algebra/diff.html",
+    path: "./linear_algebra/diff.html",
+    content: "Differences and approximate derivatives.",
   },
   {
-    "title": "eig",
-    "url": "./linear_algebra/eig.html",
-    "path": "./linear_algebra/eig.html",
-    "content": "Eigenvalues and eigenvectors."
+    title: "eig",
+    url: "./linear_algebra/eig.html",
+    path: "./linear_algebra/eig.html",
+    content: "Eigenvalues and eigenvectors.",
   },
   {
-    "title": "expm",
-    "url": "./linear_algebra/expm.html",
-    "path": "./linear_algebra/expm.html",
-    "content": "Computes the matrix exponential of a square matrix."
+    title: "expm",
+    url: "./linear_algebra/expm.html",
+    path: "./linear_algebra/expm.html",
+    content: "Computes the matrix exponential of a square matrix.",
   },
   {
-    "title": "gradient",
-    "url": "./linear_algebra/gradient.html",
-    "path": "./linear_algebra/gradient.html",
-    "content": "Numerical gradient."
+    title: "gradient",
+    url: "./linear_algebra/gradient.html",
+    path: "./linear_algebra/gradient.html",
+    content: "Numerical gradient.",
   },
   {
-    "title": "inv",
-    "url": "./linear_algebra/inv.html",
-    "path": "./linear_algebra/inv.html",
-    "content": "Matrix inverse."
+    title: "inv",
+    url: "./linear_algebra/inv.html",
+    path: "./linear_algebra/inv.html",
+    content: "Matrix inverse.",
   },
   {
-    "title": "isbanded",
-    "url": "./linear_algebra/isbanded.html",
-    "path": "./linear_algebra/isbanded.html",
-    "content": "Determine if matrix is within specific bandwidth."
+    title: "isbanded",
+    url: "./linear_algebra/isbanded.html",
+    path: "./linear_algebra/isbanded.html",
+    content: "Determine if matrix is within specific bandwidth.",
   },
   {
-    "title": "ishermitian",
-    "url": "./linear_algebra/ishermitian.html",
-    "path": "./linear_algebra/ishermitian.html",
-    "content": "Computes if matrix is hermitian or skew-hermitian."
+    title: "ishermitian",
+    url: "./linear_algebra/ishermitian.html",
+    path: "./linear_algebra/ishermitian.html",
+    content: "Computes if matrix is hermitian or skew-hermitian.",
   },
   {
-    "title": "issymmetric",
-    "url": "./linear_algebra/issymmetric.html",
-    "path": "./linear_algebra/issymmetric.html",
-    "content": "Computes if matrix is symmetric."
+    title: "issymmetric",
+    url: "./linear_algebra/issymmetric.html",
+    path: "./linear_algebra/issymmetric.html",
+    content: "Computes if matrix is symmetric.",
   },
   {
-    "title": "kron",
-    "url": "./linear_algebra/kron.html",
-    "path": "./linear_algebra/kron.html",
-    "content": "Kronecker tensor product."
+    title: "kron",
+    url: "./linear_algebra/kron.html",
+    path: "./linear_algebra/kron.html",
+    content: "Kronecker tensor product.",
   },
   {
-    "title": "logm",
-    "url": "./linear_algebra/logm.html",
-    "path": "./linear_algebra/logm.html",
-    "content": "Computes the matrix logarithm of a square matrix."
+    title: "logm",
+    url: "./linear_algebra/logm.html",
+    path: "./linear_algebra/logm.html",
+    content: "Computes the matrix logarithm of a square matrix.",
   },
   {
-    "title": "lu",
-    "url": "./linear_algebra/lu.html",
-    "path": "./linear_algebra/lu.html",
-    "content": "LU matrix factorization."
+    title: "lu",
+    url: "./linear_algebra/lu.html",
+    path: "./linear_algebra/lu.html",
+    content: "LU matrix factorization.",
   },
   {
-    "title": "orth",
-    "url": "./linear_algebra/orth.html",
-    "path": "./linear_algebra/orth.html",
-    "content": "Range space of a matrix."
+    title: "orth",
+    url: "./linear_algebra/orth.html",
+    path: "./linear_algebra/orth.html",
+    content: "Range space of a matrix.",
   },
   {
-    "title": "planerot",
-    "url": "./linear_algebra/planerot.html",
-    "path": "./linear_algebra/planerot.html",
-    "content": "Givens plane rotation."
+    title: "planerot",
+    url: "./linear_algebra/planerot.html",
+    path: "./linear_algebra/planerot.html",
+    content: "Givens plane rotation.",
   },
   {
-    "title": "rank",
-    "url": "./linear_algebra/rank.html",
-    "path": "./linear_algebra/rank.html",
-    "content": "Rank of matrix."
+    title: "rank",
+    url: "./linear_algebra/rank.html",
+    path: "./linear_algebra/rank.html",
+    content: "Rank of matrix.",
   },
   {
-    "title": "rcond",
-    "url": "./linear_algebra/rcond.html",
-    "path": "./linear_algebra/rcond.html",
-    "content": "Inverse condition number."
+    title: "rcond",
+    url: "./linear_algebra/rcond.html",
+    path: "./linear_algebra/rcond.html",
+    content: "Inverse condition number.",
   },
   {
-    "title": "rref",
-    "url": "./linear_algebra/rref.html",
-    "path": "./linear_algebra/rref.html",
-    "content": "Gauss-Jordan elimination."
+    title: "rref",
+    url: "./linear_algebra/rref.html",
+    path: "./linear_algebra/rref.html",
+    content: "Gauss-Jordan elimination.",
   },
   {
-    "title": "rsf2csf",
-    "url": "./linear_algebra/rsf2csf.html",
-    "path": "./linear_algebra/rsf2csf.html",
-    "content": "Convert real Schur form to complex Schur form."
+    title: "rsf2csf",
+    url: "./linear_algebra/rsf2csf.html",
+    path: "./linear_algebra/rsf2csf.html",
+    content: "Convert real Schur form to complex Schur form.",
   },
   {
-    "title": "schur",
-    "url": "./linear_algebra/schur.html",
-    "path": "./linear_algebra/schur.html",
-    "content": "Schur decomposition."
+    title: "schur",
+    url: "./linear_algebra/schur.html",
+    path: "./linear_algebra/schur.html",
+    content: "Schur decomposition.",
   },
   {
-    "title": "sqrtm",
-    "url": "./linear_algebra/sqrtm.html",
-    "path": "./linear_algebra/sqrtm.html",
-    "content": "Computes the matrix square root of a square matrix."
+    title: "sqrtm",
+    url: "./linear_algebra/sqrtm.html",
+    path: "./linear_algebra/sqrtm.html",
+    content: "Computes the matrix square root of a square matrix.",
   },
   {
-    "title": "subspace",
-    "url": "./linear_algebra/subspace.html",
-    "path": "./linear_algebra/subspace.html",
-    "content": "Angle between two subspaces."
+    title: "subspace",
+    url: "./linear_algebra/subspace.html",
+    path: "./linear_algebra/subspace.html",
+    content: "Angle between two subspaces.",
   },
   {
-    "title": "svd",
-    "url": "./linear_algebra/svd.html",
-    "path": "./linear_algebra/svd.html",
-    "content": "Singular Value Decomposition."
+    title: "svd",
+    url: "./linear_algebra/svd.html",
+    path: "./linear_algebra/svd.html",
+    content: "Singular Value Decomposition.",
   },
   {
-    "title": "trace",
-    "url": "./linear_algebra/trace.html",
-    "path": "./linear_algebra/trace.html",
-    "content": "Matrix trace."
+    title: "trace",
+    url: "./linear_algebra/trace.html",
+    path: "./linear_algebra/trace.html",
+    content: "Matrix trace.",
   },
   {
-    "title": "vecnorm",
-    "url": "./linear_algebra/vecnorm.html",
-    "path": "./linear_algebra/vecnorm.html",
-    "content": "Vector-wise norm."
+    title: "vecnorm",
+    url: "./linear_algebra/vecnorm.html",
+    path: "./linear_algebra/vecnorm.html",
+    content: "Vector-wise norm.",
   },
   {
-    "title": "Statistics",
-    "url": "./statistics/index.html",
-    "path": "sections/statistics",
-    "content": "<chapter_description> <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.<\/p> <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.<\/p> <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.<\/p> <\/chapter_description>"
+    title: "Statistics",
+    url: "./statistics/index.html",
+    path: "sections/statistics",
+    content:
+      "<chapter_description> <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.</p> <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.</p> <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.</p> </chapter_description>",
   },
   {
-    "title": "corrcoef",
-    "url": "./statistics/corrcoef.html",
-    "path": "./statistics/corrcoef.html",
-    "content": "Correlation coefficients"
+    title: "corrcoef",
+    url: "./statistics/corrcoef.html",
+    path: "./statistics/corrcoef.html",
+    content: "Correlation coefficients",
   },
   {
-    "title": "cov",
-    "url": "./statistics/cov.html",
-    "path": "./statistics/cov.html",
-    "content": "Covariance"
+    title: "cov",
+    url: "./statistics/cov.html",
+    path: "./statistics/cov.html",
+    content: "Covariance",
   },
   {
-    "title": "mean",
-    "url": "./statistics/mean.html",
-    "path": "./statistics/mean.html",
-    "content": "Mean of array elements."
+    title: "mean",
+    url: "./statistics/mean.html",
+    path: "./statistics/mean.html",
+    content: "Mean of array elements.",
   },
   {
-    "title": "normpdf",
-    "url": "./statistics/normpdf.html",
-    "path": "./statistics/normpdf.html",
-    "content": "Normal probability density function"
+    title: "normpdf",
+    url: "./statistics/normpdf.html",
+    path: "./statistics/normpdf.html",
+    content: "Normal probability density function",
   },
   {
-    "title": "tdigest",
-    "url": "./statistics/tdigest.html",
-    "path": "./statistics/tdigest.html",
-    "content": "t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters"
+    title: "tdigest",
+    url: "./statistics/tdigest.html",
+    path: "./statistics/tdigest.html",
+    content:
+      "t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters",
   },
   {
-    "title": "var",
-    "url": "./statistics/var.html",
-    "path": "./statistics/var.html",
-    "content": "Variance"
+    title: "var",
+    url: "./statistics/var.html",
+    path: "./statistics/var.html",
+    content: "Variance",
   },
   {
-    "title": "Data analysis",
-    "url": "./data_analysis/index.html",
-    "path": "sections/data_analysis",
-    "content": "<chapter_description> <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.<\/p> <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.<\/p> <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.<\/p> <\/chapter_description>"
+    title: "Data analysis",
+    url: "./data_analysis/index.html",
+    path: "sections/data_analysis",
+    content:
+      "<chapter_description> <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.</p> <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.</p> <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.</p> </chapter_description>",
   },
   {
-    "title": "conv",
-    "url": "./data_analysis/conv.html",
-    "path": "./data_analysis/conv.html",
-    "content": "Convolution and polynomial multiplication."
+    title: "conv",
+    url: "./data_analysis/conv.html",
+    path: "./data_analysis/conv.html",
+    content: "Convolution and polynomial multiplication.",
   },
   {
-    "title": "conv2",
-    "url": "./data_analysis/conv2.html",
-    "path": "./data_analysis/conv2.html",
-    "content": "2-D convolution."
+    title: "conv2",
+    url: "./data_analysis/conv2.html",
+    path: "./data_analysis/conv2.html",
+    content: "2-D convolution.",
   },
   {
-    "title": "cumprod",
-    "url": "./data_analysis/cumprod.html",
-    "path": "./data_analysis/cumprod.html",
-    "content": "Cumulative product of array elements."
+    title: "cumprod",
+    url: "./data_analysis/cumprod.html",
+    path: "./data_analysis/cumprod.html",
+    content: "Cumulative product of array elements.",
   },
   {
-    "title": "cumsum",
-    "url": "./data_analysis/cumsum.html",
-    "path": "./data_analysis/cumsum.html",
-    "content": "Cumulative sum of array elements."
+    title: "cumsum",
+    url: "./data_analysis/cumsum.html",
+    path: "./data_analysis/cumsum.html",
+    content: "Cumulative sum of array elements.",
   },
   {
-    "title": "ismissing",
-    "url": "./data_analysis/ismissing.html",
-    "path": "./data_analysis/ismissing.html",
-    "content": "Check for missing values."
+    title: "ismissing",
+    url: "./data_analysis/ismissing.html",
+    path: "./data_analysis/ismissing.html",
+    content: "Check for missing values.",
   },
   {
-    "title": "issorted",
-    "url": "./data_analysis/issorted.html",
-    "path": "./data_analysis/issorted.html",
-    "content": "Determine if array is sorted."
+    title: "issorted",
+    url: "./data_analysis/issorted.html",
+    path: "./data_analysis/issorted.html",
+    content: "Determine if array is sorted.",
   },
   {
-    "title": "max",
-    "url": "./data_analysis/max.html",
-    "path": "./data_analysis/max.html",
-    "content": "Maximum elements of an array."
+    title: "max",
+    url: "./data_analysis/max.html",
+    path: "./data_analysis/max.html",
+    content: "Maximum elements of an array.",
   },
   {
-    "title": "min",
-    "url": "./data_analysis/min.html",
-    "path": "./data_analysis/min.html",
-    "content": "Minimum elements of an array."
+    title: "min",
+    url: "./data_analysis/min.html",
+    path: "./data_analysis/min.html",
+    content: "Minimum elements of an array.",
   },
   {
-    "title": "prod",
-    "url": "./data_analysis/prod.html",
-    "path": "./data_analysis/prod.html",
-    "content": "Product of array elements."
+    title: "prod",
+    url: "./data_analysis/prod.html",
+    path: "./data_analysis/prod.html",
+    content: "Product of array elements.",
   },
   {
-    "title": "sort",
-    "url": "./data_analysis/sort.html",
-    "path": "./data_analysis/sort.html",
-    "content": "Sort array elements by quick sort algorithm."
+    title: "sort",
+    url: "./data_analysis/sort.html",
+    path: "./data_analysis/sort.html",
+    content: "Sort array elements by quick sort algorithm.",
   },
   {
-    "title": "sum",
-    "url": "./data_analysis/sum.html",
-    "path": "./data_analysis/sum.html",
-    "content": "Sum of array elements."
+    title: "sum",
+    url: "./data_analysis/sum.html",
+    path: "./data_analysis/sum.html",
+    content: "Sum of array elements.",
   },
   {
-    "title": "unique",
-    "url": "./data_analysis/unique.html",
-    "path": "./data_analysis/unique.html",
-    "content": "Unique values."
+    title: "unique",
+    url: "./data_analysis/unique.html",
+    path: "./data_analysis/unique.html",
+    content: "Unique values.",
   },
   {
-    "title": "Polynomials",
-    "url": "./polynomial_functions/index.html",
-    "path": "sections/polynomial_functions",
-    "content": "<chapter_description> <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.<\/p> <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.<\/p> <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.<\/p> <\/chapter_description>"
+    title: "Polynomials",
+    url: "./polynomial_functions/index.html",
+    path: "sections/polynomial_functions",
+    content:
+      "<chapter_description> <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.</p> <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.</p> <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.</p> </chapter_description>",
   },
   {
-    "title": "deconv",
-    "url": "./polynomial_functions/deconv.html",
-    "path": "./polynomial_functions/deconv.html",
-    "content": "Deconvolution and polynomial division."
+    title: "deconv",
+    url: "./polynomial_functions/deconv.html",
+    path: "./polynomial_functions/deconv.html",
+    content: "Deconvolution and polynomial division.",
   },
   {
-    "title": "poly",
-    "url": "./polynomial_functions/poly.html",
-    "path": "./polynomial_functions/poly.html",
-    "content": "Polynomial with specified roots or characteristic polynomial."
+    title: "poly",
+    url: "./polynomial_functions/poly.html",
+    path: "./polynomial_functions/poly.html",
+    content: "Polynomial with specified roots or characteristic polynomial.",
   },
   {
-    "title": "polyder",
-    "url": "./polynomial_functions/polyder.html",
-    "path": "./polynomial_functions/polyder.html",
-    "content": "Polynomial differentiation."
+    title: "polyder",
+    url: "./polynomial_functions/polyder.html",
+    path: "./polynomial_functions/polyder.html",
+    content: "Polynomial differentiation.",
   },
   {
-    "title": "polyfit",
-    "url": "./polynomial_functions/polyfit.html",
-    "path": "./polynomial_functions/polyfit.html",
-    "content": "Polynomial curve fitting."
+    title: "polyfit",
+    url: "./polynomial_functions/polyfit.html",
+    path: "./polynomial_functions/polyfit.html",
+    content: "Polynomial curve fitting.",
   },
   {
-    "title": "polyint",
-    "url": "./polynomial_functions/polyint.html",
-    "path": "./polynomial_functions/polyint.html",
-    "content": "Polynomial integration."
+    title: "polyint",
+    url: "./polynomial_functions/polyint.html",
+    path: "./polynomial_functions/polyint.html",
+    content: "Polynomial integration.",
   },
   {
-    "title": "polyval",
-    "url": "./polynomial_functions/polyval.html",
-    "path": "./polynomial_functions/polyval.html",
-    "content": "Polynomial evaluation."
+    title: "polyval",
+    url: "./polynomial_functions/polyval.html",
+    path: "./polynomial_functions/polyval.html",
+    content: "Polynomial evaluation.",
   },
   {
-    "title": "polyvalm",
-    "url": "./polynomial_functions/polyvalm.html",
-    "path": "./polynomial_functions/polyvalm.html",
-    "content": "Matrix polynomial evaluation."
+    title: "polyvalm",
+    url: "./polynomial_functions/polyvalm.html",
+    path: "./polynomial_functions/polyvalm.html",
+    content: "Matrix polynomial evaluation.",
   },
   {
-    "title": "roots",
-    "url": "./polynomial_functions/roots.html",
-    "path": "./polynomial_functions/roots.html",
-    "content": "Find polynomial roots."
+    title: "roots",
+    url: "./polynomial_functions/roots.html",
+    path: "./polynomial_functions/roots.html",
+    content: "Find polynomial roots.",
   },
   {
-    "title": "Geometry",
-    "url": "./geometry/index.html",
-    "path": "sections/geometry",
-    "content": "<chapter_description> <p>The Geometry module provides tools for performing geometric transformations and computations in Nelson.<\/p> <p>It supports rotation operations in three-dimensional space, enabling the construction of transformation matrices for manipulating objects and coordinate systems.<\/p> <p>This module is useful for applications in computer graphics, robotics, and spatial analysis.<\/p> <\/chapter_description>"
+    title: "Geometry",
+    url: "./geometry/index.html",
+    path: "sections/geometry",
+    content:
+      "<chapter_description> <p>The Geometry module provides tools for performing geometric transformations and computations in Nelson.</p> <p>It supports rotation operations in three-dimensional space, enabling the construction of transformation matrices for manipulating objects and coordinate systems.</p> <p>This module is useful for applications in computer graphics, robotics, and spatial analysis.</p> </chapter_description>",
   },
   {
-    "title": "rotx",
-    "url": "./geometry/rotx.html",
-    "path": "./geometry/rotx.html",
-    "content": "3x3 transformation matrix for rotations around x-axis"
+    title: "rotx",
+    url: "./geometry/rotx.html",
+    path: "./geometry/rotx.html",
+    content: "3x3 transformation matrix for rotations around x-axis",
   },
   {
-    "title": "roty",
-    "url": "./geometry/roty.html",
-    "path": "./geometry/roty.html",
-    "content": "3x3 transformation matrix for rotations around y-axis"
+    title: "roty",
+    url: "./geometry/roty.html",
+    path: "./geometry/roty.html",
+    content: "3x3 transformation matrix for rotations around y-axis",
   },
   {
-    "title": "rotz",
-    "url": "./geometry/rotz.html",
-    "path": "./geometry/rotz.html",
-    "content": "3x3 transformation matrix for rotations around z-axis"
+    title: "rotz",
+    url: "./geometry/rotz.html",
+    path: "./geometry/rotz.html",
+    content: "3x3 transformation matrix for rotations around z-axis",
   },
   {
-    "title": "Control System functions",
-    "url": "./control_system/index.html",
-    "path": "sections/control_system",
-    "content": "<chapter_description> <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.<\/p> <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.<\/p> <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.<\/p> <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.<\/p> <\/chapter_description>"
+    title: "Control System functions",
+    url: "./control_system/index.html",
+    path: "sections/control_system",
+    content:
+      "<chapter_description> <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p> <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p> <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p> <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.</p> </chapter_description>",
   },
   {
-    "title": "abcdchk",
-    "url": "./control_system/abcdchk.html",
-    "path": "./control_system/abcdchk.html",
-    "content": "Verifies the dimensional compatibility of matrices A, B, C, and D."
+    title: "abcdchk",
+    url: "./control_system/abcdchk.html",
+    path: "./control_system/abcdchk.html",
+    content:
+      "Verifies the dimensional compatibility of matrices A, B, C, and D.",
   },
   {
-    "title": "acker",
-    "url": "./control_system/acker.html",
-    "path": "./control_system/acker.html",
-    "content": "Pole placement gain selection using Ackermann's formula."
+    title: "acker",
+    url: "./control_system/acker.html",
+    path: "./control_system/acker.html",
+    content: "Pole placement gain selection using Ackermann's formula.",
   },
   {
-    "title": "append",
-    "url": "./control_system/append.html",
-    "path": "./control_system/append.html",
-    "content": "Appends the inputs and outputs of the two models."
+    title: "append",
+    url: "./control_system/append.html",
+    path: "./control_system/append.html",
+    content: "Appends the inputs and outputs of the two models.",
   },
   {
-    "title": "augstate",
-    "url": "./control_system/augstate.html",
-    "path": "./control_system/augstate.html",
-    "content": "Append state vector to output vector."
+    title: "augstate",
+    url: "./control_system/augstate.html",
+    path: "./control_system/augstate.html",
+    content: "Append state vector to output vector.",
   },
   {
-    "title": "balreal",
-    "url": "./control_system/balreal.html",
-    "path": "./control_system/balreal.html",
-    "content": "Gramian-based balancing of state-space realizations."
+    title: "balreal",
+    url: "./control_system/balreal.html",
+    path: "./control_system/balreal.html",
+    content: "Gramian-based balancing of state-space realizations.",
   },
   {
-    "title": "bdschur",
-    "url": "./control_system/bdschur.html",
-    "path": "./control_system/bdschur.html",
-    "content": "Block-diagonal Schur factorization."
+    title: "bdschur",
+    url: "./control_system/bdschur.html",
+    path: "./control_system/bdschur.html",
+    content: "Block-diagonal Schur factorization.",
   },
   {
-    "title": "bode",
-    "url": "./control_system/bode.html",
-    "path": "./control_system/bode.html",
-    "content": "Bode plot of frequency response, magnitude and phase data."
+    title: "bode",
+    url: "./control_system/bode.html",
+    path: "./control_system/bode.html",
+    content: "Bode plot of frequency response, magnitude and phase data.",
   },
   {
-    "title": "c2d",
-    "url": "./control_system/c2d.html",
-    "path": "./control_system/c2d.html",
-    "content": "Convert model from continuous to discrete time."
+    title: "c2d",
+    url: "./control_system/c2d.html",
+    path: "./control_system/c2d.html",
+    content: "Convert model from continuous to discrete time.",
   },
   {
-    "title": "care",
-    "url": "./control_system/care.html",
-    "path": "./control_system/care.html",
-    "content": "Continuous-time algebraic Riccati equation solution."
+    title: "care",
+    url: "./control_system/care.html",
+    path: "./control_system/care.html",
+    content: "Continuous-time algebraic Riccati equation solution.",
   },
   {
-    "title": "cloop",
-    "url": "./control_system/cloop.html",
-    "path": "./control_system/cloop.html",
-    "content": "Feedback connection of multiple models."
+    title: "cloop",
+    url: "./control_system/cloop.html",
+    path: "./control_system/cloop.html",
+    content: "Feedback connection of multiple models.",
   },
   {
-    "title": "compreal",
-    "url": "./control_system/compreal.html",
-    "path": "./control_system/compreal.html",
-    "content": "Companion realization of transfer functions."
+    title: "compreal",
+    url: "./control_system/compreal.html",
+    path: "./control_system/compreal.html",
+    content: "Companion realization of transfer functions.",
   },
   {
-    "title": "ctrb",
-    "url": "./control_system/ctrb.html",
-    "path": "./control_system/ctrb.html",
-    "content": "Controllability of state-space model."
+    title: "ctrb",
+    url: "./control_system/ctrb.html",
+    path: "./control_system/ctrb.html",
+    content: "Controllability of state-space model.",
   },
   {
-    "title": "ctrbf",
-    "url": "./control_system/ctrbf.html",
-    "path": "./control_system/ctrbf.html",
-    "content": "Compute controllability staircase form."
+    title: "ctrbf",
+    url: "./control_system/ctrbf.html",
+    path: "./control_system/ctrbf.html",
+    content: "Compute controllability staircase form.",
   },
   {
-    "title": "d2c",
-    "url": "./control_system/d2c.html",
-    "path": "./control_system/d2c.html",
-    "content": "Convert model from discrete to continuous time."
+    title: "d2c",
+    url: "./control_system/d2c.html",
+    path: "./control_system/d2c.html",
+    content: "Convert model from discrete to continuous time.",
   },
   {
-    "title": "damp",
-    "url": "./control_system/damp.html",
-    "path": "./control_system/damp.html",
-    "content": "Natural frequency and damping ratio."
+    title: "damp",
+    url: "./control_system/damp.html",
+    path: "./control_system/damp.html",
+    content: "Natural frequency and damping ratio.",
   },
   {
-    "title": "dare",
-    "url": "./control_system/dare.html",
-    "path": "./control_system/dare.html",
-    "content": "Discret-time algebraic Riccati equation solution."
+    title: "dare",
+    url: "./control_system/dare.html",
+    path: "./control_system/dare.html",
+    content: "Discret-time algebraic Riccati equation solution.",
   },
   {
-    "title": "dcgain",
-    "url": "./control_system/dcgain.html",
-    "path": "./control_system/dcgain.html",
-    "content": "Low-frequency (DC) gain of LTI system."
+    title: "dcgain",
+    url: "./control_system/dcgain.html",
+    path: "./control_system/dcgain.html",
+    content: "Low-frequency (DC) gain of LTI system.",
   },
   {
-    "title": "dlqr",
-    "url": "./control_system/dlqr.html",
-    "path": "./control_system/dlqr.html",
-    "content": "Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system."
+    title: "dlqr",
+    url: "./control_system/dlqr.html",
+    path: "./control_system/dlqr.html",
+    content:
+      "Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.",
   },
   {
-    "title": "dlyap",
-    "url": "./control_system/dlyap.html",
-    "path": "./control_system/dlyap.html",
-    "content": "Discrete-time Lyapunov equations."
+    title: "dlyap",
+    url: "./control_system/dlyap.html",
+    path: "./control_system/dlyap.html",
+    content: "Discrete-time Lyapunov equations.",
   },
   {
-    "title": "dsort",
-    "url": "./control_system/dsort.html",
-    "path": "./control_system/dsort.html",
-    "content": "Sort discrete-time poles by magnitude."
+    title: "dsort",
+    url: "./control_system/dsort.html",
+    path: "./control_system/dsort.html",
+    content: "Sort discrete-time poles by magnitude.",
   },
   {
-    "title": "esort",
-    "url": "./control_system/esort.html",
-    "path": "./control_system/esort.html",
-    "content": "Sort continuous-time poles by real part."
+    title: "esort",
+    url: "./control_system/esort.html",
+    path: "./control_system/esort.html",
+    content: "Sort continuous-time poles by real part.",
   },
   {
-    "title": "evalfr",
-    "url": "./control_system/evalfr.html",
-    "path": "./control_system/evalfr.html",
-    "content": "Evaluate frequency response at given frequency."
+    title: "evalfr",
+    url: "./control_system/evalfr.html",
+    path: "./control_system/evalfr.html",
+    content: "Evaluate frequency response at given frequency.",
   },
   {
-    "title": "feedback",
-    "url": "./control_system/feedback.html",
-    "path": "./control_system/feedback.html",
-    "content": "Feedback connection of multiple models."
+    title: "feedback",
+    url: "./control_system/feedback.html",
+    path: "./control_system/feedback.html",
+    content: "Feedback connection of multiple models.",
   },
   {
-    "title": "freqresp",
-    "url": "./control_system/freqresp.html",
-    "path": "./control_system/freqresp.html",
-    "content": "Evaluate system response over a grid of frequencies."
+    title: "freqresp",
+    url: "./control_system/freqresp.html",
+    path: "./control_system/freqresp.html",
+    content: "Evaluate system response over a grid of frequencies.",
   },
   {
-    "title": "gensig",
-    "url": "./control_system/gensign.html",
-    "path": "./control_system/gensign.html",
-    "content": "Create periodic signals for simulating system response."
+    title: "gensig",
+    url: "./control_system/gensign.html",
+    path: "./control_system/gensign.html",
+    content: "Create periodic signals for simulating system response.",
   },
   {
-    "title": "gram",
-    "url": "./control_system/gram.html",
-    "path": "./control_system/gram.html",
-    "content": "Controllability and observability Gramians."
+    title: "gram",
+    url: "./control_system/gram.html",
+    path: "./control_system/gram.html",
+    content: "Controllability and observability Gramians.",
   },
   {
-    "title": "hsvd",
-    "url": "./control_system/hsvd.html",
-    "path": "./control_system/hsvd.html",
-    "content": "Hankel singular values of dynamic system."
+    title: "hsvd",
+    url: "./control_system/hsvd.html",
+    path: "./control_system/hsvd.html",
+    content: "Hankel singular values of dynamic system.",
   },
   {
-    "title": "impulse",
-    "url": "./control_system/impulse.html",
-    "path": "./control_system/impulse.html",
-    "content": "Impulse response plot of dynamic system."
+    title: "impulse",
+    url: "./control_system/impulse.html",
+    path: "./control_system/impulse.html",
+    content: "Impulse response plot of dynamic system.",
   },
   {
-    "title": "initial",
-    "url": "./control_system/initial.html",
-    "path": "./control_system/initial.html",
-    "content": "System response to initial states of state-space model."
+    title: "initial",
+    url: "./control_system/initial.html",
+    path: "./control_system/initial.html",
+    content: "System response to initial states of state-space model.",
   },
   {
-    "title": "isct",
-    "url": "./control_system/isct.html",
-    "path": "./control_system/isct.html",
-    "content": "Checks if dynamic system model is in continuous time."
+    title: "isct",
+    url: "./control_system/isct.html",
+    path: "./control_system/isct.html",
+    content: "Checks if dynamic system model is in continuous time.",
   },
   {
-    "title": "isdt",
-    "url": "./control_system/isdt.html",
-    "path": "./control_system/isdt.html",
-    "content": "Checks if dynamic system model is in discret time."
+    title: "isdt",
+    url: "./control_system/isdt.html",
+    path: "./control_system/isdt.html",
+    content: "Checks if dynamic system model is in discret time.",
   },
   {
-    "title": "islti",
-    "url": "./control_system/islti.html",
-    "path": "./control_system/islti.html",
-    "content": "Checks if variable is an linear model tf, ss or zpk."
+    title: "islti",
+    url: "./control_system/islti.html",
+    path: "./control_system/islti.html",
+    content: "Checks if variable is an linear model tf, ss or zpk.",
   },
   {
-    "title": "issiso",
-    "url": "./control_system/issiso.html",
-    "path": "./control_system/issiso.html",
-    "content": "Checks if dynamic system model is single input and single output."
+    title: "issiso",
+    url: "./control_system/issiso.html",
+    path: "./control_system/issiso.html",
+    content:
+      "Checks if dynamic system model is single input and single output.",
   },
   {
-    "title": "isstatic",
-    "url": "./control_system/isstatic.html",
-    "path": "./control_system/isstatic.html",
-    "content": "Checks if model is static or dynamic."
+    title: "isstatic",
+    url: "./control_system/isstatic.html",
+    path: "./control_system/isstatic.html",
+    content: "Checks if model is static or dynamic.",
   },
   {
-    "title": "kalman",
-    "url": "./control_system/kalman.html",
-    "path": "./control_system/kalman.html",
-    "content": "Design Kalman filter for state estimation."
+    title: "kalman",
+    url: "./control_system/kalman.html",
+    path: "./control_system/kalman.html",
+    content: "Design Kalman filter for state estimation.",
   },
   {
-    "title": "lqe",
-    "url": "./control_system/lqe.html",
-    "path": "./control_system/lqe.html",
-    "content": "Kalman estimator design for continuous-time systems."
+    title: "lqe",
+    url: "./control_system/lqe.html",
+    path: "./control_system/lqe.html",
+    content: "Kalman estimator design for continuous-time systems.",
   },
   {
-    "title": "lqed",
-    "url": "./control_system/lqed.html",
-    "path": "./control_system/lqed.html",
-    "content": "Calculates the discrete Kalman estimator configuration based on a continuous cost function."
+    title: "lqed",
+    url: "./control_system/lqed.html",
+    path: "./control_system/lqed.html",
+    content:
+      "Calculates the discrete Kalman estimator configuration based on a continuous cost function.",
   },
   {
-    "title": "lqr",
-    "url": "./control_system/lqr.html",
-    "path": "./control_system/lqr.html",
-    "content": "Linear-Quadratic Regulator (LQR) design."
+    title: "lqr",
+    url: "./control_system/lqr.html",
+    path: "./control_system/lqr.html",
+    content: "Linear-Quadratic Regulator (LQR) design.",
   },
   {
-    "title": "lqry",
-    "url": "./control_system/lqry.html",
-    "path": "./control_system/lqry.html",
-    "content": "Form linear-quadratic (LQ) state-feedback regulator with output weighting."
+    title: "lqry",
+    url: "./control_system/lqry.html",
+    path: "./control_system/lqry.html",
+    content:
+      "Form linear-quadratic (LQ) state-feedback regulator with output weighting.",
   },
   {
-    "title": "lsim",
-    "url": "./control_system/lsim.html",
-    "path": "./control_system/lsim.html",
-    "content": "Plot simulated time response of dynamic system to arbitrary inputs."
+    title: "lsim",
+    url: "./control_system/lsim.html",
+    path: "./control_system/lsim.html",
+    content:
+      "Plot simulated time response of dynamic system to arbitrary inputs.",
   },
   {
-    "title": "lyap",
-    "url": "./control_system/lyap.html",
-    "path": "./control_system/lyap.html",
-    "content": "Continuous Lyapunov equation solution."
+    title: "lyap",
+    url: "./control_system/lyap.html",
+    path: "./control_system/lyap.html",
+    content: "Continuous Lyapunov equation solution.",
   },
   {
-    "title": "minreal",
-    "url": "./control_system/minreal.html",
-    "path": "./control_system/minreal.html",
-    "content": "Minimal realization or pole-zero cancellation."
+    title: "minreal",
+    url: "./control_system/minreal.html",
+    path: "./control_system/minreal.html",
+    content: "Minimal realization or pole-zero cancellation.",
   },
   {
-    "title": "nyquist",
-    "url": "./control_system/nyquist.html",
-    "path": "./control_system/nyquist.html",
-    "content": "Nyquist plot of frequency response."
+    title: "nyquist",
+    url: "./control_system/nyquist.html",
+    path: "./control_system/nyquist.html",
+    content: "Nyquist plot of frequency response.",
   },
   {
-    "title": "obsv",
-    "url": "./control_system/obsv.html",
-    "path": "./control_system/obsv.html",
-    "content": "Observability of state-space model."
+    title: "obsv",
+    url: "./control_system/obsv.html",
+    path: "./control_system/obsv.html",
+    content: "Observability of state-space model.",
   },
   {
-    "title": "obsvf",
-    "url": "./control_system/obsvf.html",
-    "path": "./control_system/obsvf.html",
-    "content": "Compute observability staircase form."
+    title: "obsvf",
+    url: "./control_system/obsvf.html",
+    path: "./control_system/obsvf.html",
+    content: "Compute observability staircase form.",
   },
   {
-    "title": "ord2",
-    "url": "./control_system/ord2.html",
-    "path": "./control_system/ord2.html",
-    "content": "Generate continuous second-order systems."
+    title: "ord2",
+    url: "./control_system/ord2.html",
+    path: "./control_system/ord2.html",
+    content: "Generate continuous second-order systems.",
   },
   {
-    "title": "padecoef",
-    "url": "./control_system/padecoef.html",
-    "path": "./control_system/padecoef.html",
-    "content": "Computes the Pade approximation of time delays."
+    title: "padecoef",
+    url: "./control_system/padecoef.html",
+    path: "./control_system/padecoef.html",
+    content: "Computes the Pade approximation of time delays.",
   },
   {
-    "title": "parallel",
-    "url": "./control_system/parallel.html",
-    "path": "./control_system/parallel.html",
-    "content": "Parallel connection of two models."
+    title: "parallel",
+    url: "./control_system/parallel.html",
+    path: "./control_system/parallel.html",
+    content: "Parallel connection of two models.",
   },
   {
-    "title": "pole",
-    "url": "./control_system/pole.html",
-    "path": "./control_system/pole.html",
-    "content": "Poles of dynamic system."
+    title: "pole",
+    url: "./control_system/pole.html",
+    path: "./control_system/pole.html",
+    content: "Poles of dynamic system.",
   },
   {
-    "title": "series",
-    "url": "./control_system/series.html",
-    "path": "./control_system/series.html",
-    "content": "Series connection of two models."
+    title: "series",
+    url: "./control_system/series.html",
+    path: "./control_system/series.html",
+    content: "Series connection of two models.",
   },
   {
-    "title": "ss",
-    "url": "./control_system/ss.html",
-    "path": "./control_system/ss.html",
-    "content": "State-space model."
+    title: "ss",
+    url: "./control_system/ss.html",
+    path: "./control_system/ss.html",
+    content: "State-space model.",
   },
   {
-    "title": "ss2tf",
-    "url": "./control_system/ss2tf.html",
-    "path": "./control_system/ss2tf.html",
-    "content": "Convert state-space representation to transfer function."
+    title: "ss2tf",
+    url: "./control_system/ss2tf.html",
+    path: "./control_system/ss2tf.html",
+    content: "Convert state-space representation to transfer function.",
   },
   {
-    "title": "ssdata",
-    "url": "./control_system/ssdata.html",
-    "path": "./control_system/ssdata.html",
-    "content": "Access state-space model data."
+    title: "ssdata",
+    url: "./control_system/ssdata.html",
+    path: "./control_system/ssdata.html",
+    content: "Access state-space model data.",
   },
   {
-    "title": "ssdelete",
-    "url": "./control_system/ssdelete.html",
-    "path": "./control_system/ssdelete.html",
-    "content": "Remove inputs, outputs and states from state-space system."
+    title: "ssdelete",
+    url: "./control_system/ssdelete.html",
+    path: "./control_system/ssdelete.html",
+    content: "Remove inputs, outputs and states from state-space system.",
   },
   {
-    "title": "ssselect",
-    "url": "./control_system/ssselect.html",
-    "path": "./control_system/ssselect.html",
-    "content": "Extract subsystem from larger system."
+    title: "ssselect",
+    url: "./control_system/ssselect.html",
+    path: "./control_system/ssselect.html",
+    content: "Extract subsystem from larger system.",
   },
   {
-    "title": "step",
-    "url": "./control_system/step.html",
-    "path": "./control_system/step.html",
-    "content": "Step response plot of dynamic system."
+    title: "step",
+    url: "./control_system/step.html",
+    path: "./control_system/step.html",
+    content: "Step response plot of dynamic system.",
   },
   {
-    "title": "tf",
-    "url": "./control_system/tf.html",
-    "path": "./control_system/tf.html",
-    "content": "Constructs a transfer function model."
+    title: "tf",
+    url: "./control_system/tf.html",
+    path: "./control_system/tf.html",
+    content: "Constructs a transfer function model.",
   },
   {
-    "title": "tf2ss",
-    "url": "./control_system/tf2ss.html",
-    "path": "./control_system/tf2ss.html",
-    "content": "Convert transfer function filter parameters to state-space form."
+    title: "tf2ss",
+    url: "./control_system/tf2ss.html",
+    path: "./control_system/tf2ss.html",
+    content: "Convert transfer function filter parameters to state-space form.",
   },
   {
-    "title": "tfdata",
-    "url": "./control_system/tfdata.html",
-    "path": "./control_system/tfdata.html",
-    "content": "Access transfer function model data."
+    title: "tfdata",
+    url: "./control_system/tfdata.html",
+    path: "./control_system/tfdata.html",
+    content: "Access transfer function model data.",
   },
   {
-    "title": "tzero",
-    "url": "./control_system/tzero.html",
-    "path": "./control_system/tzero.html",
-    "content": "Invariant zeros of linear system."
+    title: "tzero",
+    url: "./control_system/tzero.html",
+    path: "./control_system/tzero.html",
+    content: "Invariant zeros of linear system.",
   },
   {
-    "title": "zero",
-    "url": "./control_system/zero.html",
-    "path": "./control_system/zero.html",
-    "content": "Zeros and gain of SISO dynamic system."
+    title: "zero",
+    url: "./control_system/zero.html",
+    path: "./control_system/zero.html",
+    content: "Zeros and gain of SISO dynamic system.",
   },
   {
-    "title": "Signal Processing",
-    "url": "./signal_processing/index.html",
-    "path": "sections/signal_processing",
-    "content": "<chapter_description> <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.<\/p> <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.<\/p> <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.<\/p> <\/chapter_description>"
+    title: "Signal Processing",
+    url: "./signal_processing/index.html",
+    path: "sections/signal_processing",
+    content:
+      "<chapter_description> <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p> <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p> <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p> </chapter_description>",
   },
   {
-    "title": "bartlett",
-    "url": "./signal_processing/bartlett.html",
-    "path": "./signal_processing/bartlett.html",
-    "content": "Bartlett window."
+    title: "bartlett",
+    url: "./signal_processing/bartlett.html",
+    path: "./signal_processing/bartlett.html",
+    content: "Bartlett window.",
   },
   {
-    "title": "blackman",
-    "url": "./signal_processing/blackman.html",
-    "path": "./signal_processing/blackman.html",
-    "content": "Blackman window."
+    title: "blackman",
+    url: "./signal_processing/blackman.html",
+    path: "./signal_processing/blackman.html",
+    content: "Blackman window.",
   },
   {
-    "title": "db2mag",
-    "url": "./signal_processing/db2mag.html",
-    "path": "./signal_processing/db2mag.html",
-    "content": "Convert a gain in decibels (dB) to a magnitude."
+    title: "db2mag",
+    url: "./signal_processing/db2mag.html",
+    path: "./signal_processing/db2mag.html",
+    content: "Convert a gain in decibels (dB) to a magnitude.",
   },
   {
-    "title": "db2pow",
-    "url": "./signal_processing/db2pow.html",
-    "path": "./signal_processing/db2pow.html",
-    "content": "Convert a gain in decibels (dB) to power."
+    title: "db2pow",
+    url: "./signal_processing/db2pow.html",
+    path: "./signal_processing/db2pow.html",
+    content: "Convert a gain in decibels (dB) to power.",
   },
   {
-    "title": "filter2",
-    "url": "./signal_processing/filter2.html",
-    "path": "./signal_processing/filter2.html",
-    "content": "2-D digital filter."
+    title: "filter2",
+    url: "./signal_processing/filter2.html",
+    path: "./signal_processing/filter2.html",
+    content: "2-D digital filter.",
   },
   {
-    "title": "hamming",
-    "url": "./signal_processing/hamming.html",
-    "path": "./signal_processing/hamming.html",
-    "content": "Hamming window."
+    title: "hamming",
+    url: "./signal_processing/hamming.html",
+    path: "./signal_processing/hamming.html",
+    content: "Hamming window.",
   },
   {
-    "title": "hann",
-    "url": "./signal_processing/hann.html",
-    "path": "./signal_processing/hann.html",
-    "content": "Hann window."
+    title: "hann",
+    url: "./signal_processing/hann.html",
+    path: "./signal_processing/hann.html",
+    content: "Hann window.",
   },
   {
-    "title": "mag2db",
-    "url": "./signal_processing/mag2db.html",
-    "path": "./signal_processing/mag2db.html",
-    "content": "Convert a magnitude to decibels (dB)."
+    title: "mag2db",
+    url: "./signal_processing/mag2db.html",
+    path: "./signal_processing/mag2db.html",
+    content: "Convert a magnitude to decibels (dB).",
   },
   {
-    "title": "pow2db",
-    "url": "./signal_processing/pow2db.html",
-    "path": "./signal_processing/pow2db.html",
-    "content": "Convert power to decibel."
+    title: "pow2db",
+    url: "./signal_processing/pow2db.html",
+    path: "./signal_processing/pow2db.html",
+    content: "Convert power to decibel.",
   },
   {
-    "title": "sinc",
-    "url": "./signal_processing/sinc.html",
-    "path": "./signal_processing/sinc.html",
-    "content": "Sinc function."
+    title: "sinc",
+    url: "./signal_processing/sinc.html",
+    path: "./signal_processing/sinc.html",
+    content: "Sinc function.",
   },
   {
-    "title": "xcorr2",
-    "url": "./signal_processing/xcorr2.html",
-    "path": "./signal_processing/xcorr2.html",
-    "content": "2-D cross-correlation."
+    title: "xcorr2",
+    url: "./signal_processing/xcorr2.html",
+    path: "./signal_processing/xcorr2.html",
+    content: "2-D cross-correlation.",
   },
   {
-    "title": "zp2tf",
-    "url": "./signal_processing/zp2tf.html",
-    "path": "./signal_processing/zp2tf.html",
-    "content": "Zero-pole to transfer function conversion."
+    title: "zp2tf",
+    url: "./signal_processing/zp2tf.html",
+    path: "./signal_processing/zp2tf.html",
+    content: "Zero-pole to transfer function conversion.",
   },
   {
-    "title": "Subroutine Library In COntrol Theory",
-    "url": "./slicot/index.html",
-    "path": "sections/slicot",
-    "content": "<chapter_description> <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.<\/p> <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.<\/p> <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.<\/p> <\/chapter_description>"
+    title: "Subroutine Library In COntrol Theory",
+    url: "./slicot/index.html",
+    path: "sections/slicot",
+    content:
+      "<chapter_description> <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p> <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.</p> <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.</p> </chapter_description>",
   },
   {
-    "title": "SLICOT License",
-    "url": "./slicot/About_SLICOT_license.html",
-    "path": "./slicot/About_SLICOT_license.html",
-    "content": "About SLICOT license."
+    title: "SLICOT License",
+    url: "./slicot/About_SLICOT_license.html",
+    path: "./slicot/About_SLICOT_license.html",
+    content: "About SLICOT license.",
   },
   {
-    "title": "slicot_ab01od",
-    "url": "./slicot/slicot_ab01od.html",
-    "path": "./slicot/slicot_ab01od.html",
-    "content": "Staircase form for multi-input systems using orthogonal state and input transformations."
+    title: "slicot_ab01od",
+    url: "./slicot/slicot_ab01od.html",
+    path: "./slicot/slicot_ab01od.html",
+    content:
+      "Staircase form for multi-input systems using orthogonal state and input transformations.",
   },
   {
-    "title": "slicot_ab04md",
-    "url": "./slicot/slicot_ab04md.html",
-    "path": "./slicot/slicot_ab04md.html",
-    "content": "Discrete-time \/ continuous-time systems conversion by a bilinear transformation."
+    title: "slicot_ab04md",
+    url: "./slicot/slicot_ab04md.html",
+    path: "./slicot/slicot_ab04md.html",
+    content:
+      "Discrete-time / continuous-time systems conversion by a bilinear transformation.",
   },
   {
-    "title": "slicot_ab07nd",
-    "url": "./slicot/slicot_ab07nd.html",
-    "path": "./slicot/slicot_ab07nd.html",
-    "content": "Inverse of a given linear system."
+    title: "slicot_ab07nd",
+    url: "./slicot/slicot_ab07nd.html",
+    path: "./slicot/slicot_ab07nd.html",
+    content: "Inverse of a given linear system.",
   },
   {
-    "title": "slicot_ab08nd",
-    "url": "./slicot/slicot_ab08nd.html",
-    "path": "./slicot/slicot_ab08nd.html",
-    "content": "Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system."
+    title: "slicot_ab08nd",
+    url: "./slicot/slicot_ab08nd.html",
+    path: "./slicot/slicot_ab08nd.html",
+    content:
+      "Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system.",
   },
   {
-    "title": "slicot_ag08bd",
-    "url": "./slicot/slicot_ag08bd.html",
-    "path": "./slicot/slicot_ag08bd.html",
-    "content": "Zeros and Kronecker structure of a descriptor system pencil."
+    title: "slicot_ag08bd",
+    url: "./slicot/slicot_ag08bd.html",
+    path: "./slicot/slicot_ag08bd.html",
+    content: "Zeros and Kronecker structure of a descriptor system pencil.",
   },
   {
-    "title": "slicot_mb02md",
-    "url": "./slicot/slicot_mb02md.html",
-    "path": "./slicot/slicot_mb02md.html",
-    "content": "Solution of Total Least-Squares problem using a SVD approach."
+    title: "slicot_mb02md",
+    url: "./slicot/slicot_mb02md.html",
+    path: "./slicot/slicot_mb02md.html",
+    content: "Solution of Total Least-Squares problem using a SVD approach.",
   },
   {
-    "title": "slicot_mb03od",
-    "url": "./slicot/slicot_mb03od.html",
-    "path": "./slicot/slicot_mb03od.html",
-    "content": "Matrix rank determination by incremental condition estimation."
+    title: "slicot_mb03od",
+    url: "./slicot/slicot_mb03od.html",
+    path: "./slicot/slicot_mb03od.html",
+    content: "Matrix rank determination by incremental condition estimation.",
   },
   {
-    "title": "slicot_mb03pd",
-    "url": "./slicot/slicot_mb03pd.html",
-    "path": "./slicot/slicot_mb03pd.html",
-    "content": "Matrix rank determination by incremental condition estimation (row pivoting)."
+    title: "slicot_mb03pd",
+    url: "./slicot/slicot_mb03pd.html",
+    path: "./slicot/slicot_mb03pd.html",
+    content:
+      "Matrix rank determination by incremental condition estimation (row pivoting).",
   },
   {
-    "title": "slicot_mb03rd",
-    "url": "./slicot/slicot_mb03rd.html",
-    "path": "./slicot/slicot_mb03rd.html",
-    "content": "Reduction of a real Schur form matrix to a block-diagonal form."
+    title: "slicot_mb03rd",
+    url: "./slicot/slicot_mb03rd.html",
+    path: "./slicot/slicot_mb03rd.html",
+    content: "Reduction of a real Schur form matrix to a block-diagonal form.",
   },
   {
-    "title": "slicot_mb04gd",
-    "url": "./slicot/slicot_mb04gd.html",
-    "path": "./slicot/slicot_mb04gd.html",
-    "content": "RQ factorization with row pivoting of a matrix."
+    title: "slicot_mb04gd",
+    url: "./slicot/slicot_mb04gd.html",
+    path: "./slicot/slicot_mb04gd.html",
+    content: "RQ factorization with row pivoting of a matrix.",
   },
   {
-    "title": "slicot_mb04md",
-    "url": "./slicot/slicot_mb04md.html",
-    "path": "./slicot/slicot_mb04md.html",
-    "content": "Balancing a general real matrix."
+    title: "slicot_mb04md",
+    url: "./slicot/slicot_mb04md.html",
+    path: "./slicot/slicot_mb04md.html",
+    content: "Balancing a general real matrix.",
   },
   {
-    "title": "slicot_mb05od",
-    "url": "./slicot/slicot_mb05od.html",
-    "path": "./slicot/slicot_mb05od.html",
-    "content": "Matrix exponential for a real matrix, with accuracy estimate."
+    title: "slicot_mb05od",
+    url: "./slicot/slicot_mb05od.html",
+    path: "./slicot/slicot_mb05od.html",
+    content: "Matrix exponential for a real matrix, with accuracy estimate.",
   },
   {
-    "title": "slicot_mc01td",
-    "url": "./slicot/slicot_mc01td.html",
-    "path": "./slicot/slicot_mc01td.html",
-    "content": "Checking stability of a given real polynomial."
+    title: "slicot_mc01td",
+    url: "./slicot/slicot_mc01td.html",
+    path: "./slicot/slicot_mc01td.html",
+    content: "Checking stability of a given real polynomial.",
   },
   {
-    "title": "slicot_sb01bd",
-    "url": "./slicot/slicot_sb01bd.html",
-    "path": "./slicot/slicot_sb01bd.html",
-    "content": "Pole assignment for a given matrix pair (A,B)."
+    title: "slicot_sb01bd",
+    url: "./slicot/slicot_sb01bd.html",
+    path: "./slicot/slicot_sb01bd.html",
+    content: "Pole assignment for a given matrix pair (A,B).",
   },
   {
-    "title": "slicot_sb02od",
-    "url": "./slicot/slicot_sb02od.html",
-    "path": "./slicot/slicot_sb02od.html",
-    "content": "Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)."
+    title: "slicot_sb02od",
+    url: "./slicot/slicot_sb02od.html",
+    path: "./slicot/slicot_sb02od.html",
+    content:
+      "Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method).",
   },
   {
-    "title": "slicot_sb03md",
-    "url": "./slicot/slicot_sb03md.html",
-    "path": "./slicot/slicot_sb03md.html",
-    "content": "Solution of continuous- or discrete-time Lyapunov equations and separation estimation."
+    title: "slicot_sb03md",
+    url: "./slicot/slicot_sb03md.html",
+    path: "./slicot/slicot_sb03md.html",
+    content:
+      "Solution of continuous- or discrete-time Lyapunov equations and separation estimation.",
   },
   {
-    "title": "slicot_sb03od",
-    "url": "./slicot/slicot_sb03od.html",
-    "path": "./slicot/slicot_sb03od.html",
-    "content": "Solution of stable continuous- or discrete-time Lyapunov equations (Cholesky factor)."
+    title: "slicot_sb03od",
+    url: "./slicot/slicot_sb03od.html",
+    path: "./slicot/slicot_sb03od.html",
+    content:
+      "Solution of stable continuous- or discrete-time Lyapunov equations (Cholesky factor).",
   },
   {
-    "title": "slicot_sb04md",
-    "url": "./slicot/slicot_sb04md.html",
-    "path": "./slicot/slicot_sb04md.html",
-    "content": "Solution of continuous-time Sylvester equations (Hessenberg-Schur method)."
+    title: "slicot_sb04md",
+    url: "./slicot/slicot_sb04md.html",
+    path: "./slicot/slicot_sb04md.html",
+    content:
+      "Solution of continuous-time Sylvester equations (Hessenberg-Schur method).",
   },
   {
-    "title": "slicot_sb04qd",
-    "url": "./slicot/slicot_sb04qd.html",
-    "path": "./slicot/slicot_sb04qd.html",
-    "content": "Solution of discrete-time Sylvester equations (Hessenberg-Schur method)."
+    title: "slicot_sb04qd",
+    url: "./slicot/slicot_sb04qd.html",
+    path: "./slicot/slicot_sb04qd.html",
+    content:
+      "Solution of discrete-time Sylvester equations (Hessenberg-Schur method).",
   },
   {
-    "title": "slicot_sb10jd",
-    "url": "./slicot/slicot_sb10jd.html",
-    "path": "./slicot/slicot_sb10jd.html",
-    "content": "Converting a descriptor state-space system into regular state-space form."
+    title: "slicot_sb10jd",
+    url: "./slicot/slicot_sb10jd.html",
+    path: "./slicot/slicot_sb10jd.html",
+    content:
+      "Converting a descriptor state-space system into regular state-space form.",
   },
   {
-    "title": "slicot_sg02ad",
-    "url": "./slicot/slicot_sg02ad.html",
-    "path": "./slicot/slicot_sg02ad.html",
-    "content": "Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems."
+    title: "slicot_sg02ad",
+    url: "./slicot/slicot_sg02ad.html",
+    path: "./slicot/slicot_sg02ad.html",
+    content:
+      "Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.",
   },
   {
-    "title": "slicot_tb01id",
-    "url": "./slicot/slicot_tb01id.html",
-    "path": "./slicot/slicot_tb01id.html",
-    "content": "Balancing a system matrix corresponding to a triplet (A, B, C)."
+    title: "slicot_tb01id",
+    url: "./slicot/slicot_tb01id.html",
+    path: "./slicot/slicot_tb01id.html",
+    content: "Balancing a system matrix corresponding to a triplet (A, B, C).",
   },
   {
-    "title": "slicot_tg01ad",
-    "url": "./slicot/slicot_tg01ad.html",
-    "path": "./slicot/slicot_tg01ad.html",
-    "content": "Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C)."
+    title: "slicot_tg01ad",
+    url: "./slicot/slicot_tg01ad.html",
+    path: "./slicot/slicot_tg01ad.html",
+    content:
+      "Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C).",
   },
   {
-    "title": "FFTW",
-    "url": "./fftw/index.html",
-    "path": "sections/fftw",
-    "content": "<chapter_description> <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.<\/p> <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.<\/p> <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.<\/p> <\/chapter_description>"
+    title: "FFTW",
+    url: "./fftw/index.html",
+    path: "sections/fftw",
+    content:
+      "<chapter_description> <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.</p> <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.</p> <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.</p> </chapter_description>",
   },
   {
-    "title": "FFTW License",
-    "url": "./fftw/About_FFTW_license.html",
-    "path": "./fftw/About_FFTW_license.html",
-    "content": "About FFTW license."
+    title: "FFTW License",
+    url: "./fftw/About_FFTW_license.html",
+    path: "./fftw/About_FFTW_license.html",
+    content: "About FFTW license.",
   },
   {
-    "title": "FFTWwrapper",
-    "url": "./fftw/FFTWwrapper.html",
-    "path": "./fftw/FFTWwrapper.html",
-    "content": "load\/free FFTW library dynamically."
+    title: "FFTWwrapper",
+    url: "./fftw/FFTWwrapper.html",
+    path: "./fftw/FFTWwrapper.html",
+    content: "load/free FFTW library dynamically.",
   },
   {
-    "title": "fft",
-    "url": "./fftw/fft.html",
-    "path": "./fftw/fft.html",
-    "content": "Fast Fourier transform."
+    title: "fft",
+    url: "./fftw/fft.html",
+    path: "./fftw/fft.html",
+    content: "Fast Fourier transform.",
   },
   {
-    "title": "fft2",
-    "url": "./fftw/fft2.html",
-    "path": "./fftw/fft2.html",
-    "content": "2-D fast Fourier transform."
+    title: "fft2",
+    url: "./fftw/fft2.html",
+    path: "./fftw/fft2.html",
+    content: "2-D fast Fourier transform.",
   },
   {
-    "title": "fftn",
-    "url": "./fftw/fftn.html",
-    "path": "./fftw/fftn.html",
-    "content": "N-Dimensions fast Fourier transform."
+    title: "fftn",
+    url: "./fftw/fftn.html",
+    path: "./fftw/fftn.html",
+    content: "N-Dimensions fast Fourier transform.",
   },
   {
-    "title": "fftshift",
-    "url": "./fftw/fftshift.html",
-    "path": "./fftw/fftshift.html",
-    "content": "Shift the zero-frequency component to the center of the spectrum."
+    title: "fftshift",
+    url: "./fftw/fftshift.html",
+    path: "./fftw/fftshift.html",
+    content:
+      "Shift the zero-frequency component to the center of the spectrum.",
   },
   {
-    "title": "fftw",
-    "url": "./fftw/fftw.html",
-    "path": "./fftw/fftw.html",
-    "content": "function for determining FFT algorithm."
+    title: "fftw",
+    url: "./fftw/fftw.html",
+    path: "./fftw/fftw.html",
+    content: "function for determining FFT algorithm.",
   },
   {
-    "title": "ifft",
-    "url": "./fftw/ifft.html",
-    "path": "./fftw/ifft.html",
-    "content": "Inverse Fast Fourier transform."
+    title: "ifft",
+    url: "./fftw/ifft.html",
+    path: "./fftw/ifft.html",
+    content: "Inverse Fast Fourier transform.",
   },
   {
-    "title": "ifftn",
-    "url": "./fftw/ifftn.html",
-    "path": "./fftw/ifftn.html",
-    "content": "Inverse multidimensional fast Fourier transform."
+    title: "ifftn",
+    url: "./fftw/ifftn.html",
+    path: "./fftw/ifftn.html",
+    content: "Inverse multidimensional fast Fourier transform.",
   },
   {
-    "title": "ifftshift",
-    "url": "./fftw/ifftshift.html",
-    "path": "./fftw/ifftshift.html",
-    "content": "inverse of fftshift"
+    title: "ifftshift",
+    url: "./fftw/ifftshift.html",
+    path: "./fftw/ifftshift.html",
+    content: "inverse of fftshift",
   },
   {
-    "title": "Random",
-    "url": "./random/index.html",
-    "path": "sections/random",
-    "content": "<chapter_description> <p>The Random module provides tools for generating random numbers and random sequences in Nelson.<\/p> <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.<\/p> <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.<\/p> <\/chapter_description>"
+    title: "Random",
+    url: "./random/index.html",
+    path: "sections/random",
+    content:
+      "<chapter_description> <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p> <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p> <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p> </chapter_description>",
   },
   {
-    "title": "rand",
-    "url": "./random/rand.html",
-    "path": "./random/rand.html",
-    "content": "Random Number."
+    title: "rand",
+    url: "./random/rand.html",
+    path: "./random/rand.html",
+    content: "Random Number.",
   },
   {
-    "title": "randi",
-    "url": "./random/randi.html",
-    "path": "./random/randi.html",
-    "content": "Random Integer."
+    title: "randi",
+    url: "./random/randi.html",
+    path: "./random/randi.html",
+    content: "Random Integer.",
   },
   {
-    "title": "randn",
-    "url": "./random/randn.html",
-    "path": "./random/randn.html",
-    "content": "Normally distributed random number."
+    title: "randn",
+    url: "./random/randn.html",
+    path: "./random/randn.html",
+    content: "Normally distributed random number.",
   },
   {
-    "title": "randperm",
-    "url": "./random/randperm.html",
-    "path": "./random/randperm.html",
-    "content": "Random permutation of integers values."
+    title: "randperm",
+    url: "./random/randperm.html",
+    path: "./random/randperm.html",
+    content: "Random permutation of integers values.",
   },
   {
-    "title": "rng",
-    "url": "./random/rng.html",
-    "path": "./random/rng.html",
-    "content": "Random Number Generator."
+    title: "rng",
+    url: "./random/rng.html",
+    path: "./random/rng.html",
+    content: "Random Number Generator.",
   },
   {
-    "title": "OS functions",
-    "url": "./os_functions/index.html",
-    "path": "sections/os_functions",
-    "content": "<chapter_description> <p>The OS Functions module provides tools for interacting with the operating system in Nelson.<\/p> <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.<\/p> <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux\/Unix platforms.<\/p> <\/chapter_description>"
+    title: "OS functions",
+    url: "./os_functions/index.html",
+    path: "sections/os_functions",
+    content:
+      "<chapter_description> <p>The OS Functions module provides tools for interacting with the operating system in Nelson.</p> <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.</p> <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux/Unix platforms.</p> </chapter_description>",
   },
   {
-    "title": "cmdsep",
-    "url": "./os_functions/cmdsep.html",
-    "path": "./os_functions/cmdsep.html",
-    "content": "Command separator for current operating system."
+    title: "cmdsep",
+    url: "./os_functions/cmdsep.html",
+    path: "./os_functions/cmdsep.html",
+    content: "Command separator for current operating system.",
   },
   {
-    "title": "computer",
-    "url": "./os_functions/computer.html",
-    "path": "./os_functions/computer.html",
-    "content": "System information."
+    title: "computer",
+    url: "./os_functions/computer.html",
+    path: "./os_functions/computer.html",
+    content: "System information.",
   },
   {
-    "title": "createGUID",
-    "url": "./os_functions/createGUID.html",
-    "path": "./os_functions/createGUID.html",
-    "content": "Creates a GUID."
+    title: "createGUID",
+    url: "./os_functions/createGUID.html",
+    path: "./os_functions/createGUID.html",
+    content: "Creates a GUID.",
   },
   {
-    "title": "getenv",
-    "url": "./os_functions/getenv.html",
-    "path": "./os_functions/getenv.html",
-    "content": "Get the value of an environment variable."
+    title: "getenv",
+    url: "./os_functions/getenv.html",
+    path: "./os_functions/getenv.html",
+    content: "Get the value of an environment variable.",
   },
   {
-    "title": "hostname",
-    "url": "./os_functions/hostname.html",
-    "path": "./os_functions/hostname.html",
-    "content": "get host name of this computer."
+    title: "hostname",
+    url: "./os_functions/hostname.html",
+    path: "./os_functions/hostname.html",
+    content: "get host name of this computer.",
   },
   {
-    "title": "ismac",
-    "url": "./os_functions/ismac.html",
-    "path": "./os_functions/ismac.html",
-    "content": "Checks if version is for MacOS platform."
+    title: "ismac",
+    url: "./os_functions/ismac.html",
+    path: "./os_functions/ismac.html",
+    content: "Checks if version is for MacOS platform.",
   },
   {
-    "title": "ispc",
-    "url": "./os_functions/ispc.html",
-    "path": "./os_functions/ispc.html",
-    "content": "Checks if version is for Windows platform."
+    title: "ispc",
+    url: "./os_functions/ispc.html",
+    path: "./os_functions/ispc.html",
+    content: "Checks if version is for Windows platform.",
   },
   {
-    "title": "isunix",
-    "url": "./os_functions/isunix.html",
-    "path": "./os_functions/isunix.html",
-    "content": "Checks if version is for GNU Linux or Unix platform."
+    title: "isunix",
+    url: "./os_functions/isunix.html",
+    path: "./os_functions/isunix.html",
+    content: "Checks if version is for GNU Linux or Unix platform.",
   },
   {
-    "title": "searchenv",
-    "url": "./os_functions/searchenv.html",
-    "path": "./os_functions/searchenv.html",
-    "content": "Searches for a file using environment paths."
+    title: "searchenv",
+    url: "./os_functions/searchenv.html",
+    path: "./os_functions/searchenv.html",
+    content: "Searches for a file using environment paths.",
   },
   {
-    "title": "setenv",
-    "url": "./os_functions/setenv.html",
-    "path": "./os_functions/setenv.html",
-    "content": "Set the value of an environment variable."
+    title: "setenv",
+    url: "./os_functions/setenv.html",
+    path: "./os_functions/setenv.html",
+    content: "Set the value of an environment variable.",
   },
   {
-    "title": "system",
-    "url": "./os_functions/system.html",
-    "path": "./os_functions/system.html",
-    "content": "Shell command execution."
+    title: "system",
+    url: "./os_functions/system.html",
+    path: "./os_functions/system.html",
+    content: "Shell command execution.",
   },
   {
-    "title": "dos",
-    "url": "./os_functions/system.html",
-    "path": "./os_functions/system.html",
-    "content": "Shell command execution."
+    title: "dos",
+    url: "./os_functions/system.html",
+    path: "./os_functions/system.html",
+    content: "Shell command execution.",
   },
   {
-    "title": "unix",
-    "url": "./os_functions/system.html",
-    "path": "./os_functions/system.html",
-    "content": "Shell command execution."
+    title: "unix",
+    url: "./os_functions/system.html",
+    path: "./os_functions/system.html",
+    content: "Shell command execution.",
   },
   {
-    "title": "username",
-    "url": "./os_functions/username.html",
-    "path": "./os_functions/username.html",
-    "content": "get user name currently used."
+    title: "username",
+    url: "./os_functions/username.html",
+    path: "./os_functions/username.html",
+    content: "get user name currently used.",
   },
   {
-    "title": "winopen",
-    "url": "./os_functions/winopen.html",
-    "path": "./os_functions/winopen.html",
-    "content": "Open file in appropriate application (Windows only)."
+    title: "winopen",
+    url: "./os_functions/winopen.html",
+    path: "./os_functions/winopen.html",
+    content: "Open file in appropriate application (Windows only).",
   },
   {
-    "title": "winqueryreg",
-    "url": "./os_functions/winqueryreg.html",
-    "path": "./os_functions/winqueryreg.html",
-    "content": "Read the Windows registry (Windows only)."
+    title: "winqueryreg",
+    url: "./os_functions/winqueryreg.html",
+    path: "./os_functions/winqueryreg.html",
+    content: "Read the Windows registry (Windows only).",
   },
   {
-    "title": "Files and folders functions",
-    "url": "./files_folders_functions/index.html",
-    "path": "sections/files_folders_functions",
-    "content": "<chapter_description> <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.<\/p> <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.<\/p> <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.<\/p> <\/chapter_description>"
+    title: "Files and folders functions",
+    url: "./files_folders_functions/index.html",
+    path: "sections/files_folders_functions",
+    content:
+      "<chapter_description> <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.</p> <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.</p> <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.</p> </chapter_description>",
   },
   {
-    "title": "cd",
-    "url": "./files_folders_functions/cd.html",
-    "path": "./files_folders_functions/cd.html",
-    "content": "Changes Nelson current directory."
+    title: "cd",
+    url: "./files_folders_functions/cd.html",
+    path: "./files_folders_functions/cd.html",
+    content: "Changes Nelson current directory.",
   },
   {
-    "title": "copyfile",
-    "url": "./files_folders_functions/copyfile.html",
-    "path": "./files_folders_functions/copyfile.html",
-    "content": "Copy files or folder."
+    title: "copyfile",
+    url: "./files_folders_functions/copyfile.html",
+    path: "./files_folders_functions/copyfile.html",
+    content: "Copy files or folder.",
   },
   {
-    "title": "diff_file",
-    "url": "./files_folders_functions/diff_file.html",
-    "path": "./files_folders_functions/diff_file.html",
-    "content": "diff two files or strings."
+    title: "diff_file",
+    url: "./files_folders_functions/diff_file.html",
+    path: "./files_folders_functions/diff_file.html",
+    content: "diff two files or strings.",
   },
   {
-    "title": "dir",
-    "url": "./files_folders_functions/dir.html",
-    "path": "./files_folders_functions/dir.html",
-    "content": "Returns file list."
+    title: "dir",
+    url: "./files_folders_functions/dir.html",
+    path: "./files_folders_functions/dir.html",
+    content: "Returns file list.",
   },
   {
-    "title": "fileparts",
-    "url": "./files_folders_functions/fileparts.html",
-    "path": "./files_folders_functions/fileparts.html",
-    "content": "Returns the path, filename and extension of a file path."
+    title: "fileparts",
+    url: "./files_folders_functions/fileparts.html",
+    path: "./files_folders_functions/fileparts.html",
+    content: "Returns the path, filename and extension of a file path.",
   },
   {
-    "title": "filesep",
-    "url": "./files_folders_functions/filesep.html",
-    "path": "./files_folders_functions/filesep.html",
-    "content": "Return the file separator character for the current platform."
+    title: "filesep",
+    url: "./files_folders_functions/filesep.html",
+    path: "./files_folders_functions/filesep.html",
+    content: "Return the file separator character for the current platform.",
   },
   {
-    "title": "fullfile",
-    "url": "./files_folders_functions/fullfile.html",
-    "path": "./files_folders_functions/fullfile.html",
-    "content": "Build full file name from parts."
+    title: "fullfile",
+    url: "./files_folders_functions/fullfile.html",
+    path: "./files_folders_functions/fullfile.html",
+    content: "Build full file name from parts.",
   },
   {
-    "title": "fullpath",
-    "url": "./files_folders_functions/fullpath.html",
-    "path": "./files_folders_functions/fullpath.html",
-    "content": "Returns canonical full path."
+    title: "fullpath",
+    url: "./files_folders_functions/fullpath.html",
+    path: "./files_folders_functions/fullpath.html",
+    content: "Returns canonical full path.",
   },
   {
-    "title": "isdir",
-    "url": "./files_folders_functions/isdir.html",
-    "path": "./files_folders_functions/isdir.html",
-    "content": "Returns true is the input argument is an directory."
+    title: "isdir",
+    url: "./files_folders_functions/isdir.html",
+    path: "./files_folders_functions/isdir.html",
+    content: "Returns true is the input argument is an directory.",
   },
   {
-    "title": "isfile",
-    "url": "./files_folders_functions/isfile.html",
-    "path": "./files_folders_functions/isfile.html",
-    "content": "Returns true is the input argument is a file."
+    title: "isfile",
+    url: "./files_folders_functions/isfile.html",
+    path: "./files_folders_functions/isfile.html",
+    content: "Returns true is the input argument is a file.",
   },
   {
-    "title": "isfolder",
-    "url": "./files_folders_functions/isfolder.html",
-    "path": "./files_folders_functions/isfolder.html",
-    "content": "Returns true is the input argument is an directory."
+    title: "isfolder",
+    url: "./files_folders_functions/isfolder.html",
+    path: "./files_folders_functions/isfolder.html",
+    content: "Returns true is the input argument is an directory.",
   },
   {
-    "title": "ls",
-    "url": "./files_folders_functions/ls.html",
-    "path": "./files_folders_functions/ls.html",
-    "content": "List folder contents."
+    title: "ls",
+    url: "./files_folders_functions/ls.html",
+    path: "./files_folders_functions/ls.html",
+    content: "List folder contents.",
   },
   {
-    "title": "mkdir",
-    "url": "./files_folders_functions/mkdir.html",
-    "path": "./files_folders_functions/mkdir.html",
-    "content": "Creates a new directory."
+    title: "mkdir",
+    url: "./files_folders_functions/mkdir.html",
+    path: "./files_folders_functions/mkdir.html",
+    content: "Creates a new directory.",
   },
   {
-    "title": "pathsep",
-    "url": "./files_folders_functions/pathsep.html",
-    "path": "./files_folders_functions/pathsep.html",
-    "content": "Return the search path separator character for the current platform."
+    title: "pathsep",
+    url: "./files_folders_functions/pathsep.html",
+    path: "./files_folders_functions/pathsep.html",
+    content:
+      "Return the search path separator character for the current platform.",
   },
   {
-    "title": "pwd",
-    "url": "./files_folders_functions/pwd.html",
-    "path": "./files_folders_functions/pwd.html",
-    "content": "Returns current directory."
+    title: "pwd",
+    url: "./files_folders_functions/pwd.html",
+    path: "./files_folders_functions/pwd.html",
+    content: "Returns current directory.",
   },
   {
-    "title": "relativepath",
-    "url": "./files_folders_functions/relativepath.html",
-    "path": "./files_folders_functions/relativepath.html",
-    "content": "Returns the relative path from an actual path to the target path."
+    title: "relativepath",
+    url: "./files_folders_functions/relativepath.html",
+    path: "./files_folders_functions/relativepath.html",
+    content:
+      "Returns the relative path from an actual path to the target path.",
   },
   {
-    "title": "rmdir",
-    "url": "./files_folders_functions/rmdir.html",
-    "path": "./files_folders_functions/rmdir.html",
-    "content": "Removes a directory."
+    title: "rmdir",
+    url: "./files_folders_functions/rmdir.html",
+    path: "./files_folders_functions/rmdir.html",
+    content: "Removes a directory.",
   },
   {
-    "title": "rmfile",
-    "url": "./files_folders_functions/rmfile.html",
-    "path": "./files_folders_functions/rmfile.html",
-    "content": "Removes a file."
+    title: "rmfile",
+    url: "./files_folders_functions/rmfile.html",
+    path: "./files_folders_functions/rmfile.html",
+    content: "Removes a file.",
   },
   {
-    "title": "tempdir",
-    "url": "./files_folders_functions/tempdir.html",
-    "path": "./files_folders_functions/tempdir.html",
-    "content": "Returns the temporary directory path."
+    title: "tempdir",
+    url: "./files_folders_functions/tempdir.html",
+    path: "./files_folders_functions/tempdir.html",
+    content: "Returns the temporary directory path.",
   },
   {
-    "title": "tempname",
-    "url": "./files_folders_functions/tempname.html",
-    "path": "./files_folders_functions/tempname.html",
-    "content": "Returns an unique temporary filename."
+    title: "tempname",
+    url: "./files_folders_functions/tempname.html",
+    path: "./files_folders_functions/tempname.html",
+    content: "Returns an unique temporary filename.",
   },
   {
-    "title": "userdir",
-    "url": "./files_folders_functions/userdir.html",
-    "path": "./files_folders_functions/userdir.html",
-    "content": "Returns the current user's path."
+    title: "userdir",
+    url: "./files_folders_functions/userdir.html",
+    path: "./files_folders_functions/userdir.html",
+    content: "Returns the current user's path.",
   },
   {
-    "title": "File archiver functions",
-    "url": "./file_archiver/index.html",
-    "path": "sections/file_archiver",
-    "content": "<chapter_description> <p>The File Archiver module provides tools for compressing and decompressing files in Nelson.<\/p> <p>It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.<\/p> <\/chapter_description>"
+    title: "File archiver functions",
+    url: "./file_archiver/index.html",
+    path: "sections/file_archiver",
+    content:
+      "<chapter_description> <p>The File Archiver module provides tools for compressing and decompressing files in Nelson.</p> <p>It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.</p> </chapter_description>",
   },
   {
-    "title": "unzip",
-    "url": "./file_archiver/unzip.html",
-    "path": "./file_archiver/unzip.html",
-    "content": "Decompress zip file."
+    title: "unzip",
+    url: "./file_archiver/unzip.html",
+    path: "./file_archiver/unzip.html",
+    content: "Decompress zip file.",
   },
   {
-    "title": "zip",
-    "url": "./file_archiver/zip.html",
-    "path": "./file_archiver/zip.html",
-    "content": "Compress files into zip file."
+    title: "zip",
+    url: "./file_archiver/zip.html",
+    path: "./file_archiver/zip.html",
+    content: "Compress files into zip file.",
   },
   {
-    "title": "Memory manager functions",
-    "url": "./memory_manager/index.html",
-    "path": "sections/memory_manager",
-    "content": "<chapter_description> <p>The Memory Manager module provides tools for managing variables and memory in Nelson.<\/p> <p>It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.<\/p> <p>The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.<\/p> <\/chapter_description>"
+    title: "Memory manager functions",
+    url: "./memory_manager/index.html",
+    path: "sections/memory_manager",
+    content:
+      "<chapter_description> <p>The Memory Manager module provides tools for managing variables and memory in Nelson.</p> <p>It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.</p> <p>The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.</p> </chapter_description>",
   },
   {
-    "title": "acquirevar",
-    "url": "./memory_manager/acquirevar.html",
-    "path": "./memory_manager/acquirevar.html",
-    "content": "Acquires variable value from a specified variables scope."
+    title: "acquirevar",
+    url: "./memory_manager/acquirevar.html",
+    path: "./memory_manager/acquirevar.html",
+    content: "Acquires variable value from a specified variables scope.",
   },
   {
-    "title": "assignin",
-    "url": "./memory_manager/assignin.html",
-    "path": "./memory_manager/assignin.html",
-    "content": "Assignin value to a variable in a specified variables scope."
+    title: "assignin",
+    url: "./memory_manager/assignin.html",
+    path: "./memory_manager/assignin.html",
+    content: "Assignin value to a variable in a specified variables scope.",
   },
   {
-    "title": "clear",
-    "url": "./memory_manager/clear.html",
-    "path": "./memory_manager/clear.html",
-    "content": "Remove variable from workspace."
+    title: "clear",
+    url: "./memory_manager/clear.html",
+    path: "./memory_manager/clear.html",
+    content: "Remove variable from workspace.",
   },
   {
-    "title": "global",
-    "url": "./memory_manager/global.html",
-    "path": "./memory_manager/global.html",
-    "content": "Defines a global variable."
+    title: "global",
+    url: "./memory_manager/global.html",
+    path: "./memory_manager/global.html",
+    content: "Defines a global variable.",
   },
   {
-    "title": "isglobal",
-    "url": "./memory_manager/isglobal.html",
-    "path": "./memory_manager/isglobal.html",
-    "content": "Checks if a variable is global."
+    title: "isglobal",
+    url: "./memory_manager/isglobal.html",
+    path: "./memory_manager/isglobal.html",
+    content: "Checks if a variable is global.",
   },
   {
-    "title": "isvar",
-    "url": "./memory_manager/isvar.html",
-    "path": "./memory_manager/isvar.html",
-    "content": "Check for the existence of an variable."
+    title: "isvar",
+    url: "./memory_manager/isvar.html",
+    path: "./memory_manager/isvar.html",
+    content: "Check for the existence of an variable.",
   },
   {
-    "title": "memory",
-    "url": "./memory_manager/memory.html",
-    "path": "./memory_manager/memory.html",
-    "content": "Get memory information."
+    title: "memory",
+    url: "./memory_manager/memory.html",
+    path: "./memory_manager/memory.html",
+    content: "Get memory information.",
   },
   {
-    "title": "persistent",
-    "url": "./memory_manager/persistent.html",
-    "path": "./memory_manager/persistent.html",
-    "content": "Persistent variable."
+    title: "persistent",
+    url: "./memory_manager/persistent.html",
+    path: "./memory_manager/persistent.html",
+    content: "Persistent variable.",
   },
   {
-    "title": "varislock",
-    "url": "./memory_manager/varislock.html",
-    "path": "./memory_manager/varislock.html",
-    "content": "Checks if a variable is locked."
+    title: "varislock",
+    url: "./memory_manager/varislock.html",
+    path: "./memory_manager/varislock.html",
+    content: "Checks if a variable is locked.",
   },
   {
-    "title": "varlock",
-    "url": "./memory_manager/varlock.html",
-    "path": "./memory_manager/varlock.html",
-    "content": "Locks a variable."
+    title: "varlock",
+    url: "./memory_manager/varlock.html",
+    path: "./memory_manager/varlock.html",
+    content: "Locks a variable.",
   },
   {
-    "title": "varunlock",
-    "url": "./memory_manager/varunlock.html",
-    "path": "./memory_manager/varunlock.html",
-    "content": "Unlocks a variable."
+    title: "varunlock",
+    url: "./memory_manager/varunlock.html",
+    path: "./memory_manager/varunlock.html",
+    content: "Unlocks a variable.",
   },
   {
-    "title": "who",
-    "url": "./memory_manager/who.html",
-    "path": "./memory_manager/who.html",
-    "content": "List variables in memory or in .nh5 or in .mat file."
+    title: "who",
+    url: "./memory_manager/who.html",
+    path: "./memory_manager/who.html",
+    content: "List variables in memory or in .nh5 or in .mat file.",
   },
   {
-    "title": "whos",
-    "url": "./memory_manager/whos.html",
-    "path": "./memory_manager/whos.html",
-    "content": "List variables in memory or in .nh5 or in .mat file with sizes and types."
+    title: "whos",
+    url: "./memory_manager/whos.html",
+    path: "./memory_manager/whos.html",
+    content:
+      "List variables in memory or in .nh5 or in .mat file with sizes and types.",
   },
   {
-    "title": "Time functions",
-    "url": "./time/index.html",
-    "path": "sections/time",
-    "content": "<chapter_description> <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.<\/p> <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.<\/p> <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.<\/p> <\/chapter_description>"
+    title: "Time functions",
+    url: "./time/index.html",
+    path: "sections/time",
+    content:
+      "<chapter_description> <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p> <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p> <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p> </chapter_description>",
   },
   {
-    "title": "addtodate",
-    "url": "./time/addtodate.html",
-    "path": "./time/addtodate.html",
-    "content": "Modify date number by field."
+    title: "addtodate",
+    url: "./time/addtodate.html",
+    path: "./time/addtodate.html",
+    content: "Modify date number by field.",
   },
   {
-    "title": "calendar",
-    "url": "./time/calendar.html",
-    "path": "./time/calendar.html",
-    "content": "Calendar."
+    title: "calendar",
+    url: "./time/calendar.html",
+    path: "./time/calendar.html",
+    content: "Calendar.",
   },
   {
-    "title": "clock",
-    "url": "./time/clock.html",
-    "path": "./time/clock.html",
-    "content": "Return the current local date and time as a date vector."
+    title: "clock",
+    url: "./time/clock.html",
+    path: "./time/clock.html",
+    content: "Return the current local date and time as a date vector.",
   },
   {
-    "title": "cputime",
-    "url": "./time/cputime.html",
-    "path": "./time/cputime.html",
-    "content": "Return the CPU time used by your Nelon session."
+    title: "cputime",
+    url: "./time/cputime.html",
+    path: "./time/cputime.html",
+    content: "Return the CPU time used by your Nelon session.",
   },
   {
-    "title": "date",
-    "url": "./time/date.html",
-    "path": "./time/date.html",
-    "content": "Return the Current date as character vector."
+    title: "date",
+    url: "./time/date.html",
+    path: "./time/date.html",
+    content: "Return the Current date as character vector.",
   },
   {
-    "title": "datenum",
-    "url": "./time/datenum.html",
-    "path": "./time/datenum.html",
-    "content": "Return the date\/time input as a serial day number."
+    title: "datenum",
+    url: "./time/datenum.html",
+    path: "./time/datenum.html",
+    content: "Return the date/time input as a serial day number.",
   },
   {
-    "title": "datestr",
-    "url": "./time/datestr.html",
-    "path": "./time/datestr.html",
-    "content": "Convert date and time to string format."
+    title: "datestr",
+    url: "./time/datestr.html",
+    path: "./time/datestr.html",
+    content: "Convert date and time to string format.",
   },
   {
-    "title": "datevec",
-    "url": "./time/datevec.html",
-    "path": "./time/datevec.html",
-    "content": "Convert a serial date number into a date vector."
+    title: "datevec",
+    url: "./time/datevec.html",
+    path: "./time/datevec.html",
+    content: "Convert a serial date number into a date vector.",
   },
   {
-    "title": "eomday",
-    "url": "./time/eomday.html",
-    "path": "./time/eomday.html",
-    "content": "Returns last day of month."
+    title: "eomday",
+    url: "./time/eomday.html",
+    path: "./time/eomday.html",
+    content: "Returns last day of month.",
   },
   {
-    "title": "etime",
-    "url": "./time/etime.html",
-    "path": "./time/etime.html",
-    "content": "Time elapsed between date vectors."
+    title: "etime",
+    url: "./time/etime.html",
+    path: "./time/etime.html",
+    content: "Time elapsed between date vectors.",
   },
   {
-    "title": "hour",
-    "url": "./time/hour.html",
-    "path": "./time/hour.html",
-    "content": "Hours part of the input date and time."
+    title: "hour",
+    url: "./time/hour.html",
+    path: "./time/hour.html",
+    content: "Hours part of the input date and time.",
   },
   {
-    "title": "leapyear",
-    "url": "./time/leapyear.html",
-    "path": "./time/leapyear.html",
-    "content": "Determine leap year."
+    title: "leapyear",
+    url: "./time/leapyear.html",
+    path: "./time/leapyear.html",
+    content: "Determine leap year.",
   },
   {
-    "title": "minute",
-    "url": "./time/minute.html",
-    "path": "./time/minute.html",
-    "content": "Minutes part of the input date and time."
+    title: "minute",
+    url: "./time/minute.html",
+    path: "./time/minute.html",
+    content: "Minutes part of the input date and time.",
   },
   {
-    "title": "now",
-    "url": "./time/now.html",
-    "path": "./time/now.html",
-    "content": "Returns current date under the form of a Unix hour."
+    title: "now",
+    url: "./time/now.html",
+    path: "./time/now.html",
+    content: "Returns current date under the form of a Unix hour.",
   },
   {
-    "title": "second",
-    "url": "./time/second.html",
-    "path": "./time/second.html",
-    "content": "Seconds part of the input date and time."
+    title: "second",
+    url: "./time/second.html",
+    path: "./time/second.html",
+    content: "Seconds part of the input date and time.",
   },
   {
-    "title": "sleep",
-    "url": "./time/sleep.html",
-    "path": "./time/sleep.html",
-    "content": "Suspend code execution."
+    title: "sleep",
+    url: "./time/sleep.html",
+    path: "./time/sleep.html",
+    content: "Suspend code execution.",
   },
   {
-    "title": "tic",
-    "url": "./time/tic.html",
-    "path": "./time/tic.html",
-    "content": "Starts a stopwatch timer."
+    title: "tic",
+    url: "./time/tic.html",
+    path: "./time/tic.html",
+    content: "Starts a stopwatch timer.",
   },
   {
-    "title": "time",
-    "url": "./time/time.html",
-    "path": "./time/time.html",
-    "content": "Return the current time as the number of seconds or nanoseconds since the epoch."
+    title: "time",
+    url: "./time/time.html",
+    path: "./time/time.html",
+    content:
+      "Return the current time as the number of seconds or nanoseconds since the epoch.",
   },
   {
-    "title": "timeit",
-    "url": "./time/timeit.html",
-    "path": "./time/timeit.html",
-    "content": "Measure time required to run function."
+    title: "timeit",
+    url: "./time/timeit.html",
+    path: "./time/timeit.html",
+    content: "Measure time required to run function.",
   },
   {
-    "title": "toc",
-    "url": "./time/toc.html",
-    "path": "./time/toc.html",
-    "content": "Read the stopwatch timer."
+    title: "toc",
+    url: "./time/toc.html",
+    path: "./time/toc.html",
+    content: "Read the stopwatch timer.",
   },
   {
-    "title": "weekday",
-    "url": "./time/weekday.html",
-    "path": "./time/weekday.html",
-    "content": "Return the day of week."
+    title: "weekday",
+    url: "./time/weekday.html",
+    path: "./time/weekday.html",
+    content: "Return the day of week.",
   },
   {
-    "title": "Stream manager",
-    "url": "./stream_manager/index.html",
-    "path": "sections/stream_manager",
-    "content": "<chapter_description> <p>The Stream Manager module provides tools for managing input and output streams in Nelson.<\/p> <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.<\/p> <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I\/O operations within scripts and applications.<\/p> <\/chapter_description>"
+    title: "Stream manager",
+    url: "./stream_manager/index.html",
+    path: "sections/stream_manager",
+    content:
+      "<chapter_description> <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p> <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p> <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p> </chapter_description>",
   },
   {
-    "title": "diary",
-    "url": "./stream_manager/diary.html",
-    "path": "./stream_manager/diary.html",
-    "content": "Diary of a session."
+    title: "diary",
+    url: "./stream_manager/diary.html",
+    path: "./stream_manager/diary.html",
+    content: "Diary of a session.",
   },
   {
-    "title": "fclose",
-    "url": "./stream_manager/fclose.html",
-    "path": "./stream_manager/fclose.html",
-    "content": "Close an opened file."
+    title: "fclose",
+    url: "./stream_manager/fclose.html",
+    path: "./stream_manager/fclose.html",
+    content: "Close an opened file.",
   },
   {
-    "title": "feof",
-    "url": "./stream_manager/feof.html",
-    "path": "./stream_manager/feof.html",
-    "content": "Checks end of file."
+    title: "feof",
+    url: "./stream_manager/feof.html",
+    path: "./stream_manager/feof.html",
+    content: "Checks end of file.",
   },
   {
-    "title": "ferror",
-    "url": "./stream_manager/ferror.html",
-    "path": "./stream_manager/ferror.html",
-    "content": "Test for i\/o read\/write errors."
+    title: "ferror",
+    url: "./stream_manager/ferror.html",
+    path: "./stream_manager/ferror.html",
+    content: "Test for i/o read/write errors.",
   },
   {
-    "title": "fgetl",
-    "url": "./stream_manager/fgetl.html",
-    "path": "./stream_manager/fgetl.html",
-    "content": "Read string from a file without newline."
+    title: "fgetl",
+    url: "./stream_manager/fgetl.html",
+    path: "./stream_manager/fgetl.html",
+    content: "Read string from a file without newline.",
   },
   {
-    "title": "fgets",
-    "url": "./stream_manager/fgets.html",
-    "path": "./stream_manager/fgets.html",
-    "content": "Read string from a file, stopping after a newline, or EOF, or n characters have been read."
+    title: "fgets",
+    url: "./stream_manager/fgets.html",
+    path: "./stream_manager/fgets.html",
+    content:
+      "Read string from a file, stopping after a newline, or EOF, or n characters have been read.",
   },
   {
-    "title": "fileread",
-    "url": "./stream_manager/fileread.html",
-    "path": "./stream_manager/fileread.html",
-    "content": "Read contents of file as text."
+    title: "fileread",
+    url: "./stream_manager/fileread.html",
+    path: "./stream_manager/fileread.html",
+    content: "Read contents of file as text.",
   },
   {
-    "title": "filewrite",
-    "url": "./stream_manager/filewrite.html",
-    "path": "./stream_manager/filewrite.html",
-    "content": "Write text to a file."
+    title: "filewrite",
+    url: "./stream_manager/filewrite.html",
+    path: "./stream_manager/filewrite.html",
+    content: "Write text to a file.",
   },
   {
-    "title": "fopen",
-    "url": "./stream_manager/fopen.html",
-    "path": "./stream_manager/fopen.html",
-    "content": "Open a file in Nelson."
+    title: "fopen",
+    url: "./stream_manager/fopen.html",
+    path: "./stream_manager/fopen.html",
+    content: "Open a file in Nelson.",
   },
   {
-    "title": "fprintf",
-    "url": "./stream_manager/fprintf.html",
-    "path": "./stream_manager/fprintf.html",
-    "content": "Writes data to a file."
+    title: "fprintf",
+    url: "./stream_manager/fprintf.html",
+    path: "./stream_manager/fprintf.html",
+    content: "Writes data to a file.",
   },
   {
-    "title": "fread",
-    "url": "./stream_manager/fread.html",
-    "path": "./stream_manager/fread.html",
-    "content": "Read data in binary form to the file specified by the file descriptor fid."
+    title: "fread",
+    url: "./stream_manager/fread.html",
+    path: "./stream_manager/fread.html",
+    content:
+      "Read data in binary form to the file specified by the file descriptor fid.",
   },
   {
-    "title": "frewind",
-    "url": "./stream_manager/frewind.html",
-    "path": "./stream_manager/frewind.html",
-    "content": "Set position of stream to the beginning."
+    title: "frewind",
+    url: "./stream_manager/frewind.html",
+    path: "./stream_manager/frewind.html",
+    content: "Set position of stream to the beginning.",
   },
   {
-    "title": "fscanf",
-    "url": "./stream_manager/fscanf.html",
-    "path": "./stream_manager/fscanf.html",
-    "content": "Reads data from a file."
+    title: "fscanf",
+    url: "./stream_manager/fscanf.html",
+    path: "./stream_manager/fscanf.html",
+    content: "Reads data from a file.",
   },
   {
-    "title": "fseek",
-    "url": "./stream_manager/fseek.html",
-    "path": "./stream_manager/fseek.html",
-    "content": "Set the file pointer to a location."
+    title: "fseek",
+    url: "./stream_manager/fseek.html",
+    path: "./stream_manager/fseek.html",
+    content: "Set the file pointer to a location.",
   },
   {
-    "title": "fsize",
-    "url": "./stream_manager/fsize.html",
-    "path": "./stream_manager/fsize.html",
-    "content": "Returns size of an opened file."
+    title: "fsize",
+    url: "./stream_manager/fsize.html",
+    path: "./stream_manager/fsize.html",
+    content: "Returns size of an opened file.",
   },
   {
-    "title": "ftell",
-    "url": "./stream_manager/ftell.html",
-    "path": "./stream_manager/ftell.html",
-    "content": "Returns the offset of the current byte relative to the beginning of a file."
+    title: "ftell",
+    url: "./stream_manager/ftell.html",
+    path: "./stream_manager/ftell.html",
+    content:
+      "Returns the offset of the current byte relative to the beginning of a file.",
   },
   {
-    "title": "fwrite",
-    "url": "./stream_manager/fwrite.html",
-    "path": "./stream_manager/fwrite.html",
-    "content": "Write data in binary form to the file specified by the file descriptor fid."
+    title: "fwrite",
+    url: "./stream_manager/fwrite.html",
+    path: "./stream_manager/fwrite.html",
+    content:
+      "Write data in binary form to the file specified by the file descriptor fid.",
   },
   {
-    "title": "load",
-    "url": "./stream_manager/load.html",
-    "path": "./stream_manager/load.html",
-    "content": "load data from .nh5 or .mat file into Nelson's workspace."
+    title: "load",
+    url: "./stream_manager/load.html",
+    path: "./stream_manager/load.html",
+    content: "load data from .nh5 or .mat file into Nelson's workspace.",
   },
   {
-    "title": "save",
-    "url": "./stream_manager/save.html",
-    "path": "./stream_manager/save.html",
-    "content": "save workspace variables to .nh5 or .mat file"
+    title: "save",
+    url: "./stream_manager/save.html",
+    path: "./stream_manager/save.html",
+    content: "save workspace variables to .nh5 or .mat file",
   },
   {
-    "title": "sscanf",
-    "url": "./stream_manager/sscanf.html",
-    "path": "./stream_manager/sscanf.html",
-    "content": "Read formatted data from strings."
+    title: "sscanf",
+    url: "./stream_manager/sscanf.html",
+    path: "./stream_manager/sscanf.html",
+    content: "Read formatted data from strings.",
   },
   {
-    "title": "HDF5",
-    "url": "./hdf5/index.html",
-    "path": "sections/hdf5",
-    "content": "<chapter_description> <p>The HDF5 module provides support for working with Hierarchical Data Format (HDF5) files in Nelson.<\/p> <p>It allows users to create datasets, read and write data and attributes, and explore file contents.<\/p> <p>In addition to standard HDF5 support, it includes utilities for Nelson's native .nh5 format, enabling users to save, load, and inspect workspace variables efficiently.<\/p> <p>This module is essential for managing large, structured, and portable scientific data.<\/p> <\/chapter_description>"
+    title: "HDF5",
+    url: "./hdf5/index.html",
+    path: "sections/hdf5",
+    content:
+      "<chapter_description> <p>The HDF5 module provides support for working with Hierarchical Data Format (HDF5) files in Nelson.</p> <p>It allows users to create datasets, read and write data and attributes, and explore file contents.</p> <p>In addition to standard HDF5 support, it includes utilities for Nelson's native .nh5 format, enabling users to save, load, and inspect workspace variables efficiently.</p> <p>This module is essential for managing large, structured, and portable scientific data.</p> </chapter_description>",
   },
   {
-    "title": "h5create",
-    "url": "./hdf5/h5create.html",
-    "path": "./hdf5/h5create.html",
-    "content": "Creates a data set."
+    title: "h5create",
+    url: "./hdf5/h5create.html",
+    path: "./hdf5/h5create.html",
+    content: "Creates a data set.",
   },
   {
-    "title": "h5dump",
-    "url": "./hdf5/h5dump.html",
-    "path": "./hdf5/h5dump.html",
-    "content": "dump the content of hdf5 file as text."
+    title: "h5dump",
+    url: "./hdf5/h5dump.html",
+    path: "./hdf5/h5dump.html",
+    content: "dump the content of hdf5 file as text.",
   },
   {
-    "title": "h5ls",
-    "url": "./hdf5/h5ls.html",
-    "path": "./hdf5/h5ls.html",
-    "content": "List the content of an HDF5 file."
+    title: "h5ls",
+    url: "./hdf5/h5ls.html",
+    path: "./hdf5/h5ls.html",
+    content: "List the content of an HDF5 file.",
   },
   {
-    "title": "h5read",
-    "url": "./hdf5/h5read.html",
-    "path": "./hdf5/h5read.html",
-    "content": "Read HDF5 data set."
+    title: "h5read",
+    url: "./hdf5/h5read.html",
+    path: "./hdf5/h5read.html",
+    content: "Read HDF5 data set.",
   },
   {
-    "title": "h5readatt",
-    "url": "./hdf5/h5readatt.html",
-    "path": "./hdf5/h5readatt.html",
-    "content": "Read HDF5 attribute."
+    title: "h5readatt",
+    url: "./hdf5/h5readatt.html",
+    path: "./hdf5/h5readatt.html",
+    content: "Read HDF5 attribute.",
   },
   {
-    "title": "h5write",
-    "url": "./hdf5/h5write.html",
-    "path": "./hdf5/h5write.html",
-    "content": "Writes HDF5 data set."
+    title: "h5write",
+    url: "./hdf5/h5write.html",
+    path: "./hdf5/h5write.html",
+    content: "Writes HDF5 data set.",
   },
   {
-    "title": "h5writeatt",
-    "url": "./hdf5/h5writeatt.html",
-    "path": "./hdf5/h5writeatt.html",
-    "content": "Writes HDF5 attribute."
+    title: "h5writeatt",
+    url: "./hdf5/h5writeatt.html",
+    path: "./hdf5/h5writeatt.html",
+    content: "Writes HDF5 attribute.",
   },
   {
-    "title": "isnh5file",
-    "url": "./hdf5/isnh5file.html",
-    "path": "./hdf5/isnh5file.html",
-    "content": "Checks if filename a valid .nh5 file"
+    title: "isnh5file",
+    url: "./hdf5/isnh5file.html",
+    path: "./hdf5/isnh5file.html",
+    content: "Checks if filename a valid .nh5 file",
   },
   {
-    "title": "loadnh5",
-    "url": "./hdf5/loadnh5.html",
-    "path": "./hdf5/loadnh5.html",
-    "content": "load data from .nh5 file into Nelson's workspace."
+    title: "loadnh5",
+    url: "./hdf5/loadnh5.html",
+    path: "./hdf5/loadnh5.html",
+    content: "load data from .nh5 file into Nelson's workspace.",
   },
   {
-    "title": "savenh5",
-    "url": "./hdf5/savenh5.html",
-    "path": "./hdf5/savenh5.html",
-    "content": "save workspace variables to .nh5 file"
+    title: "savenh5",
+    url: "./hdf5/savenh5.html",
+    path: "./hdf5/savenh5.html",
+    content: "save workspace variables to .nh5 file",
   },
   {
-    "title": "whonh5",
-    "url": "./hdf5/whonh5.html",
-    "path": "./hdf5/whonh5.html",
-    "content": "List variables in an valid .nh5 file."
+    title: "whonh5",
+    url: "./hdf5/whonh5.html",
+    path: "./hdf5/whonh5.html",
+    content: "List variables in an valid .nh5 file.",
   },
   {
-    "title": "whosnh5",
-    "url": "./hdf5/whosnh5.html",
-    "path": "./hdf5/whosnh5.html",
-    "content": "List variables in an valid .nh5 file with sizes and types."
+    title: "whosnh5",
+    url: "./hdf5/whosnh5.html",
+    path: "./hdf5/whosnh5.html",
+    content: "List variables in an valid .nh5 file with sizes and types.",
   },
   {
-    "title": "MATIO",
-    "url": "./matio/index.html",
-    "path": "sections/matio",
-    "content": "<chapter_description> <p>The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.<\/p> <p>It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.<\/p> <p>With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.<\/p> <\/chapter_description>"
+    title: "MATIO",
+    url: "./matio/index.html",
+    path: "sections/matio",
+    content:
+      "<chapter_description> <p>The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.</p> <p>It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.</p> <p>With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.</p> </chapter_description>",
   },
   {
-    "title": "ismatfile",
-    "url": "./matio/ismatfile.html",
-    "path": "./matio/ismatfile.html",
-    "content": "Checks if filename a valid .mat file"
+    title: "ismatfile",
+    url: "./matio/ismatfile.html",
+    path: "./matio/ismatfile.html",
+    content: "Checks if filename a valid .mat file",
   },
   {
-    "title": "loadmat",
-    "url": "./matio/loadmat.html",
-    "path": "./matio/loadmat.html",
-    "content": "load data from .mat file into Nelson's workspace."
+    title: "loadmat",
+    url: "./matio/loadmat.html",
+    path: "./matio/loadmat.html",
+    content: "load data from .mat file into Nelson's workspace.",
   },
   {
-    "title": "savemat",
-    "url": "./matio/savemat.html",
-    "path": "./matio/savemat.html",
-    "content": "save workspace variables to .mat file"
+    title: "savemat",
+    url: "./matio/savemat.html",
+    path: "./matio/savemat.html",
+    content: "save workspace variables to .mat file",
   },
   {
-    "title": "whomat",
-    "url": "./matio/whomat.html",
-    "path": "./matio/whomat.html",
-    "content": "List variables in an valid .mat file."
+    title: "whomat",
+    url: "./matio/whomat.html",
+    path: "./matio/whomat.html",
+    content: "List variables in an valid .mat file.",
   },
   {
-    "title": "whosmat",
-    "url": "./matio/whosmat.html",
-    "path": "./matio/whosmat.html",
-    "content": "List variables in an valid .mat file with sizes and types."
+    title: "whosmat",
+    url: "./matio/whosmat.html",
+    path: "./matio/whosmat.html",
+    content: "List variables in an valid .mat file with sizes and types.",
   },
   {
-    "title": "JavaScript Object Notation",
-    "url": "./JSON/index.html",
-    "path": "sections/JSON",
-    "content": "<chapter_description> <p>The JSON module provides functions to encode, decode, and format JSON data, allowing easy exchange of structured information between Nelson and external systems.<\/p> <p>JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used for transmitting attribute-value pairs and arrays.<\/p> <p>This module enables Nelson to interoperate with web services, configuration files, and applications that rely on JSON.<\/p> <\/chapter_description>"
+    title: "JavaScript Object Notation",
+    url: "./JSON/index.html",
+    path: "sections/JSON",
+    content:
+      "<chapter_description> <p>The JSON module provides functions to encode, decode, and format JSON data, allowing easy exchange of structured information between Nelson and external systems.</p> <p>JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used for transmitting attribute-value pairs and arrays.</p> <p>This module enables Nelson to interoperate with web services, configuration files, and applications that rely on JSON.</p> </chapter_description>",
   },
   {
-    "title": "jsondecode",
-    "url": "./JSON/jsondecode.html",
-    "path": "./JSON/jsondecode.html",
-    "content": "decodes a JSON string to Nelson object."
+    title: "jsondecode",
+    url: "./JSON/jsondecode.html",
+    path: "./JSON/jsondecode.html",
+    content: "decodes a JSON string to Nelson object.",
   },
   {
-    "title": "jsonencode",
-    "url": "./JSON/jsonencode.html",
-    "path": "./JSON/jsonencode.html",
-    "content": "encodes a Nelson object into a JSON string."
+    title: "jsonencode",
+    url: "./JSON/jsonencode.html",
+    path: "./JSON/jsonencode.html",
+    content: "encodes a Nelson object into a JSON string.",
   },
   {
-    "title": "jsonprettyprint",
-    "url": "./JSON/jsonprettyprint.html",
-    "path": "./JSON/jsonprettyprint.html",
-    "content": "format an JSON string."
+    title: "jsonprettyprint",
+    url: "./JSON/jsonprettyprint.html",
+    path: "./JSON/jsonprettyprint.html",
+    content: "format an JSON string.",
   },
   {
-    "title": "Spreadsheet",
-    "url": "./SPREADSHEET/index.html",
-    "path": "sections/SPREADSHEET",
-    "content": "<chapter_description> <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.<\/p> <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.<\/p> <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.<\/p> <\/chapter_description>"
+    title: "Spreadsheet",
+    url: "./SPREADSHEET/index.html",
+    path: "sections/SPREADSHEET",
+    content:
+      "<chapter_description> <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p> <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p> <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p> </chapter_description>",
   },
   {
-    "title": "csvread",
-    "url": "./SPREADSHEET/csvread.html",
-    "path": "./SPREADSHEET/csvread.html",
-    "content": "Read comma-separated value (CSV) file."
+    title: "csvread",
+    url: "./SPREADSHEET/csvread.html",
+    path: "./SPREADSHEET/csvread.html",
+    content: "Read comma-separated value (CSV) file.",
   },
   {
-    "title": "csvwrite",
-    "url": "./SPREADSHEET/csvwrite.html",
-    "path": "./SPREADSHEET/csvwrite.html",
-    "content": "Write comma-separated value file."
+    title: "csvwrite",
+    url: "./SPREADSHEET/csvwrite.html",
+    path: "./SPREADSHEET/csvwrite.html",
+    content: "Write comma-separated value file.",
   },
   {
-    "title": "detectImportOptions",
-    "url": "./SPREADSHEET/detectImportOptions.html",
-    "path": "./SPREADSHEET/detectImportOptions.html",
-    "content": "Create import options based on file content."
+    title: "detectImportOptions",
+    url: "./SPREADSHEET/detectImportOptions.html",
+    path: "./SPREADSHEET/detectImportOptions.html",
+    content: "Create import options based on file content.",
   },
   {
-    "title": "dlmread",
-    "url": "./SPREADSHEET/dlmread.html",
-    "path": "./SPREADSHEET/dlmread.html",
-    "content": "Read an numeric matrix from a text file file using a delimiter."
+    title: "dlmread",
+    url: "./SPREADSHEET/dlmread.html",
+    path: "./SPREADSHEET/dlmread.html",
+    content: "Read an numeric matrix from a text file file using a delimiter.",
   },
   {
-    "title": "dlmwrite",
-    "url": "./SPREADSHEET/dlmwrite.html",
-    "path": "./SPREADSHEET/dlmwrite.html",
-    "content": "Write an numeric matrix to a text file file using a delimiter."
+    title: "dlmwrite",
+    url: "./SPREADSHEET/dlmwrite.html",
+    path: "./SPREADSHEET/dlmwrite.html",
+    content: "Write an numeric matrix to a text file file using a delimiter.",
   },
   {
-    "title": "readcell",
-    "url": "./SPREADSHEET/readcell.html",
-    "path": "./SPREADSHEET/readcell.html",
-    "content": "Create cell array from file."
+    title: "readcell",
+    url: "./SPREADSHEET/readcell.html",
+    path: "./SPREADSHEET/readcell.html",
+    content: "Create cell array from file.",
   },
   {
-    "title": "readmatrix",
-    "url": "./SPREADSHEET/readmatrix.html",
-    "path": "./SPREADSHEET/readmatrix.html",
-    "content": "Create matrix array from file."
+    title: "readmatrix",
+    url: "./SPREADSHEET/readmatrix.html",
+    path: "./SPREADSHEET/readmatrix.html",
+    content: "Create matrix array from file.",
   },
   {
-    "title": "readtable",
-    "url": "./SPREADSHEET/readtable.html",
-    "path": "./SPREADSHEET/readtable.html",
-    "content": "Create table from file."
+    title: "readtable",
+    url: "./SPREADSHEET/readtable.html",
+    path: "./SPREADSHEET/readtable.html",
+    content: "Create table from file.",
   },
   {
-    "title": "writecell",
-    "url": "./SPREADSHEET/writecell.html",
-    "path": "./SPREADSHEET/writecell.html",
-    "content": "Write a cell to a file."
+    title: "writecell",
+    url: "./SPREADSHEET/writecell.html",
+    path: "./SPREADSHEET/writecell.html",
+    content: "Write a cell to a file.",
   },
   {
-    "title": "writematrix",
-    "url": "./SPREADSHEET/writematrix.html",
-    "path": "./SPREADSHEET/writematrix.html",
-    "content": "Write a matrix to a file."
+    title: "writematrix",
+    url: "./SPREADSHEET/writematrix.html",
+    path: "./SPREADSHEET/writematrix.html",
+    content: "Write a matrix to a file.",
   },
   {
-    "title": "writetable",
-    "url": "./SPREADSHEET/writetable.html",
-    "path": "./SPREADSHEET/writetable.html",
-    "content": "Write table to file."
+    title: "writetable",
+    url: "./SPREADSHEET/writetable.html",
+    path: "./SPREADSHEET/writetable.html",
+    content: "Write table to file.",
   },
   {
-    "title": "Message Passing Interface",
-    "url": "./mpi/index.html",
-    "path": "sections/mpi",
-    "content": "<chapter_description> <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.<\/p> <p>This module provides functions to initialize, manage, and finalize MPI environments, as well as to perform communication between processes, both point-to-point and collective.<\/p> <p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.<\/p> <\/chapter_description>"
+    title: "Message Passing Interface",
+    url: "./mpi/index.html",
+    path: "sections/mpi",
+    content:
+      "<chapter_description> <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.</p> <p>This module provides functions to initialize, manage, and finalize MPI environments, as well as to perform communication between processes, both point-to-point and collective.</p> <p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.</p> </chapter_description>",
   },
   {
-    "title": "MPI_Allreduce",
-    "url": "./mpi/MPI_Allreduce.html",
-    "path": "./mpi/MPI_Allreduce.html",
-    "content": "Combines values from all processes and distributes the result back to all processes."
+    title: "MPI_Allreduce",
+    url: "./mpi/MPI_Allreduce.html",
+    path: "./mpi/MPI_Allreduce.html",
+    content:
+      "Combines values from all processes and distributes the result back to all processes.",
   },
   {
-    "title": "MPI_Barrier",
-    "url": "./mpi/MPI_Barrier.html",
-    "path": "./mpi/MPI_Barrier.html",
-    "content": "Blocks until all processes in the communicator have reached this routine."
+    title: "MPI_Barrier",
+    url: "./mpi/MPI_Barrier.html",
+    path: "./mpi/MPI_Barrier.html",
+    content:
+      "Blocks until all processes in the communicator have reached this routine.",
   },
   {
-    "title": "MPI_Bcast",
-    "url": "./mpi/MPI_Bcast.html",
-    "path": "./mpi/MPI_Bcast.html",
-    "content": "Broadcasts a message from the process with rank \"root\" to all other processes of the communicator"
+    title: "MPI_Bcast",
+    url: "./mpi/MPI_Bcast.html",
+    path: "./mpi/MPI_Bcast.html",
+    content:
+      'Broadcasts a message from the process with rank "root" to all other processes of the communicator',
   },
   {
-    "title": "MPI_Comm_delete",
-    "url": "./mpi/MPI_Comm_delete.html",
-    "path": "./mpi/MPI_Comm_delete.html",
-    "content": "Removes MPI_Comm object."
+    title: "MPI_Comm_delete",
+    url: "./mpi/MPI_Comm_delete.html",
+    path: "./mpi/MPI_Comm_delete.html",
+    content: "Removes MPI_Comm object.",
   },
   {
-    "title": "MPI_Comm_get_name",
-    "url": "./mpi/MPI_Comm_get_name.html",
-    "path": "./mpi/MPI_Comm_get_name.html",
-    "content": "Return the print name from the communicator."
+    title: "MPI_Comm_get_name",
+    url: "./mpi/MPI_Comm_get_name.html",
+    path: "./mpi/MPI_Comm_get_name.html",
+    content: "Return the print name from the communicator.",
   },
   {
-    "title": "MPI_Comm_object",
-    "url": "./mpi/MPI_Comm_object.html",
-    "path": "./mpi/MPI_Comm_object.html",
-    "content": "Creates MPI_Comm object."
+    title: "MPI_Comm_object",
+    url: "./mpi/MPI_Comm_object.html",
+    path: "./mpi/MPI_Comm_object.html",
+    content: "Creates MPI_Comm object.",
   },
   {
-    "title": "MPI_Comm_rank",
-    "url": "./mpi/MPI_Comm_rank.html",
-    "path": "./mpi/MPI_Comm_rank.html",
-    "content": "Determines the rank of the calling process in the communicator."
+    title: "MPI_Comm_rank",
+    url: "./mpi/MPI_Comm_rank.html",
+    path: "./mpi/MPI_Comm_rank.html",
+    content: "Determines the rank of the calling process in the communicator.",
   },
   {
-    "title": "MPI_Comm_size",
-    "url": "./mpi/MPI_Comm_size.html",
-    "path": "./mpi/MPI_Comm_size.html",
-    "content": "Determines the size of the group associated with a communicator."
+    title: "MPI_Comm_size",
+    url: "./mpi/MPI_Comm_size.html",
+    path: "./mpi/MPI_Comm_size.html",
+    content: "Determines the size of the group associated with a communicator.",
   },
   {
-    "title": "MPI_Comm_split",
-    "url": "./mpi/MPI_Comm_split.html",
-    "path": "./mpi/MPI_Comm_split.html",
-    "content": "Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups."
+    title: "MPI_Comm_split",
+    url: "./mpi/MPI_Comm_split.html",
+    path: "./mpi/MPI_Comm_split.html",
+    content:
+      "Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups.",
   },
   {
-    "title": "MPI_Comm_used",
-    "url": "./mpi/MPI_Comm_used.html",
-    "path": "./mpi/MPI_Comm_used.html",
-    "content": "Returns list of current used MPI_Comm handle."
+    title: "MPI_Comm_used",
+    url: "./mpi/MPI_Comm_used.html",
+    path: "./mpi/MPI_Comm_used.html",
+    content: "Returns list of current used MPI_Comm handle.",
   },
   {
-    "title": "MPI_Finalize",
-    "url": "./mpi/MPI_Finalize.html",
-    "path": "./mpi/MPI_Finalize.html",
-    "content": "Terminate the MPI execution environment."
+    title: "MPI_Finalize",
+    url: "./mpi/MPI_Finalize.html",
+    path: "./mpi/MPI_Finalize.html",
+    content: "Terminate the MPI execution environment.",
   },
   {
-    "title": "MPI_Get_library_version",
-    "url": "./mpi/MPI_Get_library_version.html",
-    "path": "./mpi/MPI_Get_library_version.html",
-    "content": "Return the version number of MPI library."
+    title: "MPI_Get_library_version",
+    url: "./mpi/MPI_Get_library_version.html",
+    path: "./mpi/MPI_Get_library_version.html",
+    content: "Return the version number of MPI library.",
   },
   {
-    "title": "MPI_Get_processor_name",
-    "url": "./mpi/MPI_Get_processor_name.html",
-    "path": "./mpi/MPI_Get_processor_name.html",
-    "content": "Gets the name of the processor."
+    title: "MPI_Get_processor_name",
+    url: "./mpi/MPI_Get_processor_name.html",
+    path: "./mpi/MPI_Get_processor_name.html",
+    content: "Gets the name of the processor.",
   },
   {
-    "title": "MPI_Get_version",
-    "url": "./mpi/MPI_Get_version.html",
-    "path": "./mpi/MPI_Get_version.html",
-    "content": "Return the version number of MPI."
+    title: "MPI_Get_version",
+    url: "./mpi/MPI_Get_version.html",
+    path: "./mpi/MPI_Get_version.html",
+    content: "Return the version number of MPI.",
   },
   {
-    "title": "MPI_Init",
-    "url": "./mpi/MPI_Init.html",
-    "path": "./mpi/MPI_Init.html",
-    "content": "Initialize the MPI execution environment."
+    title: "MPI_Init",
+    url: "./mpi/MPI_Init.html",
+    path: "./mpi/MPI_Init.html",
+    content: "Initialize the MPI execution environment.",
   },
   {
-    "title": "MPI_Initialized",
-    "url": "./mpi/MPI_Initialized.html",
-    "path": "./mpi/MPI_Initialized.html",
-    "content": "Indicates whether MPI_Init has been called."
+    title: "MPI_Initialized",
+    url: "./mpi/MPI_Initialized.html",
+    path: "./mpi/MPI_Initialized.html",
+    content: "Indicates whether MPI_Init has been called.",
   },
   {
-    "title": "MPI_Iprobe",
-    "url": "./mpi/MPI_Iprobe.html",
-    "path": "./mpi/MPI_Iprobe.html",
-    "content": "Nonblocking test for a message."
+    title: "MPI_Iprobe",
+    url: "./mpi/MPI_Iprobe.html",
+    path: "./mpi/MPI_Iprobe.html",
+    content: "Nonblocking test for a message.",
   },
   {
-    "title": "MPI_Probe",
-    "url": "./mpi/MPI_Probe.html",
-    "path": "./mpi/MPI_Probe.html",
-    "content": "Blocking test for a message."
+    title: "MPI_Probe",
+    url: "./mpi/MPI_Probe.html",
+    path: "./mpi/MPI_Probe.html",
+    content: "Blocking test for a message.",
   },
   {
-    "title": "MPI_Recv",
-    "url": "./mpi/MPI_Recv.html",
-    "path": "./mpi/MPI_Recv.html",
-    "content": "Blocking receive for a message."
+    title: "MPI_Recv",
+    url: "./mpi/MPI_Recv.html",
+    path: "./mpi/MPI_Recv.html",
+    content: "Blocking receive for a message.",
   },
   {
-    "title": "MPI_Reduce",
-    "url": "./mpi/MPI_Reduce.html",
-    "path": "./mpi/MPI_Reduce.html",
-    "content": "Reduces values on all processes to a single value."
+    title: "MPI_Reduce",
+    url: "./mpi/MPI_Reduce.html",
+    path: "./mpi/MPI_Reduce.html",
+    content: "Reduces values on all processes to a single value.",
   },
   {
-    "title": "MPI_Send",
-    "url": "./mpi/MPI_Send.html",
-    "path": "./mpi/MPI_Send.html",
-    "content": "Performs a blocking send."
+    title: "MPI_Send",
+    url: "./mpi/MPI_Send.html",
+    path: "./mpi/MPI_Send.html",
+    content: "Performs a blocking send.",
   },
   {
-    "title": "mpiexec",
-    "url": "./mpi/mpiexec.html",
-    "path": "./mpi/mpiexec.html",
-    "content": "Run an MPI script."
+    title: "mpiexec",
+    url: "./mpi/mpiexec.html",
+    path: "./mpi/mpiexec.html",
+    content: "Run an MPI script.",
   },
   {
-    "title": "Parallel",
-    "url": "./parallel/index.html",
-    "path": "sections/parallel",
-    "content": "<chapter_description> <p>The parallel module provides tools for running computations asynchronously in the background, managing task scheduling, and retrieving results.<\/p> <p>It enables Nelson programs to execute functions concurrently, improving efficiency and responsiveness by offloading work to background workers.<\/p> <\/chapter_description>"
+    title: "Parallel",
+    url: "./parallel/index.html",
+    path: "sections/parallel",
+    content:
+      "<chapter_description> <p>The parallel module provides tools for running computations asynchronously in the background, managing task scheduling, and retrieving results.</p> <p>It enables Nelson programs to execute functions concurrently, improving efficiency and responsiveness by offloading work to background workers.</p> </chapter_description>",
   },
   {
-    "title": "afterAll",
-    "url": "./parallel/afterAll.html",
-    "path": "./parallel/afterAll.html",
-    "content": "Run function after all functions finish running in the background."
+    title: "afterAll",
+    url: "./parallel/afterAll.html",
+    path: "./parallel/afterAll.html",
+    content:
+      "Run function after all functions finish running in the background.",
   },
   {
-    "title": "afterEach",
-    "url": "./parallel/afterEach.html",
-    "path": "./parallel/afterEach.html",
-    "content": "Run function after each function finish running in the background."
+    title: "afterEach",
+    url: "./parallel/afterEach.html",
+    path: "./parallel/afterEach.html",
+    content:
+      "Run function after each function finish running in the background.",
   },
   {
-    "title": "backgroundPool",
-    "url": "./parallel/backgroundPool.html",
-    "path": "./parallel/backgroundPool.html",
-    "content": "Environment for running nelson's code in the background."
+    title: "backgroundPool",
+    url: "./parallel/backgroundPool.html",
+    path: "./parallel/backgroundPool.html",
+    content: "Environment for running nelson's code in the background.",
   },
   {
-    "title": "cancel",
-    "url": "./parallel/cancel.html",
-    "path": "./parallel/cancel.html",
-    "content": "Stop function running in the background."
+    title: "cancel",
+    url: "./parallel/cancel.html",
+    path: "./parallel/cancel.html",
+    content: "Stop function running in the background.",
   },
   {
-    "title": "cancelAll",
-    "url": "./parallel/cancelAll.html",
-    "path": "./parallel/cancelAll.html",
-    "content": "Stop all functions running in the background."
+    title: "cancelAll",
+    url: "./parallel/cancelAll.html",
+    path: "./parallel/cancelAll.html",
+    content: "Stop all functions running in the background.",
   },
   {
-    "title": "fetchNext",
-    "url": "./parallel/fetchNext.html",
-    "path": "./parallel/fetchNext.html",
-    "content": "Retrieve next unread outputs from FevalFuture array."
+    title: "fetchNext",
+    url: "./parallel/fetchNext.html",
+    path: "./parallel/fetchNext.html",
+    content: "Retrieve next unread outputs from FevalFuture array.",
   },
   {
-    "title": "fetchOutputs",
-    "url": "./parallel/fetchOutputs.html",
-    "path": "./parallel/fetchOutputs.html",
-    "content": "Retrieve results from function running in the background pool."
+    title: "fetchOutputs",
+    url: "./parallel/fetchOutputs.html",
+    path: "./parallel/fetchOutputs.html",
+    content: "Retrieve results from function running in the background pool.",
   },
   {
-    "title": "parfeval",
-    "url": "./parallel/parfeval.html",
-    "path": "./parallel/parfeval.html",
-    "content": "Run function in background."
+    title: "parfeval",
+    url: "./parallel/parfeval.html",
+    path: "./parallel/parfeval.html",
+    content: "Run function in background.",
   },
   {
-    "title": "wait",
-    "url": "./parallel/wait.html",
-    "path": "./parallel/wait.html",
-    "content": "Wait for futures to be completed."
+    title: "wait",
+    url: "./parallel/wait.html",
+    path: "./parallel/wait.html",
+    content: "Wait for futures to be completed.",
   },
   {
-    "title": "Inter Process Communication",
-    "url": "./ipc/index.html",
-    "path": "sections/ipc",
-    "content": "<chapter_description> <p>The ipc module provides basic tools for interacting with processes and enabling communication between them.<\/p> <p>It allows retrieving process identifiers and using a communicator object for exchanging information across Nelson processes.<\/p> <\/chapter_description>"
+    title: "Inter Process Communication",
+    url: "./ipc/index.html",
+    path: "sections/ipc",
+    content:
+      "<chapter_description> <p>The ipc module provides basic tools for interacting with processes and enabling communication between them.</p> <p>It allows retrieving process identifiers and using a communicator object for exchanging information across Nelson processes.</p> </chapter_description>",
   },
   {
-    "title": "getpid",
-    "url": "./ipc/getpid.html",
-    "path": "./ipc/getpid.html",
-    "content": "Get nelson(s) Process IDentificator."
+    title: "getpid",
+    url: "./ipc/getpid.html",
+    path: "./ipc/getpid.html",
+    content: "Get nelson(s) Process IDentificator.",
   },
   {
-    "title": "ipc",
-    "url": "./ipc/ipc.html",
-    "path": "./ipc/ipc.html",
-    "content": "Inter process communicator."
+    title: "ipc",
+    url: "./ipc/ipc.html",
+    path: "./ipc/ipc.html",
+    content: "Inter process communicator.",
   },
   {
-    "title": "Audio playback functions",
-    "url": "./audio/index.html",
-    "path": "sections/audio",
-    "content": "<chapter_description> <p>The audio module provides functions for reading, writing, analyzing, and playing audio files.<\/p> <p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.<\/p> <p>It also includes utilities for signal conversion and sound generation.<\/p> <\/chapter_description>"
+    title: "Audio playback functions",
+    url: "./audio/index.html",
+    path: "sections/audio",
+    content:
+      "<chapter_description> <p>The audio module provides functions for reading, writing, analyzing, and playing audio files.</p> <p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.</p> <p>It also includes utilities for signal conversion and sound generation.</p> </chapter_description>",
   },
   {
-    "title": "audiodevinfo",
-    "url": "./audio/audiodevinfo.html",
-    "path": "./audio/audiodevinfo.html",
-    "content": "Get audio devices information."
+    title: "audiodevinfo",
+    url: "./audio/audiodevinfo.html",
+    path: "./audio/audiodevinfo.html",
+    content: "Get audio devices information.",
   },
   {
-    "title": "audioinfo",
-    "url": "./audio/audioinfo.html",
-    "path": "./audio/audioinfo.html",
-    "content": "Get audio file information."
+    title: "audioinfo",
+    url: "./audio/audioinfo.html",
+    path: "./audio/audioinfo.html",
+    content: "Get audio file information.",
   },
   {
-    "title": "audiometadata",
-    "url": "./audio/audiometadata.html",
-    "path": "./audio/audiometadata.html",
-    "content": "Get\/Set metadata of audio file ."
+    title: "audiometadata",
+    url: "./audio/audiometadata.html",
+    path: "./audio/audiometadata.html",
+    content: "Get/Set metadata of audio file .",
   },
   {
-    "title": "audioplayer",
-    "url": "./audio/audioplayer.html",
-    "path": "./audio/audioplayer.html",
-    "content": "Audio player object."
+    title: "audioplayer",
+    url: "./audio/audioplayer.html",
+    path: "./audio/audioplayer.html",
+    content: "Audio player object.",
   },
   {
-    "title": "audioplayer_delete",
-    "url": "./audio/audioplayer_delete.html",
-    "path": "./audio/audioplayer_delete.html",
-    "content": "Removes audioplayer object."
+    title: "audioplayer_delete",
+    url: "./audio/audioplayer_delete.html",
+    path: "./audio/audioplayer_delete.html",
+    content: "Removes audioplayer object.",
   },
   {
-    "title": "audioplayer_fieldnames",
-    "url": "./audio/audioplayer_fieldnames.html",
-    "path": "./audio/audioplayer_fieldnames.html",
-    "content": "Returns the properties name of an audioplayer object."
+    title: "audioplayer_fieldnames",
+    url: "./audio/audioplayer_fieldnames.html",
+    path: "./audio/audioplayer_fieldnames.html",
+    content: "Returns the properties name of an audioplayer object.",
   },
   {
-    "title": "audioplayer_get",
-    "url": "./audio/audioplayer_get.html",
-    "path": "./audio/audioplayer_get.html",
-    "content": "Get property value from audioplayer interface."
+    title: "audioplayer_get",
+    url: "./audio/audioplayer_get.html",
+    path: "./audio/audioplayer_get.html",
+    content: "Get property value from audioplayer interface.",
   },
   {
-    "title": "audioplayer_pause",
-    "url": "./audio/audioplayer_pause.html",
-    "path": "./audio/audioplayer_pause.html",
-    "content": "Pause an audioplayer object."
+    title: "audioplayer_pause",
+    url: "./audio/audioplayer_pause.html",
+    path: "./audio/audioplayer_pause.html",
+    content: "Pause an audioplayer object.",
   },
   {
-    "title": "audioplayer_set",
-    "url": "./audio/audioplayer_set.html",
-    "path": "./audio/audioplayer_set.html",
-    "content": "Set object or interface property to specified value."
+    title: "audioplayer_set",
+    url: "./audio/audioplayer_set.html",
+    path: "./audio/audioplayer_set.html",
+    content: "Set object or interface property to specified value.",
   },
   {
-    "title": "audioplayer_stop",
-    "url": "./audio/audioplayer_stop.html",
-    "path": "./audio/audioplayer_stop.html",
-    "content": "Stops an audioplayer object."
+    title: "audioplayer_stop",
+    url: "./audio/audioplayer_stop.html",
+    path: "./audio/audioplayer_stop.html",
+    content: "Stops an audioplayer object.",
   },
   {
-    "title": "audioplayer_used",
-    "url": "./audio/audioplayer_used.html",
-    "path": "./audio/audioplayer_used.html",
-    "content": "Returns list of current used audioplayer handle."
+    title: "audioplayer_used",
+    url: "./audio/audioplayer_used.html",
+    path: "./audio/audioplayer_used.html",
+    content: "Returns list of current used audioplayer handle.",
   },
   {
-    "title": "audioread",
-    "url": "./audio/audioread.html",
-    "path": "./audio/audioread.html",
-    "content": "Read an audio file."
+    title: "audioread",
+    url: "./audio/audioread.html",
+    path: "./audio/audioread.html",
+    content: "Read an audio file.",
   },
   {
-    "title": "audiosupportedformats",
-    "url": "./audio/audiosupportedformats.html",
-    "path": "./audio/audiosupportedformats.html",
-    "content": "Get audio file supported formats."
+    title: "audiosupportedformats",
+    url: "./audio/audiosupportedformats.html",
+    path: "./audio/audiosupportedformats.html",
+    content: "Get audio file supported formats.",
   },
   {
-    "title": "audiowrite",
-    "url": "./audio/audiowrite.html",
-    "path": "./audio/audiowrite.html",
-    "content": "Writes an audio file."
+    title: "audiowrite",
+    url: "./audio/audiowrite.html",
+    path: "./audio/audiowrite.html",
+    content: "Writes an audio file.",
   },
   {
-    "title": "beep",
-    "url": "./audio/beep.html",
-    "path": "./audio/beep.html",
-    "content": "Produces a beep sound."
+    title: "beep",
+    url: "./audio/beep.html",
+    path: "./audio/beep.html",
+    content: "Produces a beep sound.",
   },
   {
-    "title": "isplaying",
-    "url": "./audio/isplaying.html",
-    "path": "./audio/isplaying.html",
-    "content": "get info about audio playback is in progress."
+    title: "isplaying",
+    url: "./audio/isplaying.html",
+    path: "./audio/isplaying.html",
+    content: "get info about audio playback is in progress.",
   },
   {
-    "title": "lin2mu",
-    "url": "./audio/lin2mu.html",
-    "path": "./audio/lin2mu.html",
-    "content": "Convert audio data from linear singal to mu-law."
+    title: "lin2mu",
+    url: "./audio/lin2mu.html",
+    path: "./audio/lin2mu.html",
+    content: "Convert audio data from linear singal to mu-law.",
   },
   {
-    "title": "mu2lin",
-    "url": "./audio/mu2lin.html",
-    "path": "./audio/mu2lin.html",
-    "content": "Convert audio data from mu-law to linear signal."
+    title: "mu2lin",
+    url: "./audio/mu2lin.html",
+    path: "./audio/mu2lin.html",
+    content: "Convert audio data from mu-law to linear signal.",
   },
   {
-    "title": "play",
-    "url": "./audio/play.html",
-    "path": "./audio/play.html",
-    "content": "Plays an audioplayer object."
+    title: "play",
+    url: "./audio/play.html",
+    path: "./audio/play.html",
+    content: "Plays an audioplayer object.",
   },
   {
-    "title": "playblocking",
-    "url": "./audio/playblocking.html",
-    "path": "./audio/playblocking.html",
-    "content": "Plays an audioplayer object with blocking."
+    title: "playblocking",
+    url: "./audio/playblocking.html",
+    path: "./audio/playblocking.html",
+    content: "Plays an audioplayer object with blocking.",
   },
   {
-    "title": "resume",
-    "url": "./audio/resume.html",
-    "path": "./audio/resume.html",
-    "content": "Resumes an audioplayer object."
+    title: "resume",
+    url: "./audio/resume.html",
+    path: "./audio/resume.html",
+    content: "Resumes an audioplayer object.",
   },
   {
-    "title": "sound",
-    "url": "./audio/sound.html",
-    "path": "./audio/sound.html",
-    "content": "Convert matrix of signal data to sound and play it."
+    title: "sound",
+    url: "./audio/sound.html",
+    path: "./audio/sound.html",
+    content: "Convert matrix of signal data to sound and play it.",
   },
   {
-    "title": "soundsc",
-    "url": "./audio/soundsc.html",
-    "path": "./audio/soundsc.html",
-    "content": "Scale data and play as sound."
+    title: "soundsc",
+    url: "./audio/soundsc.html",
+    path: "./audio/soundsc.html",
+    content: "Scale data and play as sound.",
   },
   {
-    "title": "stop",
-    "url": "./audio/stop.html",
-    "path": "./audio/stop.html",
-    "content": "Stops an audioplayer object."
+    title: "stop",
+    url: "./audio/stop.html",
+    path: "./audio/stop.html",
+    content: "Stops an audioplayer object.",
   },
   {
-    "title": "Graphics functions",
-    "url": "./graphics/index.html",
-    "path": "sections/graphics",
-    "content": "<chapter_description> <p>The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.<\/p> <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.<\/p> <\/chapter_description>"
+    title: "Graphics functions",
+    url: "./graphics/index.html",
+    path: "sections/graphics",
+    content:
+      "<chapter_description> <p>The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.</p> <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.</p> </chapter_description>",
   },
   {
-    "title": "abyss",
-    "url": "./graphics/abyss.html",
-    "path": "./graphics/abyss.html",
-    "content": "Abyss colormap array."
+    title: "abyss",
+    url: "./graphics/abyss.html",
+    path: "./graphics/abyss.html",
+    content: "Abyss colormap array.",
   },
   {
-    "title": "ancestor",
-    "url": "./graphics/ancestor.html",
-    "path": "./graphics/ancestor.html",
-    "content": "Ancestor of graphics object."
+    title: "ancestor",
+    url: "./graphics/ancestor.html",
+    path: "./graphics/ancestor.html",
+    content: "Ancestor of graphics object.",
   },
   {
-    "title": "autumn",
-    "url": "./graphics/autumn.html",
-    "path": "./graphics/autumn.html",
-    "content": "Autumn colormap array."
+    title: "autumn",
+    url: "./graphics/autumn.html",
+    path: "./graphics/autumn.html",
+    content: "Autumn colormap array.",
   },
   {
-    "title": "axes",
-    "url": "./graphics/axes.html",
-    "path": "./graphics/axes.html",
-    "content": "Create cartesian axes."
+    title: "axes",
+    url: "./graphics/axes.html",
+    path: "./graphics/axes.html",
+    content: "Create cartesian axes.",
   },
   {
-    "title": "axis",
-    "url": "./graphics/axis.html",
-    "path": "./graphics/axis.html",
-    "content": "Set axis limits and aspect ratios."
+    title: "axis",
+    url: "./graphics/axis.html",
+    path: "./graphics/axis.html",
+    content: "Set axis limits and aspect ratios.",
   },
   {
-    "title": "bar",
-    "url": "./graphics/bar.html",
-    "path": "./graphics/bar.html",
-    "content": "Bar graph."
+    title: "bar",
+    url: "./graphics/bar.html",
+    path: "./graphics/bar.html",
+    content: "Bar graph.",
   },
   {
-    "title": "bone",
-    "url": "./graphics/bone.html",
-    "path": "./graphics/bone.html",
-    "content": "Bone colormap array."
+    title: "bone",
+    url: "./graphics/bone.html",
+    path: "./graphics/bone.html",
+    content: "Bone colormap array.",
   },
   {
-    "title": "cla",
-    "url": "./graphics/cla.html",
-    "path": "./graphics/cla.html",
-    "content": "Clear axes."
+    title: "cla",
+    url: "./graphics/cla.html",
+    path: "./graphics/cla.html",
+    content: "Clear axes.",
   },
   {
-    "title": "clf",
-    "url": "./graphics/clf.html",
-    "path": "./graphics/clf.html",
-    "content": "Clear figure."
+    title: "clf",
+    url: "./graphics/clf.html",
+    path: "./graphics/clf.html",
+    content: "Clear figure.",
   },
   {
-    "title": "clim",
-    "url": "./graphics/clim.html",
-    "path": "./graphics/clim.html",
-    "content": "Set colormap limits."
+    title: "clim",
+    url: "./graphics/clim.html",
+    path: "./graphics/clim.html",
+    content: "Set colormap limits.",
   },
   {
-    "title": "close",
-    "url": "./graphics/close.html",
-    "path": "./graphics/close.html",
-    "content": "Close one or more figures"
+    title: "close",
+    url: "./graphics/close.html",
+    path: "./graphics/close.html",
+    content: "Close one or more figures",
   },
   {
-    "title": "colorbar",
-    "url": "./graphics/colorbar.html",
-    "path": "./graphics/colorbar.html",
-    "content": "Colorbar showing color scale."
+    title: "colorbar",
+    url: "./graphics/colorbar.html",
+    path: "./graphics/colorbar.html",
+    content: "Colorbar showing color scale.",
   },
   {
-    "title": "colormap",
-    "url": "./graphics/colormap.html",
-    "path": "./graphics/colormap.html",
-    "content": "View and set current colormap."
+    title: "colormap",
+    url: "./graphics/colormap.html",
+    path: "./graphics/colormap.html",
+    content: "View and set current colormap.",
   },
   {
-    "title": "colormaplist",
-    "url": "./graphics/colormaplist.html",
-    "path": "./graphics/colormaplist.html",
-    "content": "Provide list of colormaps."
+    title: "colormaplist",
+    url: "./graphics/colormaplist.html",
+    path: "./graphics/colormaplist.html",
+    content: "Provide list of colormaps.",
   },
   {
-    "title": "colstyle",
-    "url": "./graphics/colstyle.html",
-    "path": "./graphics/colstyle.html",
-    "content": "Parse color and style from string."
+    title: "colstyle",
+    url: "./graphics/colstyle.html",
+    path: "./graphics/colstyle.html",
+    content: "Parse color and style from string.",
   },
   {
-    "title": "contour",
-    "url": "./graphics/contour.html",
-    "path": "./graphics/contour.html",
-    "content": "Contour plot of matrix"
+    title: "contour",
+    url: "./graphics/contour.html",
+    path: "./graphics/contour.html",
+    content: "Contour plot of matrix",
   },
   {
-    "title": "contour3",
-    "url": "./graphics/contour3.html",
-    "path": "./graphics/contour3.html",
-    "content": "Contour 3D plot of matrix"
+    title: "contour3",
+    url: "./graphics/contour3.html",
+    path: "./graphics/contour3.html",
+    content: "Contour 3D plot of matrix",
   },
   {
-    "title": "cool",
-    "url": "./graphics/cool.html",
-    "path": "./graphics/cool.html",
-    "content": "Cool colormap array."
+    title: "cool",
+    url: "./graphics/cool.html",
+    path: "./graphics/cool.html",
+    content: "Cool colormap array.",
   },
   {
-    "title": "copper",
-    "url": "./graphics/copper.html",
-    "path": "./graphics/copper.html",
-    "content": "Copper colormap array."
+    title: "copper",
+    url: "./graphics/copper.html",
+    path: "./graphics/copper.html",
+    content: "Copper colormap array.",
   },
   {
-    "title": "cylinder",
-    "url": "./graphics/cylinder.html",
-    "path": "./graphics/cylinder.html",
-    "content": "Create cylinder."
+    title: "cylinder",
+    url: "./graphics/cylinder.html",
+    path: "./graphics/cylinder.html",
+    content: "Create cylinder.",
   },
   {
-    "title": "drawnow",
-    "url": "./graphics/drawnow.html",
-    "path": "./graphics/drawnow.html",
-    "content": "Update figures and process callbacks"
+    title: "drawnow",
+    url: "./graphics/drawnow.html",
+    path: "./graphics/drawnow.html",
+    content: "Update figures and process callbacks",
   },
   {
-    "title": "figure",
-    "url": "./graphics/figure.html",
-    "path": "./graphics/figure.html",
-    "content": "Creates an figure window."
+    title: "figure",
+    url: "./graphics/figure.html",
+    path: "./graphics/figure.html",
+    content: "Creates an figure window.",
   },
   {
-    "title": "fill",
-    "url": "./graphics/fill.html",
-    "path": "./graphics/fill.html",
-    "content": "Create filled 2-D patches."
+    title: "fill",
+    url: "./graphics/fill.html",
+    path: "./graphics/fill.html",
+    content: "Create filled 2-D patches.",
   },
   {
-    "title": "flag",
-    "url": "./graphics/flag.html",
-    "path": "./graphics/flag.html",
-    "content": "Flag colormap array."
+    title: "flag",
+    url: "./graphics/flag.html",
+    path: "./graphics/flag.html",
+    content: "Flag colormap array.",
   },
   {
-    "title": "frame2im",
-    "url": "./graphics/frame2im.html",
-    "path": "./graphics/frame2im.html",
-    "content": "Retrieve image data from a movie frame."
+    title: "frame2im",
+    url: "./graphics/frame2im.html",
+    path: "./graphics/frame2im.html",
+    content: "Retrieve image data from a movie frame.",
   },
   {
-    "title": "gca",
-    "url": "./graphics/gca.html",
-    "path": "./graphics/gca.html",
-    "content": "get current axes graphics object."
+    title: "gca",
+    url: "./graphics/gca.html",
+    path: "./graphics/gca.html",
+    content: "get current axes graphics object.",
   },
   {
-    "title": "gcf",
-    "url": "./graphics/gcf.html",
-    "path": "./graphics/gcf.html",
-    "content": "get current figure graphics object."
+    title: "gcf",
+    url: "./graphics/gcf.html",
+    path: "./graphics/gcf.html",
+    content: "get current figure graphics object.",
   },
   {
-    "title": "getframe",
-    "url": "./graphics/getframe.html",
-    "path": "./graphics/getframe.html",
-    "content": "Capture figure or axes as movie frame."
+    title: "getframe",
+    url: "./graphics/getframe.html",
+    path: "./graphics/getframe.html",
+    content: "Capture figure or axes as movie frame.",
   },
   {
-    "title": "Managing Callback Interruptions in Nelson",
-    "url": "./graphics/graphical_callback.html",
-    "path": "./graphics/graphical_callback.html",
-    "content": ""
+    title: "Managing Callback Interruptions in Nelson",
+    url: "./graphics/graphical_callback.html",
+    path: "./graphics/graphical_callback.html",
+    content: "",
   },
   {
-    "title": "gray",
-    "url": "./graphics/gray.html",
-    "path": "./graphics/gray.html",
-    "content": "Gray colormap array."
+    title: "gray",
+    url: "./graphics/gray.html",
+    path: "./graphics/gray.html",
+    content: "Gray colormap array.",
   },
   {
-    "title": "grid",
-    "url": "./graphics/grid.html",
-    "path": "./graphics/grid.html",
-    "content": "Display or hide axes grid lines."
+    title: "grid",
+    url: "./graphics/grid.html",
+    path: "./graphics/grid.html",
+    content: "Display or hide axes grid lines.",
   },
   {
-    "title": "groot",
-    "url": "./graphics/groot.html",
-    "path": "./graphics/groot.html",
-    "content": "graphic root object."
+    title: "groot",
+    url: "./graphics/groot.html",
+    path: "./graphics/groot.html",
+    content: "graphic root object.",
   },
   {
-    "title": "hggroup",
-    "url": "./graphics/hggroup.html",
-    "path": "./graphics/hggroup.html",
-    "content": "Create group object."
+    title: "hggroup",
+    url: "./graphics/hggroup.html",
+    path: "./graphics/hggroup.html",
+    content: "Create group object.",
   },
   {
-    "title": "hist",
-    "url": "./graphics/hist.html",
-    "path": "./graphics/hist.html",
-    "content": "Histogram plot."
+    title: "hist",
+    url: "./graphics/hist.html",
+    path: "./graphics/hist.html",
+    content: "Histogram plot.",
   },
   {
-    "title": "hold",
-    "url": "./graphics/hold.html",
-    "path": "./graphics/hold.html",
-    "content": "Retain current plot when adding new plots."
+    title: "hold",
+    url: "./graphics/hold.html",
+    path: "./graphics/hold.html",
+    content: "Retain current plot when adding new plots.",
   },
   {
-    "title": "hot",
-    "url": "./graphics/hot.html",
-    "path": "./graphics/hot.html",
-    "content": "Hot colormap array."
+    title: "hot",
+    url: "./graphics/hot.html",
+    path: "./graphics/hot.html",
+    content: "Hot colormap array.",
   },
   {
-    "title": "im2frame",
-    "url": "./graphics/im2frame.html",
-    "path": "./graphics/im2frame.html",
-    "content": "Convert image to movie frame."
+    title: "im2frame",
+    url: "./graphics/im2frame.html",
+    path: "./graphics/im2frame.html",
+    content: "Convert image to movie frame.",
   },
   {
-    "title": "image",
-    "url": "./graphics/image.html",
-    "path": "./graphics/image.html",
-    "content": "Display image from array."
+    title: "image",
+    url: "./graphics/image.html",
+    path: "./graphics/image.html",
+    content: "Display image from array.",
   },
   {
-    "title": "imagesc",
-    "url": "./graphics/imagesc.html",
-    "path": "./graphics/imagesc.html",
-    "content": "Display image from array with scaled colors."
+    title: "imagesc",
+    url: "./graphics/imagesc.html",
+    path: "./graphics/imagesc.html",
+    content: "Display image from array with scaled colors.",
   },
   {
-    "title": "imshow",
-    "url": "./graphics/imshow.html",
-    "path": "./graphics/imshow.html",
-    "content": "Display image."
+    title: "imshow",
+    url: "./graphics/imshow.html",
+    path: "./graphics/imshow.html",
+    content: "Display image.",
   },
   {
-    "title": "is2D",
-    "url": "./graphics/is2D.html",
-    "path": "./graphics/is2D.html",
-    "content": "Checks if ax is a 2-D Polar or Cartesian axes."
+    title: "is2D",
+    url: "./graphics/is2D.html",
+    path: "./graphics/is2D.html",
+    content: "Checks if ax is a 2-D Polar or Cartesian axes.",
   },
   {
-    "title": "isValidGraphicsProperty",
-    "url": "./graphics/isValidGraphicsProperty.html",
-    "path": "./graphics/isValidGraphicsProperty.html",
-    "content": "Check property name is valid."
+    title: "isValidGraphicsProperty",
+    url: "./graphics/isValidGraphicsProperty.html",
+    path: "./graphics/isValidGraphicsProperty.html",
+    content: "Check property name is valid.",
   },
   {
-    "title": "isgraphics",
-    "url": "./graphics/isgraphics.html",
-    "path": "./graphics/isgraphics.html",
-    "content": "Check for graphics object."
+    title: "isgraphics",
+    url: "./graphics/isgraphics.html",
+    path: "./graphics/isgraphics.html",
+    content: "Check for graphics object.",
   },
   {
-    "title": "ishold",
-    "url": "./graphics/ishold.html",
-    "path": "./graphics/ishold.html",
-    "content": "Get current hold state."
+    title: "ishold",
+    url: "./graphics/ishold.html",
+    path: "./graphics/ishold.html",
+    content: "Get current hold state.",
   },
   {
-    "title": "jet",
-    "url": "./graphics/jet.html",
-    "path": "./graphics/jet.html",
-    "content": "Jet colormap array."
+    title: "jet",
+    url: "./graphics/jet.html",
+    path: "./graphics/jet.html",
+    content: "Jet colormap array.",
   },
   {
-    "title": "legend",
-    "url": "./graphics/legend.html",
-    "path": "./graphics/legend.html",
-    "content": "Add legend to axes."
+    title: "legend",
+    url: "./graphics/legend.html",
+    path: "./graphics/legend.html",
+    content: "Add legend to axes.",
   },
   {
-    "title": "line",
-    "url": "./graphics/line.html",
-    "path": "./graphics/line.html",
-    "content": "Create primitive line."
+    title: "line",
+    url: "./graphics/line.html",
+    path: "./graphics/line.html",
+    content: "Create primitive line.",
   },
   {
-    "title": "loglog",
-    "url": "./graphics/loglog.html",
-    "path": "./graphics/loglog.html",
-    "content": "Log-log scale plot."
+    title: "loglog",
+    url: "./graphics/loglog.html",
+    path: "./graphics/loglog.html",
+    content: "Log-log scale plot.",
   },
   {
-    "title": "mesh",
-    "url": "./graphics/mesh.html",
-    "path": "./graphics/mesh.html",
-    "content": "Mesh surface plot."
+    title: "mesh",
+    url: "./graphics/mesh.html",
+    path: "./graphics/mesh.html",
+    content: "Mesh surface plot.",
   },
   {
-    "title": "meshz",
-    "url": "./graphics/meshz.html",
-    "path": "./graphics/meshz.html",
-    "content": "Mesh surface plot with curtain."
+    title: "meshz",
+    url: "./graphics/meshz.html",
+    path: "./graphics/meshz.html",
+    content: "Mesh surface plot with curtain.",
   },
   {
-    "title": "movie",
-    "url": "./graphics/movie.html",
-    "path": "./graphics/movie.html",
-    "content": "Render recorded movie frames."
+    title: "movie",
+    url: "./graphics/movie.html",
+    path: "./graphics/movie.html",
+    content: "Render recorded movie frames.",
   },
   {
-    "title": "nebula",
-    "url": "./graphics/nebula.html",
-    "path": "./graphics/nebula.html",
-    "content": "Nebula colormap array."
+    title: "nebula",
+    url: "./graphics/nebula.html",
+    path: "./graphics/nebula.html",
+    content: "Nebula colormap array.",
   },
   {
-    "title": "newplot",
-    "url": "./graphics/newplot.html",
-    "path": "./graphics/newplot.html",
-    "content": "Prepare to produce a new plot."
+    title: "newplot",
+    url: "./graphics/newplot.html",
+    path: "./graphics/newplot.html",
+    content: "Prepare to produce a new plot.",
   },
   {
-    "title": "pan",
-    "url": "./graphics/pan.html",
-    "path": "./graphics/pan.html",
-    "content": "Enable pan mode."
+    title: "pan",
+    url: "./graphics/pan.html",
+    path: "./graphics/pan.html",
+    content: "Enable pan mode.",
   },
   {
-    "title": "parula",
-    "url": "./graphics/parula.html",
-    "path": "./graphics/parula.html",
-    "content": "Parula colormap array."
+    title: "parula",
+    url: "./graphics/parula.html",
+    path: "./graphics/parula.html",
+    content: "Parula colormap array.",
   },
   {
-    "title": "patch",
-    "url": "./graphics/patch.html",
-    "path": "./graphics/patch.html",
-    "content": "Create patches of colored polygons"
+    title: "patch",
+    url: "./graphics/patch.html",
+    path: "./graphics/patch.html",
+    content: "Create patches of colored polygons",
   },
   {
-    "title": "pcolor",
-    "url": "./graphics/pcolor.html",
-    "path": "./graphics/pcolor.html",
-    "content": "Pseudocolor plot."
+    title: "pcolor",
+    url: "./graphics/pcolor.html",
+    path: "./graphics/pcolor.html",
+    content: "Pseudocolor plot.",
   },
   {
-    "title": "pie",
-    "url": "./graphics/pie.html",
-    "path": "./graphics/pie.html",
-    "content": "Legacy pie chart."
+    title: "pie",
+    url: "./graphics/pie.html",
+    path: "./graphics/pie.html",
+    content: "Legacy pie chart.",
   },
   {
-    "title": "pink",
-    "url": "./graphics/pink.html",
-    "path": "./graphics/pink.html",
-    "content": "Pink colormap array."
+    title: "pink",
+    url: "./graphics/pink.html",
+    path: "./graphics/pink.html",
+    content: "Pink colormap array.",
   },
   {
-    "title": "plot",
-    "url": "./graphics/plot.html",
-    "path": "./graphics/plot.html",
-    "content": "Linear 2-D plot."
+    title: "plot",
+    url: "./graphics/plot.html",
+    path: "./graphics/plot.html",
+    content: "Linear 2-D plot.",
   },
   {
-    "title": "plot3",
-    "url": "./graphics/plot3.html",
-    "path": "./graphics/plot3.html",
-    "content": "3-D line plot."
+    title: "plot3",
+    url: "./graphics/plot3.html",
+    path: "./graphics/plot3.html",
+    content: "3-D line plot.",
   },
   {
-    "title": "prism",
-    "url": "./graphics/prism.html",
-    "path": "./graphics/prism.html",
-    "content": "Prism colormap array."
+    title: "prism",
+    url: "./graphics/prism.html",
+    path: "./graphics/prism.html",
+    content: "Prism colormap array.",
   },
   {
-    "title": "quiver",
-    "url": "./graphics/quiver.html",
-    "path": "./graphics/quiver.html",
-    "content": "Vector plot."
+    title: "quiver",
+    url: "./graphics/quiver.html",
+    path: "./graphics/quiver.html",
+    content: "Vector plot.",
   },
   {
-    "title": "refresh",
-    "url": "./graphics/refresh.html",
-    "path": "./graphics/refresh.html",
-    "content": "Redraw current figure."
+    title: "refresh",
+    url: "./graphics/refresh.html",
+    path: "./graphics/refresh.html",
+    content: "Redraw current figure.",
   },
   {
-    "title": "rgbplot",
-    "url": "./graphics/rgbplot.html",
-    "path": "./graphics/rgbplot.html",
-    "content": "Plot colormap."
+    title: "rgbplot",
+    url: "./graphics/rgbplot.html",
+    path: "./graphics/rgbplot.html",
+    content: "Plot colormap.",
   },
   {
-    "title": "ribbon",
-    "url": "./graphics/ribbon.html",
-    "path": "./graphics/ribbon.html",
-    "content": "Ribbon plot."
+    title: "ribbon",
+    url: "./graphics/ribbon.html",
+    path: "./graphics/ribbon.html",
+    content: "Ribbon plot.",
   },
   {
-    "title": "rotate3d",
-    "url": "./graphics/rotate3d.html",
-    "path": "./graphics/rotate3d.html",
-    "content": "Enable rotate mode."
+    title: "rotate3d",
+    url: "./graphics/rotate3d.html",
+    path: "./graphics/rotate3d.html",
+    content: "Enable rotate mode.",
   },
   {
-    "title": "saveas",
-    "url": "./graphics/saveas.html",
-    "path": "./graphics/saveas.html",
-    "content": "Save figure to specific file format."
+    title: "saveas",
+    url: "./graphics/saveas.html",
+    path: "./graphics/saveas.html",
+    content: "Save figure to specific file format.",
   },
   {
-    "title": "scatter",
-    "url": "./graphics/scatter.html",
-    "path": "./graphics/scatter.html",
-    "content": "Scatter plot."
+    title: "scatter",
+    url: "./graphics/scatter.html",
+    path: "./graphics/scatter.html",
+    content: "Scatter plot.",
   },
   {
-    "title": "scatter3",
-    "url": "./graphics/scatter3.html",
-    "path": "./graphics/scatter3.html",
-    "content": "3D Scatter plot."
+    title: "scatter3",
+    url: "./graphics/scatter3.html",
+    path: "./graphics/scatter3.html",
+    content: "3D Scatter plot.",
   },
   {
-    "title": "semilogx",
-    "url": "./graphics/semilogx.html",
-    "path": "./graphics/semilogx.html",
-    "content": "Semilog plot (x-axis has log scale)."
+    title: "semilogx",
+    url: "./graphics/semilogx.html",
+    path: "./graphics/semilogx.html",
+    content: "Semilog plot (x-axis has log scale).",
   },
   {
-    "title": "semilogy",
-    "url": "./graphics/semilogy.html",
-    "path": "./graphics/semilogy.html",
-    "content": "Semilog plot (y-axis has log scale)."
+    title: "semilogy",
+    url: "./graphics/semilogy.html",
+    path: "./graphics/semilogy.html",
+    content: "Semilog plot (y-axis has log scale).",
   },
   {
-    "title": "sky",
-    "url": "./graphics/sky.html",
-    "path": "./graphics/sky.html",
-    "content": "Sky colormap array."
+    title: "sky",
+    url: "./graphics/sky.html",
+    path: "./graphics/sky.html",
+    content: "Sky colormap array.",
   },
   {
-    "title": "sphere",
-    "url": "./graphics/sphere.html",
-    "path": "./graphics/sphere.html",
-    "content": "Create sphere."
+    title: "sphere",
+    url: "./graphics/sphere.html",
+    path: "./graphics/sphere.html",
+    content: "Create sphere.",
   },
   {
-    "title": "spring",
-    "url": "./graphics/spring.html",
-    "path": "./graphics/spring.html",
-    "content": "Spring colormap array."
+    title: "spring",
+    url: "./graphics/spring.html",
+    path: "./graphics/spring.html",
+    content: "Spring colormap array.",
   },
   {
-    "title": "spy",
-    "url": "./graphics/spy.html",
-    "path": "./graphics/spy.html",
-    "content": "Visualize sparsity pattern of matrix."
+    title: "spy",
+    url: "./graphics/spy.html",
+    path: "./graphics/spy.html",
+    content: "Visualize sparsity pattern of matrix.",
   },
   {
-    "title": "stairs",
-    "url": "./graphics/stairs.html",
-    "path": "./graphics/stairs.html",
-    "content": "Stairstep graph."
+    title: "stairs",
+    url: "./graphics/stairs.html",
+    path: "./graphics/stairs.html",
+    content: "Stairstep graph.",
   },
   {
-    "title": "stem",
-    "url": "./graphics/stem.html",
-    "path": "./graphics/stem.html",
-    "content": "Plot discrete sequence data."
+    title: "stem",
+    url: "./graphics/stem.html",
+    path: "./graphics/stem.html",
+    content: "Plot discrete sequence data.",
   },
   {
-    "title": "subplot",
-    "url": "./graphics/subplot.html",
-    "path": "./graphics/subplot.html",
-    "content": "Create axes in tiled positions."
+    title: "subplot",
+    url: "./graphics/subplot.html",
+    path: "./graphics/subplot.html",
+    content: "Create axes in tiled positions.",
   },
   {
-    "title": "summer",
-    "url": "./graphics/summer.html",
-    "path": "./graphics/summer.html",
-    "content": "Summer colormap array."
+    title: "summer",
+    url: "./graphics/summer.html",
+    path: "./graphics/summer.html",
+    content: "Summer colormap array.",
   },
   {
-    "title": "surf",
-    "url": "./graphics/surf.html",
-    "path": "./graphics/surf.html",
-    "content": "surface plot."
+    title: "surf",
+    url: "./graphics/surf.html",
+    path: "./graphics/surf.html",
+    content: "surface plot.",
   },
   {
-    "title": "surface",
-    "url": "./graphics/surface.html",
-    "path": "./graphics/surface.html",
-    "content": "Primitive surface plot."
+    title: "surface",
+    url: "./graphics/surface.html",
+    path: "./graphics/surface.html",
+    content: "Primitive surface plot.",
   },
   {
-    "title": "text",
-    "url": "./graphics/text.html",
-    "path": "./graphics/text.html",
-    "content": "creates text descriptions to data points."
+    title: "text",
+    url: "./graphics/text.html",
+    path: "./graphics/text.html",
+    content: "creates text descriptions to data points.",
   },
   {
-    "title": "title",
-    "url": "./graphics/title.html",
-    "path": "./graphics/title.html",
-    "content": "Add title."
+    title: "title",
+    url: "./graphics/title.html",
+    path: "./graphics/title.html",
+    content: "Add title.",
   },
   {
-    "title": "turbo",
-    "url": "./graphics/turbo.html",
-    "path": "./graphics/turbo.html",
-    "content": "Turbo colormap array."
+    title: "turbo",
+    url: "./graphics/turbo.html",
+    path: "./graphics/turbo.html",
+    content: "Turbo colormap array.",
   },
   {
-    "title": "uicontrol",
-    "url": "./graphics/uicontrol.html",
-    "path": "./graphics/uicontrol.html",
-    "content": "Create user interface component."
+    title: "uicontrol",
+    url: "./graphics/uicontrol.html",
+    path: "./graphics/uicontrol.html",
+    content: "Create user interface component.",
   },
   {
-    "title": "validatecolor",
-    "url": "./graphics/validatecolor.html",
-    "path": "./graphics/validatecolor.html",
-    "content": "Validate color values."
+    title: "validatecolor",
+    url: "./graphics/validatecolor.html",
+    path: "./graphics/validatecolor.html",
+    content: "Validate color values.",
   },
   {
-    "title": "view",
-    "url": "./graphics/view.html",
-    "path": "./graphics/view.html",
-    "content": "Camera line of sigh."
+    title: "view",
+    url: "./graphics/view.html",
+    path: "./graphics/view.html",
+    content: "Camera line of sigh.",
   },
   {
-    "title": "viridis",
-    "url": "./graphics/viridis.html",
-    "path": "./graphics/viridis.html",
-    "content": "Viridis colormap array."
+    title: "viridis",
+    url: "./graphics/viridis.html",
+    path: "./graphics/viridis.html",
+    content: "Viridis colormap array.",
   },
   {
-    "title": "waitfor",
-    "url": "./graphics/waitfor.html",
-    "path": "./graphics/waitfor.html",
-    "content": "Wait for condition."
+    title: "waitfor",
+    url: "./graphics/waitfor.html",
+    path: "./graphics/waitfor.html",
+    content: "Wait for condition.",
   },
   {
-    "title": "waitforbuttonpress",
-    "url": "./graphics/waitforbuttonpress.html",
-    "path": "./graphics/waitforbuttonpress.html",
-    "content": "Wait for click or key press."
+    title: "waitforbuttonpress",
+    url: "./graphics/waitforbuttonpress.html",
+    path: "./graphics/waitforbuttonpress.html",
+    content: "Wait for click or key press.",
   },
   {
-    "title": "waterfall",
-    "url": "./graphics/waterfall.html",
-    "path": "./graphics/waterfall.html",
-    "content": "waterfall plot."
+    title: "waterfall",
+    url: "./graphics/waterfall.html",
+    path: "./graphics/waterfall.html",
+    content: "waterfall plot.",
   },
   {
-    "title": "white",
-    "url": "./graphics/white.html",
-    "path": "./graphics/white.html",
-    "content": "white colormap array."
+    title: "white",
+    url: "./graphics/white.html",
+    path: "./graphics/white.html",
+    content: "white colormap array.",
   },
   {
-    "title": "winter",
-    "url": "./graphics/winter.html",
-    "path": "./graphics/winter.html",
-    "content": "Winter colormap array."
+    title: "winter",
+    url: "./graphics/winter.html",
+    path: "./graphics/winter.html",
+    content: "Winter colormap array.",
   },
   {
-    "title": "xlabel",
-    "url": "./graphics/xlabel.html",
-    "path": "./graphics/xlabel.html",
-    "content": "Label x-axis."
+    title: "xlabel",
+    url: "./graphics/xlabel.html",
+    path: "./graphics/xlabel.html",
+    content: "Label x-axis.",
   },
   {
-    "title": "xlim",
-    "url": "./graphics/xlim.html",
-    "path": "./graphics/xlim.html",
-    "content": "set or get x-axis limits."
+    title: "xlim",
+    url: "./graphics/xlim.html",
+    path: "./graphics/xlim.html",
+    content: "set or get x-axis limits.",
   },
   {
-    "title": "ylabel",
-    "url": "./graphics/ylabel.html",
-    "path": "./graphics/ylabel.html",
-    "content": "Label y-axis."
+    title: "ylabel",
+    url: "./graphics/ylabel.html",
+    path: "./graphics/ylabel.html",
+    content: "Label y-axis.",
   },
   {
-    "title": "ylim",
-    "url": "./graphics/ylim.html",
-    "path": "./graphics/ylim.html",
-    "content": "set or get y-axis limits."
+    title: "ylim",
+    url: "./graphics/ylim.html",
+    path: "./graphics/ylim.html",
+    content: "set or get y-axis limits.",
   },
   {
-    "title": "zlabel",
-    "url": "./graphics/zlabel.html",
-    "path": "./graphics/zlabel.html",
-    "content": "Label z-axis."
+    title: "zlabel",
+    url: "./graphics/zlabel.html",
+    path: "./graphics/zlabel.html",
+    content: "Label z-axis.",
   },
   {
-    "title": "zlim",
-    "url": "./graphics/zlim.html",
-    "path": "./graphics/zlim.html",
-    "content": "set or get z-axis limits."
+    title: "zlim",
+    url: "./graphics/zlim.html",
+    path: "./graphics/zlim.html",
+    content: "set or get z-axis limits.",
   },
   {
-    "title": "zoom",
-    "url": "./graphics/zoom.html",
-    "path": "./graphics/zoom.html",
-    "content": "Enable zoom mode."
+    title: "zoom",
+    url: "./graphics/zoom.html",
+    path: "./graphics/zoom.html",
+    content: "Enable zoom mode.",
   },
   {
-    "title": "Graphics I\/O functions",
-    "url": "./graphics_io/index.html",
-    "path": "sections/graphics_io",
-    "content": "<chapter_description> <p>The Graphics I\/O module provides functions for importing, exporting, and managing graphical content and image formats.<\/p> <p>It supports reading and writing image files, copying figures, and saving plots in various file formats for interoperability with other applications.<\/p> <\/chapter_description>"
+    title: "Graphics I/O functions",
+    url: "./graphics_io/index.html",
+    path: "sections/graphics_io",
+    content:
+      "<chapter_description> <p>The Graphics I/O module provides functions for importing, exporting, and managing graphical content and image formats.</p> <p>It supports reading and writing image files, copying figures, and saving plots in various file formats for interoperability with other applications.</p> </chapter_description>",
   },
   {
-    "title": "copygraphics",
-    "url": "./graphics_io/copygraphics.html",
-    "path": "./graphics_io/copygraphics.html",
-    "content": "Copy plot to clipboard."
+    title: "copygraphics",
+    url: "./graphics_io/copygraphics.html",
+    path: "./graphics_io/copygraphics.html",
+    content: "Copy plot to clipboard.",
   },
   {
-    "title": "imformats",
-    "url": "./graphics_io/imformats.html",
-    "path": "./graphics_io/imformats.html",
-    "content": "Manage supported image formats."
+    title: "imformats",
+    url: "./graphics_io/imformats.html",
+    path: "./graphics_io/imformats.html",
+    content: "Manage supported image formats.",
   },
   {
-    "title": "imread",
-    "url": "./graphics_io/imread.html",
-    "path": "./graphics_io/imread.html",
-    "content": "Read image from graphics file."
+    title: "imread",
+    url: "./graphics_io/imread.html",
+    path: "./graphics_io/imread.html",
+    content: "Read image from graphics file.",
   },
   {
-    "title": "imwrite",
-    "url": "./graphics_io/imwrite.html",
-    "path": "./graphics_io/imwrite.html",
-    "content": "Write image to graphics file."
+    title: "imwrite",
+    url: "./graphics_io/imwrite.html",
+    path: "./graphics_io/imwrite.html",
+    content: "Write image to graphics file.",
   },
   {
-    "title": "saveas",
-    "url": "./graphics_io/saveas.html",
-    "path": "./graphics_io/saveas.html",
-    "content": "Save figure to specific file format."
+    title: "saveas",
+    url: "./graphics_io/saveas.html",
+    path: "./graphics_io/saveas.html",
+    content: "Save figure to specific file format.",
   },
   {
-    "title": "Image Processing functions",
-    "url": "./image_processing/index.html",
-    "path": "sections/image_processing",
-    "content": "<chapter_description> <p>The Image Processing module provides basic operations for manipulating images, including format conversion, resizing, and rotation.<\/p> <\/chapter_description>"
+    title: "Image Processing functions",
+    url: "./image_processing/index.html",
+    path: "sections/image_processing",
+    content:
+      "<chapter_description> <p>The Image Processing module provides basic operations for manipulating images, including format conversion, resizing, and rotation.</p> </chapter_description>",
   },
   {
-    "title": "im2double",
-    "url": "./image_processing/im2double.html",
-    "path": "./image_processing/im2double.html",
-    "content": "Convert image to double precision."
+    title: "im2double",
+    url: "./image_processing/im2double.html",
+    path: "./image_processing/im2double.html",
+    content: "Convert image to double precision.",
   },
   {
-    "title": "imresize",
-    "url": "./image_processing/imresize.html",
-    "path": "./image_processing/imresize.html",
-    "content": "Resize image by scale or output size"
+    title: "imresize",
+    url: "./image_processing/imresize.html",
+    path: "./image_processing/imresize.html",
+    content: "Resize image by scale or output size",
   },
   {
-    "title": "imrotate",
-    "url": "./image_processing/imrotate.html",
-    "path": "./image_processing/imrotate.html",
-    "content": "Rotate image by specified angle"
+    title: "imrotate",
+    url: "./image_processing/imrotate.html",
+    path: "./image_processing/imrotate.html",
+    content: "Rotate image by specified angle",
   },
   {
-    "title": "Gui module",
-    "url": "./gui/index.html",
-    "path": "sections/gui",
-    "content": "<chapter_description> <p>The GUI module provides functions to create and interact with graphical user interface components, dialogs, and application windows.<\/p> <\/chapter_description>"
+    title: "Gui module",
+    url: "./gui/index.html",
+    path: "sections/gui",
+    content:
+      "<chapter_description> <p>The GUI module provides functions to create and interact with graphical user interface components, dialogs, and application windows.</p> </chapter_description>",
   },
   {
-    "title": "commandhistory",
-    "url": "./gui/commandhistory.html",
-    "path": "./gui/commandhistory.html",
-    "content": "Command History"
+    title: "commandhistory",
+    url: "./gui/commandhistory.html",
+    path: "./gui/commandhistory.html",
+    content: "Command History",
   },
   {
-    "title": "errordlg",
-    "url": "./gui/errordlg.html",
-    "path": "./gui/errordlg.html",
-    "content": "Creates a error dialog box."
+    title: "errordlg",
+    url: "./gui/errordlg.html",
+    path: "./gui/errordlg.html",
+    content: "Creates a error dialog box.",
   },
   {
-    "title": "filebrowser",
-    "url": "./gui/filebrowser.html",
-    "path": "./gui/filebrowser.html",
-    "content": "Current Folder Browser"
+    title: "filebrowser",
+    url: "./gui/filebrowser.html",
+    path: "./gui/filebrowser.html",
+    content: "Current Folder Browser",
   },
   {
-    "title": "helpdlg",
-    "url": "./gui/helpdlg.html",
-    "path": "./gui/helpdlg.html",
-    "content": "Creates a help dialog box."
+    title: "helpdlg",
+    url: "./gui/helpdlg.html",
+    path: "./gui/helpdlg.html",
+    content: "Creates a help dialog box.",
   },
   {
-    "title": "inserthtml",
-    "url": "./gui/inserthtml.html",
-    "path": "./gui/inserthtml.html",
-    "content": "Insert html in GUI console."
+    title: "inserthtml",
+    url: "./gui/inserthtml.html",
+    path: "./gui/inserthtml.html",
+    content: "Insert html in GUI console.",
   },
   {
-    "title": "lookandfeel",
-    "url": "./gui/lookandfeel.html",
-    "path": "./gui/lookandfeel.html",
-    "content": "default current application look and feel."
+    title: "lookandfeel",
+    url: "./gui/lookandfeel.html",
+    path: "./gui/lookandfeel.html",
+    content: "default current application look and feel.",
   },
   {
-    "title": "msgbox",
-    "url": "./gui/msgbox.html",
-    "path": "./gui/msgbox.html",
-    "content": "Creates a message dialog box."
+    title: "msgbox",
+    url: "./gui/msgbox.html",
+    path: "./gui/msgbox.html",
+    content: "Creates a message dialog box.",
   },
   {
-    "title": "openvar",
-    "url": "./gui/openvar.html",
-    "path": "./gui/openvar.html",
-    "content": "Open variable in the Variable Editor"
+    title: "openvar",
+    url: "./gui/openvar.html",
+    path: "./gui/openvar.html",
+    content: "Open variable in the Variable Editor",
   },
   {
-    "title": "qt_verbose",
-    "url": "./gui/qt_verbose.html",
-    "path": "./gui/qt_verbose.html",
-    "content": "show\/hide Qt debug message."
+    title: "qt_verbose",
+    url: "./gui/qt_verbose.html",
+    path: "./gui/qt_verbose.html",
+    content: "show/hide Qt debug message.",
   },
   {
-    "title": "questdlg",
-    "url": "./gui/questdlg.html",
-    "path": "./gui/questdlg.html",
-    "content": "Creates a question dialog box."
+    title: "questdlg",
+    url: "./gui/questdlg.html",
+    path: "./gui/questdlg.html",
+    content: "Creates a question dialog box.",
   },
   {
-    "title": "uigetdir",
-    "url": "./gui/uigetdir.html",
-    "path": "./gui/uigetdir.html",
-    "content": "Opens dialog box to select a directory."
+    title: "uigetdir",
+    url: "./gui/uigetdir.html",
+    path: "./gui/uigetdir.html",
+    content: "Opens dialog box to select a directory.",
   },
   {
-    "title": "helpdlg",
-    "url": "./gui/warndlg.html",
-    "path": "./gui/warndlg.html",
-    "content": "Creates a warning dialog box."
+    title: "helpdlg",
+    url: "./gui/warndlg.html",
+    path: "./gui/warndlg.html",
+    content: "Creates a warning dialog box.",
   },
   {
-    "title": "workspace",
-    "url": "./gui/workspace.html",
-    "path": "./gui/workspace.html",
-    "content": "Workspace Browser"
+    title: "workspace",
+    url: "./gui/workspace.html",
+    path: "./gui/workspace.html",
+    content: "Workspace Browser",
   },
   {
-    "title": "QML engine",
-    "url": "./qml_engine/index.html",
-    "path": "sections/qml_engine",
-    "content": "<chapter_description> <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.<\/p> <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.<\/p> <\/chapter_description>"
+    title: "QML engine",
+    url: "./qml_engine/index.html",
+    path: "sections/qml_engine",
+    content:
+      "<chapter_description> <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p> <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p> </chapter_description>",
   },
   {
-    "title": "QObject_classname",
-    "url": "./qml_engine/QObject_classname.html",
-    "path": "./qml_engine/QObject_classname.html",
-    "content": "Returns class name of an QObject handle."
+    title: "QObject_classname",
+    url: "./qml_engine/QObject_classname.html",
+    path: "./qml_engine/QObject_classname.html",
+    content: "Returns class name of an QObject handle.",
   },
   {
-    "title": "QObject_findchildren",
-    "url": "./qml_engine/QObject_findchildren.html",
-    "path": "./qml_engine/QObject_findchildren.html",
-    "content": "Returns all children of this object with the given name."
+    title: "QObject_findchildren",
+    url: "./qml_engine/QObject_findchildren.html",
+    path: "./qml_engine/QObject_findchildren.html",
+    content: "Returns all children of this object with the given name.",
   },
   {
-    "title": "QObject_get",
-    "url": "./qml_engine/QObject_get.html",
-    "path": "./qml_engine/QObject_get.html",
-    "content": "Retrieve a property value from an QObject handle."
+    title: "QObject_get",
+    url: "./qml_engine/QObject_get.html",
+    path: "./qml_engine/QObject_get.html",
+    content: "Retrieve a property value from an QObject handle.",
   },
   {
-    "title": "QObject_iswidgettype",
-    "url": "./qml_engine/QObject_iswidgettype.html",
-    "path": "./qml_engine/QObject_iswidgettype.html",
-    "content": "Returns true if the QObject is a widget."
+    title: "QObject_iswidgettype",
+    url: "./qml_engine/QObject_iswidgettype.html",
+    path: "./qml_engine/QObject_iswidgettype.html",
+    content: "Returns true if the QObject is a widget.",
   },
   {
-    "title": "QObject_iswindowtype",
-    "url": "./qml_engine/QObject_iswindowtype.html",
-    "path": "./qml_engine/QObject_iswindowtype.html",
-    "content": "Returns true if the QObject is a window."
+    title: "QObject_iswindowtype",
+    url: "./qml_engine/QObject_iswindowtype.html",
+    path: "./qml_engine/QObject_iswindowtype.html",
+    content: "Returns true if the QObject is a window.",
   },
   {
-    "title": "QObject_methodsignature",
-    "url": "./qml_engine/QObject_methodsignature.html",
-    "path": "./qml_engine/QObject_methodsignature.html",
-    "content": "Returns the signature of a method of a QObject handle."
+    title: "QObject_methodsignature",
+    url: "./qml_engine/QObject_methodsignature.html",
+    path: "./qml_engine/QObject_methodsignature.html",
+    content: "Returns the signature of a method of a QObject handle.",
   },
   {
-    "title": "QObject_root",
-    "url": "./qml_engine/QObject_root.html",
-    "path": "./qml_engine/QObject_root.html",
-    "content": "QObject root object."
+    title: "QObject_root",
+    url: "./qml_engine/QObject_root.html",
+    path: "./qml_engine/QObject_root.html",
+    content: "QObject root object.",
   },
   {
-    "title": "QObject_set",
-    "url": "./qml_engine/QObject_set.html",
-    "path": "./qml_engine/QObject_set.html",
-    "content": "Set a property value of an QObject handle (set)."
+    title: "QObject_set",
+    url: "./qml_engine/QObject_set.html",
+    path: "./qml_engine/QObject_set.html",
+    content: "Set a property value of an QObject handle (set).",
   },
   {
-    "title": "QObject_undefine",
-    "url": "./qml_engine/QObject_undefine.html",
-    "path": "./qml_engine/QObject_undefine.html",
-    "content": "Undefine a dynamic property of a QObject handle."
+    title: "QObject_undefine",
+    url: "./qml_engine/QObject_undefine.html",
+    path: "./qml_engine/QObject_undefine.html",
+    content: "Undefine a dynamic property of a QObject handle.",
   },
   {
-    "title": "QObject_used",
-    "url": "./qml_engine/QObject_used.html",
-    "path": "./qml_engine/QObject_used.html",
-    "content": "Returns list of current used QObject handle."
+    title: "QObject_used",
+    url: "./qml_engine/QObject_used.html",
+    path: "./qml_engine/QObject_used.html",
+    content: "Returns list of current used QObject handle.",
   },
   {
-    "title": "nelsonObject",
-    "url": "./qml_engine/nelsonObject.html",
-    "path": "./qml_engine/nelsonObject.html",
-    "content": "nelson object callable from QML."
+    title: "nelsonObject",
+    url: "./qml_engine/nelsonObject.html",
+    path: "./qml_engine/nelsonObject.html",
+    content: "nelson object callable from QML.",
   },
   {
-    "title": "qml_addimportpath",
-    "url": "./qml_engine/qml_addimportpath.html",
-    "path": "./qml_engine/qml_addimportpath.html",
-    "content": "Adds path as directory where the qml engine searches for installed modules."
+    title: "qml_addimportpath",
+    url: "./qml_engine/qml_addimportpath.html",
+    path: "./qml_engine/qml_addimportpath.html",
+    content:
+      "Adds path as directory where the qml engine searches for installed modules.",
   },
   {
-    "title": "qml_addpluginpath",
-    "url": "./qml_engine/qml_addpluginpath.html",
-    "path": "./qml_engine/qml_addpluginpath.html",
-    "content": "Adds path as directory where the qml engine searches for native plugins."
+    title: "qml_addpluginpath",
+    url: "./qml_engine/qml_addpluginpath.html",
+    path: "./qml_engine/qml_addpluginpath.html",
+    content:
+      "Adds path as directory where the qml engine searches for native plugins.",
   },
   {
-    "title": "qml_clearcomponentcache",
-    "url": "./qml_engine/qml_clearcomponentcache.html",
-    "path": "./qml_engine/qml_clearcomponentcache.html",
-    "content": "Clears the engine's internal component cache.."
+    title: "qml_clearcomponentcache",
+    url: "./qml_engine/qml_clearcomponentcache.html",
+    path: "./qml_engine/qml_clearcomponentcache.html",
+    content: "Clears the engine's internal component cache..",
   },
   {
-    "title": "qml_collectgarbage",
-    "url": "./qml_engine/qml_collectgarbage.html",
-    "path": "./qml_engine/qml_collectgarbage.html",
-    "content": "Runs the Qml garbage collector."
+    title: "qml_collectgarbage",
+    url: "./qml_engine/qml_collectgarbage.html",
+    path: "./qml_engine/qml_collectgarbage.html",
+    content: "Runs the Qml garbage collector.",
   },
   {
-    "title": "qml_createqquickview",
-    "url": "./qml_engine/qml_createqquickview.html",
-    "path": "./qml_engine/qml_createqquickview.html",
-    "content": "Load a QML file and creates a window."
+    title: "qml_createqquickview",
+    url: "./qml_engine/qml_createqquickview.html",
+    path: "./qml_engine/qml_createqquickview.html",
+    content: "Load a QML file and creates a window.",
   },
   {
-    "title": "qml_demos",
-    "url": "./qml_engine/qml_demos.html",
-    "path": "./qml_engine/qml_demos.html",
-    "content": "QML demos."
+    title: "qml_demos",
+    url: "./qml_engine/qml_demos.html",
+    path: "./qml_engine/qml_demos.html",
+    content: "QML demos.",
   },
   {
-    "title": "qml_evaluatefile",
-    "url": "./qml_engine/qml_evaluatefile.html",
-    "path": "./qml_engine/qml_evaluatefile.html",
-    "content": "Evaluates a js file."
+    title: "qml_evaluatefile",
+    url: "./qml_engine/qml_evaluatefile.html",
+    path: "./qml_engine/qml_evaluatefile.html",
+    content: "Evaluates a js file.",
   },
   {
-    "title": "qml_evaluatestring",
-    "url": "./qml_engine/qml_evaluatestring.html",
-    "path": "./qml_engine/qml_evaluatestring.html",
-    "content": "Evaluates a js string."
+    title: "qml_evaluatestring",
+    url: "./qml_engine/qml_evaluatestring.html",
+    path: "./qml_engine/qml_evaluatestring.html",
+    content: "Evaluates a js string.",
   },
   {
-    "title": "qml_importpathlist",
-    "url": "./qml_engine/qml_importpathlist.html",
-    "path": "./qml_engine/qml_importpathlist.html",
-    "content": "Returns the list of directories where the engine searches for installed modules in a URL-based directory structure."
+    title: "qml_importpathlist",
+    url: "./qml_engine/qml_importpathlist.html",
+    path: "./qml_engine/qml_importpathlist.html",
+    content:
+      "Returns the list of directories where the engine searches for installed modules in a URL-based directory structure.",
   },
   {
-    "title": "qml_loadfile",
-    "url": "./qml_engine/qml_loadfile.html",
-    "path": "./qml_engine/qml_loadfile.html",
-    "content": "Load a QML file."
+    title: "qml_loadfile",
+    url: "./qml_engine/qml_loadfile.html",
+    path: "./qml_engine/qml_loadfile.html",
+    content: "Load a QML file.",
   },
   {
-    "title": "qml_loadstring",
-    "url": "./qml_engine/qml_loadstring.html",
-    "path": "./qml_engine/qml_loadstring.html",
-    "content": "Load a QML string."
+    title: "qml_loadstring",
+    url: "./qml_engine/qml_loadstring.html",
+    path: "./qml_engine/qml_loadstring.html",
+    content: "Load a QML string.",
   },
   {
-    "title": "qml_offlinestoragepath",
-    "url": "./qml_engine/qml_offlinestoragepath.html",
-    "path": "./qml_engine/qml_offlinestoragepath.html",
-    "content": "Get the Property contains the directory to store offline user data."
+    title: "qml_offlinestoragepath",
+    url: "./qml_engine/qml_offlinestoragepath.html",
+    path: "./qml_engine/qml_offlinestoragepath.html",
+    content:
+      "Get the Property contains the directory to store offline user data.",
   },
   {
-    "title": "qml_pluginpathlist",
-    "url": "./qml_engine/qml_pluginpathlist.html",
-    "path": "./qml_engine/qml_pluginpathlist.html",
-    "content": "Returns the list of directories where the engine searches for native plugins for imported modules."
+    title: "qml_pluginpathlist",
+    url: "./qml_engine/qml_pluginpathlist.html",
+    path: "./qml_engine/qml_pluginpathlist.html",
+    content:
+      "Returns the list of directories where the engine searches for native plugins for imported modules.",
   },
   {
-    "title": "qml_setofflinestoragepath",
-    "url": "./qml_engine/qml_setofflinestoragepath.html",
-    "path": "./qml_engine/qml_setofflinestoragepath.html",
-    "content": "Set the Property contains the directory to store offline user data."
+    title: "qml_setofflinestoragepath",
+    url: "./qml_engine/qml_setofflinestoragepath.html",
+    path: "./qml_engine/qml_setofflinestoragepath.html",
+    content:
+      "Set the Property contains the directory to store offline user data.",
   },
   {
-    "title": "qt_constant",
-    "url": "./qml_engine/qt_constant.html",
-    "path": "./qml_engine/qt_constant.html",
-    "content": "Returns Qt constant value."
+    title: "qt_constant",
+    url: "./qml_engine/qt_constant.html",
+    path: "./qml_engine/qt_constant.html",
+    content: "Returns Qt constant value.",
   },
   {
-    "title": "qt_version",
-    "url": "./qml_engine/qt_version.html",
-    "path": "./qml_engine/qt_version.html",
-    "content": "Returns Qt version used."
+    title: "qt_version",
+    url: "./qml_engine/qt_version.html",
+    path: "./qml_engine/qt_version.html",
+    content: "Returns Qt version used.",
   },
   {
-    "title": "Text editor",
-    "url": "./text_editor/index.html",
-    "path": "sections/text_editor",
-    "content": "<chapter_description> <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and formatting Nelson scripts and files.<\/p> <\/chapter_description>"
+    title: "Text editor",
+    url: "./text_editor/index.html",
+    path: "sections/text_editor",
+    content:
+      "<chapter_description> <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and formatting Nelson scripts and files.</p> </chapter_description>",
   },
   {
-    "title": "edit",
-    "url": "./text_editor/edit.html",
-    "path": "./text_editor/edit.html",
-    "content": "function editor."
+    title: "edit",
+    url: "./text_editor/edit.html",
+    path: "./text_editor/edit.html",
+    content: "function editor.",
   },
   {
-    "title": "editor",
-    "url": "./text_editor/editor.html",
-    "path": "./text_editor/editor.html",
-    "content": "call the embedded text editor."
+    title: "editor",
+    url: "./text_editor/editor.html",
+    path: "./text_editor/editor.html",
+    content: "call the embedded text editor.",
   },
   {
-    "title": "smartindent",
-    "url": "./text_editor/smartindent.html",
-    "path": "./text_editor/smartindent.html",
-    "content": "Smart indent a nelson file"
+    title: "smartindent",
+    url: "./text_editor/smartindent.html",
+    path: "./text_editor/smartindent.html",
+    content: "Smart indent a nelson file",
   },
   {
-    "title": "Web tools",
-    "url": "./webtools/index.html",
-    "path": "sections/webtools",
-    "content": "<chapter_description> <p>The WebTools module provides functions to interact with web resources, transfer data via URLs, and work with RESTful web services.<\/p> <\/chapter_description>"
+    title: "Web tools",
+    url: "./webtools/index.html",
+    path: "sections/webtools",
+    content:
+      "<chapter_description> <p>The WebTools module provides functions to interact with web resources, transfer data via URLs, and work with RESTful web services.</p> </chapter_description>",
   },
   {
-    "title": "checkupdate",
-    "url": "./webtools/checkupdate.html",
-    "path": "./webtools/checkupdate.html",
-    "content": "Check update for Nelson's application"
+    title: "checkupdate",
+    url: "./webtools/checkupdate.html",
+    path: "./webtools/checkupdate.html",
+    content: "Check update for Nelson's application",
   },
   {
-    "title": "repo",
-    "url": "./webtools/repo.html",
-    "path": "./webtools/repo.html",
-    "content": "Git repository tool for Nelson"
+    title: "repo",
+    url: "./webtools/repo.html",
+    path: "./webtools/repo.html",
+    content: "Git repository tool for Nelson",
   },
   {
-    "title": "urlencode",
-    "url": "./webtools/urlencode.html",
-    "path": "./webtools/urlencode.html",
-    "content": "Replace special characters in URLs with escape characters."
+    title: "urlencode",
+    url: "./webtools/urlencode.html",
+    path: "./webtools/urlencode.html",
+    content: "Replace special characters in URLs with escape characters.",
   },
   {
-    "title": "weboptions",
-    "url": "./webtools/weboptions.html",
-    "path": "./webtools/weboptions.html",
-    "content": "Specify parameters for RESTful web service"
+    title: "weboptions",
+    url: "./webtools/weboptions.html",
+    path: "./webtools/weboptions.html",
+    content: "Specify parameters for RESTful web service",
   },
   {
-    "title": "webread",
-    "url": "./webtools/webread.html",
-    "path": "./webtools/webread.html",
-    "content": "Read data from RESTful web service to Nelson's variable"
+    title: "webread",
+    url: "./webtools/webread.html",
+    path: "./webtools/webread.html",
+    content: "Read data from RESTful web service to Nelson's variable",
   },
   {
-    "title": "websave",
-    "url": "./webtools/websave.html",
-    "path": "./webtools/websave.html",
-    "content": "Save data from RESTful web service to file"
+    title: "websave",
+    url: "./webtools/websave.html",
+    path: "./webtools/websave.html",
+    content: "Save data from RESTful web service to file",
   },
   {
-    "title": "webwrite",
-    "url": "./webtools/webwrite.html",
-    "path": "./webtools/webwrite.html",
-    "content": "Write data to RESTful web service"
+    title: "webwrite",
+    url: "./webtools/webwrite.html",
+    path: "./webtools/webwrite.html",
+    content: "Write data to RESTful web service",
   },
   {
-    "title": "Nelson in the cloud",
-    "url": "./sio_client/index.html",
-    "path": "sections/sio_client",
-    "content": "<chapter_description> <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.<\/p> <\/chapter_description>"
+    title: "Nelson in the cloud",
+    url: "./sio_client/index.html",
+    path: "sections/sio_client",
+    content:
+      "<chapter_description> <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.</p> </chapter_description>",
   },
   {
-    "title": "sioemit",
-    "url": "./sio_client/sioemit.html",
-    "path": "./sio_client/sioemit.html",
-    "content": "Emit an event to web client."
+    title: "sioemit",
+    url: "./sio_client/sioemit.html",
+    path: "./sio_client/sioemit.html",
+    content: "Emit an event to web client.",
   },
   {
-    "title": "siogetvariable",
-    "url": "./sio_client/siogetvariable.html",
-    "path": "./sio_client/siogetvariable.html",
-    "content": "Emit an value of variable to web browser."
+    title: "siogetvariable",
+    url: "./sio_client/siogetvariable.html",
+    path: "./sio_client/siogetvariable.html",
+    content: "Emit an value of variable to web browser.",
   },
   {
-    "title": "Dynamic link",
-    "url": "./dynamic_link/index.html",
-    "path": "sections/dynamic_link",
-    "content": "<chapter_description> <p>The Dynamic Link module enables Nelson to build, load, and call C\/C++ and Fortran code at runtime.<\/p> <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.<\/p> <p>By default, Nelson does not try to detect a C\/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.<\/p> <\/chapter_description>"
+    title: "Dynamic link",
+    url: "./dynamic_link/index.html",
+    path: "sections/dynamic_link",
+    content:
+      "<chapter_description> <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p> <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p> <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p> </chapter_description>",
   },
   {
-    "title": "Build C\/C++ code on the fly",
-    "url": "./dynamic_link/1_c_cpp_build_on_fly.html",
-    "path": "./dynamic_link/1_c_cpp_build_on_fly.html",
-    "content": "Build C\/C++ code on the fly"
+    title: "Build C/C++ code on the fly",
+    url: "./dynamic_link/1_c_cpp_build_on_fly.html",
+    path: "./dynamic_link/1_c_cpp_build_on_fly.html",
+    content: "Build C/C++ code on the fly",
   },
   {
-    "title": "Supported C\/C++ compilers",
-    "url": "./dynamic_link/2_supported_compilers.html",
-    "path": "./dynamic_link/2_supported_compilers.html",
-    "content": ""
+    title: "Supported C/C++ compilers",
+    url: "./dynamic_link/2_supported_compilers.html",
+    path: "./dynamic_link/2_supported_compilers.html",
+    content: "",
   },
   {
-    "title": "libpointer datatype",
-    "url": "./dynamic_link/C_datatype.html",
-    "path": "./dynamic_link/C_datatype.html",
-    "content": "C\/Nelson equivalent data types"
+    title: "libpointer datatype",
+    url: "./dynamic_link/C_datatype.html",
+    path: "./dynamic_link/C_datatype.html",
+    content: "C/Nelson equivalent data types",
   },
   {
-    "title": "cmake",
-    "url": "./dynamic_link/cmake.html",
-    "path": "./dynamic_link/cmake.html",
-    "content": "call CMake tool"
+    title: "cmake",
+    url: "./dynamic_link/cmake.html",
+    path: "./dynamic_link/cmake.html",
+    content: "call CMake tool",
   },
   {
-    "title": "configuremingw",
-    "url": "./dynamic_link/configuremingw.html",
-    "path": "./dynamic_link/configuremingw.html",
-    "content": "Configure Nelson to use MinGW as default C compiler"
+    title: "configuremingw",
+    url: "./dynamic_link/configuremingw.html",
+    path: "./dynamic_link/configuremingw.html",
+    content: "Configure Nelson to use MinGW as default C compiler",
   },
   {
-    "title": "configuremsvc",
-    "url": "./dynamic_link/configuremsvc.html",
-    "path": "./dynamic_link/configuremsvc.html",
-    "content": "Configure Nelson to use visual studio as default compiler"
+    title: "configuremsvc",
+    url: "./dynamic_link/configuremsvc.html",
+    path: "./dynamic_link/configuremsvc.html",
+    content: "Configure Nelson to use visual studio as default compiler",
   },
   {
-    "title": "dlcall",
-    "url": "./dynamic_link/dlcall.html",
-    "path": "./dynamic_link/dlcall.html",
-    "content": "C or Fortran Foreign function call."
+    title: "dlcall",
+    url: "./dynamic_link/dlcall.html",
+    path: "./dynamic_link/dlcall.html",
+    content: "C or Fortran Foreign function call.",
   },
   {
-    "title": "dlclose",
-    "url": "./dynamic_link/dlclose.html",
-    "path": "./dynamic_link/dlclose.html",
-    "content": "Removes dllib object."
+    title: "dlclose",
+    url: "./dynamic_link/dlclose.html",
+    path: "./dynamic_link/dlclose.html",
+    content: "Removes dllib object.",
   },
   {
-    "title": "dlgeneratecleaner",
-    "url": "./dynamic_link/dlgeneratecleaner.html",
-    "path": "./dynamic_link/dlgeneratecleaner.html",
-    "content": "Generates cleaner.m file for C++ gateway."
+    title: "dlgeneratecleaner",
+    url: "./dynamic_link/dlgeneratecleaner.html",
+    path: "./dynamic_link/dlgeneratecleaner.html",
+    content: "Generates cleaner.m file for C++ gateway.",
   },
   {
-    "title": "dlgenerategateway",
-    "url": "./dynamic_link/dlgenerategateway.html",
-    "path": "./dynamic_link/dlgenerategateway.html",
-    "content": "Generates C++ gateway."
+    title: "dlgenerategateway",
+    url: "./dynamic_link/dlgenerategateway.html",
+    path: "./dynamic_link/dlgenerategateway.html",
+    content: "Generates C++ gateway.",
   },
   {
-    "title": "dlgenerateloader",
-    "url": "./dynamic_link/dlgenerateloader.html",
-    "path": "./dynamic_link/dlgenerateloader.html",
-    "content": "Generates loader.m file for C++ gateway."
+    title: "dlgenerateloader",
+    url: "./dynamic_link/dlgenerateloader.html",
+    path: "./dynamic_link/dlgenerateloader.html",
+    content: "Generates loader.m file for C++ gateway.",
   },
   {
-    "title": "dlgeneratemake",
-    "url": "./dynamic_link/dlgeneratemake.html",
-    "path": "./dynamic_link/dlgeneratemake.html",
-    "content": "Generates a makefile for building a dynamic library."
+    title: "dlgeneratemake",
+    url: "./dynamic_link/dlgeneratemake.html",
+    path: "./dynamic_link/dlgeneratemake.html",
+    content: "Generates a makefile for building a dynamic library.",
   },
   {
-    "title": "dlgenerateunloader",
-    "url": "./dynamic_link/dlgenerateunloader.html",
-    "path": "./dynamic_link/dlgenerateunloader.html",
-    "content": "Generates unloader.m file for C++ gateway."
+    title: "dlgenerateunloader",
+    url: "./dynamic_link/dlgenerateunloader.html",
+    path: "./dynamic_link/dlgenerateunloader.html",
+    content: "Generates unloader.m file for C++ gateway.",
   },
   {
-    "title": "dlgetnelsonincludes",
-    "url": "./dynamic_link/dlgetnelsonincludes.html",
-    "path": "./dynamic_link/dlgetnelsonincludes.html",
-    "content": "Returns paths of Nelson include directories."
+    title: "dlgetnelsonincludes",
+    url: "./dynamic_link/dlgetnelsonincludes.html",
+    path: "./dynamic_link/dlgetnelsonincludes.html",
+    content: "Returns paths of Nelson include directories.",
   },
   {
-    "title": "dlgetnelsonlibraries",
-    "url": "./dynamic_link/dlgetnelsonlibraries.html",
-    "path": "./dynamic_link/dlgetnelsonlibraries.html",
-    "content": "Returns paths to Nelson library files."
+    title: "dlgetnelsonlibraries",
+    url: "./dynamic_link/dlgetnelsonlibraries.html",
+    path: "./dynamic_link/dlgetnelsonlibraries.html",
+    content: "Returns paths to Nelson library files.",
   },
   {
-    "title": "dllib_used",
-    "url": "./dynamic_link/dllib_used.html",
-    "path": "./dynamic_link/dllib_used.html",
-    "content": "Returns list of current used dllib handle."
+    title: "dllib_used",
+    url: "./dynamic_link/dllib_used.html",
+    path: "./dynamic_link/dllib_used.html",
+    content: "Returns list of current used dllib handle.",
   },
   {
-    "title": "dllibinfo",
-    "url": "./dynamic_link/dllibinfo.html",
-    "path": "./dynamic_link/dllibinfo.html",
-    "content": "Returns list of available symbols in an shared library."
+    title: "dllibinfo",
+    url: "./dynamic_link/dllibinfo.html",
+    path: "./dynamic_link/dllibinfo.html",
+    content: "Returns list of available symbols in an shared library.",
   },
   {
-    "title": "dllibisloaded",
-    "url": "./dynamic_link/dllibisloaded.html",
-    "path": "./dynamic_link/dllibisloaded.html",
-    "content": "Checks if shared library is loaded."
+    title: "dllibisloaded",
+    url: "./dynamic_link/dllibisloaded.html",
+    path: "./dynamic_link/dllibisloaded.html",
+    content: "Checks if shared library is loaded.",
   },
   {
-    "title": "dlmake",
-    "url": "./dynamic_link/dlmake.html",
-    "path": "./dynamic_link/dlmake.html",
-    "content": "call make or nmake tool"
+    title: "dlmake",
+    url: "./dynamic_link/dlmake.html",
+    path: "./dynamic_link/dlmake.html",
+    content: "call make or nmake tool",
   },
   {
-    "title": "dlopen",
-    "url": "./dynamic_link/dlopen.html",
-    "path": "./dynamic_link/dlopen.html",
-    "content": "Loads an dynamic library."
+    title: "dlopen",
+    url: "./dynamic_link/dlopen.html",
+    path: "./dynamic_link/dlopen.html",
+    content: "Loads an dynamic library.",
   },
   {
-    "title": "dlsym",
-    "url": "./dynamic_link/dlsym.html",
-    "path": "./dynamic_link/dlsym.html",
-    "content": "Loads a C\/Fortran symbol for an dynamic library."
+    title: "dlsym",
+    url: "./dynamic_link/dlsym.html",
+    path: "./dynamic_link/dlsym.html",
+    content: "Loads a C/Fortran symbol for an dynamic library.",
   },
   {
-    "title": "dlsym_delete",
-    "url": "./dynamic_link/dlsym_delete.html",
-    "path": "./dynamic_link/dlsym_delete.html",
-    "content": "Removes dlsym object."
+    title: "dlsym_delete",
+    url: "./dynamic_link/dlsym_delete.html",
+    path: "./dynamic_link/dlsym_delete.html",
+    content: "Removes dlsym object.",
   },
   {
-    "title": "dlsym_used",
-    "url": "./dynamic_link/dlsym_used.html",
-    "path": "./dynamic_link/dlsym_used.html",
-    "content": "Returns list of current used dlsym handle."
+    title: "dlsym_used",
+    url: "./dynamic_link/dlsym_used.html",
+    path: "./dynamic_link/dlsym_used.html",
+    content: "Returns list of current used dlsym handle.",
   },
   {
-    "title": "findcmake",
-    "url": "./dynamic_link/findcmake.html",
-    "path": "./dynamic_link/findcmake.html",
-    "content": "find CMake path."
+    title: "findcmake",
+    url: "./dynamic_link/findcmake.html",
+    path: "./dynamic_link/findcmake.html",
+    content: "find CMake path.",
   },
   {
-    "title": "getdynlibext",
-    "url": "./dynamic_link/getdynlibext.html",
-    "path": "./dynamic_link/getdynlibext.html",
-    "content": "Returns the extension of dynamic libraries."
+    title: "getdynlibext",
+    url: "./dynamic_link/getdynlibext.html",
+    path: "./dynamic_link/getdynlibext.html",
+    content: "Returns the extension of dynamic libraries.",
   },
   {
-    "title": "havecompiler",
-    "url": "./dynamic_link/havecompiler.html",
-    "path": "./dynamic_link/havecompiler.html",
-    "content": "Detect if a C\/C++ compiler is configured."
+    title: "havecompiler",
+    url: "./dynamic_link/havecompiler.html",
+    path: "./dynamic_link/havecompiler.html",
+    content: "Detect if a C/C++ compiler is configured.",
   },
   {
-    "title": "libpointer",
-    "url": "./dynamic_link/libpointer.html",
-    "path": "./dynamic_link/libpointer.html",
-    "content": "Creates an C pointer object usuable in Nelson."
+    title: "libpointer",
+    url: "./dynamic_link/libpointer.html",
+    path: "./dynamic_link/libpointer.html",
+    content: "Creates an C pointer object usuable in Nelson.",
   },
   {
-    "title": "libpointer_delete",
-    "url": "./dynamic_link/libpointer_delete.html",
-    "path": "./dynamic_link/libpointer_delete.html",
-    "content": "Removes libpointer object."
+    title: "libpointer_delete",
+    url: "./dynamic_link/libpointer_delete.html",
+    path: "./dynamic_link/libpointer_delete.html",
+    content: "Removes libpointer object.",
   },
   {
-    "title": "libpointer_isNull",
-    "url": "./dynamic_link/libpointer_isNull.html",
-    "path": "./dynamic_link/libpointer_isNull.html",
-    "content": "Checks if libpointer handle points on NULL pointer."
+    title: "libpointer_isNull",
+    url: "./dynamic_link/libpointer_isNull.html",
+    path: "./dynamic_link/libpointer_isNull.html",
+    content: "Checks if libpointer handle points on NULL pointer.",
   },
   {
-    "title": "libpointer_plus",
-    "url": "./dynamic_link/libpointer_plus.html",
-    "path": "./dynamic_link/libpointer_plus.html",
-    "content": "plus operator on libpointer handle."
+    title: "libpointer_plus",
+    url: "./dynamic_link/libpointer_plus.html",
+    path: "./dynamic_link/libpointer_plus.html",
+    content: "plus operator on libpointer handle.",
   },
   {
-    "title": "libpointer_reshape",
-    "url": "./dynamic_link/libpointer_reshape.html",
-    "path": "./dynamic_link/libpointer_reshape.html",
-    "content": "Reshapes libpointer dimensions."
+    title: "libpointer_reshape",
+    url: "./dynamic_link/libpointer_reshape.html",
+    path: "./dynamic_link/libpointer_reshape.html",
+    content: "Reshapes libpointer dimensions.",
   },
   {
-    "title": "libpointer_setdatatype",
-    "url": "./dynamic_link/libpointer_setdatatype.html",
-    "path": "./dynamic_link/libpointer_setdatatype.html",
-    "content": "Set type of an libpointer handle."
+    title: "libpointer_setdatatype",
+    url: "./dynamic_link/libpointer_setdatatype.html",
+    path: "./dynamic_link/libpointer_setdatatype.html",
+    content: "Set type of an libpointer handle.",
   },
   {
-    "title": "libpointer_used",
-    "url": "./dynamic_link/libpointer_used.html",
-    "path": "./dynamic_link/libpointer_used.html",
-    "content": "Returns list of current used libpointer handle."
+    title: "libpointer_used",
+    url: "./dynamic_link/libpointer_used.html",
+    path: "./dynamic_link/libpointer_used.html",
+    content: "Returns list of current used libpointer handle.",
   },
   {
-    "title": "loadcompilerconf",
-    "url": "./dynamic_link/loadcompilerconf.html",
-    "path": "./dynamic_link/loadcompilerconf.html",
-    "content": "load compiler configuration."
+    title: "loadcompilerconf",
+    url: "./dynamic_link/loadcompilerconf.html",
+    path: "./dynamic_link/loadcompilerconf.html",
+    content: "load compiler configuration.",
   },
   {
-    "title": "removecompilerconf",
-    "url": "./dynamic_link/removecompilerconf.html",
-    "path": "./dynamic_link/removecompilerconf.html",
-    "content": "Remove used compiler configuration (on Windows)."
+    title: "removecompilerconf",
+    url: "./dynamic_link/removecompilerconf.html",
+    path: "./dynamic_link/removecompilerconf.html",
+    content: "Remove used compiler configuration (on Windows).",
   },
   {
-    "title": "vswhere",
-    "url": "./dynamic_link/vswhere.html",
-    "path": "./dynamic_link/vswhere.html",
-    "content": "Locate Visual Studio 2017, 2019 and newer installations"
+    title: "vswhere",
+    url: "./dynamic_link/vswhere.html",
+    path: "./dynamic_link/vswhere.html",
+    content: "Locate Visual Studio 2017, 2019 and newer installations",
   },
   {
-    "title": "MEX functions",
-    "url": "./mex/index.html",
-    "path": "sections/mex",
-    "content": "<chapter_description> <p>The MEX (MATLAB Executable) module allows C\/C++ code to interface with Nelson, extending its functionality and enabling access to Nelson’s engine, variables, and functions.<\/p> <\/chapter_description>"
+    title: "MEX functions",
+    url: "./mex/index.html",
+    path: "sections/mex",
+    content:
+      "<chapter_description> <p>The MEX (MATLAB Executable) module allows C/C++ code to interface with Nelson, extending its functionality and enabling access to Nelson’s engine, variables, and functions.</p> </chapter_description>",
   },
   {
-    "title": "dlgeneratemexgateway",
-    "url": "./mex/dlgeneratemexgateway.html",
-    "path": "./mex/dlgeneratemexgateway.html",
-    "content": "Generates C MEX gateway (internal function)."
+    title: "dlgeneratemexgateway",
+    url: "./mex/dlgeneratemexgateway.html",
+    path: "./mex/dlgeneratemexgateway.html",
+    content: "Generates C MEX gateway (internal function).",
   },
   {
-    "title": "engClose",
-    "url": "./mex/engClose.html",
-    "path": "./mex/engClose.html",
-    "content": "Close Nelson engine session"
+    title: "engClose",
+    url: "./mex/engClose.html",
+    path: "./mex/engClose.html",
+    content: "Close Nelson engine session",
   },
   {
-    "title": "engEvalString",
-    "url": "./mex/engEvalString.html",
-    "path": "./mex/engEvalString.html",
-    "content": "Evaluate expression in string in base scope"
+    title: "engEvalString",
+    url: "./mex/engEvalString.html",
+    path: "./mex/engEvalString.html",
+    content: "Evaluate expression in string in base scope",
   },
   {
-    "title": "engGetVariable",
-    "url": "./mex/engGetVariable.html",
-    "path": "./mex/engGetVariable.html",
-    "content": "Copy variable from Nelson engine workspace"
+    title: "engGetVariable",
+    url: "./mex/engGetVariable.html",
+    path: "./mex/engGetVariable.html",
+    content: "Copy variable from Nelson engine workspace",
   },
   {
-    "title": "engGetVisible",
-    "url": "./mex/engGetVisible.html",
-    "path": "./mex/engGetVisible.html",
-    "content": "Determine visibility of Nelson engine session"
+    title: "engGetVisible",
+    url: "./mex/engGetVisible.html",
+    path: "./mex/engGetVisible.html",
+    content: "Determine visibility of Nelson engine session",
   },
   {
-    "title": "engOpen",
-    "url": "./mex/engOpen.html",
-    "path": "./mex/engOpen.html",
-    "content": "Start Nelson process"
+    title: "engOpen",
+    url: "./mex/engOpen.html",
+    path: "./mex/engOpen.html",
+    content: "Start Nelson process",
   },
   {
-    "title": "engOpenSingleUse",
-    "url": "./mex/engOpenSingleUse.html",
-    "path": "./mex/engOpenSingleUse.html",
-    "content": "Start Nelson engine session for single and nonshared use."
+    title: "engOpenSingleUse",
+    url: "./mex/engOpenSingleUse.html",
+    path: "./mex/engOpenSingleUse.html",
+    content: "Start Nelson engine session for single and nonshared use.",
   },
   {
-    "title": "engOutputBuffer",
-    "url": "./mex/engOutputBuffer.html",
-    "path": "./mex/engOutputBuffer.html",
-    "content": "Specify char buffer for Nelson output"
+    title: "engOutputBuffer",
+    url: "./mex/engOutputBuffer.html",
+    path: "./mex/engOutputBuffer.html",
+    content: "Specify char buffer for Nelson output",
   },
   {
-    "title": "engPutVariable",
-    "url": "./mex/engPutVariable.html",
-    "path": "./mex/engPutVariable.html",
-    "content": "Put variable into Nelson engine workspace"
+    title: "engPutVariable",
+    url: "./mex/engPutVariable.html",
+    path: "./mex/engPutVariable.html",
+    content: "Put variable into Nelson engine workspace",
   },
   {
-    "title": "engSetVisible",
-    "url": "./mex/engSetVisible.html",
-    "path": "./mex/engSetVisible.html",
-    "content": "Show or hide Nelson engine session"
+    title: "engSetVisible",
+    url: "./mex/engSetVisible.html",
+    path: "./mex/engSetVisible.html",
+    content: "Show or hide Nelson engine session",
   },
   {
-    "title": "mex",
-    "url": "./mex/mex.html",
-    "path": "./mex/mex.html",
-    "content": "Build MEX function"
+    title: "mex",
+    url: "./mex/mex.html",
+    path: "./mex/mex.html",
+    content: "Build MEX function",
   },
   {
-    "title": "mexAtExit",
-    "url": "./mex/mexAtExit.html",
-    "path": "./mex/mexAtExit.html",
-    "content": "Register a function to be called when the MEX-file is cleared or when Nelson exits"
+    title: "mexAtExit",
+    url: "./mex/mexAtExit.html",
+    path: "./mex/mexAtExit.html",
+    content:
+      "Register a function to be called when the MEX-file is cleared or when Nelson exits",
   },
   {
-    "title": "mexCallMATLAB",
-    "url": "./mex/mexCallMATLAB.html",
-    "path": "./mex/mexCallMATLAB.html",
-    "content": "Call a NELSON function"
+    title: "mexCallMATLAB",
+    url: "./mex/mexCallMATLAB.html",
+    path: "./mex/mexCallMATLAB.html",
+    content: "Call a NELSON function",
   },
   {
-    "title": "mexCallMATLABWithTrap",
-    "url": "./mex/mexCallMATLABWithTrap.html",
-    "path": "./mex/mexCallMATLABWithTrap.html",
-    "content": "Call a NELSON function and capture error."
+    title: "mexCallMATLABWithTrap",
+    url: "./mex/mexCallMATLABWithTrap.html",
+    path: "./mex/mexCallMATLABWithTrap.html",
+    content: "Call a NELSON function and capture error.",
   },
   {
-    "title": "mexext",
-    "url": "./mex/mexext.html",
-    "path": "./mex/mexext.html",
-    "content": "Binary MEX file-name extension"
+    title: "mexext",
+    url: "./mex/mexext.html",
+    path: "./mex/mexext.html",
+    content: "Binary MEX file-name extension",
   },
   {
-    "title": "Fortran to C",
-    "url": "./f2c/index.html",
-    "path": "sections/f2c",
-    "content": "<chapter_description> <p>The F2C module allows Nelson users to convert legacy Fortran 77 source files into C code.<\/p> <p>This enables seamless integration of older Fortran routines into Nelson workflows, supporting compilation, execution, and interaction with Nelson variables.<\/p> <p>It is particularly useful for leveraging existing numerical algorithms or legacy scientific codebases within a modern Nelson environment.<\/p> <\/chapter_description>"
+    title: "Fortran to C",
+    url: "./f2c/index.html",
+    path: "sections/f2c",
+    content:
+      "<chapter_description> <p>The F2C module allows Nelson users to convert legacy Fortran 77 source files into C code.</p> <p>This enables seamless integration of older Fortran routines into Nelson workflows, supporting compilation, execution, and interaction with Nelson variables.</p> <p>It is particularly useful for leveraging existing numerical algorithms or legacy scientific codebases within a modern Nelson environment.</p> </chapter_description>",
   },
   {
-    "title": "f2c",
-    "url": "./f2c/f2c.html",
-    "path": "./f2c/f2c.html",
-    "content": "Fortran to C converter."
+    title: "f2c",
+    url: "./f2c/f2c.html",
+    path: "./f2c/f2c.html",
+    content: "Fortran to C converter.",
   },
   {
-    "title": "NIG",
-    "url": "./nig/index.html",
-    "path": "sections/nig",
-    "content": "<chapter_description> <p>The NIG module provides tools to easily interface C or Fortran functions with Nelson.<\/p> <p>It simplifies the process of creating gateways that allow compiled routines to be called directly from Nelson scripts or functions, enabling high-performance computation and reuse of existing numerical libraries.<\/p> <\/chapter_description>"
+    title: "NIG",
+    url: "./nig/index.html",
+    path: "sections/nig",
+    content:
+      "<chapter_description> <p>The NIG module provides tools to easily interface C or Fortran functions with Nelson.</p> <p>It simplifies the process of creating gateways that allow compiled routines to be called directly from Nelson scripts or functions, enabling high-performance computation and reuse of existing numerical libraries.</p> </chapter_description>",
   },
   {
-    "title": "nig",
-    "url": "./nig/nig.html",
-    "path": "./nig/nig.html",
-    "content": "Nelson tool to interface C or Fortran functions with Nelson."
+    title: "nig",
+    url: "./nig/nig.html",
+    path: "./nig/nig.html",
+    content: "Nelson tool to interface C or Fortran functions with Nelson.",
   },
   {
-    "title": "Component Object Model (COM) Client Interface",
-    "url": "./com_engine/index.html",
-    "path": "sections/com_engine",
-    "content": "<chapter_description> <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.<\/p> <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.<\/p> <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.<\/p> <\/chapter_description>"
+    title: "Component Object Model (COM) Client Interface",
+    url: "./com_engine/index.html",
+    path: "sections/com_engine",
+    content:
+      "<chapter_description> <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p> <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p> <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p> </chapter_description>",
   },
   {
-    "title": "COM examples",
-    "url": "./com_engine/1_COM_examples.html",
-    "path": "./com_engine/1_COM_examples.html",
-    "content": "Some example to show how to use COM interface."
+    title: "COM examples",
+    url: "./com_engine/1_COM_examples.html",
+    path: "./com_engine/1_COM_examples.html",
+    content: "Some example to show how to use COM interface.",
   },
   {
-    "title": "COM_delete",
-    "url": "./com_engine/COM_delete.html",
-    "path": "./com_engine/COM_delete.html",
-    "content": "Removes COM control or server."
+    title: "COM_delete",
+    url: "./com_engine/COM_delete.html",
+    path: "./com_engine/COM_delete.html",
+    content: "Removes COM control or server.",
   },
   {
-    "title": "COM_fieldnames",
-    "url": "./com_engine/COM_fieldnames.html",
-    "path": "./com_engine/COM_fieldnames.html",
-    "content": "Returns the properties name of an COM object."
+    title: "COM_fieldnames",
+    url: "./com_engine/COM_fieldnames.html",
+    path: "./com_engine/COM_fieldnames.html",
+    content: "Returns the properties name of an COM object.",
   },
   {
-    "title": "COM_get",
-    "url": "./com_engine/COM_get.html",
-    "path": "./com_engine/COM_get.html",
-    "content": "Get property value from COM interface."
+    title: "COM_get",
+    url: "./com_engine/COM_get.html",
+    path: "./com_engine/COM_get.html",
+    content: "Get property value from COM interface.",
   },
   {
-    "title": "COM_invoke",
-    "url": "./com_engine/COM_invoke.html",
-    "path": "./com_engine/COM_invoke.html",
-    "content": "Invoke method on COM object or interface."
+    title: "COM_invoke",
+    url: "./com_engine/COM_invoke.html",
+    path: "./com_engine/COM_invoke.html",
+    content: "Invoke method on COM object or interface.",
   },
   {
-    "title": "COM_ismethod",
-    "url": "./com_engine/COM_ismethod.html",
-    "path": "./com_engine/COM_ismethod.html",
-    "content": "Determines if input is an existing COM object method."
+    title: "COM_ismethod",
+    url: "./com_engine/COM_ismethod.html",
+    path: "./com_engine/COM_ismethod.html",
+    content: "Determines if input is an existing COM object method.",
   },
   {
-    "title": "COM_isprop",
-    "url": "./com_engine/COM_isprop.html",
-    "path": "./com_engine/COM_isprop.html",
-    "content": "Determines if input is an existing COM object property."
+    title: "COM_isprop",
+    url: "./com_engine/COM_isprop.html",
+    path: "./com_engine/COM_isprop.html",
+    content: "Determines if input is an existing COM object property.",
   },
   {
-    "title": "COM_methods",
-    "url": "./com_engine/COM_methods.html",
-    "path": "./com_engine/COM_methods.html",
-    "content": "Returns the methods name of an COM object."
+    title: "COM_methods",
+    url: "./com_engine/COM_methods.html",
+    path: "./com_engine/COM_methods.html",
+    content: "Returns the methods name of an COM object.",
   },
   {
-    "title": "COM_range",
-    "url": "./com_engine/COM_range.html",
-    "path": "./com_engine/COM_range.html",
-    "content": "Private function: range helper."
+    title: "COM_range",
+    url: "./com_engine/COM_range.html",
+    path: "./com_engine/COM_range.html",
+    content: "Private function: range helper.",
   },
   {
-    "title": "COM_set",
-    "url": "./com_engine/COM_set.html",
-    "path": "./com_engine/COM_set.html",
-    "content": "Set object or interface property to specified value."
+    title: "COM_set",
+    url: "./com_engine/COM_set.html",
+    path: "./com_engine/COM_set.html",
+    content: "Set object or interface property to specified value.",
   },
   {
-    "title": "COM_used",
-    "url": "./com_engine/COM_used.html",
-    "path": "./com_engine/COM_used.html",
-    "content": "Returns list of current used COM handle."
+    title: "COM_used",
+    url: "./com_engine/COM_used.html",
+    path: "./com_engine/COM_used.html",
+    content: "Returns list of current used COM handle.",
   },
   {
-    "title": "COM_xlsfinfo",
-    "url": "./com_engine/COM_xlsfinfo.html",
-    "path": "./com_engine/COM_xlsfinfo.html",
-    "content": "Determines if file contains Microsoft Excel spreadsheet."
+    title: "COM_xlsfinfo",
+    url: "./com_engine/COM_xlsfinfo.html",
+    path: "./com_engine/COM_xlsfinfo.html",
+    content: "Determines if file contains Microsoft Excel spreadsheet.",
   },
   {
-    "title": "COM_xlsread",
-    "url": "./com_engine/COM_xlsread.html",
-    "path": "./com_engine/COM_xlsread.html",
-    "content": "Read Microsoft Excel spreadsheet file using COM."
+    title: "COM_xlsread",
+    url: "./com_engine/COM_xlsread.html",
+    path: "./com_engine/COM_xlsread.html",
+    content: "Read Microsoft Excel spreadsheet file using COM.",
   },
   {
-    "title": "COM_xlswrite",
-    "url": "./com_engine/COM_xlswrite.html",
-    "path": "./com_engine/COM_xlswrite.html",
-    "content": "Write Microsoft Excel spreadsheet file using COM."
+    title: "COM_xlswrite",
+    url: "./com_engine/COM_xlswrite.html",
+    path: "./com_engine/COM_xlswrite.html",
+    content: "Write Microsoft Excel spreadsheet file using COM.",
   },
   {
-    "title": "actxGetRunningServer",
-    "url": "./com_engine/actxGetRunningServer.html",
-    "path": "./com_engine/actxGetRunningServer.html",
-    "content": "Handle to running instance of Automation server."
+    title: "actxGetRunningServer",
+    url: "./com_engine/actxGetRunningServer.html",
+    path: "./com_engine/actxGetRunningServer.html",
+    content: "Handle to running instance of Automation server.",
   },
   {
-    "title": "actxcontrollist",
-    "url": "./com_engine/actxcontrollist.html",
-    "path": "./com_engine/actxcontrollist.html",
-    "content": "Get available ActiveX controls."
+    title: "actxcontrollist",
+    url: "./com_engine/actxcontrollist.html",
+    path: "./com_engine/actxcontrollist.html",
+    content: "Get available ActiveX controls.",
   },
   {
-    "title": "actxserver",
-    "url": "./com_engine/actxserver.html",
-    "path": "./com_engine/actxserver.html",
-    "content": "Creates COM server."
+    title: "actxserver",
+    url: "./com_engine/actxserver.html",
+    path: "./com_engine/actxserver.html",
+    content: "Creates COM server.",
   },
   {
-    "title": "actxserverlist",
-    "url": "./com_engine/actxserverlist.html",
-    "path": "./com_engine/actxserverlist.html",
-    "content": "Get available ActiveX servers."
+    title: "actxserverlist",
+    url: "./com_engine/actxserverlist.html",
+    path: "./com_engine/actxserverlist.html",
+    content: "Get available ActiveX servers.",
   },
   {
-    "title": "iscom",
-    "url": "./com_engine/iscom.html",
-    "path": "./com_engine/iscom.html",
-    "content": "Determine whether input is COM or ActiveX object."
+    title: "iscom",
+    url: "./com_engine/iscom.html",
+    path: "./com_engine/iscom.html",
+    content: "Determine whether input is COM or ActiveX object.",
   },
   {
-    "title": "Python engine",
-    "url": "./python_engine/index.html",
-    "path": "sections/python_engine",
-    "content": "<chapter_description> <p>The Python Engine module allows Nelson users to seamlessly interface with Python, leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.<\/p> <p>It provides functions to run Python code, manage interpreter environments, and exchange data between Nelson and Python.<\/p> <\/chapter_description>"
+    title: "Python engine",
+    url: "./python_engine/index.html",
+    path: "sections/python_engine",
+    content:
+      "<chapter_description> <p>The Python Engine module allows Nelson users to seamlessly interface with Python, leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.</p> <p>It provides functions to run Python code, manage interpreter environments, and exchange data between Nelson and Python.</p> </chapter_description>",
   },
   {
-    "title": "The power of calling Python from Nelson",
-    "url": "./python_engine/1_The_power_of_Python.html",
-    "path": "./python_engine/1_The_power_of_Python.html",
-    "content": ""
+    title: "The power of calling Python from Nelson",
+    url: "./python_engine/1_The_power_of_Python.html",
+    path: "./python_engine/1_The_power_of_Python.html",
+    content: "",
   },
   {
-    "title": "How to install python package",
-    "url": "./python_engine/2_How_to_install_python_package.html",
-    "path": "./python_engine/2_How_to_install_python_package.html",
-    "content": ""
+    title: "How to install python package",
+    url: "./python_engine/2_How_to_install_python_package.html",
+    path: "./python_engine/2_How_to_install_python_package.html",
+    content: "",
   },
   {
-    "title": "Python Nelson types",
-    "url": "./python_engine/3_python_types.html",
-    "path": "./python_engine/3_python_types.html",
-    "content": "Managing Data between Python and Nelson."
+    title: "Python Nelson types",
+    url: "./python_engine/3_python_types.html",
+    path: "./python_engine/3_python_types.html",
+    content: "Managing Data between Python and Nelson.",
   },
   {
-    "title": "Python operators",
-    "url": "./python_engine/4_python_overload.html",
-    "path": "./python_engine/4_python_overload.html",
-    "content": "The representation of Python operators in Nelson."
+    title: "Python operators",
+    url: "./python_engine/4_python_overload.html",
+    path: "./python_engine/4_python_overload.html",
+    content: "The representation of Python operators in Nelson.",
   },
   {
-    "title": "pyargs",
-    "url": "./python_engine/pyargs.html",
-    "path": "./python_engine/pyargs.html",
-    "content": "Change default environment of Python interpreter."
+    title: "pyargs",
+    url: "./python_engine/pyargs.html",
+    path: "./python_engine/pyargs.html",
+    content: "Change default environment of Python interpreter.",
   },
   {
-    "title": "pyenv",
-    "url": "./python_engine/pyenv.html",
-    "path": "./python_engine/pyenv.html",
-    "content": "Change default environment of Python interpreter."
+    title: "pyenv",
+    url: "./python_engine/pyenv.html",
+    path: "./python_engine/pyenv.html",
+    content: "Change default environment of Python interpreter.",
   },
   {
-    "title": "pyrun",
-    "url": "./python_engine/pyrun.html",
-    "path": "./python_engine/pyrun.html",
-    "content": "Run Python statements from Nelson."
+    title: "pyrun",
+    url: "./python_engine/pyrun.html",
+    path: "./python_engine/pyrun.html",
+    content: "Run Python statements from Nelson.",
   },
   {
-    "title": "pyrunfile",
-    "url": "./python_engine/pyrunfile.html",
-    "path": "./python_engine/pyrunfile.html",
-    "content": "Run Python file from Nelson."
+    title: "pyrunfile",
+    url: "./python_engine/pyrunfile.html",
+    path: "./python_engine/pyrunfile.html",
+    content: "Run Python file from Nelson.",
   },
   {
-    "title": "Julia engine",
-    "url": "./julia_engine/index.html",
-    "path": "sections/julia_engine",
-    "content": "<chapter_description> <p>The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.<\/p> <p>It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.<\/p> <\/chapter_description>"
+    title: "Julia engine",
+    url: "./julia_engine/index.html",
+    path: "sections/julia_engine",
+    content:
+      "<chapter_description> <p>The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.</p> <p>It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.</p> </chapter_description>",
   },
   {
-    "title": "jlenv",
-    "url": "./julia_engine/jlenv.html",
-    "path": "./julia_engine/jlenv.html",
-    "content": "Change default environment of Julia interpreter."
+    title: "jlenv",
+    url: "./julia_engine/jlenv.html",
+    path: "./julia_engine/jlenv.html",
+    content: "Change default environment of Julia interpreter.",
   },
   {
-    "title": "jlrun",
-    "url": "./julia_engine/jlrun.html",
-    "path": "./julia_engine/jlrun.html",
-    "content": "Run Julia statements from Nelson."
+    title: "jlrun",
+    url: "./julia_engine/jlrun.html",
+    path: "./julia_engine/jlrun.html",
+    content: "Run Julia statements from Nelson.",
   },
   {
-    "title": "jlrunfile",
-    "url": "./julia_engine/jlrunfile.html",
-    "path": "./julia_engine/jlrunfile.html",
-    "content": "Run Julia file from Nelson."
+    title: "jlrunfile",
+    url: "./julia_engine/jlrunfile.html",
+    path: "./julia_engine/jlrunfile.html",
+    content: "Run Julia file from Nelson.",
   },
   {
-    "title": "Julia Nelson types",
-    "url": "./julia_engine/julia_types.html",
-    "path": "./julia_engine/julia_types.html",
-    "content": "Managing Data between Julia and Nelson."
+    title: "Julia Nelson types",
+    url: "./julia_engine/julia_types.html",
+    path: "./julia_engine/julia_types.html",
+    content: "Managing Data between Julia and Nelson.",
   },
   {
-    "title": "History manager",
-    "url": "./history_manager/index.html",
-    "path": "sections/history_manager",
-    "content": "<chapter_description> <p>The History Manager module in Nelson provides tools to access and manage the command history of your session.<\/p> <p>It allows users to review previously executed commands, recall them for reuse, and maintain an organized workflow.<\/p> <\/chapter_description>"
+    title: "History manager",
+    url: "./history_manager/index.html",
+    path: "sections/history_manager",
+    content:
+      "<chapter_description> <p>The History Manager module in Nelson provides tools to access and manage the command history of your session.</p> <p>It allows users to review previously executed commands, recall them for reuse, and maintain an organized workflow.</p> </chapter_description>",
   },
   {
-    "title": "history",
-    "url": "./history_manager/history.html",
-    "path": "./history_manager/history.html",
-    "content": "history manager."
+    title: "history",
+    url: "./history_manager/history.html",
+    path: "./history_manager/history.html",
+    content: "history manager.",
   },
   {
-    "title": "Debugger functions",
-    "url": "./debugger/index.html",
-    "path": "sections/debugger",
-    "content": "<chapter_description> <p>The Debugger module in Nelson provides functions to inspect and analyze program execution.<\/p> <p>It is designed to help users identify errors, trace the flow of execution, and better understand the state of variables during runtime.<\/p> <\/chapter_description>"
+    title: "Debugger functions",
+    url: "./debugger/index.html",
+    path: "sections/debugger",
+    content:
+      "<chapter_description> <p>The Debugger module in Nelson provides functions to inspect and analyze program execution.</p> <p>It is designed to help users identify errors, trace the flow of execution, and better understand the state of variables during runtime.</p> </chapter_description>",
   },
   {
-    "title": "dbstack",
-    "url": "./debugger/dbstack.html",
-    "path": "./debugger/dbstack.html",
-    "content": "call stack."
+    title: "dbstack",
+    url: "./debugger/dbstack.html",
+    path: "./debugger/dbstack.html",
+    content: "call stack.",
   },
   {
-    "title": "Profiling tools",
-    "url": "./profiler/index.html",
-    "path": "sections/profiler",
-    "content": "<chapter_description> <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.<\/p> <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.<\/p> <\/chapter_description>"
+    title: "Profiling tools",
+    url: "./profiler/index.html",
+    path: "sections/profiler",
+    content:
+      "<chapter_description> <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.</p> <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.</p> </chapter_description>",
   },
   {
-    "title": "profile",
-    "url": "./profiler/profile.html",
-    "path": "./profiler/profile.html",
-    "content": "Profile execution time for Macro functions."
+    title: "profile",
+    url: "./profiler/profile.html",
+    path: "./profiler/profile.html",
+    content: "Profile execution time for Macro functions.",
   },
   {
-    "title": "profsave",
-    "url": "./profiler/profsave.html",
-    "path": "./profiler/profsave.html",
-    "content": "Save profile result to HTML format."
+    title: "profsave",
+    url: "./profiler/profsave.html",
+    path: "./profiler/profsave.html",
+    content: "Save profile result to HTML format.",
   },
   {
-    "title": "Tests framework for Nelson",
-    "url": "./tests_manager/index.html",
-    "path": "sections/tests_manager",
-    "content": "<chapter_description> <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.<\/p> <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.<\/p> <\/chapter_description>"
+    title: "Tests framework for Nelson",
+    url: "./tests_manager/index.html",
+    path: "sections/tests_manager",
+    content:
+      "<chapter_description> <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.</p> <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.</p> </chapter_description>",
   },
   {
-    "title": "test_makeref",
-    "url": "./tests_manager/test_makeref.html",
-    "path": "./tests_manager/test_makeref.html",
-    "content": "Creates a '.ref' file for a test"
+    title: "test_makeref",
+    url: "./tests_manager/test_makeref.html",
+    path: "./tests_manager/test_makeref.html",
+    content: "Creates a '.ref' file for a test",
   },
   {
-    "title": "test_run",
-    "url": "./tests_manager/test_run.html",
-    "path": "./tests_manager/test_run.html",
-    "content": "Runs tests"
+    title: "test_run",
+    url: "./tests_manager/test_run.html",
+    path: "./tests_manager/test_run.html",
+    content: "Runs tests",
   },
   {
-    "title": "skip_testsuite",
-    "url": "./tests_manager/test_skip_testsuite.html",
-    "path": "./tests_manager/test_skip_testsuite.html",
-    "content": "Skip test suite on condition"
+    title: "skip_testsuite",
+    url: "./tests_manager/test_skip_testsuite.html",
+    path: "./tests_manager/test_skip_testsuite.html",
+    content: "Skip test suite on condition",
   },
   {
-    "title": "Validators",
-    "url": "./validators/index.html",
-    "path": "sections/validators",
-    "content": "<chapter_description> <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.<\/p> <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.<\/p> <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.<\/p> <\/chapter_description>"
+    title: "Validators",
+    url: "./validators/index.html",
+    path: "sections/validators",
+    content:
+      "<chapter_description> <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p> <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p> <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p> </chapter_description>",
   },
   {
-    "title": "mustBeA",
-    "url": "./validators/mustBeA.html",
-    "path": "./validators/mustBeA.html",
-    "content": "Checks that input value comes from one of specified classes."
+    title: "mustBeA",
+    url: "./validators/mustBeA.html",
+    path: "./validators/mustBeA.html",
+    content: "Checks that input value comes from one of specified classes.",
   },
   {
-    "title": "mustBeColumn",
-    "url": "./validators/mustBeColumn.html",
-    "path": "./validators/mustBeColumn.html",
-    "content": "Checks that value is a column vector or raise an error."
+    title: "mustBeColumn",
+    url: "./validators/mustBeColumn.html",
+    path: "./validators/mustBeColumn.html",
+    content: "Checks that value is a column vector or raise an error.",
   },
   {
-    "title": "mustBeFile",
-    "url": "./validators/mustBeFile.html",
-    "path": "./validators/mustBeFile.html",
-    "content": "Checks that input path refers to file."
+    title: "mustBeFile",
+    url: "./validators/mustBeFile.html",
+    path: "./validators/mustBeFile.html",
+    content: "Checks that input path refers to file.",
   },
   {
-    "title": "mustBeFinite",
-    "url": "./validators/mustBeFinite.html",
-    "path": "./validators/mustBeFinite.html",
-    "content": "Checks that value is finite or raise an error."
+    title: "mustBeFinite",
+    url: "./validators/mustBeFinite.html",
+    path: "./validators/mustBeFinite.html",
+    content: "Checks that value is finite or raise an error.",
   },
   {
-    "title": "mustBeFloat",
-    "url": "./validators/mustBeFloat.html",
-    "path": "./validators/mustBeFloat.html",
-    "content": "Checks that value is floating-point or raise an error."
+    title: "mustBeFloat",
+    url: "./validators/mustBeFloat.html",
+    path: "./validators/mustBeFloat.html",
+    content: "Checks that value is floating-point or raise an error.",
   },
   {
-    "title": "mustBeFolder",
-    "url": "./validators/mustBeFolder.html",
-    "path": "./validators/mustBeFolder.html",
-    "content": "Checks that input path refers to folder."
+    title: "mustBeFolder",
+    url: "./validators/mustBeFolder.html",
+    path: "./validators/mustBeFolder.html",
+    content: "Checks that input path refers to folder.",
   },
   {
-    "title": "mustBeGreaterThan",
-    "url": "./validators/mustBeGreaterThan.html",
-    "path": "./validators/mustBeGreaterThan.html",
-    "content": "Checks that value is greater than another value or issue error."
+    title: "mustBeGreaterThan",
+    url: "./validators/mustBeGreaterThan.html",
+    path: "./validators/mustBeGreaterThan.html",
+    content: "Checks that value is greater than another value or issue error.",
   },
   {
-    "title": "mustBeGreaterThanOrEqual",
-    "url": "./validators/mustBeGreaterThanOrEqual.html",
-    "path": "./validators/mustBeGreaterThanOrEqual.html",
-    "content": "Checks that value is greater than or equal to another value or issue error."
+    title: "mustBeGreaterThanOrEqual",
+    url: "./validators/mustBeGreaterThanOrEqual.html",
+    path: "./validators/mustBeGreaterThanOrEqual.html",
+    content:
+      "Checks that value is greater than or equal to another value or issue error.",
   },
   {
-    "title": "mustBeInRange",
-    "url": "./validators/mustBeInRange.html",
-    "path": "./validators/mustBeInRange.html",
-    "content": "Checks that value is in the specified range."
+    title: "mustBeInRange",
+    url: "./validators/mustBeInRange.html",
+    path: "./validators/mustBeInRange.html",
+    content: "Checks that value is in the specified range.",
   },
   {
-    "title": "mustBeInteger",
-    "url": "./validators/mustBeInteger.html",
-    "path": "./validators/mustBeInteger.html",
-    "content": "Checks that value is integer or raise an error."
+    title: "mustBeInteger",
+    url: "./validators/mustBeInteger.html",
+    path: "./validators/mustBeInteger.html",
+    content: "Checks that value is integer or raise an error.",
   },
   {
-    "title": "mustBeLessThan",
-    "url": "./validators/mustBeLessThan.html",
-    "path": "./validators/mustBeLessThan.html",
-    "content": "Checks that value is less than another value or issue error."
+    title: "mustBeLessThan",
+    url: "./validators/mustBeLessThan.html",
+    path: "./validators/mustBeLessThan.html",
+    content: "Checks that value is less than another value or issue error.",
   },
   {
-    "title": "mustBeLessThanOrEqual",
-    "url": "./validators/mustBeLessThanOrEqual.html",
-    "path": "./validators/mustBeLessThanOrEqual.html",
-    "content": "Checks that value is less than or equal to another value or issue error."
+    title: "mustBeLessThanOrEqual",
+    url: "./validators/mustBeLessThanOrEqual.html",
+    path: "./validators/mustBeLessThanOrEqual.html",
+    content:
+      "Checks that value is less than or equal to another value or issue error.",
   },
   {
-    "title": "mustBeLogical",
-    "url": "./validators/mustBeLogical.html",
-    "path": "./validators/mustBeLogical.html",
-    "content": "Checks that value is logical or raise an error."
+    title: "mustBeLogical",
+    url: "./validators/mustBeLogical.html",
+    path: "./validators/mustBeLogical.html",
+    content: "Checks that value is logical or raise an error.",
   },
   {
-    "title": "mustBeLogicalScalar",
-    "url": "./validators/mustBeLogicalScalar.html",
-    "path": "./validators/mustBeLogicalScalar.html",
-    "content": "Checks that value is logical scalar or raise an error."
+    title: "mustBeLogicalScalar",
+    url: "./validators/mustBeLogicalScalar.html",
+    path: "./validators/mustBeLogicalScalar.html",
+    content: "Checks that value is logical scalar or raise an error.",
   },
   {
-    "title": "mustBeMatrix",
-    "url": "./validators/mustBeMatrix.html",
-    "path": "./validators/mustBeMatrix.html",
-    "content": "Checks that value is a matrix or raise an error."
+    title: "mustBeMatrix",
+    url: "./validators/mustBeMatrix.html",
+    path: "./validators/mustBeMatrix.html",
+    content: "Checks that value is a matrix or raise an error.",
   },
   {
-    "title": "mustBeMember",
-    "url": "./validators/mustBeMember.html",
-    "path": "./validators/mustBeMember.html",
-    "content": "Checks that value is member of specified array or issue error."
+    title: "mustBeMember",
+    url: "./validators/mustBeMember.html",
+    path: "./validators/mustBeMember.html",
+    content: "Checks that value is member of specified array or issue error.",
   },
   {
-    "title": "mustBeNegative",
-    "url": "./validators/mustBeNegative.html",
-    "path": "./validators/mustBeNegative.html",
-    "content": "Checks that value is negative or raise an error."
+    title: "mustBeNegative",
+    url: "./validators/mustBeNegative.html",
+    path: "./validators/mustBeNegative.html",
+    content: "Checks that value is negative or raise an error.",
   },
   {
-    "title": "mustBeNonNan",
-    "url": "./validators/mustBeNonNan.html",
-    "path": "./validators/mustBeNonNan.html",
-    "content": "Checks that value is not NaN."
+    title: "mustBeNonNan",
+    url: "./validators/mustBeNonNan.html",
+    path: "./validators/mustBeNonNan.html",
+    content: "Checks that value is not NaN.",
   },
   {
-    "title": "mustBeNonSparse",
-    "url": "./validators/mustBeNonSparse.html",
-    "path": "./validators/mustBeNonSparse.html",
-    "content": "Checks that value is not sparse."
+    title: "mustBeNonSparse",
+    url: "./validators/mustBeNonSparse.html",
+    path: "./validators/mustBeNonSparse.html",
+    content: "Checks that value is not sparse.",
   },
   {
-    "title": "mustBeNonZero",
-    "url": "./validators/mustBeNonZero.html",
-    "path": "./validators/mustBeNonZero.html",
-    "content": "Checks that value is not zero."
+    title: "mustBeNonZero",
+    url: "./validators/mustBeNonZero.html",
+    path: "./validators/mustBeNonZero.html",
+    content: "Checks that value is not zero.",
   },
   {
-    "title": "mustBeNonempty",
-    "url": "./validators/mustBeNonempty.html",
-    "path": "./validators/mustBeNonempty.html",
-    "content": "Checks that value is nonempty or raise an error."
+    title: "mustBeNonempty",
+    url: "./validators/mustBeNonempty.html",
+    path: "./validators/mustBeNonempty.html",
+    content: "Checks that value is nonempty or raise an error.",
   },
   {
-    "title": "mustBeNonmissing",
-    "url": "./validators/mustBeNonmissing.html",
-    "path": "./validators/mustBeNonmissing.html",
-    "content": "Checks that value is not missing."
+    title: "mustBeNonmissing",
+    url: "./validators/mustBeNonmissing.html",
+    path: "./validators/mustBeNonmissing.html",
+    content: "Checks that value is not missing.",
   },
   {
-    "title": "mustBeNonnegative",
-    "url": "./validators/mustBeNonnegative.html",
-    "path": "./validators/mustBeNonnegative.html",
-    "content": "Checks that value is nonnegative or raise an error."
+    title: "mustBeNonnegative",
+    url: "./validators/mustBeNonnegative.html",
+    path: "./validators/mustBeNonnegative.html",
+    content: "Checks that value is nonnegative or raise an error.",
   },
   {
-    "title": "mustBeNonpositive",
-    "url": "./validators/mustBeNonpositive.html",
-    "path": "./validators/mustBeNonpositive.html",
-    "content": "Checks that value is non positive or raise an error."
+    title: "mustBeNonpositive",
+    url: "./validators/mustBeNonpositive.html",
+    path: "./validators/mustBeNonpositive.html",
+    content: "Checks that value is non positive or raise an error.",
   },
   {
-    "title": "mustBeNonzeroLengthText",
-    "url": "./validators/mustBeNonzeroLengthText.html",
-    "path": "./validators/mustBeNonzeroLengthText.html",
-    "content": "Checks that value is text with nonzero length or raise an error."
+    title: "mustBeNonzeroLengthText",
+    url: "./validators/mustBeNonzeroLengthText.html",
+    path: "./validators/mustBeNonzeroLengthText.html",
+    content: "Checks that value is text with nonzero length or raise an error.",
   },
   {
-    "title": "mustBeNumeric",
-    "url": "./validators/mustBeNumeric.html",
-    "path": "./validators/mustBeNumeric.html",
-    "content": "Checks that value is numeric or raise an error."
+    title: "mustBeNumeric",
+    url: "./validators/mustBeNumeric.html",
+    path: "./validators/mustBeNumeric.html",
+    content: "Checks that value is numeric or raise an error.",
   },
   {
-    "title": "mustBeNumericOrLogical",
-    "url": "./validators/mustBeNumericOrLogical.html",
-    "path": "./validators/mustBeNumericOrLogical.html",
-    "content": "Checks that input is numeric or logical."
+    title: "mustBeNumericOrLogical",
+    url: "./validators/mustBeNumericOrLogical.html",
+    path: "./validators/mustBeNumericOrLogical.html",
+    content: "Checks that input is numeric or logical.",
   },
   {
-    "title": "mustBePositive",
-    "url": "./validators/mustBePositive.html",
-    "path": "./validators/mustBePositive.html",
-    "content": "Checks that value is positive or raise an error."
+    title: "mustBePositive",
+    url: "./validators/mustBePositive.html",
+    path: "./validators/mustBePositive.html",
+    content: "Checks that value is positive or raise an error.",
   },
   {
-    "title": "mustBeReal",
-    "url": "./validators/mustBeReal.html",
-    "path": "./validators/mustBeReal.html",
-    "content": "Checks that value is real."
+    title: "mustBeReal",
+    url: "./validators/mustBeReal.html",
+    path: "./validators/mustBeReal.html",
+    content: "Checks that value is real.",
   },
   {
-    "title": "mustBeRow",
-    "url": "./validators/mustBeRow.html",
-    "path": "./validators/mustBeRow.html",
-    "content": "Checks that value is a row vector or raise an error."
+    title: "mustBeRow",
+    url: "./validators/mustBeRow.html",
+    path: "./validators/mustBeRow.html",
+    content: "Checks that value is a row vector or raise an error.",
   },
   {
-    "title": "mustBeScalarOrEmpty",
-    "url": "./validators/mustBeScalarOrEmpty.html",
-    "path": "./validators/mustBeScalarOrEmpty.html",
-    "content": "Checks that value is scalar or empty or raise an error."
+    title: "mustBeScalarOrEmpty",
+    url: "./validators/mustBeScalarOrEmpty.html",
+    path: "./validators/mustBeScalarOrEmpty.html",
+    content: "Checks that value is scalar or empty or raise an error.",
   },
   {
-    "title": "mustBeSparse",
-    "url": "./validators/mustBeSparse.html",
-    "path": "./validators/mustBeSparse.html",
-    "content": "Checks that value is a sparse matrix or raise an error."
+    title: "mustBeSparse",
+    url: "./validators/mustBeSparse.html",
+    path: "./validators/mustBeSparse.html",
+    content: "Checks that value is a sparse matrix or raise an error.",
   },
   {
-    "title": "mustBeText",
-    "url": "./validators/mustBeText.html",
-    "path": "./validators/mustBeText.html",
-    "content": "Checks that value is piece of text or raise an error."
+    title: "mustBeText",
+    url: "./validators/mustBeText.html",
+    path: "./validators/mustBeText.html",
+    content: "Checks that value is piece of text or raise an error.",
   },
   {
-    "title": "mustBeTextScalar",
-    "url": "./validators/mustBeTextScalar.html",
-    "path": "./validators/mustBeTextScalar.html",
-    "content": "Checks that value is single piece of text or raise an error."
+    title: "mustBeTextScalar",
+    url: "./validators/mustBeTextScalar.html",
+    path: "./validators/mustBeTextScalar.html",
+    content: "Checks that value is single piece of text or raise an error.",
   },
   {
-    "title": "mustBeValidVariableName",
-    "url": "./validators/mustBeValidVariableName.html",
-    "path": "./validators/mustBeValidVariableName.html",
-    "content": "Checks that value is valid variable name or raise an error."
+    title: "mustBeValidVariableName",
+    url: "./validators/mustBeValidVariableName.html",
+    path: "./validators/mustBeValidVariableName.html",
+    content: "Checks that value is valid variable name or raise an error.",
   },
   {
-    "title": "mustBeVector",
-    "url": "./validators/mustBeVector.html",
-    "path": "./validators/mustBeVector.html",
-    "content": "Checks that value is vector or raise an error."
+    title: "mustBeVector",
+    url: "./validators/mustBeVector.html",
+    path: "./validators/mustBeVector.html",
+    content: "Checks that value is vector or raise an error.",
   },
   {
-    "title": "Assertion functions",
-    "url": "./assert_functions/index.html",
-    "path": "sections/assert_functions",
-    "content": "<chapter_description> <p>The Asserts Functions module in Nelson provides tools for validating program behavior and verifying conditions during development or testing.<\/p> <p>These functions help ensure that computations and logical conditions meet expected criteria, improving code reliability and catching errors early.<\/p> <\/chapter_description>"
+    title: "Assertion functions",
+    url: "./assert_functions/index.html",
+    path: "sections/assert_functions",
+    content:
+      "<chapter_description> <p>The Asserts Functions module in Nelson provides tools for validating program behavior and verifying conditions during development or testing.</p> <p>These functions help ensure that computations and logical conditions meet expected criteria, improving code reliability and catching errors early.</p> </chapter_description>",
   },
   {
-    "title": "assert",
-    "url": "./assert_functions/assert.html",
-    "path": "./assert_functions/assert.html",
-    "content": "Check that condition is true."
+    title: "assert",
+    url: "./assert_functions/assert.html",
+    path: "./assert_functions/assert.html",
+    content: "Check that condition is true.",
   },
   {
-    "title": "assert_checkerror",
-    "url": "./assert_functions/assert_checkerror.html",
-    "path": "./assert_functions/assert_checkerror.html",
-    "content": "Check that an command raises the expected error."
+    title: "assert_checkerror",
+    url: "./assert_functions/assert_checkerror.html",
+    path: "./assert_functions/assert_checkerror.html",
+    content: "Check that an command raises the expected error.",
   },
   {
-    "title": "assert_isapprox",
-    "url": "./assert_functions/assert_isapprox.html",
-    "path": "./assert_functions/assert_isapprox.html",
-    "content": "Check that computed and expected values are approximately equal."
+    title: "assert_isapprox",
+    url: "./assert_functions/assert_isapprox.html",
+    path: "./assert_functions/assert_isapprox.html",
+    content: "Check that computed and expected values are approximately equal.",
   },
   {
-    "title": "assert_isequal",
-    "url": "./assert_functions/assert_isequal.html",
-    "path": "./assert_functions/assert_isequal.html",
-    "content": "Check that computed and expected values are equal."
+    title: "assert_isequal",
+    url: "./assert_functions/assert_isequal.html",
+    path: "./assert_functions/assert_isequal.html",
+    content: "Check that computed and expected values are equal.",
   },
   {
-    "title": "assert_isfalse",
-    "url": "./assert_functions/assert_isfalse.html",
-    "path": "./assert_functions/assert_isfalse.html",
-    "content": "Check that condition is false."
+    title: "assert_isfalse",
+    url: "./assert_functions/assert_isfalse.html",
+    path: "./assert_functions/assert_isfalse.html",
+    content: "Check that condition is false.",
   },
   {
-    "title": "assert_istrue",
-    "url": "./assert_functions/assert_istrue.html",
-    "path": "./assert_functions/assert_istrue.html",
-    "content": "Check that condition is true."
+    title: "assert_istrue",
+    url: "./assert_functions/assert_istrue.html",
+    path: "./assert_functions/assert_istrue.html",
+    content: "Check that condition is true.",
   },
   {
-    "title": "Documentation and Help Management",
-    "url": "./help_tools/index.html",
-    "path": "sections/help_tools",
-    "content": "<chapter_description> <p>The Help Tools module provides functions to create, convert, and manage documentation for Nelson.<\/p> <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF, and website-ready formats, enabling developers to maintain and distribute comprehensive documentation efficiently.<\/p> <\/chapter_description>"
+    title: "Documentation and Help Management",
+    url: "./help_tools/index.html",
+    path: "sections/help_tools",
+    content:
+      "<chapter_description> <p>The Help Tools module provides functions to create, convert, and manage documentation for Nelson.</p> <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF, and website-ready formats, enabling developers to maintain and distribute comprehensive documentation efficiently.</p> </chapter_description>",
   },
   {
-    "title": "buildhelp",
-    "url": "./help_tools/buildhelp.html",
-    "path": "./help_tools/buildhelp.html",
-    "content": "Build help of Nelson's modules."
+    title: "buildhelp",
+    url: "./help_tools/buildhelp.html",
+    path: "./help_tools/buildhelp.html",
+    content: "Build help of Nelson's modules.",
   },
   {
-    "title": "buildhelpmd",
-    "url": "./help_tools/buildhelpmd.html",
-    "path": "./help_tools/buildhelpmd.html",
-    "content": "Build help of Nelson's modules for GitBook."
+    title: "buildhelpmd",
+    url: "./help_tools/buildhelpmd.html",
+    path: "./help_tools/buildhelpmd.html",
+    content: "Build help of Nelson's modules for GitBook.",
   },
   {
-    "title": "buildhelpweb",
-    "url": "./help_tools/buildhelpweb.html",
-    "path": "./help_tools/buildhelpweb.html",
-    "content": "Build help of Nelson's modules for website."
+    title: "buildhelpweb",
+    url: "./help_tools/buildhelpweb.html",
+    path: "./help_tools/buildhelpweb.html",
+    content: "Build help of Nelson's modules for website.",
   },
   {
-    "title": "doc",
-    "url": "./help_tools/doc.html",
-    "path": "./help_tools/doc.html",
-    "content": "Displays documentation."
+    title: "doc",
+    url: "./help_tools/doc.html",
+    path: "./help_tools/doc.html",
+    content: "Displays documentation.",
   },
   {
-    "title": "docroot",
-    "url": "./help_tools/docroot.html",
-    "path": "./help_tools/docroot.html",
-    "content": "Retrieve or update the root directory for Nelson Help system."
+    title: "docroot",
+    url: "./help_tools/docroot.html",
+    path: "./help_tools/docroot.html",
+    content: "Retrieve or update the root directory for Nelson Help system.",
   },
   {
-    "title": "headcomments",
-    "url": "./help_tools/headcomments.html",
-    "path": "./help_tools/headcomments.html",
-    "content": "Display Nelson function header comments."
+    title: "headcomments",
+    url: "./help_tools/headcomments.html",
+    path: "./help_tools/headcomments.html",
+    content: "Display Nelson function header comments.",
   },
   {
-    "title": "htmltopdf",
-    "url": "./help_tools/htmltopdf.html",
-    "path": "./help_tools/htmltopdf.html",
-    "content": "Convers html page to pdf."
+    title: "htmltopdf",
+    url: "./help_tools/htmltopdf.html",
+    path: "./help_tools/htmltopdf.html",
+    content: "Convers html page to pdf.",
   },
   {
-    "title": "markdown",
-    "url": "./help_tools/markdown.html",
-    "path": "./help_tools/markdown.html",
-    "content": "Converts markdown to html."
+    title: "markdown",
+    url: "./help_tools/markdown.html",
+    path: "./help_tools/markdown.html",
+    content: "Converts markdown to html.",
   },
   {
-    "title": "xmldocbuild",
-    "url": "./help_tools/xmldocbuild.html",
-    "path": "./help_tools/xmldocbuild.html",
-    "content": "Internal function to convert xml document files to html."
+    title: "xmldocbuild",
+    url: "./help_tools/xmldocbuild.html",
+    path: "./help_tools/xmldocbuild.html",
+    content: "Internal function to convert xml document files to html.",
   },
   {
-    "title": "xmldocchecker",
-    "url": "./help_tools/xmldocchecker.html",
-    "path": "./help_tools/xmldocchecker.html",
-    "content": "Checks a xml documentation file."
+    title: "xmldocchecker",
+    url: "./help_tools/xmldocchecker.html",
+    path: "./help_tools/xmldocchecker.html",
+    content: "Checks a xml documentation file.",
   },
   {
-    "title": "xmldoctohelp",
-    "url": "./help_tools/xmldoctohelp.html",
-    "path": "./help_tools/xmldoctohelp.html",
-    "content": "Converts xml Nelson help files to Nelson format."
+    title: "xmldoctohelp",
+    url: "./help_tools/xmldoctohelp.html",
+    path: "./help_tools/xmldoctohelp.html",
+    content: "Converts xml Nelson help files to Nelson format.",
   },
   {
-    "title": "xmldoctohtml",
-    "url": "./help_tools/xmldoctohtml.html",
-    "path": "./help_tools/xmldoctohtml.html",
-    "content": "Converts xml Nelson help files to html."
+    title: "xmldoctohtml",
+    url: "./help_tools/xmldoctohtml.html",
+    path: "./help_tools/xmldoctohtml.html",
+    content: "Converts xml Nelson help files to html.",
   },
   {
-    "title": "xmldoctomd",
-    "url": "./help_tools/xmldoctomd.html",
-    "path": "./help_tools/xmldoctomd.html",
-    "content": "Converts xml Nelson help files to markdown format."
-  }
+    title: "xmldoctomd",
+    url: "./help_tools/xmldoctomd.html",
+    path: "./help_tools/xmldoctomd.html",
+    content: "Converts xml Nelson help files to markdown format.",
+  },
 ];
