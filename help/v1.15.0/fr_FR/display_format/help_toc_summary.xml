@@ -2,18 +2,18 @@
 <help_summary>
   <toc>
     <module>display_format</module>
-    <section name="Display format">
+    <section name="Format d'affichage">
       <chapter_description>
-		<p>The Display Format module defines how values, variables, and expressions are presented in Nelson.</p>
-		<p>It offers control over numeric formatting, text representation, and the way results are shown in the console.</p>
-		<p>The module also provides mechanisms for capturing formatted output programmatically, enabling both human-readable display and programmatic handling of results.</p>
-		<p>This ensures flexibility in how information is presented and reused within scripts and applications.</p>
-	</chapter_description>
-      <keyword name="disp" link="disp.html" description="Display a variable."/>
-      <keyword name="display" link="display.html" description="Show information about variable or result of expression."/>
-      <keyword name="echo" link="echo.html" description="Controls the echoing during their execution."/>
-      <keyword name="format" link="format.html" description="Display format and number printing."/>
-      <keyword name="formattedDisplayText" link="formattedDisplayText.html" description="Capture display output as string."/>
+		<p>Le module Format d'affichage définit la manière dont les valeurs, variables et expressions sont présentées dans Nelson.</p>
+		<p>Il offre un contrôle sur le formatage numérique, la représentation du texte et la façon dont les résultats sont affichés dans la console.</p>
+		<p>Le module fournit également des mécanismes pour capturer la sortie formatée de manière programmatique, permettant à la fois un affichage lisible par l'humain et un traitement programmatique des résultats.</p>
+		<p>Cela garantit une grande flexibilité dans la présentation et la réutilisation des informations au sein de scripts et d'applications.</p>
+		</chapter_description>
+      <keyword name="disp" link="disp.html" description="Afficher une variable."/>
+      <keyword name="display" link="display.html" description="Afficher des informations sur une variable ou le résultat d'une expression."/>
+      <keyword name="echo" link="echo.html" description="Contrôle l'écho lors de l'exécution des scripts."/>
+      <keyword name="format" link="format.html" description="Format d'affichage et impression des nombres."/>
+      <keyword name="formattedDisplayText" link="formattedDisplayText.html" description="Capturer la sortie d'affichage en tant que chaîne."/>
     </section>
   </toc>
 </help_summary>

@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">scatter</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Scatter plot.</div></div>
+<div class="section syntax-section"><div class="subtitle">Nuage de points.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">scatter(x, y)
 scatter(x, y, sz)
 scatter(x, y, sz, c)
@@ -62,171 +61,246 @@ s = scatter(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">sz</td>
-<td>Marker size: numeric scalar, vector, [] (default: 36)</td>
+<td>Taille du marqueur : scalaire numérique, vecteur, [] (par défaut : 36)</td>
 </tr>
 <tr>
 <td class="param-name">c</td>
-<td>Marker color: short color name, color name, RGB triplet or vector of colormap indices</td>
+<td>Couleur du marqueur : nom court de couleur, nom de couleur, triplet RGB
+                                ou vecteur d'indices de la carte de couleurs</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Un objet graphique scalaire : conteneur parent,
+                                spécifié comme axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character. see help of 'line' for property list.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères. Voir l'aide de
+                                'line' pour la liste des propriétés.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">s</td>
-<td>a graphics object: scatter type or array of scatter.</td>
+<td>Un objet graphique : type scatter ou tableau de scatter.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>scatter(x, y)</b> generates a scatter plot by placing circular markers at the coordinates defined by the vectors <b>x</b> and <b>y</b>.</p>
-            <p>If you intend to display a single dataset, ensure that both <b>x</b> and <b>y</b> are vectors of the same length.</p>
-            <p>To visualize multiple datasets on a shared set of axes, you can achieve this by using a matrix for either <b>x</b> or <b>y</b>, while keeping the other as a vector.</p>
-            <p>This allows you to overlay or compare multiple datasets within the same plot.</p>
-            <p></p>
-            <p></p>
-            <p>Scatter Properties:</p>
-            <p></p>
-            <p>Scatter Properties:</p>
-            <p></p>
-            <p>
-                <b>AlphaData</b>: Marker face transparency, 1 (default) or array the same size as <b>XData</b>
-            </p>
-            <p>
-                <b>BeingDeleted</b>: Flag indicating that the object is being deleted.</p>
                 <p>
-                    <b>BusyAction</b>: Callback queuing specified as 'queue' (default) or 'cancel'. The property determines how Nelson handles the execution of interrupting callbacks.</p>
-                    <p>
-                        <b>CData</b> Marker colors: [] (default), RGB triplet, matrix of RGB triplets or vector.</p>
-                        <p>marker color to use for each data series:</p>
-                        <p>
-                            <b>'k'</b>, <b>'black'</b>: Color Black</p>
-                            <p>
-                                <b>'y'</b>, <b>'yellow'</b>: Color Yellow</p>
-                                <p>
-                                    <b>'m'</b>, <b>'magenta'</b>: Color Magenta</p>
-                                    <p>
-                                        <b>'c'</b>, <b>'cyan'</b>: Color Cyan</p>
-                                        <p>
-                                            <b>'r'</b>, <b>'red'</b>: Color Red</p>
-                                            <p>
-                                                <b>'b'</b>, <b>'blue'</b>: Color Blue</p>
-                                                <p>
-                                                    <b>'g'</b>, <b>'green'</b>: Color Green</p>
-                                                    <p></p>
-                                                    <p>
-                                                        <b>CDataMode</b> Selection mode for CData: 'manual', 'auto' (default).</p>
-                                                        <p>
-                                                            <b>Children</b>: Children.</p>
-                                                            <p>
-                                                                <b>CreateFcn</b>: Component creation function.</p>
-                                                                <p>
-                                                                    <b>DeleteFcn</b>: Component deletion function.</p>
-                                                                    <p>
-                                                                        <b>DisplayName</b> Legend label: character vector or string scalar, '' (default).</p>
-                                                                        <p>
-                                                                            <b>Interruptible</b>: Callback interruption 'on' (default).</p>
-                                                                            <p>
-                                                                                <b>LineWidth</b> Line width: scalar positive value.</p>
-                                                                                <p>
-                                                                                    <b>Marker</b>Marker symbol:</p>
-                                                                                    <p>marker specifies the symbol to be drawn at each data point:</p>
-                                                                                    <p>
-                                                                                        <b>'o'</b>: Circle symbol</p>
-                                                                                        <p>
-                                                                                            <b>'x'</b>: Times symbol</p>
-                                                                                            <p>
-                                                                                                <b>'+'</b>: Plus symbol</p>
-                                                                                                <p>
-                                                                                                    <b>'*'</b>: Asterisk symbol</p>
-                                                                                                    <p>
-                                                                                                        <b>'.'</b>: Dot symbol</p>
-                                                                                                        <p>
-                                                                                                            <b>'s'</b>: Square symbol</p>
-                                                                                                            <p>
-                                                                                                                <b>'d'</b>: Diamond symbol</p>
-                                                                                                                <p>
-                                                                                                                    <b>'v'</b>: Downward-pointing triangle symbol</p>
-                                                                                                                    <p>
-                                                                                                                        <b>'^'</b>: Upward-pointing triangle symbol</p>
-                                                                                                                        <p>
-                                                                                                                            <b>'&gt;'</b>: Left-pointing triangle symbol</p>
-                                                                                                                            <p>
-                                                                                                                                <b>'&lt;'</b>: Right-pointing triangle symbol</p>
-                                                                                                                                <p></p>
-                                                                                                                                <p>
-                                                                                                                                    <b>MarkerEdgeColor</b> Marker outline color: RGB triplet.</p>
-                                                                                                                                    <p>
-                                                                                                                                        <b>MarkerEdgeAlpha</b> Marker edge transparency: scalar in range [0,1], 'flat or 1 (default).</p>
-                                                                                                                                        <p>To assign distinct transparency values to the edges of each point in a plot, set the AlphaData property to a vector matching the size of the <b>XData</b> property and set the <b>MarkerEdgeAlpha</b> property to <b>'flat'</b>.</p>
-                                                                                                                                        <p>
-                                                                                                                                            <b>MarkerFaceColor</b> Marker fill color: RGB triplet.</p>
-                                                                                                                                            <p>
-                                                                                                                                                <b>MarkerFaceAlpha</b> Marker face transparency: scalar in range [0,1], 'flat or 1 (default).</p>
-                                                                                                                                                <p>To assign distinct transparency values to the faces of each point in a plot, set the AlphaData property to a vector matching the size of the <b>XData</b> property and set the <b>MarkerFaceAlpha</b> property to <b>'flat'</b>.</p>
-                                                                                                                                                <p>
-                                                                                                                                                    <b>Parent</b> Parent container: Figure graphics object.</p>
-                                                                                                                                                    <p>
-                                                                                                                                                        <b>SizeData</b>: Marker sizes:[] (default), scalar or vector.</p>
-                                                                                                                                                        <p>
-                                                                                                                                                            <b>Tag</b> Object identifier: character vector, string scalar or '' (default).</p>
-                                                                                                                                                            <p>
-                                                                                                                                                                <b>Type</b>: Type of graphics object 'scatter'.</p>
-                                                                                                                                                                <p>
-                                                                                                                                                                    <b>UserData</b> User data: array or []</p>
-                                                                                                                                                                    <p>
-                                                                                                                                                                        <b>Visible</b> State of visibility: 'on' (default) or 'off'.</p>
-                                                                                                                                                                        <p>
-                                                                                                                                                                            <b>XData</b>: x values: vector or matrix or [] (default).</p>
-                                                                                                                                                                            <p>
-                                                                                                                                                                                <b>YData</b>: y values: vector or matrix or [] (default).</p>
-                                                                                                                                                                                <p>
-                                                                                                                                                                                    <b>ZData</b>: z values: vector or matrix or [] (default).</p>
-                                                                                                                                                                                    <p>
-                                                                                                                                                                                        <b>XDataMode</b> Selection mode for XData: 'manual' or 'auto'.</p>
-                                                                                                                                                                                    </div>
+                        <b>scatter(x, y)</b> génère un nuage de points en plaçant des marqueurs circulaires aux
+                        coordonnées définies par les vecteurs <b>x</b> et <b>y</b>.</p>
+                <p>Si vous souhaitez afficher un seul ensemble de données, assurez-vous que <b>x</b> et <b>y</b>
+                        sont des vecteurs de même longueur.</p>
+                <p>Pour visualiser plusieurs ensembles de données sur un même axe, vous pouvez utiliser
+                        une matrice pour <b>x</b> ou <b>y</b>, en gardant l'autre comme vecteur.</p>
+                <p>Cela vous permet de superposer ou de comparer plusieurs ensembles de données dans le même graphique.</p>
+                <p></p>
+                <p></p>
+                <p>Propriétés de Scatter :</p>
+                <table>
+                        <tr>
+                                <th>Propriété</th>
+                                <th>Description</th>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>AlphaData</b>
+                                </td>
+                                <td>Transparence de la face du marqueur, 1 (par défaut) ou tableau de même taille que <b>XData</b>
+</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>BeingDeleted</b>
+                                </td>
+                                <td>Indique que l'objet est en cours de suppression.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>BusyAction</b>
+                                </td>
+                                <td>File d'attente des callbacks, 'queue' (par défaut) ou 'cancel'.
+                                        Cette propriété détermine comment Nelson gère l'exécution des callbacks interrompus.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>CData</b>
+                                </td>
+                                <td>Couleurs des marqueurs : [] (par défaut), triplet RGB, matrice de triplets RGB
+                                        ou vecteur. Couleur du marqueur à utiliser pour chaque série de données :
+                                        'k'/'black' (Noir), 'y'/'yellow' (Jaune), 'm'/'magenta' (Magenta),
+                                        'c'/'cyan' (Cyan), 'r'/'red' (Rouge), 'b'/'blue' (Bleu), 'g'/'green' (Vert)</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>CDataMode</b>
+                                </td>
+                                <td>Mode de sélection pour CData : 'manual', 'auto' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Children</b>
+                                </td>
+                                <td>Enfants.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>CreateFcn</b>
+                                </td>
+                                <td>Fonction de création du composant.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>DeleteFcn</b>
+                                </td>
+                                <td>Fonction de suppression du composant.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>DisplayName</b>
+                                </td>
+                                <td>Étiquette de légende : vecteur de caractères ou chaîne, '' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Interruptible</b>
+                                </td>
+                                <td>Interruption des callbacks 'on' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>LineWidth</b>
+                                </td>
+                                <td>Épaisseur de ligne : valeur scalaire positive.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Marker</b>
+                                </td>
+                                <td>Symbole du marqueur : 'o' (Cercle), 'x' (Croix), '+' (Plus), '*' (Astérisque), '.' (Point), 's' (Carré), 'd' (Losange), 'v' (Triangle vers le bas), '^' (Triangle vers le haut), '&gt;' (Triangle vers la droite), '&lt;' (Triangle vers la gauche)</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>MarkerEdgeColor</b>
+                                </td>
+                                <td>Couleur du contour du marqueur : triplet RGB.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>MarkerEdgeAlpha</b>
+                                </td>
+                                <td>Transparence du contour du marqueur : scalaire dans [0,1], 'flat' ou 1 (par défaut). Pour attribuer des valeurs de transparence distinctes aux contours de chaque point, définissez la propriété AlphaData comme un vecteur de la même taille que <b>XData</b> et la propriété <b>MarkerEdgeAlpha</b> à <b>'flat'</b>.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>MarkerFaceColor</b>
+                                </td>
+                                <td>Couleur de remplissage du marqueur : triplet RGB.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>MarkerFaceAlpha</b>
+                                </td>
+                                <td>Transparence du remplissage du marqueur : scalaire dans [0,1], 'flat' ou 1 (par défaut). Pour attribuer des valeurs de transparence distinctes aux faces de chaque point, définissez la propriété AlphaData comme un vecteur de la même taille que <b>XData</b> et la propriété <b>MarkerFaceAlpha</b> à <b>'flat'</b>.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Parent</b>
+                                </td>
+                                <td>Conteneur parent : objet graphique Figure.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>SizeData</b>
+                                </td>
+                                <td>Tailles des marqueurs : [] (par défaut), scalaire ou vecteur.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Tag</b>
+                                </td>
+                                <td>Identifiant de l'objet : vecteur de caractères, chaîne ou '' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Type</b>
+                                </td>
+                                <td>Type d'objet graphique 'scatter'.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>UserData</b>
+                                </td>
+                                <td>Données utilisateur : tableau ou []</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Visible</b>
+                                </td>
+                                <td>État de visibilité : 'on' (par défaut) ou 'off'.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>XData</b>
+                                </td>
+                                <td>Valeurs x : vecteur ou matrice ou [] (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>YData</b>
+                                </td>
+                                <td>Valeurs y : vecteur ou matrice ou [] (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>ZData</b>
+                                </td>
+                                <td>Valeurs z : vecteur ou matrice ou [] (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>XDataMode</b>
+                                </td>
+                                <td>Mode de sélection pour XData : 'manual' ou 'auto'.</td>
+                        </tr>
+                </table>
+        </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -328,14 +402,14 @@ hold off;</code><button class="copy-btn" type="button" onclick="copyExample(this
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/line.html">line</a><a class="see-also-link" href="../graphics/plot.html">plot</a><a class="see-also-link" href="../graphics/scatter3.html">scatter3</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -343,7 +417,7 @@ hold off;</code><button class="copy-btn" type="button" onclick="copyExample(this
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.12.0</td>
@@ -357,7 +431,7 @@ hold off;</code><button class="copy-btn" type="button" onclick="copyExample(this
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

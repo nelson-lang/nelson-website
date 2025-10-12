@@ -45,55 +45,53 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">struct2table</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Convert a structure array into a tabular format.</div></div>
+<div class="section syntax-section"><div class="subtitle">Convertir un tableau de structures en format tabulaire.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">T = struct2table(S)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">S</td>
-<td>structure: Array provided as a structure.</td>
+<td>structure : tableau fourni sous forme de structure.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">T</td>
-<td>A table object.</td>
+<td>Un objet table.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>T = struct2table(S)</b> transforms a structure array into a table, where each field of the input structure is represented as a variable in the resulting table.</p>
-            <p>If the input is a scalar structure containing 𝑛 fields, each with 𝑚 rows, the output will be an 𝑚×𝑛 table.</p>
-            <p>If the input is either an 𝑚×1 or a 1×𝑚 structure array with 𝑛 fields, the output will also be an 𝑚×𝑛 table.</p>
+    <p><b>T = struct2table(S)</b> transforme un tableau de structures en une table, où chaque champ de la structure d'entrée est représenté comme une variable dans la table résultante.</p>
+        <p>Si l'entrée est une structure scalaire contenant 𝑛 champs, chacun avec 𝑚 lignes, la sortie sera une table 𝑚×𝑛.</p>
+        <p>Si l'entrée est un tableau de structures 𝑚×1 ou 1×𝑚 avec 𝑛 champs, la sortie sera également une table 𝑚×𝑛.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">% Define a structure array
 S(1).Name = 'Alice';
@@ -132,14 +130,14 @@ T = struct2table(S)</code><button class="copy-btn" type="button" onclick="copyEx
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../table/table2struct.html">table2struct</a><a class="see-also-link" href="../table/table.html">table</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -147,13 +145,13 @@ T = struct2table(S)</code><button class="copy-btn" type="button" onclick="copyEx
 </tr>
 <tr>
 <td class="version">1.8.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

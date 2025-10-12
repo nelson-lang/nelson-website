@@ -45,92 +45,90 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">module.json</span></div></div>
-<div class="section syntax-section"><div class="subtitle">module.json description</div></div>
+<div class="section syntax-section"><div class="subtitle">Description du fichier module.json</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>A module.json file is required for each nelson's external module, it allows to manager easily with <b>nmm</b> function.</p>
+        <p>Un fichier module.json est requis pour chaque module externe de Nelson ; il permet de le
+            gérer facilement avec la fonction <b>nmm</b>.</p>
         <p></p>
-        <p>
-            <b>module</b>: unique identifier module short name (alphanumeric characters), example: "module_skeleton_basic"</p>
-            <p>
-                <b>title</b>: complete module name (human friendly name), example: "Module skeleton basic" </p>
-                <p>
-                    <b>summary</b>: one line description, example: "Skeleton of a basic nelson package" </p>
-                    <p>
-                        <b>version</b>: version number using semantic versioning, example: "1.0.0" </p>
-                        <p>
-                            <b>platforms</b>:  platforms supported.</p>
-                            <p>"all" for all platforms</p>
-                            <p>others platforms:</p>
-                            <p>"win32": windows 32 bits</p>
-                            <p>"win64": windows 64 bits</p>
-                            <p>"maci64": macos 64 bits build</p>
-                            <p>"maci32": macos 32 bits build</p>
-                            <p>"glnxa64": linux 64 bits build</p>
-                            <p>"glnxa32": linux 64 bits build</p>
-                            <p>example: <b>["win64", "glnxa64"]</b>, module will be available only on windows and linux 64 bits platforms.</p>
-                            <p>
-                                <b>nelson</b>: nelson's supported versions, example: "&lt;2.0.0" (default)</p>
-                                <p>
-                                    <b>builtin</b>: true if module requires C/C++ compiler, false if module have only macros.</p>
-                                    <p>
-                                        <b>author</b>: Author information: name, email and website</p>
-                                        <p>Example:</p>
-                                        <p>{</p>
-                                        <p>"name": "Allan CORNET",</p>
-                                        <p>"email": "nelson.numerical.computation@gmail.com",</p>
-                                        <p>"url": "https://nelson-lang.github.io/nelson-website/"</p>
-                                        <p>}</p>
-                                        <p></p>
-                                        <p>
-                                            <b>homepage</b>: homepage of the module, example "https://github.com/nelson-lang/module_skeleton_basic" </p>
-                                            <p>
-                                                <b>description</b>: full description of the module, markdown format supported, example: "nelson's module skeleton (macros only)" </p>
-                                                <p>
-                                                    <b>copyright</b>copyright description, example: "Copyright © 2019-present Allan CORNET" </p>
-                                                    <p>
-                                                        <b>license</b>: License under which the toolbox will be published, example: "BSD" or "LGPLv2", ... </p>
-                                                        <p>
-                                                            <b>keywords</b>: keywords describing your module.</p>
-                                                            <p>Example:</p>
-                                                            <p>["interpreter", "scientific-computing", "programming-language", "matrix-functions", "skeleton"]</p>
-                                                            <p></p>
-                                                            <p>
-                                                                <b>dependencies</b>: list of modules dependencies {} (default) or name : url values</p>
-                                                                <p>{</p>
-                                                                <p>"module_a": "https://module_a.git#v1.0.0",</p>
-                                                                <p>"module_b": "https://module_b.git#v1.0.0"</p>
-                                                                <p>}</p>
-                                                            </div>
+        <p><b>module</b>: identifiant unique (nom court du module, caractères alphanumériques),
+            exemple : "module_skeleton_basic"</p>
+        <p><b>title</b>: nom complet du module (nom convivial), exemple : "Module skeleton basic"</p>
+        <p><b>summary</b>: description sur une ligne, exemple : "Skeleton of a basic nelson package"</p>
+        <p><b>version</b>: numéro de version en utilisant le versionnement sémantique, exemple :
+            "1.0.0"</p>
+        <p><b>platforms</b>: plateformes supportées.</p>
+        <p>"all" pour toutes les plateformes</p>
+        <p>autres plateformes :</p>
+        <p>"win32" : Windows 32 bits</p>
+        <p>"win64" : Windows 64 bits</p>
+        <p>"maci64" : macOS 64 bits</p>
+        <p>"maci32" : macOS 32 bits</p>
+        <p>"glnxa64" : Linux 64 bits</p>
+        <p>"glnxa32" : Linux 32 bits</p>
+        <p>exemple : <b>["win64", "glnxa64"]</b>, le module ne sera disponible que sur Windows et
+            Linux 64 bits.</p>
+        <p><b>nelson</b>: versions de Nelson supportées, exemple : "&lt;2.0.0" (par défaut)</p>
+        <p><b>builtin</b>: true si le module nécessite un compilateur C/C++, false si le module
+            contient uniquement des macros.</p>
+        <p><b>author</b>: informations sur l'auteur : nom, email et site web</p>
+        <p>Exemple :</p>
+        <p>{</p>
+        <p>"name": "Allan CORNET",</p>
+        <p>"email": "nelson.numerical.computation@gmail.com",</p>
+        <p>"url": "https://nelson-lang.github.io/nelson-website/"</p>
+        <p>}</p>
+        <p></p>
+        <p><b>homepage</b>: page d'accueil du module, exemple
+            "https://github.com/nelson-lang/module_skeleton_basic"</p>
+        <p><b>description</b>: description complète du module, format Markdown supporté, exemple :
+            "nelson's module skeleton (macros only)"</p>
+        <p><b>copyright</b>: description du copyright, exemple : "Copyright © 2019-present Allan
+            CORNET"</p>
+        <p><b>license</b>: licence sous laquelle la boîte à outils sera publiée, exemple : "BSD" ou
+            "LGPLv2", ...</p>
+        <p><b>keywords</b>: mots-clés décrivant votre module.</p>
+        <p>Exemple :</p>
+        <p>["interpreter", "scientific-computing", "programming-language", "matrix-functions",
+            "skeleton"]</p>
+        <p></p>
+        <p><b>dependencies</b>: liste des dépendances de modules {} (par défaut) ou paires nom : url</p>
+        <p>{</p>
+        <p>"module_a": "https://module_a.git#v1.0.0",</p>
+        <p>"module_b": "https://module_b.git#v1.0.0"</p>
+        <p>}</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
-<div class="example-title">Deploy module_skeleton and module_skeleton_basic template</div>
+<div class="example-title">Déployer les templates module_skeleton et
+                module_skeleton_basic</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">if ~ismodule('module_skeleton_basic')
-    nmm('install', 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0');
-end
-if ~ismodule('module_skeleton')
-    nmm('install', 'https://github.com/nelson-lang/module_skeleton.git#v1.0.0');
-end
-modules_installed = nmm('list');
-edit([modules_installed.module_skeleton.path, 'module.json']);
-edit([modules_installed.module_skeleton_basic.path, 'module.json']);</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+        nmm('install', 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0');
+    end
+    if ~ismodule('module_skeleton')
+        nmm('install', 'https://github.com/nelson-lang/module_skeleton.git#v1.0.0');
+    end
+    modules_installed = nmm('list');
+    edit([modules_installed.module_skeleton.path, 'module.json']);
+    edit([modules_installed.module_skeleton_basic.path, 'module.json']);
+    </code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../modules_manager/nmm.html">nmm</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -138,13 +136,13 @@ edit([modules_installed.module_skeleton_basic.path, 'module.json']);</code><butt
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

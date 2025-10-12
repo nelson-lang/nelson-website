@@ -2,7 +2,7 @@
 <html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Python operators</title>
+<title>Opérateurs Python</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
 <script type="text/javascript">
@@ -44,90 +44,90 @@
             </script>
 </head>
 <body>
-<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Python operators</span></div></div>
-<div class="section syntax-section"><div class="subtitle">The representation of Python operators in Nelson.</div></div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Opérateurs Python</span></div></div>
+<div class="section syntax-section"><div class="subtitle">La représentation des opérateurs Python dans Nelson.</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Nelson facilitates the utilization of the subsequent overloaded operators:</p>
-        
-            
-                Python Operator Symbol
-                Python Methods
-                Nelson Methods
-            
-            
-                - (unary operator)
-                __neg__
-                uminus, -a
-            
-            
-                + (unary operator)
-                __pos__
-                uplus, +a
-            
-            
-                + (binary operator)
-                __add__, __radd__
-                plus, +
-            
-            
-                - (binary operator)
-                __sub__, __rsub__
-                minus, -
-            
-            
-                * (binary operator)
-                __mul__, __rmul__
-                mtimes, *
-            
-            
-                / (binary operator)
-                __truediv__, __rtruediv__
-                mrdivide, /
-            
-            
-                == (binary operator)
-                __eq__
-                eq, ==
-            
-            
-                &gt; (binary operator)
-                __gt__
-                gt, &gt;
-            
-            
-                &lt; (binary operator)
-                __lt__
-                lt, &lt;
-            
-            
-                != (binary operator)
-                __ne__
-                ne, ~=
-            
-            
-                &gt;= (binary operator)
-                __ge__
-                ge, &gt;=
-            
-            
-                &lt;= (binary operator)
-                __le__
-                le, &lt;=
-            
-        
+        <p>Nelson facilite l'utilisation des opérateurs surchargés suivants :</p>
+        <table>
+            <tr>
+                <th>Symbole opérateur Python</th>
+                <th>Méthodes Python</th>
+                <th>Méthodes Nelson</th>
+            </tr>
+            <tr>
+                <td>- (opérateur unaire)</td>
+                <td>__neg__</td>
+                <td>uminus, -a</td>
+            </tr>
+            <tr>
+                <td>+ (opérateur unaire)</td>
+                <td>__pos__</td>
+                <td>uplus, +a</td>
+            </tr>
+            <tr>
+                <td>+ (opérateur binaire)</td>
+                <td>__add__, __radd__</td>
+                <td>plus, +</td>
+            </tr>
+            <tr>
+                <td>- (opérateur binaire)</td>
+                <td>__sub__, __rsub__</td>
+                <td>minus, -</td>
+            </tr>
+            <tr>
+                <td>* (opérateur binaire)</td>
+                <td>__mul__, __rmul__</td>
+                <td>mtimes, *</td>
+            </tr>
+            <tr>
+                <td>/ (opérateur binaire)</td>
+                <td>__truediv__, __rtruediv__</td>
+                <td>mrdivide, /</td>
+            </tr>
+            <tr>
+                <td>== (opérateur binaire)</td>
+                <td>__eq__</td>
+                <td>eq, ==</td>
+            </tr>
+            <tr>
+                <td>&gt; (opérateur binaire)</td>
+                <td>__gt__</td>
+                <td>gt, &gt;</td>
+            </tr>
+            <tr>
+                <td>&lt; (opérateur binaire)</td>
+                <td>__lt__</td>
+                <td>lt, &lt;</td>
+            </tr>
+            <tr>
+                <td>!= (opérateur binaire)</td>
+                <td>__ne__</td>
+                <td>ne, ~=</td>
+            </tr>
+            <tr>
+                <td>&gt;= (opérateur binaire)</td>
+                <td>__ge__</td>
+                <td>ge, &gt;=</td>
+            </tr>
+            <tr>
+                <td>&lt;= (opérateur binaire)</td>
+                <td>__le__</td>
+                <td>le, &lt;=</td>
+            </tr>
+        </table>
         <p></p>
         <p>
-            <b>isequal</b> builtin is also overloaded to manage python type.</p>
-            <p>For numpy types, <b>isequal</b> call <b>numpy.array_equal</b> from python.</p>
-            <p>Others python operators are currently not supported.</p>
+            <b>isequal</b> builtin est également surchargée pour gérer les types Python.</p>
+            <p>Pour les types numpy, <b>isequal</b> appelle <b>numpy.array_equal</b> depuis Python.</p>
+            <p>D'autres opérateurs Python ne sont pas encore pris en charge.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">pyrun('import numpy as np')    
 R = pyrun('R = np.asarray(A)', "R", 'A', magic(3))
@@ -138,12 +138,12 @@ isequal(R_A, R_B)</code><button class="copy-btn" type="button" onclick="copyExam
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../python_engine/pyrun.html">pyrun</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -151,13 +151,13 @@ isequal(R_A, R_B)</code><button class="copy-btn" type="button" onclick="copyExam
 </tr>
 <tr>
 <td class="version">1.5.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

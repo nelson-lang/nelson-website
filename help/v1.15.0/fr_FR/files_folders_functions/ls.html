@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">ls</span></div></div>
-<div class="section syntax-section"><div class="subtitle">List folder contents.</div></div>
+<div class="section syntax-section"><div class="subtitle">Liste le contenu d'un répertoire.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">ls
 ls(name)
 res = ls()
@@ -58,47 +57,46 @@ res = ls(options)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">name</td>
-<td>a string: file or directory name.</td>
+<td>a string: nom de fichier ou de répertoire.</td>
 </tr>
 <tr>
 <td class="param-name">options</td>
-<td>vary from system to system.</td>
+<td>varie selon le système.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">res</td>
-<td>On Windows, res is an m-by-n character array of names. m is the number of names and n is the number of characters in the longest name. On Unix plaftorms is a character vector of names separated by tab and space characters.</td>
+<td>Sur Windows, res est un tableau m-by-n de caractères. Sur Unix, c'est un vecteur de noms séparés par des tabulations et espaces.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>ls</b> is implemented by calling the native operating system's directory listing command—available options will vary from system to system.</p>
+        <p><b>ls</b> appelle la commande de liste de répertoire native du système d'exploitation - les options disponibles varient selon le système.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">res = ls(nelsonroot())
 if ~ispc()
@@ -108,14 +106,14 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../files_folders_functions/dir.html">dir</a><a class="see-also-link" href="../files_folders_functions/isdir.html">isdir</a><a class="see-also-link" href="../files_folders_functions/isfile.html">isfile</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -129,7 +127,7 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

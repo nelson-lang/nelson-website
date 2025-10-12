@@ -4,11 +4,11 @@
     <module>profiler</module>
     <section name="Profiling tools">
       <chapter_description>
-        <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.</p>
-        <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.</p>
+        <p>Le module Profiler de Nelson fournit des fonctions pour mesurer et analyser les performances d'exécution du code.</p>
+        <p>Il aide les utilisateurs à identifier les goulots d'étranglement, optimiser les parties lentes des programmes et améliorer l'efficacité globale.</p>
     </chapter_description>
-      <keyword name="profile" link="profile.html" description="Profile execution time for Macro functions."/>
-      <keyword name="profsave" link="profsave.html" description="Save profile result to HTML format."/>
+      <keyword name="profile" link="profile.html" description="Profiler le temps d'exécution des fonctions Macro."/>
+      <keyword name="profsave" link="profsave.html" description="Enregistrer les résultats du profilage au format HTML."/>
     </section>
   </toc>
 </help_summary>

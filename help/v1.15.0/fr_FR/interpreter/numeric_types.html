@@ -45,88 +45,88 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">numeric types</span></div></div>
-<div class="section syntax-section"><div class="subtitle">About integer and floating-point data.</div></div>
+<div class="section syntax-section"><div class="subtitle">À propos des types entiers et à virgule flottante.</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>In Nelson you can specify the data type of a numeric literal by using a suffix or a type specifier. </p>
-        <p>Here are some common suffixes for specifying the data type of numeric literals:</p>
+        <p>Dans Nelson, vous pouvez préciser le type de données d'un littéral numérique en utilisant un suffixe ou un spécificateur de type.</p>
+        <p>Voici quelques suffixes courants pour spécifier le type des littéraux numériques :</p>
         <p></p>
-        
-            
-                literal number suffix
-                Nelson type
-            
-            
-                f32
-                single (float single precision)
-            
-            
-                f64
-                double (float double precision)
-            
-            
-                i8
-                int8 (8-bit signed integer)
-            
-            
-                i16
-                int16 (16-bit signed integer)
-            
-            
-                i32
-                int32 (32-bit signed integer)
-            
-            
-                i64
-                int64 (64-bit signed integer)
-            
-            
-                u8
-                uint8 (8-bit unsigned integer)
-            
-            
-                u16
-                uint16 (16-bit unsigned integer)
-            
-            
-                u32
-                uint32 (32-bit unsigned integer)
-            
-            
-                u64
-                uint64 (64-bit unsigned integer)
-            
-        
+        <table>
+            <tr>
+                <th>suffixe du littéral</th>
+                <th>type Nelson</th>
+            </tr>
+            <tr>
+                <td>f32</td>
+                <td>single (float simple précision)</td>
+            </tr>
+            <tr>
+                <td>f64</td>
+                <td>double (float double précision)</td>
+            </tr>
+            <tr>
+                <td>i8</td>
+                <td>int8 (entier signé 8 bits)</td>
+            </tr>
+            <tr>
+                <td>i16</td>
+                <td>int16 (entier signé 16 bits)</td>
+            </tr>
+            <tr>
+                <td>i32</td>
+                <td>int32 (entier signé 32 bits)</td>
+            </tr>
+            <tr>
+                <td>i64</td>
+                <td>int64 (entier signé 64 bits)</td>
+            </tr>
+            <tr>
+                <td>u8</td>
+                <td>uint8 (entier non signé 8 bits)</td>
+            </tr>
+            <tr>
+                <td>u16</td>
+                <td>uint16 (entier non signé 16 bits)</td>
+            </tr>
+            <tr>
+                <td>u32</td>
+                <td>uint32 (entier non signé 32 bits)</td>
+            </tr>
+            <tr>
+                <td>u64</td>
+                <td>uint64 (entier non signé 64 bits)</td>
+            </tr>
+        </table>
         <p></p>
-        <p>i64: To specify a 64-bit signed integer, you can use the i64 suffix. example: A = 42i64</p>
-        <p>f32: To specify a 32-bit floating-point number (single precision), you can use the f64 suffix. example: 3.14f32</p>
-        <p>These suffixes help the Nelson infer the correct data type for the literal.</p>
-        <p>Nelson automatically infer data type by default as double and you don't need to specify this suffixe explicitly. example: A = 3.14</p>
-        <p>Unless you have specific requirements or need to disambiguate between data types, you often don't need to explicitly specify the type of numeric literals.</p>
-        <p>But when you create a numeric array of large integers in Nelson, especially when they exceed the maximum precision representable by double (larger than flintmax), Nelson initially stores these values as double-precision floating-point numbers by default.</p>
+        <p>i64 : pour spécifier un entier signé 64 bits, vous pouvez utiliser le suffixe i64. exemple : A = 42i64</p>
+        <p>f32 : pour spécifier un nombre à virgule flottante 32 bits (simple précision), vous pouvez utiliser le suffixe f32. exemple : 3.14f32</p>
+        <p>Ces suffixes aident Nelson à inférer le type de données correct pour le littéral.</p>
+        <p>Par défaut, Nelson infère automatiquement le type double et vous n'avez pas besoin de spécifier ce suffixe explicitement. exemple : A = 3.14</p>
+        <p>Sauf si vous avez des besoins spécifiques ou devez dissiper une ambiguïté entre types, vous n'avez souvent pas besoin de préciser explicitement le type des littéraux numériques.</p>
+        <p>Cependant, lorsque vous créez un tableau numérique de grands entiers dans Nelson, surtout lorsqu'ils dépassent la précision maximale représentable par double (plus grands que flintmax), Nelson stocke par défaut ces valeurs en double précision à virgule flottante.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
-<div class="example-title">explicit single number</div>
+<div class="example-title">nombre simple explicite</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">single(3.1415)
 3.1415f32</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
 <div class="example">
-<div class="example-title">implicit-explicit double number</div>
+<div class="example-title">nombre double implicite-explicite</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">3.1415
 3.1415f64</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 </div>
 <div class="example">
-<div class="example-title">values exceed maximum precision representable by double</div>
+<div class="example-title">valeurs dépassant la précision maximale représentable par double</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">R1 = uint64([72057594035891654 81997179153022975])
 R2 = [72057594035891654u64 81997179153022975u64]</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -135,14 +135,14 @@ R2 = [72057594035891654u64 81997179153022975u64]</code><button class="copy-btn" 
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../double/double.html">double</a><a class="see-also-link" href="../single/single.html">single</a><a class="see-also-link" href="../integer/int8.html">int8</a><a class="see-also-link" href="../integer/int16.html">int16</a><a class="see-also-link" href="../integer/int32.html">int32</a><a class="see-also-link" href="../integer/int64.html">int64</a><a class="see-also-link" href="../integer/uint8.html">uint8</a><a class="see-also-link" href="../integer/uint16.html">uint16</a><a class="see-also-link" href="../integer/uint32.html">uint32</a><a class="see-also-link" href="../integer/uint64.html">uint64</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -150,13 +150,13 @@ R2 = [72057594035891654u64 81997179153022975u64]</code><button class="copy-btn" 
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

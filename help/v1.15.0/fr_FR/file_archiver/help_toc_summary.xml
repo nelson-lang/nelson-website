@@ -2,13 +2,13 @@
 <help_summary>
   <toc>
     <module>file_archiver</module>
-    <section name="File archiver functions">
+    <section name="Fonctions d'archivage de fichiers">
       <chapter_description>
-        <p>The File Archiver module provides tools for compressing and decompressing files in Nelson.</p>
-        <p>It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.</p>
+        <p>Le module File Archiver fournit des outils pour compresser et décompresser des fichiers dans Nelson.</p>
+        <p>Il prend en charge la création d'archives zip et l'extraction de fichiers depuis des archives zip, permettant un stockage, un partage et une gestion efficaces des fichiers.</p>
     </chapter_description>
-      <keyword name="unzip" link="unzip.html" description="Decompress zip file."/>
-      <keyword name="zip" link="zip.html" description="Compress files into zip file."/>
+      <keyword name="unzip" link="unzip.html" description="Décompresser une archive zip."/>
+      <keyword name="zip" link="zip.html" description="Compresser des fichiers dans une archive zip."/>
     </section>
   </toc>
 </help_summary>

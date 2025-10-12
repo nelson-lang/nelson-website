@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">assert_checkerror</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Check that an command raises the expected error.</div></div>
+<div class="section syntax-section"><div class="subtitle">Check that a command raises the expected error.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">assert_checkerror(command, expected_error_message)
 r = assert_checkerror(command, expected_error_message)
 [r, msg] = assert_checkerror(command, expected_error_message)
@@ -60,7 +59,7 @@ r = assert_checkerror(command, expected_error_message, expected_error_identifier
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -68,64 +67,93 @@ r = assert_checkerror(command, expected_error_message, expected_error_identifier
 </tr>
 <tr>
 <td class="param-name">command</td>
-<td>a string value</td>
+<td>a string containing the command to execute and test for errors.</td>
 </tr>
 <tr>
 <td class="param-name">expected_error_message</td>
-<td>a string, the expected error message.</td>
+<td>a string containing the expected error message that should be raised.</td>
 </tr>
 <tr>
 <td class="param-name">expected_error_identifier</td>
-<td>a string, the expected error identifier.</td>
+<td>a string containing the expected error identifier (optional).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Output Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
 <th>Description</th>
 </tr>
 <tr>
-<td class="param-name">res</td>
-<td>a logical value</td>
+<td class="param-name">r</td>
+<td>a logical value: true if the test passes, false otherwise.</td>
 </tr>
 <tr>
 <td class="param-name">msg</td>
-<td>a string value, the error message. If res == true, then errormsg == ''. If res == false, then msg contains the error message.</td>
+<td>a string containing the error message. If r == true, then msg == ''. If r == false, then msg contains the assertion failure message.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
-<div>If the command does not raise the expected error message, then assert_checkerror raises an error.</div>
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+        <p><b>assert_checkerror</b> verifies that executing a command raises the expected error message.</p>
+        <p>If the command does not raise any error, or if it raises an error with a different message than expected, the assertion fails.</p>
+        <p>When the optional <b>expected_error_identifier</b> parameter is provided, the function also checks that the error identifier matches the expected one.</p>
+        <p>This function is particularly useful for unit testing to ensure that invalid inputs or operations properly generate the expected error conditions.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
-<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Test that cos function with no arguments raises the expected error:</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">assert_checkerror('cos', _('Wrong number of input arguments.'));</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
-</div></div>
-<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">assert_checkerror('cos', _('Wrong error message.'));</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
-</div></div>
-<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+</div>
+</div>
+<div class="example">
+<div class="example-title">Example that demonstrates assertion failure with wrong expected message:</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">try
+    assert_checkerror('cos', _('Wrong error message.'));
+catch ME
+    disp(['Error: ' ME.message])
+end</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Test with both error message and error identifier:</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">assert_checkerror('mustBeFinite(NaN)', _('Value must be finite.'), 'Nelson:validators:mustBeFinite')</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
-</div></div>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Using return values to handle assertion results:</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">[r, msg] = assert_checkerror('cos', _('Wrong number of input arguments.'));
+if r
+    disp('Test passed: cos function properly raises expected error')
+else
+    disp(['Test failed: ' msg])
+end</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../assert_functions/assert_istrue.html">assert_istrue</a><a class="see-also-link" href="../assert_functions/assert_isfalse.html">assert_isfalse</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -139,7 +167,7 @@ r = assert_checkerror(command, expected_error_message, expected_error_identifier
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

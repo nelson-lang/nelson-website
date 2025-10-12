@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">imrotate</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Rotate image by specified angle</div></div>
+<div class="section syntax-section"><div class="subtitle">Fait pivoter une image d'un angle spécifié</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">J = imrotate(I, angle)
 J = imrotate(I, angle, method)
 J = imrotate(I, angle, method, bbox)
@@ -57,41 +56,41 @@ J = imrotate(I, angle, method, bbox)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">I</td>
-<td>Input image: 2-D grayscale image or 3-D RGB image of class uint8, uint16, int16, single, or double</td>
+<td>Image d'entrée : image 2D en niveaux de gris ou image 3D RGB de classe uint8, uint16, int16, single ou double</td>
 </tr>
 <tr>
 <td class="param-name">angle</td>
-<td>Rotation angle in degrees (scalar). Positive values rotate counterclockwise, negative values rotate clockwise</td>
+<td>Angle de rotation en degrés (scalaire). Les valeurs positives tournent dans le sens anti-horaire, les valeurs négatives dans le sens horaire</td>
 </tr>
 <tr>
 <td class="param-name">method</td>
-<td>Interpolation method (optional, default: 'bilinear'):
-        - 'nearest': Nearest neighbor interpolation
-        - 'bilinear': Bilinear interpolation (default)
-        - 'bicubic': Bicubic interpolation</td>
+<td>Méthode d'interpolation (optionnelle, par défaut : 'bilinear') :
+                - 'nearest' : interpolation au plus proche voisin
+                - 'bilinear' : interpolation bilinéaire (par défaut)
+                - 'bicubic' : interpolation bicubique</td>
 </tr>
 <tr>
 <td class="param-name">bbox</td>
-<td>Bounding box option (optional, default: 'loose'):
-        - 'loose': Make output large enough to contain entire rotated image
-        - 'crop': Crop output to same size as input image</td>
+<td>Option de boîte englobante (optionnelle, par défaut : 'loose') :
+        - 'loose' : dimensionne la sortie pour contenir l'image tournée en entier
+        - 'crop' : recadre la sortie à la même taille que l'image d'entrée</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -102,40 +101,40 @@ J = imrotate(I, angle, method, bbox)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The <b>imrotate</b> function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method.</p>
-        <p>The function supports various image formats including grayscale and RGB color images. The output image maintains the same data type as the input image.</p>
-        <p>For angles that are multiples of 90 degrees, the rotation is performed exactly without interpolation to preserve image quality. For other angles, interpolation is used to estimate pixel values at non-integer coordinates.</p>
-        <p>The bounding box option controls the size of the output image:</p>
+                <p>La fonction <b>imrotate</b> fait pivoter une image de l'angle spécifié autour de son centre. La rotation utilise la méthode d'interpolation spécifiée.</p>
+                <p>La fonction prend en charge divers formats d'images, y compris niveaux de gris et RGB. L'image de sortie conserve le même type de données que l'image d'entrée.</p>
+                <p>Pour les angles multiples de 90°, la rotation est effectuée exactement sans interpolation afin de préserver la qualité. Pour les autres angles, l'interpolation est utilisée pour estimer les valeurs de pixels aux coordonnées non entières.</p>
+                <p>L'option de boîte englobante contrôle la taille de l'image de sortie :</p>
         <ul>
             <li>
-                <b>'loose'</b>: The output image is sized to contain the entire rotated image. This may result in a larger image than the input.</li>
+                <b>'loose'</b> : l'image de sortie est dimensionnée pour contenir l'image tournée en entier. Cela peut donner une image plus grande que l'entrée.</li>
                 <li>
-                    <b>'crop'</b>: The output image is cropped to the same size as the input image. Parts of the rotated image may be cut off.</li>
+<b>'crop'</b> : l'image de sortie est recadrée à la même taille que l'image d'entrée. Des parties de l'image tournée peuvent être coupées.</li>
                 </ul>
-                <p>Background pixels (areas not covered by the rotated image) are filled with zeros.</p>
+                <p>Les pixels de fond (zones non couvertes par l'image tournée) sont remplis de zéros.</p>
                 <p></p>
                 <p>Note:</p>
                 <p>
-                    <b>Performance Note:</b> For exact 90-degree rotations (0°, 90°, 180°, 270°), the function uses optimized algorithms that preserve exact pixel values without interpolation.</p>
+                    <b>Note de performance :</b> pour des rotations exactes de 90° (0°, 90°, 180°, 270°), la fonction utilise des algorithmes optimisés qui préservent les valeurs exactes des pixels sans interpolation.</p>
                     <p>
-                        <b>Memory Usage:</b> When using 'loose' bounding box with large rotation angles, the output image may be significantly larger than the input. Consider using 'crop' for memory-constrained applications.</p>
+                        <b>Utilisation mémoire :</b> en utilisant 'loose' avec de grands angles de rotation, l'image de sortie peut être significativement plus grande que l'entrée. Envisagez 'crop' pour les applications avec contrainte mémoire.</p>
                         <p>
-                            <b>Data Type Preservation:</b> The output image maintains the same data type as the input. For floating-point inputs, pixel values may extend beyond the typical [0,1] range after interpolation.</p>
+                            <b>Conservation du type de données :</b> l'image de sortie conserve le même type de données que l'entrée. Pour les entrées en virgule flottante, les valeurs de pixels peuvent dépasser la plage habituelle [0,1] après interpolation.</p>
                             <p>
-                                <b>Angle Convention:</b> Positive angles rotate counterclockwise, following standard mathematical convention. This is opposite to some image_processing applications that use clockwise positive rotation.</p>
+                                <b>Convention d'angle :</b> les angles positifs tournent dans le sens anti-horaire, conformément à la convention mathématique standard. Cela peut être l'inverse de certaines applications de traitement d'images qui utilisent la rotation positive dans le sens horaire.</p>
                                 <p></p>
                                 <p>Limitations:</p>
-                                <p>Input image must be 2-D (grayscale) or 3-D (RGB). Other color spaces are not directly supported.</p>
-                                <p>Rotation is always performed around the center of the image. Off-center rotations require additional preprocessing.</p>
-                                <p>For very large angles (&gt;360°), consider using modulo arithmetic to normalize the angle for better performance.</p>
-                                <p>Bicubic interpolation may produce overshoot artifacts near sharp edges in the image.</p>
+                                <p>L'image d'entrée doit être 2D (niveaux de gris) ou 3D (RGB). Les autres espaces colorimétriques ne sont pas directement supportés.</p>
+                                <p>La rotation est toujours effectuée autour du centre de l'image. Les rotations hors-centre requièrent un prétraitement supplémentaire.</p>
+                                <p>Pour des angles très grands (&gt;360°), considérez l'utilisation de l'arithmétique modulo pour normaliser l'angle et améliorer les performances.</p>
+                                <p>L'interpolation bicubique peut produire des artefacts de dépassement près des contours nets de l'image.</p>
                             </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">Interactive rotation visualization  (Part 1)</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -211,14 +210,14 @@ end
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../image_processing/imresize.html">imresize</a><a class="see-also-link" href="../image_processing/imshow.html">imshow</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -226,13 +225,13 @@ end
 </tr>
 <tr>
 <td class="version">1.14.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

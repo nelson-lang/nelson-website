@@ -2,51 +2,51 @@
 <help_summary>
   <toc>
     <module>elementary_functions</module>
-    <section name="Elementary functions">
+    <section name="Fonctions élémentaires">
       <chapter_description>
-        <p>The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.</p>
-        <p>It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.</p>
-        <p>The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.</p>
+        <p>Le module Fonctions élémentaires fournit un large éventail d'opérations mathématiques fondamentales et de manipulations de matrices dans Nelson.</p>
+        <p>Il inclut des calculs numériques, des opérations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise à l'échelle, ainsi que diverses fonctions utilitaires pour interroger les propriétés des tableaux et des matrices.</p>
+        <p>Le module prend également en charge la construction de matrices spéciales, de grilles et de séquences, facilitant l'implémentation robuste et efficace d'algorithmes mathématiques et d'analyses numériques.</p>
     </chapter_description>
-      <keyword name="abs" link="abs.html" description="Absolute value"/>
-      <keyword name="allfinite" link="allfinite.html" description="Check if all array elements are finite."/>
-      <keyword name="angle" link="angle.html" description="Phase angle"/>
-      <keyword name="base2dec" link="base2dec.html" description="Convert number in a base to decimal."/>
-      <keyword name="bernsteinMatrix" link="bernsteinMatrix.html" description="Bernstein matrix"/>
-      <keyword name="bin2dec" link="bin2dec.html" description="Convert number in base 2 to decimal."/>
-      <keyword name="bin2num" link="bin2num.html" description="Convert two's complement binary string to number."/>
-      <keyword name="blkdiag" link="blkdiag.html" description="Block diagonal matrix"/>
-      <keyword name="cast" link="cast.html" description="Converts variable to a different data type"/>
-      <keyword name="ceil" link="ceil.html" description="Round up"/>
-      <keyword name="circshift" link="circshift.html" description="Circular shift"/>
-      <keyword name="complex" link="complex.html" description="Creates an complex number."/>
-      <keyword name="conj" link="conj.html" description="Complex conjugate"/>
-      <keyword name="deal" link="deal.html" description="Distribute inputs to outputs."/>
-      <keyword name="dec2base" link="dec2base.html" description="Convert decimal number to another base."/>
-      <keyword name="dec2bin" link="dec2bin.html" description="Convert decimal number to base 2."/>
-      <keyword name="dec2hex" link="dec2hex.html" description="Convert decimal number to base 16."/>
-      <keyword name="exp" link="exp.html" description="Exponential"/>
-      <keyword name="factorial" link="factorial.html" description="Factorial function"/>
-      <keyword name="filter" link="filter.html" description="1-D digital filter"/>
-      <keyword name="find" link="find.html" description="Find Non-zero Elements"/>
-      <keyword name="fix" link="fix.html" description="Round towards zero"/>
-      <keyword name="flip" link="flip.html" description="Flip order of elements"/>
-      <keyword name="flipdim" link="flipdim.html" description="Flip array along specified dimension"/>
-      <keyword name="fliplr" link="fliplr.html" description="Flip order of elements left to right"/>
-      <keyword name="flipud" link="flipud.html" description="Flip order of elements up to dow"/>
-      <keyword name="floor" link="floor.html" description="Round down"/>
-      <keyword name="hadamard" link="hadamard.html" description="Hadamard matrix"/>
-      <keyword name="hankel" link="hankel.html" description="Hankel matrix"/>
-      <keyword name="hex2dec" link="hex2dec.html" description="Convert number in base 16 to decimal."/>
-      <keyword name="hilb" link="hilb.html" description="Hilbert matrix"/>
-      <keyword name="hypot" link="hypot.html" description="Square root of sum of squares"/>
-      <keyword name="imag" link="imag.html" description="Imaginary part of an complex number."/>
-      <keyword name="ind2sub" link="ind2sub.html" description="Linear index to matrix subscript values"/>
-      <keyword name="invhilb" link="invhilb.html" description="Inverse of Hilbert matrix"/>
-      <keyword name="ipermute" link="ipermute.html" description="Inverse permute array dimensions."/>
-      <keyword name="isapprox" link="isapprox.html" description="Return true if arguments are approximately equal, within the precision."/>
-      <keyword name="iscolumn" link="iscolumn.html" description="Determine whether input is column vector."/>
-      <keyword name="istriu" link="isdiag.html" description="Checks if matrix is diagonal."/>
+      <keyword name="abs" link="abs.html" description="Valeur absolue"/>
+      <keyword name="allfinite" link="allfinite.html" description="Vérifie si tous les éléments du tableau sont finis."/>
+      <keyword name="angle" link="angle.html" description="Angle de phase"/>
+      <keyword name="base2dec" link="base2dec.html" description="Convertit un nombre d'une base donnée en décimal."/>
+      <keyword name="bernsteinMatrix" link="bernsteinMatrix.html" description="Matrice de Bernstein"/>
+      <keyword name="bin2dec" link="bin2dec.html" description="Convertit un nombre en base 2 en décimal."/>
+      <keyword name="bin2num" link="bin2num.html" description="Convertit une chaîne binaire en complément à deux en nombre."/>
+      <keyword name="blkdiag" link="blkdiag.html" description="Matrice diagonale par blocs"/>
+      <keyword name="cast" link="cast.html" description="Convertit une variable vers un autre type de données"/>
+      <keyword name="ceil" link="ceil.html" description="Arrondir vers le haut"/>
+      <keyword name="circshift" link="circshift.html" description="Rotation circulaire"/>
+      <keyword name="complex" link="complex.html" description="Crée un nombre complexe."/>
+      <keyword name="conj" link="conj.html" description="Conjugué complexe"/>
+      <keyword name="deal" link="deal.html" description="Distribue les entrées vers les sorties."/>
+      <keyword name="dec2base" link="dec2base.html" description="Convertit un nombre décimal vers une autre base."/>
+      <keyword name="dec2bin" link="dec2bin.html" description="Convertit un nombre décimal en base 2."/>
+      <keyword name="dec2hex" link="dec2hex.html" description="Convertit un nombre décimal en base 16."/>
+      <keyword name="exp" link="exp.html" description="Exponentielle"/>
+      <keyword name="factorial" link="factorial.html" description="Fonction factorielle"/>
+      <keyword name="filter" link="filter.html" description="Filtre numérique 1-D"/>
+      <keyword name="find" link="find.html" description="Trouver les éléments non nuls"/>
+      <keyword name="fix" link="fix.html" description="Arrondir vers zéro"/>
+      <keyword name="flip" link="flip.html" description="Inverser l'ordre des éléments"/>
+      <keyword name="flipdim" link="flipdim.html" description="Inverser un tableau selon une dimension spécifiée"/>
+      <keyword name="fliplr" link="fliplr.html" description="Inverser l'ordre des éléments de gauche à droite"/>
+      <keyword name="flipud" link="flipud.html" description="Inverser l'ordre des éléments de haut en bas"/>
+      <keyword name="floor" link="floor.html" description="Arrondir vers le bas"/>
+      <keyword name="hadamard" link="hadamard.html" description="Matrice de Hadamard"/>
+      <keyword name="hankel" link="hankel.html" description="Matrice de Hankel"/>
+      <keyword name="hex2dec" link="hex2dec.html" description="Convertit un nombre en base 16 en décimal."/>
+      <keyword name="hilb" link="hilb.html" description="Matrice de Hilbert"/>
+      <keyword name="hypot" link="hypot.html" description="Racine carrée de la somme des carrés"/>
+      <keyword name="imag" link="imag.html" description="Partie imaginaire d'un nombre complexe."/>
+      <keyword name="ind2sub" link="ind2sub.html" description="Convertir un indice linéaire en indices de sous-script"/>
+      <keyword name="invhilb" link="invhilb.html" description="Inverse d'une matrice de Hilbert"/>
+      <keyword name="ipermute" link="ipermute.html" description="Inverse de permute"/>
+      <keyword name="isapprox" link="isapprox.html" description="Renvoie vrai si les arguments sont approximativement égaux, dans la précision donnée."/>
+      <keyword name="iscolumn" link="iscolumn.html" description="Déterminer si l'entrée est un vecteur colonne."/>
+      <keyword name="isdiag" link="isdiag.html" description="Vérifie si une matrice est diagonale."/>
       <keyword name="isequal" link="isequal.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values)."/>
       <keyword name="isequaln" link="isequaln.html" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs)."/>
       <keyword name="isequalto" link="isequalto.html" description="Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs)."/>
@@ -54,9 +54,9 @@
       <keyword name="isinf" link="isinf.html" description="Check for Infinity entries."/>
       <keyword name="ismatrix" link="ismatrix.html" description="determines whether input is matrix or not"/>
       <keyword name="isnan" link="isnan.html" description="Check for Not a Number entries."/>
-      <keyword name="isrow" link="isrow.html" description="Determine whether input is row vector."/>
-      <keyword name="isscalar" link="isscalar.html" description="Check if the input is a scalar"/>
-      <keyword name="istril" link="istril.html" description="Checks if matrix is lower triangular."/>
+      <keyword name="isrow" link="isrow.html" description="Déterminer si l'entrée est un vecteur ligne."/>
+      <keyword name="isscalar" link="isscalar.html" description="Tester si l'entrée est un scalaire"/>
+      <keyword name="istril" link="istril.html" description="Tester si une matrice est triangulaire inférieure"/>
       <keyword name="istriu" link="istriu.html" description="Checks if matrix is upper triangular."/>
       <keyword name="isvector" link="isvector.html" description="Checks input is vector."/>
       <keyword name="length" link="length.html" description="Length of an object."/>

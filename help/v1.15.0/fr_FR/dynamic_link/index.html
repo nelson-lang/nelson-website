@@ -6,120 +6,120 @@
 </head>
 <body>
 <img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
-<div class="section-title">Dynamic link</div>
+<div class="section-title">Liens dynamiques</div>
 <div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p>
-        <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p>
-        <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p>
+        <p>Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution.</p>
+        <p>Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.</p>
+        <p>Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois configuremsvc ou configuremingw.</p>
     </div>
 <ul class="toc-list">
 <li class="toc-entry">
-<a class="toc-link" href="1_c_cpp_build_on_fly.html" target="contentFrame">Build C/C++ code on the fly</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Build C/C++ code on the fly</div>
+<a class="toc-link" href="1_c_cpp_build_on_fly.html" target="contentFrame">Compilation C/C++ à la volée</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compiler du code C/C++ à la volée</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="2_supported_compilers.html" target="contentFrame">Supported C/C++ compilers</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
+<a class="toc-link" href="2_supported_compilers.html" target="contentFrame">Compilateurs C/C++ supportés</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="C_datatype.html" target="contentFrame">libpointer datatype</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">C/Nelson equivalent data types</div>
+<a class="toc-link" href="C_datatype.html" target="contentFrame">Types libpointer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Équivalences entre types C et Nelson</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="cmake.html" target="contentFrame">cmake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">call CMake tool</div>
+<a class="toc-link" href="cmake.html" target="contentFrame">cmake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Appeler l'outil CMake</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="configuremingw.html" target="contentFrame">configuremingw</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Configure Nelson to use MinGW as default C compiler</div>
+<a class="toc-link" href="configuremingw.html" target="contentFrame">configuremingw</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Configurer Nelson pour utiliser MinGW comme compilateur C par défaut</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="configuremsvc.html" target="contentFrame">configuremsvc</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Configure Nelson to use visual studio as default compiler</div>
+<a class="toc-link" href="configuremsvc.html" target="contentFrame">configuremsvc</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Configurer Nelson pour utiliser Visual Studio comme compilateur par défaut</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlcall.html" target="contentFrame">dlcall</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">C or Fortran Foreign function call.</div>
+<a class="toc-link" href="dlcall.html" target="contentFrame">dlcall</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Appel de fonction étrangère C ou Fortran</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlclose.html" target="contentFrame">dlclose</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Removes dllib object.</div>
+<a class="toc-link" href="dlclose.html" target="contentFrame">dlclose</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime l'objet dllib</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgeneratecleaner.html" target="contentFrame">dlgeneratecleaner</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates cleaner.m file for C++ gateway.</div>
+<a class="toc-link" href="dlgeneratecleaner.html" target="contentFrame">dlgeneratecleaner</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère le fichier cleaner.m pour une gateway C++</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgenerategateway.html" target="contentFrame">dlgenerategateway</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates C++ gateway.</div>
+<a class="toc-link" href="dlgenerategateway.html" target="contentFrame">dlgenerategateway</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère une gateway C++</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgenerateloader.html" target="contentFrame">dlgenerateloader</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates loader.m file for C++ gateway.</div>
+<a class="toc-link" href="dlgenerateloader.html" target="contentFrame">dlgenerateloader</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère le fichier loader.m pour une gateway C++</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgeneratemake.html" target="contentFrame">dlgeneratemake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates a makefile for building a dynamic library.</div>
+<a class="toc-link" href="dlgeneratemake.html" target="contentFrame">dlgeneratemake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère un makefile pour construire une bibliothèque dynamique</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgenerateunloader.html" target="contentFrame">dlgenerateunloader</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates unloader.m file for C++ gateway.</div>
+<a class="toc-link" href="dlgenerateunloader.html" target="contentFrame">dlgenerateunloader</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère le fichier unloader.m pour une gateway C++</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgetnelsonincludes.html" target="contentFrame">dlgetnelsonincludes</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns paths of Nelson include directories.</div>
+<a class="toc-link" href="dlgetnelsonincludes.html" target="contentFrame">dlgetnelsonincludes</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie les chemins des répertoires d'includes de Nelson</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlgetnelsonlibraries.html" target="contentFrame">dlgetnelsonlibraries</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns paths to Nelson library files.</div>
+<a class="toc-link" href="dlgetnelsonlibraries.html" target="contentFrame">dlgetnelsonlibraries</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie les chemins vers les bibliothèques Nelson</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dllib_used.html" target="contentFrame">dllib_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns list of current used dllib handle.</div>
+<a class="toc-link" href="dllib_used.html" target="contentFrame">dllib_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie la liste des handles dllib actuellement utilisés</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dllibinfo.html" target="contentFrame">dllibinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns list of available symbols in an shared library.</div>
+<a class="toc-link" href="dllibinfo.html" target="contentFrame">dllibinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie la liste des symboles disponibles dans une bibliothèque partagée</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dllibisloaded.html" target="contentFrame">dllibisloaded</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if shared library is loaded.</div>
+<a class="toc-link" href="dllibisloaded.html" target="contentFrame">dllibisloaded</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Vérifie si une bibliothèque partagée est chargée</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlmake.html" target="contentFrame">dlmake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">call make or nmake tool</div>
+<a class="toc-link" href="dlmake.html" target="contentFrame">dlmake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Appeler l'outil make ou nmake</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlopen.html" target="contentFrame">dlopen</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Loads an dynamic library.</div>
+<a class="toc-link" href="dlopen.html" target="contentFrame">dlopen</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Charge une bibliothèque dynamique</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlsym.html" target="contentFrame">dlsym</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Loads a C/Fortran symbol for an dynamic library.</div>
+<a class="toc-link" href="dlsym.html" target="contentFrame">dlsym</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Charge un symbole C/Fortran depuis une bibliothèque dynamique</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlsym_delete.html" target="contentFrame">dlsym_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Removes dlsym object.</div>
+<a class="toc-link" href="dlsym_delete.html" target="contentFrame">dlsym_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime l'objet dlsym</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="dlsym_used.html" target="contentFrame">dlsym_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns list of current used dlsym handle.</div>
+<a class="toc-link" href="dlsym_used.html" target="contentFrame">dlsym_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie la liste des handles dlsym actuellement utilisés</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="findcmake.html" target="contentFrame">findcmake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">find CMake path.</div>
+<a class="toc-link" href="findcmake.html" target="contentFrame">findcmake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trouver le chemin de CMake</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="getdynlibext.html" target="contentFrame">getdynlibext</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns the extension of dynamic libraries.</div>
+<a class="toc-link" href="getdynlibext.html" target="contentFrame">getdynlibext</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie l'extension des bibliothèques dynamiques</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="havecompiler.html" target="contentFrame">havecompiler</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Detect if a C/C++ compiler is configured.</div>
+<a class="toc-link" href="havecompiler.html" target="contentFrame">havecompiler</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détecter si un compilateur C/C++ est configuré</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer.html" target="contentFrame">libpointer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Creates an C pointer object usuable in Nelson.</div>
+<a class="toc-link" href="libpointer.html" target="contentFrame">libpointer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Crée un objet pointeur C utilisable dans Nelson</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer_delete.html" target="contentFrame">libpointer_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Removes libpointer object.</div>
+<a class="toc-link" href="libpointer_delete.html" target="contentFrame">libpointer_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime l'objet libpointer</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer_isNull.html" target="contentFrame">libpointer_isNull</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if libpointer handle points on NULL pointer.</div>
+<a class="toc-link" href="libpointer_isNull.html" target="contentFrame">libpointer_isNull</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Vérifie si un handle libpointer pointe vers NULL</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer_plus.html" target="contentFrame">libpointer_plus</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">plus operator on libpointer handle.</div>
+<a class="toc-link" href="libpointer_plus.html" target="contentFrame">libpointer_plus</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Opérateur + sur un handle libpointer</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer_reshape.html" target="contentFrame">libpointer_reshape</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Reshapes libpointer dimensions.</div>
+<a class="toc-link" href="libpointer_reshape.html" target="contentFrame">libpointer_reshape</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Redimensionne les dimensions du libpointer</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer_setdatatype.html" target="contentFrame">libpointer_setdatatype</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Set type of an libpointer handle.</div>
+<a class="toc-link" href="libpointer_setdatatype.html" target="contentFrame">libpointer_setdatatype</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Définit le type d'un handle libpointer</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="libpointer_used.html" target="contentFrame">libpointer_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns list of current used libpointer handle.</div>
+<a class="toc-link" href="libpointer_used.html" target="contentFrame">libpointer_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie la liste des handles libpointer actuellement utilisés</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="loadcompilerconf.html" target="contentFrame">loadcompilerconf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">load compiler configuration.</div>
+<a class="toc-link" href="loadcompilerconf.html" target="contentFrame">loadcompilerconf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Charger la configuration du compilateur</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="removecompilerconf.html" target="contentFrame">removecompilerconf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Remove used compiler configuration (on Windows).</div>
+<a class="toc-link" href="removecompilerconf.html" target="contentFrame">removecompilerconf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime la configuration du compilateur utilisée (sous Windows)</div>
 </li>
 <li class="toc-entry">
-<a class="toc-link" href="vswhere.html" target="contentFrame">vswhere</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Locate Visual Studio 2017, 2019 and newer installations</div>
+<a class="toc-link" href="vswhere.html" target="contentFrame">vswhere</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Localiser les installations de Visual Studio (2017, 2019 et versions ultérieures)</div>
 </li>
 </ul>
 </div>

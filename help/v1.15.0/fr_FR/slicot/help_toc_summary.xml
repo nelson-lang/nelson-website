@@ -2,36 +2,36 @@
 <help_summary>
   <toc>
     <module>slicot</module>
-    <section name="Subroutine Library In COntrol Theory">
+    <section name="Bibliothèque de sous-programmes en théorie du contrôle">
       <chapter_description>
-      <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p>
-      <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.</p>
-      <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.</p>
+      <p>Le module SLICOT fournit des algorithmes numériques avancés pour les calculs en automatique et théorie des systèmes.</p>
+      <p>Il comprend des outils pour la factorisation de matrices, l'équilibrage de systèmes, l'analyse de stabilité, l'affectation de pôles et la résolution des équations de Lyapunov, Riccati et Sylvester.</p>
+      <p>Le module prend en charge les systèmes temps continu et discret, y compris les systèmes descripteurs et multi-entrées, permettant une analyse, une conception et un contrôle précis et efficace des systèmes dynamiques complexes.</p>
     </chapter_description>
-      <keyword name="SLICOT License" link="About_SLICOT_license.html" description="About SLICOT license."/>
-      <keyword name="slicot_ab01od" link="slicot_ab01od.html" description="Staircase form for multi-input systems using orthogonal state and input transformations."/>
-      <keyword name="slicot_ab04md" link="slicot_ab04md.html" description="Discrete-time / continuous-time systems conversion by a bilinear transformation."/>
-      <keyword name="slicot_ab07nd" link="slicot_ab07nd.html" description="Inverse of a given linear system."/>
-      <keyword name="slicot_ab08nd" link="slicot_ab08nd.html" description="Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system."/>
-      <keyword name="slicot_ag08bd" link="slicot_ag08bd.html" description="Zeros and Kronecker structure of a descriptor system pencil."/>
-      <keyword name="slicot_mb02md" link="slicot_mb02md.html" description="Solution of Total Least-Squares problem using a SVD approach."/>
-      <keyword name="slicot_mb03od" link="slicot_mb03od.html" description="Matrix rank determination by incremental condition estimation."/>
-      <keyword name="slicot_mb03pd" link="slicot_mb03pd.html" description="Matrix rank determination by incremental condition estimation (row pivoting)."/>
-      <keyword name="slicot_mb03rd" link="slicot_mb03rd.html" description="Reduction of a real Schur form matrix to a block-diagonal form."/>
-      <keyword name="slicot_mb04gd" link="slicot_mb04gd.html" description="RQ factorization with row pivoting of a matrix."/>
-      <keyword name="slicot_mb04md" link="slicot_mb04md.html" description="Balancing a general real matrix."/>
-      <keyword name="slicot_mb05od" link="slicot_mb05od.html" description="Matrix exponential for a real matrix, with accuracy estimate."/>
-      <keyword name="slicot_mc01td" link="slicot_mc01td.html" description="Checking stability of a given real polynomial."/>
-      <keyword name="slicot_sb01bd" link="slicot_sb01bd.html" description="Pole assignment for a given matrix pair (A,B)."/>
-      <keyword name="slicot_sb02od" link="slicot_sb02od.html" description="Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)."/>
-      <keyword name="slicot_sb03md" link="slicot_sb03md.html" description="Solution of continuous- or discrete-time Lyapunov equations and separation estimation."/>
-      <keyword name="slicot_sb03od" link="slicot_sb03od.html" description="Solution of stable continuous- or discrete-time Lyapunov equations (Cholesky factor)."/>
-      <keyword name="slicot_sb04md" link="slicot_sb04md.html" description="Solution of continuous-time Sylvester equations (Hessenberg-Schur method)."/>
-      <keyword name="slicot_sb04qd" link="slicot_sb04qd.html" description="Solution of discrete-time Sylvester equations (Hessenberg-Schur method)."/>
-      <keyword name="slicot_sb10jd" link="slicot_sb10jd.html" description="Converting a descriptor state-space system into regular state-space form."/>
+      <keyword name="Licence SLICOT" link="About_SLICOT_license.html" description="À propos de la licence SLICOT."/>
+      <keyword name="slicot_ab01od" link="slicot_ab01od.html" description="Forme en escalier pour systèmes multi-entrées utilisant des transformations orthogonales d'état et d'entrée."/>
+      <keyword name="slicot_ab04md" link="slicot_ab04md.html" description="Conversion entre systèmes discrets et continus par transformation bilinéaire."/>
+      <keyword name="slicot_ab07nd" link="slicot_ab07nd.html" description="Inverse d'un système linéaire donné."/>
+      <keyword name="slicot_ab08nd" link="slicot_ab08nd.html" description="Construction d'un pencil régulier pour un système donné dont les valeurs propres généralisées sont les zéros invariants du système."/>
+      <keyword name="slicot_ag08bd" link="slicot_ag08bd.html" description="Zéros et structure de Kronecker d'un pencil de système descripteur."/>
+      <keyword name="slicot_mb02md" link="slicot_mb02md.html" description="Résolution du problème des moindres carrés totaux par une approche SVD."/>
+      <keyword name="slicot_mb03od" link="slicot_mb03od.html" description="Détermination du rang d'une matrice par estimation conditionnelle incrémentale."/>
+      <keyword name="slicot_mb03pd" link="slicot_mb03pd.html" description="Détermination du rang d'une matrice par estimation conditionnelle incrémentale (pivotement de lignes)."/>
+      <keyword name="slicot_mb03rd" link="slicot_mb03rd.html" description="Réduction d'une matrice en forme de Schur réelle vers une forme bloc-diagonale."/>
+      <keyword name="slicot_mb04gd" link="slicot_mb04gd.html" description="Factorisation RQ avec pivotement de lignes d'une matrice."/>
+      <keyword name="slicot_mb04md" link="slicot_mb04md.html" description="Équilibrage d'une matrice réelle générale."/>
+      <keyword name="slicot_mb05od" link="slicot_mb05od.html" description="Exponentielle matricielle pour une matrice réelle, avec estimation de précision."/>
+      <keyword name="slicot_mc01td" link="slicot_mc01td.html" description="Vérification de la stabilité d'un polynôme réel donné."/>
+      <keyword name="slicot_sb01bd" link="slicot_sb01bd.html" description="Affectation de pôles pour une paire de matrices donnée (A,B)."/>
+      <keyword name="slicot_sb02od" link="slicot_sb02od.html" description="Résolution des équations de Riccati algébriques temps continu ou discret (méthode des vecteurs de Schur généralisés)."/>
+      <keyword name="slicot_sb03md" link="slicot_sb03md.html" description="Résolution des équations de Lyapunov temps continu ou discret et estimation de séparation."/>
+      <keyword name="slicot_sb03od" link="slicot_sb03od.html" description="Résolution des équations de Lyapunov stables temps continu ou discret (facteur de Cholesky)."/>
+      <keyword name="slicot_sb04md" link="slicot_sb04md.html" description="Résolution des équations de Sylvester temps continu (méthode Hessenberg-Schur)."/>
+      <keyword name="slicot_sb04qd" link="slicot_sb04qd.html" description="Résolution des équations de Sylvester temps discret (méthode Hessenberg-Schur)."/>
+      <keyword name="slicot_sb10jd" link="slicot_sb10jd.html" description="Conversion d'un système d'espace d'état descripteur en forme d'espace d'état régulière."/>
       <keyword name="slicot_sg02ad" link="slicot_sg02ad.html" description="Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems."/>
-      <keyword name="slicot_tb01id" link="slicot_tb01id.html" description="Balancing a system matrix corresponding to a triplet (A, B, C)."/>
-      <keyword name="slicot_tg01ad" link="slicot_tg01ad.html" description="Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C)."/>
+      <keyword name="slicot_tb01id" link="slicot_tb01id.html" description="Équilibrage d'une matrice système correspondant au triplet (A, B, C)."/>
+      <keyword name="slicot_tg01ad" link="slicot_tg01ad.html" description="Équilibrage des matrices du pinceau système correspondant au triplet descripteur (A - λ E, B, C)."/>
     </section>
   </toc>
 </help_summary>

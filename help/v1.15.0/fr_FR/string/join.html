@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">join</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Combine strings.</div></div>
+<div class="section syntax-section"><div class="subtitle">Combine des chaînes.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">res = join(str)
 res = join(str, delimiter)
 res = join(str, dim)
@@ -58,19 +57,19 @@ res = join(str, delimiter, dim)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">str</td>
-<td>a string, string array or cell of strings.</td>
+<td>une chaîne, un tableau de chaînes ou une cellule de chaînes.</td>
 </tr>
 <tr>
 <td class="param-name">delimiter</td>
-<td>a string, string array or cell of strings:Characters used to separate and join strings.</td>
+<td>une chaîne, un tableau de chaînes ou une cellule de chaînes : caractères utilisés pour séparer et joindre les chaînes.</td>
 </tr>
 <tr>
 <td class="param-name">dim</td>
@@ -80,40 +79,40 @@ res = join(str, delimiter, dim)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">res</td>
-<td>a string, string array or cell of strings.</td>
+<td>une chaîne, un tableau de chaînes ou une cellule de chaînes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>res = join(str)</b> combines the elements of <b>str</b> into a single text by joining them with a space character as the default delimiter.</p>
-            <p>The input, <b>str</b>, can be either a string array or a cell array of character vectors. The output, <b>res</b>, has the same data type as <b>str</b>.</p>
-            <p>If <b>str</b> is a 1-by-N or N-by-1 string array or cell array, <b>res</b> will be a string scalar or a cell array containing a single character vector.</p>
-            <p>If <b>str</b> is an M-by-N string array or cell array, res will be an M-by-1 string array or cell array.</p>
-            <p>For arrays of any size, join concatenates elements along the last dimension with a size greater than 1.</p>
+        <b>res = join(str)</b> combine les éléments de <b>str</b> en un seul texte en les joignant avec un espace comme délimiteur par défaut.</p>
+        <p>L'entrée, <b>str</b>, peut être un tableau de chaînes ou une cellule de vecteurs de caractères. La sortie, <b>res</b>, a le même type de données que <b>str</b>.</p>
+        <p>Si <b>str</b> est un tableau 1-by-N ou N-by-1, <b>res</b> sera un scalaire de chaîne ou une cellule contenant un seul vecteur de caractères.</p>
+        <p>Si <b>str</b> est un tableau M-by-N, alors <b>res</b> sera un tableau M-by-1.</p>
+        <p>Pour des tableaux de n'importe quelle taille, join concatène les éléments le long de la dernière dimension ayant une taille supérieure à 1.</p>
+        <p>
+            <b>res = join(str, delimiter)</b> joint les éléments de <b>str</b> en utilisant le délimiteur spécifié au lieu de l'espace par défaut.</p>
+            <p>Si delimiter est un tableau de délimiteurs et que <b>str</b> a N éléments le long de la dimension de jointure, delimiter doit avoir N-1 éléments le long de la même dimension. Toutes les autres dimensions de delimiter doivent soit avoir la taille 1, soit correspondre aux dimensions correspondantes de <b>str</b>.</p>
             <p>
-                <b>res = join(str, delimiter)</b> joins the elements of <b>str</b> using the specified delimiter instead of the default space character.</p>
-                <p>If delimiter is an array of multiple delimiters, and <b>str</b> has N elements along the joining dimension, delimiter must have N–1 elements along the same dimension. All other dimensions of delimiter must either have size 1 or match the size of the corresponding dimensions of <b>str</b>.</p>
-                <p>
-                    <b>res = join(str, dim)</b> combines the elements of <b>str</b> along the specified dimension <b>dim</b>.</p>
-                    <p>
-                        <b>res = join(str, delimiter, dim)</b> joins the elements of <b>str</b> along the specified dimension <b>dim</b>, using delimiter to separate them.</p>
+              <b>res = join(str, dim)</b> combine les éléments de <b>str</b> le long de la dimension spécifiée <b>dim</b>.</p>
+              <p>
+                <b>res = join(str, delimiter, dim)</b> joint les éléments de <b>str</b> le long de la dimension spécifiée <b>dim</b>, en utilisant delimiter pour les séparer.</p>
                     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">str = ["x","y","z"; "a","b","c"];
 delimiters = [" + "," = "; " - "," = "];
@@ -122,14 +121,14 @@ R = join(str, delimiters)</code><button class="copy-btn" type="button" onclick="
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../string/append.html">append</a><a class="see-also-link" href="../string/strcat.html">strcat</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -137,13 +136,13 @@ R = join(str, delimiters)</code><button class="copy-btn" type="button" onclick="
 </tr>
 <tr>
 <td class="version">1.10.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

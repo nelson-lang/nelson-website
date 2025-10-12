@@ -2,7 +2,7 @@
 <html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Read/Write table to files</title>
+<title>Lecture/Écriture de tables vers des fichiers</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
 <script type="text/javascript">
@@ -44,34 +44,34 @@
             </script>
 </head>
 <body>
-<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Read/Write table to files</span></div></div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Lecture/Écriture de tables vers des fichiers</span></div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Nelson provides extensive capabilities for reading and writing tables to files, supporting both text-based and binary storage formats to meet different data management needs.</p>
-        <p>Text files (.csv, .txt, etc.):</p>
+        <p>Nelson fournit des capacités étendues pour la lecture et l'écriture de tables vers des fichiers, prenant en charge les formats texte et binaire selon les besoins de gestion des données.</p>
+        <p>Fichiers texte (.csv, .txt, etc.) :</p>
         <ul>
-            <li>writetable() exports tables to delimited text files with customizable separators</li>
-            <li>readtable() imports tables from delimited text files with automatic format detection</li>
-            <li>Text files preserve variable names and data in human-readable format</li>
+            <li>writetable() exporte les tables vers des fichiers texte délimités avec des séparateurs personnalisables</li>
+            <li>readtable() importe les tables depuis des fichiers texte délimités avec détection automatique du format</li>
+            <li>Les fichiers texte conservent les noms de variables et les données au format lisible par l'humain</li>
         </ul>
-        <p>Binary file:</p>
+        <p>Fichier binaire :</p>
         <ul>
-            <li>Nelson HDF5 format (.nh5):
+            <li>Format Nelson HDF5 (.nh5) :
       	<ul>
-                <li>Efficient binary storage using HDF5 format</li>
-                <li>Preserves all table metadata and data types</li>
-                <li>Use save -nh5 and load commands</li>
+                <li>Stockage binaire efficace utilisant HDF5</li>
+                <li>Conserve toutes les métadonnées et les types de données de la table</li>
+                <li>Utilisez les commandes save -nh5 et load</li>
             </ul>
         </li>
     </ul>
-    <p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
+    <p>Le format binaire est recommandé pour préserver la précision numérique exacte et travailler avec de grands ensembles de données.</p>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">Read/Write table to .nh5 file</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -99,14 +99,14 @@ T2 = readtable(filename);</code><button class="copy-btn" type="button" onclick="
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../spreadsheet/writetable.html">writetable</a><a class="see-also-link" href="../spreadsheet/readtable.html">readtable</a><a class="see-also-link" href="../stream_manager/load.html">load</a><a class="see-also-link" href="../stream_manager/save.html">save</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -114,13 +114,13 @@ T2 = readtable(filename);</code><button class="copy-btn" type="button" onclick="
 </tr>
 <tr>
 <td class="version">1.10.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

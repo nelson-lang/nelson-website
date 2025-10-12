@@ -45,112 +45,111 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_sb01bd</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Pole assignment for a given matrix pair (A,B).</div></div>
+<div class="section syntax-section"><div class="subtitle">Affectation de pôles pour une paire de matrices donnée (A,B).</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[A_OUT, WR_OUT, WI_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">DICO</td>
-<td>Specifies the type of the original system.'C':  continuous-time system;'D':  discrete-time system.</td>
+<td>Spécifie le type du système original : 'C' : système continu ; 'D' : système discret.</td>
 </tr>
 <tr>
 <td class="param-name">ALPHA</td>
-<td>Specifies the maximum admissible value.</td>
+<td>Spécifie la valeur maximale admissible.</td>
 </tr>
 <tr>
 <td class="param-name">A_IN</td>
-<td>the leading N-by-N part of this array must contain the state dynamics matrix A.</td>
+<td>La partie principale N×N de ce tableau doit contenir la matrice de dynamique d'état A.</td>
 </tr>
 <tr>
 <td class="param-name">B_IN</td>
-<td>The leading N-by-M part of this array must contain the input/state matrix.</td>
+<td>La partie principale N×M de ce tableau doit contenir la matrice d'entrée/état.</td>
 </tr>
 <tr>
 <td class="param-name">WR_IN</td>
-<td>contains the real parts of the desired eigenvalues of the closed-loop system state-matrix A+B*F.</td>
+<td>Contient les parties réelles des valeurs propres souhaitées de la matrice d'état en boucle fermée A+B*F.</td>
 </tr>
 <tr>
 <td class="param-name">WI_IN</td>
-<td>contains the imaginary parts of the desired eigenvalues of the closed-loop system state-matrix A+B*F.</td>
+<td>Contient les parties imaginaires des valeurs propres souhaitées de la matrice d'état en boucle fermée A+B*F.</td>
 </tr>
 <tr>
 <td class="param-name">TOL</td>
-<td>The absolute tolerance level below which the elements of A or B are considered zero (used for controllability tests).</td>
+<td>La tolérance absolue en dessous de laquelle les éléments de A ou B sont considérés comme nuls (utilisée pour les tests de contrôlabilité).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td>the leading N-by-N part of this array contains the matrix Z'*(A+B*F)*Z in a real Schur form.</td>
+<td>La partie principale N×N de ce tableau contient la matrice Z'*(A+B*F)*Z en forme de Schur réelle.</td>
 </tr>
 <tr>
 <td class="param-name">WR_OUT</td>
-<td>if INFO = 0, the leading NAP elements of these arrays contain the real parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.</td>
+<td>Si INFO = 0, les NAP premiers éléments de ces tableaux contiennent les parties réelles des valeurs propres assignées. Les NP - NAP éléments restants contiennent les valeurs propres non assignées.</td>
 </tr>
 <tr>
 <td class="param-name">WI_OUT</td>
-<td>if INFO = 0, the leading NAP elements of these arrays contain the imaginary parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.</td>
+<td>Si INFO = 0, les NAP premiers éléments de ces tableaux contiennent les parties imaginaires des valeurs propres assignées. Les NP - NAP éléments restants contiennent les valeurs propres non assignées.</td>
 </tr>
 <tr>
 <td class="param-name">NFP</td>
-<td>The number of eigenvalues of A having real parts less than ALPHA, if DICO = 'C', or moduli less than ALPHA, if DICO = 'D'. These eigenvalues are not modified by the eigenvalue assignment algorithm.</td>
+<td>Le nombre de valeurs propres de A ayant des parties réelles &lt; ALPHA si DICO = 'C', ou des modules &lt; ALPHA si DICO = 'D'. Ces valeurs propres ne sont pas modifiées par l'algorithme d'affectation.</td>
 </tr>
 <tr>
 <td class="param-name">NAP</td>
-<td>The number of assigned eigenvalues. If INFO = 0 on exit, then NAP = N-NFP-NUP.</td>
+<td>Le nombre de valeurs propres assignées. Si INFO = 0 à la sortie, alors NAP = N - NFP - NUP.</td>
 </tr>
 <tr>
 <td class="param-name">NUP</td>
-<td>The number of uncontrollable eigenvalues detected by the eigenvalue assignment algorithm.</td>
+<td>Le nombre de valeurs propres non contrôlables détectées par l'algorithme d'affectation.</td>
 </tr>
 <tr>
 <td class="param-name">F</td>
-<td>The leading M-by-N part of this array contains the state feedback F, which assigns NAP closed-loop eigenvalues and keeps unaltered N-NAP open-loop eigenvalues.</td>
+<td>La partie principale M×N de ce tableau contient le retour d'état F, qui assigne NAP valeurs propres en boucle fermée et laisse inchangées N-NAP valeurs propres en boucle ouverte.</td>
 </tr>
 <tr>
 <td class="param-name">Z</td>
-<td>The leading N-by-N part of this array contains the orthogonal matrix Z which reduces the closed-loop system state matrix A + B*F to upper real Schur form.</td>
+<td>La partie principale N×N de ce tableau contient la matrice orthogonale Z qui réduit la matrice d'état en boucle fermée A + B*F à la forme de Schur réelle supérieure.</td>
 </tr>
 <tr>
 <td class="param-name">IWARN</td>
-<td>= 0:  no warning; = K:  K violations of the numerical stability condition.</td>
+<td>&gt;= 0 : pas d'avertissement ; = K : K violations de la condition de stabilité numérique.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>= 0:  successful exit;</td>
+<td>0 : sortie réussie ;</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>To determine the state feedback matrix F for a given system (A,B) such that the closed-loop state matrix A+B*F has specified eigenvalues.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">N = 4;
 M = 2;
@@ -181,12 +180,12 @@ WI_IN = [ 0.1500; -0.1500];
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/SB01BD.html" target="_blank">http://slicot.org/objects/software/shared/doc/SB01BD.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -194,13 +193,13 @@ WI_IN = [ 0.1500; -0.1500];
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

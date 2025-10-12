@@ -4,12 +4,10 @@
     <module>nig</module>
     <section name="NIG">
       <chapter_description>
-        <p>The NIG module provides tools to easily interface C or Fortran functions with Nelson.</p>
-        <p>It simplifies the process of creating gateways that allow compiled routines to be called
-            directly from Nelson scripts or functions, enabling high-performance computation and
-            reuse of existing numerical libraries.</p>
+        <p>Le module NIG fournit des outils pour interfacer facilement des fonctions C ou Fortran avec Nelson.</p>
+        <p>Il simplifie le processus de création de gateways qui permettent d'appeler des routines compilées directement depuis des scripts ou fonctions Nelson, offrant des calculs haute-performance et la réutilisation de bibliothèques numériques existantes.</p>
     </chapter_description>
-      <keyword name="nig" link="nig.html" description="Nelson tool to interface C or Fortran functions with Nelson."/>
+      <keyword name="nig" link="nig.html" description="Outil Nelson pour interfacer des fonctions C ou Fortran avec Nelson."/>
     </section>
   </toc>
 </help_summary>

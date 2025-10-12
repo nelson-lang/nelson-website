@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">zoom</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Enable zoom mode.</div></div>
+<div class="section syntax-section"><div class="subtitle">Activer le mode zoom.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">zoom
 zoom option
 zoom(factor)
@@ -59,65 +58,56 @@ zoom(ax, ...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">option</td>
-<td>string: 'on', 'off', 'reset', 'out', 'xon', 'yon' or 'toggle'.</td>
+<td>chaîne : 'on', 'off', 'reset', 'out', 'xon', 'yon' ou 'toggle'.</td>
 </tr>
 <tr>
 <td class="param-name">factor</td>
-<td>positive number: To zoom in, indicate a factor greater than 1. To zoom out, specify a factor between 0 and 1. When zooming out, the axes will zoom out by a factor of 1/factor.</td>
+<td>nombre positif : Pour zoomer, indiquez un facteur supérieur à 1. Pour dézoomer, spécifiez un facteur entre 0 et 1. Lors du dézoom, les axes se dézoomeront d'un facteur de 1/factor.</td>
 </tr>
 <tr>
 <td class="param-name">fig</td>
-<td>Figure object: Target figure</td>
+<td>Objet figure : Figure cible</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>une valeur scalaire d'objet graphique : conteneur parent, spécifié comme un axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Utilize the zoom mode to dynamically adjust axis limits for interactive data exploration.</p>
-        <p>Enable or disable the zoom mode and configure additional basic settings using the zoom function.</p>
-        <p>Zoom mode is compatible with various charts like line, bar, histogram, and surface charts. These charts typically feature zoom in and zoom out icons on the toolbar to facilitate zooming functionality.</p>
-        <p>
-            <b>zoom option</b> configures the zoom mode for all axes within the current figure.</p>
-            <p>For instance, <b>zoom('on')</b> activates zoom mode, <b>zoom('xon')</b> enables zoom mode exclusively for the x-dimension, while <b>zoom('off')</b> disables zoom mode altogether.</p>
-            <p>Once zoom mode is active, you can adjust the view of axes using the cursor, scroll wheel, or keyboard:</p>
-            <p>Cursor: Click to zoom in at the cursor position; Drag to zoom into a rectangular region.</p>
-            <p>Scroll wheel: Scroll up to zoom in, scroll down to zoom out.</p>
-            <p>Keyboard: Press the up arrow (↑) key to zoom in, and the down arrow (↓) key to zoom out.</p>
-            <p></p>
-            <p>The zoom mode option can be specified using one of the following values:</p>
-            <p>
-                <b>'toggle'</b>: Toggles the zoom mode. If zoom mode is disabled, 'toggle' reverts to the most recently used zoom option of 'on', 'xon', or 'yon'. This option behaves the same as calling zoom without any arguments.</p>
-                <p>
-                    <b>'xon'</b>: Enables zoom mode for the x-dimension exclusively.</p>
-                    <p>
-                        <b>'yon'</b>: Activates zoom mode for the y-dimension exclusively.</p>
-                        <p>
-                            <b>'on'</b>: Activates zoom mode.</p>
-                            <p>
-                                <b>'off'</b>: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode.</p>
-                                <p>
-                                    <b>'reset'</b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the <b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level.</p>
-                                    <p>
-                                        <b>'out'</b>: Restores the current axes to its baseline zoom level.</p>
-                                    </div>
+        <p>Utilisez le mode zoom pour ajuster dynamiquement les limites des axes pour une exploration interactive des données.</p>
+        <p>Activez ou désactivez le mode zoom et configurez des paramètres de base supplémentaires à l'aide de la fonction zoom.</p>
+        <p>Le mode zoom est compatible avec divers graphiques tels que les graphiques en ligne, en barres, les histogrammes et les graphiques de surface. Ces graphiques disposent généralement d'icônes de zoom avant et arrière sur la barre d'outils pour faciliter la fonctionnalité de zoom.</p>
+        <p><b>zoom option</b> configure le mode zoom pour tous les axes de la figure actuelle.</p>
+        <p>Par exemple, <b>zoom('on')</b> active le mode zoom, <b>zoom('xon')</b> active le mode zoom exclusivement pour la dimension x, tandis que <b>zoom('off')</b> désactive complètement le mode zoom.</p>
+        <p>Une fois le mode zoom activé, vous pouvez ajuster la vue des axes à l'aide du curseur, de la molette de défilement ou du clavier :</p>
+        <p>Curseur : Cliquez pour zoomer au niveau de la position du curseur ; Faites glisser pour zoomer sur une région rectangulaire.</p>
+        <p>Molette de défilement : Faites défiler vers le haut pour zoomer, faites défiler vers le bas pour dézoomer.</p>
+        <p>Clavier : Appuyez sur la flèche haut (↑) pour zoomer, et sur la flèche bas (↓) pour dézoomer.</p>
+        <p>L'option de mode zoom peut être spécifiée en utilisant l'une des valeurs suivantes :</p>
+        <p><b>'toggle'</b> : Bascule le mode zoom. Si le mode zoom est désactivé, 'toggle' revient à l'option de zoom la plus récemment utilisée parmi 'on', 'xon' ou 'yon'. Cette option se comporte de la même manière que l'appel de zoom sans aucun argument.</p>
+        <p><b>'xon'</b> : Active le mode zoom exclusivement pour la dimension x.</p>
+        <p><b>'yon'</b> : Active le mode zoom exclusivement pour la dimension y.</p>
+        <p><b>'on'</b> : Active le mode zoom.</p>
+        <p><b>'off'</b> : Désactive le mode zoom. Notez que certaines interactions par défaut peuvent persister indépendamment du mode d'interaction.</p>
+        <p><b>'reset'</b> : Établit le niveau de zoom actuel comme niveau de zoom de base. Une fois défini, des actions ultérieures comme le dézoom, le double-clic dans les axes ou le clic sur l'icône <b>Restaurer la vue</b> sur la barre d'outils des axes ramèneront les axes à ce niveau de zoom de base.</p>
+        <p><b>'out'</b> : Restaure les axes actuels à leur niveau de zoom de base.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">surf(peaks)
 zoom on
@@ -129,14 +119,14 @@ zoom out</code><button class="copy-btn" type="button" onclick="copyExample(this)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/rotate3d.html">rotate3d</a><a class="see-also-link" href="../graphics/pan.html">pan</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -144,13 +134,13 @@ zoom out</code><button class="copy-btn" type="button" onclick="copyExample(this)
 </tr>
 <tr>
 <td class="version">1.2.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

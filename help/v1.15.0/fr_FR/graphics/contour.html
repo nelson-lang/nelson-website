@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">contour</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Contour plot of matrix</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracé de contours d'une matrice</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">contour(Z)
 contour(X, Y, Z)
 contour(..., levels)
@@ -61,189 +60,248 @@ M = contour(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Z</td>
-<td>z-coordinates: vector or matrix.</td>
+<td>Coordonnées z : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">levels</td>
-<td>Contour levels: scalar or vector.</td>
+<td>Niveaux de contours : scalaire ou vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style and color</td>
+<td>Style et couleur de ligne</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Un objet graphique scalaire : conteneur parent, spécifié comme axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>Contour matrix.</td>
+<td>Matrice de contours.</td>
 </tr>
 <tr>
 <td class="param-name">h</td>
-<td>a graphics object: contour type.</td>
+<td>Un objet graphique : type contour.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>contour(Z)</b> generates a contour plot representing isolines of the matrix Z. Each isoline corresponds to a specific height value on the x-y plane.</p>
-            <p>Nelson automatically selects the contour lines to display based on the values in Z. The column and row indices of Z serve as the x and y coordinates in the plane, respectively.</p>
-            <p>
-                <b>contour(X, Y, Z)</b> allows the user to specify the x and y coordinates corresponding to the values in matrix Z. This enables more precise control over the positioning of the contour plot on the x-y plane.</p>
-                <p>The matrices X and Y provide the coordinates, while Z contains the height values for generating the contour plot.</p>
-                <p>Property Name-Value Pairs:</p>
-                <p></p>
-                <p>
-                    <b>LevelList</b>: The contour levels, specified as a vector of z values, determine the height levels at which the contour lines are drawn. By default, when not explicitly provided, the contour function automatically selects these values to cover the range of values present in the ZData property, ensuring comprehensive coverage of the data range. Default: empty matrix.</p>
-                    <p>
-                        <b>LevelListMode</b>: Selection mode for LevelList: 'manual' or 'auto' (default).</p>
-                        <p>
-                            <b>LevelStep</b>: Spacing between contour lines: scalar numeric value or 0 (default).</p>
-                            <p>
-                                <b>LevelStepMode</b>:Selection mode for LevelStep: 'manual' or 'auto' (default).</p>
-                                <p>
-                                    <b>EdgeColor</b>: Color of contour lines: rgb color or 'flat' (default).</p>
-                                    <p>
-                                        <b>EdgeAlpha</b>: Contour line transparency: scalar in range [0, 1] or 1 (default).</p>
-                                        <p>
-                                            <b>LineStyle</b>: Line style: '--', ':',  '-.' or '-' (default).</p>
-                                            <p>
-                                                <b>LineWidth</b>: Line Width: positive value or  0.5 (default).</p>
-                                                <p>
-                                                    <b>ContourMatrix</b>: contour matrix.</p>
-                                                    <p>
-                                                        <b>XData</b>: x values: vector or matrix or [] (default).</p>
-                                                        <p>
-                                                            <b>YData</b>: y values: vector or matrix or [] (default).</p>
-                                                            <p>
-                                                                <b>ZData</b>: z values: vector or matrix or [] (default).</p>
-                                                                <p>
-                                                                    <b>XDataMode</b>: Selection mode for XData: 'manual' or 'auto' (default).</p>
-                                                                    <p>
-                                                                        <b>YDataMode</b>: Selection mode for YData: 'manual' or 'auto' (default).</p>
-                                                                        <p>
-                                                                            <b>DisplayName</b>: Legend label: character vector, string scalar or '' (default).</p>
-                                                                            <p>
-                                                                                <b>Visible</b>: State of visibility: on/off logical value, 'on' (default).</p>
-                                                                                <p>
-                                                                                    <b>Parent</b>: Parent: Axes object or Group object.</p>
-                                                                                    <p>
-                                                                                        <b>Children</b>: Children.</p>
-                                                                                        <p>
-                                                                                            <b>HandleVisibility</b>: Visibility of handle 'on', 'off'.</p>
-                                                                                            <p>
-                                                                                                <b>Type</b>: Type of graphics object 'contour'.</p>
-                                                                                                <p>
-                                                                                                    <b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
-                                                                                                    <p>
-                                                                                                        <b>UserData</b>: User data: array or  [] (default).</p>
-                                                                                                        <p>
-                                                                                                            <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-                                                                                                            <p>
-                                                                                                                <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-                                                                                                                <p>
-                                                                                                                    <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-                                                                                                                </div>
+            <b>contour(Z)</b> génère un tracé de contours représentant les isolignes de la matrice Z. Chaque isoligne correspond à une valeur de hauteur spécifique sur le plan x-y.</p>
+        <p>
+            Nelson sélectionne automatiquement les lignes de contour à afficher en fonction des valeurs de Z. Les indices de colonnes et de lignes de Z servent respectivement de coordonnées x et y dans le plan.</p>
+        <p>
+            <b>contour(X, Y, Z)</b> permet à l'utilisateur de spécifier les coordonnées x et y correspondant aux valeurs de la matrice Z. Cela permet un contrôle plus précis du positionnement du tracé de contours sur le plan x-y.</p>
+        <p>
+            Les matrices X et Y fournissent les coordonnées, tandis que Z contient les valeurs de hauteur pour générer le tracé de contours.</p>
+        <p>Paires Nom-Valeur de propriétés :</p>
+                <table>
+                    <tr>
+<th>Propriété</th>
+<th>Description</th>
+</tr>
+                    <tr>
+<td><b>LevelList</b></td>
+<td>Les niveaux de contours, spécifiés comme un vecteur de valeurs z, déterminent les hauteurs auxquelles les lignes de contour sont tracées. Par défaut, si non fournis, la fonction contour sélectionne automatiquement ces valeurs pour couvrir l'ensemble des valeurs présentes dans la propriété ZData, assurant une couverture complète de la plage de données. Par défaut : matrice vide.</td>
+</tr>
+                    <tr>
+<td><b>LevelListMode</b></td>
+<td>Mode de sélection pour LevelList : 'manual' ou 'auto' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>LevelStep</b></td>
+<td>Espacement entre les lignes de contour : valeur numérique scalaire ou 0 (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>LevelStepMode</b></td>
+<td>Mode de sélection pour LevelStep : 'manual' ou 'auto' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>EdgeColor</b></td>
+<td>Couleur des lignes de contour : couleur rgb ou 'flat' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>EdgeAlpha</b></td>
+<td>Transparence des lignes de contour : scalaire dans [0, 1] ou 1 (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>LineStyle</b></td>
+<td>Style de ligne : '--', ':', '-.' ou '-' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>LineWidth</b></td>
+<td>Épaisseur de ligne : valeur positive ou 0.5 (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>ContourMatrix</b></td>
+<td>Matrice de contours.</td>
+</tr>
+                    <tr>
+<td><b>XData</b></td>
+<td>Valeurs x : vecteur ou matrice ou [] (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>YData</b></td>
+<td>Valeurs y : vecteur ou matrice ou [] (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>ZData</b></td>
+<td>Valeurs z : vecteur ou matrice ou [] (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>XDataMode</b></td>
+<td>Mode de sélection pour XData : 'manual' ou 'auto' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>YDataMode</b></td>
+<td>Mode de sélection pour YData : 'manual' ou 'auto' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>DisplayName</b></td>
+<td>Étiquette de légende : vecteur de caractères, chaîne ou '' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>Visible</b></td>
+<td>État de visibilité : valeur logique on/off, 'on' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>Parent</b></td>
+<td>Parent : objet Axes ou Group.</td>
+</tr>
+                    <tr>
+<td><b>Children</b></td>
+<td>Enfants.</td>
+</tr>
+                    <tr>
+<td><b>HandleVisibility</b></td>
+<td>Visibilité du handle : 'on', 'off'.</td>
+</tr>
+                    <tr>
+<td><b>Type</b></td>
+<td>Type d'objet graphique : 'contour'.</td>
+</tr>
+                    <tr>
+<td><b>Tag</b></td>
+<td>Identifiant de l'objet : vecteur de caractères, chaîne ou '' (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>UserData</b></td>
+<td>Données utilisateur : tableau ou [] (par défaut).</td>
+</tr>
+                    <tr>
+<td><b>CreateFcn</b></td>
+<td>Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.</td>
+</tr>
+                    <tr>
+<td><b>DeleteFcn</b></td>
+<td>Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.</td>
+</tr>
+                    <tr>
+<td><b>BeingDeleted</b></td>
+<td>Indique que l'objet est en cours de suppression.</td>
+</tr>
+                </table>
+            </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
-subplot(2, 3, 1)
-x = linspace(-2 * pi, 2 * pi);
-y = linspace(0, 4 * pi);
-[X, Y] = meshgrid(x, y);
-Z = sin(X) + cos(Y);
-contour(X, Y, Z);
+    subplot(2, 3, 1)
+    x = linspace(-2 * pi, 2 * pi);
+    y = linspace(0, 4 * pi);
+    [X, Y] = meshgrid(x, y);
+    Z = sin(X) + cos(Y);
+    contour(X, Y, Z);
 
-subplot(2, 3, 2)
-[X, Y, Z] = peaks;
-contour(X, Y, Z, 20)
+    subplot(2, 3, 2)
+    [X, Y, Z] = peaks;
+    contour(X, Y, Z, 20)
 
-subplot(2, 3, 3)
-[X, Y, Z] = peaks;
-v = [1,1];
-contour(X, Y, Z, v)
+    subplot(2, 3, 3)
+    [X, Y, Z] = peaks;
+    v = [1,1];
+    contour(X, Y, Z, v)
 
-subplot(2, 3, 4)
-[X, Y, Z] = peaks;
-contour(X, Y, Z, '-.')
+    subplot(2, 3, 4)
+    [X, Y, Z] = peaks;
+    contour(X, Y, Z, '-.')
 
-subplot(2, 3, 5)
-Z = peaks;
-[M, c] = contour(Z);
-c.LineWidth = 3;
+    subplot(2, 3, 5)
+    Z = peaks;
+    [M, c] = contour(Z);
+    c.LineWidth = 3;
 
-subplot(2, 3, 6)
-[theta, r] = meshgrid (linspace (0,2*pi,64), linspace (0,1,64));
-[X, Y] = pol2cart (theta, r);
-Z = sin (2*theta) .* (1-r);
-contour (X, Y, abs (Z), 10);</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+    subplot(2, 3, 6)
+    [theta, r] = meshgrid (linspace (0,2*pi,64), linspace (0,1,64));
+    [X, Y] = pol2cart (theta, r);
+    Z = sin (2*theta) .* (1-r);
+    contour (X, Y, abs (Z), 10);
+    </code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./contour_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">rng('default');
-f = figure();
-N = 50;
-contour(1:N, 1:N, rand(N), 5)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+<code class="matlab syntax-block" style="flex:1 1 auto;">    rng('default');
+    f = figure();
+    N = 50;
+    contour(1:N, 1:N, rand(N), 5)
+    </code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./contour_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();      
-Z = peaks;
-Z(:,26) = NaN;
-contour(Z)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+<code class="matlab syntax-block" style="flex:1 1 auto;">    f = figure();      
+    Z = peaks;
+    Z(:,26) = NaN;
+    contour(Z)
+    </code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./contour_nan.png" align="middle" alt="Example illustration" style="width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/contour3.html">contour3</a><a class="see-also-link" href="../graphics/surf.html">surf</a><a class="see-also-link" href="../graphics/mesh.html">mesh</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -251,7 +309,7 @@ contour(Z)</code><button class="copy-btn" type="button" onclick="copyExample(thi
 </tr>
 <tr>
 <td class="version">1.3.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.7.0</td>
@@ -265,7 +323,7 @@ contour(Z)</code><button class="copy-btn" type="button" onclick="copyExample(thi
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

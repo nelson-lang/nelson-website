@@ -2,28 +2,28 @@
 <help_summary>
   <toc>
     <module>os_functions</module>
-    <section name="OS functions">
+    <section name="Fonctions du système d'exploitation">
       <chapter_description>
-        <p>The OS Functions module provides tools for interacting with the operating system in Nelson.</p>
-        <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.</p>
-        <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux/Unix platforms.</p>
+        <p>Le module Fonctions OS fournit des outils pour interagir avec le système d'exploitation dans Nelson.</p>
+        <p>Il inclut des fonctions pour interroger les informations système, gérer les variables d'environnement, exécuter des commandes shell, générer des GUID et effectuer des opérations spécifiques à la plateforme.</p>
+        <p>Ce module permet une intégration fluide des scripts Nelson avec le système d'exploitation sous-jacent sur Windows, macOS et Linux/Unix.</p>
     </chapter_description>
-      <keyword name="cmdsep" link="cmdsep.html" description="Command separator for current operating system."/>
-      <keyword name="computer" link="computer.html" description="System information."/>
-      <keyword name="createGUID" link="createGUID.html" description="Creates a GUID."/>
-      <keyword name="getenv" link="getenv.html" description="Get the value of an environment variable."/>
-      <keyword name="hostname" link="hostname.html" description="get host name of this computer."/>
-      <keyword name="ismac" link="ismac.html" description="Checks if version is for MacOS platform."/>
-      <keyword name="ispc" link="ispc.html" description="Checks if version is for Windows platform."/>
-      <keyword name="isunix" link="isunix.html" description="Checks if version is for  GNU Linux or Unix platform."/>
-      <keyword name="searchenv" link="searchenv.html" description="Searches for a file using environment paths."/>
-      <keyword name="setenv" link="setenv.html" description="Set the value of an environment variable."/>
-      <keyword name="system" link="system.html" description="Shell command execution."/>
-      <keyword name="dos" link="system.html" description="Shell command execution."/>
-      <keyword name="unix" link="system.html" description="Shell command execution."/>
-      <keyword name="username" link="username.html" description="get user name currently used."/>
-      <keyword name="winopen" link="winopen.html" description="Open file in appropriate application (Windows only)."/>
-      <keyword name="winqueryreg" link="winqueryreg.html" description="Read the Windows registry (Windows only)."/>
+      <keyword name="cmdsep" link="cmdsep.html" description="Séparateur de commande pour le système d'exploitation courant."/>
+      <keyword name="computer" link="computer.html" description="Informations sur le système."/>
+      <keyword name="createGUID" link="createGUID.html" description="Crée un GUID."/>
+      <keyword name="getenv" link="getenv.html" description="Obtenir la valeur d'une variable d'environnement."/>
+      <keyword name="hostname" link="hostname.html" description="obtenir le nom d'hôte de cet ordinateur."/>
+      <keyword name="ismac" link="ismac.html" description="Vérifie si la version est pour la plateforme macOS."/>
+      <keyword name="ispc" link="ispc.html" description="Vérifie si la version est pour la plateforme Windows."/>
+      <keyword name="isunix" link="isunix.html" description="Vérifie si la version est pour une plateforme GNU/Linux ou Unix."/>
+      <keyword name="searchenv" link="searchenv.html" description="Recherche un fichier en utilisant les chemins définis dans une variable d'environnement."/>
+      <keyword name="setenv" link="setenv.html" description="Définir la valeur d'une variable d'environnement."/>
+      <keyword name="system" link="system.html" description="Exécution de commandes shell."/>
+      <keyword name="dos" link="system.html" description="Exécution de commandes shell."/>
+      <keyword name="unix" link="system.html" description="Exécution de commandes shell."/>
+      <keyword name="username" link="username.html" description="obtenir le nom d'utilisateur courant."/>
+      <keyword name="winopen" link="winopen.html" description="Ouvrir un fichier dans l'application appropriée (Windows seulement)."/>
+      <keyword name="winqueryreg" link="winqueryreg.html" description="Lire le registre Windows (Windows seulement)."/>
     </section>
   </toc>
 </help_summary>

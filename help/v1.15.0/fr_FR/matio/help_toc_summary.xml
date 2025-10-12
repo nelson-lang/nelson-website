@@ -4,15 +4,15 @@
     <module>matio</module>
     <section name="MATIO">
       <chapter_description>
-        <p>The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.</p>
-        <p>It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.</p>
-        <p>With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.</p>
-    </chapter_description>
-      <keyword name="ismatfile" link="ismatfile.html" description="Checks if filename a valid .mat file"/>
-      <keyword name="loadmat" link="loadmat.html" description="load data from .mat file into Nelson's workspace."/>
-      <keyword name="savemat" link="savemat.html" description="save workspace variables to .mat file"/>
-      <keyword name="whomat" link="whomat.html" description="List variables in an valid .mat file."/>
-      <keyword name="whosmat" link="whosmat.html" description="List variables in an valid .mat file with sizes and types."/>
+        <p>Le module MATIO fournit un support pour la lecture et l'écriture de fichiers MAT, un format largement utilisé pour stocker des données numériques dans MATLAB© et des environnements compatibles.</p>
+        <p>Il permet à Nelson de vérifier la validité d'un fichier MAT, de charger et sauvegarder des variables d'espace de travail, et d'inspecter le contenu des fichiers.</p>
+        <p>Grâce à ce module, les utilisateurs peuvent échanger des données entre Nelson et MATLAB©, ce qui en fait un composant clé pour l'interopérabilité dans les flux de travail scientifiques et d'ingénierie.</p>
+</chapter_description>
+      <keyword name="ismatfile" link="ismatfile.html" description="Vérifie si le nom de fichier est un fichier .mat valide"/>
+      <keyword name="loadmat" link="loadmat.html" description="charge des données depuis un fichier .mat dans l'espace de travail de Nelson."/>
+      <keyword name="savemat" link="savemat.html" description="enregistre les variables de l'espace de travail dans un fichier .mat"/>
+      <keyword name="whomat" link="whomat.html" description="Liste les variables d'un fichier .mat valide."/>
+      <keyword name="whosmat" link="whosmat.html" description="Liste les variables d'un fichier .mat valide avec tailles et types."/>
     </section>
   </toc>
 </help_summary>

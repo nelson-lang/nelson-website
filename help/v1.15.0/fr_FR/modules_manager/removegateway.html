@@ -45,41 +45,40 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">removegateway</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Removes dynamically builtin at runtime.</div></div>
+<div class="section syntax-section"><div class="subtitle">Supprime dynamiquement un builtin au moment de l'exécution.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">removegateway(dyn_lib_path)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">dyn_lib_path</td>
-<td>a string: path of a dynamic library prepared for Nelson.</td>
+<td>chaîne : chemin d'une bibliothèque dynamique préparée pour Nelson.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>removegateway(dyn_lib_path)</b> removes dynamically builtin at runtime.</p>
-            <p>The dynamic library loaded must have at least an C entry point <b>RemoveGateway</b>.</p>
-            <p>If gateway was not loaded, no error or warning will be raised. If file does not exist an error is raised.</p>
+            <b>removegateway(dyn_lib_path)</b> supprime dynamiquement un builtin au moment de l'exécution.</p>
+            <p>La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé <b>RemoveGateway</b>.</p>
+            <p>Si la gateway n'était pas chargée, aucune erreur ni avertissement ne sera levé. Si le fichier n'existe pas, une erreur est levée.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">removes time builtin</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -91,14 +90,14 @@ calendar</code><button class="copy-btn" type="button" onclick="copyExample(this)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../dynamic_link/addgateway.html">addgateway</a><a class="see-also-link" href="../dynamic_link/gatewayinfo.html">gatewayinfo</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -106,13 +105,13 @@ calendar</code><button class="copy-btn" type="button" onclick="copyExample(this)
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

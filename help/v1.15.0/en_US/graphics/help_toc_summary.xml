@@ -76,7 +76,6 @@
       <keyword name="rgbplot" link="rgbplot.html" description="Plot colormap."/>
       <keyword name="ribbon" link="ribbon.html" description="Ribbon plot."/>
       <keyword name="rotate3d" link="rotate3d.html" description="Enable rotate mode."/>
-      <keyword name="saveas" link="saveas.html" description="Save figure to specific file format."/>
       <keyword name="scatter" link="scatter.html" description="Scatter plot."/>
       <keyword name="scatter3" link="scatter3.html" description="3D Scatter plot."/>
       <keyword name="semilogx" link="semilogx.html" description="Semilog plot (x-axis has log scale)."/>

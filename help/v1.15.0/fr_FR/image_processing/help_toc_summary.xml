@@ -2,14 +2,13 @@
 <help_summary>
   <toc>
     <module>image_processing</module>
-    <section name="Image Processing functions">
+    <section name="Fonctions de traitement d'image">
       <chapter_description>
-        <p>The Image Processing module provides basic operations for manipulating images, including
-            format conversion, resizing, and rotation.</p>
+        <p>Le module Image Processing fournit des opérations de base pour manipuler des images, y compris la conversion de format, le redimensionnement et la rotation.</p>
     </chapter_description>
-      <keyword name="im2double" link="im2double.html" description="Convert image to double precision."/>
-      <keyword name="imresize" link="imresize.html" description="Resize image by scale or output size"/>
-      <keyword name="imrotate" link="imrotate.html" description="Rotate image by specified angle"/>
+      <keyword name="im2double" link="im2double.html" description="Convertit une image en précision double."/>
+      <keyword name="imresize" link="imresize.html" description="Redimensionne une image par échelle ou taille de sortie"/>
+      <keyword name="imrotate" link="imrotate.html" description="Fait pivoter une image d'un angle spécifié"/>
     </section>
   </toc>
 </help_summary>

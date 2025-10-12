@@ -2,7 +2,7 @@
 <html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Python Nelson types</title>
+<title>Types Python - Nelson</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
 <script type="text/javascript">
@@ -44,265 +44,265 @@
             </script>
 </head>
 <body>
-<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Python Nelson types</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Managing Data between Python and Nelson.</div></div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Types Python - Nelson</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Gestion des données entre Python et Nelson.</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>Managing data returned by Python functions:</b>
+            <b>Gestion des données renvoyées par les fonctions Python :</b>
         </p>
-        
-            
-                Python return type, as shown in Python
-                Corresponding Nelson type (scalar)
-            
-            
-                bool
-                logical
-            
-            
-                complex
-                double (complex)
-            
-            
-                float
-                double
-            
-        
+        <table style="width:100%">
+            <tr>
+                <th>Type renvoyé par Python (affiché en Python)</th>
+                <th>Type correspondant dans Nelson (scalaire)</th>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>logical</td>
+            </tr>
+            <tr>
+                <td>complex</td>
+                <td>double (complex)</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>double</td>
+            </tr>
+        </table>
         <p></p>
         <p>
-            <b>Convert Python types to Nelson type explicitly:</b>
+            <b>Conversion explicite des types Python vers Nelson :</b>
         </p>
         <p></p>
-        
-            
-                Python return types or protocols shown in Nelson
-                Nelson conversion methods
-            
-            
-                py.str
-                char, string
-            
-            
-                py.int
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
-            
-            
-                py.long
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
-            
-            
-                py.float
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
-            
-            
-                py.bool
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical
-            
-            
-                py.bytes
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical
-            
-            
-                py.bytearray
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical
-            
-            
-                py.array.array
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
-            
-            
-                py.memoryview
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
-            
-            
-                py.numpy.ndarray
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
-            
-            
-                py.list
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical, string, cell
-            
-            
-                py.tuple
-                double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical, string, cell
-            
-            
-                py.dict
-                struct
-            
-        
+        <table style="width:100%">
+            <tr>
+                <th>Types/Protocoles Python représentés dans Nelson</th>
+                <th>Méthodes de conversion Nelson</th>
+            </tr>
+            <tr>
+                <td>py.str</td>
+                <td>char, string</td>
+            </tr>
+            <tr>
+                <td>py.int</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64</td>
+            </tr>
+            <tr>
+                <td>py.long</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64</td>
+            </tr>
+            <tr>
+                <td>py.float</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64</td>
+            </tr>
+            <tr>
+                <td>py.bool</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical</td>
+            </tr>
+            <tr>
+                <td>py.bytes</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical</td>
+            </tr>
+            <tr>
+                <td>py.bytearray</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical</td>
+            </tr>
+            <tr>
+                <td>py.array.array</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64</td>
+            </tr>
+            <tr>
+                <td>py.memoryview</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64</td>
+            </tr>
+            <tr>
+                <td>py.numpy.ndarray</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64</td>
+            </tr>
+            <tr>
+                <td>py.list</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical, string, cell</td>
+            </tr>
+            <tr>
+                <td>py.tuple</td>
+                <td>double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical, string, cell</td>
+            </tr>
+            <tr>
+                <td>py.dict</td>
+                <td>struct</td>
+            </tr>
+        </table>
         <p></p>
         <p>
-            <b>Pass scalar Nelson type to Python:</b>
+            <b>Passer un scalaire Nelson à Python :</b>
         </p>
         <p></p>
-        
-            
-                Nelson scalar input argument type
-                Python type
-            
-            
-                NaN
-                float("nan")
-            
-            
-                Inf
-                float("inf")
-            
-            
-                double (real)
-                py.float
-            
-            
-                single (real)
-                py.float
-            
-            
-                double (complex)
-                py.complex
-            
-            
-                single (complex)
-                py.complex
-            
-            
-                int8
-                py.int
-            
-            
-                uint8
-                py.int
-            
-            
-                int16
-                py.int
-            
-            
-                uint16
-                py.int
-            
-            
-                int32
-                py.int
-            
-            
-                uint32
-                py.int
-            
-            
-                int64
-                py.int
-            
-            
-                uint64
-                py.int
-            
-            
-                string scalar
-                py.str
-            
-            
-                char vector
-                py.str
-            
-            
-                logical
-                py.bool
-            
-            
-                struct
-                py.dict
-            
-        
+        <table style="width:100%">
+            <tr>
+                <th>Type scalaire Nelson en entrée</th>
+                <th>Type Python</th>
+            </tr>
+            <tr>
+                <td>NaN</td>
+                <td>float("nan")</td>
+            </tr>
+            <tr>
+                <td>Inf</td>
+                <td>float("inf")</td>
+            </tr>
+            <tr>
+                <td>double (réel)</td>
+                <td>py.float</td>
+            </tr>
+            <tr>
+                <td>single (réel)</td>
+                <td>py.float</td>
+            </tr>
+            <tr>
+                <td>double (complexe)</td>
+                <td>py.complex</td>
+            </tr>
+            <tr>
+                <td>single (complexe)</td>
+                <td>py.complex</td>
+            </tr>
+            <tr>
+                <td>int8</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>uint8</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>int16</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>uint16</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>int32</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>uint32</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>int64</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>uint64</td>
+                <td>py.int</td>
+            </tr>
+            <tr>
+                <td>string scalar</td>
+                <td>py.str</td>
+            </tr>
+            <tr>
+                <td>char vector</td>
+                <td>py.str</td>
+            </tr>
+            <tr>
+                <td>logical</td>
+                <td>py.bool</td>
+            </tr>
+            <tr>
+                <td>struct</td>
+                <td>py.dict</td>
+            </tr>
+        </table>
         <p></p>
         <p>
-            <b>Pass 1-by-N Vector Nelson type to Python:</b>
+            <b>Passer un vecteur 1-by-N Nelson à Python :</b>
         </p>
         <p></p>
-        
-            
-                Nelson 1-by-N Vector input argument type
-                Python type
-            
-            
-                double (real)
-                array.array('d')
-            
-            
-                single (real)
-                array.array('f')
-            
-            
-                int8
-                array.array('b')
-            
-            
-                uint8
-                array.array('B')
-            
-            
-                int16
-                array.array('h')
-            
-            
-                uint16
-                array.array('H')
-            
-            
-                int32
-                array.array('i')
-            
-            
-                uint32
-                array.array('I')
-            
-            
-                int64
-                array.array('q')
-            
-            
-                uint64
-                array.array('Q')
-            
-            
-                double
-                memoryview
-            
-            
-                single
-                memoryview
-            
-            
-                logical
-                memoryview
-            
-            
-                char vector
-                str
-            
-            
-                string scalar
-                str
-            
-            
-                cell vector
-                tuple
-            
-        
+        <table style="width:100%">
+            <tr>
+                <th>Type vecteur 1-by-N Nelson</th>
+                <th>Type Python</th>
+            </tr>
+            <tr>
+                <td>double (réel)</td>
+                <td>array.array('d')</td>
+            </tr>
+            <tr>
+                <td>single (réel)</td>
+                <td>array.array('f')</td>
+            </tr>
+            <tr>
+                <td>int8</td>
+                <td>array.array('b')</td>
+            </tr>
+            <tr>
+                <td>uint8</td>
+                <td>array.array('B')</td>
+            </tr>
+            <tr>
+                <td>int16</td>
+                <td>array.array('h')</td>
+            </tr>
+            <tr>
+                <td>uint16</td>
+                <td>array.array('H')</td>
+            </tr>
+            <tr>
+                <td>int32</td>
+                <td>array.array('i')</td>
+            </tr>
+            <tr>
+                <td>uint32</td>
+                <td>array.array('I')</td>
+            </tr>
+            <tr>
+                <td>int64</td>
+                <td>array.array('q')</td>
+            </tr>
+            <tr>
+                <td>uint64</td>
+                <td>array.array('Q')</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>memoryview</td>
+            </tr>
+            <tr>
+                <td>single</td>
+                <td>memoryview</td>
+            </tr>
+            <tr>
+                <td>logical</td>
+                <td>memoryview</td>
+            </tr>
+            <tr>
+                <td>char vector</td>
+                <td>str</td>
+            </tr>
+            <tr>
+                <td>string scalar</td>
+                <td>str</td>
+            </tr>
+            <tr>
+                <td>cell vector</td>
+                <td>tuple</td>
+            </tr>
+        </table>
         <p></p>
         <p>
-            <b>Pass 2D Matrices and ND Arrays to Python:</b>
+            <b>Passer des matrices 2D et tableaux ND à Python :</b>
         </p>
-        <p>The Python language offers a protocol for accessing memory buffers, akin to the data stored in Nelson arrays.</p>
-        <p>Nelson incorporates this Python buffer protocol for its arrays.</p>
+        <p>Le langage Python propose un protocole d'accès aux buffers mémoire, semblable aux données stockées dans les tableaux Nelson.</p>
+        <p>Nelson intègre ce protocole de buffer Python pour ses tableaux.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">R = pyrun('', "A", 'A', magic(3))
 R.double()</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -320,14 +320,14 @@ dictionary(R)</code><button class="copy-btn" type="button" onclick="copyExample(
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../python_engine/pyrun.html">pyrun</a><a class="see-also-link" href="../dictionary/dictionary.html">dictionary</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -335,13 +335,13 @@ dictionary(R)</code><button class="copy-btn" type="button" onclick="copyExample(
 </tr>
 <tr>
 <td class="version">1.4.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

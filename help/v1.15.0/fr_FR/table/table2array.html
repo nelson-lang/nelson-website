@@ -45,55 +45,53 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">table2array</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Convert table to homogeneous array.</div></div>
+<div class="section syntax-section"><div class="subtitle">Convertir une table en tableau homogène.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">A = table2array(T)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">T</td>
-<td>table object.</td>
+<td>Objet table.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>matrix: single, double, integer types, logical, char, string, struct, cell.</td>
+<td>matrice : single, double, types entiers, logique, char, string, struct, cell.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>A = table2array(T)</b> converts the input table <b>T</b> into a homogeneous array <b>A</b>, where the variables in <b>T</b> become the columns of <b>A</b>.</p>
-            <p>The output <b>A</b> does not retain the table properties from <b>T.Properties</b>.</p>
-            <p>If <b>T</b> is a table with row names, these row names will not be included in <b>A</b>.</p>
+      <p><b>A = table2array(T)</b> convertit la table d'entrée <b>T</b> en un tableau homogène <b>A</b>, où les variables de <b>T</b> deviennent les colonnes de <b>A</b>.</p>
+        <p>La sortie <b>A</b> ne conserve pas les propriétés de la table provenant de <b>T.Properties</b>.</p>
+        <p>Si <b>T</b> est une table avec des noms de lignes, ces noms ne seront pas inclus dans <b>A</b>.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = magic(6);
 T = array2table(A);
@@ -102,14 +100,14 @@ A = table2array(T)</code><button class="copy-btn" type="button" onclick="copyExa
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../table/array2table.html">array2table</a><a class="see-also-link" href="../table/table.html">table</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -117,13 +115,13 @@ A = table2array(T)</code><button class="copy-btn" type="button" onclick="copyExa
 </tr>
 <tr>
 <td class="version">1.8.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -2,31 +2,31 @@
 <help_summary>
   <toc>
     <module>data_structures</module>
-    <section name="Data structures">
+    <section name="Structures de données">
       <chapter_description>
-        <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.</p>
-        <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.</p>
-        <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.</p>
+        <p>Le module Structures de données fournit des outils pour créer, manipuler et inspecter des tableaux, cellules et structures dans Nelson.</p>
+        <p>Il permet la conversion entre différents formats de données, l'accès et la modification des champs, l'application de fonctions aux éléments de tableaux et l'organisation des données structurées.</p>
+        <p>Ce module facilite la gestion flexible des données complexes, en prenant en charge les opérations programmatiques et la gestion dynamique des données.</p>
     </chapter_description>
-      <keyword name="arrayfun" link="arrayfun.html" description="Apply a function to each element of an array."/>
-      <keyword name="cell" link="cell.html" description="Create cell array of empty matrices."/>
-      <keyword name="cell2mat" link="cell2mat.html" description="Transform a cell array containing matrices into a single, concatenated matrix."/>
-      <keyword name="cell2struct" link="cell2struct.html" description="Creates a struct from a cell."/>
-      <keyword name="celldisp" link="celldisp.html" description="Display cell array contents."/>
-      <keyword name="cellfun" link="cellfun.html" description="Evaluates an function on a cell."/>
-      <keyword name="cellstr" link="cellstr.html" description="Converts to cell of character array."/>
-      <keyword name="fieldnames" link="fieldnames.html" description="Returns field names of a structure or an handle."/>
-      <keyword name="getfield" link="getfield.html" description="Returns value of a field in a struct."/>
-      <keyword name="iscellstr" link="iscellstr.html" description="Returns if a variable is a cell of strings."/>
-      <keyword name="isfield" link="isfield.html" description="Checks if a fieldname exists in a struct."/>
-      <keyword name="namedargs2cell" link="namedargs2cell.html" description="Converts a struct containing name-value pairs to a cell."/>
-      <keyword name="num2cell" link="num2cell.html" description="Convert array to cell array with consistently sized cells."/>
-      <keyword name="orderfields" link="orderfields.html" description="Reorganize the fields of a structured array."/>
-      <keyword name="renameStructField" link="renameStructField.html" description="Rename field names of a struct or struct array."/>
-      <keyword name="rmfield" link="rmfield.html" description="Remove fields from structure."/>
-      <keyword name="setfield" link="setfield.html" description="Set structure field contents."/>
-      <keyword name="struct" link="struct.html" description="Creates a struct."/>
-      <keyword name="struct2cell" link="struct2cell.html" description="Creates a cell from a structure."/>
+      <keyword name="arrayfun" link="arrayfun.html" description="Appliquer une fonction à chaque élément d'un tableau."/>
+      <keyword name="cell" link="cell.html" description="Créer un tableau cellulaire de matrices vides."/>
+      <keyword name="cell2mat" link="cell2mat.html" description="Transformer un tableau cellulaire contenant des matrices en une seule matrice concaténée."/>
+      <keyword name="cell2struct" link="cell2struct.html" description="Créer un struct à partir d'un tableau cellulaire."/>
+      <keyword name="celldisp" link="celldisp.html" description="Afficher le contenu d'un tableau cellulaire."/>
+      <keyword name="cellfun" link="cellfun.html" description="Évalue une fonction sur un tableau cellulaire."/>
+      <keyword name="cellstr" link="cellstr.html" description="Convertit en tableau cellulaire de chaînes de caractères."/>
+      <keyword name="fieldnames" link="fieldnames.html" description="Renvoie les noms de champs d'une structure ou d'un handle."/>
+      <keyword name="getfield" link="getfield.html" description="Renvoie la valeur d'un champ dans un struct."/>
+      <keyword name="iscellstr" link="iscellstr.html" description="Renvoie si une variable est un tableau cellulaire de chaînes."/>
+      <keyword name="isfield" link="isfield.html" description="Vérifie si un nom de champ existe dans une structure."/>
+      <keyword name="namedargs2cell" link="namedargs2cell.html" description="Convertit une structure contenant des paires nom-valeur en un tableau cellulaire."/>
+      <keyword name="num2cell" link="num2cell.html" description="Convertir un tableau en tableau cellulaire avec des cellules de tailles cohérentes."/>
+      <keyword name="orderfields" link="orderfields.html" description="Réorganiser les champs d'un tableau de structures."/>
+      <keyword name="renameStructField" link="renameStructField.html" description="Renommer les noms de champs d'un struct ou d'un tableau de structs."/>
+      <keyword name="rmfield" link="rmfield.html" description="Supprimer des champs d'une structure."/>
+      <keyword name="setfield" link="setfield.html" description="Définir le contenu d'un champ de structure."/>
+      <keyword name="struct" link="struct.html" description="Créer un struct."/>
+      <keyword name="struct2cell" link="struct2cell.html" description="Créer un tableau cellulaire à partir d'une structure."/>
     </section>
   </toc>
 </help_summary>

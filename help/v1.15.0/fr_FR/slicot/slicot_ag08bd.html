@@ -45,132 +45,131 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_ag08bd</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Zeros and Kronecker structure of a descriptor system pencil.</div></div>
+<div class="section syntax-section"><div class="subtitle">Zéros et structure de Kronecker d'un pencil de système descripteur.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[A_OUT, E_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">EQUIL</td>
-<td> = 'S':  Perform balancing (scaling); = 'N':  Do not perform balancing.</td>
+<td> = 'S' : effectuer un équilibrage (mise à l'échelle) ; = 'N' : ne pas effectuer d'équilibrage.</td>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>The number of columns of matrix B.</td>
+<td>Le nombre de colonnes de la matrice B.</td>
 </tr>
 <tr>
 <td class="param-name">P</td>
-<td>The number of rows of matrix C.</td>
+<td>Le nombre de lignes de la matrice C.</td>
 </tr>
 <tr>
 <td class="param-name">A_IN</td>
-<td>The leading L-by-N part of this array must contain the state dynamics matrix A of the system.</td>
+<td>La partie principale L-by-N de ce tableau doit contenir la matrice de dynamique d'état A du système.</td>
 </tr>
 <tr>
 <td class="param-name">E_IN</td>
-<td>The leading L-by-N part of this array must contain the descriptor matrix E of the system.</td>
+<td>La partie principale L-by-N de ce tableau doit contenir la matrice descripteur E du système.</td>
 </tr>
 <tr>
 <td class="param-name">B</td>
-<td>The leading L-by-M part of this array must contain the input/state matrix B of the system.</td>
+<td>La partie principale L-by-M de ce tableau doit contenir la matrice d'entrée/état B du système.</td>
 </tr>
 <tr>
 <td class="param-name">C</td>
-<td>The leading P-by-N part of this array must contain the state/output matrix C of the system.</td>
+<td>La partie principale P-by-N de ce tableau doit contenir la matrice état/sortie C du système.</td>
 </tr>
 <tr>
 <td class="param-name">D</td>
-<td>The leading P-by-M part of this array must contain the direct transmission matrix D of the system.</td>
+<td>La partie principale P-by-M de ce tableau doit contenir la matrice de transmission directe D du système.</td>
 </tr>
 <tr>
 <td class="param-name">TOL</td>
-<td>A tolerance used in rank decisions to determine the effective rank, which is defined as the order of the largest leading (or trailing) triangular submatrix in the QR (or RQ) factorization with column (or row) pivoting whose estimated condition number is less than 1/TOL.</td>
+<td>Une tolérance utilisée dans les décisions de rang pour déterminer le rang effectif, défini comme l'ordre de la plus grande sous-matrice triangulaire principale (ou terminale) dans la factorisation QR (ou RQ) avec permutation de colonnes (ou lignes) dont le nombre condition estimé est inférieur à 1/TOL.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td>The leading NFZ-by-NFZ part of this array contains the matrix Af of the reduced pencil.</td>
+<td>La partie principale NFZ-by-NFZ de ce tableau contient la matrice Af du pencil réduit.</td>
 </tr>
 <tr>
 <td class="param-name">E_OUT</td>
-<td>The leading NFZ-by-NFZ part of this array contains the matrix Ef of the reduced pencil.</td>
+<td>La partie principale NFZ-by-NFZ de ce tableau contient la matrice Ef du pencil réduit.</td>
 </tr>
 <tr>
 <td class="param-name">NFZ</td>
-<td>The number of finite zeros.</td>
+<td>Le nombre de zéros finis.</td>
 </tr>
 <tr>
 <td class="param-name">NRANK</td>
-<td>The normal rank of the system pencil.</td>
+<td>Le rang normal du pencil du système.</td>
 </tr>
 <tr>
 <td class="param-name">NIZ</td>
-<td>The number of infinite zeros.</td>
+<td>Le nombre de zéros infinis.</td>
 </tr>
 <tr>
 <td class="param-name">DINFZ</td>
-<td>The maximal multiplicity of infinite Smith zeros.</td>
+<td>La multiplicité maximale des zéros de Smith infinis.</td>
 </tr>
 <tr>
 <td class="param-name">NKROR</td>
-<td>The number of right Kronecker indices.</td>
+<td>Le nombre d'indices de Kronecker droits.</td>
 </tr>
 <tr>
 <td class="param-name">NINFE</td>
-<td>The number of elementary infinite blocks.</td>
+<td>Le nombre de blocs élémentaires infinis.</td>
 </tr>
 <tr>
 <td class="param-name">NKROL</td>
-<td>The number of left Kronecker indices.</td>
+<td>Le nombre d'indices de Kronecker gauches.</td>
 </tr>
 <tr>
 <td class="param-name">INFZ</td>
-<td>The leading DINFZ elements of INFZ contain information on the infinite elementary divisors</td>
+<td>Les DINFZ premiers éléments de INFZ contiennent des informations sur les diviseurs élémentaires infinis.</td>
 </tr>
 <tr>
 <td class="param-name">KRONR</td>
-<td>The leading NKROR elements of this array contain the right Kronecker (column) indices.</td>
+<td>Les NKROR premiers éléments de ce tableau contiennent les indices de Kronecker droits (colonnes).</td>
 </tr>
 <tr>
 <td class="param-name">KRONL</td>
-<td>The leading NKROL elements of this array contain the left Kronecker (row) indices.</td>
+<td>Les NKROL premiers éléments de ce tableau contiennent les indices de Kronecker gauches (lignes).</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>= 0:  successful exit;</td>
+<td>= 0 : sortie réussie ;</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p> To extract from the system pencil a regular pencil Af-lambda*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">L = 9;
 N = 9;
@@ -240,12 +239,12 @@ M = 3; P = 0;
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/AG08BD.html" target="_blank">http://slicot.org/objects/software/shared/doc/AG08BD.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -253,13 +252,13 @@ M = 3; P = 0;
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

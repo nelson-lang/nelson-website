@@ -45,59 +45,57 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">removevars</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Delete variables from table.</div></div>
+<div class="section syntax-section"><div class="subtitle">Supprimer des variables d'une table.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">TB = removevars(TA, varsNames)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">TA</td>
-<td>Input table.</td>
+<td>Table d'entrée.</td>
 </tr>
 <tr>
 <td class="param-name">varsNames</td>
-<td>Variable names in input table to remove: character vector, string array or cell array of character vectors.</td>
+<td>Noms des variables de la table d'entrée à supprimer : vecteur de caractères, tableau de chaînes ou tableau de cellules de vecteurs de caractères.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">TB</td>
-<td>Table object modified.</td>
+<td>Objet table modifié.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>TB = removevars(TA, varsNames)</b> removes the variables specified by <b>varsNames</b> from the table <b>TA</b> and stores the remaining variables in <b>T2</b>.</p>
-            <p>You can specify the variables by name, position, or using logical indices.</p>
-            <p>You can also remove variables from a table using <b>T(:, varsNames) = []</b>.</p>
+        <p><b>TB = removevars(TA, varsNames)</b> supprime les variables spécifiées par <b>varsNames</b> de la table <b>TA</b> et stocke les variables restantes dans <b>T2</b>.</p>
+            <p>Vous pouvez spécifier les variables par nom, position ou en utilisant des indices logiques.</p>
+            <p>Vous pouvez également supprimer des variables d'une table en utilisant <b>T(:, varsNames) = []</b>.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
 % Convert the cell array to a table
@@ -107,14 +105,14 @@ T2 = removevars(T1, 'C2')</code><button class="copy-btn" type="button" onclick="
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../table/table.html">table</a><a class="see-also-link" href="../table/renamevars.html">renamevars</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -122,13 +120,13 @@ T2 = removevars(T1, 'C2')</code><button class="copy-btn" type="button" onclick="
 </tr>
 <tr>
 <td class="version">1.9.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

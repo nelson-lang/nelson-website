@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1759693888
+// Auto-generated on 1760281287
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -5771,12 +5771,6 @@ window.searchIndex = [
     content: "Enable rotate mode.",
   },
   {
-    title: "saveas",
-    url: "./graphics/saveas.html",
-    path: "./graphics/saveas.html",
-    content: "Save figure to specific file format.",
-  },
-  {
     title: "scatter",
     url: "./graphics/scatter.html",
     path: "./graphics/scatter.html",
@@ -7255,7 +7249,7 @@ window.searchIndex = [
     title: "assert_checkerror",
     url: "./assert_functions/assert_checkerror.html",
     path: "./assert_functions/assert_checkerror.html",
-    content: "Check that an command raises the expected error.",
+    content: "Check that a command raises the expected error.",
   },
   {
     title: "assert_isapprox",

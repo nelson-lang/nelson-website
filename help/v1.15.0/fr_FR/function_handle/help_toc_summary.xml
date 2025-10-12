@@ -2,16 +2,16 @@
 <help_summary>
   <toc>
     <module>function_handle</module>
-    <section name="Function_handle functions">
+    <section name="Fonctions de function_handle">
       <chapter_description>
-        <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.</p>
-        <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.</p>
-        <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.</p>
+        <p>Le module Function Handle fournit des outils pour créer et gérer les function handles dans Nelson.</p>
+        <p>Il prend en charge les fonctions anonymes, la conversion entre chaînes et function handles, ainsi que la vérification des objets function_handle.</p>
+        <p>Ce module permet une invocation de fonctions flexible et dynamique, autorisant le passage, le stockage et l'exécution programmatiques de fonctions.</p>
     </chapter_description>
-      <keyword name="Anonymous Functions" link="anonymous_function.html" description="Anonymous Functions."/>
-      <keyword name="func2str" link="func2str.html" description="Return a function handle constructed from a string."/>
-      <keyword name="isfunction_handle" link="isfunction_handle.html" description="Checks if value is a function handle."/>
-      <keyword name="str2func" link="str2func.html" description="Returns a function handle from a string."/>
+      <keyword name="Anonymous Functions" link="anonymous_function.html" description="Fonctions anonymes."/>
+      <keyword name="func2str" link="func2str.html" description="Renvoie une représentation chaîne d'un function handle."/>
+      <keyword name="isfunction_handle" link="isfunction_handle.html" description="Vérifie si une valeur est un function handle."/>
+      <keyword name="str2func" link="str2func.html" description="Renvoie un function handle à partir d'une chaîne."/>
     </section>
   </toc>
 </help_summary>

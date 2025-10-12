@@ -2,15 +2,15 @@
 <help_summary>
   <toc>
     <module>logical</module>
-    <section name="Logical type functions">
+    <section name="Fonctions de type logique">
       <chapter_description>
-        <p>The Logical Type module provides tools for working with Boolean values and logical operations in Nelson.</p>
-        <p>It enables the creation, conversion, and manipulation of logical data, supporting fundamental logical operations that are essential for control flow, conditional evaluation, and decision-making in scripts and programs.</p>
+        <p>Le module de type logique fournit des outils pour travailler avec les valeurs booléennes et les opérations logiques dans Nelson.</p>
+        <p>Il permet la création, la conversion et la manipulation de données logiques, en prenant en charge des opérations logiques fondamentales essentielles pour le contrôle de flux, l'évaluation conditionnelle et la prise de décision dans les scripts et programmes.</p>
     </chapter_description>
-      <keyword name="false" link="false.html" description="Logical false."/>
-      <keyword name="logical" link="logical.html" description="Converts a numeric value to logical type."/>
-      <keyword name="true" link="true.html" description="Logical true."/>
-      <keyword name="xor" link="xor.html" description="Exclusive or."/>
+      <keyword name="false" link="false.html" description="Valeur logique false."/>
+      <keyword name="logical" link="logical.html" description="Convertit une valeur numérique en type logique."/>
+      <keyword name="true" link="true.html" description="Valeur logique true."/>
+      <keyword name="xor" link="xor.html" description="Ou exclusif (XOR)."/>
     </section>
   </toc>
 </help_summary>

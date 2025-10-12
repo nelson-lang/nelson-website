@@ -45,74 +45,73 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">semver</span></div></div>
-<div class="section syntax-section"><div class="subtitle">semantic versioner.</div></div>
+<div class="section syntax-section"><div class="subtitle">gestionnaire de versions sémantiques.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">r = semver(version_str, version_range)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">version_str</td>
-<td>a string: current version.</td>
+<td>chaîne : version actuelle.</td>
 </tr>
 <tr>
 <td class="param-name">version_range</td>
-<td>a string: version to compare or range.</td>
+<td>chaîne : version à comparer ou plage de versions.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">r</td>
-<td>a double: -1, 0 or 1.</td>
+<td>nombre : -1, 0 ou 1.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>semver</b> compares a version string to an version or an range version.</p>
-            <p>if an range version is used, <b>r</b> return 0 (not satisfied) or 1 (satisfied).</p>
-            <p>if an simple version is used, an comparaison value <b>r</b> is returned -1 (inferior), 0 (equal) or 1 (superior).</p>
-            <p>supported range operators:</p>
+            <b>semver</b> compare une chaîne de version à une version simple ou à une plage de versions.</p>
+            <p>Si une plage de versions est utilisée, <b>r</b> retourne 0 (non satisfaite) ou 1 (satisfaite).</p>
+            <p>Si une version simple est utilisée, une valeur de comparaison <b>r</b> est renvoyée : -1 (inférieur), 0 (égal) ou 1 (supérieur).</p>
+            <p>Opérateurs de plage supportés :</p>
             <p>
-                <b>=</b> - Equality</p>
+                <b>=</b> - Égalité</p>
                 <p>
-                    <b>&gt;=</b> - Higher or equal to</p>
+                    <b>&gt;=</b> - Supérieur ou égal à</p>
                     <p>
-                        <b>&lt;=</b> - Lower or equal to</p>
+                        <b>&lt;=</b> - Inférieur ou égal à</p>
                         <p>
-                            <b>&lt;</b> - Lower than</p>
+                            <b>&lt;</b> - Inférieur à</p>
                             <p>
-                                <b>&gt;</b> - Higher than</p>
+                                <b>&gt;</b> - Supérieur à</p>
                                 <p>
-                                    <b>^</b> - Caret operator comparison</p>
+                                    <b>^</b> - Opérateur caret (caret)</p>
                                     <p>
-                                        <b>~</b> - Tilde operator comparison</p>
+                                        <b>~</b> - Opérateur tilde (tilde)</p>
                                     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">semver('1.5.10', '2.3.0')
 semver('2.3.0', '1.5.10');
@@ -131,7 +130,7 @@ semver('2.0.1', '^1.2.3')</code><button class="copy-btn" type="button" onclick="
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../core/version.html">version</a><a class="see-also-link" href="../modules_manager/getmodules.html">getmodules</a>
 </div>
@@ -142,12 +141,12 @@ semver('2.0.1', '^1.2.3')</code><button class="copy-btn" type="button" onclick="
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="https://semver.org/" target="_blank">https://semver.org/</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -155,13 +154,13 @@ semver('2.0.1', '^1.2.3')</code><button class="copy-btn" type="button" onclick="
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

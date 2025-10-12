@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pan</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Enable pan mode.</div></div>
+<div class="section syntax-section"><div class="subtitle">Activer le mode déplacement (pan).</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">pan
 pan option
 pan(fig, ...)
@@ -58,55 +57,49 @@ pan(ax, ...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">option</td>
-<td>string: 'on', 'off', 'out', 'xon', 'yon' or 'toggle'.</td>
+<td>Chaîne de caractères : 'on', 'off', 'out', 'xon', 'yon' ou 'toggle'.</td>
 </tr>
 <tr>
 <td class="param-name">fig</td>
-<td>Figure object: Target figure</td>
+<td>Objet figure : figure cible</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Utilize the pan mode to dynamically adjust axis limits for interactive data exploration.</p>
-        <p>Enable or disable the pan mode and configure additional basic settings using the pan function.</p>
-        <p>Pan mode is compatible with various charts like line, bar, histogram, and surface charts. These charts typically feature pan icon on the toolbar to facilitate pan functionality.</p>
-        <p>
-            <b>pan option</b> configures the pan mode for all axes within the current figure.</p>
-            <p>Once pan mode is active, you can adjust the view of axes using the cursor, or keyboard:</p>
-            <p>Cursor:  Click and drag the cursor in the axes.</p>
-            <p>Keyboard: To pan horizontally, press the left arrow (←) or the right arrow (→) key. To pan vertically, press the up arrow (↑) or the down arrow (↓) key.</p>
-            <p></p>
-            <p>The pan mode option can be specified using one of the following values:</p>
-            <p>
-                <b>'toggle'</b>: Toggles the pan mode. If pan mode is disabled, 'toggle' reverts to the most recently used pan option of 'on', 'xon', or 'yon'. This option behaves the same as calling pan without any arguments.</p>
-                <p>
-                    <b>'xon'</b>: Enables pan mode for the x-dimension exclusively.</p>
-                    <p>
-                        <b>'yon'</b>: Activates pan mode for the y-dimension exclusively.</p>
-                        <p>
-                            <b>'on'</b>: Activates pan mode.</p>
-                            <p>
-                                <b>'off'</b>: Deactivates pan mode. Note that certain default interactions may persist regardless of the interaction mode.</p>
-                            </div>
+        <p>Utilisez le mode déplacement (pan) pour ajuster dynamiquement les limites des axes lors de l'exploration interactive des données.</p>
+        <p>Activez ou désactivez le mode déplacement et configurez des options de base supplémentaires avec la fonction pan.</p>
+        <p>Le mode déplacement est compatible avec divers graphiques comme les courbes, barres, histogrammes et surfaces. Ces graphiques disposent généralement d'une icône de déplacement dans la barre d'outils pour faciliter cette fonctionnalité.</p>
+        <p><b>pan option</b> configure le mode déplacement pour tous les axes de la figure courante.</p>
+        <p>Une fois le mode déplacement activé, vous pouvez ajuster la vue des axes avec le curseur ou le clavier :</p>
+        <p>Curseur : cliquez et faites glisser le curseur dans les axes.</p>
+        <p>Clavier : pour déplacer horizontalement, utilisez les flèches gauche (←) ou droite (→). Pour déplacer verticalement, utilisez les flèches haut (↑) ou bas (↓).</p>
+        <p></p>
+        <p>L'option du mode déplacement peut être spécifiée avec l'une des valeurs suivantes :</p>
+        <p><b>'toggle'</b> : Bascule le mode déplacement. Si le mode est désactivé, 'toggle' revient à la dernière option utilisée parmi 'on', 'xon' ou 'yon'. Ce comportement est identique à l'appel de pan sans argument.</p>
+        <p><b>'xon'</b> : Active le mode déplacement uniquement sur l'axe x.</p>
+        <p><b>'yon'</b> : Active le mode déplacement uniquement sur l'axe y.</p>
+        <p><b>'on'</b> : Active le mode déplacement.</p>
+        <p><b>'off'</b> : Désactive le mode déplacement. Certaines interactions par défaut peuvent persister quel que soit le mode d'interaction.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">surf(peaks)
 pan on</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -114,14 +107,14 @@ pan on</code><button class="copy-btn" type="button" onclick="copyExample(this)" 
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/rotate3d.html">rotate3d</a><a class="see-also-link" href="../graphics/zoom.html">zoom</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -129,13 +122,13 @@ pan on</code><button class="copy-btn" type="button" onclick="copyExample(this)" 
 </tr>
 <tr>
 <td class="version">1.2.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

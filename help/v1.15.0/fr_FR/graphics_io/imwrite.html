@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">imwrite</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Write image to graphics file.</div></div>
+<div class="section syntax-section"><div class="subtitle">Écrit une image dans un fichier graphique.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">imwrite(A, filename)
 imwrite(A, map, filename)
 imwrite(..., fmt)
@@ -58,70 +57,61 @@ imwrite(..., , propertyName, propertyValue)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>matrix: 3D for color and 2D for gray or indexed image.</td>
+<td>matrice : 3D pour image couleur, 2D pour image en niveaux de gris ou indexée.</td>
 </tr>
 <tr>
 <td class="param-name">map</td>
-<td>Colormap of indexed image:m-by-3 array.</td>
+<td>Colormap d'une image indexée : matrice m-by-3.</td>
 </tr>
 <tr>
 <td class="param-name">fmt</td>
-<td>Format of output file: 'bmp', 'png', 'jpg', 'gif', ... </td>
+<td>Format du fichier de sortie : 'bmp', 'png', 'jpg', 'gif', ...</td>
 </tr>
 <tr>
 <td class="param-name">filename</td>
-<td>a row vector characters or scalar string: name of graphics file.</td>
+<td>vecteur ligne de caractères ou chaîne scalaire : nom du fichier graphique.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>chaîne scalaire ou vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b>
-        </p>
+        <p><b>imwrite(A, filename)</b> écrit les données d'image <b>A</b> dans le fichier spécifié par <b>filename</b>.</p>
         <p></p>
-        <p>Property name:</p>
+        <p>Noms de propriétés :</p>
         <p></p>
-        <p>
-            <b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).</p>
-            <p>
-                <b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
-                <p>
-                    <b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
-                    <p>
-                        <b>Author</b>: character vector or string scalar: Author information.</p>
-                        <p></p>
-                        <p>Properties for <b>gif</b> format:</p>
-                        <p></p>
-                        <p>
-                            <b>WriteMode</b>:</p>
-                            <p>
-                                <b>LoopCount</b>:</p>
-                                <p>
-                                    <b>DelayTime</b>:</p>
-                                </div>
+        <p><b>Quality</b> : qualité du fichier de sortie : scalaire dans [0, 100] (75 par défaut).</p>
+        <p><b>Alpha</b> : matrice de valeurs dans [0, 1] : transparence par pixel.</p>
+        <p><b>Comment</b> : vecteur de caractères, chaîne scalaire, cellule de vecteurs de caractères ou tableau de chaînes : commentaire ajouté à l'image.</p>
+        <p><b>Author</b> : vecteur de caractères ou chaîne scalaire : information d'auteur.</p>
+        <p></p>
+        <p>Propriétés pour le format <b>gif</b> :</p>
+        <p></p>
+        <p><b>WriteMode</b> :</p>
+        <p><b>LoopCount</b> :</p>
+        <p><b>DelayTime</b> :</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
 A = rand(69, 69);
@@ -168,14 +158,14 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics_io/imread.html">imread</a><a class="see-also-link" href="../graphics/imshow.html">imshow</a><a class="see-also-link" href="../graphics_io/imformats.html">imformats</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -183,7 +173,7 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.13.0</td>
@@ -193,7 +183,7 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

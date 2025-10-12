@@ -2,16 +2,16 @@
 <help_summary>
   <toc>
     <module>i18n</module>
-    <section name="I18n functions">
+    <section name="Fonctions I18n">
       <chapter_description>
-        <p>The i18n module provides tools for internationalization and localization of text within Nelson.</p>
-        <p>It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.</p>
-        <p>This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.</p>
+        <p>Le module i18n fournit des outils pour l'internationalisation et la localisation du texte dans Nelson.</p>
+        <p>Il permet d'obtenir les chaînes traduites pour la locale courante, prend en charge des utilitaires pour gérer les flux de travail de traduction et facilite la génération d'en-têtes de fichiers de traduction.</p>
+        <p>Ce module aide les développeurs à créer des logiciels pouvant s'adapter dynamiquement à plusieurs langues et contextes culturels.</p>
     </chapter_description>
-      <keyword name="gettext" link="gettext.html" description="Get text translated into the current locale."/>
-      <keyword name="_" link="gettext.html" description="Get text translated into the current locale."/>
-      <keyword name="i18nHelpers" link="i18nHelpers.html" description="Internationalization (i18n) utility functions"/>
-      <keyword name="poheader" link="poheader.html" description="Generates po file header."/>
+      <keyword name="gettext" link="gettext.html" description="Obtient le texte traduit pour la locale courante."/>
+      <keyword name="_" link="gettext.html" description="Obtient le texte traduit pour la locale courante."/>
+      <keyword name="i18nHelpers" link="i18nHelpers.html" description="Fonctions utilitaires d'internationalisation (i18n)"/>
+      <keyword name="poheader" link="poheader.html" description="Génère l'en-tête d'un fichier PO."/>
     </section>
   </toc>
 </help_summary>

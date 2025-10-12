@@ -45,61 +45,60 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">MPI_Bcast</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Broadcasts a message from the process with rank "root" to all other processes of the communicator</div></div>
+<div class="section syntax-section"><div class="subtitle">Diffuse un message depuis le processus "root" vers tous les autres processus du communicateur</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">A = MPI_Bcast(A, Root)
 A = MPI_Bcast(A, Root, Comm)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>a nelson variable.</td>
+<td>variable Nelson.</td>
 </tr>
 <tr>
 <td class="param-name">Root</td>
-<td>a integer value: rank of broadcast root.</td>
+<td>entier : rang du root de diffusion.</td>
 </tr>
 <tr>
 <td class="param-name">Comm</td>
-<td>a MPI_Comm object.</td>
+<td>objet MPI_Comm.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>broadcasted array.</td>
+<td>tableau diffusé.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>This function is used to broadcast an array to all group members.</p>
+        <p>Cette fonction est utilisée pour diffuser un tableau à tous les membres du groupe.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Bcast.m'], 4)</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -125,12 +124,12 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../mpi/MPI_Barrier.html">MPI_Barrier</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -138,13 +137,13 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

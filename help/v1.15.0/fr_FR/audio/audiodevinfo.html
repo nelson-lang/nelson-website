@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">audiodevinfo</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Get audio devices information.</div></div>
+<div class="section syntax-section"><div class="subtitle">Obtient les informations des périphériques audio.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">devices = audiodevinfo()
 devices = audiodevinfo('default')
 devices = audiodevinfo(io)
@@ -61,77 +60,77 @@ support = audiodevinfo(io, id, rate, bits, channels)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">io</td>
-<td>input (1) or output (0) device</td>
+<td>périphérique d'entrée (1) ou de sortie (0)</td>
 </tr>
 <tr>
 <td class="param-name">id</td>
-<td>an integer value.</td>
+<td>une valeur entière.</td>
 </tr>
 <tr>
 <td class="param-name">name</td>
-<td>a string: name of the audio device to search.</td>
+<td>une chaîne : nom du périphérique audio à rechercher.</td>
 </tr>
 <tr>
 <td class="param-name">rate</td>
-<td>a double scalar: sample rate.</td>
+<td>un scalaire double : taux d'échantillonnage.</td>
 </tr>
 <tr>
 <td class="param-name">bits</td>
-<td>an integer value: bits per sample.</td>
+<td>une valeur entière : bits par échantillon.</td>
 </tr>
 <tr>
 <td class="param-name">channels</td>
-<td>an integer value: number of audio channel.</td>
+<td>une valeur entière : nombre de canaux audio.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">devices</td>
-<td>struct array</td>
+<td>tableau de structures</td>
 </tr>
 <tr>
 <td class="param-name">name</td>
-<td>a string: name of the audio device specified by io and id.</td>
+<td>une chaîne : nom du périphérique audio spécifié par io et id.</td>
 </tr>
 <tr>
 <td class="param-name">id</td>
-<td>an integer value.</td>
+<td>une valeur entière.</td>
 </tr>
 <tr>
 <td class="param-name">support</td>
-<td>a logical: true if values supported or false.</td>
+<td>un booléen : vrai si les valeurs sont supportées ou faux.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>audiodevinfo</b> returns a structure with available audio input and output devices.</p>
+            <b>audiodevinfo</b> retourne une structure avec les périphériques audio d'entrée et de sortie disponibles.</p>
             <p>
-                <b>devices = audiodevinfo('default')</b> returns a structure with default used audio input and output devices.</p>
+                <b>devices = audiodevinfo('default')</b> retourne une structure avec les périphériques audio d'entrée et de sortie utilisés par défaut.</p>
             </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">info = audiodevinfo()
 OUTPUT_DEVICE = 0;
@@ -146,7 +145,7 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -154,13 +153,13 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

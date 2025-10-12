@@ -2,18 +2,16 @@
 <help_summary>
   <toc>
     <module>graphics_io</module>
-    <section name="Graphics I/O functions">
+    <section name="Fonctions d'entrée/sortie graphiques">
       <chapter_description>
-        <p>The Graphics I/O module provides functions for importing, exporting, and managing
-            graphical content and image formats.</p>
-        <p>It supports reading and writing image files, copying figures, and saving plots in various
-            file formats for interoperability with other applications.</p>
+        <p>Le module Graphics I/O fournit des fonctions pour importer, exporter et gérer le contenu graphique et les formats d'image.</p>
+        <p>Il prend en charge la lecture et l'écriture de fichiers image, la copie de figures et l'enregistrement de tracés dans divers formats pour l'interopérabilité avec d'autres applications.</p>
     </chapter_description>
-      <keyword name="copygraphics" link="copygraphics.html" description="Copy plot to clipboard."/>
-      <keyword name="imformats" link="imformats.html" description="Manage supported image formats."/>
-      <keyword name="imread" link="imread.html" description="Read image from graphics file."/>
-      <keyword name="imwrite" link="imwrite.html" description="Write image to graphics file."/>
-      <keyword name="saveas" link="saveas.html" description="Save figure to specific file format."/>
+      <keyword name="copygraphics" link="copygraphics.html" description="Copie un tracé vers le presse-papiers."/>
+      <keyword name="imformats" link="imformats.html" description="Gère les formats d'image pris en charge."/>
+      <keyword name="imread" link="imread.html" description="Lit une image à partir d'un fichier graphique."/>
+      <keyword name="imwrite" link="imwrite.html" description="Écrit une image dans un fichier graphique."/>
+      <keyword name="saveas" link="saveas.html" description="Enregistre une figure dans un format de fichier spécifique."/>
     </section>
   </toc>
 </help_summary>

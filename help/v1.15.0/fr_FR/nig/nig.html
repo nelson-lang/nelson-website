@@ -45,46 +45,45 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nig</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Nelson tool to interface C or Fortran functions with Nelson.</div></div>
+<div class="section syntax-section"><div class="subtitle">Outil Nelson pour interfacer des fonctions C ou Fortran avec Nelson.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">nig(NIG_FUNCTIONS, DESTINATION_DIR)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">NIG_FUNCTIONS</td>
-<td>structure : functions definition</td>
+<td>structure : définition des fonctions</td>
 </tr>
 <tr>
 <td class="param-name">DESTINATION_DIR</td>
-<td>string: a valid path (destination)</td>
+<td>chaîne : chemin valide (destination)</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>With <b>nig</b>, you can wrap your C/FORTRAN code into a same set, called an gateway, and use them in Nelson as Nelson builtin.</p>
-    </div>
+                <p>Avec <b>nig</b>, vous pouvez encapsuler votre code C/FORTRAN dans un ensemble (gateway) et l'utiliser dans Nelson comme des fonctions natives (builtin).</p>
+        </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">NIG_FUNCTION description</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">% Nelson Interface Generator (NIG) example
+<code class="matlab syntax-block" style="flex:1 1 auto;">% Nelson Interface Generator (NIG) exemple
 
 NIG_FUNCTION = struct();
 NIG_FUNCTION.NELSON_NAME = 'example_nig_sum';
@@ -119,7 +118,7 @@ fileread([tempdir(),'/example_nig_sumBuiltin.cpp'])]</code><button class="copy-b
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -127,13 +126,13 @@ fileread([tempdir(),'/example_nig_sumBuiltin.cpp'])]</code><button class="copy-b
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

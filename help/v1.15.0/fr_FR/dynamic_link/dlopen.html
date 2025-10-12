@@ -45,59 +45,58 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dlopen</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Loads an dynamic library.</div></div>
+<div class="section syntax-section"><div class="subtitle">Charge une bibliothèque dynamique</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">lib = dlopen(libraryname)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">libraryname</td>
-<td>a string: dynamic library name.</td>
+<td>une chaîne : nom de la bibliothèque dynamique.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">lib</td>
-<td>a dllib handle.</td>
+<td>un handle dllib.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>dlopen</b> loads an dynamic library.</p>
+            <b>dlopen</b> charge une bibliothèque dynamique.</p>
             <p>
-                <b>dlopen</b> returns a <b>dllib</b> handle with <b>Path</b> property.</p>
+                <b>dlopen</b> renvoie un handle <b>dllib</b> possédant une propriété <b>Path</b>.</p>
                 <p>
-                    <b>get</b>, <b>ismethod</b>, <b>isprop</b>, <b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>, <b>ne</b>, <b>isequal</b>, <b>horzcat</b>, <b>vertcat</b> are overloaded for <b>dllib</b> type.</p>
-                    <p>library is searched first in NELSON_LIBRARY_PATH and after in PATH on windows or LD_LIBRARY_PATH or DYLD_LIBRARY_PATH on linux or Macos.</p>
-                    <p>NELSON_LIBRARY_PATH can modified with <b>setenv</b>.</p>
+                    Les méthodes <b>get</b>, <b>ismethod</b>, <b>isprop</b>, <b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>, <b>ne</b>, <b>isequal</b>, <b>horzcat</b>, <b>vertcat</b> sont surchargées pour le type <b>dllib</b>.</p>
+                    <p>La bibliothèque est d'abord recherchée dans NELSON_LIBRARY_PATH puis dans PATH sous Windows ou LD_LIBRARY_PATH / DYLD_LIBRARY_PATH sur Linux/MacOS.</p>
+                    <p>Le chemin NELSON_LIBRARY_PATH peut être modifié avec <b>setenv</b>.</p>
                 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">path_1 = modulepath('dynamic_link', 'builtin');
 lib1 = dlopen(path_1)
@@ -109,14 +108,14 @@ clear lib1</code><button class="copy-btn" type="button" onclick="copyExample(thi
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../dynamic_link/dlclose.html">dlclose</a><a class="see-also-link" href="../dynamic_link/dllibisloaded.html">dllibisloaded</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -124,13 +123,13 @@ clear lib1</code><button class="copy-btn" type="button" onclick="copyExample(thi
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

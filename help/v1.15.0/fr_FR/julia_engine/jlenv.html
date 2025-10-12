@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">jlenv</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Change default environment of Julia interpreter.</div></div>
+<div class="section syntax-section"><div class="subtitle">Modifier l'environnement par défaut de l'interpréteur Julia.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">jlenv
 je = jlenv('Version', julia_path)
 je = jlenv(...)
@@ -57,38 +56,38 @@ je = jlenv(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">julia_path</td>
-<td>a string, or row characters array: executable file name of Julia.</td>
+<td>une chaîne ou un vecteur de caractères : nom du fichier exécutable de Julia.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">je</td>
-<td>JuliaEnvironment object.</td>
+<td>objet JuliaEnvironment.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Use <b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.</p>
-        <p>The value set by <b>jlenv</b> is persistent across Nelson sessions.</p>
+        <p>Utilisez <b>jlenv</b> pour modifier la version par défaut ou le mode d'exécution de l'interpréteur Julia, en veillant à ce que ces ajustements persistent entre les différentes sessions Nelson.</p>
+        <p>La valeur définie par <b>jlenv</b> est persistante entre les sessions Nelson.</p>
         <p></p>
         <p>Properties:</p>
         <p>
@@ -104,35 +103,41 @@ je = jlenv(...)
                             <p>
                                 <b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess"</p>
                                 <p></p>
-                                <p>Use environment variables to force julia environment at each startup (usefull for snapcraft or docker distribution):</p>
+                                <p>Utilisez des variables d'environnement pour forcer l'environnement Julia au démarrage (utile pour les distributions snapcraft ou docker) :</p>
                                 <p></p>
                                 <p>
-                                    <b>__NELSON_JULIA_VERSION__</b>:  example "1.11"</p>
+                                    <b>__NELSON_JULIA_VERSION__</b>:  exemple "1.11"</p>
                                     <p>
-                                        <b>__NELSON_JULIA_EXECUTABLE__</b>: example  "/usr/bin/julia"</p>
+                                        <b>__NELSON_JULIA_EXECUTABLE__</b>: exemple  "/usr/bin/julia"</p>
                                         <p>
-                                            <b>__NELSON_JULIA_LIBRARY__</b>: example "libjulia.so"</p>
+                                            <b>__NELSON_JULIA_LIBRARY__</b>: exemple "libjulia.so"</p>
                                             <p>
-                                                <b>__NELSON_JULIA_HOME__</b>: example "/usr"</p>
-                                                <p>All environment variables must exist and valid to be considered.</p>
+                                                <b>__NELSON_JULIA_HOME__</b>: exemple "/usr"</p>
+                                                <p>Toutes les variables d'environnement doivent exister et être valides pour être prises en compte.</p>
                                                 <p></p>
                                             </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">je = jlenv</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
+<div class="example">
+<div class="example-title">Définir le chemin de l'exécutable Julia</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">jlenv('Version', ''C:\WindowsTools\Julia-1.11.6\bin\julia.exe'')</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../julia_engine/jlrun.html">jlrun</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -140,13 +145,13 @@ je = jlenv(...)
 </tr>
 <tr>
 <td class="version">1.12.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

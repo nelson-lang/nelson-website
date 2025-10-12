@@ -4,18 +4,18 @@
     <module>polynomial_functions</module>
     <section name="Polynomials">
       <chapter_description>
-        <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.</p>
-        <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.</p>
-        <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.</p>
+        <p>Le module Polynomials fournit des outils pour créer, manipuler et analyser des polynômes dans Nelson.</p>
+        <p>Il prend en charge l'évaluation, la différentiation, l'intégration, l'ajustement (fitting), la recherche de racines et les opérations sur polynômes matriciels.</p>
+        <p>Ce module permet une gestion efficace des expressions polynomiales pour la modélisation mathématique, l'ajustement de courbes et l'analyse numérique.</p>
     </chapter_description>
-      <keyword name="deconv" link="deconv.html" description="Deconvolution and polynomial division."/>
-      <keyword name="poly" link="poly.html" description="Polynomial with specified roots or characteristic polynomial."/>
-      <keyword name="polyder" link="polyder.html" description="Polynomial differentiation."/>
-      <keyword name="polyfit" link="polyfit.html" description="Polynomial curve fitting."/>
-      <keyword name="polyint" link="polyint.html" description="Polynomial integration."/>
-      <keyword name="polyval" link="polyval.html" description="Polynomial evaluation."/>
-      <keyword name="polyvalm" link="polyvalm.html" description="Matrix polynomial evaluation."/>
-      <keyword name="roots" link="roots.html" description="Find polynomial roots."/>
+      <keyword name="deconv" link="deconv.html" description="Déconvolution et division polynomiale."/>
+      <keyword name="poly" link="poly.html" description="Polynôme à partir de racines ou polynôme caractéristique."/>
+      <keyword name="polyder" link="polyder.html" description="Dérivation polynomiale."/>
+      <keyword name="polyfit" link="polyfit.html" description="Ajustement polynomiale (polynomial curve fitting)."/>
+      <keyword name="polyint" link="polyint.html" description="Intégration polynomiale."/>
+      <keyword name="polyval" link="polyval.html" description="Évaluation polynomiale."/>
+      <keyword name="polyvalm" link="polyvalm.html" description="Évaluation de polynôme matriciel."/>
+      <keyword name="roots" link="roots.html" description="Trouver les racines d'un polynôme."/>
     </section>
   </toc>
 </help_summary>

@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">initial</span></div></div>
-<div class="section syntax-section"><div class="subtitle">System response to initial states of state-space model.</div></div>
+<div class="section syntax-section"><div class="subtitle">Conditions initiales et configurations de simulation.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[y, t, x] = initial(sys, x0)
 [y, t, x] = initial(sys, x0, Tfinal)
 [y, t, x] = initial(sys, x0, t)
@@ -59,71 +58,71 @@ initial(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">sys</td>
-<td>a lti model.</td>
+<td>un modèle lti.</td>
 </tr>
 <tr>
 <td class="param-name">x0</td>
-<td>Initial state values: vector.</td>
+<td>Valeurs initiales de l'état : vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">t</td>
-<td>Time samples: vector.</td>
+<td>Échantillons de temps : vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">tFinal</td>
-<td>End time for step response: scalar.</td>
+<td>Temps de fin pour la réponse à l'étape : scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">[t0, tFinal]</td>
-<td>Time range for step response: two-element vector.</td>
+<td>Plage de temps pour la réponse à l'étape : vecteur à deux éléments.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">y</td>
-<td>Simulated response data: matrix or vector.</td>
+<td>Données de réponse simulées : matrice ou vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">tOut</td>
-<td>Time vector: vector.</td>
+<td>Vecteur temps : vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">x</td>
-<td>State trajectories: matrix or vector.</td>
+<td>Trajectoires d'état : matrice ou vecteur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>[y, tOut] = initial(sys, x0)</b> calculates the unforced initial response (y) of the dynamic system <b>sys</b> from the specified initial state <b>x0</b>.</p>
-            <p>The time vector <b>tOut</b> is provided in the time units of <b>sys</b>, and the initial function automatically adapts time steps and simulation duration based on the system dynamics.</p>
-            <p>When you use <b>[y, tOut] = initial(sys, x0, tFinal)</b>, the function simulates the response from t = 0 to the final time t = tFinal.</p>
-            <p>Similarly, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simulates the response from t0 to tFinal.</p>
-            <p>Additionally, <b>[y, tOut] = initial(sys, x0, t)</b> returns the initial response of <b>sys</b> at the specified times provided in the vector <b>t</b>.</p>
+            <b>[y, tOut] = initial(sys, x0)</b> calcule la réponse initiale non forcée (y) du système dynamique <b>sys</b> à partir de l'état initial spécifié <b>x0</b>.</p>
+            <p>Le vecteur temps <b>tOut</b> est fourni dans les unités de temps de <b>sys</b>, et la fonction initial s'adapte automatiquement les pas de temps et la durée de la simulation en fonction de la dynamique du système.</p>
+            <p>Lorsque vous utilisez <b>[y, tOut] = initial(sys, x0, tFinal)</b>, la fonction simule la réponse de t = 0 à l'heure finale t = tFinal.</p>
+            <p>De même, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simule la réponse de t0 à tFinal.</p>
+            <p>De plus, <b>[y, tOut] = initial(sys, x0, t)</b> renvoie la réponse initiale de <b>sys</b> aux moments spécifiés dans le vecteur <b>t</b>.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [-10 -20 -30;1  0  0; 0  1  0];
@@ -141,14 +140,14 @@ initial(sys, X0);</code><button class="copy-btn" type="button" onclick="copyExam
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
-<a class="see-also-link" href="../control_system/gensig.html">step</a><a class="see-also-link" href="../control_system/step.html">lsim</a>
+<a class="see-also-link" href="../control_system/step.html">step</a><a class="see-also-link" href="../control_system/lsim.html">lsim</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -156,13 +155,13 @@ initial(sys, X0);</code><button class="copy-btn" type="button" onclick="copyExam
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

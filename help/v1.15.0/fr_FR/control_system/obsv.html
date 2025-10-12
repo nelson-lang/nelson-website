@@ -45,93 +45,92 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">obsv</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Observability of state-space model.</div></div>
+<div class="section syntax-section"><div class="subtitle">Observabilité d'un modèle d'état.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">Ob = obsv(A, C)
 Ob = obsv(sys)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">sys</td>
-<td>State-space model</td>
+<td>Modèle d'état</td>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>State matrix: Nx-by-Nx matrix</td>
+<td>Matrice d'état : matrice Nx par Nx</td>
 </tr>
 <tr>
 <td class="param-name">C</td>
-<td>State-to-output matrix: Ny-by-Nx matrix</td>
+<td>Matrice de sortie : matrice Ny par Nx</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">Ob</td>
-<td>Observability matrix.</td>
+<td>Matrice d'observabilité.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The <b>obsv</b> functionis designed to calculate the observability matrix for state-space systems.</p>
-        <p>Given an Nx-by-Nx matrix <b>A</b> representing the system dynamics and a Ny-by-Nx matrix C specifying the output, the function call <b>obsv(A, C)</b> generates the observability matrix.</p>
+        <p>La fonction <b>obsv</b> est conçue pour calculer la matrice d'observabilité des systèmes d'état.</p>
+        <p>Étant donné une matrice Nx par Nx <b>A</b> représentant la dynamique du système et une matrice Ny par Nx C spécifiant la sortie, l'appel de fonction <b>obsv(A, C)</b> génère la matrice d'observabilité.</p>
         <p></p>
-        <p>It is advised against using the rank of the observability matrix for testing observability due to numerical instability.</p>
-        <p>The observability matrix <b>Ob</b> tends to be numerically singular for systems with more than a few states, making the rank-based approach unreliable for such cases.</p>
+        <p>Il est déconseillé d'utiliser le rang de la matrice d'observabilité pour tester l'observabilité en raison d'instabilités numériques.</p>
+        <p>La matrice d'observabilité <b>Ob</b> a tendance à être numériquement singulière pour les systèmes ayant plus de quelques états, rendant l'approche basée sur le rang peu fiable dans de tels cas.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">% Define the system matrices
+<code class="matlab syntax-block" style="flex:1 1 auto;">% Définir les matrices du système
 A = [1 2; 3 4];
 C = [7 8];
 
-% Check observability using obsv function
+% Vérifier l'observabilité en utilisant la fonction obsv
 O = obsv(A, C);
 
-% Display the observability matrix
-disp('Observability matrix:');
+% Afficher la matrice d'observabilité
+disp('Matrice d''observabilité :');
 disp(O);
 
-% Check if the system is observable
+% Vérifier si le système est observable
 if rank(O) == size(A, 1)
-    disp('The system is observable.');
+    disp('Le système est observable.');
 else
-    disp('The system is not observable.');
+    disp('Le système n''est pas observable.');
 end</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../control_system/obsvf.html">obsvf</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -139,13 +138,13 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">timeit</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Measure time required to run function.</div></div>
+<div class="section syntax-section"><div class="subtitle">Mesure le temps nécessaire à l'exécution d'une fonction.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">t = timeit(f)
 t = timeit(f, nLhs)
 t = timeit(f, nLhs, x1, ..., xm)
@@ -57,53 +56,53 @@ t = timeit(f, nLhs, x1, ..., xm)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">f</td>
-<td>Function handle: Function to run.</td>
+<td>handle de fonction : fonction à exécuter.</td>
 </tr>
 <tr>
 <td class="param-name">nLhs</td>
-<td>integer value: number of output arguments. (1: default)</td>
+<td>entier : nombre d'arguments de sortie (1 par défaut).</td>
 </tr>
 <tr>
 <td class="param-name">x1, ..., xm</td>
-<td>Input arguments, specified as a comma-separated list of variables or expressions.</td>
+<td>arguments d'entrée : liste séparée par des virgules de variables ou d'expressions.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">t</td>
-<td>time (in seconds).</td>
+<td>temps (en secondes).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>t = timeit(f)</b> measures the time elapsed required to run the function specified by the function handle <b>f</b>.</p>
-            <p>To perform a robust measurement, <b>timeit</b> calls function multiple times and returns the median of the measurements.</p>
-            <p>If the function runs fast, <b>timeit</b> might call the function many times.</p>
+      <p>
+        <b>t = timeit(f)</b> mesure le temps nécessaire à l'exécution de la fonction indiquée par le handle de fonction <b>f</b>.</p>
+        <p>Pour obtenir une mesure robuste, <b>timeit</b> appelle la fonction plusieurs fois et renvoie la médiane des mesures.</p>
+        <p>Si la fonction est rapide, <b>timeit</b> pourra appeler la fonction de nombreuses fois.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = str2func('@()sleep(6)');
 tic();t = timeit(f), toc()</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -117,12 +116,12 @@ tic(), t2 = timeit(f, 3, X), toc()</code><button class="copy-btn" type="button" 
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../time/tic.html">tic</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -130,13 +129,13 @@ tic(), t2 = timeit(f, 3, X), toc()</code><button class="copy-btn" type="button" 
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -48,8 +48,7 @@
 <div class="section syntax-section"><div class="subtitle">Read comma-separated value (CSV) file.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">M = csvread(filename)
 M = csvread(filename, R1, C1)
 M = csvread(filename, R1, C1, [R1 C1 R2 C2])
@@ -57,7 +56,7 @@ M = csvread(filename, R1, C1, [R1 C1 R2 C2])
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -79,7 +78,7 @@ M = csvread(filename, R1, C1, [R1 C1 R2 C2])
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Output Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -93,7 +92,7 @@ M = csvread(filename, R1, C1, [R1 C1 R2 C2])
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
             <b>M = csvread(filename, R1, C1, [R1 C1 R2 C2])</b> reads only the data within the range specified by row offsets <b>R1</b> to <b>R2</b> and column offsets <b>C1</b> to <b>C2</b>.</p>
@@ -105,27 +104,27 @@ M = csvread(filename, R1, C1, [R1 C1 R2 C2])
                     <p>Complex Number Importing: <b>csvread</b> reads each complex number as a single unit, storing it in a complex numeric field.</p>
                     <p>Valid forms for complex numbers are:</p>
                     <p></p>
-                    
-                        
-                            Form:
-                            Example:
-                        
-                        
-                            ±&lt;real&gt;±&lt;imag&gt;i|j
-                            3.1347-2.1i
-                        
-                        
-                            ±&lt;imag&gt;i|j
-                            -2.1j
-                        
-                    
+                    <table style="width:100%">
+                        <tr>
+                            <th>Form:</th>
+                            <th>Example:</th>
+                        </tr>
+                        <tr>
+                            <td>±&lt;real&gt;±&lt;imag&gt;i|j</td>
+                            <td>3.1347-2.1i</td>
+                        </tr>
+                        <tr>
+                            <td>±&lt;imag&gt;i|j</td>
+                            <td>-2.1j</td>
+                        </tr>
+                    </table>
                     <p>
                         <b>Note</b>: Whitespace within a complex number is not allowed; <b>csvread</b> interprets any embedded spaces as field delimiters.</p>
                     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [Inf, -Inf, NaN, 3];
 filename = [tempdir(), 'csvread_example.csv'];
@@ -135,14 +134,14 @@ R = csvread(filename)</code><button class="copy-btn" type="button" onclick="copy
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../spreadsheet/csvwrite.html">csvwrite</a><a class="see-also-link" href="../spreadsheet/dlmread.html">dlmread</a><a class="see-also-link" href="../stream_manager/fileread.html">fileread</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -156,7 +155,7 @@ R = csvread(filename)</code><button class="copy-btn" type="button" onclick="copy
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

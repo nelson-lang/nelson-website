@@ -48,8 +48,7 @@
 <div class="section syntax-section"><div class="subtitle">Linear 2-D plot.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">plot(Y)
 plot(X1, Y1, ...)
 plot(X1, Y1, LineSpec, ...)
@@ -60,7 +59,7 @@ go = plot(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -94,7 +93,7 @@ go = plot(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Output Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -108,7 +107,7 @@ go = plot(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
             <b>plot(Y)</b> plots the columns of <b>Y</b> versus their index.</p>
@@ -121,61 +120,167 @@ go = plot(...)
                         <b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order:</p>
                         <p></p>
                         <p>The SymbolSpec specifies the symbol to be drawn at each data point:</p>
-                        <p>
-                            <b>'o'</b>: Circle symbol</p>
-                            <p>
-                                <b>'x'</b>: Times symbol</p>
-                                <p>
-                                    <b>'+'</b>: Plus symbol</p>
-                                    <p>
-                                        <b>'*'</b>: Asterisk symbol</p>
-                                        <p>
-                                            <b>'.'</b>: Dot symbol</p>
-                                            <p>
-                                                <b>'s'</b>: Square symbol</p>
-                                                <p>
-                                                    <b>'d'</b>: Diamond symbol</p>
-                                                    <p>
-                                                        <b>'v'</b>: Downward-pointing triangle symbol</p>
-                                                        <p>
-                                                            <b>'^'</b>: Upward-pointing triangle symbol</p>
-                                                            <p>
-                                                                <b>'&gt;'</b>: Left-pointing triangle symbol</p>
-                                                                <p>
-                                                                    <b>'&lt;'</b>: Right-pointing triangle symbol</p>
-                                                                    <p></p>
-                                                                    <p>The LineStyleSpec specifies the line style to use for each data series:</p>
-                                                                    <p>
-                                                                        <b>'-'</b>: Solid line style</p>
-                                                                        <p>
-                                                                            <b>'--'</b>: Dashed line style</p>
-                                                                            <p>
-                                                                                <b>'-.'</b>: Dot-Dash-Dot-Dash line style</p>
-                                                                                <p>
-                                                                                    <b>':'</b>: Dotted line style</p>
-                                                                                    <p></p>
-                                                                                    <p>The ColorSpec specifies the line color to use for each data series:</p>
-                                                                                    <p>
-                                                                                        <b>'k'</b>: Color Black</p>
-                                                                                        <p>
-                                                                                            <b>'y'</b>: Color Yellow</p>
-                                                                                            <p>
-                                                                                                <b>'m'</b>: Color Magenta</p>
-                                                                                                <p>
-                                                                                                    <b>'c'</b>: Color Cyan</p>
-                                                                                                    <p>
-                                                                                                        <b>'r'</b>: Color Red</p>
-                                                                                                        <p>
-                                                                                                            <b>'b'</b>: Color Blue</p>
-                                                                                                            <p>
-                                                                                                                <b>'g'</b>: Color Green</p>
-                                                                                                                <p></p>
-                                                                                                                <p>see <b>line</b> for more information about properties</p>
-                                                                                                            </div>
+                        <table>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'o'</b>
+                                </td>
+                                <td>Circle symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'x'</b>
+                                </td>
+                                <td>Times symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'+'</b>
+                                </td>
+                                <td>Plus symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'*'</b>
+                                </td>
+                                <td>Asterisk symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'.'</b>
+                                </td>
+                                <td>Dot symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'s'</b>
+                                </td>
+                                <td>Square symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'d'</b>
+                                </td>
+                                <td>Diamond symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'v'</b>
+                                </td>
+                                <td>Downward-pointing triangle symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'^'</b>
+                                </td>
+                                <td>Upward-pointing triangle symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'&gt;'</b>
+                                </td>
+                                <td>Left-pointing triangle symbol</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'&lt;'</b>
+                                </td>
+                                <td>Right-pointing triangle symbol</td>
+                            </tr>
+                        </table>
+                        <p></p>
+                        <p>The LineStyleSpec specifies the line style to use for each data series:</p>
+                        <table>
+                            <tr>
+                                <th>Style</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'-'</b>
+                                </td>
+                                <td>Solid line style</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'--'</b>
+                                </td>
+                                <td>Dashed line style</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'-.'</b>
+                                </td>
+                                <td>Dot-Dash-Dot-Dash line style</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>':'</b>
+                                </td>
+                                <td>Dotted line style</td>
+                            </tr>
+                        </table>
+                        <p></p>
+                        <p>The ColorSpec specifies the line color to use for each data series:</p>
+                        <table>
+                            <tr>
+                                <th>Color</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'k'</b>
+                                </td>
+                                <td>Color Black</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'y'</b>
+                                </td>
+                                <td>Color Yellow</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'m'</b>
+                                </td>
+                                <td>Color Magenta</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'c'</b>
+                                </td>
+                                <td>Color Cyan</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'r'</b>
+                                </td>
+                                <td>Color Red</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'b'</b>
+                                </td>
+                                <td>Color Blue</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>'g'</b>
+                                </td>
+                                <td>Color Green</td>
+                            </tr>
+                        </table>
+                        <p></p>
+                        <p>see <b>line</b> for more information about properties</p>
+                    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example">
 <div class="example-title">Default abscissae using indices:</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -228,14 +333,14 @@ ylabel('sin(5x)')</code><button class="copy-btn" type="button" onclick="copyExam
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../graphics/line.html">line</a><a class="see-also-link" href="../graphics/plot3.html">plot3</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -249,7 +354,7 @@ ylabel('sin(5x)')</code><button class="copy-btn" type="button" onclick="copyExam
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

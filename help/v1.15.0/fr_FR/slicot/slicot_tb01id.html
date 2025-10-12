@@ -45,88 +45,87 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_tb01id</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Balancing a system matrix corresponding to a triplet (A, B, C).</div></div>
+<div class="section syntax-section"><div class="subtitle">Équilibrage d'une matrice système correspondant au triplet (A, B, C).</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[MAXRED_OUT, A_OUT, B_OUT, C_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">JOB</td>
-<td> = 'A':  All matrices are involved in balancing; = 'B':  B and A matrices are involved in balancing; = 'C':  C and A matrices are involved in balancing; = 'N':  B and C matrices are not involved in balancing.</td>
+<td> = 'A':  Toutes les matrices sont impliquées dans l'équilibrage ; = 'B':  Les matrices B et A sont impliquées ; = 'C':  Les matrices C et A sont impliquées ; = 'N':  Les matrices B et C ne sont pas impliquées dans l'équilibrage.</td>
 </tr>
 <tr>
 <td class="param-name">MAXRED_IN</td>
-<td>the maximum allowed reduction in the 1-norm of S (in an iteration) if zero rows or columns are encountered.</td>
+<td>la réduction maximale autorisée de la norme 1 de S (dans une itération) si des lignes ou colonnes nulles sont rencontrées.</td>
 </tr>
 <tr>
 <td class="param-name">A_IN</td>
-<td>The leading N-by-N part of this array must contain the system state matrix A.</td>
+<td>La partie principale N-by-N de ce tableau doit contenir la matrice d'état du système A.</td>
 </tr>
 <tr>
 <td class="param-name">B_IN</td>
-<td>The leading N-by-M part of this array must contain the system input matrix B.</td>
+<td>La partie principale N-by-M de ce tableau doit contenir la matrice d'entrée du système B.</td>
 </tr>
 <tr>
 <td class="param-name">C_IN</td>
-<td>The leading P-by-N part of this array must contain the system output matrix C.</td>
+<td>La partie principale P-by-N de ce tableau doit contenir la matrice de sortie du système C.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">MAXRED_OUT</td>
-<td> if the 1-norm of the given matrix S is non-zero, the ratio between the 1-norm of the given matrix and the 1-norm of the balanced matrix.</td>
+<td> si la norme 1 de la matrice donnée S est non nulle, le ratio entre la norme 1 de la matrice donnée et la norme 1 de la matrice équilibrée.</td>
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td>The leading N-by-N part of this array contains the balanced matrix inv(D)*A*D.</td>
+<td>La partie principale N-by-N de ce tableau contient la matrice équilibrée inv(D)*A*D.</td>
 </tr>
 <tr>
 <td class="param-name">B_OUT</td>
-<td>The leading N-by-M part of this array contains the balanced matrix inv(D)*B.</td>
+<td>La partie principale N-by-M de ce tableau contient la matrice équilibrée inv(D)*B.</td>
 </tr>
 <tr>
 <td class="param-name">C_OUT</td>
-<td>The leading P-by-N part of this array contains the balanced matrix C*D.</td>
+<td>La partie principale P-by-N de ce tableau contient la matrice équilibrée C*D.</td>
 </tr>
 <tr>
 <td class="param-name">SCALE</td>
-<td>The scaling factors applied to S.</td>
+<td>Les facteurs d'échelle appliqués à S.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td> = 0:  successful exit.</td>
+<td> = 0 : sortie réussie.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To reduce the 1-norm of a system matrix corresponding to the triple (A,B,C), by balancing.</p>
-    </div>
+    <p>Réduire la norme 1 d'une matrice système correspondant au triplet (A, B, C), par équilibrage.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">N = 5;
 M = 2;
@@ -160,12 +159,12 @@ C_IN = [1.0000e+000          0.0          0.0          0.0          0.0;
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/TB01ID.html" target="_blank">http://slicot.org/objects/software/shared/doc/TB01ID.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -173,13 +172,13 @@ C_IN = [1.0000e+000          0.0          0.0          0.0          0.0;
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

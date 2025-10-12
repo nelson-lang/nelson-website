@@ -45,96 +45,95 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_mb02md</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Solution of Total Least-Squares problem using a SVD approach.</div></div>
+<div class="section syntax-section"><div class="subtitle">Résolution du problème des moindres carrés totaux par une approche SVD.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[RANK_OUT, C_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">JOB</td>
-<td>Determines whether the values of the parameters RANK and TOL are to be specified by the user or computed by the routine as follows: = 'R':  Compute RANK only;  = 'T':  Compute TOL only; = 'B':  Compute both RANK and TOL; = 'N':  Compute neither RANK nor TOL.</td>
+<td>Détermine si les paramètres RANK et TOL doivent être fournis par l'utilisateur ou calculés par la routine : = 'R' : calculer RANK uniquement ; = 'T' : calculer TOL uniquement ; = 'B' : calculer à la fois RANK et TOL ; = 'N' : ne calculer ni RANK ni TOL.</td>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>The number of rows in the data matrix A and the observation matrix B.</td>
+<td>Le nombre de lignes de la matrice de données A et de la matrice d'observation B.</td>
 </tr>
 <tr>
 <td class="param-name">N</td>
-<td>The number of columns in the data matrix A.</td>
+<td>Le nombre de colonnes de la matrice de données A.</td>
 </tr>
 <tr>
 <td class="param-name">L</td>
-<td>The number of columns in the observation matrix B.</td>
+<td>Le nombre de colonnes de la matrice d'observation B.</td>
 </tr>
 <tr>
 <td class="param-name">RANK_IN</td>
-<td>if JOB = 'T' or JOB = 'N', then RANK must specify r, the rank of the TLS approximation [A + DA | B + DB].</td>
+<td>Si JOB = 'T' ou JOB = 'N', RANK doit préciser r, le rang de l'approximation TLS [A + DA | B + DB].</td>
 </tr>
 <tr>
 <td class="param-name">C_IN</td>
-<td>the leading M-by-(N+L) part of this array must contain the matrices A and B.</td>
+<td>La partie principale M-by-(N+L) de ce tableau doit contenir les matrices A et B.</td>
 </tr>
 <tr>
 <td class="param-name">TOL</td>
-<td>A tolerance used to determine the rank of the TLS approximation [A+DA|B+DB] and to check the multiplicity of the singular values of matrix C.</td>
+<td>Une tolérance utilisée pour déterminer le rang de l'approximation TLS [A+DA|B+DB] et vérifier la multiplicité des valeurs singulières de la matrice C.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">RANK_OUT</td>
-<td>if JOB = 'R' or JOB = 'B', and INFO = 0, then RANK contains the computed (effective) rank of the TLS approximation [A + DA | B + DB].</td>
+<td>Si JOB = 'R' ou JOB = 'B', et INFO = 0, RANK contient le rang (effectif) calculé de l'approximation TLS [A + DA | B + DB].</td>
 </tr>
 <tr>
 <td class="param-name">C_OUT</td>
-<td>the leading (N+L)-by-(N+L) part of this array contains the (transformed) right singular vectors, including null space vectors, if any, of C = [A | B].</td>
+<td>La partie principale (N+L)-by-(N+L) de ce tableau contient les vecteurs singuliers droits (transformés), y compris les vecteurs d'espace nul, le cas échéant, de C = [A | B].</td>
 </tr>
 <tr>
 <td class="param-name">S</td>
-<td>If INFO = 0, the singular values of matrix C</td>
+<td>Si INFO = 0, les valeurs singulières de la matrice C.</td>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>If INFO = 0, the leading N-by-L part of this array contains the solution X to the TLS problem specified by A and B.</td>
+<td>Si INFO = 0, la partie principale N-by-L de ce tableau contient la solution X du problème TLS spécifié par A et B.</td>
 </tr>
 <tr>
 <td class="param-name">IWARN</td>
-<td>= 0:  no warnings; = 1:  if the rank of matrix C has been lowered because a singular value of multiplicity greater than 1 was found; = 2:  if the rank of matrix C has been lowered because the upper triangular matrix F is (numerically) singular.</td>
+<td>= 0 : pas d'avertissement ; = 1 : le rang de la matrice C a été réduit car une valeur singulière de multiplicité &gt; 1 a été trouvée ; = 2 : le rang de C a été réduit car la matrice triangulaire supérieure F est (numériquement) singulière.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>= 0:  successful exit;</td>
+<td>= 0 : sortie réussie ;</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To solve the Total Least Squares (TLS) problem using a Singular Value Decomposition (SVD) approach. The TLS problem assumes an overdetermined set of linear equations AX = B, where both the data matrix A as well as the observation matrix B are inaccurate. The routine also solves determined and underdetermined sets of equations by computing the minimum norm solution. It is assumed that all preprocessing measures (scaling, coordinate transformations, whitening, ... ) of the data have been performed in advance.</p>
-    </div>
+    <p>Résoudre le problème des moindres carrés totaux (TLS) en utilisant une décomposition en valeurs singulières (SVD). Le problème TLS suppose un système surdéterminé d'équations linéaires AX = B, où la matrice de données A et la matrice d'observation B sont inexactes. La routine résout également des systèmes déterminés et sous-déterminés en calculant la solution de norme minimale. On suppose que toutes les opérations de prétraitement (mise à l'échelle, transformations de coordonnées, blanchiment, ...) ont été réalisées au préalable.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">M = 6;
 N = 3;
@@ -157,12 +156,12 @@ C_IN = [0.80010  0.39985  0.60005  0.89999;
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/MB02MD.html" target="_blank">http://slicot.org/objects/software/shared/doc/MB02MD.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -170,13 +169,13 @@ C_IN = [0.80010  0.39985  0.60005  0.89999;
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

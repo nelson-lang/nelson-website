@@ -45,62 +45,61 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">conv</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Convolution and polynomial multiplication.</div></div>
+<div class="section syntax-section"><div class="subtitle">Convolution et multiplication de polynômes.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">C = conv(u, v)
 C = conv(u, v, shape)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">u</td>
-<td>input vectors, specified as either row or column vectors.</td>
+<td>vecteurs d'entrée, spécifiés comme vecteurs lignes ou colonnes.</td>
 </tr>
 <tr>
 <td class="param-name">v</td>
-<td>input vectors, specified as either row or column vectors.</td>
+<td>vecteurs d'entrée, spécifiés comme vecteurs lignes ou colonnes.</td>
 </tr>
 <tr>
 <td class="param-name">shape</td>
-<td>subsection of convolution: 'full' (default: full 2-D convolution), 'same' (central part of the convolution) or 'valid' (parts of the convolution that are computed without zero-padded edges).</td>
+<td>sous-partie de la convolution : 'full' (par défaut : convolution 2D complète), 'same' (partie centrale de la convolution) ou 'valid' (parties de la convolution calculées sans bords remplis de zéros).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">C</td>
-<td>convolution, returned as a vector or matrix.</td>
+<td>convolution, renvoyée sous forme de vecteur ou de matrice.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.</p>
-        </div>
+                <p>
+                        <b>conv</b> renvoie la convolution des vecteurs <b>u</b> et <b>v</b>.</p>
+                </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">U = [-1 2 3 -2 0 1 2];
 V = [2 4 -1 1];
@@ -109,12 +108,12 @@ R = conv(U, V, 'same')</code><button class="copy-btn" type="button" onclick="cop
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../data_analysis/conv.html">conv</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -122,13 +121,13 @@ R = conv(U, V, 'same')</code><button class="copy-btn" type="button" onclick="cop
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

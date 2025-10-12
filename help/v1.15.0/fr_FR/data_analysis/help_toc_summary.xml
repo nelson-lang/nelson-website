@@ -2,24 +2,24 @@
 <help_summary>
   <toc>
     <module>data_analysis</module>
-    <section name="Data analysis">
+    <section name="Analyse de données">
       <chapter_description>
-       <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.</p>
-       <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.</p>
-       <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.</p>
+       <p>Le module Analyse de données fournit des outils pour effectuer des opérations numériques et des analyses basées sur des tableaux dans Nelson.</p>
+       <p>Il prend en charge les opérations cumulatives, le tri, l'agrégation, la convolution et l'identification des valeurs uniques ou manquantes.</p>
+       <p>Ce module permet un traitement, un résumé et une exploration efficaces des jeux de données, facilitant un large éventail de tâches analytiques et computationnelles.</p>
     </chapter_description>
-      <keyword name="conv" link="conv.html" description="Convolution and polynomial multiplication."/>
-      <keyword name="conv2" link="conv2.html" description="2-D convolution."/>
-      <keyword name="cumprod" link="cumprod.html" description="Cumulative product of array elements."/>
-      <keyword name="cumsum" link="cumsum.html" description="Cumulative sum of array elements."/>
-      <keyword name="ismissing" link="ismissing.html" description="Check for missing values."/>
-      <keyword name="issorted" link="issorted.html" description="Determine if array is sorted."/>
-      <keyword name="max" link="max.html" description="Maximum elements of an array."/>
-      <keyword name="min" link="min.html" description="Minimum elements of an array."/>
-      <keyword name="prod" link="prod.html" description="Product of array elements."/>
-      <keyword name="sort" link="sort.html" description="Sort array elements by quick sort algorithm."/>
-      <keyword name="sum" link="sum.html" description="Sum of array elements."/>
-      <keyword name="unique" link="unique.html" description="Unique values."/>
+      <keyword name="conv" link="conv.html" description="Convolution et multiplication de polynômes."/>
+      <keyword name="conv2" link="conv2.html" description="Convolution 2D."/>
+      <keyword name="cumprod" link="cumprod.html" description="Produit cumulatif des éléments d'un tableau."/>
+      <keyword name="cumsum" link="cumsum.html" description="Somme cumulative des éléments d'un tableau."/>
+      <keyword name="ismissing" link="ismissing.html" description="Vérifier les valeurs manquantes."/>
+      <keyword name="issorted" link="issorted.html" description="Détermine si un tableau est trié."/>
+      <keyword name="max" link="max.html" description="Valeurs maximales d'un tableau."/>
+      <keyword name="min" link="min.html" description="Valeurs minimales d'un tableau."/>
+      <keyword name="prod" link="prod.html" description="Produit des éléments d'un tableau."/>
+      <keyword name="sort" link="sort.html" description="Trier les éléments d'un tableau (algorithme de tri rapide)."/>
+      <keyword name="sum" link="sum.html" description="Somme des éléments d'un tableau."/>
+      <keyword name="unique" link="unique.html" description="Valeurs uniques."/>
     </section>
   </toc>
 </help_summary>

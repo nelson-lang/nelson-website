@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">stem</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Plot discrete sequence data.</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracer des données discrètes.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">stem(Y)
 stem(X, Y)
 stem(..., 'filled')
@@ -61,74 +60,73 @@ go = stem(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>Locations to plot data values in Y.</td>
+<td>Emplacements pour tracer les valeurs de Y.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>Data sequence to display.</td>
+<td>Séquence de données à afficher.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style, marker and/or color: character vector or scalar string.</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou chaîne scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>Axes object.</td>
+<td>Objet axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">gr</td>
-<td>group of graphics object.</td>
+<td>Groupe d'objets graphiques.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>A two-dimensional <b>stem</b> plot is a way to visualize data by representing it as lines extending from a horizontal baseline along the x-axis.</p>
-        <p>At the end of each line, there is a circle (which is the default marker), and the vertical position of this circle corresponds to the value of the data it represents.</p>
+        <p>Un graphique <b>stem</b> en deux dimensions permet de visualiser des données en les représentant par des lignes partant d'une ligne de base horizontale le long de l'axe x.</p>
+        <p>À l'extrémité de chaque ligne se trouve un cercle (marqueur par défaut), et la position verticale de ce cercle correspond à la valeur de la donnée représentée.</p>
         <p>
-            <b>stem(Y)</b> creates a stem plot by taking the data sequence <b>Y</b> and drawing stems that extend from regularly spaced and automatically determined points along the x-axis.</p>
-            <p>If <b>Y</b> is a matrix, the stem function plots all elements in a row against the same x-value.</p>
-            <p>
-                <b>stem(X, Y)</b> creates a stem plot that shows how <b>X</b> relates to the columns of <b>Y</b>.</p>
-                <p>Both <b>X</b> and <b>Y</b> can be vectors or matrices of the same size.</p>
-                <p>
-                    <b>X</b> can be either a row or a column vector, and <b>Y</b> should be a matrix with the same number of rows as the length of <b>X</b>.</p>
-                    <p>If you want to specify whether to fill the circle at the end of each stem, you can use <b>stem(...,'fill')</b>.</p>
-                    <p>Moreover, by using <b>stem(..., LineSpec)</b>, you can define the line style, marker symbol, and color for the stems and the top marker.</p>
-                    <p>Refer to <b>LineSpec</b> for more details on how to customize the appearance of the stem plot.</p>
-                </div>
+            <b>stem(Y)</b> crée un graphique stem en prenant la séquence de données <b>Y</b> et en traçant des tiges partant de points régulièrement espacés et automatiquement déterminés le long de l'axe x.</p>
+        <p>Si <b>Y</b> est une matrice, la fonction stem trace tous les éléments d'une ligne pour la même valeur de x.</p>
+        <p>
+            <b>stem(X, Y)</b> crée un graphique stem qui montre comment <b>X</b> est relié aux colonnes de <b>Y</b>.</p>
+        <p><b>X</b> et <b>Y</b> peuvent être des vecteurs ou des matrices de même taille.</p>
+        <p><b>X</b> peut être un vecteur ligne ou colonne, et <b>Y</b> doit être une matrice ayant le même nombre de lignes que la longueur de <b>X</b>.</p>
+        <p>Si vous souhaitez spécifier si le cercle à l'extrémité de chaque tige doit être rempli, vous pouvez utiliser <b>stem(...,'fill')</b>.</p>
+        <p>De plus, en utilisant <b>stem(..., LineSpec)</b>, vous pouvez définir le style de ligne, le symbole du marqueur et la couleur des tiges et du marqueur supérieur.</p>
+        <p>Consultez <b>LineSpec</b> pour plus de détails sur la personnalisation de l'apparence du graphique stem.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -154,12 +152,12 @@ stem(X,Y)</code><button class="copy-btn" type="button" onclick="copyExample(this
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../graphics/plot.html">plot</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -167,13 +165,13 @@ stem(X,Y)</code><button class="copy-btn" type="button" onclick="copyExample(this
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -45,45 +45,38 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Anonymous Functions</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Anonymous Functions.</div></div>
+<div class="section syntax-section"><div class="subtitle">Fonctions anonymes.</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Anonymous functions provide a convenient way to swiftly create straightforward functions without the need to generate separate M-files on every occasion.</p>
-        <p>These anonymous functions can be built either directly at the command line or within any M-file function or script.</p>
-        <p>To create an anonymous function from an expression, use the following syntax:</p>
+        <p>Les fonctions anonymes offrent un moyen pratique de créer rapidement des fonctions simples sans avoir à créer un fichier M séparé à chaque fois.</p>
+        <p>Ces fonctions anonymes peuvent être définies directement dans la ligne de commande ou à l'intérieur d'une fonction ou d'un script M-file.</p>
+        <p>Pour créer une fonction anonyme à partir d'une expression, utilisez la syntaxe suivante :</p>
         <p>function_handle = @(argument_list) expression</p>
-        <p></p>
-        <p>Breaking down this syntax, <b>expression</b> represents the body of the function, which contains the code that performs the primary task of your function.</p>
-        <p>This part consists of a valid expression. Next, there's <b>argument_list</b>, which is a comma-separated list of input arguments to be passed to the function.</p>
-        <p>These components are similar to the body and argument list of any regular function.</p>
-        <p></p>
-        <p>At the beginning of this syntax statement, you'll notice the <b>@</b> sign.</p>
-        <p>This <b>@</b> sign is the operator that constructs a function handle.</p>
-        <p>Creating a function handle for an anonymous function allows you to invoke the function and is useful when passing your anonymous function as an argument to another function.</p>
-        <p>The <b>@</b> sign is a necessary part of the anonymous function definition.</p>
-        <p></p>
-        <p>It's worth noting that function handles not only apply to anonymous functions but also to any function.</p>
-        <p>The syntax for creating a function handle to a regular function is different and looks like this:</p>
+        <p>Dans cette syntaxe, <b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale.</p>
+        <p>Cette partie doit être une expression valide. Ensuite, <b>argument_list</b> est la liste d'arguments d'entrée séparés par des virgules passés à la fonction.</p>
+        <p>Ces composants correspondent au corps et à la liste d'arguments d'une fonction classique.</p>
+        <p>Au début de cette déclaration, on trouve le signe <b>@</b>.</p>
+        <p>Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function handle).</p>
+        <p>La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction.</p>
+        <p>Le signe <b>@</b> est requis dans la définition d'une fonction anonyme.</p>
+        <p>Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction.</p>
+        <p>La syntaxe pour créer un handle vers une fonction régulière est différente :</p>
         <p>function_handle = @function_name</p>
-        <p>For example: <b>f = @cos</b>
-    </p>
-    <p>You have the option to store function handles along with their associated values in a MAT-file.</p>
-    <p>Later, in a different session, you can retrieve and utilize them using the save and load functions.</p>
-    <p>for example <b>a = 1;b = 2; f = @(x) a + b + x; save('test.nH5', f);</b>
-</p>
-<p>Only .nh5 files allows to save and load function_handle type as expected.</p>
-<p>You can create an anonymous function that takes multiple input arguments, x and y.</p>
-<p>Assuming that variables A and B are already defined, you can define the function as follows:</p>
-<p>
-    <b>A = 10; B = 100; r = @(x, y) (A*y + B*x);</b>
-</p>
+        <p>Par exemple : <b>f = @cos</b></p>
+    <p>Vous pouvez enregistrer des function handles et leurs valeurs associées dans un fichier MAT.</p>
+    <p>Plus tard, dans une autre session, vous pouvez les restaurer avec <b>save</b> et <b>load</b>.</p>
+    <p>Par exemple : <b>a = 1; b = 2; f = @(x) a + b + x; save('test.nH5', f);</b></p>
+    <p>Seuls les fichiers .nh5 permettent de sauvegarder et recharger correctement le type function_handle.</p>
+    <p>Vous pouvez créer une fonction anonyme avec plusieurs arguments d'entrée, par exemple x et y.</p>
+    <p>Si les variables A et B sont définies, vous pouvez définir :</p>
+    <p><b>A = 10; B = 100; r = @(x, y) (A*y + B*x);</b></p>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = 10;
 f1 = @() sqr(A);
@@ -137,14 +130,14 @@ mesh(x, y, z)</code><button class="copy-btn" type="button" onclick="copyExample(
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../function_handle/func2str.html">func2str</a><a class="see-also-link" href="../function_handle/str2func.html">str2func</a><a class="see-also-link" href="../function_handle/isfunction_handle.html">isfunction_handle</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -152,13 +145,13 @@ mesh(x, y, z)</code><button class="copy-btn" type="button" onclick="copyExample(
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

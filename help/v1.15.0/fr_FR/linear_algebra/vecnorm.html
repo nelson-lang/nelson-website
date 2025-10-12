@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">vecnorm</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Vector-wise norm.</div></div>
+<div class="section syntax-section"><div class="subtitle">Norme par vecteur.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">N = vecnorm(A)
 N = vecnorm(A, p)
 N = vecnorm(A, p, dim)
@@ -57,10 +56,10 @@ N = vecnorm(A, p, dim)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -79,10 +78,10 @@ N = vecnorm(A, p, dim)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -93,22 +92,22 @@ N = vecnorm(A, p, dim)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>vecnorm</b> computes the 2-norm or Euclidean norm of the input array <b>A</b>
-        </p>
-        <p>If <b>A</b> is a vector, <b>vecnorm</b> returns the norm of the vector.</p>
-        <p>If <b>A</b> is a matrix, <b>vecnorm</b> returns the norm of each column.</p>
-        <p>For multidimensional arrays, <b>vecnorm returns</b> the norm along the first array dimension whose size does not equal 1.</p>
-        <p>To compute the generalized vector p-norm, you can use the syntax <b>N = vecnorm(A, p)</b>.</p>
-        <p>To operate along a specific dimension dim, the function can be called as <b>N = vecnorm(A, p, dim)</b>.</p>
-        <p>In this case, the size of the specified dimension reduces to 1, while the sizes of all other dimensions remain unchanged.</p>
+                <p>
+                        <b>vecnorm</b> calcule la norme 2 ou norme Euclidienne du tableau d'entrée <b>A</b>
+                </p>
+                <p>Si <b>A</b> est un vecteur, <b>vecnorm</b> retourne la norme du vecteur.</p>
+                <p>Si <b>A</b> est une matrice, <b>vecnorm</b> retourne la norme de chaque colonne.</p>
+                <p>Pour les tableaux multidimensionnels, <b>vecnorm</b> retourne la norme le long de la première dimension du tableau dont la taille n'est pas égale à 1.</p>
+                <p>Pour calculer la norme p généralisée du vecteur, utilisez la syntaxe <b>N = vecnorm(A, p)</b>.</p>
+                <p>Pour opérer le long d'une dimension spécifique dim, la fonction peut être appelée comme <b>N = vecnorm(A, p, dim)</b>.</p>
+                <p>Dans ce cas, la taille de la dimension spécifiée devient 1, tandis que les tailles des autres dimensions restent inchangées.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [1, 2, 3; 4, 5, 6; 7, 8, 9];
 n = vecnorm(A)
@@ -118,12 +117,12 @@ n = vecnorm(A, 1)</code><button class="copy-btn" type="button" onclick="copyExam
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../elementary_functions/norm.html">norm</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -131,13 +130,13 @@ n = vecnorm(A, 1)</code><button class="copy-btn" type="button" onclick="copyExam
 </tr>
 <tr>
 <td class="version">1.3.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

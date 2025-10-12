@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">history</span></div></div>
-<div class="section syntax-section"><div class="subtitle">history manager.</div></div>
+<div class="section syntax-section"><div class="subtitle">gestionnaire d'historique.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">history()
 c = history()
 s = history('size')
@@ -78,128 +77,103 @@ history('saveafter', nb_commands)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">new_size</td>
-<td>a integer value: new size max of history.</td>
+<td>un entier : nouvelle taille maximale de l'historique.</td>
 </tr>
 <tr>
 <td class="param-name">true_false</td>
-<td>a logical.</td>
+<td>un booléen.</td>
 </tr>
 <tr>
 <td class="param-name">lines</td>
-<td>a integer value or a vector of size 1x2.</td>
+<td>un entier ou un vecteur de taille 1x2.</td>
 </tr>
 <tr>
 <td class="param-name">str</td>
-<td>a string.</td>
+<td>une chaîne.</td>
 </tr>
 <tr>
 <td class="param-name">name</td>
-<td>a string: new default history filename</td>
+<td>une chaîne : nouveau nom de fichier par défaut pour l'historique</td>
 </tr>
 <tr>
 <td class="param-name">filename_history</td>
-<td>a string: filename</td>
+<td>une chaîne : nom de fichier</td>
 </tr>
 <tr>
 <td class="param-name">nb_commands</td>
-<td>a integer value: number of commands.</td>
+<td>un entier : nombre de commandes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">c</td>
-<td>a cell of strings.</td>
+<td>un tableau (cell) de chaînes.</td>
 </tr>
 <tr>
 <td class="param-name">l</td>
-<td>a logical.</td>
+<td>un booléen.</td>
 </tr>
 <tr>
 <td class="param-name">s</td>
-<td>a integer value.</td>
+<td>un entier.</td>
 </tr>
 <tr>
 <td class="param-name">f</td>
-<td>a string.</td>
+<td>une chaîne.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>history()</b> displays the current Nelson history.</p>
-            <p>
-                <b>c = history()</b> returns the current Nelson history in a cell of strings.</p>
-                <p>
-                    <b>s = history('size')</b> returns history size max.</p>
-                    <p>
-                        <b>f = history('filename')</b> returns the history filename.</p>
-                        <p>
-                            <b>l = history('enable_save')</b> returns the history manager state.</p>
-                            <p>
-                                <b>c = history('get')</b> returns the current Nelson history in a cell of strings.</p>
-                                <p>
-                                    <b>history('display')</b> displays the current Nelson history.</p>
-                                    <p>
-                                        <b>history('save')</b> saves current history file.</p>
-                                        <p>
-                                            <b>history('load')</b> load current history file.</p>
-                                            <p>
-                                                <b>history('clear')</b> clears history.</p>
-                                                <p>
-                                                    <b>history('duplicated')</b> get state about save of consecutive duplicated commands.</p>
-                                                    <p>
-                                                        <b>history('saveafter')</b> get state about save the history after nth commands.</p>
-                                                        <p>
-                                                            <b>history('removeexit')</b> get state about do not save exit in history file.</p>
-                                                            <p>
-                                                                <b>history('size', new_size)</b> set history size max with <b>new_size</b>.</p>
-                                                                <p>
-                                                                    <b>history('enable_save', true_false)</b> set the history manager state: false for 'off', true for 'on'.</p>
-                                                                    <p>
-                                                                        <b>history('delete', lines)</b> deletes lines by index: a scalar value or a vector 1x2.</p>
-                                                                        <p>
-                                                                            <b>history('append', str)</b> append command to history.</p>
-                                                                            <p>
-                                                                                <b>history('filename', name)</b> set the history filename.</p>
-                                                                                <p>
-                                                                                    <b>history('load', filename_history)</b> load history file.</p>
-                                                                                    <p>
-                                                                                        <b>history('save', filename_history)</b> save history file</p>
-                                                                                        <p>
-                                                                                            <b>history('duplicated', true_false)</b> set state about consecutive duplicated commands. true remove duplicated.</p>
-                                                                                            <p>
-                                                                                                <b>history('removeexit', true_false)</b> set state about do not save exit in history file.</p>
-                                                                                                <p>
-                                                                                                    <b>history('get', lines)</b>returns the current Nelson history in a cell of strings by index: a scalar value or a vector 1x2.</p>
-                                                                                                    <p>
-                                                                                                        <b>history('saveafter', nb_commands)</b> saves the history file after <b>nb_commands</b> statements are added to the file.</p>
-                                                                                                        <p>
-                                                                                                            <b>Tips</b>: You can easily share your history file in the cloud by adding few lines code in your user startup file.</p>
-                                                                                                            <p>If nelson launched with '--nouserstartup' option, history file will be not loaded at startup and not saved at exit.</p>
+        <p><b>history()</b> affiche l'historique actuel de Nelson.</p>
+        <p><b>c = history()</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes.</p>
+        <p><b>s = history('size')</b> renvoie la taille maximale de l'historique.</p>
+        <p><b>f = history('filename')</b> renvoie le nom de fichier de l'historique.</p>
+        <p><b>l = history('enable_save')</b> renvoie l'état du gestionnaire d'historique.</p>
+        <p><b>c = history('get')</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes.</p>
+        <p><b>history('display')</b> affiche l'historique actuel de Nelson.</p>
+        <p><b>history('save')</b> enregistre le fichier d'historique courant.</p>
+        <p><b>history('load')</b> charge le fichier d'historique courant.</p>
+        <p><b>history('clear')</b> efface l'historique.</p>
+        <p><b>history('duplicated')</b> obtient l'état concernant la sauvegarde des commandes consécutives dupliquées.</p>
+        <p><b>history('saveafter')</b> obtient l'état concernant la sauvegarde de l'historique après N commandes.</p>
+        <p><b>history('removeexit')</b> obtient l'état concernant la non-enregistrement des sorties dans le fichier d'historique.</p>
+        <p><b>history('size', new_size)</b> définit la taille maximale de l'historique avec <b>new_size</b>.</p>
+        <p><b>history('enable_save', true_false)</b> définit l'état du gestionnaire d'historique : false pour 'off', true pour 'on'.</p>
+        <p><b>history('delete', lines)</b> supprime des lignes par index : un scalaire ou un vecteur 1x2.</p>
+        <p><b>history('append', str)</b> ajoute une commande à l'historique.</p>
+        <p><b>history('filename', name)</b> définit le nom de fichier de l'historique.</p>
+        <p><b>history('load', filename_history)</b> charge un fichier d'historique.</p>
+        <p><b>history('save', filename_history)</b> enregistre un fichier d'historique.</p>
+        <p><b>history('duplicated', true_false)</b> définit l'état concernant les commandes consécutives dupliquées : true supprime les doublons.</p>
+        <p><b>history('removeexit', true_false)</b> définit l'état concernant la non-enregistrement des sorties dans le fichier d'historique.</p>
+        <p><b>history('get', lines)</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes par index : un scalaire ou un vecteur 1x2.</p>
+        <p><b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que <b>nb_commands</b> instructions aient été ajoutées au fichier.</p>
+        <p><b>Astuces</b> : vous pouvez facilement partager votre fichier d'historique dans le cloud en ajoutant quelques lignes de code dans votre fichier de démarrage utilisateur.</p>
+        <p>Si Nelson est lancé avec l'option '--nouserstartup', le fichier d'historique ne sera pas chargé au démarrage et ne sera pas enregistré à la fermeture.</p>
                                                                                                         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">Example to share your history file in OneDrive cloud</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -220,12 +194,12 @@ c = history()</code><button class="copy-btn" type="button" onclick="copyExample(
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../stream_manager/diary.html">diary</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -233,13 +207,13 @@ c = history()</code><button class="copy-btn" type="button" onclick="copyExample(
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

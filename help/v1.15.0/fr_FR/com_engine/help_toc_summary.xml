@@ -2,31 +2,31 @@
 <help_summary>
   <toc>
     <module>com_engine</module>
-    <section name="Component Object Model (COM) Client Interface">
+    <section name="Interface client du modèle d'objet composant (COM)">
       <chapter_description>
-      <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p>
-      <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p>
-      <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p>
+      <p>Le module COM Engine permet à Nelson d'interagir avec les composants Windows COM (Component Object Model) et ActiveX.</p>
+      <p>Il permet l'automatisation des applications logicielles, l'accès à leurs méthodes et propriétés, et la manipulation d'objets COM directement depuis les scripts Nelson.</p>
+      <p>Cela fournit un moyen d'intégrer Nelson avec une large gamme de logiciels Windows, y compris les applications Microsoft Office.</p>
     </chapter_description>
-      <keyword name="COM examples" link="1_COM_examples.html" description="Some example to show how to use COM interface."/>
-      <keyword name="COM_delete" link="COM_delete.html" description="Removes COM control or server."/>
-      <keyword name="COM_fieldnames" link="COM_fieldnames.html" description="Returns the properties name of an COM object."/>
-      <keyword name="COM_get" link="COM_get.html" description="Get property value from COM interface."/>
-      <keyword name="COM_invoke" link="COM_invoke.html" description="Invoke method on COM object or interface."/>
-      <keyword name="COM_ismethod" link="COM_ismethod.html" description="Determines if input is an existing COM object method."/>
-      <keyword name="COM_isprop" link="COM_isprop.html" description="Determines if input is an existing COM object property."/>
-      <keyword name="COM_methods" link="COM_methods.html" description="Returns the methods name of an COM object."/>
-      <keyword name="COM_range" link="COM_range.html" description="Private function: range helper."/>
-      <keyword name="COM_set" link="COM_set.html" description="Set object or interface property to specified value."/>
-      <keyword name="COM_used" link="COM_used.html" description="Returns list of current used COM handle."/>
-      <keyword name="COM_xlsfinfo" link="COM_xlsfinfo.html" description="Determines if file contains Microsoft Excel spreadsheet."/>
-      <keyword name="COM_xlsread" link="COM_xlsread.html" description="Read Microsoft Excel spreadsheet file using COM."/>
-      <keyword name="COM_xlswrite" link="COM_xlswrite.html" description="Write Microsoft Excel spreadsheet file using COM."/>
-      <keyword name="actxGetRunningServer" link="actxGetRunningServer.html" description="Handle to running instance of Automation server."/>
-      <keyword name="actxcontrollist" link="actxcontrollist.html" description="Get available ActiveX controls."/>
-      <keyword name="actxserver" link="actxserver.html" description="Creates COM server."/>
-      <keyword name="actxserverlist" link="actxserverlist.html" description="Get available ActiveX servers."/>
-      <keyword name="iscom" link="iscom.html" description="Determine whether input is COM or ActiveX object."/>
+      <keyword name="Exemples COM" link="1_COM_examples.html" description="Quelques exemples pour montrer comment utiliser l'interface COM."/>
+      <keyword name="COM_delete" link="COM_delete.html" description="Supprime un contrôle ou serveur COM."/>
+      <keyword name="COM_fieldnames" link="COM_fieldnames.html" description="Retourne les noms des propriétés d'un objet COM."/>
+      <keyword name="COM_get" link="COM_get.html" description="Obtenir la valeur d'une propriété depuis l'interface COM."/>
+      <keyword name="COM_invoke" link="COM_invoke.html" description="Invoquer une méthode sur un objet ou interface COM."/>
+      <keyword name="COM_ismethod" link="COM_ismethod.html" description="Détermine si l'entrée est une méthode existante d'un objet COM."/>
+      <keyword name="COM_isprop" link="COM_isprop.html" description="Détermine si l'entrée est une propriété existante d'un objet COM."/>
+      <keyword name="COM_methods" link="COM_methods.html" description="Retourne les noms des méthodes d'un objet COM."/>
+      <keyword name="COM_range" link="COM_range.html" description="Fonction privée : assistant de plage."/>
+      <keyword name="COM_set" link="COM_set.html" description="Définir la propriété d'un objet ou interface à la valeur spécifiée."/>
+      <keyword name="COM_used" link="COM_used.html" description="Retourne la liste des handles COM actuellement utilisés."/>
+      <keyword name="COM_xlsfinfo" link="COM_xlsfinfo.html" description="Détermine si le fichier contient une feuille de calcul Microsoft Excel."/>
+      <keyword name="COM_xlsread" link="COM_xlsread.html" description="Lire un fichier de feuille de calcul Microsoft Excel en utilisant COM."/>
+      <keyword name="COM_xlswrite" link="COM_xlswrite.html" description="Écrire un fichier de feuille de calcul Microsoft Excel en utilisant COM."/>
+      <keyword name="actxGetRunningServer" link="actxGetRunningServer.html" description="Handle vers une instance en cours d'exécution du serveur Automation."/>
+      <keyword name="actxcontrollist" link="actxcontrollist.html" description="Obtenir les contrôles ActiveX disponibles."/>
+      <keyword name="actxserver" link="actxserver.html" description="Crée un serveur COM."/>
+      <keyword name="actxserverlist" link="actxserverlist.html" description="Obtenir les serveurs ActiveX disponibles."/>
+      <keyword name="iscom" link="iscom.html" description="Détermine si l'entrée est un objet COM ou ActiveX."/>
     </section>
   </toc>
 </help_summary>

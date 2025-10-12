@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">contour3</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Contour 3D plot of matrix</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracé de contours 3D d'une matrice</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">contour3(Z)
 contour3(X, Y, Z)
 contour3(..., levels)
@@ -61,69 +60,70 @@ M = contour3(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Z</td>
-<td>z-coordinates: vector or matrix.</td>
+<td>Coordonnées z : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">levels</td>
-<td>Contour levels: scalar or vector.</td>
+<td>Niveaux de contours : scalaire ou vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style and color</td>
+<td>Style et couleur de ligne</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Un objet graphique scalaire : conteneur parent, spécifié comme axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>Contour matrix.</td>
+<td>Matrice de contours.</td>
 </tr>
 <tr>
 <td class="param-name">h</td>
-<td>a graphics object: contour type.</td>
+<td>Un objet graphique : type contour.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>contour3(Z)</b> generates a 3-D contour plot illustrating the isolines of the matrix Z, where Z represents heights on the x-y plane.</p>
-            <p>The x and y coordinates in the plane correspond to the column and row indices of Z, respectively.</p>
-            <p>To specify the x and y coordinates for Z values, use <b>contour3(X,Y,Z)</b>.</p>
-        </div>
+            <b>contour3(Z)</b> génère un tracé de contours 3D illustrant les isolignes de la matrice Z, où Z représente les hauteurs sur le plan x-y.</p>
+        <p>
+            Les coordonnées x et y dans le plan correspondent respectivement aux indices de colonnes et de lignes de Z.</p>
+        <p>Pour spécifier les coordonnées x et y pour les valeurs de Z, utilisez <b>contour3(X,Y,Z)</b>.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -136,14 +136,14 @@ C.LineWidth = 3;</code><button class="copy-btn" type="button" onclick="copyExamp
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/contour.html">contour</a><a class="see-also-link" href="../graphics/surf.html">surf</a><a class="see-also-link" href="../graphics/mesh.html">mesh</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -151,13 +151,13 @@ C.LineWidth = 3;</code><button class="copy-btn" type="button" onclick="copyExamp
 </tr>
 <tr>
 <td class="version">1.3.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

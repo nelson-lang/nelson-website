@@ -45,77 +45,76 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dlqr</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</div></div>
+<div class="section syntax-section"><div class="subtitle">Régulateur de retour d'état linéaire-quadratique (LQ) pour système d'espace d'état en temps discret.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[K, S, e] = dlqr(A, B, Q, R, N)
 [K, S, e] = dlqr(A, B, Q, R)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>State matrix: n x n matrix.</td>
+<td>Matrice d'état : matrice n x n.</td>
 </tr>
 <tr>
 <td class="param-name">B</td>
-<td>Input-to-state matrix: n x m matrix.</td>
+<td>Matrice entrée-état : matrice n x m.</td>
 </tr>
 <tr>
 <td class="param-name">Q</td>
-<td>State-cost weighted matrix</td>
+<td>Matrice pondérée du coût d'état</td>
 </tr>
 <tr>
 <td class="param-name">R</td>
-<td>Input-cost weighted matrix</td>
+<td>Matrice pondérée du coût d'entrée</td>
 </tr>
 <tr>
 <td class="param-name">N</td>
-<td>Optional cross term matrix: 0 by default.</td>
+<td>Matrice de terme croisé optionnelle : 0 par défaut.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">K</td>
-<td>Optimal gain: row vector.</td>
+<td>Gain optimal : vecteur ligne.</td>
 </tr>
 <tr>
 <td class="param-name">S</td>
-<td>Solution of the Algebraic Riccati Equation.</td>
+<td>Solution de l'équation de Riccati algébrique.</td>
 </tr>
 <tr>
 <td class="param-name">e</td>
-<td>Poles of the closed-loop system: column vector.</td>
+<td>Pôles du système en boucle fermée : vecteur colonne.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The <b>dlqr</b> function is designed to minimize a quadratic cost function associated with a discrete linear time-invariant state-space system model.</p>
+        <p>La fonction <b>dlqr</b> est conçue pour minimiser une fonction de coût quadratique associée à un modèle de système d'espace d'état linéaire invariant dans le temps discret.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [0.9, 0.2; 0, 0.8];
 B = [0; 2];
@@ -126,12 +125,12 @@ R = 3;
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../control_system/lqr.html">lqr</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -139,13 +138,13 @@ R = 3;
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

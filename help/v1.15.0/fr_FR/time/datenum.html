@@ -45,202 +45,178 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">datenum</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Return the date/time input as a serial day number.</div></div>
+<div class="section syntax-section"><div class="subtitle">d = datenum(...) Convertit différents formats de date en numéro de date série.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
-<pre class="syntax-block">d = datetnum(datevec)
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block">d = datenum()
+d = datenum([Y, M, D, H, MN, S])
+d = datenum(datevec)
 d = datenum(datestr)
 d = datenum(datestr, format)
-d = datenum(datestr, pivotYear)
-d = datenum(DateString,format,pivotYear)
-d = datetnum(Y, M, D)
-d = datetnum(Y, M, D, H, MN, S)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
-<td class="param-name">datevec</td>
-<td>a vector: [Y, M, D, H, MN, S] or matrix N x 6.</td>
-</tr>
-<tr>
 <td class="param-name">format</td>
-<td>a string specifying the date format, or leave it empty ('') for automatic format detection.</td>
+<td>une chaîne spécifiant le format de date, ou laissez vide ('') pour la détection automatique du format.</td>
 </tr>
 <tr>
 <td class="param-name">datestr</td>
-<td>a string, cell of string or string array: text representing a date.</td>
+<td>une chaîne, cellule de chaînes ou tableau de chaînes : texte représentant une date.</td>
 </tr>
 <tr>
 <td class="param-name">Y, M, D, H, MN, S</td>
-<td>double: Year, Month, Day, Hours, Minutes, Secondes (scalar or vector).</td>
+<td>double : Année, Mois, Jour, Heures, Minutes, Secondes (scalaire ou vecteur).</td>
 </tr>
 <tr>
-<td class="param-name">pivotYear: Start year of 100-year date range</td>
-<td>integer value or present minus 50 years (default).</td>
+<td class="param-name">pivotYear</td>
+<td>entier : année pivot (par défaut : année courante moins 50 ans).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">d</td>
-<td>a double: serial date number (serial day 1 corresponds to 1-Jan-0000).</td>
+<td>un double : numéro de date série (le jour série 1 correspond au 1-Jan-0000).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>d = datenum()</b> returns the serial date number corresponding to current date.</p>
-            <p>
-                <b>d = datenum(datevec)</b> converts date vector to serial date number.</p>
-                <p>
-                    <b>d = datenum(datestr)</b> and <b>d = datenum(datestr, format)</b> converts string to serial date number.</p>
-                    <p></p>
-                    <p>Supported format conversion:</p>
-                    <p>
-                        <b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17</p>
-                        <p>
-                            <b>dd-mmm-yyyy</b> 10-Mar-2010</p>
-                            <p>
-                                <b>mm/dd/yyyy</b> 03/10/2010</p>
-                                <p>
-                                    <b>mm/dd/yy</b> 03/10/00</p>
-                                    <p>
-                                        <b>mm/dd</b> 03/10</p>
-                                        <p>
-                                            <b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17</p>
-                                            <p>
-                                                <b>mmm.dd,yyyy</b> Mar.10,2010</p>
-                                                <p>
-                                                    <b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17</p>
-                                                    <p>
-                                                        <b>yyyy-mm-dd</b> 2010-03-10</p>
-                                                        <p>
-                                                            <b>yyyy/mm/dd</b> 2000/03/10</p>
-                                                            <p>
-                                                                <b>HH:MM:SS</b> 16:48:17</p>
-                                                                <p>
-                                                                    <b>HH:MM:SS PM</b> 3:48:17 PM</p>
-                                                                    <p>
-                                                                        <b>HH:MM</b> 16:48</p>
-                                                                        <p>
-                                                                            <b>HH:MM PM</b> 3:35 PM</p>
-                                                                            <p></p>
-                                                                            <p>If format is not specified, the default format is <b>dd-mmm-yyyy</b>.</p>
-                                                                            <p></p>
-                                                                            <p>If format is specified and not using predefined format, the format must be specified as a character vector or string scalar composed of symbolic identifiers.</p>
-                                                                            <p>The format of the input text for representing dates and times, expressed as a character vector or string scalar composed of symbolic identifiers.</p>
-                                                                            <p></p>
-                                                                            
-                                                                                
-                                                                                    Symbolic Identifier
-                                                                                    Description
-                                                                                    Example
-                                                                                
-                                                                                
-                                                                                    yyyy
-                                                                                    Year in full
-                                                                                    1995, 2012
-                                                                                
-                                                                                
-                                                                                    yy
-                                                                                    Year in two digits
-                                                                                    89, 01
-                                                                                
-                                                                                
-                                                                                    QQ
-                                                                                    Quarter year using letter Q and one digit
-                                                                                    Q1
-                                                                                
-                                                                                
-                                                                                    mmmm
-                                                                                    Month using full name
-                                                                                    March, December
-                                                                                
-                                                                                
-                                                                                    mmm
-                                                                                    Month using first three letters
-                                                                                    Mar, Dec
-                                                                                
-                                                                                
-                                                                                    mm
-                                                                                    Month in two digits
-                                                                                    04, 12
-                                                                                
-                                                                                
-                                                                                    m
-                                                                                    Month using capitalized first letter
-                                                                                    M, D
-                                                                                
-                                                                                
-                                                                                    dddd
-                                                                                    Day using full name
-                                                                                    Monday, Tuesday
-                                                                                
-                                                                                
-                                                                                    ddd
-                                                                                    Day using first three letters
-                                                                                    Mon, Tue
-                                                                                
-                                                                                
-                                                                                    dd
-                                                                                    Day in two digits
-                                                                                    06, 21
-                                                                                
-                                                                                
-                                                                                    d
-                                                                                    Day using capitalized first letter
-                                                                                    M, T
-                                                                                
-                                                                                
-                                                                                    HH
-                                                                                    Hour in two digits (no leading zeros when symbolic identifier AM or PM is used)
-                                                                                    06, 6 AM
-                                                                                
-                                                                                
-                                                                                    MM
-                                                                                    Minute in two digits
-                                                                                    11, 01
-                                                                                
-                                                                                
-                                                                                    SS
-                                                                                    Second in two digits
-                                                                                    06, 59
-                                                                                
-                                                                                
-                                                                                    FFF
-                                                                                    Millisecond in three digits
-                                                                                    056
-                                                                                
-                                                                                
-                                                                                    AM or PM
-                                                                                    AM or PM inserted in text representing time
-                                                                                    5:46:02 PM
-                                                                                
-                                                                            
-                                                                        </div>
+        <p><b>d = datenum()</b> renvoie le numéro de date série correspondant à la date courante.</p>
+        <p><b>d = datenum(datevec)</b> convertit un vecteur date en numéro de date série.</p>
+        <p><b>d = datenum(datestr)</b> et <b>d = datenum(datestr, format)</b> convertissent une chaîne en numéro de date série.</p>
+        <p></p>
+        <p>Formats de date/heure pris en charge :</p>
+        <p><b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17</p>
+        <p><b>dd-mmm-yyyy</b> 10-Mar-2010</p>
+        <p><b>mm/dd/yyyy</b> 03/10/2010</p>
+        <p><b>mm/dd/yy</b> 03/10/00</p>
+        <p><b>mm/dd</b> 03/10</p>
+        <p><b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17</p>
+        <p><b>mmm.dd,yyyy</b> Mar.10,2010</p>
+        <p><b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17</p>
+        <p><b>yyyy-mm-dd</b> 2010-03-10</p>
+        <p><b>yyyy/mm/dd</b> 2000/03/10</p>
+        <p><b>HH:MM:SS</b> 16:48:17</p>
+        <p><b>HH:MM:SS PM</b> 3:48:17 PM</p>
+        <p><b>HH:MM</b> 16:48</p>
+        <p><b>HH:MM PM</b> 3:35 PM</p>
+        <p></p>
+        <p>Si le format n'est pas spécifié, le format par défaut est <b>dd-mmm-yyyy</b>.</p>
+        <p></p>
+        <p>Si un format est spécifié et qu'il n'utilise pas un format prédéfini, le format doit être indiqué comme un vecteur de caractères ou un scalaire string composé d'identifiants symboliques.</p>
+        <p>Le format du texte d'entrée pour représenter les dates et heures, exprimé comme vecteur de caractères ou scalaire string composé d'identifiants symboliques.</p>
+        <p></p>
+        <table border="1">
+            <tr>
+                <th>Symbolic Identifier</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>yyyy</td>
+                <td>Year in full</td>
+                <td>1995, 2012</td>
+            </tr>
+            <tr>
+                <td>yy</td>
+                <td>Year in two digits</td>
+                <td>89, 01</td>
+            </tr>
+            <tr>
+                <td>QQ</td>
+                <td>Quarter year using letter Q and one digit</td>
+                <td>Q1</td>
+            </tr>
+            <tr>
+                <td>mmmm</td>
+                <td>Month using full name</td>
+                <td>March, December</td>
+            </tr>
+            <tr>
+                <td>mmm</td>
+                <td>Month using first three letters</td>
+                <td>Mar, Dec</td>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td>Month in two digits</td>
+                <td>04, 12</td>
+            </tr>
+            <tr>
+                <td>m</td>
+                <td>Month using capitalized first letter</td>
+                <td>M, D</td>
+            </tr>
+            <tr>
+                <td>dddd</td>
+                <td>Day using full name</td>
+                <td>Monday, Tuesday</td>
+            </tr>
+            <tr>
+                <td>ddd</td>
+                <td>Day using first three letters</td>
+                <td>Mon, Tue</td>
+            </tr>
+            <tr>
+                <td>dd</td>
+                <td>Day in two digits</td>
+                <td>06, 21</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>Day using capitalized first letter</td>
+                <td>M, T</td>
+            </tr>
+            <tr>
+                <td>HH</td>
+                <td>Hour in two digits (no leading zeros when symbolic identifier AM or PM is used)</td>
+                <td>06, 6 AM</td>
+            </tr>
+            <tr>
+                <td>MM</td>
+                <td>Minute in two digits</td>
+                <td>11, 01</td>
+            </tr>
+            <tr>
+                <td>SS</td>
+                <td>Second in two digits</td>
+                <td>06, 59</td>
+            </tr>
+            <tr>
+                <td>FFF</td>
+                <td>Millisecond in three digits</td>
+                <td>056</td>
+            </tr>
+            <tr>
+                <td>AM or PM</td>
+                <td>AM or PM inserted in text representing time</td>
+                <td>5:46:02 PM</td>
+            </tr>
+        </table>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">d = datenum([1973,8,4,12,1,18])
 datevec(d)
@@ -250,12 +226,12 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])</code><button 
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../time/datevec.html">datevec</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -263,21 +239,21 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])</code><button 
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.8.0</td>
-<td>date string parsing extended.</td>
+<td>analyse des chaînes de date étendue.</td>
 </tr>
 <tr>
 <td class="version">1.10.0</td>
-<td>added: format '' means try to detect.</td>
+<td>ajout : format '' signifie essayer de détecter.</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

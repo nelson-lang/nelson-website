@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">plot3</span></div></div>
-<div class="section syntax-section"><div class="subtitle">3-D line plot.</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracé de courbe 3D.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">plot3(X1, Y1, Z1, ...)
 plot3(X1, Y1, Z1, LineSpec, ...)
 plot3(..., propertyName, propertyValue, ...)
@@ -59,71 +58,73 @@ go = plot3(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X1</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y1</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Z1</td>
-<td>z-coordinates: vector or matrix.</td>
+<td>Coordonnées z : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style, marker, and/or color: character vector or scalar string.</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou chaîne scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character. see help of 'line' for property list.</td>
+<td>Chaîne scalaire ou vecteur ligne de caractères. Voir l'aide de 'line' pour la liste des propriétés.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">go</td>
-<td>a graphics object: line type.</td>
+<td>Objet graphique : type ligne.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>plot3(X1, Y1, Z1, ...)</b>plots one or more lines in three-dimensional space.</p>
-            <p>
-                <b>go = plot3(...)</b> returns a column vector of line graphics objects.</p>
-                <p></p>
-                <p>see <b>line</b> or <b>plot</b> for more information about properties</p>
-            </div>
+            <b>plot3(X1, Y1, Z1, ...)</b> trace une ou plusieurs courbes dans l'espace tridimensionnel.
+        </p>
+        <p>
+            <b>go = plot3(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne.
+        </p>
+        <p></p>
+        <p>Voir <b>line</b> ou <b>plot</b> pour plus d'informations sur les propriétés.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f  = figure();
@@ -151,14 +152,14 @@ axis square</code><button class="copy-btn" type="button" onclick="copyExample(th
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/line.html">line</a><a class="see-also-link" href="../graphics/plot.html">plot</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -166,13 +167,13 @@ axis square</code><button class="copy-btn" type="button" onclick="copyExample(th
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

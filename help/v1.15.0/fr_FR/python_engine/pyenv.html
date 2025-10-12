@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pyenv</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Change default environment of Python interpreter.</div></div>
+<div class="section syntax-section"><div class="subtitle">Modifier l'environnement par défaut de l'interpréteur Python.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">pyenv
 pe = pyenv('Version', python_path)
 pe = pyenv(...)
@@ -57,71 +56,71 @@ pe = pyenv(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">python_path</td>
-<td>a string, or row characters array: executable file name of Python or version (on Windows).</td>
+<td>une chaîne ou un vecteur de caractères : nom de l'exécutable Python ou version (sous Windows).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">pe</td>
-<td>PythonEnvironment object.</td>
+<td>objet PythonEnvironment.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Use <b>pyenv</b> to modify the default version or execution mode of the Python interpreter, ensuring these adjustments persist across various Nelson sessions.</p>
-        <p>The value set by <b>pyenv</b> is persistent across Nelson sessions.</p>
+        <p>Utilisez <b>pyenv</b> pour modifier la version par défaut ou le mode d'exécution de l'interpréteur Python, en veillant à ce que ces réglages persistent entre les sessions Nelson.</p>
+        <p>La valeur définie par <b>pyenv</b> est persistante entre les sessions Nelson.</p>
         <p></p>
-        <p>Properties:</p>
+        <p>Propriétés :</p>
         <p>
-            <b>Version</b>: string: Python version</p>
+            <b>Version</b> : string : version de Python</p>
             <p>
-                <b>Executable</b>: string: Name of Python executable file</p>
+                <b>Executable</b> : string : nom de l'exécutable Python</p>
                 <p>
-                    <b>Library</b>: string: Shared library file</p>
+                    <b>Library</b> : string : fichier de bibliothèque partagée</p>
                     <p>
-                        <b>Home</b>: string: Home folder</p>
+                        <b>Home</b> : string : dossier home</p>
                         <p>
-                            <b>Status</b>: Process status: "NotLoaded" (default), "Loaded", "Terminated"</p>
+                            <b>Status</b> : statut du processus : "NotLoaded" (par défaut), "Loaded", "Terminated"</p>
                             <p>
-                                <b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess"</p>
+                                <b>ExecutionMode</b> : mode d'exécution : "InProcess" (par défaut) ou "OutOfProcess"</p>
                                 <p></p>
-                                <p>Use environment variables to force python environment at each startup (usefull for snapcraft or docker distribution):</p>
+                                <p>Utilisez des variables d'environnement pour forcer l'environnement Python au démarrage (utile pour snapcraft ou distribution docker) :</p>
                                 <p></p>
                                 <p>
-                                    <b>__NELSON_PYTHON_VERSION__</b>:  example "3.10"</p>
+                                    <b>__NELSON_PYTHON_VERSION__</b> : exemple "3.10"</p>
                                     <p>
-                                        <b>__NELSON_PYTHON_EXECUTABLE__</b>: example  "/usr/bin/python3"</p>
+                                        <b>__NELSON_PYTHON_EXECUTABLE__</b> : exemple  "/usr/bin/python3"</p>
                                         <p>
-                                            <b>__NELSON_PYTHON_LIBRARY__</b>: example "libpython3.10.so.1.0"</p>
+                                            <b>__NELSON_PYTHON_LIBRARY__</b> : exemple "libpython3.10.so.1.0"</p>
                                             <p>
-                                                <b>__NELSON_PYTHON_HOME__</b>: example "/usr"</p>
-                                                <p>All environment variables must exist and valid to be considered.</p>
+                                                <b>__NELSON_PYTHON_HOME__</b> : exemple "/usr"</p>
+                                                <p>Toutes les variables d'environnement doivent exister et être valides pour être prises en compte.</p>
                                                 <p></p>
-                                                <p>On Windows, the <b>pyenv('Version', '3.11')</b> function searches the Windows Registry for the Python version associated with the specified version. It first looks in the HKCU environment, and if not found, it searches in HKLM.</p>
+                                                <p>Sous Windows, la fonction <b>pyenv('Version', '3.11')</b> recherche dans le Registre Windows la version de Python associée à la version spécifiée. Elle recherche d'abord dans HKCU, puis dans HKLM si non trouvée.</p>
                                             </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">pe = pyenv</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
@@ -133,12 +132,12 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../python_engine/pyrun.html">pyrun</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -146,7 +145,7 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.3.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.4.0</td>
@@ -160,7 +159,7 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

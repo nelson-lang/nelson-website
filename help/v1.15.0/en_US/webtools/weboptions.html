@@ -48,15 +48,14 @@
 <div class="section syntax-section"><div class="subtitle">Specify parameters for RESTful web service</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">options = weboptions()
 options = weboptions(name, value)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -74,7 +73,7 @@ options = weboptions(name, value)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Output Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -88,48 +87,51 @@ options = weboptions(name, value)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
             <b>options = weboptions()</b> returns default weboptions object.</p>
-            <p>weboptions object can be an optional input argument to the webread, websave, and webwrite builtin.</p>
-            <p>Name-Value Pair Arguments:</p>
-            <p>
-                <b>UserAgent</b> User agent identification: a string or character vector.</p>
-                <p>
-                    <b>Timeout</b> Time out connection duration: positive numeric scalar or Inf value.</p>
-                    <p>
-                        <b>Username</b> User identifier: a string or character vector.</p>
-                        <p>
-                            <b>Password</b> User authentication password: a string or character vector.</p>
-                            <p>
-                                <b>KeyName</b> Name of key: a string or character vector.</p>
-                                <p>
-                                    <b>KeyValue</b> Value of key: a string scalar, character vector, numeric or logical.</p>
-                                    <p>
-                                        <b>HeaderFields</b> Names and values of header fields: m-by-2 array of strings or cell array of character vectors</p>
-                                        <p>
-                                            <b>ContentType</b> Content type: a string scalar or character vector.</p>
-                                            <p>supported value: 'auto', 'text', 'audio', 'binary', 'json', 'raw'</p>
-                                            <p>
-                                                <b>ContentReader</b> Content reader: an function handle.</p>
-                                                <p>
-                                                    <b>MediaType</b> Media type: a string or character vector.</p>
-                                                    <p>supported value: 'auto', 'application/x-www-form-urlencoded'</p>
-                                                    <p>
-                                                        <b>RequestMethod</b> HTTP request method: a string or character vector.</p>
-                                                        <p>supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch'</p>
-                                                        <p>
-                                                            <b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php'</p>
-                                                            <p>
-                                                                <b>CertificateFilename</b> Filename of root certificates: a string or character vector.</p>
-                                                                <p>
-                                                                    <b>FollowLocation</b> tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, false by default.</p>
-                                                                </div>
+        <p>weboptions object can be an optional input argument to the webread, websave, and webwrite
+            builtin.</p>
+        <p>Name-Value Pair Arguments:</p>
+        <p>
+            <b>UserAgent</b> User agent identification: a string or character vector.</p>
+        <p>
+            <b>Timeout</b> Time out connection duration: positive numeric scalar or Inf value.</p>
+        <p>
+            <b>Username</b> User identifier: a string or character vector.</p>
+        <p>
+            <b>Password</b> User authentication password: a string or character vector.</p>
+        <p>
+            <b>KeyName</b> Name of key: a string or character vector.</p>
+        <p>
+            <b>KeyValue</b> Value of key: a string scalar, character vector, numeric or logical.</p>
+        <p>
+            <b>HeaderFields</b> Names and values of header fields: m-by-2 array of strings or cell
+            array of character vectors</p>
+        <p>
+            <b>ContentType</b> Content type: a string scalar or character vector.</p>
+        <p>supported value: 'auto', 'text', 'audio', 'binary', 'json', 'raw'</p>
+        <p>
+            <b>ContentReader</b> Content reader: an function handle.</p>
+        <p>
+            <b>MediaType</b> Media type: a string or character vector.</p>
+        <p>supported value: 'auto', 'application/x-www-form-urlencoded'</p>
+        <p>
+            <b>RequestMethod</b> HTTP request method: a string or character vector.</p>
+        <p>supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch'</p>
+        <p>
+            <b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php'</p>
+        <p>
+            <b>CertificateFilename</b> Filename of root certificates: a string or character vector.</p>
+        <p>
+            <b>FollowLocation</b> tells the library to follow any Location: header redirect that an
+            HTTP server sends in a 30x response: a logical, false by default.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">weboptions()
 options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-agent/')</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -137,14 +139,14 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../webtools/webread.html">webread</a><a class="see-also-link" href="../webtools/websave.html">websave</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -162,7 +164,7 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

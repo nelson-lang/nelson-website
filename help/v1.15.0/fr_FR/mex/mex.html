@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">mex</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Build MEX function</div></div>
+<div class="section syntax-section"><div class="subtitle">Construire une fonction MEX</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">mex(filenames)
 mex(filenames, option1, ..., optionN)
 mex(api, filenames)
@@ -63,82 +62,82 @@ mex('-client', 'engine', 'filenames', api, option1, ..., optionN)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">'-client', 'engine'</td>
-<td>enable to build C/C++ source files into standalone engine application.</td>
+<td>Permet de construire des fichiers source C/C++ en une application moteur autonome.</td>
 </tr>
 <tr>
 <td class="param-name">api</td>
-<td>a string: '-R2017b' (separated complex representation) or '-R2018a' (interleaved complex representation).</td>
+<td>une chaîne : '-R2017b' (représentation complexe séparée) ou '-R2018a' (représentation complexe entrelacée).</td>
 </tr>
 <tr>
 <td class="param-name">filenames</td>
-<td>a string or cell of characters: list of files to use. First filename used as mex name.</td>
+<td>une chaîne ou une cellule de caractères : liste de fichiers à utiliser. Le premier nom de fichier est utilisé comme nom du MEX.</td>
 </tr>
 <tr>
 <td class="param-name">mexName</td>
-<td>a string: override naming convention.</td>
+<td>une chaîne : remplace la convention de nommage.</td>
 </tr>
 <tr>
 <td class="param-name">option1, ..., optionN</td>
-<td>string: compilation or link option.</td>
+<td>chaîne : option de compilation ou d'édition de liens.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To use mex, C/C++ compiler must be available and configured. See Supported C/C++ compilers section for more information.</p>
-        <p>Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.</p>
-        <p>A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.</p>
-        <p>Nelson have also his own C++ API to manage more easily internal nelson's objects.</p>
+        <p>Pour utiliser mex, un compilateur C/C++ doit être disponible et configuré. Voir la section « Supported C/C++ compilers » pour plus d'informations.</p>
+        <p>Nelson inclut une interface permettant de compiler et d'éditer des fichiers mex hérités avec Nelson.</p>
+        <p>Un fichier mex est un type de fichier qui fournit une interface entre Octave ou le logiciel commercial de référence et des fonctions écrites en C, C++.</p>
+        <p>Nelson dispose également de sa propre API C++ pour gérer plus facilement les objets internes de Nelson.</p>
         <p></p>
-        <p>PREDEFINED C MACRO:</p>
+        <p>MACRO C PRÉDÉFINIE :</p>
         <p>
-            <b>MX_IS_NELSON</b> macro is defined to easily detect if Nelson is used in C code.</p>
+            <b>MX_IS_NELSON</b> : la macro est définie pour détecter facilement si Nelson est utilisé dans le code C.</p>
             <p>
-                <b>MX_HAS_INTERLEAVED_COMPLEX</b> macro is defined if C MEX API used is '-R2018a'.</p>
+                <b>MX_HAS_INTERLEAVED_COMPLEX</b> : la macro est définie si l'API C MEX utilisée est '-R2018a'.</p>
                 <p></p>
-                <p>Supported options: compilation or link.</p>
+                <p>Options prises en charge : compilation ou édition de liens.</p>
                 <p>
                     <b>CFLAGS=</b>
                 </p>
                 <p>
-                    <b>-D</b> The -D option defines C preprocessor macro.</p>
+                    <b>-D</b> L'option -D définit une macro du préprocesseur C.</p>
                     <p>
-                        <b>-U</b> The -U option undefines C preprocessor macro</p>
+                        <b>-U</b> L'option -U annule la définition d'une macro du préprocesseur C</p>
                         <p>
-                            <b>-I</b> Adds pathname to the list of folders to search for #include files.</p>
+                            <b>-I</b> Ajoute un chemin à la liste des dossiers recherchés pour les fichiers #include.</p>
                             <p>
-                                <b>-l</b> Links with dynamic object library .lib, .so or .dylib.</p>
+                                <b>-l</b> Lie avec une bibliothèque dynamique .lib, .so ou .dylib.</p>
                                 <p>
-                                    <b>-g</b> Used for debugging (Debug configuration).</p>
+                                    <b>-g</b> Utilisé pour le débogage (configuration Debug).</p>
                                 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">		edit([modulepath('mex', 'tests'), '/test_engine.m'])</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../dynamic_link/2_supported_compilers.html">Supported C/C++ compilers</a><a class="see-also-link" href="../dynamic_link/dlgenerategateway.html">dlgenerategateway</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -146,13 +145,13 @@ mex('-client', 'engine', 'filenames', api, option1, ..., optionN)
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

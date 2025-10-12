@@ -45,187 +45,196 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">overloading</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Customizing Operators and Functions</div></div>
+<div class="section syntax-section"><div class="subtitle">Personnalisation des opérateurs et fonctions</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>In various scenarios, you may find it necessary to modify the behavior of Nelson's operators and functions when they operate on objects or basic types.</p>
-        <p>This customization can be achieved by overloading the relevant functions, allowing them to handle diverse types and quantities of input arguments and execute the appropriate operation for the highest-priority object.</p>
+        <p>Dans divers scénarios, vous pouvez avoir besoin de modifier le comportement des
+            opérateurs et fonctions de Nelson lorsqu'ils opèrent sur des objets ou des types de
+            base.</p>
+        <p>Cette personnalisation peut être réalisée en surchargeant les fonctions concernées, leur
+            permettant de gérer différents types et nombres d'arguments d'entrée et d'exécuter
+            l'opération appropriée pour l'objet de plus haute priorité.</p>
         <p></p>
-        <p>Overloading Operators:</p>
+        <p>Surcharge des opérateurs :</p>
         <p></p>
-        <p>Each built-in operator corresponds to a specific function name (e.g., the <b>-</b> operator is associated with the minus.m function).</p>
-        <p>You can overload any operator by creating an M-file with the appropriate name within the class directory.</p>
-        <p>For instance, if either <b>A</b> or <b>B</b> is an object of type <b>classname</b>, the expression <b>A - B</b> triggers a call to a function <b>@classname/minus.m</b>, provided it exists.</p>
-        <p>When <b>A</b> and <b>B</b> belong to different classes, Nelson employs precedence rules to determine which method to apply.</p>
+        <p>Chaque opérateur intégré correspond à un nom de fonction spécifique (par exemple,
+            l'opérateur <b>-</b> est associé à la fonction minus.m).</p>
+        <p>Vous pouvez surcharger n'importe quel opérateur en créant un fichier M avec le nom
+            approprié dans le répertoire de la classe.</p>
+        <p>Par exemple, si <b>A</b> ou <b>B</b> est un objet de type <b>classname</b>, l'expression <b>A
+            - B</b> déclenche un appel à la fonction <b>@classname/minus.m</b>, si elle existe.</p>
+        <p>Lorsque <b>A</b> et <b>B</b> appartiennent à des classes différentes, Nelson applique des
+            règles de précédence pour déterminer la méthode à utiliser.</p>
         <p></p>
-        <p>The table below provides a list of function names associated with most of the Nelson operators:</p>
+        <p>Le tableau ci-dessous fournit la liste des noms de fonctions associés à la plupart des
+            opérateurs Nelson :</p>
         <p></p>
-        
-            
-                Description
-                Operator
-                Function
-            
-            
-                Binary addition
-                a + b
-                plus(a, b)
-            
-            
-                Binary subtraction
-                a - b
-                minus(a, b)
-            
-            
-                Unary minus
-                -a
-                uminus(a)
-            
-            
-                Unary plus
-                +a
-                uplus(a)
-            
-            
-                Element-wise multiplication
-                a .* b
-                times(a, b)
-            
-            
-                Matrix multiplication
-                a * b
-                mtimes(a, b)
-            
-            
-                Right element-wise division
-                a ./ b
-                rdivide(a, b)
-            
-            
-                Left element-wise division
-                a .\ b
-                ldivide(a, b)
-            
-            
-                Matrix right division
-                a / b
-                mrdivide(a, b)
-            
-            
-                Matrix left division
-                a \ b
-                mldivide(a, b)
-            
-            
-                Element-wise power
-                a .^ b
-                power(a, b)
-            
-            
-                Matrix power
-                a ^ b
-                mpower(a, b)
-            
-            
-                Less than
-                a &lt; b
-                lt(a, b)
-            
-            
-                Greater than
-                a &gt; b
-                gt(a, b)
-            
-            
-                Less than or equal to
-                a &lt;= b
-                le(a, b)
-            
-            
-                Greater than or equal to
-                a &gt;= b
-                ge(a, b)
-            
-            
-                Not equal to
-                a ~= b
-                ne(a, b)
-            
-            
-                Equality
-                a == b
-                eq(a, b)
-            
-            
-                Logical AND
-                a &amp; b
-                and(a, b)
-            
-            
-                Logical OR
-                a | b
-                or(a, b)
-            
-            
-                Logical NOT
-                ~a
-                not(a)
-            
-            
-                Colon operator
-                a:d:b
-                colon(a, d, b)
-            
-            
-                Complex conjugate transpose
-                a'
-                ctranspose(a)
-            
-            
-                Matrix transpose
-                a.'
-                transpose(a)
-            
-            
-                Display method
-                command window output
-                display(a)
-            
-            
-                Horizontal concatenation
-                [a, b]
-                horzcat(a, b, ...)
-            
-            
-                Vertical concatenation
-                [a; b]
-                vertcat(a, b, ...)
-            
-            
-                Subscripted reference
-                a(s1, s2, ... , sn)
-                subsref(a, s)
-            
-            
-                Subscripted assignment
-                a(s1, ... , sn) = b
-                subsasgn(a, s, b)
-            
-            
-                Subscript index
-                b(a)
-                subsindex(a)
-            
-        
+        <table style="width:100%">
+            <tr>
+                <th>Description</th>
+                <th>Opérateur</th>
+                <th>Fonction</th>
+            </tr>
+            <tr>
+                <td>Addition binaire</td>
+                <td>a + b</td>
+                <td>plus(a, b)</td>
+            </tr>
+            <tr>
+                <td>Soustraction binaire</td>
+                <td>a - b</td>
+                <td>minus(a, b)</td>
+            </tr>
+            <tr>
+                <td>Moins unaire</td>
+                <td>-a</td>
+                <td>uminus(a)</td>
+            </tr>
+            <tr>
+                <td>Plus unaire</td>
+                <td>+a</td>
+                <td>uplus(a)</td>
+            </tr>
+            <tr>
+                <td>Multiplication élément par élément</td>
+                <td>a .* b</td>
+                <td>times(a, b)</td>
+            </tr>
+            <tr>
+                <td>Multiplication matricielle</td>
+                <td>a * b</td>
+                <td>mtimes(a, b)</td>
+            </tr>
+            <tr>
+                <td>Division élément par élément à droite</td>
+                <td>a ./ b</td>
+                <td>rdivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Division élément par élément à gauche</td>
+                <td>a .\ b</td>
+                <td>ldivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Division matricielle à droite</td>
+                <td>a / b</td>
+                <td>mrdivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Division matricielle à gauche</td>
+                <td>a \ b</td>
+                <td>mldivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Puissance élément par élément</td>
+                <td>a .^ b</td>
+                <td>power(a, b)</td>
+            </tr>
+            <tr>
+                <td>Puissance matricielle</td>
+                <td>a ^ b</td>
+                <td>mpower(a, b)</td>
+            </tr>
+            <tr>
+                <td>Inférieur à</td>
+                <td>a &lt; b</td>
+                <td>lt(a, b)</td>
+            </tr>
+            <tr>
+                <td>Supérieur à</td>
+                <td>a &gt; b</td>
+                <td>gt(a, b)</td>
+            </tr>
+            <tr>
+                <td>Inférieur ou égal</td>
+                <td>a &lt;= b</td>
+                <td>le(a, b)</td>
+            </tr>
+            <tr>
+                <td>Supérieur ou égal</td>
+                <td>a &gt;= b</td>
+                <td>ge(a, b)</td>
+            </tr>
+            <tr>
+                <td>Différent</td>
+                <td>a ~= b</td>
+                <td>ne(a, b)</td>
+            </tr>
+            <tr>
+                <td>Égalité</td>
+                <td>a == b</td>
+                <td>eq(a, b)</td>
+            </tr>
+            <tr>
+                <td>ET logique</td>
+                <td>a &amp; b</td>
+                <td>and(a, b)</td>
+            </tr>
+            <tr>
+                <td>OU logique</td>
+                <td>a | b</td>
+                <td>or(a, b)</td>
+            </tr>
+            <tr>
+                <td>NON logique</td>
+                <td>~a</td>
+                <td>not(a)</td>
+            </tr>
+            <tr>
+                <td>Opérateur deux-points</td>
+                <td>a:d:b</td>
+                <td>colon(a, d, b)</td>
+            </tr>
+            <tr>
+                <td>Transposée conjuguée</td>
+                <td>a'</td>
+                <td>ctranspose(a)</td>
+            </tr>
+            <tr>
+                <td>Transposée matricielle</td>
+                <td>a.'</td>
+                <td>transpose(a)</td>
+            </tr>
+            <tr>
+                <td>Méthode d'affichage</td>
+                <td>sortie fenêtre de commandes</td>
+                <td>display(a)</td>
+            </tr>
+            <tr>
+                <td>Concaténation horizontale</td>
+                <td>[a, b]</td>
+                <td>horzcat(a, b, ...)</td>
+            </tr>
+            <tr>
+                <td>Concaténation verticale</td>
+                <td>[a; b]</td>
+                <td>vertcat(a, b, ...)</td>
+            </tr>
+            <tr>
+                <td>Référence par indice</td>
+                <td>a(s1, s2, ... , sn)</td>
+                <td>subsref(a, s)</td>
+            </tr>
+            <tr>
+                <td>Affectation par indice</td>
+                <td>a(s1, ... , sn) = b</td>
+                <td>subsasgn(a, s, b)</td>
+            </tr>
+            <tr>
+                <td>Index de sous-script</td>
+                <td>b(a)</td>
+                <td>subsindex(a)</td>
+            </tr>
+        </table>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
-<div class="example-title">Overload minus operator with double</div>
+<div class="example-title">Surcharger l'opérateur minus pour double</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">% save in @double directory, as minus.m
 function r = minus(A, B)
@@ -238,14 +247,14 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../operators/plus.html">plus</a><a class="see-also-link" href="../operators/minus.html">minus</a><a class="see-also-link" href="../operators/uminus.html">uminus</a><a class="see-also-link" href="../operators/uplus.html">uplus</a><a class="see-also-link" href="../operators/times.html">times</a><a class="see-also-link" href="../operators/mtimes.html">mtimes</a><a class="see-also-link" href="../operators/rdivide.html">rdivide</a><a class="see-also-link" href="../operators/ldivide.html">ldivide</a><a class="see-also-link" href="../operators/mrdivide.html">mrdivide</a><a class="see-also-link" href="../operators/mldivide.html">mldivide</a><a class="see-also-link" href="../operators/power.html">power</a><a class="see-also-link" href="../operators/mpower.html">mpower</a><a class="see-also-link" href="../operators/lt.html">lt</a><a class="see-also-link" href="../operators/gt.html">gt</a><a class="see-also-link" href="../operators/le.html">le</a><a class="see-also-link" href="../operators/ge.html">ge</a><a class="see-also-link" href="../operators/ne.html">ne</a><a class="see-also-link" href="../operators/eq.html">eq</a><a class="see-also-link" href="../operators/and.html">and</a><a class="see-also-link" href="../operators/or.html">or</a><a class="see-also-link" href="../operators/not.html">not</a><a class="see-also-link" href="../operators/colon.html">colon</a><a class="see-also-link" href="../operators/ctranspose.html">ctranspose</a><a class="see-also-link" href="../operators/transpose.html">transpose</a><a class="see-also-link" href="../display_format/display.html">display</a><a class="see-also-link" href="../operators/horzcat.html">horzcat</a><a class="see-also-link" href="../operators/vertcat.html">vertcat</a><a class="see-also-link" href="../operators/subsref.html">subsref</a><a class="see-also-link" href="../operators/subsasgn.html">subsasgn</a><a class="see-also-link" href="../operators/subsindex.html">subsindex</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -253,13 +262,13 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

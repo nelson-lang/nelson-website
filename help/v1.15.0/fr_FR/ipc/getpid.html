@@ -45,61 +45,60 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">getpid</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Get nelson(s) Process IDentificator.</div></div>
+<div class="section syntax-section"><div class="subtitle">Obtenir l'identifiant de processus Nelson.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">p = getpid()
 v = getpid('available')
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">'available'</td>
-<td>a string.</td>
+<td>une chaîne.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">p</td>
-<td>a double: current Process Identificator.</td>
+<td>un double : identifiant de processus courant.</td>
 </tr>
 <tr>
 <td class="param-name">v</td>
-<td>a vector of double: list of nelson Processes Identification (with same arch) currently running for current user.</td>
+<td>un vecteur de double : liste des identifiants des processus Nelson (même architecture) en cours d'exécution pour l'utilisateur courant.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
+            <b>p = getpid()</b> renvoie l'identifiant du processus Nelson courant en cours d'exécution sur l'ordinateur.</p>
             <p>
-                <b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
-                <p>win64 and win32 are two differents architecture but they can run in same time.</p>
+                <b>v = getpid('available')</b> renvoie la liste des identifiants des processus Nelson (même architecture) en cours d'exécution pour l'utilisateur courant.</p>
+                <p>win64 et win32 sont deux architectures différentes mais elles peuvent s'exécuter en même temps.</p>
             </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">p = getpid()
 getpid('available')
@@ -116,14 +115,14 @@ getpid('available')</code><button class="copy-btn" type="button" onclick="copyEx
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../os_functions/unix.html">unix</a><a class="see-also-link" href="../ipc/ipc.html">ipc</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -131,13 +130,13 @@ getpid('available')</code><button class="copy-btn" type="button" onclick="copyEx
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

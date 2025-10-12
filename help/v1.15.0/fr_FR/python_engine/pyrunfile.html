@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pyrunfile</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Run Python file from Nelson.</div></div>
+<div class="section syntax-section"><div class="subtitle">Exécuter un fichier Python depuis Nelson.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">pyrunfile(filename)
 pyrunfile(filename input)
 outvars = pyrunfile(filename, outputs)
@@ -58,59 +57,59 @@ outvars = pyrunfile(filename, outputs, pyName, pyValue, ...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">filename</td>
-<td>a string scalar, character vector: filename .py to run.</td>
+<td>un scalaire string, vecteur de caractères : nom du fichier .py à exécuter.</td>
 </tr>
 <tr>
 <td class="param-name">"filename 'input'"</td>
-<td>a string scalar, character vector: filename .py to run with input arguments.</td>
+<td>un scalaire string, vecteur de caractères : nom du fichier .py à exécuter avec arguments d'entrée.</td>
 </tr>
 <tr>
 <td class="param-name">pyName, pyValue</td>
-<td>Input arguments name and value</td>
+<td>noms et valeurs des arguments d'entrée</td>
 </tr>
 <tr>
 <td class="param-name">outputs</td>
-<td>string array: Python variable names.</td>
+<td>tableau de chaînes : noms de variables Python.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">outvars</td>
-<td>One or more Nelson workspace variable names returned as valid Python types.</td>
+<td>Une ou plusieurs variables de l'espace de travail Nelson renvoyées sous des types Python valides.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>pyrunfile(filenam)</b> function executes Python file.</p>
-            <p>In contrast to the <b>pyrun</b> function, variables generated in the Python workspace through the <b>pyrunfile</b> function do not persist. This means that subsequent calls to <b>pyrunfile</b> won't be able to access these variables.</p>
-            <p>The code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> executes the code with one or more name-value pair arguments.</p>
-            <p>Known limitation:</p>
-            <p>The <b>pyrun</b> and <b>pyrunfile</b> functions lack support for classes containing local variables initialized by other local variables via methods. In such cases, it's advisable to create a module and access it instead.</p>
+      <p>
+        <b>pyrunfile(filename)</b> exécute un fichier Python.</p>
+        <p>Contrairement à la fonction <b>pyrun</b>, les variables générées dans l'espace Python par <b>pyrunfile</b> ne persistent pas. Ainsi, les appels suivants à <b>pyrunfile</b> ne pourront pas accéder à ces variables.</p>
+        <p>Le code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée.</p>
+        <p>Limitation connue :</p>
+        <p>Les fonctions <b>pyrun</b> et <b>pyrunfile</b> ne prennent pas en charge les classes contenant des variables locales initialisées par d'autres variables locales via des méthodes. Dans ce cas, il est conseillé de créer un module et d'y accéder.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">pyrunfile_example_1.py</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -158,14 +157,14 @@ z = minus(x, y)</code><button class="copy-btn" type="button" onclick="copyExampl
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../python_engine/pyrun.html">pyrun</a><a class="see-also-link" href="../python_engine/pyenv.html">pyenv</a><a class="see-also-link" href="../python_engine/3_python_types.html">Python types supported</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -173,13 +172,13 @@ z = minus(x, y)</code><button class="copy-btn" type="button" onclick="copyExampl
 </tr>
 <tr>
 <td class="version">1.4.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -2,21 +2,21 @@
 <help_summary>
   <toc>
     <module>engine</module>
-    <section name="Engine">
+    <section name="Moteur">
       <chapter_description>
-        <p>The Engine module manages the execution environment of Nelson itself.</p>
-        <p>It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.</p>
-        <p>This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.</p>
-        <p>It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.</p>
+        <p>Le module Engine gère l'environnement d'exécution de Nelson lui-même.</p>
+        <p>Il fournit des mécanismes pour gérer le démarrage et l'arrêt du programme, l'intégration en ligne de commande et les modes d'exécution.</p>
+        <p>Cela inclut le support des scripts d'initialisation et de terminaison définis par l'utilisateur, les exigences système spécifiques à la plateforme et les directives d'interpréteur pour l'exécution de scripts multiplateforme.</p>
+        <p>Il sert d'interface principale entre Nelson et le système d'exploitation sous-jacent, garantissant une configuration flexible et un contrôle fluide de la manière dont le logiciel est lancé et utilisé.</p>
     </chapter_description>
-      <keyword name="argv" link="argv.html" description="Nelson command line arguments."/>
-      <keyword name="executable" link="executable.html" description="Executables to start Nelson software."/>
-      <keyword name="finish" link="finish.html" description="User-defined termination script for Nelson."/>
-      <keyword name="getnelsonmode" link="getnelsonmode.html" description="Returns current Nelson mode."/>
-      <keyword name="isquietmode" link="isquietmode.html" description="Return true if Nelson started with --quiet option."/>
-      <keyword name="System Requirements" link="nelson_system_requirement.html" description="System Requirements by platforms."/>
-      <keyword name="#! shebang" link="shebang.html" description="On Unix, Linux operating systems, Parses the rest of the script's initial line as an interpreter directive."/>
-      <keyword name="startup" link="startup.html" description="User-defined startup script for Nelson."/>
+      <keyword name="argv" link="argv.html" description="Arguments de la ligne de commande de Nelson."/>
+      <keyword name="executable" link="executable.html" description="Exécutables pour démarrer le logiciel Nelson."/>
+      <keyword name="finish" link="finish.html" description="Script de terminaison défini par l'utilisateur pour Nelson."/>
+      <keyword name="getnelsonmode" link="getnelsonmode.html" description="Retourne le mode courant de Nelson."/>
+      <keyword name="isquietmode" link="isquietmode.html" description="Renvoie vrai si Nelson a été démarré avec l'option --quiet."/>
+      <keyword name="Exigences système" link="nelson_system_requirement.html" description="Exigences système par plateforme."/>
+      <keyword name="#! shebang" link="shebang.html" description="Sur Unix/Linux, analyse la première ligne du script comme directive d'interpréteur."/>
+      <keyword name="startup" link="startup.html" description="Script de démarrage défini par l'utilisateur pour Nelson."/>
     </section>
   </toc>
 </help_summary>

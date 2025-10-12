@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">axis</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Set axis limits and aspect ratios.</div></div>
+<div class="section syntax-section"><div class="subtitle">Définit les limites et les rapports d'aspect des axes.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">axis([xmin, xmax, ymin, ymax, zmin, zmax, cmin, cmax])
 axis([xmin, xmax, ymin, ymax, zmin, zmax])
 axis([xmin, xmax, ymin, ymax])
@@ -62,27 +61,27 @@ axis(ax, ...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">[xmin, xmax, ymin, ymax, zmin, zmax, cmin, cmax]</td>
-<td>sets the limits in the X, Y, Z and color axes.</td>
+<td>définit les limites sur les axes X, Y, Z et couleur.</td>
 </tr>
 <tr>
 <td class="param-name">[xmin, xmax, ymin, ymax, zmin, zmax]</td>
-<td>sets only the limits in the X, Y, Z.</td>
+<td>définit uniquement les limites sur X, Y, Z.</td>
 </tr>
 <tr>
 <td class="param-name">[xmin, xmax, ymin, ymax]</td>
-<td>sets only the limits in the X, Y.</td>
+<td>définit uniquement les limites sur X, Y.</td>
 </tr>
 <tr>
 <td class="param-name">style</td>
-<td>'tight', 'equal', 'image', 'square', 'fill', 'vis3d' or 'normal' (default).</td>
+<td>'tight', 'equal', 'image', 'square', 'fill', 'vis3d' ou 'normal' (par défaut).</td>
 </tr>
 <tr>
 <td class="param-name">cax</td>
@@ -90,39 +89,39 @@ axis(ax, ...)
 </tr>
 <tr>
 <td class="param-name">visibility</td>
-<td>'off' or 'on' (default).</td>
+<td>'off' ou 'on' (par défaut).</td>
 </tr>
 <tr>
 <td class="param-name">mode</td>
-<td>'manual' (turns off automatic scaling of the axis based on the children of the current axis object) or 'auto' (choose automatically all axis limits) .</td>
+<td>'manual' (désactive l'ajustement automatique des axes selon les enfants de l'objet axe courant) ou 'auto' (choisit automatiquement toutes les limites d'axe).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">lim</td>
-<td>For 2D: [xmin, xmax, ymin, ymax] or for 3D: [xmin, xmax, ymin, ymax, zmin, zmax]</td>
+<td>Pour 2D : [xmin, xmax, ymin, ymax] ou pour 3D : [xmin, xmax, ymin, ymax, zmin, zmax]</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>axes</b> set axis limits and appearance.</p>
+            <b>axes</b> définit les limites et l'apparence des axes.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -152,14 +151,14 @@ axis('normal');</code><button class="copy-btn" type="button" onclick="copyExampl
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/gca.html">gca</a><a class="see-also-link" href="../graphics/axes.html">axes</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -167,13 +166,13 @@ axis('normal');</code><button class="copy-btn" type="button" onclick="copyExampl
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

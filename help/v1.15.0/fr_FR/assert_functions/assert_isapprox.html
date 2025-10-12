@@ -45,85 +45,110 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">assert_isapprox</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Check that computed and expected values are approximately equal.</div></div>
+<div class="section syntax-section"><div class="subtitle">Vérifie que les valeurs calculées et attendues sont approximativement égales.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">assert_isapprox(computed, expected)
 assert_isapprox(computed, expected, precision)
+res = assert_isapprox(computed, expected)
 res = assert_isapprox(computed, expected, precision)
+[res, msg] = assert_isapprox(computed, expected)
 [res, msg] = assert_isapprox(computed, expected, precision)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">computed</td>
-<td>a value: numeric matrix, sparse double, a multidimensional matrix</td>
+<td>une valeur numérique : matrice, double creux ou tableau multidimensionnel.</td>
 </tr>
 <tr>
 <td class="param-name">expected</td>
-<td>a value: numeric matrix, sparse double, a multidimensional matrix</td>
+<td>une valeur numérique : matrice, double creux ou tableau multidimensionnel.</td>
 </tr>
 <tr>
-<td class="param-name">expected</td>
-<td>a double value. default precision is 0.</td>
+<td class="param-name">precision</td>
+<td>une valeur double spécifiant la tolérance relative. La précision par défaut est 0.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">res</td>
-<td>a logical value</td>
+<td>une valeur logique : true si les valeurs sont approximativement égales, false sinon.</td>
 </tr>
 <tr>
 <td class="param-name">msg</td>
-<td>a string value, the error message. If res == true, then errormsg == ''. If res == false, then msg contains the error message.</td>
+<td>une chaîne contenant le message d'erreur. Si res == true, alors msg == ''. Si res == false, alors msg contient le message d'échec de l'assertion.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>assert_isapprox</b> raises an error if computed value is not approximately equal to expected value.</p>
-            <p>This function compares two floating point numbers, which allows to check that two numbers are "approximately" equal, i.e. that the relative error is small.</p>
-        </div>
+        <p><b>assert_isapprox</b> lève une erreur si la valeur calculée n'est pas approximativement égale à la valeur attendue.</p>
+        <p>Cette fonction compare deux nombres à virgule flottante avec une tolérance spécifiée, permettant de vérifier que deux nombres sont « approximativement » égaux lorsque l'égalité exacte n'est pas adaptée à cause des limitations de précision des flottants.</p>
+        <p>La comparaison utilise le calcul de l'erreur relative pour déterminer si les valeurs sont dans la tolérance de précision spécifiée.</p>
+        <p>Cette fonction est particulièrement utile dans les tests unitaires lors de calculs numériques pouvant comporter de petits arrondis.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
-<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Test d'égalité approximative avec une tolérance de précision suffisante :</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">assert_isapprox(1.23456, 1.23457, 1e-5)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
-</div></div>
-<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">assert_isapprox(1.23456, 1.23457, 1e-6)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
-</div></div>
-<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
-<code class="matlab syntax-block" style="flex:1 1 auto;">[r, msg] =assert_isapprox(1.23456, 1.23457, 1e-6)
+</div>
+</div>
+<div class="example">
+<div class="example-title">Test qui échoue lorsque la précision est trop stricte :</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">try
+    assert_isapprox(1.23456, 1.23457, 1e-6)
+catch ME
+    disp(['Error: ' ME.message])
+end</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utilisation des valeurs de retour pour gérer les résultats d'assertion :</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">[r, msg] = assert_isapprox(1.23456, 1.23457, 1e-6);
 assert_isfalse(r);
 assert_isequal(msg, _('Assertion failed: expected and computed values are too different.'));</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
-</div></div>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Test avec des matrices :</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">A = [1.0001, 2.0002; 3.0003, 4.0004];
+B = [1.0000, 2.0000; 3.0000, 4.0000];
+assert_isapprox(A, B, 1e-3)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
-<div><a class="see-also-link" href="../elementary_functions/isapprox.html">isapprox</a></div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../elementary_functions/isapprox.html">isapprox</a><a class="see-also-link" href="../assert_functions/assert_isequal.html">assert_isequal</a>
+</div>
 </div>
 <div class="section">
 <div class="section-title">Used Functions</div>
@@ -131,7 +156,7 @@ assert_isequal(msg, _('Assertion failed: expected and computed values are too di
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -139,13 +164,13 @@ assert_isequal(msg, _('Assertion failed: expected and computed values are too di
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -1906,18 +1906,18 @@ font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal
 >
 </g>
 
-<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1,1,0,31,406)"
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1,1,0,31,430)"
 font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
 >
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
- >Y axis Label - Unicode </text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="150.641" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
+ >Étiquette de l’axe Y - Unicode </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="199.953" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
  >ドラゴンボール</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="231.484" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="280.797" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
  >Y(</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="245.859" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="295.172" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
  >ゼット</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="277.594" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="326.906" y="0" font-family="helvetica" font-size="14.6667" font-weight="400" font-style="normal" 
  >)</text>
 </g>
 

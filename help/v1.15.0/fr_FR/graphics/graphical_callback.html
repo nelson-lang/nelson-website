@@ -2,7 +2,7 @@
 <html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Managing Callback Interruptions in Nelson</title>
+<title>Gestion des interruptions de callback dans Nelson</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
 <script type="text/javascript">
@@ -44,48 +44,48 @@
             </script>
 </head>
 <body>
-<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Managing Callback Interruptions in Nelson</span></div></div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Gestion des interruptions de callback dans Nelson</span></div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>You can assign a callback function to a callback property using one of the following methods:</p>
+        <p>Vous pouvez affecter une fonction de rappel (callback) à une propriété de callback en utilisant l'une des méthodes suivantes :</p>
         <p>
-            <b>Function handle</b>: Use this approach when your callback does not need extra input arguments.</p>
-            <p>
-                <b>Cell array</b>: Ideal for situations where your callback requires additional input arguments. The cell array should include the function handle as the first element, followed by the input arguments.</p>
-                <p>
-                    <b>Anonymous function</b>: This method is suitable for simple callback code or when you want to reuse a function that isn't exclusively used as a callback.</p>
-                    <p>
-                        <b>Characters vector or scalar string</b> containing commands.</p>
-                        <p></p>
-                        <p>Nelson provides control over whether a callback function can be interrupted during its execution. In some cases, allowing interruptions might be desirable, such as enabling users to stop an animation loop through an interrupting callback. However, in scenarios where the execution order of callbacks is crucial, it might be necessary to prevent interruptions to maintain the intended behavior, such as ensuring smooth responsiveness in applications that respond to pointer movements.</p>
-                        <p></p>
-                        <p>Callback Interruption Behavior:</p>
-                        <p></p>
-                        <p>Callbacks are executed in the order they are queued. When a callback is running and another user action triggers a second callback, this second callback attempts to interrupt the first one. The first callback is referred to as the "running callback," while the second is the "interrupting callback."</p>
-                        <p></p>
-                        <p>In some cases, specific commands within the running callback prompt Nelson to process any pending callbacks in the queue.</p>
-                        <p>When Nelson encounters one of these commands such as <b>drawnow</b>, <b>figure</b>, <b>waitfor</b>, or <b>pause</b> it evaluates whether an interruption should occur.</p>
-                        <p></p>
-                        <p>No Interruption: If the running callback does not include any of these commands, Nelson will complete the running callback before executing the interrupting callback.</p>
-                        <p></p>
-                        <p>Interruption Conditions: If the running callback includes any of these commands, the behavior depends on the Interruptible property of the object that owns the running callback:</p>
-                        <p></p>
-                        <p>If <b>Interruptible</b> is set to <b>'on'</b>, Nelson allows the interruption. The running callback is paused, the interrupting callback is executed, and once it is finished, Nelson resumes the execution of the running callback.</p>
-                        <p>If <b>Interruptible</b> is set to <b>'off'</b>, the interruption is blocked. The <b>BusyAction</b> property of the interrupting callback then dictates the next step:</p>
-                        <p>If <b>BusyAction</b> is <b>'queue'</b>, the interrupting callback will be executed after the running callback completes.</p>
-                        <p>If <b>BusyAction</b> is <b>'cancel'</b>, the interrupting callback is discarded and not executed.</p>
-                        <p>By default, the <b>Interruptible</b> property is <b>'on'</b>, and <b>BusyAction</b> is <b>'queue'</b>.</p>
-                        <p></p>
-                        <p>Notably, certain callbacks specifically <b>DeleteFcn</b>, <b>CloseRequestFcn</b>, and <b>SizeChangedFcn</b> will interrupt the running callback regardless of the Interruptible property's value.</p>
-                    </div>
+            <b>Handle de fonction</b> : Utilisez cette approche lorsque votre callback n'a pas besoin d'arguments supplémentaires.</p>
+        <p>
+            <b>Cellule</b> : Idéal lorsque votre callback nécessite des arguments supplémentaires. La cellule doit inclure le handle de fonction comme premier élément, suivi des arguments d'entrée.</p>
+        <p>
+            <b>Fonction anonyme</b> : Cette méthode convient pour un code de callback simple ou si vous souhaitez réutiliser une fonction qui n'est pas exclusivement utilisée comme callback.</p>
+        <p>
+            <b>Vecteur de caractères ou chaîne scalaire</b> contenant des commandes.</p>
+        <p></p>
+        <p>Nelson permet de contrôler si une fonction de callback peut être interrompue pendant son exécution. Dans certains cas, autoriser les interruptions peut être souhaitable, par exemple pour permettre à l'utilisateur d'arrêter une boucle d'animation via un callback interrompant. Cependant, dans des scénarios où l'ordre d'exécution des callbacks est crucial, il peut être nécessaire d'empêcher les interruptions pour garantir le comportement attendu, comme assurer la réactivité dans des applications qui réagissent aux mouvements du pointeur.</p>
+        <p></p>
+        <p>Comportement d'interruption des callbacks :</p>
+        <p></p>
+        <p>Les callbacks sont exécutés dans l'ordre où ils sont mis en file d'attente. Lorsqu'un callback est en cours d'exécution et qu'une autre action utilisateur déclenche un second callback, ce second callback tente d'interrompre le premier. Le premier est appelé « callback en cours d'exécution », le second « callback interrompant ».</p>
+        <p></p>
+        <p>Dans certains cas, des commandes spécifiques dans le callback en cours invitent Nelson à traiter les callbacks en attente dans la file.</p>
+        <p>Lorsque Nelson rencontre l'une de ces commandes comme <b>drawnow</b>, <b>figure</b>, <b>waitfor</b> ou <b>pause</b>, il évalue si une interruption doit avoir lieu.</p>
+        <p></p>
+        <p>Pas d'interruption : Si le callback en cours n'inclut aucune de ces commandes, Nelson termine ce callback avant d'exécuter le callback interrompant.</p>
+        <p></p>
+        <p>Conditions d'interruption : Si le callback en cours inclut l'une de ces commandes, le comportement dépend de la propriété Interruptible de l'objet propriétaire du callback :</p>
+        <p></p>
+        <p>Si <b>Interruptible</b> est à <b>'on'</b>, Nelson autorise l'interruption. Le callback en cours est mis en pause, le callback interrompant est exécuté, puis Nelson reprend l'exécution du callback initial.</p>
+        <p>Si <b>Interruptible</b> est à <b>'off'</b>, l'interruption est bloquée. La propriété <b>BusyAction</b> du callback interrompant détermine alors la suite :</p>
+        <p>Si <b>BusyAction</b> est <b>'queue'</b>, le callback interrompant sera exécuté après la fin du callback en cours.</p>
+        <p>Si <b>BusyAction</b> est <b>'cancel'</b>, le callback interrompant est ignoré et non exécuté.</p>
+        <p>Par défaut, la propriété <b>Interruptible</b> est à <b>'on'</b> et <b>BusyAction</b> à <b>'queue'</b>.</p>
+        <p></p>
+        <p>À noter : certains callbacks, notamment <b>DeleteFcn</b>, <b>CloseRequestFcn</b> et <b>SizeChangedFcn</b>, interrompent le callback en cours quel que soit la valeur de la propriété Interruptible.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
-<div class="example-title">uicontrol demo Interruptible</div>
+<div class="example-title">Démo uicontrol Interruptible</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">addpath([modulepath('graphics','root'), '/examples/uicontrol'])
 edit uicontrol_demo_interruptible
@@ -96,14 +96,14 @@ uicontrol_demo_interruptible</code><button class="copy-btn" type="button" onclic
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/uicontrol.html">uicontrol</a><a class="see-also-link" href="../graphics/drawnow.html">drawnow</a><a class="see-also-link" href="../graphics/waitfor.html">waitfor</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -111,13 +111,13 @@ uicontrol_demo_interruptible</code><button class="copy-btn" type="button" onclic
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

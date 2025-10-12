@@ -48,8 +48,7 @@
 <div class="section syntax-section"><div class="subtitle">Create user interface component.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">c = uicontrol()
 c = uicontrol(propertyName, propertyValue)
 c = uicontrol(parent)
@@ -59,7 +58,7 @@ uicontrol(c)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -85,7 +84,7 @@ uicontrol(c)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Output Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -99,97 +98,115 @@ uicontrol(c)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>c = uicontrol</b> creates a push button, which is the default user interface control, within the current figure and returns the associated uicontrol object. If no figure is currently open, Nelson generates one using the figure function.</p>
-            <p>
-                <b>c = uicontrol(propertyName, propertyValue)</b> creates a user interface control with properties defined by one or more name-value pair arguments. For instance, specifying 'Style', 'button' will create a button.</p>
-                <p>
-                    <b>c = uicontrol(parent)</b> creates the default user interface control (push button) within the specified parent container, rather than defaulting to the current figure.</p>
-                    <p>
-                        <b>c = uicontrol(parent, propertyName, propertyValue)</b> creates a user interface control within the specified parent container, allowing you to define its properties using one or more name-value pair arguments.</p>
-                        <p>
-                            <b>uicontrol(c)</b> sets the focus to a previously defined user interface control, bringing it to the forefront for user interaction.</p>
-                            <p></p>
-                            <p>List of properties:</p>
-                            <p></p>
-                            <p>
-                                <b>BackgroundColor</b>: Background color, specified as an RGB triplet, a hexadecimal color code, or a valid color name.</p>
-                                <p>
-                                    <b>BeingDeleted</b>: Deletion status. on/off logical value.</p>
-                                    <p>
-                                        <b>BusyAction</b>: Callback queuing specified as 'queue' (default) or 'cancel'. The property determines how Nelson handles the execution of interrupting callbacks.</p>
-                                        <p>
-                                            <b>ButtonDownFcn</b>: Button-press callback function</p>
-                                            <p>
-                                                <b>CData</b>:An optional icon can be specified as a 3-D array of truecolor RGB values. The array values can be either:
-Double-precision numbers ranging from 0.0 to 1.0, or uint8 numbers ranging from 0 to 255</p>
-                                                <p>
-                                                    <b>Callback</b>: Primary callback function: '' (default), function handle, cell array or character vector.</p>
-                                                    <p>
-                                                        <b>Children</b>: UIControl children: empty array.</p>
-                                                        <p>
-                                                            <b>CreateFcn</b>: Component creation function.</p>
-                                                            <p>
-                                                                <b>DeleteFcn</b>: Component deletion function.</p>
-                                                                <p>
-                                                                    <b>Enable</b>: Operational state of user interface control.</p>
-                                                                    <p>
-                                                                        <b>FontAngle</b>: Font angle: 'italic' or 'normal' (default).</p>
-                                                                        <p>
-                                                                            <b>FontName</b>: Font name: system supported font name.</p>
-                                                                            <p>
-                                                                                <b>FontSize</b>: Font size: positive number.</p>
-                                                                                <p>
-                                                                                    <b>FontUnits</b>: Font units: 'normalized', 'inches', 'centimeters', 'pixels' or 'points' (default).</p>
-                                                                                    <p>
-                                                                                        <b>FontWeight</b>: Font weight: 'bold' or 'normal' (default).</p>
-                                                                                        <p>
-                                                                                            <b>ForeGround</b>: Text color, specified as an RGB triplet, a hexadecimal color code, or valid color name.</p>
-                                                                                            <p>
-                                                                                                <b>HandleVisibility</b>: Visibility of uiControl handle.</p>
-                                                                                                <p>
-                                                                                                    <b>HorizontalAlignment</b>: Alignment of uicontrol text 'left', 'right' or 'center' (default).</p>
-                                                                                                    <p>
-                                                                                                        <b>Interruptible</b>: Callback interruption 'on' (default).</p>
-                                                                                                        <p>
-                                                                                                            <b>KeyPressFcn</b>: Key press callback function.</p>
-                                                                                                            <p>
-                                                                                                                <b>KeyReleaseFcn</b>: Key release callback function</p>
-                                                                                                                <p>
-                                                                                                                    <b>ListboxTop</b>: Index of top item in list box: integer value or 1 (default).</p>
-                                                                                                                    <p>
-                                                                                                                        <b>Max</b>: Maximum value: number or 1 (default).</p>
-                                                                                                                        <p>
-                                                                                                                            <b>Min</b>:  Minimum value: number or 0 (default).</p>
-                                                                                                                            <p>
-                                                                                                                                <b>Parent</b>: Parent object: Figure.</p>
-                                                                                                                                <p>
-                                                                                                                                    <b>Position</b>: Location and size: [left bottom width height].</p>
-                                                                                                                                    <p>
-                                                                                                                                        <b>SliderStep</b>:  Slider step size: [minorstep majorstep] or [0.01 0.10] (default).</p>
-                                                                                                                                        <p>
-                                                                                                                                            <b>String</b>: Text to display: character vector, cell array of character vectors or string array.</p>
-                                                                                                                                            <p>
-                                                                                                                                                <b>Style</b>: 'pushbutton' (default), 'togglebutton', 'checkbox', 'radiobutton', 'edit', 'text', 'slider'.</p>
-                                                                                                                                                <p>
-                                                                                                                                                    <b>Tooltip</b>: Tooltip: character vector or string scalar.</p>
-                                                                                                                                                    <p>
-                                                                                                                                                        <b>Type</b>: 'uicontrol'</p>
-                                                                                                                                                        <p>
-                                                                                                                                                            <b>Units</b>: Units of measurement: 'pixels' (default), 'normalized', 'centimeters', 'inches' or 'points'.</p>
-                                                                                                                                                            <p>
-                                                                                                                                                                <b>UserData</b>: User data array or [] (default).</p>
-                                                                                                                                                                <p>
-                                                                                                                                                                    <b>Value</b>: Current value: number</p>
-                                                                                                                                                                    <p>
-                                                                                                                                                                        <b>Visible</b>: State of visibility: 'on' (default).</p>
-                                                                                                                                                                    </div>
+            <b>c = uicontrol</b> creates a push button, which is the default user interface control,
+            within the current figure and returns the associated uicontrol object. If no figure is
+            currently open, Nelson generates one using the figure function.</p>
+        <p>
+            <b>c = uicontrol(propertyName, propertyValue)</b> creates a user interface control with
+            properties defined by one or more name-value pair arguments. For instance, specifying
+            'Style', 'button' will create a button.</p>
+        <p>
+            <b>c = uicontrol(parent)</b> creates the default user interface control (push button)
+            within the specified parent container, rather than defaulting to the current figure.</p>
+        <p>
+            <b>c = uicontrol(parent, propertyName, propertyValue)</b> creates a user interface
+            control within the specified parent container, allowing you to define its properties
+            using one or more name-value pair arguments.</p>
+        <p>
+            <b>uicontrol(c)</b> sets the focus to a previously defined user interface control,
+            bringing it to the forefront for user interaction.</p>
+        <p></p>
+        <p>List of properties:</p>
+        <p></p>
+        <p>
+            <b>BackgroundColor</b>: Background color, specified as an RGB triplet, a hexadecimal
+            color code, or a valid color name.</p>
+        <p>
+            <b>BeingDeleted</b>: Deletion status. on/off logical value.</p>
+        <p>
+            <b>BusyAction</b>: Callback queuing specified as 'queue' (default) or 'cancel'. The
+            property determines how Nelson handles the execution of interrupting callbacks.</p>
+        <p>
+            <b>ButtonDownFcn</b>: Button-press callback function</p>
+        <p>
+            <b>CData</b>:An optional icon can be specified as a 3-D array of truecolor RGB values.
+            The array values can be either: Double-precision numbers ranging from 0.0 to 1.0, or
+            uint8 numbers ranging from 0 to 255</p>
+        <p>
+            <b>Callback</b>: Primary callback function: '' (default), function handle, cell array or
+            character vector.</p>
+        <p>
+            <b>Children</b>: UIControl children: empty array.</p>
+        <p>
+            <b>CreateFcn</b>: Component creation function.</p>
+        <p>
+            <b>DeleteFcn</b>: Component deletion function.</p>
+        <p>
+            <b>Enable</b>: Operational state of user interface control.</p>
+        <p>
+            <b>FontAngle</b>: Font angle: 'italic' or 'normal' (default).</p>
+        <p>
+            <b>FontName</b>: Font name: system supported font name.</p>
+        <p>
+            <b>FontSize</b>: Font size: positive number.</p>
+        <p>
+            <b>FontUnits</b>: Font units: 'normalized', 'inches', 'centimeters', 'pixels' or
+            'points' (default).</p>
+        <p>
+            <b>FontWeight</b>: Font weight: 'bold' or 'normal' (default).</p>
+        <p>
+            <b>ForeGround</b>: Text color, specified as an RGB triplet, a hexadecimal color code, or
+            valid color name.</p>
+        <p>
+            <b>HandleVisibility</b>: Visibility of uiControl handle.</p>
+        <p>
+            <b>HorizontalAlignment</b>: Alignment of uicontrol text 'left', 'right' or 'center'
+            (default).</p>
+        <p>
+            <b>Interruptible</b>: Callback interruption 'on' (default).</p>
+        <p>
+            <b>KeyPressFcn</b>: Key press callback function.</p>
+        <p>
+            <b>KeyReleaseFcn</b>: Key release callback function</p>
+        <p>
+            <b>ListboxTop</b>: Index of top item in list box: integer value or 1 (default).</p>
+        <p>
+            <b>Max</b>: Maximum value: number or 1 (default).</p>
+        <p>
+            <b>Min</b>: Minimum value: number or 0 (default).</p>
+        <p>
+            <b>Parent</b>: Parent object: Figure.</p>
+        <p>
+            <b>Position</b>: Location and size: [left bottom width height].</p>
+        <p>
+            <b>SliderStep</b>: Slider step size: [minorstep majorstep] or [0.01 0.10] (default).</p>
+        <p>
+            <b>String</b>: Text to display: character vector, cell array of character vectors or
+            string array.</p>
+        <p>
+            <b>Style</b>: 'pushbutton' (default), 'togglebutton', 'checkbox', 'radiobutton', 'edit',
+            'text', 'slider'.</p>
+        <p>
+            <b>Tooltip</b>: Tooltip: character vector or string scalar.</p>
+        <p>
+            <b>Type</b>: 'uicontrol'</p>
+        <p>
+            <b>Units</b>: Units of measurement: 'pixels' (default), 'normalized', 'centimeters',
+            'inches' or 'points'.</p>
+        <p>
+            <b>UserData</b>: User data array or [] (default).</p>
+        <p>
+            <b>Value</b>: Current value: number</p>
+        <p>
+            <b>Visible</b>: State of visibility: 'on' (default).</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example">
 <div class="example-title">Pushbutton</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -247,14 +264,14 @@ uicontrol_demo_interruptible</code><button class="copy-btn" type="button" onclic
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../graphics/figure.html">figure</a><a class="see-also-link" href="../graphics/graphical_callback.html">Managing Callback Interruptions in Nelson</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -272,7 +289,7 @@ uicontrol_demo_interruptible</code><button class="copy-btn" type="button" onclic
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

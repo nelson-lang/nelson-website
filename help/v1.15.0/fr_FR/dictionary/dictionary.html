@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dictionary</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Object that maps unique keys to values.</div></div>
+<div class="section syntax-section"><div class="subtitle">Objet qui associe des clés uniques à des valeurs.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">d = dictionary()
 d = dictionary(d1)
 d = dictionary(keys, values)
@@ -58,85 +57,85 @@ d = dictionary(key1, value1, ... , keyN, valueN)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">d1</td>
-<td>a dictionary or py.dict object.</td>
+<td>un dictionnaire ou un objet py.dict.</td>
 </tr>
 <tr>
 <td class="param-name">keys</td>
-<td>scalar or array</td>
+<td>scalaire ou tableau</td>
 </tr>
 <tr>
 <td class="param-name">values</td>
-<td>scalar, array or cell array</td>
+<td>scalaire, tableau ou tableau cellulaire</td>
 </tr>
 <tr>
 <td class="param-name">key1, value1, ... , keyN, valueN</td>
-<td>Key-value pairs</td>
+<td>Paires clé-valeur</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">d</td>
-<td>scalar: a dictionary object.</td>
+<td>scalaire : un objet dictionnaire.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>d = dictionary()</b>: This command initializes an empty dictionary with no keys or values.</p>
-            <p>Initially, the dictionary has no specific data types assigned to its keys or values. Once entries are added, the data types for keys and values are determined based on these entries.</p>
+            <b>d = dictionary()</b> : Cette commande initialise un dictionnaire vide sans clés ni valeurs.</p>
+            <p>Au départ, le dictionnaire n'a pas de types de données spécifiques assignés à ses clés ou valeurs. Une fois des entrées ajoutées, les types de clés et de valeurs sont déterminés à partir de ces entrées.</p>
             <p></p>
             <p>
-                <b>d = dictionary(keys, values)</b>: This creates a dictionary using the provided keys and values.</p>
-                <p>The resulting dictionary is a 1-by-1 scalar object. If a key appears multiple times, only the last corresponding value is kept. If the values parameter is a scalar, each key is assigned this value. When keys and values are arrays, they must have matching sizes, resulting in key-value pairs accordingly.</p>
+                <b>d = dictionary(keys, values)</b> : Crée un dictionnaire en utilisant les clés et valeurs fournies.</p>
+                <p>Le dictionnaire résultant est un objet scalaire 1-by-1. Si une clé apparaît plusieurs fois, seule la dernière valeur correspondante est conservée. Si le paramètre values est un scalaire, chaque clé reçoit cette valeur. Quand keys et values sont des tableaux, ils doivent avoir des tailles compatibles, produisant des paires clé-valeur correspondantes.</p>
                 <p></p>
-                <p>Dictionaries are typed according to their entries. All keys must share the same data type, and all values must share a different, consistent data type. If a new entry has parts that don't match the existing data types, Nelson will attempt to convert them. Keys and values can have different data types, and character row vectors are converted to string scalars.</p>
+                <p>Les dictionnaires sont typés selon leurs entrées. Toutes les clés doivent partager le même type de données, et toutes les valeurs doivent partager un type cohérent distinct. Si une nouvelle entrée contient des parties qui ne correspondent pas aux types existants, Nelson tentera de les convertir. Les clés et valeurs peuvent avoir des types différents, et les vecteurs de caractères en lignes sont convertis en scalaires string.</p>
                 <p></p>
                 <p>
-                    <b>d = dictionary(key1, value1, ... , keyN, valueN)</b>: This syntax creates a dictionary with the specified key-value pairs.</p>
-                    <p>If a key is repeated, only the last key-value pair for that key is kept.</p>
-                    <p>Removing an Entry from a Dictionary:</p>
+                    <b>d = dictionary(key1, value1, ... , keyN, valueN)</b> : Cette syntaxe crée un dictionnaire avec les paires clé-valeur spécifiées.</p>
+                    <p>Si une clé est répétée, seule la dernière paire clé-valeur pour cette clé est conservée.</p>
+                    <p>Suppression d'une entrée dans un dictionnaire :</p>
                     <p>
-                        <b>d(keys) = []</b>: This command removes the entry associated with the specified key from the dictionary.</p>
+                        <b>d(keys) = []</b> : Cette commande supprime l'entrée associée à la clé spécifiée du dictionnaire.</p>
                         <p></p>
-                        <p>Assigning Values to Entries:</p>
+                        <p>Assignation de valeurs aux entrées :</p>
                         <p>
-                            <b>d(keys) = newValues</b>: This command assigns the elements of newValues to the entries specified by the corresponding keys.</p>
-                            <p>If a specified key does not exist in the dictionary, a new entry is created. If a key appears multiple times, only the last assigned value is kept. Assigning a new value to an existing key overwrites its previous value.</p>
+                            <b>d(keys) = newValues</b> : Cette commande assigne les éléments de newValues aux entrées spécifiées par les clés correspondantes.</p>
+                            <p>Si une clé spécifiée n'existe pas dans le dictionnaire, une nouvelle entrée est créée. Si une clé apparaît plusieurs fois, seule la dernière valeur assignée est conservée. Assigner une nouvelle valeur à une clé existante écrase sa valeur précédente.</p>
                             <p></p>
-                            <p>Looking Up a Value:</p>
+                            <p>Recherche d'une valeur :</p>
                             <p>
-                                <b>bvalue = d(keys)</b>: This command retrieves the value corresponding to the specified keys from the dictionary.</p>
+                                <b>bvalue = d(keys)</b> : Cette commande récupère la valeur correspondant aux clés spécifiées du dictionnaire.</p>
                                 <p></p>
-                                <p>Storing Multiple Data Types in a Dictionary:</p>
+                                <p>Stockage de plusieurs types de données dans un dictionnaire :</p>
                                 <p>
-                                    <b>value = d{keys}</b> retrieves the value associated with <b>keys</b> and returns the contents of the cell. If <b>keys</b> is an array, a comma-separated list of the corresponding values is returned. An error is thrown if the dictionary's values are configured to a datatype other than cell.</p>
+                                    <b>value = d{keys}</b> récupère la valeur associée à <b>keys</b> et renvoie le contenu de la cellule. Si <b>keys</b> est un tableau, une liste séparée par des virgules des valeurs correspondantes est renvoyée. Une erreur est levée si les valeurs du dictionnaire sont configurées vers un type autre que cell.</p>
                                     <p>
-                                        <b>d{keys} = values</b> assigns cells containing the elements of <b>values</b> to the entries specified by the corresponding <b>keys</b>. An error is thrown if the dictionary's values are configured to a datatype other than cell.</p>
+                                        <b>d{keys} = values</b> assigne des cellules contenant les éléments de <b>values</b> aux entrées spécifiées par les <b>keys</b> correspondantes. Une erreur est levée si les valeurs du dictionnaire sont configurées vers un type autre que cell.</p>
                                         <p></p>
                                     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">d = dictionary()
 d('apple') = 1
@@ -164,14 +163,14 @@ dictionary(R)</code><button class="copy-btn" type="button" onclick="copyExample(
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../dictionary/lookup.html">lookup</a><a class="see-also-link" href="../dictionary/remove.html">remove</a><a class="see-also-link" href="../dictionary/insert.html">insert</a><a class="see-also-link" href="../dictionary/keyMatch.html">keyMatch</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -179,13 +178,13 @@ dictionary(R)</code><button class="copy-btn" type="button" onclick="copyExample(
 </tr>
 <tr>
 <td class="version">1.5.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

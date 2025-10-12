@@ -2,36 +2,36 @@
 <help_summary>
   <toc>
     <module>audio</module>
-    <section name="Audio playback functions">
+    <section name="Fonctions de lecture audio">
       <chapter_description>
-		<p>The audio module provides functions for reading, writing, analyzing, and playing audio files.</p>
-		<p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.</p>
-		<p>It also includes utilities for signal conversion and sound generation.</p>
+		<p>Le module audio fournit des fonctions pour lire, écrire, analyser et jouer des fichiers audio.</p>
+		<p>Il prend en charge le contrôle de lecture via l'objet audioplayer, la manipulation des propriétés de lecture et la gestion des métadonnées.</p>
+		<p>Il comprend également des utilitaires pour la conversion de signaux et la génération de sons.</p>
 	</chapter_description>
-      <keyword name="audiodevinfo" link="audiodevinfo.html" description="Get audio devices information."/>
-      <keyword name="audioinfo" link="audioinfo.html" description="Get audio file information."/>
-      <keyword name="audiometadata" link="audiometadata.html" description="Get/Set metadata of audio file ."/>
-      <keyword name="audioplayer" link="audioplayer.html" description="Audio player object."/>
-      <keyword name="audioplayer_delete" link="audioplayer_delete.html" description="Removes audioplayer object."/>
-      <keyword name="audioplayer_fieldnames" link="audioplayer_fieldnames.html" description="Returns the properties name of an audioplayer object."/>
-      <keyword name="audioplayer_get" link="audioplayer_get.html" description="Get property value from audioplayer interface."/>
-      <keyword name="audioplayer_pause" link="audioplayer_pause.html" description="Pause an audioplayer object."/>
-      <keyword name="audioplayer_set" link="audioplayer_set.html" description="Set object or interface property to specified value."/>
-      <keyword name="audioplayer_stop" link="audioplayer_stop.html" description="Stops an audioplayer object."/>
-      <keyword name="audioplayer_used" link="audioplayer_used.html" description="Returns list of current used audioplayer handle."/>
-      <keyword name="audioread" link="audioread.html" description="Read an audio file."/>
-      <keyword name="audiosupportedformats" link="audiosupportedformats.html" description="Get audio file supported formats."/>
-      <keyword name="audiowrite" link="audiowrite.html" description="Writes an audio file."/>
-      <keyword name="beep" link="beep.html" description="Produces a beep sound."/>
-      <keyword name="isplaying" link="isplaying.html" description="get info about audio playback is in progress."/>
-      <keyword name="lin2mu" link="lin2mu.html" description="Convert audio data from linear singal to mu-law."/>
-      <keyword name="mu2lin" link="mu2lin.html" description="Convert audio data from mu-law to linear signal."/>
-      <keyword name="play" link="play.html" description="Plays an audioplayer object."/>
-      <keyword name="playblocking" link="playblocking.html" description="Plays an audioplayer object with blocking."/>
-      <keyword name="resume" link="resume.html" description="Resumes an audioplayer object."/>
-      <keyword name="sound" link="sound.html" description="Convert matrix of signal data to sound and play it."/>
-      <keyword name="soundsc" link="soundsc.html" description="Scale data and play as sound."/>
-      <keyword name="stop" link="stop.html" description="Stops an audioplayer object."/>
+      <keyword name="audiodevinfo" link="audiodevinfo.html" description="Obtient les informations des périphériques audio."/>
+      <keyword name="audioinfo" link="audioinfo.html" description="Obtient les informations du fichier audio."/>
+      <keyword name="audiometadata" link="audiometadata.html" description="Obtient/Définit les métadonnées du fichier audio."/>
+      <keyword name="audioplayer" link="audioplayer.html" description="Objet lecteur audio."/>
+      <keyword name="audioplayer_delete" link="audioplayer_delete.html" description="Supprime l'objet audioplayer."/>
+      <keyword name="audioplayer_fieldnames" link="audioplayer_fieldnames.html" description="Retourne les noms des propriétés d'un objet audioplayer."/>
+      <keyword name="audioplayer_get" link="audioplayer_get.html" description="Obtient la valeur de propriété de l'interface audioplayer."/>
+      <keyword name="audioplayer_pause" link="audioplayer_pause.html" description="Met en pause un objet audioplayer."/>
+      <keyword name="audioplayer_set" link="audioplayer_set.html" description="Définit la propriété de l'objet ou de l'interface à la valeur spécifiée."/>
+      <keyword name="audioplayer_stop" link="audioplayer_stop.html" description="Arrête un objet audioplayer."/>
+      <keyword name="audioplayer_used" link="audioplayer_used.html" description="Retourne la liste des handles audioplayer actuellement utilisés."/>
+      <keyword name="audioread" link="audioread.html" description="Lit un fichier audio."/>
+      <keyword name="audiosupportedformats" link="audiosupportedformats.html" description="Obtient les formats de fichiers audio supportés."/>
+      <keyword name="audiowrite" link="audiowrite.html" description="Écrit un fichier audio."/>
+      <keyword name="beep" link="beep.html" description="Produit un son de bip."/>
+      <keyword name="isplaying" link="isplaying.html" description="obtenir des informations sur la lecture audio en cours."/>
+      <keyword name="lin2mu" link="lin2mu.html" description="Convertir les données audio d'un signal linéaire vers mu-law."/>
+      <keyword name="mu2lin" link="mu2lin.html" description="Convertir les données audio de mu-law vers un signal linéaire."/>
+      <keyword name="play" link="play.html" description="Lit un objet audioplayer."/>
+      <keyword name="playblocking" link="playblocking.html" description="Lit un objet audioplayer de manière bloquante."/>
+      <keyword name="resume" link="resume.html" description="Reprend un objet audioplayer."/>
+      <keyword name="sound" link="sound.html" description="Convertit une matrice de données de signal en son et le joue."/>
+      <keyword name="soundsc" link="soundsc.html" description="Met à l'échelle les données et joue comme son."/>
+      <keyword name="stop" link="stop.html" description="Arrête un objet audioplayer."/>
     </section>
   </toc>
 </help_summary>

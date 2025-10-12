@@ -45,65 +45,64 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">ssselect</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Extract subsystem from larger system.</div></div>
+<div class="section syntax-section"><div class="subtitle">Extraire un sous-système d'un système plus grand.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">sysOut = ssselect(sysIn, INPUTS, OUTPUTS)
 sysOut = ssselect(sysIn, INPUTS, OUTPUTS, STATES)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">sysIn</td>
-<td>state-space model</td>
+<td>modèle d'état-espace</td>
 </tr>
 <tr>
 <td class="param-name">INPUTS</td>
-<td>indexes into the system inputs</td>
+<td>index dans les entrées du système</td>
 </tr>
 <tr>
 <td class="param-name">OUTPUTS</td>
-<td>indexes into the system outputs</td>
+<td>index dans les sorties du système</td>
 </tr>
 <tr>
 <td class="param-name">STATES</td>
-<td>specified states</td>
+<td>états spécifiés</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">sysOut</td>
-<td>state-space model: subsystem from larger system.</td>
+<td>modèle d'état-espace : sous-système d'un système plus grand.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-    <p><b>ssselect</b> extracts subsystem from larger system.</p>
+    <p><b>ssselect</b> extrait un sous-système à partir d'un système plus grand.</p>
   </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [33,2,5; 23,200,2; 9,2,45];
 B = [4,5; 12,5; 82,1];
@@ -120,12 +119,12 @@ R = ssselect(sys1, inputs, outputs)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../control_system/ssdelete.html">ssdelete</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -133,13 +132,13 @@ R = ssselect(sys1, inputs, outputs)
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

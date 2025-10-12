@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">plot</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Linear 2-D plot.</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracé linéaire 2D.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">plot(Y)
 plot(X1, Y1, ...)
 plot(X1, Y1, LineSpec, ...)
@@ -60,122 +59,232 @@ go = plot(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X1</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y1</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style, marker, and/or color: character vector or scalar string.</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou
+                chaîne scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme
+                axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character. see help of 'line' for property list.</td>
+<td>Chaîne scalaire ou vecteur ligne de caractères. Voir l'aide de 'line'
+                pour la liste des propriétés.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">go</td>
-<td>a graphics object: line type.</td>
+<td>Objet graphique : type ligne.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>plot(Y)</b> plots the columns of <b>Y</b> versus their index.</p>
-            <p>
-                <b>plot(X, Y)</b> plots line defined by <b>X</b> versus <b>Y</b> pair.</p>
-                <p>
-                    <b>go = plot(...)</b> returns a column vector of line graphics objects.</p>
-                    <p></p>
-                    <p>
-                        <b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order:</p>
-                        <p></p>
-                        <p>The SymbolSpec specifies the symbol to be drawn at each data point:</p>
-                        <p>
-                            <b>'o'</b>: Circle symbol</p>
-                            <p>
-                                <b>'x'</b>: Times symbol</p>
-                                <p>
-                                    <b>'+'</b>: Plus symbol</p>
-                                    <p>
-                                        <b>'*'</b>: Asterisk symbol</p>
-                                        <p>
-                                            <b>'.'</b>: Dot symbol</p>
-                                            <p>
-                                                <b>'s'</b>: Square symbol</p>
-                                                <p>
-                                                    <b>'d'</b>: Diamond symbol</p>
-                                                    <p>
-                                                        <b>'v'</b>: Downward-pointing triangle symbol</p>
-                                                        <p>
-                                                            <b>'^'</b>: Upward-pointing triangle symbol</p>
-                                                            <p>
-                                                                <b>'&gt;'</b>: Left-pointing triangle symbol</p>
-                                                                <p>
-                                                                    <b>'&lt;'</b>: Right-pointing triangle symbol</p>
-                                                                    <p></p>
-                                                                    <p>The LineStyleSpec specifies the line style to use for each data series:</p>
-                                                                    <p>
-                                                                        <b>'-'</b>: Solid line style</p>
-                                                                        <p>
-                                                                            <b>'--'</b>: Dashed line style</p>
-                                                                            <p>
-                                                                                <b>'-.'</b>: Dot-Dash-Dot-Dash line style</p>
-                                                                                <p>
-                                                                                    <b>':'</b>: Dotted line style</p>
-                                                                                    <p></p>
-                                                                                    <p>The ColorSpec specifies the line color to use for each data series:</p>
-                                                                                    <p>
-                                                                                        <b>'k'</b>: Color Black</p>
-                                                                                        <p>
-                                                                                            <b>'y'</b>: Color Yellow</p>
-                                                                                            <p>
-                                                                                                <b>'m'</b>: Color Magenta</p>
-                                                                                                <p>
-                                                                                                    <b>'c'</b>: Color Cyan</p>
-                                                                                                    <p>
-                                                                                                        <b>'r'</b>: Color Red</p>
-                                                                                                        <p>
-                                                                                                            <b>'b'</b>: Color Blue</p>
-                                                                                                            <p>
-                                                                                                                <b>'g'</b>: Color Green</p>
-                                                                                                                <p></p>
-                                                                                                                <p>see <b>line</b> for more information about properties</p>
-                                                                                                            </div>
+            <b>plot(Y)</b> trace les colonnes de <b>Y</b> en fonction de leur indice. </p>
+        <p>
+            <b>plot(X, Y)</b> trace la courbe définie par la paire <b>X</b> et <b>Y</b>. </p>
+        <p>
+            <b>go = plot(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne. </p>
+        <p></p>
+        <p>
+            <b>LineSpec</b> est une chaîne utilisée pour modifier les caractéristiques de la ligne
+            et se compose de trois parties optionnelles dans n'importe quel ordre : </p>
+        <p></p>
+        <p>Le SymbolSpec spécifie le symbole à dessiner à chaque point de données :</p>
+        <table>
+            <tr>
+                <th>Symbole</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <b>'o'</b>
+                </td>
+                <td>Symbole cercle</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'x'</b>
+                </td>
+                <td>Symbole croix</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'+'</b>
+                </td>
+                <td>Symbole plus</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'*'</b>
+                </td>
+                <td>Symbole astérisque</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'.'</b>
+                </td>
+                <td>Symbole point</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'s'</b>
+                </td>
+                <td>Symbole carré</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'d'</b>
+                </td>
+                <td>Symbole losange</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'v'</b>
+                </td>
+                <td>Triangle pointe vers le bas</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'^'</b>
+                </td>
+                <td>Triangle pointe vers le haut</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'&lt;'</b>
+                </td>
+                <td>Triangle pointe vers la droite</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'&gt;'</b>
+                </td>
+                <td>Triangle pointe vers la gauche</td>
+            </tr>
+        </table>
+        <p></p>
+        <p>Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données :</p>
+        <table>
+            <tr>
+                <th>Style</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <b>'-'</b>
+                </td>
+                <td>Ligne continue</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'--'</b>
+                </td>
+                <td>Ligne pointillée</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'-.'</b>
+                </td>
+                <td>Ligne tiret-point</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>':'</b>
+                </td>
+                <td>Ligne en pointillés</td>
+            </tr>
+        </table>
+        <p></p>
+        <p>Le ColorSpec spécifie la couleur de ligne à utiliser pour chaque série de données :</p>
+        <table>
+            <tr>
+                <th>Couleur</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <b>'k'</b>
+                </td>
+                <td>Noir</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'y'</b>
+                </td>
+                <td>Jaune</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'m'</b>
+                </td>
+                <td>Magenta</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'c'</b>
+                </td>
+                <td>Cyan</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'r'</b>
+                </td>
+                <td>Rouge</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'b'</b>
+                </td>
+                <td>Bleu</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>'g'</b>
+                </td>
+                <td>Vert</td>
+            </tr>
+        </table>
+        <p></p>
+        <p>Voir <b>line</b> pour plus d'informations sur les propriétés.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">Default abscissae using indices:</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -228,14 +337,14 @@ ylabel('sin(5x)')</code><button class="copy-btn" type="button" onclick="copyExam
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/line.html">line</a><a class="see-also-link" href="../graphics/plot3.html">plot3</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -243,13 +352,13 @@ ylabel('sin(5x)')</code><button class="copy-btn" type="button" onclick="copyExam
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

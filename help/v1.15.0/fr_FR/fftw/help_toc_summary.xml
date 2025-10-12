@@ -4,20 +4,20 @@
     <module>fftw</module>
     <section name="FFTW">
       <chapter_description>
-      <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.</p>
-      <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.</p>
-      <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.</p>
+      <p>Le module FFTW fournit des outils pour calculer les transformées de Fourier rapides dans Nelson.</p>
+      <p>Il prend en charge les transformées unidimensionnelles, bidimensionnelles et multidimensionnelles, ainsi que les transformées inverses et les manipulations dans le domaine fréquentiel.</p>
+      <p>Le module permet une analyse spectrale et un traitement du signal efficaces, en s'appuyant sur des algorithmes haute performance pour les données réelles et complexes.</p>
     </chapter_description>
-      <keyword name="FFTW License" link="About_FFTW_license.html" description="About FFTW license."/>
-      <keyword name="FFTWwrapper" link="FFTWwrapper.html" description="load/free FFTW library dynamically."/>
-      <keyword name="fft" link="fft.html" description="Fast Fourier transform."/>
-      <keyword name="fft2" link="fft2.html" description="2-D fast Fourier transform."/>
-      <keyword name="fftn" link="fftn.html" description="N-Dimensions fast Fourier transform."/>
-      <keyword name="fftshift" link="fftshift.html" description="Shift the zero-frequency component to the center of the spectrum."/>
-      <keyword name="fftw" link="fftw.html" description="function for determining FFT algorithm."/>
-      <keyword name="ifft" link="ifft.html" description="Inverse Fast Fourier transform."/>
-      <keyword name="ifftn" link="ifftn.html" description="Inverse multidimensional fast Fourier transform."/>
-      <keyword name="ifftshift" link="ifftshift.html" description="inverse of fftshift"/>
+      <keyword name="Licence FFTW" link="About_FFTW_license.html" description="À propos de la licence FFTW."/>
+      <keyword name="FFTWwrapper" link="FFTWwrapper.html" description="charger/libérer la bibliothèque FFTW dynamiquement."/>
+      <keyword name="fft" link="fft.html" description="Transformée de Fourier rapide."/>
+      <keyword name="fft2" link="fft2.html" description="Transformée de Fourier 2-D rapide."/>
+      <keyword name="fftn" link="fftn.html" description="Transformée de Fourier rapide N-dimensionnelle."/>
+      <keyword name="fftshift" link="fftshift.html" description="Décaler la composante fréquence nulle au centre du spectre."/>
+      <keyword name="fftw" link="fftw.html" description="fonction pour déterminer l'algorithme FFT."/>
+      <keyword name="ifft" link="ifft.html" description="Transformée de Fourier inverse rapide."/>
+      <keyword name="ifftn" link="ifftn.html" description="Transformée de Fourier inverse multidimensionnelle."/>
+      <keyword name="ifftshift" link="ifftshift.html" description="inverse de fftshift"/>
     </section>
   </toc>
 </help_summary>

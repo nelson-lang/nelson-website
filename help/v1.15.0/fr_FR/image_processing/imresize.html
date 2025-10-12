@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">imresize</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Resize image by scale or output size</div></div>
+<div class="section syntax-section"><div class="subtitle">Redimensionne une image par échelle ou taille de sortie</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">img2 = imresize(img, scale)
 img2 = imresize(img, [numrows numcols])
 [Y, newmap] = imresize(X, map, ...)
@@ -59,99 +58,98 @@ img2 = imresize(img, [numrows numcols])
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">img</td>
-<td>Image to be resized, specified as a numeric array, logical array of any dimension. Input must be nonsparse, and numeric input must be real.</td>
+<td>Image à redimensionner, spécifiée comme un tableau numérique ou logique de n'importe quelle dimension. L'entrée doit être non-creuse (nonsparse) et les entrées numériques doivent être réelles.</td>
 </tr>
 <tr>
 <td class="param-name">scale</td>
-<td>Resize factor, specified as a positive number or two-element vector. If scale is between 0 and 1, output is smaller; if greater than 1, output is larger. imresize applies the same scale factor to row and column dimensions unless a vector is specified.</td>
+<td>Facteur de redimensionnement, spécifié comme un nombre positif ou un vecteur à deux éléments. Si scale est entre 0 et 1, la sortie est plus petite ; si &gt; 1, la sortie est plus grande. imresize applique le même facteur aux lignes et colonnes sauf si un vecteur est fourni.</td>
 </tr>
 <tr>
 <td class="param-name">[numrows numcols]</td>
-<td>Row and column dimensions of output image, specified as a two-element vector of positive numbers. NaN can be used for either dimension to preserve aspect ratio.</td>
+<td>Dimensions en lignes et colonnes de l'image de sortie, spécifiées comme un vecteur à deux éléments de nombres positifs. NaN peut être utilisé pour une dimension afin de préserver le ratio d'aspect.</td>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>Indexed image to be resized, specified as a real, nonsparse numeric array of positive integers.</td>
+<td>Image indexée à redimensionner, spécifiée comme un tableau numérique réel non-creux d'entiers positifs.</td>
 </tr>
 <tr>
 <td class="param-name">map</td>
-<td>Colormap associated with indexed image X, specified as a c-by-3 numeric matrix with values in [0, 1].</td>
+<td>Colormap associée à l'image indexée X, spécifiée comme une matrice c-by-3 avec des valeurs dans [0,1].</td>
 </tr>
 <tr>
 <td class="param-name">method</td>
-<td>Interpolation method (optional, default: 'bicubic'): must be always at last position parameter.
-      </td>
+<td>Méthode d'interpolation (optionnelle, par défaut : 'bicubic') : doit toujours être le dernier paramètre positionnel.</td>
 </tr>
 <tr>
 <td class="param-name">Name, Value</td>
-<td>Optional name-value arguments.</td>
+<td>Arguments nom-valeur optionnels.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">B</td>
-<td>Resized image, returned as a numeric, logical array of the same data type as the input image, A.</td>
+<td>Image redimensionnée, renvoyée sous forme de tableau numérique ou logique du même type que l'image d'entrée A.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>Resized indexed image, returned as a numeric array of the same data type as the input indexed image, X.</td>
+<td>Image indexée redimensionnée, renvoyée sous forme de tableau numérique du même type que l'image indexée d'entrée X.</td>
 </tr>
 <tr>
 <td class="param-name">newmap</td>
-<td>Colormap of the resized indexed image Y, returned as an m-by-3 numeric matrix. By default, imresize returns a new, optimized colormap with the resized image. To return the original colormap, use the Colormap name-value argument.</td>
+<td>Colormap de l'image indexée redimensionnée Y, renvoyée comme une matrice m-by-3. Par défaut, imresize retourne une nouvelle colormap optimisée. Pour retourner la colormap originale, utilisez l'argument nom-valeur 'Colormap'.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.</p>
-        <p>For numeric and logical images, the default interpolation method is 'bicubic'.</p>
-        <p>When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function.</p>
-        <p>For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument.</p>
-        <p>Supported interpolation methods include</p>
+        <p>La fonction <b>imresize</b> redimensionne une image selon un facteur d'échelle ou une taille de sortie spécifiée. Elle prend en charge les images en niveaux de gris, RGB, binaires, ainsi que les images indexées avec colormap.</p>
+        <p>Pour les images numériques et logiques, la méthode d'interpolation par défaut est 'bicubic'.</p>
+        <p>Lors du redimensionnement, imresize applique le facteur d'échelle aux dimensions ligne et colonne sauf si un vecteur à deux éléments est spécifié. Si la taille de sortie n'est pas entière, imresize arrondit vers le haut en utilisant la fonction ceil.</p>
+        <p>Pour les images indexées, imresize retourne par défaut l'image redimensionnée et une colormap optimisée. La colormap originale peut être retournée en utilisant l'argument nom-valeur 'Colormap'.</p>
+        <p>Les méthodes d'interpolation prises en charge incluent :</p>
         <ul>
-            <li>'nearest': Nearest neighbor interpolation</li>
-            <li>'bilinear': Bilinear interpolation</li>
-            <li>'bicubic': Bicubic interpolation</li>
-            <li>'box': Box-shaped kernel</li>
-            <li>'lanczos2': Lanczos-2 kernel</li>
-            <li>'lanczos3': Lanczos-3 kernel</li>
+            <li>'nearest' : interpolation au plus proche voisin</li>
+            <li>'bilinear' : interpolation bilinéaire</li>
+            <li>'bicubic' : interpolation bicubique</li>
+            <li>'box' : noyau en forme de boîte</li>
+            <li>'lanczos2' : noyau Lanczos-2</li>
+            <li>'lanczos3' : noyau Lanczos-3</li>
         </ul>
-        <p>Supported Pairs Name, Value:</p>
+        <p>Paires nom-valeur prises en charge :</p>
         <ul>
-            <li>'Antialiasing': true/false (default: true)</li>
-            <li>'Colormap': 'optimized' (default) or 'original' (indexed image only)</li>
-            <li>'Dither': true (default) or false (indexed image only)</li>
+            <li>'Antialiasing' : true/false (par défaut : true)</li>
+            <li>'Colormap' : 'optimized' (par défaut) ou 'original' (image indexée uniquement)</li>
+            <li>'Dither' : true (par défaut) ou false (image indexée uniquement)</li>
         </ul>
-        <p>Limitations:</p>
+        <p>Limitations :</p>
         <ul>
-            <li>Input must be nonsparse and real for numeric images.</li>
-            <li>For large scale factors, output image size may be significantly larger than input.</li>
-            <li>Bicubic interpolation can produce pixel values outside the original range.</li>
+            <li>L'entrée doit être non-creuse (nonsparse) et réelle pour les images numériques.</li>
+            <li>Pour de grands facteurs d'échelle, la taille de l'image de sortie peut être significativement plus grande que l'entrée.</li>
+            <li>L'interpolation bicubique peut produire des valeurs de pixels en dehors de la plage d'origine.</li>
         </ul>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">imresize example</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -179,14 +177,14 @@ title('Resized Image');</code><button class="copy-btn" type="button" onclick="co
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../image_processing/imrotate.html">imrotate</a><a class="see-also-link" href="../image_processing/imshow.html">imshow</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -194,13 +192,13 @@ title('Resized Image');</code><button class="copy-btn" type="button" onclick="co
 </tr>
 <tr>
 <td class="version">1.15.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

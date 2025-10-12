@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">schur</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Schur decomposition.</div></div>
+<div class="section syntax-section"><div class="subtitle">Décomposition de Schur.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">T = schur(M)
 T = schur(M, 'real')
 T = schur(M, 'complex')
@@ -60,24 +59,24 @@ T = schur(M, 'complex')
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>a numeric value: scalar or square matrix (double or single)</td>
+<td>une valeur numérique : scalaire ou matrice carrée (double ou simple précision)</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -92,18 +91,18 @@ T = schur(M, 'complex')
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>schur(M)</b> computes the schur decomposition.</p>
-            <p>With the flag 'complex', the complex schur form is upper triangular with the eigenvalues of M on the diagonal.</p>
-            <p>If A is real, the real schur form is returned.</p>
-            <p>With the flag 'real', the real schur form has the real eigenvalues on the diagonal and the complex eigenvalues in 2-by-2 blocks on the diagonal.</p>
+    <p>
+        <b>schur(M)</b> calcule la décomposition de Schur.</p>
+        <p>Avec le drapeau 'complex', la forme de Schur complexe est triangulaire supérieure avec les valeurs propres de M sur la diagonale.</p>
+        <p>Si A est réelle, la forme de Schur réelle est retournée.</p>
+        <p>Avec le drapeau 'real', la forme de Schur réelle place les valeurs propres réelles sur la diagonale et les valeurs propres complexes en blocs 2x2 sur la diagonale.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">X = [1 2; 3 4];
 [U, T] = schur(X)
@@ -113,12 +112,12 @@ T = schur(M, 'complex')
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../linear_algebra/eig.html">eig</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -126,13 +125,13 @@ T = schur(M, 'complex')
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

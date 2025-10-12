@@ -2,26 +2,26 @@
 <help_summary>
   <toc>
     <module>dictionary</module>
-    <section name="Dictionaries">
+    <section name="Dictionnaires">
       <chapter_description>
-      <p>The Dictionary module provides tools for working with key-value mappings in Nelson.</p>
-      <p>It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.</p>
-      <p>This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.</p>
+      <p>Le module Dictionnaire fournit des outils pour travailler avec des paires clé-valeur dans Nelson.</p>
+      <p>Il permet la création et la configuration de dictionnaires avec des types définis pour les clés et les valeurs, la consultation et la modification des entrées, ainsi que la gestion de la structure globale.</p>
+      <p>Ce module permet un stockage, une récupération et une manipulation efficaces des données indexées par des clés uniques, ce qui le rend adapté aux tableaux associatifs, recherches et gestion dynamique des données.</p>
     </chapter_description>
-      <keyword name="configureDictionary" link="configureDictionary.html" description="Generate a dictionary with defined key and value types."/>
-      <keyword name="dictionary" link="dictionary.html" description="Object that maps unique keys to values."/>
-      <keyword name="entries" link="entries.html" description="Key-value pairs of dictionary."/>
-      <keyword name="insert" link="insert.html" description="Add entries to a dictionary."/>
-      <keyword name="isConfigured" link="isConfigured.html" description="Check if dictionary has types assigned to keys and values."/>
-      <keyword name="isKey" link="isKey.html" description="Check if dictionary contains key"/>
-      <keyword name="keyHash" link="keyHash.html" description="Create a hash code for a dictionary key."/>
-      <keyword name="keyMatch" link="keyMatch.html" description="Check whether two dictionary keys are same."/>
-      <keyword name="keys" link="keys.html" description="Keys of dictionary."/>
-      <keyword name="lookup" link="lookup.html" description="Find value in dictionary by key."/>
-      <keyword name="numEntries" link="numEntries.html" description="Number of key-value pairs in dictionary."/>
-      <keyword name="remove" link="remove.html" description="Remove dictionary entries."/>
-      <keyword name="types" link="types.html" description="Types of dictionary keys and values."/>
-      <keyword name="values" link="values.html" description="Values of dictionary."/>
+      <keyword name="configureDictionary" link="configureDictionary.html" description="Génère un dictionnaire avec des types définis pour les clés et les valeurs."/>
+      <keyword name="dictionary" link="dictionary.html" description="Objet qui associe des clés uniques à des valeurs."/>
+      <keyword name="entries" link="entries.html" description="Paires clé-valeur du dictionnaire."/>
+      <keyword name="insert" link="insert.html" description="Ajouter des entrées à un dictionnaire."/>
+      <keyword name="isConfigured" link="isConfigured.html" description="Vérifie si le dictionnaire a des types assignés aux clés et aux valeurs."/>
+      <keyword name="isKey" link="isKey.html" description="Vérifie si le dictionnaire contient la clé"/>
+      <keyword name="keyHash" link="keyHash.html" description="Créer un code de hachage pour une clé de dictionnaire."/>
+      <keyword name="keyMatch" link="keyMatch.html" description="Vérifie si deux clés de dictionnaire sont identiques."/>
+      <keyword name="keys" link="keys.html" description="Clés du dictionnaire."/>
+      <keyword name="lookup" link="lookup.html" description="Trouver la valeur dans le dictionnaire par clé."/>
+      <keyword name="numEntries" link="numEntries.html" description="Nombre de paires clé-valeur dans le dictionnaire."/>
+      <keyword name="remove" link="remove.html" description="Supprimer des entrées du dictionnaire."/>
+      <keyword name="types" link="types.html" description="Types des clés et valeurs du dictionnaire."/>
+      <keyword name="values" link="values.html" description="Valeurs du dictionnaire."/>
     </section>
   </toc>
 </help_summary>

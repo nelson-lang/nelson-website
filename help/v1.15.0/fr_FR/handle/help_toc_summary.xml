@@ -4,19 +4,19 @@
     <module>handle</module>
     <section name="Handle">
       <chapter_description>
-        <p>The Handle module provides tools for creating and manipulating handle objects in Nelson.</p>
-        <p>Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.</p>
-        <p>This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.</p>
+        <p>Le module Handle fournit des outils pour créer et manipuler des objets handle dans Nelson.</p>
+        <p>Les objets handle sont des références légères vers des structures de données plus volumineuses, permettant une gestion efficace de la mémoire et le partage de données entre différentes parties d'un programme.</p>
+        <p>Ce module inclut des fonctions pour créer, copier et détruire des objets handle, ainsi que pour gérer leur durée de vie et garantir un nettoyage approprié.</p>
     </chapter_description>
-      <keyword name="delete" link="delete.html" description="delete handle objects."/>
-      <keyword name="get" link="get.html" description="Retrieve a property value from an handle object."/>
-      <keyword name="invoke" link="invoke.html" description="Invoke method on an handle object."/>
-      <keyword name="ismethod" link="ismethod.html" description="Return true if method of handle object."/>
-      <keyword name="isprop" link="isprop.html" description="Return true if property of handle object."/>
-      <keyword name="isvalid" link="isvalid.html" description="Return true if variable h is a valid handle."/>
-      <keyword name="methods" link="methods.html" description="Returns the methods name of an object handle."/>
-      <keyword name="properties" link="properties.html" description="Returns the properties name of an object handle."/>
-      <keyword name="set" link="set.html" description="Set a property value of an handle object."/>
+      <keyword name="delete" link="delete.html" description="supprime des objets handle."/>
+      <keyword name="get" link="get.html" description="Récupère la valeur d'une propriété d'un objet handle."/>
+      <keyword name="invoke" link="invoke.html" description="Invoque une méthode sur un objet handle."/>
+      <keyword name="ismethod" link="ismethod.html" description="Retourne vrai si c'est une méthode d'un objet handle."/>
+      <keyword name="isprop" link="isprop.html" description="Retourne vrai si c'est une propriété d'un objet handle."/>
+      <keyword name="isvalid" link="isvalid.html" description="Retourne vrai si la variable h est un handle valide."/>
+      <keyword name="methods" link="methods.html" description="Renvoie les noms des méthodes d'un objet handle."/>
+      <keyword name="properties" link="properties.html" description="Renvoie les noms des propriétés d'un objet handle."/>
+      <keyword name="set" link="set.html" description="Définit la valeur d'une propriété d'un objet handle."/>
     </section>
   </toc>
 </help_summary>

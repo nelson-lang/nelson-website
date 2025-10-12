@@ -45,56 +45,55 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">hsvd</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Hankel singular values of dynamic system.</div></div>
+<div class="section syntax-section"><div class="subtitle">Décomposition en valeurs singulières de Hankel.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">hsv = hsvd(sys)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">sys</td>
-<td>State-space model</td>
+<td>Modèle d'état-espace</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">hsv</td>
-<td>Hankel singular values.</td>
+<td>Valeurs singulières de Hankel.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>hsv = hsvd(sys)</b> calculates the Hankel singular values (hsv) for the dynamic system <b>sys</b>.</p>
-            <p>These singular values are computed in state coordinates that balance the energy transfers from input to state and from state to output.</p>
-            <p>The Hankel singular values serve as a measure of the impact of each state on the input/output characteristics of the system.</p>
-            <p>Analogous to how singular values relate to matrix rank, small Hankel singular values indicate states that may be omitted to streamline the model and simplify its representation.</p>
+            <b>hsv = hsvd(sys)</b> calcule les valeurs singulières de Hankel (hsv) pour le système dynamique <b>sys</b>.</p>
+            <p>Ces valeurs singulières sont calculées dans des coordonnées d'état qui équilibrent les transferts d'énergie de l'entrée vers l'état et de l'état vers la sortie.</p>
+            <p>Les valeurs singulières de Hankel servent de mesure de l'impact de chaque état sur les caractéristiques d'entrée/sortie du système.</p>
+            <p>À l'instar de la façon dont les valeurs singulières sont liées au rang d'une matrice, de petites valeurs singulières de Hankel indiquent des états qui peuvent être omis pour rationaliser le modèle et simplifier sa représentation.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [ -0.04165  0.0000  4.9200  -4.9200  0.0000  0.0000  0.0000;
 -5.2100  -12.500  0.0000   0.0000  0.0000  0.0000  0.0000;
@@ -124,12 +123,12 @@ hsv = hsvd(sys)</code><button class="copy-btn" type="button" onclick="copyExampl
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../control_system/balreal.html">balreal</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -137,13 +136,13 @@ hsv = hsvd(sys)</code><button class="copy-btn" type="button" onclick="copyExampl
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

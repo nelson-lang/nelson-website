@@ -45,77 +45,76 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_mc01td</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Checking stability of a given real polynomial.</div></div>
+<div class="section syntax-section"><div class="subtitle">Vérification de la stabilité d'un polynôme réel donné.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[DP_OUT, STABLE, NZ, IWARN, INFO] = slicot_mc01td(DICO, DP_IN, P)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">DICO</td>
-<td>Indicates whether the stability test to be applied to P(x) is in the continuous-time or discrete-time case as follows: = 'C':  Continuous-time case; = 'D':  Discrete-time case.</td>
+<td>Indique si le test de stabilité à appliquer à P(x) est en temps continu ou discret : = 'C' : continu ; = 'D' : discret.</td>
 </tr>
 <tr>
 <td class="param-name">DP_IN</td>
-<td>The degree of the polynomial P(x).</td>
+<td>Le degré du polynôme P(x).</td>
 </tr>
 <tr>
 <td class="param-name">P</td>
-<td>This array must contain the coefficients of P(x) in increasing powers of x.</td>
+<td>Ce tableau doit contenir les coefficients de P(x) par puissances croissantes de x.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">DP_OUT</td>
-<td>if P(DP+1) = 0.0 on entry, then DP contains the index of the highest power of x for which P(DP+1) != 0.0.</td>
+<td>Si P(DP+1) = 0.0 à l'entrée, alors DP contient l'indice de la plus haute puissance de x pour laquelle P(DP+1) != 0.0.</td>
 </tr>
 <tr>
 <td class="param-name">STABLE</td>
-<td>Contains the value int32(1) if P(x) is stable and the value int32(0) otherwise.</td>
+<td>Contient la valeur int32(1) si P(x) est stable et int32(0) sinon.</td>
 </tr>
 <tr>
 <td class="param-name">NZ</td>
-<td>If INFO = 0, contains the number of unstable zeros - that is, the number of zeros of P(x) in the right half-plane if DICO = 'C' or the number of zeros of P(x) outside the unit circle if DICO = 'D'.</td>
+<td>Si INFO = 0, contient le nombre de zéros instables - c.-à-d. le nombre de zéros de P(x) dans le demi-plan droit si DICO = 'C' ou le nombre de zéros de P(x) à l'extérieur du cercle unité si DICO = 'D'.</td>
 </tr>
 <tr>
 <td class="param-name">IWARN</td>
-<td>= 0:  no warning;</td>
+<td>= 0 : pas d'avertissement ;</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>= 0:  successful exit; = 1:  if on entry, P(x) is the zero polynomial;= 2:  if the polynomial P(x) is most probably unstable.</td>
+<td>= 0 : sortie réussie ; = 1 : si à l'entrée, P(x) est le polynôme nul ; = 2 : si le polynôme P(x) est très probablement instable.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To determine whether or not a given polynomial P(x) with real coefficients is stable, either in the continuous-time or discrete-time case.</p>
-        <p>A polynomial is said to be stable in the continuous-time case if all its zeros lie in the left half-plane, and stable in the discrete-time case if all its zeros lie inside the unit circle.</p>
+        <p>Déterminer si un polynôme P(x) à coefficients réels est stable, soit en temps continu, soit en temps discret.</p>
+        <p>Un polynôme est dit stable en continu si tous ses zéros se trouvent dans le demi-plan gauche, et stable en discret si tous ses zéros se trouvent à l'intérieur du cercle unité.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">DICO = 'C';
 DP_IN = 4;
@@ -129,12 +128,12 @@ P = [2.0  0.0  1.0  -1.0  1.0];
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/MC01TD.html" target="_blank">http://slicot.org/objects/software/shared/doc/MC01TD.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -142,13 +141,13 @@ P = [2.0  0.0  1.0  -1.0  1.0];
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

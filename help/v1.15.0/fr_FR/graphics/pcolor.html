@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pcolor</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Pseudocolor plot.</div></div>
+<div class="section syntax-section"><div class="subtitle">Graphique en pseudo-couleurs.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">pcolor(C)
 pcolor(X, Y, C)
 pcolor(parent, ...)
@@ -58,56 +57,59 @@ go = pcolor(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">C</td>
-<td>Color array: m-by-n-by-3 array of RGB triplets.</td>
+<td>Tableau de couleurs : tableau m-par-n-par-3 de triplets RGB.</td>
 </tr>
 <tr>
 <td class="param-name">parent</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">go</td>
-<td>a graphics object: surface type.</td>
+<td>Objet graphique : type surface.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>pcolor(C)</b> creates a pseudocolor plot of the data in the matrix <b>C</b>, where each cell or 'face' in the plot is colored according to the corresponding value in the matrix.</p>
-            <p>The color of each face is determined by a colormap, which maps data values to colors.</p>
-        </div>
+            <b>pcolor(C)</b> crée un graphique en pseudo-couleurs des données de la matrice <b>C</b>, où chaque cellule ou « face » du graphique est colorée selon la valeur correspondante dans la matrice.
+        </p>
+        <p>
+            La couleur de chaque face est déterminée par une palette de couleurs (colormap), qui associe les valeurs des données à des couleurs.
+        </p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">X = linspace(0, 2*pi, 100);
@@ -134,14 +136,14 @@ pcolor(ax2, C2)</code><button class="copy-btn" type="button" onclick="copyExampl
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/surf.html">surf</a><a class="see-also-link" href="../elementary_functions/meshgrid.html">meshgrid</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -149,13 +151,13 @@ pcolor(ax2, C2)</code><button class="copy-btn" type="button" onclick="copyExampl
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -48,8 +48,7 @@
 <div class="section syntax-section"><div class="subtitle">Write a matrix to a file.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">writematrix(M)
 writematrix(M, filename)
 writematrix(..., Name, Value)
@@ -57,7 +56,7 @@ writematrix(..., Name, Value)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -79,7 +78,7 @@ writematrix(..., Name, Value)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
             <b>writematrix</b> writes an numeric matrix to an CSV format file.</p>
@@ -114,62 +113,62 @@ writematrix(..., Name, Value)
                         <p>Syntax: <b>'Delimiter', delimiter</b>
                     </p>
                     <p>Available Delimiters: Only applicable for delimited text files.</p>
-                    
+                    <table>
                         
-                            
-                                Specifier
-                                Alternative
-                                Description
-                            
+                            <tr>
+                                <th>Specifier</th>
+                                <th>Alternative</th>
+                                <th>Description</th>
+                            </tr>
                         
                         
-                            
-                                
+                            <tr>
+                                <td>
                                     ','
-                                
-                                
+                                </td>
+                                <td>
                                     'comma'
-                                
-                                Comma (default)
-                            
-                            
-                                
+                                </td>
+                                <td>Comma (default)</td>
+                            </tr>
+                            <tr>
+                                <td>
                                     ' '
-                                
-                                
+                                </td>
+                                <td>
                                     'space'
-                                
-                                Space character
-                            
-                            
-                                
+                                </td>
+                                <td>Space character</td>
+                            </tr>
+                            <tr>
+                                <td>
                                     '\t'
-                                
-                                
+                                </td>
+                                <td>
                                     'tab'
-                                
-                                Tab character
-                            
-                            
-                                
+                                </td>
+                                <td>Tab character</td>
+                            </tr>
+                            <tr>
+                                <td>
                                     ';'
-                                
-                                
+                                </td>
+                                <td>
                                     'semi'
-                                
-                                Semicolon
-                            
-                            
-                                
+                                </td>
+                                <td>Semicolon</td>
+                            </tr>
+                            <tr>
+                                <td>
                                     '|'
-                                
-                                
+                                </td>
+                                <td>
                                     'bar'
-                                
-                                Vertical bar
-                            
+                                </td>
+                                <td>Vertical bar</td>
+                            </tr>
                         
-                    
+                    </table>
                     <p></p>
                     <p>
                         <b>QuoteStrings</b>: Controls text quoting behavior (Only applicable for delimited text files).</p>
@@ -188,7 +187,7 @@ writematrix(..., Name, Value)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [Inf, -Inf, NaN, 3];
 filename = [tempdir(), 'writematrix_example.csv'];
@@ -198,14 +197,14 @@ R = fileread(filename)</code><button class="copy-btn" type="button" onclick="cop
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../spreadsheet/readcell.html">readcell</a><a class="see-also-link" href="../spreadsheet/csvwrite.html">csvwrite</a><a class="see-also-link" href="../spreadsheet/dlmread.html">dlmread</a><a class="see-also-link" href="../stream_manager/fileread.html">fileread</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -219,7 +218,7 @@ R = fileread(filename)</code><button class="copy-btn" type="button" onclick="cop
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

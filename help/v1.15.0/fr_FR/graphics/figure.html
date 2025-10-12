@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">figure</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Creates an figure window.</div></div>
+<div class="section syntax-section"><div class="subtitle">Crée une fenêtre figure.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">f = figure()
 f = figure(ID)
 f = figure(H)
@@ -60,120 +59,239 @@ f = figure(H, propertyName, propertyValue)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">ID</td>
-<td>a scalar integer value: find or creates with ID.</td>
+<td>Un entier scalaire : recherche ou crée avec cet ID.</td>
 </tr>
 <tr>
 <td class="param-name">H</td>
-<td>a scalar graphics object on an existing figure.</td>
+<td>Un objet graphique scalaire sur une figure existante.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">f</td>
-<td>a graphics object: figure handle.</td>
+<td>Un objet graphique : handle de figure.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>figure</b> creates figure.</p>
-            <p>Clicking on an figure automatically sets it as the current figure object.</p>
-            <p></p>
-            <p>
-                <b>Properties</b>:</p>
+                <p>
+                        <b>figure</b> crée une figure.</p>
+                <p>Un clic sur une figure la définit automatiquement comme figure courante.</p>
                 <p></p>
                 <p>
-                    <b>AlphaMap</b>: Transparency map for Axes content.</p>
-                    <p>
-                        <b>Children</b>: Children of figure: empty array (default) or 1-D array of objects.</p>
-                        <p>
-                            <b>Color</b>: Background color [R, G, B] or string (example: 'blue') or hexadecimal color code ('#FFAA00').</p>
-                            <p>
-                                <b>Colormap</b>: Color map for axes content of figure: m-by-3 array of RGB triplets, parula (default).</p>
-                                <p>
-                                    <b>CurrentAxes</b>: Target axes in current figure: Axes object.</p>
-                                    <p>
-                                        <b>DevicePixelRatio</b>: ratio between physical pixels and device-independent pixels for the figure. Common values are 1.0 on normal displays and 2.0 on Apple "retina" displays.</p>
-                                        <p>
-                                            <b>Name</b>: Name (default '').</p>
-                                            <p>
-                                                <b>GraphicsSmoothing</b>: GraphicsSmoothing (default 'on').</p>
-                                                <p>
-                                                    <b>MenuBar</b>:  Figure menu bar display: 'none' or 'figure' (default).</p>
-                                                    <p>
-                                                        <b>NextPlot</b>: Directive on how to add next plot: 'new', 'replace', 'replacechildren' or 'add' (default).</p>
-                                                        <p>
-                                                            <b>Number</b>: Figure Number.</p>
-                                                            <p>
-                                                                <b>NumberTitle</b>: Use number title: 'off' or 'on' (default).</p>
-                                                                <p>
-                                                                    <b>Parent</b>: Figure parent: root graphics object.</p>
-                                                                    <p>
-                                                                        <b>Position</b>: Location and size of drawable area: [left, bottom, width, height]</p>
-                                                                        <p>'width' and 'height' define the size of the window. 'left' and 'bottom' define the position of the first addressable pixel in the lower left corner of the window</p>
-                                                                        <p>
-                                                                            <b>Resize</b>: Resize figure: 'on' or 'off' (default).</p>
-                                                                            <p>
-                                                                                <b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
-                                                                                <p>
-                                                                                    <b>ToolBar</b>:  Figure toolbar display: 'none', 'auto' (default), 'figure'.</p>
-                                                                                    <p>
-                                                                                        <b>Type</b>: Type 'figure'.</p>
-                                                                                        <p>
-                                                                                            <b>UserData</b>: User data: array or [] (default).</p>
-                                                                                            <p>
-                                                                                                <b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
-                                                                                                <p>
-                                                                                                    <b>DrawLater</b>: is used to delay a huge succession of graphics commands (implying several drawings or redrawings): 'on' or 'off' (default).</p>
-                                                                                                    <p>
-                                                                                                        <b>CloseRequestFcn</b>:  Close request callback: function handle, cell array, character vector with 'closereq' (default).</p>
-                                                                                                        <p>
-                                                                                                            <b>CreateFcn</b> Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-                                                                                                            <p>
-                                                                                                                <b>DeleteFcn</b> Callback (function handle, string or cell) called when object is deleted.</p>
-                                                                                                                <p>
-                                                                                                                    <b>KeyPressFcn</b> Callback (function handle, string or cell) called when a key is pressed while the figure has the focus.</p>
-                                                                                                                    <p>
-                                                                                                                        <b>KeyReleaseFcn</b> Callback (function handle, string or cell) called when a key is released while the figure has the focus.</p>
-                                                                                                                        <p>
-                                                                                                                            <b>ButtonDownFcn</b> Callback (function handle, string or cell) called when a mouse button is pressed while the figure has the focus.</p>
-                                                                                                                            <p>
-                                                                                                                                <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-                                                                                                                                <p>
-                                                                                                                                    <b>WindowState</b> Flag indicating that the Window state: 'normal', 'minimized', 'maximized', 'fullscreen'.</p>
-                                                                                                                                </div>
+                        <b>Propriétés</b> :</p>
+                <table>
+                        <tr>
+                                <th>Propriété</th>
+                                <th>Description</th>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>AlphaMap</b>
+                                </td>
+                                <td>Carte de transparence pour le contenu des axes.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Children</b>
+                                </td>
+                                <td>Enfants de la figure : tableau vide (par défaut) ou tableau 1-D d'objets.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Color</b>
+                                </td>
+                                <td>Couleur de fond [R, G, B] ou chaîne (exemple : 'blue') ou code couleur hexadécimal ('#FFAA00').</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Colormap</b>
+                                </td>
+                                <td>Palette de couleurs pour le contenu des axes de la figure : matrice m×3 de triplets RGB, parula (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>CurrentAxes</b>
+                                </td>
+                                <td>Axes cibles dans la figure courante : objet Axes.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>DevicePixelRatio</b>
+                                </td>
+                                <td>Rapport entre les pixels physiques et les pixels indépendants du périphérique pour la figure. Valeurs courantes : 1.0 sur les écrans classiques et 2.0 sur les écrans Apple "retina".</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Name</b>
+                                </td>
+                                <td>Nom ('' par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>GraphicsSmoothing</b>
+                                </td>
+                                <td>Adoucissement graphique (par défaut 'on').</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>MenuBar</b>
+                                </td>
+                                <td>Affichage de la barre de menu de la figure : 'none' ou 'figure' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>NextPlot</b>
+                                </td>
+                                <td>Directive sur la façon d'ajouter le prochain tracé : 'new', 'replace', 'replacechildren' ou 'add' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Number</b>
+                                </td>
+                                <td>Numéro de la figure.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>NumberTitle</b>
+                                </td>
+                                <td>Utiliser le numéro dans le titre : 'off' ou 'on' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Parent</b>
+                                </td>
+                                <td>Parent de la figure : objet graphique racine.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Position</b>
+                                </td>
+                                <td>Emplacement et taille de la zone dessinable : [gauche, bas, largeur, hauteur]. 'largeur' et 'hauteur' définissent la taille de la fenêtre. 'gauche' et 'bas' définissent la position du premier pixel adressable dans le coin inférieur gauche de la fenêtre.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Resize</b>
+                                </td>
+                                <td>Redimensionner la figure : 'on' ou 'off' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Tag</b>
+                                </td>
+                                <td>Identifiant de l'objet : chaîne, vecteur de caractères, '' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>ToolBar</b>
+                                </td>
+                                <td>Affichage de la barre d'outils de la figure : 'none', 'auto' (par défaut), 'figure'.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Type</b>
+                                </td>
+                                <td>Type 'figure'.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>UserData</b>
+                                </td>
+                                <td>Données utilisateur : tableau ou [] (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>Visible</b>
+                                </td>
+                                <td>État de visibilité : 'off' ou 'on' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>DrawLater</b>
+                                </td>
+                                <td>Permet de retarder une grande succession de commandes graphiques (impliquant plusieurs tracés ou retracés) : 'on' ou 'off' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>CloseRequestFcn</b>
+                                </td>
+                                <td>Callback de demande de fermeture : handle de fonction, tableau de cellules, vecteur de caractères avec 'closereq' (par défaut).</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>CreateFcn</b>
+                                </td>
+                                <td>Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>DeleteFcn</b>
+                                </td>
+                                <td>Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>KeyPressFcn</b>
+                                </td>
+                                <td>Callback (fonction, chaîne ou cellule) appelée lorsqu'une touche est enfoncée alors que la figure a le focus.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>KeyReleaseFcn</b>
+                                </td>
+                                <td>Callback (fonction, chaîne ou cellule) appelée lorsqu'une touche est relâchée alors que la figure a le focus.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>ButtonDownFcn</b>
+                                </td>
+                                <td>Callback (fonction, chaîne ou cellule) appelée lorsqu'un bouton de souris est enfoncé alors que la figure a le focus.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>BeingDeleted</b>
+                                </td>
+                                <td>Indique que l'objet est en cours de suppression.</td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <b>WindowState</b>
+                                </td>
+                                <td>Indique l'état de la fenêtre : 'normal', 'minimized', 'maximized', 'fullscreen'.</td>
+                        </tr>
+                </table>
+        </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure(1)
 g = figure(2)
@@ -185,14 +303,14 @@ figure('Name', 'Hello')</code><button class="copy-btn" type="button" onclick="co
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/gcf.html">gcf</a><a class="see-also-link" href="../graphics/close.html">close</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -200,37 +318,37 @@ figure('Name', 'Hello')</code><button class="copy-btn" type="button" onclick="co
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.2.0</td>
-<td>Clicking on an figure automatically sets it as the current figure object.</td>
+<td>Un clic sur une figure la définit automatiquement comme figure courante.</td>
 </tr>
 <tr>
 <td class="version">1.7.0</td>
-<td>CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn  callback added.</td>
+<td>Ajout des callbacks CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn.</td>
 </tr>
 <tr>
 <td class="version">--</td>
-<td>BeingDeleted property added.</td>
+<td>Ajout de la propriété BeingDeleted.</td>
 </tr>
 <tr>
 <td class="version">1.8.0</td>
-<td>Resize property added.</td>
+<td>Ajout de la propriété Resize.</td>
 </tr>
 <tr>
 <td class="version">1.13.0</td>
-<td>DevicePixelRatio property added.</td>
+<td>Ajout de la propriété DevicePixelRatio.</td>
 </tr>
 <tr>
 <td class="version">1.14.0</td>
-<td>WindowState property added.</td>
+<td>Ajout de la propriété WindowState.</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

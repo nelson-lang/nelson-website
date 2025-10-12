@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">stairs</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Stairstep graph.</div></div>
+<div class="section syntax-section"><div class="subtitle">Graphique en escalier.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">stairs(Y)
 stairs(X, Y)
 stairs(..., LineSpec)
@@ -61,78 +60,79 @@ h = stairs(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x values.</td>
+<td>Valeurs x.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y values.</td>
+<td>Valeurs y.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style, marker and/or color: character vector or scalar string.</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou chaîne scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>Axes object.</td>
+<td>Objet axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">h</td>
-<td>line object.</td>
+<td>Objet ligne.</td>
 </tr>
 <tr>
 <td class="param-name">xb</td>
-<td>x values for use with plot</td>
+<td>Valeurs x à utiliser avec plot</td>
 </tr>
 <tr>
 <td class="param-name">yb</td>
-<td>y values for use with plot</td>
+<td>Valeurs y à utiliser avec plot</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Stairstep graphs are a valuable tool for creating time-history plots of digitally sampled data.</p>
         <p>
-            <b>stairs(Y)</b> function is used to generate such graphs by plotting the elements of the vector <b>Y.</b>
+    Les graphiques en escalier sont un outil précieux pour créer des graphiques temporels de données échantillonnées numériquement.</p>
+        <p>
+            La fonction <b>stairs(Y)</b> permet de générer de tels graphiques en traçant les éléments du vecteur <b>Y</b>.
         </p>
-        <p>If <b>Y</b> is a matrix, it draws one line for each column, with the color of the lines determined by the ColorOrder property of the axes.</p>
-        <p>In the case of a vector <b>Y</b>, the x-axis scale spans from 1 to the length of <b>Y</b>, while for a matrix <b>Y</b>, the x-axis scale ranges from 1 to the number of rows in <b>Y</b>.</p>
+        <p>Si <b>Y</b> est une matrice, une ligne est tracée pour chaque colonne, la couleur des lignes étant déterminée par la propriété ColorOrder des axes.</p>
+        <p>Dans le cas d'un vecteur <b>Y</b>, l'axe x s'étend de 1 à la longueur de <b>Y</b>, tandis que pour une matrice <b>Y</b>, l'axe x va de 1 au nombre de lignes de <b>Y</b>.</p>
         <p>
-            <b>stairs(X, Y)</b> allows you to plot the elements in <b>Y</b> at specific locations defined by the vector <b>X</b>.</p>
-            <p>It's important to note that the elements in <b>X</b> must be in a monotonic order to create a valid stairstep graph.</p>
-        </div>
+            <b>stairs(X, Y)</b> permet de tracer les éléments de <b>Y</b> aux emplacements spécifiques définis par le vecteur <b>X</b>.</p>
+        <p>Il est important de noter que les éléments de <b>X</b> doivent être dans un ordre monotone pour créer un graphique en escalier valide.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -161,12 +161,12 @@ h(2).MarkerFaceColor = 'm';</code><button class="copy-btn" type="button" onclick
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../graphics/plot.html">plot</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -174,13 +174,13 @@ h(2).MarkerFaceColor = 'm';</code><button class="copy-btn" type="button" onclick
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

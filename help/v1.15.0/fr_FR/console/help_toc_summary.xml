@@ -4,13 +4,13 @@
     <module>console</module>
     <section name="Console">
       <chapter_description>
-        <p>The Console module manages interaction with Nelson’s command window.</p>
-        <p>It provides tools to control the display, handle user input, and query terminal properties.</p>
-        <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p>
+        <p>Le module Console gère l'interaction avec la fenêtre de commande de Nelson.</p>
+        <p>Il fournit des outils pour contrôler l'affichage, gérer les entrées utilisateur et interroger les propriétés du terminal.</p>
+        <p>Ces fonctionnalités permettent aux scripts et applications de communiquer directement avec l'utilisateur via la console, facilitant la construction de workflows interactifs et l'adaptation de la sortie à l'environnement terminal actuel.</p>
     </chapter_description>
-      <keyword name="clc" link="clc.html" description="Clear Command Window."/>
-      <keyword name="input" link="input.html" description="Display prompt and wait for user input."/>
-      <keyword name="terminal_size" link="terminal_size.html" description="Query the size of the terminal window."/>
+      <keyword name="clc" link="clc.html" description="Effacer la fenêtre de commande."/>
+      <keyword name="input" link="input.html" description="Afficher une invite et attendre l'entrée utilisateur."/>
+      <keyword name="terminal_size" link="terminal_size.html" description="Interroger la taille de la fenêtre du terminal."/>
     </section>
   </toc>
 </help_summary>

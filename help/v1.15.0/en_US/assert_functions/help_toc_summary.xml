@@ -4,13 +4,13 @@
     <module>assert_functions</module>
     <section name="Assertion functions">
       <chapter_description>
-    <p>The Asserts Functions module in Nelson provides tools for validating program behavior and
+        <p>The Asserts Functions module in Nelson provides tools for validating program behavior and
       verifying conditions during development or testing.</p>
-    <p>These functions help ensure that computations and logical conditions meet expected criteria,
+        <p>These functions help ensure that computations and logical conditions meet expected criteria,
       improving code reliability and catching errors early.</p>
-  </chapter_description>
+    </chapter_description>
       <keyword name="assert" link="assert.html" description="Check that condition is true."/>
-      <keyword name="assert_checkerror" link="assert_checkerror.html" description="Check that an command raises the expected error."/>
+      <keyword name="assert_checkerror" link="assert_checkerror.html" description="Check that a command raises the expected error."/>
       <keyword name="assert_isapprox" link="assert_isapprox.html" description="Check that computed and expected values are approximately equal."/>
       <keyword name="assert_isequal" link="assert_isequal.html" description="Check that computed and expected values are equal."/>
       <keyword name="assert_isfalse" link="assert_isfalse.html" description="Check that condition is false."/>

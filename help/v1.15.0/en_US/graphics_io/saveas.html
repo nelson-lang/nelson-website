@@ -48,15 +48,14 @@
 <div class="section syntax-section"><div class="subtitle">Save figure to specific file format.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">saveas(fig, filename)
 saveas(fig, filename, formattype)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -78,71 +77,71 @@ saveas(fig, filename, formattype)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
             <b>saveas</b> save figure to specific file format.</p>
             <p>
                 <b>supported formats</b>:</p>
-                
-                    
-                        Option
-                        Format
-                        File extension
-                    
-                    
-                        svg
-                        SVG (scalable vector graphics)
-                        .svg
-                    
-                    
-                        pdf
-                        Full page Portable Document Format (PDF) color
-                        .pdf
-                    
-                    
-                        png
-                        PNG 24-bit
-                        .png
-                    
-                    
-                        jpg
-                        JPEG 24-bit
-                        .jpg
-                    
-                    
-                        gif
-                        Graphics Interchange Format
-                        .gif
-                    
-                    
-                        tif
-                        Tagged Image File Format
-                        .tif
-                    
-                
+                <table style="width:100%">
+                    <tr>
+                        <th>Option</th>
+                        <th>Format</th>
+                        <th>File extension</th>
+                    </tr>
+                    <tr>
+                        <td>svg</td>
+                        <td>SVG (scalable vector graphics)</td>
+                        <td>.svg</td>
+                    </tr>
+                    <tr>
+                        <td>pdf</td>
+                        <td>Full page Portable Document Format (PDF) color</td>
+                        <td>.pdf</td>
+                    </tr>
+                    <tr>
+                        <td>png</td>
+                        <td>PNG 24-bit</td>
+                        <td>.png</td>
+                    </tr>
+                    <tr>
+                        <td>jpg</td>
+                        <td>JPEG 24-bit</td>
+                        <td>.jpg</td>
+                    </tr>
+                    <tr>
+                        <td>gif</td>
+                        <td>Graphics Interchange Format</td>
+                        <td>.gif</td>
+                    </tr>
+                    <tr>
+                        <td>tif</td>
+                        <td>Tagged Image File Format</td>
+                        <td>.tif</td>
+                    </tr>
+                </table>
             </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">x = -2:0.25:2;
 y = x;
 [X,Y] = meshgrid(x);
 F = X.*exp(-X.^2-Y.^2);
 surf(X,Y,F);
-saveas(gcf(), 'svg-file.svg');</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+saveas(gcf(), [tempdir, 'svg-file.svg']);</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div><a class="see-also-link" href="../graphics/gcf.html">gcf</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -160,7 +159,7 @@ saveas(gcf(), 'svg-file.svg');</code><button class="copy-btn" type="button" oncl
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

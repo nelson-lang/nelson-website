@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">executable</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Executables to start Nelson software.</div></div>
+<div class="section syntax-section"><div class="subtitle">Exécutables pour démarrer le logiciel Nelson.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">nelson arg1 ... argn
 nelson-cli arg1 ... argn
 nelson-adv-cli  arg1 ... argn
@@ -58,116 +57,116 @@ nelson-gui arg1 ... argn
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">-cli</td>
-<td>equivalent to call 'nelson-cli'.</td>
+<td>équivalent à l'appel de 'nelson-cli'.</td>
 </tr>
 <tr>
 <td class="param-name">-adv-cli</td>
-<td>equivalent to call 'nelson-adv-cli'.</td>
+<td>équivalent à l'appel de 'nelson-adv-cli'.</td>
 </tr>
 <tr>
 <td class="param-name">-gui</td>
-<td>equivalent to call 'nelson-gui'.</td>
+<td>équivalent à l'appel de 'nelson-gui'.</td>
 </tr>
 <tr>
 <td class="param-name">-e "nelson instructions"</td>
-<td>If this option is present then Nelson instruction is executed just after startup file execution into Nelson. -e and -f options are mutually exclusive.</td>
+<td>Si cette option est présente, les instructions Nelson sont exécutées juste après l'exécution du fichier de démarrage. Les options -e et -f sont mutuellement exclusives.</td>
 </tr>
 <tr>
 <td class="param-name">-f filename</td>
-<td>Nelson script file is executed just after startup file execution) into Nelson. -e and -f options are mutually exclusive.</td>
+<td>Un script Nelson est exécuté juste après l'exécution du fichier de démarrage. Les options -e et -f sont mutuellement exclusives.</td>
 </tr>
 <tr>
 <td class="param-name">-F filename</td>
-<td>If this option is present then Nelson script file is executed just after startup file execution) into an existing Nelson's process or creates it.</td>
+<td>Si cette option est présente, le script Nelson est exécuté juste après l'exécution du fichier de démarrage dans un processus Nelson existant ou en crée un.</td>
 </tr>
 <tr>
 <td class="param-name">--help</td>
-<td>help about program options.</td>
+<td>aide sur les options du programme.</td>
 </tr>
 <tr>
 <td class="param-name">--version</td>
-<td>Return Nelson version.</td>
+<td>Retourne la version de Nelson.</td>
 </tr>
 <tr>
 <td class="param-name">--vscode</td>
-<td>enable Visual Studio Code mode.</td>
+<td>active le mode Visual Studio Code.</td>
 </tr>
 <tr>
 <td class="param-name">--open</td>
-<td>opens files arg2 ... argN must be valid/existing filenames.</td>
+<td>ouvre des fichiers ; arg2 ... argN doivent être des noms de fichiers valides/existants.</td>
 </tr>
 <tr>
 <td class="param-name">--mat</td>
-<td>load files arg2 ... argN must be valid/existing .nh5 or .mat filenames.</td>
+<td>charge des fichiers ; arg2 ... argN doivent être des fichiers .nh5 ou .mat valides/existants.</td>
 </tr>
 <tr>
 <td class="param-name">--nostartup</td>
-<td>disable the main Nelson script file executed at startup.</td>
+<td>désactive l'exécution du fichier script principal de Nelson au démarrage.</td>
 </tr>
 <tr>
 <td class="param-name">--nousermodules</td>
-<td>disable the load of user's modules. loaded before user's script.</td>
+<td>désactive le chargement des modules utilisateur (chargés avant le script utilisateur).</td>
 </tr>
 <tr>
 <td class="param-name">--nouserstartup</td>
-<td>disable the user script file executed at startup after the main startup file.</td>
+<td>désactive le script utilisateur exécuté au démarrage après le fichier principal.</td>
 </tr>
 <tr>
 <td class="param-name">--minimize</td>
-<td>minimize main GUI Windows (GUI mode only).</td>
+<td>minimise la fenêtre principale du GUI (mode GUI uniquement).</td>
 </tr>
 <tr>
 <td class="param-name">--noipc</td>
-<td>disable interprocess features (files association, ipc builtin).</td>
+<td>désactive les fonctionnalités interprocessus (association de fichiers, ipc intégré).</td>
 </tr>
 <tr>
 <td class="param-name">--withoutfilewatcher</td>
-<td>disable file watcher feature for this session.</td>
+<td>désactive la fonctionnalité de surveillance de fichiers pour cette session.</td>
 </tr>
 <tr>
 <td class="param-name">--noaudio</td>
-<td>disable audio module.</td>
+<td>désactive le module audio.</td>
 </tr>
 <tr>
 <td class="param-name">--without_python</td>
-<td>disable python_engine module.</td>
+<td>désactive le module python_engine.</td>
 </tr>
 <tr>
 <td class="param-name">--language lang</td>
-<td>If this option is present it fixes the user language. Currently, lang can be: fr_FR en_US.</td>
+<td>Si cette option est présente, elle fixe la langue de l'utilisateur. Actuellement, lang peut être : fr_FR en_US.</td>
 </tr>
 <tr>
 <td class="param-name">--quiet</td>
-<td>If this option is present no banner and version displayed.</td>
+<td>Si cette option est présente, aucune bannière ni version n'est affichée.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
-            <p>
-                <b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
-                <p>
-                    <b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
-                    <p></p>
-                    <p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
-                    <p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
-                </div>
+            <b>nelson-cli</b> : terminal basique, sans GUI (pas de dépendance au framework GUI), sans historique, sans complétion (encodage ISO Latin).</p>
+        <p>
+            <b>nelson-adv-cli</b> : terminal avancé, console graphique absente, historique et complétion disponibles (support UTF-16).</p>
+        <p>
+            <b>nelson-gui</b> : console graphique, historique et complétion disponibles (support UTF-16).</p>
+        <p></p>
+        <p>Si vous avez installé Nelson sur Windows, la variable d'environnement <b>NELSON_RUNTIME_PATH</b> sera définie.</p>
+        <p>Elle permet d'appeler facilement Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">nelson-adv-cli -q -e "a = 1 + 2"</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
@@ -180,12 +179,12 @@ nelson-gui arg1 ... argn
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../engine/startup.html">startup</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -193,7 +192,7 @@ nelson-gui arg1 ... argn
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.4.0</td>
@@ -211,7 +210,7 @@ nelson-gui arg1 ... argn
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

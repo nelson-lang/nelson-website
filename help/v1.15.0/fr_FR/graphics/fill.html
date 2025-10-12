@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fill</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Create  filled 2-D patches.</div></div>
+<div class="section syntax-section"><div class="subtitle">Créer des formes 2D remplies.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">fill(X, Y, C)
 fill(..., propertyName, propertyValue)
 fill(ax, ...)
@@ -58,85 +57,85 @@ go = fill(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x-coordinates: vector or matrix.</td>
+<td>Coordonnées x : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y-coordinates: vector or matrix.</td>
+<td>Coordonnées y : vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">C</td>
-<td>Color array: scalar, vector, m-by-n-by-3 array of RGB triplets.</td>
+<td>Tableau de couleurs : scalaire, vecteur, matrice m×n×3 de triplets RGB.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Un objet graphique scalaire : conteneur parent, spécifié comme axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">go</td>
-<td>a graphics object: patch type.</td>
+<td>Un objet graphique : type patch.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>fill(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by <b>X</b> and <b>Y</b> coordinates, and fills the shape with color <b>C</b>.</p>
-            <p>
-                <b>fill(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the fill/patch object using name-value pairs.</p>
-                <p>
-                    <b>go = fill(...)</b> returns the handle <b>go</b> to the created patch object.</p>
-                    <p>Property Name-Value Pairs:</p>
-                    <p></p>
-                    <p>
-                        <b>'FaceColor'</b>: color of the filled shape. FaceColor can be a character vector or a 3-element RGB vector. Default: <b>'flat'</b>.</p>
-                        <p>
-                            <b>'EdgeColor'</b>: color of the edges of the polygonal shape. EdgeColor can be a character vector or a 3-element RGB vector. Default: <b>'none'</b>.</p>
-                            <p>
-                                <b>'LineWidth'</b>: width of the edges of the polygonal shape. Default: <b>0.5</b>.</p>
-                                <p>
-                                    <b>'LineStyle'</b>: style of the edges of the polygonal shape. LineStyle can be a character vector or a line style code. Default: <b>'-'</b>.</p>
-                                    <p>
-                                        <b>'FaceAlpha'</b>: transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
-                                        <p>
-                                            <b>'EdgeAlpha'</b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
-                                            <p>
-                                                <b>'Parent'</b>: handle of the parent object for the patch. Default: <b>gca()</b>.</p>
-                                                <p>
-                                                    <b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.</p>
-                                                </div>
+            <b>fill(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées <b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>.</p>
+        <p>
+            <b>fill(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet fill/patch à l'aide de paires nom-valeur.</p>
+        <p>
+            <b>go = fill(...)</b> retourne le handle <b>go</b> de l'objet patch créé.</p>
+        <p>Paires Nom-Valeur de propriétés :</p>
+        <p></p>
+        <p>
+            <b>'FaceColor'</b> : couleur de la forme remplie. FaceColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut : <b>'flat'</b>.</p>
+        <p>
+            <b>'EdgeColor'</b> : couleur des bords de la forme polygonale. EdgeColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut : <b>'none'</b>.</p>
+        <p>
+            <b>'LineWidth'</b> : épaisseur des bords de la forme polygonale. Par défaut : <b>0.5</b>.</p>
+        <p>
+            <b>'LineStyle'</b> : style des bords de la forme polygonale. LineStyle peut être une chaîne de caractères ou un code de style de ligne. Par défaut : <b>'-'</b>.</p>
+        <p>
+            <b>'FaceAlpha'</b> : transparence de la forme remplie. FaceAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.</p>
+        <p>
+            <b>'EdgeAlpha'</b> : transparence des bords de la forme polygonale. EdgeAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.</p>
+        <p>
+            <b>'Parent'</b> : handle de l'objet parent pour le patch. Par défaut : <b>gca()</b>.</p>
+        <p>
+            <b>'Vertices'</b> : matrice des coordonnées des sommets. La matrice doit avoir la taille N×2 ou N×3, où N est le nombre de sommets. Par défaut : les coordonnées des sommets sont spécifiées par les arguments <b>X</b>, <b>Y</b> et <b>Z</b> d'entrée.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -182,7 +181,7 @@ title('Colorful Geometric Pattern');</code><button class="copy-btn" type="button
 <img src="./fill_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
 <div class="example">
-<div class="example-title">Alpha channel</div>
+<div class="example-title">Canal alpha</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
 x = [10 30 40 30 10 0];
@@ -197,12 +196,12 @@ fill(x + 1, y + 2, 'yellow', 'FaceAlpha', 0.3);</code><button class="copy-btn" t
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../graphics/patch.html">patch</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -210,13 +209,13 @@ fill(x + 1, y + 2, 'yellow', 'FaceAlpha', 0.3);</code><button class="copy-btn" t
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

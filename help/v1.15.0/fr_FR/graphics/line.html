@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">line</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Create primitive line.</div></div>
+<div class="section syntax-section"><div class="subtitle">Crée une ligne primitive.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">go = line()
 po = line(x, y)
 go = line(x, y, z)
@@ -59,101 +58,124 @@ go = line(ax, x, y, z, propertyName, propertyValue)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">x, y , z</td>
-<td>a scalar graphics object value: parent container, specified as a figure.</td>
+<td>Un ou plusieurs vecteurs ou matrices de coordonnées.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>Target axes: axes object.</td>
+<td>Axes cibles : objet axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">go</td>
-<td>a graphics object: line type.</td>
+<td>Un objet graphique : type ligne.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>line(x, y)</b> creates a line in the current axes with vectors <b>x</b> and <b>y</b>.</p>
-            <p>
-                <b>line(x, y, z)</b> creates a line in three-dimensional coordinates.</p>
-                <p>Properties:</p>
-                <p></p>
-                <p>
-                    <b>Children</b> [] (currently not used).</p>
-                    <p>
-                        <b>Color</b> Line color: RGB triplet, [0, 0, 0] or hexadecimal color code.</p>
-                        <p>
-                            <b>DisplayName</b> Legend label: character vector or string scalar, '' (default).</p>
-                            <p>
-                                <b>LineStyle</b> Line style: '--', ':', '-.', 'none' or '-' (default).</p>
-                                <p>
-                                    <b>LineWidth</b> Line width: scalar positive value.</p>
-                                    <p>
-                                        <b>Marker</b>Marker symbol: 'o' (circle), '+' (Plus sign), '*' (asterik), '.' (point), 'x' (cross), '_' (horizontal line) , '|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '&gt;' (Right-pointing triangle), '&lt;' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default). </p>
-                                        <p>
-                                            <b>MarkerEdgeColor</b> Marker outline color: RGB triplet.</p>
-                                            <p>
-                                                <b>MarkerFaceColor</b> Marker fill color: RGB triplet.</p>
-                                                <p>
-                                                    <b>MarkerSize</b> Marker size: scalar positive value.</p>
-                                                    <p>
-                                                        <b>Parent</b> Parent: axes graphics object.</p>
-                                                        <p>
-                                                            <b>Tag</b> Object identifier: string scalar, character vector, '' (default).</p>
-                                                            <p>
-                                                                <b>Type</b> Type of graphics object: 'line'</p>
-                                                                <p>
-                                                                    <b>UserData</b> User data: array, [] (default).</p>
-                                                                    <p>
-                                                                        <b>Visible</b> State of visibility: 'off' or 'on' (default).</p>
-                                                                        <p>
-                                                                            <b>XData</b> x values: vector, [0 1] (default).</p>
-                                                                            <p>
-                                                                                <b>YData</b> y values: vector, [0 1] (default).</p>
-                                                                                <p>
-                                                                                    <b>ZData</b> z values: vector, [] (default).</p>
-                                                                                    <p>
-                                                                                        <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-                                                                                        <p>
-                                                                                            <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-                                                                                            <p></p>
-                                                                                            <p>
-                                                                                                <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-                                                                                            </div>
+            <b>line(x, y)</b> crée une ligne dans les axes courants avec les vecteurs <b>x</b> et <b>y</b>.
+        </p>
+        <p>
+            <b>line(x, y, z)</b> crée une ligne en coordonnées tridimensionnelles.
+        </p>
+        <p>Propriétés :</p>
+        <p></p>
+        <p>
+            <b>Children</b> [] (actuellement non utilisé).
+        </p>
+        <p>
+            <b>Color</b> Couleur de la ligne : triplet RGB, [0, 0, 0] ou code couleur hexadécimal.
+        </p>
+        <p>
+            <b>DisplayName</b> Étiquette de légende : vecteur de caractères ou chaîne scalaire, '' (par défaut).
+        </p>
+        <p>
+            <b>LineStyle</b> Style de ligne : '--', ':', '-.', 'none' ou '-' (par défaut).
+        </p>
+        <p>
+            <b>LineWidth</b> Largeur de ligne : valeur scalaire positive.
+        </p>
+        <p>
+            <b>Marker</b> Symbole de marqueur : 'o' (cercle), '+' (plus), '*' (astérisque), '.' (point),
+            'x' (croix), '_' (ligne horizontale), '|' (ligne verticale), 'square', 'diamond', '^'
+            (triangle vers le haut), 'v' (triangle vers le bas), '&gt;' (triangle vers la droite), '&lt;' (triangle vers la gauche), 'pentagram', 'hexagram', 'none' (par défaut).
+        </p>
+        <p>
+            <b>MarkerEdgeColor</b> Couleur du contour du marqueur : triplet RGB.
+        </p>
+        <p>
+            <b>MarkerFaceColor</b> Couleur de remplissage du marqueur : triplet RGB.
+        </p>
+        <p>
+            <b>MarkerSize</b> Taille du marqueur : valeur scalaire positive.
+        </p>
+        <p>
+            <b>Parent</b> Parent : objet axes graphique.
+        </p>
+        <p>
+            <b>Tag</b> Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut).
+        </p>
+        <p>
+            <b>Type</b> Type d'objet graphique : 'line'
+        </p>
+        <p>
+            <b>UserData</b> Données utilisateur : tableau, [] (par défaut).
+        </p>
+        <p>
+            <b>Visible</b> État de visibilité : 'off' ou 'on' (par défaut).
+        </p>
+        <p>
+            <b>XData</b> valeurs x : vecteur, [0 1] (par défaut).
+        </p>
+        <p>
+            <b>YData</b> valeurs y : vecteur, [0 1] (par défaut).
+        </p>
+        <p>
+            <b>ZData</b> valeurs z : vecteur, [] (par défaut).
+        </p>
+        <p>
+            <b>CreateFcn</b> Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.
+        </p>
+        <p>
+            <b>DeleteFcn</b> Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.
+        </p>
+        <p></p>
+        <p>
+            <b>BeingDeleted</b> Indique que l'objet est en cours de suppression.
+        </p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -189,14 +211,14 @@ view(3)</code><button class="copy-btn" type="button" onclick="copyExample(this)"
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/plot.html">plot</a><a class="see-also-link" href="../graphics/plot3.html">plot3</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -204,21 +226,21 @@ view(3)</code><button class="copy-btn" type="button" onclick="copyExample(this)"
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.7.0</td>
-<td>CreateFcn, DeleteFcn callback added.</td>
+<td>Ajout des callbacks CreateFcn, DeleteFcn.</td>
 </tr>
 <tr>
 <td class="version">--</td>
-<td>BeingDeleted property added.</td>
+<td>Ajout de la propriété BeingDeleted.</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

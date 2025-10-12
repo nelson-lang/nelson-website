@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">minreal</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Minimal realization or pole-zero cancellation.</div></div>
+<div class="section syntax-section"><div class="subtitle">Réalisation minimale ou annulation pôle‑zéro.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[Am, Bm, Cm, Dm] = minreal(A, B, C, D)
 [Am, Bm, Cm, Dm] = minreal(A, B, C, D, tol)
 sysOut = minreal(sysIn)
@@ -58,70 +57,71 @@ sysOut = minreal(sysIn, tol)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A (n x n)</td>
-<td>Represents the system's state-transition matrix. It describes how the system's internal state evolves over time.</td>
+<td>Représente la matrice de transition d'état du système. Elle décrit comment l'état interne du système évolue dans le temps.</td>
 </tr>
 <tr>
 <td class="param-name">B (n x m)</td>
-<td>Describes the input-to-state mapping. It shows how control inputs affect the change in the system's state.</td>
+<td>Décrit la correspondance entrée-état. Elle montre comment les entrées de contrôle affectent le changement de l'état du système.</td>
 </tr>
 <tr>
 <td class="param-name">C (p x n)</td>
-<td>Represents the state-to-output mapping. It shows how the system's state variables are related to the system's outputs.</td>
+<td>Représente la correspondance état-sortie. Elle montre comment les variables d'état du système sont liées aux sorties du système.</td>
 </tr>
 <tr>
 <td class="param-name">D (p x m)</td>
-<td>Describes the direct feedthrough from inputs to outputs. In many systems, this matrix is zero because there is no direct feedthrough.</td>
+<td>Décrit le passage direct des entrées aux sorties. Dans de nombreux systèmes, cette matrice est nulle car il n'y a pas de passage direct.</td>
 </tr>
 <tr>
 <td class="param-name">tol</td>
-<td>scalar real (tolerance).</td>
+<td>scalaire réel (tolérance).</td>
 </tr>
 <tr>
 <td class="param-name">sysIn</td>
-<td>LTI model.</td>
+<td>Modèle LTI.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">Am, Bm, Cm, Dm</td>
-<td>a minimal realization of the state-space system A, B, C, D.</td>
+<td>une réalisation minimale du système d'état A, B, C, D.</td>
 </tr>
 <tr>
 <td class="param-name">sysOut</td>
-<td>a minimal realization of LTI input.</td>
+<td>une réalisation minimale de l'entrée LTI.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>minreal</b> function reduces state-space models by eliminating uncontrollable or unobservable states.</p>
-            <p>In transfer functions or zero-pole-gain models, it cancels pole-zero pairs. The resulting model maintains the same response characteristics as the original model but with minimal order.</p>
-            <p> When using <b>sysOut = minreal(sysIn, tol)</b>, you can customize the tolerance for state elimination or pole-zero cancellation.</p>
-            <p>The default tolerance is set to sqrt(eps), and increasing this value prompts more aggressive cancellations, potentially further simplifying the model.</p>
-        </div>
+            <b>minreal</b> réduit les modèles d'état en éliminant les états non contrôlables ou non observables.</p>
+            <p>Dans les fonctions de transfert ou modèles zéro‑pôle‑gain, il annule les paires pôles‑zéros. Le modèle résultant maintient les mêmes caractéristiques de réponse que le modèle original mais avec un ordre minimal.</p>
+            <p> Lorsque vous utilisez <b>sysOut = minreal(sysIn, tol)</b>, vous pouvez personnaliser la tolérance pour l'élimination des états ou l'annulation des pôles-zéros.</p>
+            <p>La tolérance par défaut est fixée à sqrt(eps), et l'augmentation de cette valeur entraîne des annulations plus agressives, simplifiant potentiellement davantage le modèle.</p>
+            <p>Annule les paires pôles‑zéros dans les fonctions de transfert ou modèles zéro‑pôle‑gain pour obtenir une réalisation minimale équivalente.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">sysIn = ss([1 0;0 -2], [-1;0], [2 1], 0, 3.2); 
 sysOut = minreal(sysIn)</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -129,7 +129,7 @@ sysOut = minreal(sysIn)</code><button class="copy-btn" type="button" onclick="co
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -137,13 +137,13 @@ sysOut = minreal(sysIn)</code><button class="copy-btn" type="button" onclick="co
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

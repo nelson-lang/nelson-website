@@ -2,114 +2,113 @@
 <help_summary>
   <toc>
     <module>graphics</module>
-    <section name="Graphics functions">
+    <section name="Fonctions graphiques">
       <chapter_description>
-        <p>The graphics module provides functions for creating, customizing, and managing plots,
-            figures, colormaps, and graphical objects.</p>
-        <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
-            utilities for working with colors, legends, axes, and text annotations.</p>
+        <p>Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques,
+            figures, palettes de couleurs et objets graphiques.</p>
+        <p>Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et
+            des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.</p>
     </chapter_description>
-      <keyword name="abyss" link="abyss.html" description="Abyss colormap array."/>
-      <keyword name="ancestor" link="ancestor.html" description="Ancestor of graphics object."/>
-      <keyword name="autumn" link="autumn.html" description="Autumn colormap array."/>
-      <keyword name="axes" link="axes.html" description="Create cartesian axes."/>
-      <keyword name="axis" link="axis.html" description="Set axis limits and aspect ratios."/>
-      <keyword name="bar" link="bar.html" description="Bar graph."/>
-      <keyword name="bone" link="bone.html" description="Bone colormap array."/>
-      <keyword name="cla" link="cla.html" description="Clear axes."/>
-      <keyword name="clf" link="clf.html" description="Clear figure."/>
-      <keyword name="clim" link="clim.html" description="Set colormap limits."/>
-      <keyword name="close" link="close.html" description="Close one or more figures"/>
-      <keyword name="colorbar" link="colorbar.html" description="Colorbar showing color scale."/>
-      <keyword name="colormap" link="colormap.html" description="View and set current colormap."/>
-      <keyword name="colormaplist" link="colormaplist.html" description="Provide list of colormaps."/>
-      <keyword name="colstyle" link="colstyle.html" description="Parse color and style from string."/>
-      <keyword name="contour" link="contour.html" description="Contour plot of matrix"/>
-      <keyword name="contour3" link="contour3.html" description="Contour 3D plot of matrix"/>
-      <keyword name="cool" link="cool.html" description="Cool colormap array."/>
-      <keyword name="copper" link="copper.html" description="Copper colormap array."/>
-      <keyword name="cylinder" link="cylinder.html" description="Create cylinder."/>
-      <keyword name="drawnow" link="drawnow.html" description="Update figures and process callbacks"/>
-      <keyword name="figure" link="figure.html" description="Creates an figure window."/>
-      <keyword name="fill" link="fill.html" description="Create  filled 2-D patches."/>
-      <keyword name="flag" link="flag.html" description="Flag colormap array."/>
-      <keyword name="frame2im" link="frame2im.html" description="Retrieve image data from a movie frame."/>
-      <keyword name="gca" link="gca.html" description="get current axes graphics object."/>
-      <keyword name="gcf" link="gcf.html" description="get current figure graphics object."/>
-      <keyword name="getframe" link="getframe.html" description="Capture figure or axes as movie frame."/>
-      <keyword name="Managing Callback Interruptions in Nelson" link="graphical_callback.html" description=""/>
-      <keyword name="gray" link="gray.html" description="Gray colormap array."/>
-      <keyword name="grid" link="grid.html" description="Display or hide axes grid lines."/>
-      <keyword name="groot" link="groot.html" description="graphic root object."/>
-      <keyword name="hggroup" link="hggroup.html" description="Create group object."/>
-      <keyword name="hist" link="hist.html" description="Histogram plot."/>
-      <keyword name="hold" link="hold.html" description="Retain current plot when adding new plots."/>
-      <keyword name="hot" link="hot.html" description="Hot colormap array."/>
-      <keyword name="im2frame" link="im2frame.html" description="Convert image to movie frame."/>
-      <keyword name="image" link="image.html" description="Display image from array."/>
-      <keyword name="imagesc" link="imagesc.html" description="Display image from array with scaled colors."/>
-      <keyword name="imshow" link="imshow.html" description="Display image."/>
-      <keyword name="is2D" link="is2D.html" description="Checks if ax is a 2-D Polar or Cartesian axes."/>
-      <keyword name="isValidGraphicsProperty" link="isValidGraphicsProperty.html" description="Check property name is valid."/>
-      <keyword name="isgraphics" link="isgraphics.html" description="Check for graphics object."/>
-      <keyword name="ishold" link="ishold.html" description="Get current hold state."/>
-      <keyword name="jet" link="jet.html" description="Jet colormap array."/>
-      <keyword name="legend" link="legend.html" description="Add legend to axes."/>
-      <keyword name="line" link="line.html" description="Create primitive line."/>
-      <keyword name="loglog" link="loglog.html" description="Log-log scale plot."/>
-      <keyword name="mesh" link="mesh.html" description="Mesh surface plot."/>
-      <keyword name="meshz" link="meshz.html" description="Mesh surface plot with curtain."/>
-      <keyword name="movie" link="movie.html" description="Render recorded movie frames."/>
-      <keyword name="nebula" link="nebula.html" description="Nebula colormap array."/>
-      <keyword name="newplot" link="newplot.html" description="Prepare to produce a new plot."/>
-      <keyword name="pan" link="pan.html" description="Enable pan mode."/>
-      <keyword name="parula" link="parula.html" description="Parula colormap array."/>
-      <keyword name="patch" link="patch.html" description="Create patches of colored polygons"/>
-      <keyword name="pcolor" link="pcolor.html" description="Pseudocolor plot."/>
-      <keyword name="pie" link="pie.html" description="Legacy pie chart."/>
-      <keyword name="pink" link="pink.html" description="Pink colormap array."/>
-      <keyword name="plot" link="plot.html" description="Linear 2-D plot."/>
-      <keyword name="plot3" link="plot3.html" description="3-D line plot."/>
-      <keyword name="prism" link="prism.html" description="Prism colormap array."/>
-      <keyword name="quiver" link="quiver.html" description="Vector plot."/>
-      <keyword name="refresh" link="refresh.html" description="Redraw current figure."/>
-      <keyword name="rgbplot" link="rgbplot.html" description="Plot colormap."/>
-      <keyword name="ribbon" link="ribbon.html" description="Ribbon plot."/>
-      <keyword name="rotate3d" link="rotate3d.html" description="Enable rotate mode."/>
-      <keyword name="saveas" link="saveas.html" description="Save figure to specific file format."/>
-      <keyword name="scatter" link="scatter.html" description="Scatter plot."/>
-      <keyword name="scatter3" link="scatter3.html" description="3D Scatter plot."/>
-      <keyword name="semilogx" link="semilogx.html" description="Semilog plot (x-axis has log scale)."/>
-      <keyword name="semilogy" link="semilogy.html" description="Semilog plot (y-axis has log scale)."/>
-      <keyword name="sky" link="sky.html" description="Sky colormap array."/>
-      <keyword name="sphere" link="sphere.html" description="Create sphere."/>
-      <keyword name="spring" link="spring.html" description="Spring colormap array."/>
-      <keyword name="spy" link="spy.html" description="Visualize sparsity pattern of matrix."/>
-      <keyword name="stairs" link="stairs.html" description="Stairstep graph."/>
-      <keyword name="stem" link="stem.html" description="Plot discrete sequence data."/>
-      <keyword name="subplot" link="subplot.html" description="Create axes in tiled positions."/>
-      <keyword name="summer" link="summer.html" description="Summer colormap array."/>
-      <keyword name="surf" link="surf.html" description="surface plot."/>
-      <keyword name="surface" link="surface.html" description="Primitive surface plot."/>
-      <keyword name="text" link="text.html" description="creates text descriptions to data points."/>
-      <keyword name="title" link="title.html" description="Add title."/>
-      <keyword name="turbo" link="turbo.html" description="Turbo colormap array."/>
-      <keyword name="uicontrol" link="uicontrol.html" description="Create user interface component."/>
-      <keyword name="validatecolor" link="validatecolor.html" description="Validate color values."/>
-      <keyword name="view" link="view.html" description="Camera line of sigh."/>
-      <keyword name="viridis" link="viridis.html" description="Viridis colormap array."/>
-      <keyword name="waitfor" link="waitfor.html" description="Wait for condition."/>
-      <keyword name="waitforbuttonpress" link="waitforbuttonpress.html" description="Wait for click or key press."/>
-      <keyword name="waterfall" link="waterfall.html" description="waterfall plot."/>
-      <keyword name="white" link="white.html" description="white colormap array."/>
-      <keyword name="winter" link="winter.html" description="Winter colormap array."/>
-      <keyword name="xlabel" link="xlabel.html" description="Label x-axis."/>
-      <keyword name="xlim" link="xlim.html" description="set or get x-axis limits."/>
-      <keyword name="ylabel" link="ylabel.html" description="Label y-axis."/>
-      <keyword name="ylim" link="ylim.html" description="set or get y-axis limits."/>
-      <keyword name="zlabel" link="zlabel.html" description="Label z-axis."/>
-      <keyword name="zlim" link="zlim.html" description="set or get z-axis limits."/>
-      <keyword name="zoom" link="zoom.html" description="Enable zoom mode."/>
+      <keyword name="abyss" link="abyss.html" description="Palette de couleurs abyss."/>
+      <keyword name="ancestor" link="ancestor.html" description="Ancêtre d'un objet graphique."/>
+      <keyword name="autumn" link="autumn.html" description="Palette de couleurs autumn."/>
+      <keyword name="axes" link="axes.html" description="Créer des axes cartésiens."/>
+      <keyword name="axis" link="axis.html" description="Définit les limites et les rapports d'aspect des axes."/>
+      <keyword name="bar" link="bar.html" description="Diagramme en barres."/>
+      <keyword name="bone" link="bone.html" description="Palette de couleurs bone."/>
+      <keyword name="cla" link="cla.html" description="Efface les axes."/>
+      <keyword name="clf" link="clf.html" description="Efface la figure."/>
+      <keyword name="clim" link="clim.html" description="Définit les limites de la palette de couleurs."/>
+      <keyword name="close" link="close.html" description="Ferme une ou plusieurs figures"/>
+      <keyword name="colorbar" link="colorbar.html" description="Barre de couleur affichant l'échelle des couleurs."/>
+      <keyword name="colormap" link="colormap.html" description="Afficher et définir la palette de couleurs courante."/>
+      <keyword name="colormaplist" link="colormaplist.html" description="Fournit la liste des palettes de couleurs."/>
+      <keyword name="colstyle" link="colstyle.html" description="Analyse la couleur et le style à partir d'une chaîne."/>
+      <keyword name="contour" link="contour.html" description="Tracé de contours d'une matrice"/>
+      <keyword name="contour3" link="contour3.html" description="Tracé de contours 3D d'une matrice"/>
+      <keyword name="cool" link="cool.html" description="Palette de couleurs cool."/>
+      <keyword name="copper" link="copper.html" description="Palette de couleurs copper."/>
+      <keyword name="cylinder" link="cylinder.html" description="Créer un cylindre."/>
+      <keyword name="drawnow" link="drawnow.html" description="Met à jour les figures et traite les callbacks"/>
+      <keyword name="figure" link="figure.html" description="Crée une fenêtre figure."/>
+      <keyword name="fill" link="fill.html" description="Créer des formes 2D remplies."/>
+      <keyword name="flag" link="flag.html" description="Palette de couleurs flag."/>
+      <keyword name="frame2im" link="frame2im.html" description="Récupère les données d'image d'une image vidéo."/>
+      <keyword name="gca" link="gca.html" description="Récupère l'objet axes courant."/>
+      <keyword name="gcf" link="gcf.html" description="Récupère l'objet figure courant."/>
+      <keyword name="getframe" link="getframe.html" description="Capture une figure ou des axes comme image vidéo."/>
+      <keyword name="Gestion des interruptions de callback dans Nelson" link="graphical_callback.html" description=""/>
+      <keyword name="gray" link="gray.html" description="Palette de couleurs gray."/>
+      <keyword name="grid" link="grid.html" description="Afficher ou masquer les lignes de grille des axes."/>
+      <keyword name="groot" link="groot.html" description="Objet racine graphique."/>
+      <keyword name="hggroup" link="hggroup.html" description="Créer un objet groupe."/>
+      <keyword name="hist" link="hist.html" description="Tracé d'histogramme."/>
+      <keyword name="hold" link="hold.html" description="Conserver le tracé courant lors de l'ajout de nouveaux tracés."/>
+      <keyword name="hot" link="hot.html" description="Palette de couleurs hot."/>
+      <keyword name="im2frame" link="im2frame.html" description="Convertit une image en image de film."/>
+      <keyword name="image" link="image.html" description="Affiche une image à partir d'un tableau."/>
+      <keyword name="imagesc" link="imagesc.html" description="Affiche une image à partir d'un tableau avec des couleurs mises à l'échelle."/>
+      <keyword name="imshow" link="imshow.html" description="Affiche une image."/>
+      <keyword name="is2D" link="is2D.html" description="Vérifie si ax est un axe 2D polaire ou cartésien."/>
+      <keyword name="isValidGraphicsProperty" link="isValidGraphicsProperty.html" description="Vérifie si le nom de propriété est valide."/>
+      <keyword name="isgraphics" link="isgraphics.html" description="Vérifie si l'objet est graphique."/>
+      <keyword name="ishold" link="ishold.html" description="Obtient l'état actuel du mode hold."/>
+      <keyword name="jet" link="jet.html" description="Tableau de palette de couleurs jet."/>
+      <keyword name="legend" link="legend.html" description="Ajoute une légende aux axes."/>
+      <keyword name="line" link="line.html" description="Crée une ligne primitive."/>
+      <keyword name="loglog" link="loglog.html" description="Tracé en échelle log-log."/>
+      <keyword name="mesh" link="mesh.html" description="Tracé de surface en maillage (mesh)."/>
+      <keyword name="meshz" link="meshz.html" description="Tracé de surface en maillage (mesh) avec rideau."/>
+      <keyword name="movie" link="movie.html" description="Jouer des séquences d'images enregistrées (movie)."/>
+      <keyword name="nebula" link="nebula.html" description="Palette de couleurs Nebula."/>
+      <keyword name="newplot" link="newplot.html" description="Préparer la création d'un nouveau graphique."/>
+      <keyword name="pan" link="pan.html" description="Activer le mode déplacement (pan)."/>
+      <keyword name="parula" link="parula.html" description="Palette de couleurs Parula."/>
+      <keyword name="patch" link="patch.html" description="Créer des patchs de polygones colorés"/>
+      <keyword name="pcolor" link="pcolor.html" description="Graphique en pseudo-couleurs."/>
+      <keyword name="pie" link="pie.html" description="Ancien graphique en secteurs (camembert)."/>
+      <keyword name="pink" link="pink.html" description="Palette de couleurs Pink."/>
+      <keyword name="plot" link="plot.html" description="Tracé linéaire 2D."/>
+      <keyword name="plot3" link="plot3.html" description="Tracé de courbe 3D."/>
+      <keyword name="prism" link="prism.html" description="Palette de couleurs Prism."/>
+      <keyword name="quiver" link="quiver.html" description="Tracé de champ de vecteurs."/>
+      <keyword name="refresh" link="refresh.html" description="Rafraîchir la figure courante."/>
+      <keyword name="rgbplot" link="rgbplot.html" description="Tracer une palette de couleurs."/>
+      <keyword name="ribbon" link="ribbon.html" description="Graphique en ruban."/>
+      <keyword name="rotate3d" link="rotate3d.html" description="Activer le mode rotation."/>
+      <keyword name="scatter" link="scatter.html" description="Nuage de points."/>
+      <keyword name="scatter3" link="scatter3.html" description="Nuage de points 3D."/>
+      <keyword name="semilogx" link="semilogx.html" description="Graphique semi-logarithmique (axe x en échelle logarithmique)."/>
+      <keyword name="semilogy" link="semilogy.html" description="Graphique semi-logarithmique (axe y en échelle logarithmique)."/>
+      <keyword name="sky" link="sky.html" description="Table de couleurs 'sky'."/>
+      <keyword name="sphere" link="sphere.html" description="Créer une sphère."/>
+      <keyword name="spring" link="spring.html" description="Table de couleurs 'spring'."/>
+      <keyword name="spy" link="spy.html" description="Visualiser le motif de parcimonie d'une matrice."/>
+      <keyword name="stairs" link="stairs.html" description="Graphique en escalier."/>
+      <keyword name="stem" link="stem.html" description="Tracer des données discrètes."/>
+      <keyword name="subplot" link="subplot.html" description="Créer des axes en positions mosaïques."/>
+      <keyword name="summer" link="summer.html" description="Table de couleurs 'summer'."/>
+      <keyword name="surf" link="surf.html" description="tracé de surface."/>
+      <keyword name="surface" link="surface.html" description="Tracé de surface primitif."/>
+      <keyword name="text" link="text.html" description="crée des descriptions textuelles pour les points de données."/>
+      <keyword name="title" link="title.html" description="Ajouter un titre."/>
+      <keyword name="turbo" link="turbo.html" description="Tableau de couleurs Turbo."/>
+      <keyword name="uicontrol" link="uicontrol.html" description="Créer un composant d'interface utilisateur."/>
+      <keyword name="validatecolor" link="validatecolor.html" description="Valider les valeurs de couleur."/>
+      <keyword name="view" link="view.html" description="Ligne de visée de la caméra."/>
+      <keyword name="viridis" link="viridis.html" description="Tableau de couleurs Viridis."/>
+      <keyword name="waitfor" link="waitfor.html" description="Attendre une condition."/>
+      <keyword name="waitforbuttonpress" link="waitforbuttonpress.html" description="Attendre un clic ou une pression sur une touche."/>
+      <keyword name="waterfall" link="waterfall.html" description="graphique en cascade."/>
+      <keyword name="white" link="white.html" description="tableau de colormap blanc."/>
+      <keyword name="winter" link="winter.html" description="Tableau de colormap hiver."/>
+      <keyword name="xlabel" link="xlabel.html" description="Étiquette de l'axe des x."/>
+      <keyword name="xlim" link="xlim.html" description="définir ou obtenir les limites de l'axe des x."/>
+      <keyword name="ylabel" link="ylabel.html" description="Étiquette de l'axe des y."/>
+      <keyword name="ylim" link="ylim.html" description="définir ou obtenir les limites de l'axe des y."/>
+      <keyword name="zlabel" link="zlabel.html" description="Étiquette de l'axe des z."/>
+      <keyword name="zlim" link="zlim.html" description="définir ou obtenir les limites de l'axe des z."/>
+      <keyword name="zoom" link="zoom.html" description="Activer le mode zoom."/>
     </section>
   </toc>
 </help_summary>

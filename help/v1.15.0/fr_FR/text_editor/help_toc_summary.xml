@@ -4,12 +4,12 @@
     <module>text_editor</module>
     <section name="Text editor">
       <chapter_description>
-        <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and
-            formatting Nelson scripts and files.</p>
+        <p>Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer, éditer et
+            formater des scripts et fichiers Nelson.</p>
     </chapter_description>
-      <keyword name="edit" link="edit.html" description="function editor."/>
-      <keyword name="editor" link="editor.html" description="call the embedded text editor."/>
-      <keyword name="smartindent" link="smartindent.html" description="Smart indent a nelson file"/>
+      <keyword name="edit" link="edit.html" description="éditeur de fonctions."/>
+      <keyword name="editor" link="editor.html" description="appelle l'éditeur de texte intégré."/>
+      <keyword name="smartindent" link="smartindent.html" description="Indentation intelligente d'un fichier Nelson"/>
     </section>
   </toc>
 </help_summary>

@@ -4,37 +4,37 @@
     <module>types</module>
     <section name="Types module">
       <chapter_description>
-        <p>The Types module provides tools for managing and inspecting data types in Nelson.</p>
-        <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.</p>
-        <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.</p>
+        <p>Le module Types fournit des outils pour gérer et inspecter les types de données dans Nelson.</p>
+        <p>Il permet aux utilisateurs d'interroger la nature des variables, de distinguer les types numériques, logiques, de chaîne et d'objet, et de travailler avec des types spécialisés tels que les tableaux creux (sparse) ou entiers.</p>
+        <p>Le module prend également en charge la création d'objets et la validation des noms de variables, contribuant à garantir la sécurité des types et la cohérence des scripts et fonctions.</p>
     </chapter_description>
-      <keyword name="class" link="class.html" description="Return classname of object or creates a named object."/>
-      <keyword name="isa" link="isa.html" description="Return true if var is an object from the class str."/>
-      <keyword name="iscell" link="iscell.html" description="Return true if variable var is a cell array."/>
-      <keyword name="ischar" link="ischar.html" description="Return true if variable var is a char array."/>
-      <keyword name="isclass" link="isclass.html" description="Return true if variable var is a class object."/>
-      <keyword name="isdouble" link="isdouble.html" description="Return true if variable var is a double matrix."/>
-      <keyword name="isempty" link="isempty.html" description="Return true if variable var is an empty matrix."/>
-      <keyword name="isfloat" link="isfloat.html" description="Return true if variable var is a single or double matrix."/>
-      <keyword name="ishandle" link="ishandle.html" description="Return true if variable var is a handle object."/>
-      <keyword name="isint16" link="isint16.html" description="Return true if variable var is a signed 16-bit integer type array."/>
-      <keyword name="isint32" link="isint32.html" description="Return true if variable var is a signed 32-bit integer type array."/>
-      <keyword name="isint64" link="isint64.html" description="Return true if variable var is a signed 64-bit integer type array."/>
-      <keyword name="isint8" link="isint8.html" description="Return true if variable var is a signed 8-bit integer type array."/>
-      <keyword name="isinteger" link="isinteger.html" description="Return true if variable var is a integer type array."/>
-      <keyword name="islogical" link="islogical.html" description="Return true if variable var is a logical."/>
-      <keyword name="isnumeric" link="isnumeric.html" description="Return true if variable var is a numeric array."/>
-      <keyword name="isobject" link="isobject.html" description="Return true if variable var is an object."/>
+      <keyword name="class" link="class.html" description="Retourne le nom de classe d'un objet ou crée un objet nommé."/>
+      <keyword name="isa" link="isa.html" description="Renvoie vrai si var est un objet de la classe str."/>
+      <keyword name="iscell" link="iscell.html" description="Renvoie vrai si la variable var est un tableau de cellules."/>
+      <keyword name="ischar" link="ischar.html" description="Renvoie vrai si la variable var est un tableau de caractères (char)."/>
+      <keyword name="isclass" link="isclass.html" description="Renvoie vrai si la variable var est un objet de classe."/>
+      <keyword name="isdouble" link="isdouble.html" description="Renvoie vrai si la variable var est une matrice de type double."/>
+      <keyword name="isempty" link="isempty.html" description="Renvoie vrai si la variable var est une matrice vide."/>
+      <keyword name="isfloat" link="isfloat.html" description="Renvoie vrai si la variable var est une matrice de type single ou double."/>
+      <keyword name="ishandle" link="ishandle.html" description="Renvoie vrai si la variable var est un objet handle."/>
+      <keyword name="isint16" link="isint16.html" description="Renvoie vrai si la variable var est un tableau d'entiers signés 16 bits."/>
+      <keyword name="isint32" link="isint32.html" description="Renvoie vrai si la variable var est un tableau d'entiers signés 32 bits."/>
+      <keyword name="isint64" link="isint64.html" description="Renvoie vrai si la variable var est un tableau d'entiers signés 64 bits."/>
+      <keyword name="isint8" link="isint8.html" description="Renvoie vrai si la variable var est un tableau d'entiers signés 8 bits."/>
+      <keyword name="isinteger" link="isinteger.html" description="Renvoie vrai si la variable var est un tableau de type entier."/>
+      <keyword name="islogical" link="islogical.html" description="Renvoie vrai si la variable var est de type logique (logical)."/>
+      <keyword name="isnumeric" link="isnumeric.html" description="Renvoie vrai si la variable var est un tableau numérique."/>
+      <keyword name="isobject" link="isobject.html" description="Renvoie vrai si la variable var est un objet."/>
       <keyword name="isreal" link="isreal.html" description="Return true if all imaginary part is a zero array."/>
-      <keyword name="issingle" link="issingle.html" description="Return true if variable var is a single matrix."/>
-      <keyword name="issparse" link="issparse.html" description="Return true if variable var is a sparse array."/>
-      <keyword name="isstring" link="isstring.html" description="Return true if variable var is a string array."/>
-      <keyword name="isstruct" link="isstruct.html" description="Return true if variable var is a structure."/>
-      <keyword name="isuint16" link="isuint16.html" description="Return true if variable var is an unsigned 16-bit integer type array."/>
-      <keyword name="isuint32" link="isuint32.html" description="Return true if variable var is an unsigned 32-bit integer type array."/>
-      <keyword name="isuint64" link="isuint64.html" description="Return true if variable var is an unsigned 64-bit integer type array."/>
-      <keyword name="isuint8" link="isuint8.html" description="Return true if variable var is an unsigned 8-bit integer type array."/>
-      <keyword name="isvarname" link="isvarname.html" description="Return true if input is valid variable name."/>
+      <keyword name="issingle" link="issingle.html" description="Renvoie vrai si la variable var est une matrice de type single."/>
+      <keyword name="issparse" link="issparse.html" description="Renvoie vrai si la variable var est un tableau creux (sparse)."/>
+      <keyword name="isstring" link="isstring.html" description="Renvoie vrai si la variable var est un tableau de chaînes (string)."/>
+      <keyword name="isstruct" link="isstruct.html" description="Renvoie vrai si la variable var est une structure."/>
+      <keyword name="isuint16" link="isuint16.html" description="Renvoie vrai si la variable var est un tableau d'entiers non signés 16 bits."/>
+      <keyword name="isuint32" link="isuint32.html" description="Renvoie vrai si la variable var est un tableau d'entiers non signés 32 bits."/>
+      <keyword name="isuint64" link="isuint64.html" description="Renvoie vrai si la variable var est un tableau d'entiers non signés 64 bits."/>
+      <keyword name="isuint8" link="isuint8.html" description="Renvoie vrai si la variable var est un tableau d'entiers non signés 8 bits."/>
+      <keyword name="isvarname" link="isvarname.html" description="Renvoie vrai si l'entrée est un nom de variable valide."/>
       <keyword name="missing" link="missing.html" description="Return a missing value."/>
     </section>
   </toc>

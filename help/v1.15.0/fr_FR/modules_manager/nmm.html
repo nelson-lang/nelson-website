@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nmm</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Nelson Modules Manager.</div></div>
+<div class="section syntax-section"><div class="subtitle">Gestionnaire de modules Nelson.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">st = nmm('list')
 nmm('load', module_name)
 l = nmm('autoload', module_name)
@@ -61,95 +60,95 @@ package_filename = nmm('package', module_name, destination_dir)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">module_name</td>
-<td>a string: short module's name.</td>
+<td>chaîne : nom court du module.</td>
 </tr>
 <tr>
 <td class="param-name">state</td>
-<td>a logical: true will autoload module at startup, false disable autoload for this module.</td>
+<td>logique : true active le chargement automatique du module au démarrage, false désactive l'autoload pour ce module.</td>
 </tr>
 <tr>
 <td class="param-name">git_url</td>
-<td>a string: a git url (http/https protocol).</td>
+<td>chaîne : une URL git (protocole http/https).</td>
 </tr>
 <tr>
 <td class="param-name">destination_dir</td>
-<td>a string: an existing destination directory where archive will be created.</td>
+<td>chaîne : répertoire de destination existant où l'archive sera créée.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">st</td>
-<td>a struct: list of installed modules.</td>
+<td>struct : liste des modules installés.</td>
 </tr>
 <tr>
 <td class="param-name">l</td>
-<td>a logical: current state of autoload.</td>
+<td>logique : état courant de l'autoload.</td>
 </tr>
 <tr>
 <td class="param-name">package_filename</td>
-<td>a string: filename.</td>
+<td>chaîne : nom du fichier.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>nmm</b> is the Nelson Modules Manager.</p>
-            <p>Source-based distribution packages allows to have optimized packages for your computer and allows to have distributed repositories.</p>
-            <p>Installed modules are locally built and can require an C/C++.</p>
+            <b>nmm</b> est le gestionnaire de modules Nelson.</p>
+            <p>Les paquets distribués au format source permettent d'obtenir des paquets optimisés pour votre machine et de disposer de dépôts distribués.</p>
+            <p>Les modules installés sont compilés localement et peuvent nécessiter un compilateur C/C++.</p>
             <p></p>
             <p>
-                <b>st = nmm('list')</b> get list of installed modules.</p>
+                <b>st = nmm('list')</b> récupère la liste des modules installés.</p>
                 <p></p>
                 <p>
-                    <b>nmm('install', git_url)</b> install a distant module.</p>
-                    <p>About git_url, in this example 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'</p>
-                    <p>'#v1.0.0' is defined as #&lt;commit-ish&gt;, it allows to clone exactly an commit.</p>
-                    <p>The commit-ish can be a tag (exact version), and an sha1 (exac commit) or an branch name.</p>
-                    <p>Without commit-ish, master branch will be used.</p>
+                    <b>nmm('install', git_url)</b> installe un module distant.</p>
+                    <p>Par exemple : 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'</p>
+                    <p>'#v1.0.0' est un commit-ish : il permet de cloner exactement un commit.</p>
+                    <p>Le commit-ish peut être un tag (version exacte), un sha1 (commit exact) ou un nom de branche.</p>
+                    <p>Sans commit-ish, la branche master sera utilisée.</p>
                     <p></p>
                     <p>
-                        <b>nmm('install', filename_nmz)</b> install an prebuilt external module.</p>
+                        <b>nmm('install', filename_nmz)</b> installe un module externe précompilé.</p>
                         <p></p>
                         <p>
-                            <b>nmm('load', module_name)</b> load an installed module for current session.</p>
+                            <b>nmm('load', module_name)</b> charge un module installé pour la session courante.</p>
                             <p></p>
                             <p>
-                                <b>l = nmm('autoload', module_name</b> returns current state autoload for <b>module_name</b>.</p>
+                                <b>l = nmm('autoload', module_name</b> retourne l'état courant d'autoload pour <b>module_name</b>.</p>
                                 <p></p>
                                 <p>
-                                    <b>nmm('autoload', module_name, state)</b> marks an installed modules "marked" as autoload at startup.</p>
-                                    <p>By default modules are marked as autoload.</p>
+                                    <b>nmm('autoload', module_name, state)</b> marque un module installé pour être chargé automatiquement au démarrage.</p>
+                                    <p>Par défaut, les modules sont marqués pour l'autoload.</p>
                                     <p></p>
                                     <p>
-                                        <b>nmm('uninstall', module_name)</b> uninstall an installed module.</p>
+                                        <b>nmm('uninstall', module_name)</b> désinstalle un module installé.</p>
                                         <p></p>
                                         <p>
-                                            <b>nmm('package', module_name, destination_dir)</b> packages an module as a zip file.</p>
+                                            <b>nmm('package', module_name, destination_dir)</b> empaquette un module dans un fichier zip.</p>
                                             <p></p>
                                         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">Deploy module_skeleton_basic template</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -172,14 +171,14 @@ package_filename = nmm('package', 'module_skeleton_basic', tempdir())</code><but
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../modules_manager/ismodule.html">ismodule</a><a class="see-also-link" href="../modules_manager/getmodules.html">getmodules</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -187,13 +186,13 @@ package_filename = nmm('package', 'module_skeleton_basic', tempdir())</code><but
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -45,62 +45,61 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">entries</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Key-value pairs of dictionary.</div></div>
+<div class="section syntax-section"><div class="subtitle">Paires clé-valeur du dictionnaire.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">E = entries(d)
 E = entries(d, format)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">d</td>
-<td>scalar: dictionary object.</td>
+<td>scalaire : objet dictionnaire.</td>
 </tr>
 <tr>
 <td class="param-name">format</td>
-<td>format: string scalar or character vector: 'cell', 'struct', 'table' (not yet implemented) .</td>
+<td>format : scalaire string ou vecteur de caractères : 'cell', 'struct', 'table' (non encore implémenté).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">E</td>
-<td>table, struct or cell.</td>
+<td>table, struct ou cell.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>E = entries(d)</b> retrieves a table containing the key-value pairs from the given dictionary, <b>d</b>.</p>
+            <b>E = entries(d)</b> récupère une table contenant les paires clé-valeur du dictionnaire donné, <b>d</b>.</p>
             <p>
-                <b>E = entries(d)</b> currently not implemented.</p>
+                <b>E = entries(d)</b> actuellement non implémenté.</p>
                 <p>
-                    <b>E = entries(d, format)</b> specifies the output format as either a table or a structure. For instance, entries(d, "struct") returns a structure containing the key-value pairs of d. This option is useful for data types that are not compatible with tables.</p>
+                    <b>E = entries(d, format)</b> spécifie le format de sortie comme une table ou une structure. Par exemple, entries(d, "struct") renvoie une structure contenant les paires clé-valeur de d. Cette option est utile pour les types de données non compatibles avec les tables.</p>
                 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">names = ["Biil" "John" "Yann"];
 wheels = [1 2 3];
@@ -111,14 +110,14 @@ E = entries(d, 'cell')</code><button class="copy-btn" type="button" onclick="cop
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../dictionary/dictionary.html">dictionary</a><a class="see-also-link" href="../dictionary/lookup.html">lookup</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -126,13 +125,13 @@ E = entries(d, 'cell')</code><button class="copy-btn" type="button" onclick="cop
 </tr>
 <tr>
 <td class="version">1.5.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

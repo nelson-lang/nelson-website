@@ -2,14 +2,14 @@
 <help_summary>
   <toc>
     <module>tests_manager</module>
-    <section name="Tests framework for Nelson">
+    <section name="Outils de tests pour Nelson">
       <chapter_description>
-        <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.</p>
-        <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.</p>
+        <p>The Test Manager de Nelson fournit des outils pour les tests automatisés de code, permettant aux utilisateurs de valider les fonctionnalités, d'assurer la correction et de gérer efficacement les cas de test.</p>
+        <p>Ce module prend en charge la création de sorties de référence, l'exécution de suites de tests et la désactivation conditionnelle des tests.</p>
     </chapter_description>
-      <keyword name="test_makeref" link="test_makeref.html" description="Creates a '.ref' file for a test"/>
-      <keyword name="test_run" link="test_run.html" description="Runs tests"/>
-      <keyword name="skip_testsuite" link="test_skip_testsuite.html" description="Skip test suite on condition"/>
+      <keyword name="test_makeref" link="test_makeref.html" description="Crée un fichier '.ref' pour un test"/>
+      <keyword name="test_run" link="test_run.html" description="Exécute les tests"/>
+      <keyword name="skip_testsuite" link="test_skip_testsuite.html" description="Sauter la suite de tests selon une condition"/>
     </section>
   </toc>
 </help_summary>

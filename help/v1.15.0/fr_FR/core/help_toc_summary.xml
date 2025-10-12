@@ -4,40 +4,39 @@
     <module>core</module>
     <section name="Core">
       <chapter_description>
-        <p>The Core module provides the fundamental building blocks of the Nelson environment.</p>
-        <p>It includes essential services for program execution, environment management, and system interaction.</p>
-        <p>Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.</p>
-        <p>It also offers basic utilities for file identification, checksums, and terminal capabilities.</p>
-        <p>Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.</p>
+        <p>Le module de base fournit les éléments fondamentaux de l'environnement Nelson.</p>
+        <p>Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.</p>
+        <p>Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.</p>
+        <p>Il offre également des utilitaires de base pour l'identification des fichiers, les sommes de contrôle et les capacités du terminal.</p>
+        <p>Ensemble, ces fonctionnalités forment la base sur laquelle tous les autres modules et fonctionnalités au niveau utilisateur dans Nelson sont construits.</p>
     </chapter_description>
-      <keyword name="banner" link="banner.html" description="Shows Nelson banner."/>
-      <keyword name="crc32" link="crc32.html" description="Get crc32 checksum."/>
-      <keyword name="eval" link="eval.html" description="Evaluate Nelson code in string."/>
-      <keyword name="evalc" link="evalc.html" description="Evaluate Nelson code with console capture."/>
-      <keyword name="evalin" link="evalin.html" description="Evaluate Nelson code in string in an specified scope."/>
-      <keyword name="execstr" link="execstr.html" description="Execute Nelson code in strings."/>
-      <keyword name="exist" link="exist.html" description="Check for the existence."/>
-      <keyword name="exit" link="exit.html" description="Terminate Nelson program (same as quit)"/>
-      <keyword name="feature" link="feature.html" description="undocumented features."/>
-      <keyword name="inputname" link="inputname.html" description="Get variable name of function input."/>
-      <keyword name="isunicodesupported" link="isunicodesupported.html" description="Detect whether the current terminal supports Unicode."/>
-      <keyword name="license" link="license.html" description="Get license information for Nelson."/>
-      <keyword name="maxNumCompThreads" link="maxNumCompThreads.html" description="Set/Get maximum number of computional threads."/>
-      <keyword name="namelengthmax" link="namelengthmax.html" description="Return the maximum variable name length."/>
-      <keyword name="nargin" link="nargin.html" description="Returns the number of input arguments."/>
-      <keyword name="narginchk" link="narginchk.html" description="Checks the number of input arguments."/>
-      <keyword name="nargout" link="nargout.html" description="Returns the number of output arguments."/>
-      <keyword name="nargoutchk" link="nargoutchk.html" description="Checks the number of output arguments."/>
-      <keyword name="nelsonappid" link="nelsonappid.html" description="Returns nelson application ID"/>
-      <keyword name="nelsonroot" link="nelsonroot.html" description="Returns Nelson's root folder."/>
-      <keyword name="nfilename" link="nfilename.html" description="Returns the name of the currently executing file."/>
-      <keyword name="mfilename" link="nfilename.html" description="Returns the name of the currently executing file."/>
-      <keyword name="pause " link="pause.html" description="Pauses script execution."/>
-      <keyword name="prefdir" link="prefdir.html" description="Return the preferences directory used by Nelson."/>
-      <keyword name="quit" link="quit.html" description="Terminate Nelson application"/>
-      <keyword name="run" link="run.html" description="Executes a script file (.m)."/>
-      <keyword name="sha256" link="sha256.html" description="Get sha256 checksum."/>
-      <keyword name="version" link="version.html" description="Return the version of Nelson."/>
+      <keyword name="banner" link="banner.html" description="Affiche la bannière d'accueil de Nelson."/>
+      <keyword name="crc32" link="crc32.html" description="Calcul du CRC32."/>
+      <keyword name="eval" link="eval.html" description="Évalue une expression."/>
+      <keyword name="evalc" link="evalc.html" description="Évalue une expression et capture la sortie."/>
+      <keyword name="evalin" link="evalin.html" description="Évalue une expression dans un espace de travail spécifié."/>
+      <keyword name="execstr" link="execstr.html" description="Exécute une chaîne comme commande."/>
+      <keyword name="exist" link="exist.html" description="Vérifie l'existence d'une variable, fonction ou fichier."/>
+      <keyword name="exit" link="exit.html" description="Quitte l'environnement Nelson."/>
+      <keyword name="feature" link="feature.html" description="Interroge les fonctionnalités disponibles."/>
+      <keyword name="inputname" link="inputname.html" description="Renvoie le nom d'une variable d'entrée d'une fonction."/>
+      <keyword name="isunicodesupported" link="isunicodesupported.html" description="Indique si Unicode est supporté."/>
+      <keyword name="license" link="license.html" description="Affiche les informations de licence."/>
+      <keyword name="maxNumCompThreads" link="maxNumCompThreads.html" description="Nombre maximal de threads de calcul."/>
+      <keyword name="namelengthmax" link="namelengthmax.html" description="Longueur maximale des noms de variables."/>
+      <keyword name="nargin" link="nargin.html" description="Nombre d'arguments d'entrée d'une fonction."/>
+      <keyword name="narginchk" link="narginchk.html" description="Vérifie le nombre d'arguments d'entrée."/>
+      <keyword name="nargout" link="nargout.html" description="Nombre d'arguments de sortie d'une fonction."/>
+      <keyword name="nargoutchk" link="nargoutchk.html" description="Vérifie le nombre d'arguments de sortie."/>
+      <keyword name="nelsonappid" link="nelsonappid.html" description="Identifiant de l'application Nelson."/>
+      <keyword name="nelsonroot" link="nelsonroot.html" description="Répertoire racine de Nelson."/>
+      <keyword name="nfilename" link="nfilename.html" description="Nom du fichier courant exécuté."/>
+      <keyword name="pause" link="pause.html" description="Met l'exécution en pause."/>
+      <keyword name="prefdir" link="prefdir.html" description="Répertoire des préférences utilisateur."/>
+      <keyword name="quit" link="quit.html" description="Ferme l'application Nelson."/>
+      <keyword name="run" link="run.html" description="Exécute un script ou un fichier."/>
+      <keyword name="sha256" link="sha256.html" description="Calcule le hash SHA-256."/>
+      <keyword name="version" link="version.html" description="Version de l'environnement Nelson."/>
     </section>
   </toc>
 </help_summary>

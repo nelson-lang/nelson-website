@@ -45,21 +45,21 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">private functions</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Private functions.</div></div>
+<div class="section syntax-section"><div class="subtitle">Fonctions privées.</div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Private functions serve a valuable purpose when you wish to restrict the accessibility of a function.</p>
-        <p>In numerous instances, a single function may require access to one or more auxiliary functions.</p>
-        <p>when a solitary auxiliary function is utilized by multiple functions, it becomes necessary to relocate these auxiliary functions to a dedicated subdirectory named "private", positioned within the directory where the functions that require access to these auxiliary functions are located.</p>
-        <p>To illustrate this concept, consider a function, let's call it <b>function1</b>, that relies on a helper function, <b>function2</b>, to perform a substantial portion of its tasks, as shown in below example.</p>
-        <p>In this scenario, if the path to func1 is <b>directory/function1.m</b> and <b>function2</b> is found in the directory <b>directory/private/function2.m</b>, then <b>function2</b> is only accessible to functions within <b>directory</b>, such as <b>function1</b>.</p>
+        <p>Les fonctions privées servent un objectif précieux lorsque vous souhaitez restreindre l'accessibilité d'une fonction.</p>
+        <p>Dans de nombreux cas, une seule fonction peut nécessiter l'accès à une ou plusieurs fonctions auxiliaires.</p>
+        <p>lorsqu'une fonction auxiliaire solitaire est utilisée par plusieurs fonctions, il devient nécessaire de déplacer ces fonctions auxiliaires vers un sous-répertoire dédié nommé "private", situé dans le répertoire où se trouvent les fonctions qui nécessitent l'accès à ces fonctions auxiliaires.</p>
+        <p>Pour illustrer ce concept, considérons une fonction, appelons-la <b>function1</b>, qui repose sur une fonction d'aide, <b>function2</b>, pour effectuer une partie substantielle de ses tâches, comme indiqué dans l'exemple ci-dessous.</p>
+        <p>Dans ce scénario, si le chemin vers function1 est <b>directory/function1.m</b> et <b>function2</b> se trouve dans le répertoire <b>directory/private/function2.m</b>, alors <b>function2</b> n'est accessible qu'aux fonctions dans <b>directory</b>, telles que <b>function1</b>.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">directory/function1.m</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -79,12 +79,12 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../functions_manager/addpath.html">addpath</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -92,13 +92,13 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

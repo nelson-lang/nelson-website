@@ -2,7 +2,7 @@
 <html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Accessing and Manipulating Tables in Nelson</title>
+<title>Accès et manipulation des tables dans Nelson</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
 <script type="text/javascript">
@@ -44,61 +44,42 @@
             </script>
 </head>
 <body>
-<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Accessing and Manipulating Tables in Nelson</span></div></div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Accès et manipulation des tables dans Nelson</span></div></div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>Insertion into a Table</b>
-        </p>
-        <p>To insert new data into a table, use dot notation or curly braces <b>{}</b> for specific element-wise insertion. You can add new rows, columns, or update existing data.</p>
-        <p>see examples: <b>Adding a New Column</b> and <b>Updating an Existing Element</b>
-    </p>
+        <p><b>Insertion dans une table</b></p>
+        <p>Pour insérer de nouvelles données dans une table, utilisez la notation par point ou les accolades <b>{}</b> pour une insertion élément par élément. Vous pouvez ajouter de nouvelles lignes, colonnes ou mettre à jour des données existantes.</p>
+        <p>voir exemples : <b>Ajout d'une nouvelle colonne</b> et <b>Mise à jour d'un élément existant</b></p>
     <p></p>
-    <p>
-        <b>Extraction from a Table</b>
-    </p>
-    <p>You can extract specific rows, columns, or individual elements using indexing or by referencing variable names.</p>
-    <p>see examples: <b>Extracting Specific Columns</b> and <b>Extracting Specific Rows</b>
-</p>
+    <p><b>Extraction depuis une table</b></p>
+    <p>Vous pouvez extraire des lignes, colonnes ou éléments individuels en utilisant l'indexation ou en référant les noms de variables.</p>
+    <p>voir exemples : <b>Extraction de colonnes spécifiques</b> et <b>Extraction de lignes spécifiques</b></p>
 <p></p>
-<p>
-    <b>Removing Data from a Table</b>
-</p>
-<p>In Nelson, you can remove rows, columns, or specific elements from a table by using indexing or the removevars function. Rows or columns can be removed by setting the indices to empty brackets [].</p>
-<p>see examples: <b>Removing Rows</b> and <b>Removing Columns</b>
-</p>
+<p><b>Suppression de données dans une table</b></p>
+<p>Dans Nelson, vous pouvez supprimer des lignes, colonnes ou éléments spécifiques d'une table en utilisant l'indexation ou la fonction removevars. Les lignes ou colonnes peuvent être supprimées en définissant les indices sur des crochets vides [].</p>
+<p>voir exemples : <b>Suppression de lignes</b> et <b>Suppression de colonnes</b></p>
 <p></p>
-<p>
-    <b>Horizontal Concatenation (horzcat)</b>
-</p>
-<p>You can concatenate tables horizontally (side by side) using the horzcat function. This function combines tables by appending the columns of one table to the columns of another table.</p>
-<p>see examples: <b>Horizontal Concatenation</b>
-</p>
+<p><b>Concaténation horizontale (horzcat)</b></p>
+<p>Vous pouvez concaténer des tables horizontalement (côte à côte) en utilisant la fonction horzcat. Cette fonction combine les tables en ajoutant les colonnes d'une table aux colonnes d'une autre.</p>
+<p>voir exemples : <b>Concaténation horizontale</b></p>
 <p></p>
-<p>
-    <b>Vertical Concatenation (vertcat)</b>
-</p>
-<p>You can concatenate tables vertically (one below the other) using the vertcat function. This function combines tables by appending the rows of one table to the rows of another table.</p>
-<p>see examples: <b>Vertical Concatenation</b>
-</p>
+<p><b>Concaténation verticale (vertcat)</b></p>
+<p>Vous pouvez concaténer des tables verticalement (l'une sous l'autre) en utilisant la fonction vertcat. Cette fonction combine les tables en ajoutant les lignes d'une table aux lignes d'une autre.</p>
+<p>voir exemples : <b>Concaténation verticale</b></p>
 <p></p>
-<p>
-    <b>Convert variable types</b>
-</p>
-<p>You can convert table variables by using the <b>VariableTypes</b> property.</p>
-<p>see examples: <b>VariableTypes</b> example</p>
+<p><b>Conversion des types de variables</b></p>
+<p>Vous pouvez convertir les variables d'une table en utilisant la propriété <b>VariableTypes</b>.</p>
+<p>voir exemples : exemple <b>VariableTypes</b></p>
 <p></p>
-<p>
-    <b>Summary</b>
-</p>
-<p>In Nelson, tables provide a flexible way to store and manipulate heterogeneous data. You can easily insert data, extract parts of the table, and concatenate tables both horizontally and vertically using built-in functionality like dot notation and concatenation functions (horzcat, vertcat), making table manipulation intuitive and powerful for data analysis.</p>
+<p><b>Résumé</b></p>
+<p>Dans Nelson, les tables offrent un moyen flexible de stocker et manipuler des données hétérogènes. Vous pouvez facilement insérer des données, extraire des parties de la table et concaténer des tables horizontalement ou verticalement en utilisant la notation par point et les fonctions de concaténation (horzcat, vertcat), rendant la manipulation de tables intuitive et puissante pour l'analyse de données.</p>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div class="example-title">Adding a New Column</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -203,14 +184,14 @@ T.Properties.VariableTypes</code><button class="copy-btn" type="button" onclick=
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../table/table.html">table</a><a class="see-also-link" href="../table/2_direct_compution_with_table.html">Direct computation with Table</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -218,7 +199,7 @@ T.Properties.VariableTypes</code><button class="copy-btn" type="button" onclick=
 </tr>
 <tr>
 <td class="version">1.8.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.10.0</td>
@@ -228,7 +209,7 @@ T.Properties.VariableTypes</code><button class="copy-btn" type="button" onclick=
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">hist</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Histogram plot.</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracé d'histogramme.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">hist(x)
 hist(x, nbins)
 hist(ax, ...)
@@ -59,59 +58,59 @@ counts = hist(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">x</td>
-<td>vector or matrix</td>
+<td>vecteur ou matrice</td>
 </tr>
 <tr>
 <td class="param-name">nbins</td>
-<td>vector.</td>
+<td>vecteur.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>Axes object.</td>
+<td>Objet axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">counts</td>
-<td>Counts of the number of elements in each bin: row vector.</td>
+<td>Nombre d'éléments dans chaque intervalle : vecteur ligne.</td>
 </tr>
 <tr>
 <td class="param-name">centers</td>
-<td> Bin centers: vector.</td>
+<td>Centres des intervalles : vecteur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>A histogram is a graphical representation that illustrates the distribution of data values.</p>
-        <p>When you use the <b>hist</b> function, it organizes the elements in the vector <b>Y</b> into 10 equally spaced containers and provides the count of elements in each container as a row vector.</p>
+        <p>Un histogramme est une représentation graphique qui illustre la distribution des valeurs d'un ensemble de données.</p>
+        <p>Lorsque vous utilisez la fonction <b>hist</b>, elle organise les éléments du vecteur <b>Y</b> en 10 intervalles également espacés et fournit le nombre d'éléments dans chaque intervalle sous forme de vecteur ligne.</p>
         <p>
-            <b>hist(Y, x)</b> with a vector <b>x</b>, the function will return the distribution of values in <b>Y</b> among bins determined by the length of <b>x</b>, with centers specified by the values in <b>x</b>.</p>
-            <p>For instance, if <b>x</b> is a 5-element vector, <b>hist</b> will categorize the elements of <b>Y</b> into five bins, each centered on the x-axis at the values specified in <b>x</b>.</p>
-            <p>When you use <b>hist(...)</b> without specifying any output arguments, it generates a histogram plot. The bins are distributed along the x-axis between the minimum and maximum values found in the input vector <b>Y</b>.</p>
-        </div>
+            <b>hist(Y, x)</b> avec un vecteur <b>x</b>, la fonction retourne la distribution des valeurs de <b>Y</b> parmi des intervalles déterminés par la longueur de <b>x</b>, avec des centres spécifiés par les valeurs de <b>x</b>.</p>
+        <p>Par exemple, si <b>x</b> est un vecteur de 5 éléments, <b>hist</b> classera les éléments de <b>Y</b> dans cinq intervalles, chacun centré sur l'axe des x aux valeurs spécifiées dans <b>x</b>.</p>
+        <p>Lorsque vous utilisez <b>hist(...)</b> sans spécifier d'argument de sortie, cela génère un tracé d'histogramme. Les intervalles sont répartis le long de l'axe des x entre les valeurs minimale et maximale trouvées dans le vecteur d'entrée <b>Y</b>.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -125,14 +124,14 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/bar.html">bar</a><a class="see-also-link" href="../graphics/patch.html">patch</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -140,13 +139,13 @@ end</code><button class="copy-btn" type="button" onclick="copyExample(this)" tit
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

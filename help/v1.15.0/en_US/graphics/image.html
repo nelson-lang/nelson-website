@@ -48,8 +48,7 @@
 <div class="section syntax-section"><div class="subtitle">Display image from array.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block">image()
 image(C)
 image(X, Y, C)
@@ -62,7 +61,7 @@ go = image(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Input Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -96,7 +95,7 @@ go = image(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Output Arguments</div>
 <table class="param-table">
 <tr>
 <th>Parameter</th>
@@ -110,50 +109,82 @@ go = image(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
             <b>image</b> displays C data as an image.</p>
             <p>Properties:</p>
-            <p></p>
-            <p>
-                <b>AlphaData</b> Transparency data: scalar, array the same size as CData, or 1 (default).</p>
-                <p>
-                    <b>AlphaDataMapping</b>
-                </p>
-                <p>
-                    <b>CData</b> Image color data: vector or matrix, 3-D array of RGB triplets.</p>
-                    <p>
-                        <b>CDataMapping</b> Color data mapping method: 'scaled' or 'direct' (default).</p>
-                        <p>
-                            <b>Children</b> [].</p>
-                            <p>
-                                <b>Parent</b> Parent: axes object.</p>
-                                <p>
-                                    <b>Tag</b> Object identifier: string scalar, character vector, '' (default).</p>
-                                    <p>
-                                        <b>Type</b> Type of graphics object: 'surface'.</p>
-                                        <p>
-                                            <b>UserData</b>: User data: array or [] (default).</p>
-                                            <p>
-                                                <b>Visible</b> State of visibility: 'off' or 'on' (default).</p>
-                                                <p>
-                                                    <b>XData</b> Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).</p>
-                                                    <p>
-                                                        <b>YData</b> Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).</p>
-                                                        <p></p>
-                                                        <p>
-                                                            <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-                                                            <p>
-                                                                <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-                                                                <p>
-                                                                    <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-                                                                </div>
+            <table>
+                <tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+                <tr>
+<td><b>AlphaData</b></td>
+<td>Transparency data: scalar, array the same size as CData, or 1 (default).</td>
+</tr>
+                <tr>
+<td><b>AlphaDataMapping</b></td>
+<td>Alpha data mapping method.</td>
+</tr>
+                <tr>
+<td><b>CData</b></td>
+<td>Image color data: vector or matrix, 3-D array of RGB triplets.</td>
+</tr>
+                <tr>
+<td><b>CDataMapping</b></td>
+<td>Color data mapping method: 'scaled' or 'direct' (default).</td>
+</tr>
+                <tr>
+<td><b>Children</b></td>
+<td>[].</td>
+</tr>
+                <tr>
+<td><b>Parent</b></td>
+<td>Parent: axes object.</td>
+</tr>
+                <tr>
+<td><b>Tag</b></td>
+<td>Object identifier: string scalar, character vector, '' (default).</td>
+</tr>
+                <tr>
+<td><b>Type</b></td>
+<td>Type of graphics object: 'surface'.</td>
+</tr>
+                <tr>
+<td><b>UserData</b></td>
+<td>User data: array or [] (default).</td>
+</tr>
+                <tr>
+<td><b>Visible</b></td>
+<td>State of visibility: 'off' or 'on' (default).</td>
+</tr>
+                <tr>
+<td><b>XData</b></td>
+<td>Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).</td>
+</tr>
+                <tr>
+<td><b>YData</b></td>
+<td>Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).</td>
+</tr>
+                <tr>
+<td><b>CreateFcn</b></td>
+<td>Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.</td>
+</tr>
+                <tr>
+<td><b>DeleteFcn</b></td>
+<td>Callback (function handle, string or cell) called when object is deleted.</td>
+</tr>
+                <tr>
+<td><b>BeingDeleted</b></td>
+<td>Flag indicating that the object is being deleted.</td>
+</tr>
+            </table>
+        </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Examples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -178,14 +209,14 @@ image();</code><button class="copy-btn" type="button" onclick="copyExample(this)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>See Also</div>
 <div>
 <a class="see-also-link" href="../graphics/imagesc.html">imagesc</a><a class="see-also-link" href="../graphics/colormap.html">colormap</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Version History</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -207,7 +238,7 @@ image();</code><button class="copy-btn" type="button" onclick="copyExample(this)
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
 </body>

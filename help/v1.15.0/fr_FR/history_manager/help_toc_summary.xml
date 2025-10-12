@@ -2,14 +2,12 @@
 <help_summary>
   <toc>
     <module>history_manager</module>
-    <section name="History manager">
+    <section name="Gestionnaire d'historique">
       <chapter_description>
-        <p>The History Manager module in Nelson provides tools to access and manage the command
-            history of your session.</p>
-        <p>It allows users to review previously executed commands, recall them for reuse, and
-            maintain an organized workflow.</p>
+        <p>Le module History Manager de Nelson fournit des outils pour accéder et gérer l'historique des commandes de votre session.</p>
+        <p>Il permet aux utilisateurs de revoir les commandes exécutées précédemment, de les rappeler pour les réutiliser et de maintenir un flux de travail organisé.</p>
     </chapter_description>
-      <keyword name="history" link="history.html" description="history manager."/>
+      <keyword name="history" link="history.html" description="gestionnaire d'historique."/>
     </section>
   </toc>
 </help_summary>

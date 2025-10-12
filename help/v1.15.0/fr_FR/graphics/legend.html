@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">legend</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Add legend to axes.</div></div>
+<div class="section syntax-section"><div class="subtitle">Ajoute une légende aux axes.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">legend()
 legend(label1, ..., labelN)
 legend(labels)
@@ -67,99 +66,100 @@ L = legend(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">label1, ..., labelN</td>
-<td>sets the legend labels: row vector characters.</td>
+<td>Définit les étiquettes de la légende : vecteurs ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">labels</td>
-<td>cell array of character vectors or string array.</td>
+<td>Cellule de vecteurs de caractères ou tableau de chaînes.</td>
 </tr>
 <tr>
 <td class="param-name">'off'</td>
-<td>delete the legend.</td>
+<td>Supprime la légende.</td>
 </tr>
 <tr>
 <td class="param-name">'toggle'</td>
-<td>toggle legend visibility.</td>
+<td>Active/désactive la visibilité de la légende.</td>
 </tr>
 <tr>
 <td class="param-name">'hide'</td>
-<td>hide legend.</td>
+<td>Masque la légende.</td>
 </tr>
 <tr>
 <td class="param-name">'show'</td>
-<td>show legend.</td>
+<td>Affiche la légende.</td>
 </tr>
 <tr>
 <td class="param-name">'boxon'</td>
-<td>display box around legend.</td>
+<td>Affiche un encadré autour de la légende.</td>
 </tr>
 <tr>
 <td class="param-name">'boxoff'</td>
-<td>hide box around legend.</td>
+<td>Masque l'encadré autour de la légende.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>axes to make current.</td>
+<td>Axes à rendre courant.</td>
 </tr>
 <tr>
 <td class="param-name">lcn</td>
-<td> Legend location: a string ('NE' default).</td>
+<td> Emplacement de la légende : une chaîne ('NE' par défaut).</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Une chaîne scalaire ou un vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">L</td>
-<td>a graphics object: axes type.</td>
+<td>Un objet graphique : type axes.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>legend</b> creates a legend in the current figure.</p>
-            <p>
-                <b>Location for legend on the plot:</b>
-            </p>
-            <p></p>
-            <p>'northeast' or 'NE': Top right (default).</p>
-            <p>'north' or 'N': Top center.</p>
-            <p>'south' or 'S': Bottom center.</p>
-            <p>'east' or 'E': Middle right.</p>
-            <p>'west' or 'W': Middle left.</p>
-            <p>'northwest' or 'NW': Top left.</p>
-            <p>'southeast' or 'SE': Bottom right.</p>
-            <p>'southwest' or 'SW': Bottom left.</p>
-        </div>
+            <b>legend</b> crée une légende dans la figure courante.
+        </p>
+        <p>
+            <b>Emplacement de la légende sur le graphique :</b>
+        </p>
+        <p></p>
+        <p>'northeast' ou 'NE' : En haut à droite (par défaut).</p>
+        <p>'north' ou 'N' : En haut au centre.</p>
+        <p>'south' ou 'S' : En bas au centre.</p>
+        <p>'east' ou 'E' : Au milieu à droite.</p>
+        <p>'west' ou 'W' : Au milieu à gauche.</p>
+        <p>'northwest' ou 'NW' : En haut à gauche.</p>
+        <p>'southeast' ou 'SE' : En bas à droite.</p>
+        <p>'southwest' ou 'SW' : En bas à gauche.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -176,14 +176,14 @@ legend('sin(x)', 'cos(x)', 'Location', 'N')</code><button class="copy-btn" type=
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/title.html">title</a><a class="see-also-link" href="../graphics/text.html">text</a><a class="see-also-link" href="../graphics/plot.html">plot</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -191,13 +191,13 @@ legend('sin(x)', 'cos(x)', 'Location', 'N')</code><button class="copy-btn" type=
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

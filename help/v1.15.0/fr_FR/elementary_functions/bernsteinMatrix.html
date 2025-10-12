@@ -45,59 +45,58 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">bernsteinMatrix</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Bernstein matrix</div></div>
+<div class="section syntax-section"><div class="subtitle">Matrice de Bernstein</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">B = bernsteinMatrix(n, t)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">n</td>
-<td>nonnegative integer: Approximation order.</td>
+<td>entier non négatif : ordre d'approximation.</td>
 </tr>
 <tr>
 <td class="param-name">t</td>
-<td>number or vector: Evaluation point.</td>
+<td>nombre ou vecteur : points d'évaluation.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">B</td>
-<td>Bernstein Matrix: length(t) - by - n+1 matrix.</td>
+<td>Matrice de Bernstein : matrice de taille length(t)-par-(n+1).</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>B = bernsteinMatrix(n, t)</b> constructs a Bernstein matrix <b>B</b> with dimensions length(t) - by - (n+1), where t is a vector.</p>
-            <p>The Bernstein matrix is also referred to as the Bezier matrix.</p>
-            <p>This function can be utilized to calculate the points of a Bezier curve.</p>
+            <b>B = bernsteinMatrix(n, t)</b> construit une matrice de Bernstein <b>B</b> de dimensions length(t)-par-(n+1) lorsque t est un vecteur.</p>
+            <p>La matrice de Bernstein est aussi appelée matrice de Bézier.</p>
+            <p>Cette fonction permet de calculer les points d'une courbe de Bézier.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">t = 0:1/100:1;
@@ -111,7 +110,7 @@ plot3(bezierCurve(:,1), bezierCurve(:,2), bezierCurve(:,3))</code><button class=
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -119,13 +118,13 @@ plot3(bezierCurve(:,1), bezierCurve(:,2), bezierCurve(:,3))</code><button class=
 </tr>
 <tr>
 <td class="version">1.5.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

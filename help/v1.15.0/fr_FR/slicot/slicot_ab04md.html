@@ -45,91 +45,90 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_ab04md</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Discrete-time / continuous-time systems conversion by a bilinear transformation.</div></div>
+<div class="section syntax-section"><div class="subtitle">Conversion entre systèmes discrets et continus par transformation bilinéaire.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[A_OUT, B_OUT, C_OUT, D_OUT, INFO] = slicot_ab04md(TYPE, ALPHA, BETA, A_IN, B_IN, C_IN, D_IN)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">TYPE</td>
-<td>a character: 'D' discrete or 'C' continuous time</td>
+<td>Un caractère : 'D' discret ou 'C' continu.</td>
 </tr>
 <tr>
 <td class="param-name">ALPHA, BETA</td>
-<td>Parameters specifying the bilinear transformation. Recommended values for stable systems: ALPHA = 1, BETA = 1.  ALPHA ~= 0, BETA ~= 0</td>
+<td>Paramètres spécifiant la transformation bilinéaire. Valeurs recommandées pour systèmes stables : ALPHA = 1, BETA = 1. ALPHA ≠ 0, BETA ≠ 0.</td>
 </tr>
 <tr>
 <td class="param-name">A_IN</td>
-<td>N-by-N part of this array must contain the state matrix A of the original system.</td>
+<td>La partie N-by-N de ce tableau doit contenir la matrice d'état A du système d'origine.</td>
 </tr>
 <tr>
 <td class="param-name">B_IN</td>
-<td>N-by-M part of this array must contain the input matrix B of the original system.</td>
+<td>La partie N-by-M de ce tableau doit contenir la matrice d'entrée B du système d'origine.</td>
 </tr>
 <tr>
 <td class="param-name">C_IN</td>
-<td>P-by-N part of this array must contain the output matrix C of the original system.</td>
+<td>La partie P-by-N de ce tableau doit contenir la matrice de sortie C du système d'origine.</td>
 </tr>
 <tr>
 <td class="param-name">D_IN</td>
-<td>P-by-M part of this array must contain the input/output matrix D for the original system.</td>
+<td>La partie P-by-M de ce tableau doit contenir la matrice d'entrée/sortie D du système d'origine.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td> N-by-N part of this array contains the state matrix _A of the transformed system.</td>
+<td>La partie N-by-N de ce tableau contient la matrice d'état _A du système transformé.</td>
 </tr>
 <tr>
 <td class="param-name">B_OUT</td>
-<td>N-by-M part of this array contains the input matrix _B of the transformed system.</td>
+<td>La partie N-by-M de ce tableau contient la matrice d'entrée _B du système transformé.</td>
 </tr>
 <tr>
 <td class="param-name">C_OUT</td>
-<td>the leading P-by-N part of this array contains the output matrix _C of the transformed system.</td>
+<td>La partie principale P-by-N de ce tableau contient la matrice de sortie _C du système transformé.</td>
 </tr>
 <tr>
 <td class="param-name">D_OUT</td>
-<td>P-by-M part of this array contains the input/output matrix _D of the transformed system.</td>
+<td>La partie P-by-M de ce tableau contient la matrice d'entrée/sortie _D du système transformé.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>Error Indicator: = 0:  successful exit;
-  less than 0:  if INFO = -i, the i-th argument had an illegal value;
-          = 1:  if the matrix (ALPHA*I + A) is exactly singular;
-          = 2:  if the matrix  (BETA*I - A) is exactly singular.</td>
+<td>Indicateur d'erreur : 0 : sortie réussie ;
+  &lt; 0 : si INFO = -i, le i-ème argument avait une valeur illégale ;
+    1 : si la matrice (ALPHA*I + A) est exactement singulière ;
+    2 : si la matrice (BETA*I - A) est exactement singulière.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p> To perform a transformation on the parameters (A, B, C, D) of a system, which is equivalent to a bilinear transformation of the corresponding transfer function matrix.</p>
-    </div>
+    <p>Effectuer une transformation sur les paramètres (A, B, C, D) d'un système, équivalente à une transformation bilinéaire de la matrice de fonction de transfert correspondante.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">N = 2;
 M = 2;
@@ -150,12 +149,12 @@ D = [   1.0  0.0; 0.0 -1.0];
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/AB04MD.html" target="_blank">http://slicot.org/objects/software/shared/doc/AB04MD.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -163,13 +162,13 @@ D = [   1.0  0.0; 0.0 -1.0];
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

@@ -2,41 +2,41 @@
 <help_summary>
   <toc>
     <module>linear_algebra</module>
-    <section name="Linear algebra">
+    <section name="Algèbre linéaire">
       <chapter_description>
-        <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.</p>
-        <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.</p>
-        <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.</p>
+        <p>Le module Algèbre Linéaire fournit des outils complets pour effectuer des calculs matriciels et vectoriels dans Nelson.</p>
+        <p>Il inclut des fonctions pour la factorisation, la décomposition, l'inversion et l'analyse de matrices, ainsi que des opérations sur les valeurs propres, valeurs singulières et sous-espaces.</p>
+        <p>Le module prend en charge des méthodes numériques avancées pour évaluer les propriétés des matrices, les nombres de condition et les transformations, permettant des solutions efficaces et précises pour un large éventail de problèmes d'algèbre linéaire.</p>
     </chapter_description>
-      <keyword name="balance" link="balance.html" description="Diagonal scaling to improve eigenvalue accuracy."/>
-      <keyword name="bandwidth" link="bandwidth.html" description="Lower and upper matrix bandwidth."/>
-      <keyword name="chol" link="chol.html" description="Cholesky factorization."/>
-      <keyword name="cond" link="cond.html" description="Condition number for inversion."/>
-      <keyword name="condeig" link="condeig.html" description="Condition number with respect to eigenvalues."/>
-      <keyword name="det" link="det.html" description="Matrix determinant."/>
-      <keyword name="diff" link="diff.html" description="Differences and approximate derivatives."/>
-      <keyword name="eig" link="eig.html" description="Eigenvalues and eigenvectors."/>
-      <keyword name="expm" link="expm.html" description="Computes the matrix exponential of a square matrix."/>
-      <keyword name="gradient" link="gradient.html" description="Numerical gradient."/>
-      <keyword name="inv" link="inv.html" description="Matrix inverse."/>
-      <keyword name="isbanded" link="isbanded.html" description="Determine if matrix is within specific bandwidth."/>
-      <keyword name="ishermitian" link="ishermitian.html" description="Computes if matrix is hermitian or skew-hermitian."/>
-      <keyword name="issymmetric" link="issymmetric.html" description="Computes if matrix is symmetric."/>
-      <keyword name="kron" link="kron.html" description="Kronecker tensor product."/>
-      <keyword name="logm" link="logm.html" description="Computes the matrix logarithm of a square matrix."/>
-      <keyword name="lu" link="lu.html" description="LU matrix factorization."/>
-      <keyword name="orth" link="orth.html" description="Range space of a matrix."/>
-      <keyword name="planerot" link="planerot.html" description="Givens plane rotation."/>
-      <keyword name="rank" link="rank.html" description="Rank of matrix."/>
-      <keyword name="rcond" link="rcond.html" description="Inverse condition number."/>
-      <keyword name="rref" link="rref.html" description="Gauss-Jordan elimination."/>
-      <keyword name="rsf2csf" link="rsf2csf.html" description="Convert real Schur form to complex Schur form."/>
-      <keyword name="schur" link="schur.html" description="Schur decomposition."/>
-      <keyword name="sqrtm" link="sqrtm.html" description="Computes the matrix square root of a square matrix."/>
-      <keyword name="subspace" link="subspace.html" description="Angle between two subspaces."/>
-      <keyword name="svd" link="svd.html" description="Singular Value Decomposition."/>
-      <keyword name="trace" link="trace.html" description="Matrix trace."/>
-      <keyword name="vecnorm" link="vecnorm.html" description="Vector-wise norm."/>
+      <keyword name="balance" link="balance.html" description="Mise à l'échelle diagonale pour améliorer la précision des valeurs propres."/>
+      <keyword name="bandwidth" link="bandwidth.html" description="Largeur de bande inférieure et supérieure d'une matrice."/>
+      <keyword name="chol" link="chol.html" description="Factorisation de Cholesky."/>
+      <keyword name="cond" link="cond.html" description="Nombre de condition pour l'inversion."/>
+      <keyword name="condeig" link="condeig.html" description="Nombre de condition relatif aux valeurs propres."/>
+      <keyword name="det" link="det.html" description="Déterminant d'une matrice."/>
+      <keyword name="diff" link="diff.html" description="Différences et dérivées approximatives."/>
+      <keyword name="eig" link="eig.html" description="Valeurs propres et vecteurs propres."/>
+      <keyword name="expm" link="expm.html" description="Calcule l'exponentielle matricielle d'une matrice carrée."/>
+      <keyword name="gradient" link="gradient.html" description="Gradient numérique."/>
+      <keyword name="inv" link="inv.html" description="Inverse de matrice."/>
+      <keyword name="isbanded" link="isbanded.html" description="Détermine si une matrice est dans une largeur de bande spécifique."/>
+      <keyword name="ishermitian" link="ishermitian.html" description="Teste si une matrice est hermitienne ou skew-hermitienne."/>
+      <keyword name="issymmetric" link="issymmetric.html" description="Teste si une matrice est symétrique."/>
+      <keyword name="kron" link="kron.html" description="Produit tensoriel de Kronecker."/>
+      <keyword name="logm" link="logm.html" description="Calcule le logarithme matriciel d'une matrice carrée."/>
+      <keyword name="lu" link="lu.html" description="Factorisation LU d'une matrice."/>
+      <keyword name="orth" link="orth.html" description="Base orthonormée de l'espace image d'une matrice."/>
+      <keyword name="planerot" link="planerot.html" description="Rotation plane de Givens."/>
+      <keyword name="rank" link="rank.html" description="Rang d'une matrice."/>
+      <keyword name="rcond" link="rcond.html" description="Nombre de condition inverse."/>
+      <keyword name="rref" link="rref.html" description="Élimination de Gauss-Jordan (forme échelonnée réduite)."/>
+      <keyword name="rsf2csf" link="rsf2csf.html" description="Convertit la forme de Schur réelle en forme de Schur complexe."/>
+      <keyword name="schur" link="schur.html" description="Décomposition de Schur."/>
+      <keyword name="sqrtm" link="sqrtm.html" description="Calcule la racine carrée matricielle d'une matrice carrée."/>
+      <keyword name="subspace" link="subspace.html" description="Angle entre deux sous-espaces."/>
+      <keyword name="svd" link="svd.html" description="Décomposition en valeurs singulières (SVD)."/>
+      <keyword name="trace" link="trace.html" description="Trace d'une matrice."/>
+      <keyword name="vecnorm" link="vecnorm.html" description="Norme par vecteur."/>
     </section>
   </toc>
 </help_summary>

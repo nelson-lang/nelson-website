@@ -2,16 +2,16 @@
 <help_summary>
   <toc>
     <module>localization</module>
-    <section name="Localization functions">
+    <section name="Fonctions de localisation">
       <chapter_description>
-    <p>The Localization module manages language settings and internationalization in Nelson.</p>
-    <p>It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.</p>
-    <p>This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.</p>
+    <p>Le module de localisation gère les paramètres de langue et l'internationalisation dans Nelson.</p>
+    <p>Il fournit des mécanismes pour interroger les langues disponibles, déterminer la langue actuelle et par défaut, et changer dynamiquement la langue de l'interface.</p>
+    <p>Ce module garantit que Nelson peut être adapté à différentes préférences linguistiques et régionales, en prenant en charge une expérience utilisateur multilingue.</p>
     </chapter_description>
-      <keyword name="getavailablelanguages" link="getavailablelanguages.html" description="Returns available languages in Nelson."/>
-      <keyword name="getdefaultlanguage" link="getdefaultlanguage.html" description="Returns the default language used in Nelson."/>
-      <keyword name="getlanguage" link="getlanguage.html" description="Returns the current language in Nelson."/>
-      <keyword name="setlanguage" link="setlanguage.html" description="Changes the language used in Nelson."/>
+      <keyword name="getavailablelanguages" link="getavailablelanguages.html" description="Renvoie les langues disponibles dans Nelson."/>
+      <keyword name="getdefaultlanguage" link="getdefaultlanguage.html" description="Renvoie la langue par défaut utilisée dans Nelson."/>
+      <keyword name="getlanguage" link="getlanguage.html" description="Renvoie la langue courante dans Nelson."/>
+      <keyword name="setlanguage" link="setlanguage.html" description="Modifie la langue utilisée dans Nelson."/>
     </section>
   </toc>
 </help_summary>

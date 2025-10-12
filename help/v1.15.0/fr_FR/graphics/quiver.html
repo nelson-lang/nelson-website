@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">quiver</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Vector plot.</div></div>
+<div class="section syntax-section"><div class="subtitle">Tracé de champ de vecteurs.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">quiver(X, Y, U, V)
 quiver(U, V)
 quiver(..., LineSpec)
@@ -60,74 +59,78 @@ gr = quiver(...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">X</td>
-<td>x-coordinates of bases of arrows: scalar, vector or matrix.</td>
+<td>Coordonnées x des bases des flèches : scalaire, vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">Y</td>
-<td>y-coordinates of bases of arrows: scalar, vector or matrix.</td>
+<td>Coordonnées y des bases des flèches : scalaire, vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">U</td>
-<td>x-components: scalar, vector or matrix.</td>
+<td>Composantes x : scalaire, vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">V</td>
-<td>y-components: scalar, vector or matrix.</td>
+<td>Composantes y : scalaire, vecteur ou matrice.</td>
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Line style, marker and/or color: character vector or scalar string.</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou chaîne scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">parent</td>
-<td>a scalar graphics object value: parent container, specified as a axes.</td>
+<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>a scalar string or row vector character.</td>
+<td>Chaîne scalaire ou vecteur ligne de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
-<td>a value.</td>
+<td>Une valeur.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">gr</td>
-<td>group of graphics object: arrows.</td>
+<td>Groupe d'objets graphiques : flèches.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components <b>(U,V)</b> at the point <b>(X, Y)</b>.</p>
-            <p>
-                <b>quiver</b> try to scale the arrow lengths so that they do not overlap.</p>
-                <p>Current implementation is slow but it can be optimized using DrawLater property of figure. It could be optimized in an next version by an builtin.</p>
-            </div>
+            <b>quiver(X, Y, U, V)</b> trace des vecteurs vitesse sous forme de flèches avec les composantes <b>(U,V)</b> au point <b>(X, Y)</b>.
+        </p>
+        <p>
+            <b>quiver</b> essaie d'ajuster la longueur des flèches pour éviter qu'elles ne se chevauchent.
+        </p>
+        <p>
+            L'implémentation actuelle est lente mais peut être optimisée en utilisant la propriété DrawLater de la figure. Une optimisation par une fonction native pourrait être envisagée dans une prochaine version.
+        </p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">f = figure();
@@ -164,14 +167,14 @@ f.DrawLater = 'off';</code><button class="copy-btn" type="button" onclick="copyE
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/meshgrid.html">meshgrid</a><a class="see-also-link" href="../graphics/subplot.html">subplot</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -179,13 +182,13 @@ f.DrawLater = 'off';</code><button class="copy-btn" type="button" onclick="copyE
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

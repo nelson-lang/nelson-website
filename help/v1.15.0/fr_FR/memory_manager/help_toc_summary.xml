@@ -2,25 +2,25 @@
 <help_summary>
   <toc>
     <module>memory_manager</module>
-    <section name="Memory manager functions">
+    <section name="Fonctions du gestionnaire de mémoire">
       <chapter_description>
-        <p>The Memory Manager module provides tools for managing variables and memory in Nelson.</p>
-        <p>It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.</p>
-        <p>The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.</p>
+        <p>Le module Memory Manager fournit des outils pour gérer les variables et la mémoire dans Nelson.</p>
+        <p>Il prend en charge la création, l'affectation, l'interrogation et la suppression de variables dans différentes portées, ainsi que la gestion des variables globales et persistantes.</p>
+        <p>Le module permet également l'inspection de la mémoire, le verrouillage des variables et l'énumération du contenu de l'espace de travail, facilitant une utilisation efficace et contrôlée de la mémoire dans les scripts et applications.</p>
     </chapter_description>
-      <keyword name="acquirevar" link="acquirevar.html" description="Acquires variable value from a specified variables scope."/>
-      <keyword name="assignin" link="assignin.html" description="Assignin value to a variable in a specified variables scope."/>
+      <keyword name="acquirevar" link="acquirevar.html" description="Récupère la valeur d'une variable depuis une portée de variables spécifiée."/>
+      <keyword name="assignin" link="assignin.html" description="Assigne une valeur à une variable dans une portée de variables spécifiée."/>
       <keyword name="clear" link="clear.html" description="Remove variable from workspace."/>
-      <keyword name="global" link="global.html" description="Defines a global variable."/>
-      <keyword name="isglobal" link="isglobal.html" description="Checks if a variable is global."/>
-      <keyword name="isvar" link="isvar.html" description="Check for the existence of an variable."/>
-      <keyword name="memory" link="memory.html" description="Get memory information."/>
-      <keyword name="persistent" link="persistent.html" description="Persistent variable."/>
-      <keyword name="varislock" link="varislock.html" description="Checks if a variable is locked."/>
-      <keyword name="varlock" link="varlock.html" description="Locks a variable."/>
-      <keyword name="varunlock" link="varunlock.html" description="Unlocks a variable."/>
-      <keyword name="who" link="who.html" description="List variables in memory or in .nh5 or in .mat file."/>
-      <keyword name="whos" link="whos.html" description="List variables in memory or in .nh5 or in .mat file with sizes and types."/>
+      <keyword name="global" link="global.html" description="Définit une variable globale."/>
+      <keyword name="isglobal" link="isglobal.html" description="Vérifie si une variable est globale."/>
+      <keyword name="isvar" link="isvar.html" description="Vérifie l'existence d'une variable."/>
+      <keyword name="memory" link="memory.html" description="Obtenir des informations sur la mémoire."/>
+      <keyword name="persistent" link="persistent.html" description="Variable persistante."/>
+      <keyword name="varislock" link="varislock.html" description="Vérifie si une variable est verrouillée."/>
+      <keyword name="varlock" link="varlock.html" description="Verrouille une variable."/>
+      <keyword name="varunlock" link="varunlock.html" description="Déroque une variable."/>
+      <keyword name="who" link="who.html" description="Liste les variables en mémoire ou dans un fichier .nh5 ou .mat."/>
+      <keyword name="whos" link="whos.html" description="Liste les variables en mémoire ou dans un fichier .nh5 ou .mat avec tailles et types."/>
     </section>
   </toc>
 </help_summary>

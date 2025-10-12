@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">sound</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Convert matrix of signal data to sound and play it.</div></div>
+<div class="section syntax-section"><div class="subtitle">Convertit une matrice de données de signal en son et le joue.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">sound(y)
 sound(y, Fs)
 sound(y, Fs, nBits)
@@ -58,38 +57,38 @@ sound(y, Fs, nBits)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">y</td>
-<td>column vector or m-by-2 matrix.</td>
+<td>vecteur colonne ou matrice m-par-2.</td>
 </tr>
 <tr>
 <td class="param-name">Fs</td>
-<td>sample rate, a positive number, 8192 by default.</td>
+<td>fréquence d'échantillonnage, un nombre positif, 8192 par défaut.</td>
 </tr>
 <tr>
 <td class="param-name">nBits</td>
-<td>bit depth of sample values: 8, 16 (default), 24.</td>
+<td>profondeur de bits des valeurs d'échantillon : 8, 16 (par défaut), 24.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>sound</b> plays audio signal <b>y</b> to the speaker at sample rate of <b>Fs</b> hertz and uses <b>nBits</b> bits per sample.
+            <b>sound</b> joue le signal audio <b>y</b> sur le haut-parleur à une fréquence d'échantillonnage de <b>Fs</b> hertz et utilise <b>nBits</b> bits par échantillon.
 	</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">signal = rand(2, 44100) - 0.5;
 sound(signal, 44110, 16)	  </code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -97,14 +96,14 @@ sound(signal, 44110, 16)	  </code><button class="copy-btn" type="button" onclick
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../audio/audioplayer.html">audioplayer</a><a class="see-also-link" href="../audio/playblocking.html">playblocking</a><a class="see-also-link" href="../audio/soundsc.html">soundsc</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -112,13 +111,13 @@ sound(signal, 44110, 16)	  </code><button class="copy-btn" type="button" onclick
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

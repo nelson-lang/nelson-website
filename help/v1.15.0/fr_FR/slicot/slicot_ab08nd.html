@@ -45,125 +45,124 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_ab08nd</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system.</div></div>
+<div class="section syntax-section"><div class="subtitle">Construction d'un pencil régulier pour un système donné dont les valeurs propres généralisées sont les zéros invariants du système.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">EQUIL</td>
-<td>'S':  Perform balancing (scaling) or 'N':  Do not perform balancing.</td>
+<td>'S' : effectuer un équilibrage (mise à l'échelle) ; 'N' : ne pas effectuer d'équilibrage.</td>
 </tr>
 <tr>
 <td class="param-name">N</td>
-<td>The number of state variables, i.e., the order of the matrix A.</td>
+<td>Le nombre de variables d'état, c'est-à-dire l'ordre de la matrice A.</td>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>The number of system inputs.</td>
+<td>Le nombre d'entrées du système.</td>
 </tr>
 <tr>
 <td class="param-name">P</td>
-<td>The number of system outputs.</td>
+<td>Le nombre de sorties du système.</td>
 </tr>
 <tr>
 <td class="param-name">A</td>
-<td>The leading N-by-N part of this array must contain the state dynamics matrix A of the system.</td>
+<td>La partie principale N-by-N de ce tableau doit contenir la matrice de dynamique d'état A du système.</td>
 </tr>
 <tr>
 <td class="param-name">B</td>
-<td>The leading N-by-M part of this array must contain the input/state matrix B of the system.</td>
+<td>La partie principale N-by-M de ce tableau doit contenir la matrice d'entrée/état B du système.</td>
 </tr>
 <tr>
 <td class="param-name">C</td>
-<td>The leading P-by-N part of this array must contain the state/output matrix C of the system.</td>
+<td>La partie principale P-by-N de ce tableau doit contenir la matrice état/sortie C du système.</td>
 </tr>
 <tr>
 <td class="param-name">D</td>
-<td>The leading P-by-M part of this array must contain the direct transmission matrix D of the system.</td>
+<td>La partie principale P-by-M de ce tableau doit contenir la matrice de transmission directe D du système.</td>
 </tr>
 <tr>
 <td class="param-name">TOL</td>
-<td> A tolerance used in rank decisions.</td>
+<td>Une tolérance utilisée dans les décisions de rang.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">NU</td>
-<td>The number of (finite) invariant zeros.</td>
+<td>Le nombre de zéros invariants (finis).</td>
 </tr>
 <tr>
 <td class="param-name">RANK</td>
-<td>The normal rank of the transfer function matrix.</td>
+<td>Le rang normal de la matrice de fonction de transfert.</td>
 </tr>
 <tr>
 <td class="param-name">DINFZ</td>
-<td>The maximum degree of infinite elementary divisors.</td>
+<td>Le degré maximal des diviseurs élémentaires à l'infini.</td>
 </tr>
 <tr>
 <td class="param-name">NKROR</td>
-<td>The number of right Kronecker indices.</td>
+<td>Le nombre d'indices de Kronecker droits.</td>
 </tr>
 <tr>
 <td class="param-name">NKROL</td>
-<td>The number of left Kronecker indices.</td>
+<td>Le nombre d'indices de Kronecker gauches.</td>
 </tr>
 <tr>
 <td class="param-name">INFZ</td>
-<td>The leading DINFZ elements of INFZ contain information on the infinite elementary divisors as follows: the system has INFZ(i) infinite elementary divisors of degree i, where i = 1,2,...,DINFZ.</td>
+<td>Les DINFZ premiers éléments de INFZ contiennent des informations sur les diviseurs élémentaires infinis : le système a INFZ(i) diviseurs élémentaires infinis de degré i, où i = 1,2,...,DINFZ.</td>
 </tr>
 <tr>
 <td class="param-name">KRONR</td>
-<td>The leading NKROR elements of this array contain the right Kronecker (column) indices.</td>
+<td>Les NKROR premiers éléments de ce tableau contiennent les indices de Kronecker droits (colonnes).</td>
 </tr>
 <tr>
 <td class="param-name">KRONL</td>
-<td>The leading NKROL elements of this array contain the left Kronecker (row) indices.</td>
+<td>Les NKROL premiers éléments de ce tableau contiennent les indices de Kronecker gauches (lignes).</td>
 </tr>
 <tr>
 <td class="param-name">AF</td>
-<td>The leading NU-by-NU part of this array contains the coefficient matrix A  of the reduced pencil.</td>
+<td>La partie principale NU-by-NU de ce tableau contient la matrice de coefficients A du pencil réduit.</td>
 </tr>
 <tr>
 <td class="param-name">BF</td>
-<td>The leading NU-by-NU part of this array contains the coefficient matrix B  of the reduced pencil.</td>
+<td>La partie principale NU-by-NU de ce tableau contient la matrice de coefficients B du pencil réduit.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>0:  successful exit; if INFO = -i, the i-th argument had an illegal value.</td>
+<td>0 : sortie réussie ; si INFO = -i, le i-ème argument avait une valeur illégale.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To construct for a linear multivariable system described by a state-space model (A,B,C,D) a regular pencil (A - lambda*B ) which has the invariant zeros of the system as generalized eigenvalues.</p>
-        <p>The routine also computes the orders of the infinite zeros and the right and left Kronecker indices of the system (A,B,C,D).</p>
-    </div>
+    <p>Construire, pour un système multivariable linéaire décrit par un modèle d'espace d'état (A,B,C,D), un pencil régulier (A - lambda*B) dont les zéros invariants du système sont les valeurs propres généralisées.</p>
+    <p>La routine calcule également les ordres des zéros infinis et les indices de Kronecker droits et gauches du système (A,B,C,D).</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">N = 6;
 M = 2;
@@ -208,12 +207,12 @@ D = [0.0   0.0;
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/AB08ND.html" target="_blank">http://slicot.org/objects/software/shared/doc/AB08ND.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -221,13 +220,13 @@ D = [0.0   0.0;
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

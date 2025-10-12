@@ -4,20 +4,20 @@
     <module>parallel</module>
     <section name="Parallel">
       <chapter_description>
-        <p>The parallel module provides tools for running computations asynchronously in the
-            background, managing task scheduling, and retrieving results.</p>
-        <p>It enables Nelson programs to execute functions concurrently, improving efficiency and
-            responsiveness by offloading work to background workers.</p>
+        <p>Le module parallel fournit des outils pour exécuter des calculs de manière asynchrone en
+            arrière-plan, gérer la planification des tâches et récupérer les résultats.</p>
+        <p>Il permet aux programmes Nelson d'exécuter des fonctions de manière concurrente, améliorant
+            l'efficacité et la réactivité en déléguant le travail à des workers en arrière-plan.</p>
     </chapter_description>
-      <keyword name="afterAll" link="afterAll.html" description="Run function after all functions finish running in the background."/>
-      <keyword name="afterEach" link="afterEach.html" description="Run function after each function finish running in the background."/>
-      <keyword name="backgroundPool" link="backgroundPool.html" description="Environment for running nelson's code in the background."/>
-      <keyword name="cancel" link="cancel.html" description="Stop function running in the background."/>
-      <keyword name="cancelAll" link="cancelAll.html" description="Stop all functions running in the background."/>
-      <keyword name="fetchNext" link="fetchNext.html" description="Retrieve next unread outputs from FevalFuture array."/>
-      <keyword name="fetchOutputs" link="fetchOutputs.html" description="Retrieve results from function running in the background pool."/>
-      <keyword name="parfeval" link="parfeval.html" description="Run function in background."/>
-      <keyword name="wait" link="wait.html" description="Wait for futures to be completed."/>
+      <keyword name="afterAll" link="afterAll.html" description="Exécuter une fonction après que toutes les fonctions en arrière-plan soient terminées."/>
+      <keyword name="afterEach" link="afterEach.html" description="Exécuter une fonction après chaque fin d'exécution en arrière-plan."/>
+      <keyword name="backgroundPool" link="backgroundPool.html" description="Environnement pour exécuter du code Nelson en arrière-plan."/>
+      <keyword name="cancel" link="cancel.html" description="Arrêter une fonction s'exécutant en arrière-plan."/>
+      <keyword name="cancelAll" link="cancelAll.html" description="Arrêter toutes les fonctions s'exécutant en arrière-plan."/>
+      <keyword name="fetchNext" link="fetchNext.html" description="Récupérer les prochaines sorties non lues d'un tableau FevalFuture."/>
+      <keyword name="fetchOutputs" link="fetchOutputs.html" description="Récupérer les résultats d'une fonction s'exécutant dans le pool d'arrière-plan."/>
+      <keyword name="parfeval" link="parfeval.html" description="Exécuter une fonction en arrière-plan."/>
+      <keyword name="wait" link="wait.html" description="Attendre la complétion des futures."/>
     </section>
   </toc>
 </help_summary>

@@ -45,76 +45,75 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">slicot_sb04qd</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Solution of discrete-time Sylvester equations (Hessenberg-Schur method).</div></div>
+<div class="section syntax-section"><div class="subtitle">Résolution des équations de Sylvester temps discret (méthode Hessenberg-Schur).</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">[A_OUT, B_OUT, C_OUT, Z, INFO] = slicot_sb04qd(A_IN, B_IN, C_IN)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A_IN</td>
-<td>The leading N-by-N part of this array must contain the coefficient matrix A of the equation.</td>
+<td>La partie principale N-by-N de ce tableau doit contenir la matrice de coefficient A de l'équation.</td>
 </tr>
 <tr>
 <td class="param-name">B_IN</td>
-<td>The leading M-by-M part of this array must contain the coefficient matrix B of the equation.</td>
+<td>La partie principale M-by-M de ce tableau doit contenir la matrice de coefficient B de l'équation.</td>
 </tr>
 <tr>
 <td class="param-name">C_IN</td>
-<td>The leading N-by-M part of this array must contain the coefficient matrix C of the equation.</td>
+<td>La partie principale N-by-M de ce tableau doit contenir la matrice de coefficient C de l'équation.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td>The leading N-by-N upper Hessenberg part of this array contains the matrix H, and the remainder of the leading N-by-N part, together with the elements 2,3,...,N of array DWORK, contain the orthogonal transformation matrix U (stored in factored form).</td>
+<td>La partie principale N-by-N en Hessenberg supérieur de ce tableau contient la matrice H, et le reste de la partie principale N-by-N, ainsi que les éléments 2,3,...,N du tableau DWORK, contiennent la matrice de transformation orthogonale U (stockée en forme factorisée).</td>
 </tr>
 <tr>
 <td class="param-name">B_OUT</td>
-<td>The leading M-by-M part of this array contains the quasi-triangular Schur factor S of the matrix B'.</td>
+<td>La partie principale M-by-M de ce tableau contient le facteur de Schur quasi-triangulaire S de la matrice B'.</td>
 </tr>
 <tr>
 <td class="param-name">C_OUT</td>
-<td>The leading N-by-M part of this array contains the solution matrix X of the problem.</td>
+<td>La partie principale N-by-M de ce tableau contient la matrice solution X du problème.</td>
 </tr>
 <tr>
 <td class="param-name">Z</td>
-<td>The leading M-by-M part of this array contains the orthogonal matrix Z used to transform B' to real upper Schur form.</td>
+<td>La partie principale M-by-M de ce tableau contient la matrice orthogonale Z utilisée pour transformer B' en forme de Schur réelle supérieure.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td> = 0:  successful exit;</td>
+<td> = 0 : sortie réussie ;</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To solve for X the discrete-time Sylvester equation X + AXB = C, where A, B, C and X are general N-by-N, M-by-M, N-by-M and N-by-M matrices respectively. A Hessenberg-Schur method, which reduces A to upper Hessenberg form, H = U'AU, and B' to real Schur form, S = Z'B'Z (with U, Z orthogonal matrices), is used.</p>
+        <p>Résoudre pour X l'équation de Sylvester discrète X + A X B = C, où A, B, C et X sont respectivement des matrices N-by-N, M-by-M, N-by-M et N-by-M générales. Une méthode Hessenberg-Schur, qui réduit A en forme Hessenberg supérieure H = U' A U et B' en forme de Schur réelle S = Z' B' Z (avec U, Z orthogonales), est utilisée.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">N = 3;
 M = 3;
@@ -137,12 +136,12 @@ C_IN = [271.0   135.0   147.0;
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://slicot.org/objects/software/shared/doc/SB04QD.html" target="_blank">http://slicot.org/objects/software/shared/doc/SB04QD.html</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -150,13 +149,13 @@ C_IN = [271.0   135.0   147.0;
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>SLICOT Documentation</div>
 </div>
 </body>

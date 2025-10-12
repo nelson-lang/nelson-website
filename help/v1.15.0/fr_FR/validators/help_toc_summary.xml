@@ -2,48 +2,48 @@
 <help_summary>
   <toc>
     <module>validators</module>
-    <section name="Validators">
+    <section name="Validateurs">
       <chapter_description>
-        <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
-        <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
-        <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
+        <p>Le module Validators fournit des outils pour appliquer des contraintes et vérifier les valeurs d'entrée dans Nelson.</p>
+        <p>Il prend en charge la vérification des types de données, des propriétés numériques, des dimensions des matrices et des vecteurs, la validité des textes, l'existence de fichiers et de dossiers, ainsi que les conditions logiques ou numériques.</p>
+        <p>Ce module assure une validation d'entrée robuste, contribuant à prévenir les erreurs, garantir l'exactitude et améliorer la fiabilité des scripts et fonctions.</p>
     </chapter_description>
-      <keyword name="mustBeA" link="mustBeA.html" description="Checks that input value comes from one of specified classes."/>
-      <keyword name="mustBeColumn" link="mustBeColumn.html" description="Checks that value is a column vector or raise an error."/>
-      <keyword name="mustBeFile" link="mustBeFile.html" description="Checks that input path refers to file."/>
-      <keyword name="mustBeFinite" link="mustBeFinite.html" description="Checks that value is finite or raise an error."/>
-      <keyword name="mustBeFloat" link="mustBeFloat.html" description="Checks that value is floating-point or raise an error."/>
-      <keyword name="mustBeFolder" link="mustBeFolder.html" description="Checks that input path refers to folder."/>
-      <keyword name="mustBeGreaterThan" link="mustBeGreaterThan.html" description="Checks that value is greater than another value or issue error."/>
-      <keyword name="mustBeGreaterThanOrEqual" link="mustBeGreaterThanOrEqual.html" description="Checks that value is greater than or equal to another value or issue error."/>
-      <keyword name="mustBeInRange" link="mustBeInRange.html" description="Checks that value is in the specified range."/>
-      <keyword name="mustBeInteger" link="mustBeInteger.html" description="Checks that value is integer or raise an error."/>
-      <keyword name="mustBeLessThan" link="mustBeLessThan.html" description="Checks that value is less than another value or issue error."/>
+      <keyword name="mustBeA" link="mustBeA.html" description="Vérifie que la valeur d'entrée appartient à l'une des classes spécifiées."/>
+      <keyword name="mustBeColumn" link="mustBeColumn.html" description="Vérifie que la valeur est un vecteur colonne ou renvoie une erreur."/>
+      <keyword name="mustBeFile" link="mustBeFile.html" description="Vérifie que le chemin d'entrée correspond à un fichier."/>
+      <keyword name="mustBeFinite" link="mustBeFinite.html" description="Vérifie que la valeur est finie ou renvoie une erreur."/>
+      <keyword name="mustBeFloat" link="mustBeFloat.html" description="Vérifie que la valeur est en virgule flottante ou renvoie une erreur."/>
+      <keyword name="mustBeFolder" link="mustBeFolder.html" description="Vérifie que le chemin d'entrée correspond à un dossier."/>
+      <keyword name="mustBeGreaterThan" link="mustBeGreaterThan.html" description="Vérifie que la valeur est supérieure à une autre valeur ou signale une erreur."/>
+      <keyword name="mustBeGreaterThanOrEqual" link="mustBeGreaterThanOrEqual.html" description="Vérifie que la valeur est supérieure ou égale à une autre valeur ou signale une erreur."/>
+      <keyword name="mustBeInRange" link="mustBeInRange.html" description="Vérifie que la valeur se situe dans la plage spécifiée."/>
+      <keyword name="mustBeInteger" link="mustBeInteger.html" description="Vérifie que la valeur est entière ou renvoie une erreur."/>
+      <keyword name="mustBeLessThan" link="mustBeLessThan.html" description="Vérifie que la valeur est inférieure à une autre valeur ou signale une erreur."/>
       <keyword name="mustBeLessThanOrEqual" link="mustBeLessThanOrEqual.html" description="Checks that value is less than or equal to another value or issue error."/>
-      <keyword name="mustBeLogical" link="mustBeLogical.html" description="Checks that value is logical or raise an error."/>
-      <keyword name="mustBeLogicalScalar" link="mustBeLogicalScalar.html" description="Checks that value is logical scalar or raise an error."/>
-      <keyword name="mustBeMatrix" link="mustBeMatrix.html" description="Checks that value is a matrix or raise an error."/>
-      <keyword name="mustBeMember" link="mustBeMember.html" description="Checks that value is member of specified array or issue error."/>
-      <keyword name="mustBeNegative" link="mustBeNegative.html" description="Checks that value is negative or raise an error."/>
-      <keyword name="mustBeNonNan" link="mustBeNonNan.html" description="Checks that value is not NaN."/>
-      <keyword name="mustBeNonSparse" link="mustBeNonSparse.html" description="Checks that value is not sparse."/>
-      <keyword name="mustBeNonZero" link="mustBeNonZero.html" description="Checks that value is not zero."/>
-      <keyword name="mustBeNonempty" link="mustBeNonempty.html" description="Checks that value is nonempty or raise an error."/>
-      <keyword name="mustBeNonmissing" link="mustBeNonmissing.html" description="Checks that value is not missing."/>
+      <keyword name="mustBeLogical" link="mustBeLogical.html" description="Vérifie que la valeur est logique ou renvoie une erreur."/>
+      <keyword name="mustBeLogicalScalar" link="mustBeLogicalScalar.html" description="Vérifie que la valeur est un scalaire logique ou renvoie une erreur."/>
+      <keyword name="mustBeMatrix" link="mustBeMatrix.html" description="Vérifie que la valeur est une matrice ou renvoie une erreur."/>
+      <keyword name="mustBeMember" link="mustBeMember.html" description="Vérifie que la valeur est membre du tableau spécifié ou signale une erreur."/>
+      <keyword name="mustBeNegative" link="mustBeNegative.html" description="Vérifie que la valeur est négative ou renvoie une erreur."/>
+      <keyword name="mustBeNonNan" link="mustBeNonNan.html" description="Vérifie que la valeur n'est pas NaN."/>
+      <keyword name="mustBeNonSparse" link="mustBeNonSparse.html" description="Vérifie que la valeur n'est pas creuse (sparse)."/>
+      <keyword name="mustBeNonZero" link="mustBeNonZero.html" description="Vérifie que la valeur n'est pas zéro."/>
+      <keyword name="mustBeNonempty" link="mustBeNonempty.html" description="Vérifie que la valeur n'est pas vide ou renvoie une erreur."/>
+      <keyword name="mustBeNonmissing" link="mustBeNonmissing.html" description="Vérifie que la valeur n'est pas manquante ou renvoie une erreur."/>
       <keyword name="mustBeNonnegative" link="mustBeNonnegative.html" description="Checks that value is nonnegative or raise an error."/>
-      <keyword name="mustBeNonpositive" link="mustBeNonpositive.html" description="Checks that value is non positive or raise an error."/>
-      <keyword name="mustBeNonzeroLengthText" link="mustBeNonzeroLengthText.html" description="Checks that value is text with nonzero length or raise an error."/>
-      <keyword name="mustBeNumeric" link="mustBeNumeric.html" description="Checks that value is numeric or raise an error."/>
-      <keyword name="mustBeNumericOrLogical" link="mustBeNumericOrLogical.html" description="Checks that input is numeric or logical."/>
-      <keyword name="mustBePositive" link="mustBePositive.html" description="Checks that value is positive or raise an error."/>
-      <keyword name="mustBeReal" link="mustBeReal.html" description="Checks that value is real."/>
-      <keyword name="mustBeRow" link="mustBeRow.html" description="Checks that value is a row vector or raise an error."/>
-      <keyword name="mustBeScalarOrEmpty" link="mustBeScalarOrEmpty.html" description="Checks that value is scalar or empty or raise an error."/>
-      <keyword name="mustBeSparse" link="mustBeSparse.html" description="Checks that value is a sparse matrix or raise an error."/>
-      <keyword name="mustBeText" link="mustBeText.html" description="Checks that value is piece of text or raise an error."/>
-      <keyword name="mustBeTextScalar" link="mustBeTextScalar.html" description="Checks that value is single piece of text or raise an error."/>
-      <keyword name="mustBeValidVariableName" link="mustBeValidVariableName.html" description="Checks that value is valid variable name or raise an error."/>
-      <keyword name="mustBeVector" link="mustBeVector.html" description="Checks that value is vector or raise an error."/>
+      <keyword name="mustBeNonpositive" link="mustBeNonpositive.html" description="Vérifie que la valeur est non positive ou renvoie une erreur."/>
+      <keyword name="mustBeNonzeroLengthText" link="mustBeNonzeroLengthText.html" description="Vérifie que la valeur est un texte de longueur non nulle ou renvoie une erreur."/>
+      <keyword name="mustBeNumeric" link="mustBeNumeric.html" description="Vérifie que la valeur est numérique ou renvoie une erreur."/>
+      <keyword name="mustBeNumericOrLogical" link="mustBeNumericOrLogical.html" description="Vérifie que la valeur est numérique ou logique ou renvoie une erreur."/>
+      <keyword name="mustBePositive" link="mustBePositive.html" description="Vérifie que la valeur est positive ou renvoie une erreur."/>
+      <keyword name="mustBeReal" link="mustBeReal.html" description="Vérifie que la valeur est réelle."/>
+      <keyword name="mustBeRow" link="mustBeRow.html" description="Vérifie que la valeur est un vecteur ligne ou renvoie une erreur."/>
+      <keyword name="mustBeScalarOrEmpty" link="mustBeScalarOrEmpty.html" description="Vérifie que la valeur est scalaire ou vide, sinon renvoie une erreur."/>
+      <keyword name="mustBeSparse" link="mustBeSparse.html" description="Vérifie que la valeur est une matrice creuse (sparse) ou renvoie une erreur."/>
+      <keyword name="mustBeText" link="mustBeText.html" description="Vérifie que la valeur est un texte ou renvoie une erreur."/>
+      <keyword name="mustBeTextScalar" link="mustBeTextScalar.html" description="Vérifie que la valeur est un seul texte (scalaire) ou renvoie une erreur."/>
+      <keyword name="mustBeValidVariableName" link="mustBeValidVariableName.html" description="Vérifie que la valeur est un nom de variable valide sinon renvoie une erreur."/>
+      <keyword name="mustBeVector" link="mustBeVector.html" description="Vérifie que la valeur est un vecteur ou renvoie une erreur."/>
     </section>
   </toc>
 </help_summary>

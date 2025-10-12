@@ -2,29 +2,29 @@
 <help_summary>
   <toc>
     <module>functions_manager</module>
-    <section name="Functions manager">
+    <section name="Gestionnaire de fonctions">
       <chapter_description>
-        <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.</p> 
-        <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.</p> 
-        <p>Utilities are available to check for the existence of built-in, macro, or mex functions.</p>
+        <p>Le gestionnaire de fonctions fournit des outils pour gérer et interagir avec le chemin de recherche des fonctions de Nelson et les types de fonctions.</p> 
+        <p>Il comprend des commandes pour ajouter ou supprimer des répertoires du chemin de recherche, exécuter des fonctions intégrées, effacer des fonctions intégrées, évaluer des fonctions, et plus encore.</p> 
+        <p>Des utilitaires sont disponibles pour vérifier l'existence de fonctions intégrées, macro ou mex.</p>
     </chapter_description>
-      <keyword name="addpath" link="addpath.html" description="Add directories to functions search path."/>
-      <keyword name="builtin" link="builtin.html" description="Executes built-in function."/>
-      <keyword name="clearfun" link="clearfun.html" description="Clear an built-in function."/>
-      <keyword name="feval" link="feval.html" description="Evaluates function."/>
-      <keyword name="inmem" link="inmem.html" description="Names of functions, MEX-files."/>
-      <keyword name="isbuiltin" link="isbuiltin.html" description="Check for the existence of a builtin."/>
-      <keyword name="ismacro" link="ismacro.html" description="Check for the existence of a macro (function)."/>
-      <keyword name="ismex" link="ismex.html" description="Check for the existence of a mex function."/>
-      <keyword name="macroargs" link="macroargs.html" description="Returns variables names of a function."/>
-      <keyword name="path" link="path.html" description="Modify or display Nelson’s load path."/>
-      <keyword name="private functions" link="private_functions.html" description="Private functions."/>
-      <keyword name="rehash" link="rehash.html" description="Reinitialize Nelson’s search path directory cache."/>
-      <keyword name="restoredefaultpath" link="restoredefaultpath.html" description="Restore Nelson’s path to its initial state at startup."/>
-      <keyword name="rmpath" link="rmpath.html" description="Remove directory from search path."/>
-      <keyword name="userpath" link="userpath.html" description="Displays or modify default user functions directory."/>
-      <keyword name="what" link="what.html" description="Get Nelson builtin and macro list."/>
-      <keyword name="which" link="which.html" description="Locates functions and built-in."/>
+      <keyword name="addpath" link="addpath.html" description="Ajouter des répertoires au chemin de recherche des fonctions."/>
+      <keyword name="builtin" link="builtin.html" description="Exécute une fonction intégrée."/>
+      <keyword name="clearfun" link="clearfun.html" description="Efface une fonction intégrée."/>
+      <keyword name="feval" link="feval.html" description="Évalue une fonction."/>
+      <keyword name="inmem" link="inmem.html" description="Noms des fonctions, fichiers MEX."/>
+      <keyword name="isbuiltin" link="isbuiltin.html" description="Vérifie l'existence d'une fonction intégrée."/>
+      <keyword name="ismacro" link="ismacro.html" description="Vérifie l'existence d'une macro (fonction)."/>
+      <keyword name="ismex" link="ismex.html" description="Vérifie l'existence d'une fonction mex."/>
+      <keyword name="macroargs" link="macroargs.html" description="Retourne les noms des variables d'une fonction."/>
+      <keyword name="path" link="path.html" description="Modifie ou affiche le chemin de chargement de Nelson."/>
+      <keyword name="private functions" link="private_functions.html" description="Fonctions privées."/>
+      <keyword name="rehash" link="rehash.html" description="Réinitialise le cache des répertoires du chemin de recherche de Nelson."/>
+      <keyword name="restoredefaultpath" link="restoredefaultpath.html" description="Restaure le chemin de Nelson à son état initial au démarrage."/>
+      <keyword name="rmpath" link="rmpath.html" description="Supprime un répertoire du chemin de recherche."/>
+      <keyword name="userpath" link="userpath.html" description="Affiche ou modifie le répertoire par défaut des fonctions utilisateur."/>
+      <keyword name="what" link="what.html" description="Obtient la liste des fonctions intégrées et macros de Nelson."/>
+      <keyword name="which" link="which.html" description="Localise les fonctions et intégrées."/>
     </section>
   </toc>
 </help_summary>

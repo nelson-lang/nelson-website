@@ -45,45 +45,43 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">backgroundPool</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Environment for running nelson's code in the background.</div></div>
+<div class="section syntax-section"><div class="subtitle">Environnement pour exécuter du code Nelson en arrière-plan.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">pool = backgroundPool()
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">pool</td>
-<td>backgroundPool object.</td>
+<td>objet backgroundPool.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>pool = backgroundPool()</b> returns the background pool.</p>
-            <p>This allows to run other code in your Nelson's session at the same time.</p>
-            <p></p>
-            <p>Properties of backgroundPool object:</p>
-            <p>'FevalQueue': Queue of FevalFuture objects to run on the background pool (read only).</p>
-            <p>'NumWorkers': Number of workers (read only).</p>
-            <p>'Busy': Flag that indicates whether the background pool is busy, logical (read only).</p>
-        </div>
+        <p><b>pool = backgroundPool()</b> renvoie le pool en arrière-plan.</p>
+        <p>Ceci permet d'exécuter d'autres codes dans votre session Nelson en parallèle.</p>
+        <p></p>
+        <p>Propriétés de l'objet backgroundPool :</p>
+        <p>'FevalQueue' : file d'attente d'objets FevalFuture à exécuter dans le pool (lecture seule).</p>
+        <p>'NumWorkers' : nombre de workers (lecture seule).</p>
+        <p>'Busy' : indicateur logique indiquant si le pool est occupé (lecture seule).</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">b = backgroundPool()
 fptr = str2func('magic');
@@ -92,14 +90,14 @@ f = parfeval(b, fptr, 1, 9);</code><button class="copy-btn" type="button" onclic
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../parallel/parfeval.html">parfeval</a><a class="see-also-link" href="../parallel/fetchOutputs.html">fetchOutputs</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -107,14 +105,9 @@ f = parfeval(b, fptr, 1, 9);</code><button class="copy-btn" type="button" onclic
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
-</div>
-<div class="section" style="margin-top:30px;">
-<div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
-<div>Allan CORNET</div>
 </div>
 </body>
 </html>

@@ -2,21 +2,21 @@
 <help_summary>
   <toc>
     <module>constructors_functions</module>
-    <section name="Constructors functions">
+    <section name="Fonctions constructeurs">
       <chapter_description>
-      <p>The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.</p>
-      <p>It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.</p>
-      <p>This module forms the basis for initializing data structures and performing mathematical and numerical computations.</p>
+      <p>Le module Constructeurs fournit des outils pour créer des valeurs numériques fondamentales, des scalaires, des vecteurs et des matrices dans Nelson.</p>
+      <p>Il comprend des constantes, des matrices identité et diagonales, et des valeurs spéciales telles que l'infini, NaN et la précision machine.</p>
+      <p>Ce module constitue la base pour initialiser les structures de données et effectuer des calculs mathématiques et numériques.</p>
     </chapter_description>
-      <keyword name="Inf" link="Inf.html" description="Infinity"/>
-      <keyword name="NaN" link="NaN.html" description="Creates an Not-a-Number"/>
-      <keyword name="diag" link="diag.html" description="Get diagonal elements of matrix or create diagonal matrix."/>
-      <keyword name="eps" link="eps.html" description="Creates an epsilon (machine precision)"/>
-      <keyword name="eye" link="eye.html" description="Creates an identity matrix."/>
-      <keyword name="i" link="i.html" description="Pure Imaginary number."/>
-      <keyword name="ones" link="ones.html" description="Creates an matrix made of ones."/>
-      <keyword name="pi" link="pi.html" description="Ratio of circle's circumference to its diameter."/>
-      <keyword name="zeros" link="zeros.html" description="Creates an matrix made of zeros."/>
+      <keyword name="Inf" link="Inf.html" description="Infini"/>
+      <keyword name="NaN" link="NaN.html" description="Crée un Not-a-Number"/>
+      <keyword name="diag" link="diag.html" description="Obtenir les éléments diagonaux d'une matrice ou créer une matrice diagonale."/>
+      <keyword name="eps" link="eps.html" description="Crée un epsilon (précision machine)"/>
+      <keyword name="eye" link="eye.html" description="Crée une matrice identité."/>
+      <keyword name="i" link="i.html" description="Nombre imaginaire pur."/>
+      <keyword name="ones" link="ones.html" description="Crée une matrice composée de uns."/>
+      <keyword name="pi" link="pi.html" description="Rapport de la circonférence d'un cercle à son diamètre."/>
+      <keyword name="zeros" link="zeros.html" description="Crée une matrice composée de zéros."/>
     </section>
   </toc>
 </help_summary>

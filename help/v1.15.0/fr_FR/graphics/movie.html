@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">movie</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Render recorded movie frames.</div></div>
+<div class="section syntax-section"><div class="subtitle">Jouer des séquences d'images enregistrées (movie).</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">movie(M)
 movie(M, n)
 movie(M, n, fps)
@@ -58,47 +57,51 @@ movie(h, ...)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>structure array: Array of movie frames.</td>
+<td>Tableau de structures : tableau d'images du film.</td>
 </tr>
 <tr>
 <td class="param-name">n</td>
-<td>numeric scalar: Number of times to play movie: default 1.</td>
+<td>Valeur scalaire numérique : nombre de répétitions du film (par défaut 1).</td>
 </tr>
 <tr>
 <td class="param-name">fps</td>
-<td>numeric scalar: Frames per second : default 12.</td>
+<td>Valeur scalaire numérique : nombre d'images par seconde (par défaut 12).</td>
 </tr>
 <tr>
 <td class="param-name">h</td>
-<td>Graphics object handle: default: gca()</td>
+<td>Handle d'objet graphique : par défaut gca()</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>movie(M)</b> plays the frames stored in the array M once. To capture a movie frame from the current figure or axes, use getframe.</p>
-            <p>
-                <b>movie(M, n)</b> replays the movie n times. If n is a numeric array, the first element determines the number of repetitions, while the remaining elements define the sequence of frames to display.</p>
-                <p>
-                    <b>movie(M, n, fps)</b> sets the playback speed to fps frames per second.</p>
-                    <p>
-                        <b>movie(h, ...)</b> displays the movie centered within the figure or axes specified by h, adjusting the movie size to fit the available space.</p>
-                    </div>
+            <b>movie(M)</b> joue une fois les images stockées dans le tableau M. Pour capturer une image de film depuis la figure ou les axes courants, utilisez getframe.
+        </p>
+        <p>
+            <b>movie(M, n)</b> rejoue le film n fois. Si n est un tableau numérique, le premier élément détermine le nombre de répétitions, les éléments suivants définissent la séquence d'images à afficher.
+        </p>
+        <p>
+            <b>movie(M, n, fps)</b> définit la vitesse de lecture à fps images par seconde.
+        </p>
+        <p>
+            <b>movie(h, ...)</b> affiche le film centré dans la figure ou les axes spécifiés par h, en ajustant la taille du film à l'espace disponible.
+        </p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">% Create a figure
 fig = figure('Visible', 'off');
@@ -144,14 +147,14 @@ run([examples_directory, 'movie/demo_movie.m']);</code><button class="copy-btn" 
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../graphics/getframe.html">getframe</a><a class="see-also-link" href="../graphics/imshow.html">imshow</a><a class="see-also-link" href="../graphics/im2frame.html">im2frame</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -159,13 +162,13 @@ run([examples_directory, 'movie/demo_movie.m']);</code><button class="copy-btn" 
 </tr>
 <tr>
 <td class="version">1.13.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

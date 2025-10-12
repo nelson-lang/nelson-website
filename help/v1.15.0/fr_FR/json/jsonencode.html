@@ -45,64 +45,63 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">jsonencode</span></div></div>
-<div class="section syntax-section"><div class="subtitle">encodes a Nelson object into a JSON string.</div></div>
+<div class="section syntax-section"><div class="subtitle">encode un objet Nelson en une chaîne JSON.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">res = jsonencode(obj)
 res = jsonencode(obj, 'ConvertInfAndNaN', true_or_false)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">obj</td>
-<td>a Nelson object: struct, cell, matrix.</td>
+<td>un objet Nelson : struct, cell, matrix.</td>
 </tr>
 <tr>
 <td class="param-name">true_or_false</td>
-<td>a logical: if true, Inf, NaN are converted to 'Inf' or 'Nan'.</td>
+<td>un booléen : si vrai, Inf et NaN sont convertis en 'Inf' ou 'Nan'.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">res</td>
-<td>a string: JSON text.</td>
+<td>une chaîne : texte JSON.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>jsonencode</b> converts a Nelson variable to JSON text.</p>
+            <b>jsonencode</b> convertit une variable Nelson en texte JSON.</p>
             <p>
-                <b>jsonencode</b> does not support complex numbers, sparse arrays, function handle, and others handle.</p>
+                <b>jsonencode</b> ne supporte pas les nombres complexes, les tableaux creux (sparse), les handles de fonction et d'autres handles.</p>
                 <p>
-                    <b>jsonencode</b> can be overloaded to manage your own type.</p>
-                    <p>By default <b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.</p>
-                    <p>Warning: The shape of a matrix and data type are not always preserved.</p>
+                    <b>jsonencode</b> peut être surchargé pour gérer vos propres types.</p>
+                    <p>Par défaut, <b>jsonencode</b> convertit les valeurs Inf en la chaîne "Inf" et les valeurs NaN en 'null'.</p>
+                    <p>Attention : la forme d'une matrice et le type de données ne sont pas toujours préservés.</p>
                 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">field1 = 'f1';  value1 = zeros(1,10);
 field2 = 'f2';  value2 = {'a', 'b'};
@@ -115,17 +114,17 @@ filewrite([tempdir(), 'example.json'], r);</code><button class="copy-btn" type="
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../json/jsondecode.html">jsondecode</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span> Bibliography</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
 <div><a class="bibliography-link" href="http://www.rfc-editor.org/rfc/rfc7159.txt" target="_blank">http://www.rfc-editor.org/rfc/rfc7159.txt</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -133,13 +132,13 @@ filewrite([tempdir(), 'example.json'], r);</code><button class="copy-btn" type="
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

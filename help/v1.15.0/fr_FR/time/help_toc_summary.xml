@@ -4,31 +4,31 @@
     <module>time</module>
     <section name="Time functions">
       <chapter_description>
-        <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p>
-        <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p>
-        <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p>
+        <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p>
+        <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p>
+        <p>Ce module permet une gestion précise du temps, la planification et la mesure de performance dans les scripts et applications.</p>
     </chapter_description>
-      <keyword name="addtodate" link="addtodate.html" description="Modify date number by field."/>
+      <keyword name="addtodate" link="addtodate.html" description="Modifier un numéro de date par champ."/>
       <keyword name="calendar" link="calendar.html" description="Calendar."/>
       <keyword name="clock" link="clock.html" description="Return the current local date and time as a date vector."/>
       <keyword name="cputime" link="cputime.html" description="Return the CPU time used by your Nelon session."/>
-      <keyword name="date" link="date.html" description="Return the Current date as character vector."/>
-      <keyword name="datenum" link="datenum.html" description="Return the date/time input as a serial day number."/>
-      <keyword name="datestr" link="datestr.html" description="Convert date and time to string format."/>
-      <keyword name="datevec" link="datevec.html" description="Convert a serial date number into a date vector."/>
+      <keyword name="date" link="date.html" description="Retourne la date courante sous forme de vecteur de caractères."/>
+      <keyword name="datenum" link="datenum.html" description="d = datenum(...) Convertit différents formats de date en numéro de date série."/>
+      <keyword name="datestr" link="datestr.html" description="Convertit une date/heure en représentation textuelle."/>
+      <keyword name="datevec" link="datevec.html" description="Convertit un numéro de date série en vecteur date."/>
       <keyword name="eomday" link="eomday.html" description="Returns last day of month."/>
       <keyword name="etime" link="etime.html" description="Time elapsed between date vectors."/>
-      <keyword name="hour" link="hour.html" description="Hours part of the input date and time."/>
-      <keyword name="leapyear" link="leapyear.html" description="Determine leap year."/>
-      <keyword name="minute" link="minute.html" description="Minutes part of the input date and time."/>
-      <keyword name="now" link="now.html" description="Returns current date under the form of a Unix hour."/>
-      <keyword name="second" link="second.html" description="Seconds part of the input date and time."/>
-      <keyword name="sleep" link="sleep.html" description="Suspend code execution."/>
-      <keyword name="tic" link="tic.html" description="Starts a stopwatch timer."/>
+      <keyword name="hour" link="hour.html" description="Composante heures de la date et de l'heure d'entrée."/>
+      <keyword name="leapyear" link="leapyear.html" description="Déterminer les années bissextiles."/>
+      <keyword name="minute" link="minute.html" description="Composante minutes de la date et de l'heure d'entrée."/>
+      <keyword name="now" link="now.html" description="Renvoie la date et l'heure courantes sous forme de numéro de date série."/>
+      <keyword name="second" link="second.html" description="Composante secondes de la date et de l'heure d'entrée."/>
+      <keyword name="sleep" link="sleep.html" description="Met en pause l'exécution du code."/>
+      <keyword name="tic" link="tic.html" description="Démarre un chronomètre."/>
       <keyword name="time" link="time.html" description="Return the current time as the number of seconds or nanoseconds since the epoch."/>
-      <keyword name="timeit" link="timeit.html" description="Measure time required to run function."/>
-      <keyword name="toc" link="toc.html" description="Read the stopwatch timer."/>
-      <keyword name="weekday" link="weekday.html" description="Return the day of week."/>
+      <keyword name="timeit" link="timeit.html" description="Mesure le temps nécessaire à l'exécution d'une fonction."/>
+      <keyword name="toc" link="toc.html" description="Lire le chronomètre (stopwatch)."/>
+      <keyword name="weekday" link="weekday.html" description="Renvoie le jour de la semaine."/>
     </section>
   </toc>
 </help_summary>

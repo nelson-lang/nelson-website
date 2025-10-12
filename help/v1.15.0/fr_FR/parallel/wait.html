@@ -45,11 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">wait</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Wait for futures to be completed.</div></div>
+<div class="section syntax-section"><div class="subtitle">Attendre la complétion des futures.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span> Syntax
-                </div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">wait(f)
 wait(f, state)
 TF = wait(f, state, timeout)
@@ -57,55 +56,52 @@ TF = wait(f, state, timeout)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span> Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">f</td>
-<td>FevalFuture object: scalar or array.</td>
+<td>objet FevalFuture : scalaire ou tableau.</td>
 </tr>
 <tr>
 <td class="param-name">state</td>
-<td>state to wait: 'finished' (default) or  'running'</td>
+<td>état d'attente : 'finished' (par défaut) ou 'running'</td>
 </tr>
 <tr>
 <td class="param-name">timeout</td>
-<td>seconds to wait: real numeric scalar.</td>
+<td>secondes d'attente : scalaire numérique réel.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span> Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">TF</td>
-<td>logical: If each element of the Future array f finishes before timeout seconds elapse, TF is true. Otherwise, TF is false.</td>
+<td>logique : si chaque élément du tableau Future f se termine avant l'expiration du timeout, TF est true. Sinon, TF est false.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📄</span> Description</div>
+<span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>wait(f)</b> pauses execution until each element of the Future array <b>f</b> is finished.</p>
-            <p>
-                <b>wait(f, state)</b> pauses execution until each element of the Future array <b>f</b> has its 'State' property set to state.</p>
-                <p>
-                    <b>tf = wait(f, state, timeout)</b> pauses execution for a maximum of timeout seconds.</p>
-                </div>
+        <p><b>wait(f)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> soit terminé.</p>
+        <p><b>wait(f, state)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> ait sa propriété 'State' définie sur state.</p>
+        <p><b>tf = wait(f, state, timeout)</b> suspend l'exécution pour un maximum de timeout secondes.</p>
+    </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span> Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">fptr = str2func('pause');
 for i = 1:15
@@ -118,14 +114,14 @@ toc()</code><button class="copy-btn" type="button" onclick="copyExample(this)" t
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span> See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../core/pause.html">pause</a><a class="see-also-link" href="../parallel/fetchOutputs.html">fetchOutputs</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span> Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -133,13 +129,13 @@ toc()</code><button class="copy-btn" type="button" onclick="copyExample(this)" t
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span> Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>
