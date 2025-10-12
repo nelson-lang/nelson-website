@@ -45,42 +45,42 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fseek</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Set the file pointer to a location.</div></div>
+<div class="section syntax-section"><div class="subtitle">Positionne le pointeur de fichier à un emplacement.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">fseek(fid, offset, origin)
 status = fseek(fid, offset, origin)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">fid</td>
-<td>an integer value: file descriptor</td>
+<td>une valeur entière : descripteur de fichier</td>
 </tr>
 <tr>
 <td class="param-name">offset</td>
-<td>an integer value: number of bytes to move from origin.</td>
+<td>une valeur entière : nombre d'octets à déplacer depuis l'origine.</td>
 </tr>
 <tr>
 <td class="param-name">origin</td>
-<td>an integer value or a string: location in the file.</td>
+<td>une valeur entière ou une chaîne : emplacement dans le fichier.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -93,19 +93,19 @@ status = fseek(fid, offset, origin)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
+      <p>
+        <b>fseek</b> déplace le pointeur de fichier à l'emplacement <b>offset</b> dans le fichier <b>fid</b>.</p>
+        <p>origin peut prendre comme valeurs :</p>
+        <p>'bof' ou -1 : début du fichier.</p>
+        <p>'cof' ou 0 : position courante dans le fichier.</p>
+        <p>'eof' ou 1 : fin du fichier.</p>
         <p>
-            <b>fseek</b> moves the file pointer to the location <b>offset</b> within the file <b>fid</b>.</p>
-            <p>origin can take as value:</p>
-            <p>'bof' or -1 : beginning of file.</p>
-            <p>'cof' or 0 : current position in file.</p>
-            <p>'eof' or 1 : end of file.</p>
-            <p>
-                <b>offset</b> may be one of the predefined variables <b>SEEK_CUR</b> (current position, or 0), <b>SEEK_SET</b> (beginning, or -1), or <b>SEEK_END</b> (end of file, or 1).</p>
-            </div>
+            <b>offset</b> peut être l'une des variables prédéfinies <b>SEEK_CUR</b> (position courante, ou 0), <b>SEEK_SET</b> (début, ou -1), ou <b>SEEK_END</b> (fin du fichier, ou 1).</p>
+        </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">fileID = fopen([tempdir(), 'fseek.txt'],'wt');
 fprintf(fileID, 'son is beautiful.');
@@ -117,12 +117,12 @@ R = fileread([tempdir(), 'fseek.txt'])</code><button class="copy-btn" type="butt
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../stream_manager/frewind.html">frewind</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -130,13 +130,13 @@ R = fileread([tempdir(), 'fseek.txt'])</code><button class="copy-btn" type="butt
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

@@ -2,32 +2,32 @@
 <help_summary>
   <toc>
     <module>stream_manager</module>
-    <section name="Stream manager">
+    <section name="Gestion des flux">
       <chapter_description>
-        <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p>
-        <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p>
-        <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p>
+        <p>Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.</p>
+        <p>Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.</p>
+        <p>Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.</p>
    </chapter_description>
-      <keyword name="diary" link="diary.html" description="Diary of a session."/>
-      <keyword name="fclose" link="fclose.html" description="Close an opened file."/>
-      <keyword name="feof" link="feof.html" description="Checks end of file."/>
-      <keyword name="ferror" link="ferror.html" description="Test for i/o read/write errors."/>
-      <keyword name="fgetl" link="fgetl.html" description="Read string from a file without newline."/>
-      <keyword name="fgets" link="fgets.html" description="Read string from a file, stopping after a newline, or EOF, or n characters have been read."/>
-      <keyword name="fileread" link="fileread.html" description="Read contents of file as text."/>
-      <keyword name="filewrite" link="filewrite.html" description="Write text to a file."/>
-      <keyword name="fopen" link="fopen.html" description="Open a file in Nelson."/>
-      <keyword name="fprintf" link="fprintf.html" description="Writes data to a file."/>
-      <keyword name="fread" link="fread.html" description="Read data in binary form to the file specified by the file descriptor fid."/>
-      <keyword name="frewind" link="frewind.html" description="Set position of stream to the beginning."/>
-      <keyword name="fscanf" link="fscanf.html" description="Reads data from a file."/>
-      <keyword name="fseek" link="fseek.html" description="Set the file pointer to a location."/>
-      <keyword name="fsize" link="fsize.html" description="Returns size of an opened file."/>
-      <keyword name="ftell" link="ftell.html" description="Returns the offset of the current byte relative to the beginning of a file."/>
-      <keyword name="fwrite" link="fwrite.html" description="Write data in binary form to the file specified by the file descriptor fid."/>
-      <keyword name="load" link="load.html" description="load data from .nh5 or .mat file into Nelson's workspace."/>
-      <keyword name="save" link="save.html" description="save workspace variables to .nh5 or .mat file"/>
-      <keyword name="sscanf" link="sscanf.html" description="Read formatted data from strings."/>
+      <keyword name="diary" link="diary.html" description="Journal d'une session."/>
+      <keyword name="fclose" link="fclose.html" description="Ferme un fichier ouvert."/>
+      <keyword name="feof" link="feof.html" description="Teste la fin de fichier."/>
+      <keyword name="ferror" link="ferror.html" description="Test des erreurs d'E/S lecture/écriture."/>
+      <keyword name="fgetl" link="fgetl.html" description="Lire une chaîne depuis un fichier sans le caractère de nouvelle ligne."/>
+      <keyword name="fgets" link="fgets.html" description="Lire une chaîne depuis un fichier, s'arrêtant après un saut de ligne, la fin du fichier ou après n caractères lus."/>
+      <keyword name="fileread" link="fileread.html" description="Lire le contenu d'un fichier en tant que texte."/>
+      <keyword name="filewrite" link="filewrite.html" description="Écrire du texte dans un fichier."/>
+      <keyword name="fopen" link="fopen.html" description="Ouvrir un fichier dans Nelson."/>
+      <keyword name="fprintf" link="fprintf.html" description="Écrit des données dans un fichier."/>
+      <keyword name="fread" link="fread.html" description="Lire des données en format binaire depuis le fichier spécifié par le descripteur fid."/>
+      <keyword name="frewind" link="frewind.html" description="Positionne le flux au début du fichier."/>
+      <keyword name="fscanf" link="fscanf.html" description="Lit des données depuis un fichier."/>
+      <keyword name="fseek" link="fseek.html" description="Positionne le pointeur de fichier à un emplacement."/>
+      <keyword name="fsize" link="fsize.html" description="Retourne la taille d'un fichier ouvert."/>
+      <keyword name="ftell" link="ftell.html" description="Retourne le décalage de l'octet courant par rapport au début d'un fichier."/>
+      <keyword name="fwrite" link="fwrite.html" description="Écrire des données en binaire dans le fichier spécifié par le descripteur fid."/>
+      <keyword name="load" link="load.html" description="charger des données depuis un fichier .nh5 ou .mat dans l'espace de travail de Nelson."/>
+      <keyword name="save" link="save.html" description="enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat"/>
+      <keyword name="sscanf" link="sscanf.html" description="Lire des données formatées depuis des chaînes."/>
     </section>
   </toc>
 </help_summary>

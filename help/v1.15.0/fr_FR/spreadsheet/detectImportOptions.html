@@ -45,38 +45,38 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">detectImportOptions</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Create import options based on file content.</div></div>
+<div class="section syntax-section"><div class="subtitle">Créer des options d'importation basées sur le contenu du fichier.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">options = detectImportOptions(filename)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">filename</td>
-<td>a string: filename source.</td>
+<td>une chaîne : nom de fichier source.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">options</td>
-<td>DelimitedTextImportOptions object.</td>
+<td>Objet DelimitedTextImportOptions.</td>
 </tr>
 </table>
 </div>
@@ -85,32 +85,32 @@
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>options = detectImportOptions(filename)</b> identifies a table in a file and returns an import <b>options</b> object.</p>
-            <p>You can customize this object and use it with <b>readtable</b>, <b>readcell</b> or <b>readmatrix</b> to control how Nelson imports data as a table, cell array, or matrix.</p>
-            <p>The type of the returned options object depends on the file's extension.</p>
+            <b>options = detectImportOptions(filename)</b> identifie une table dans un fichier et renvoie un objet d'options d'importation <b>options</b>.</p>
+            <p>Vous pouvez personnaliser cet objet et l'utiliser avec <b>readtable</b>, <b>readcell</b> ou <b>readmatrix</b> pour contrôler la façon dont Nelson importe les données en tant que table, cellule ou matrice.</p>
+            <p>Le type de l'objet options renvoyé dépend de l'extension du fichier.</p>
             <p></p>
-            <p>Properties:</p>
+            <p>Propriétés :</p>
             <p>
-                <b>Delimiter</b>: Field delimiter characters. example: {','} </p>
+                <b>Delimiter</b> : caractères délimiteurs de champ. exemple : {','} </p>
                 <p>
-                    <b>LineEnding</b>: End-of-line characters. example: {'\r\n'}</p>
+                    <b>LineEnding</b> : caractères de fin de ligne. exemple : {'\r\n'}</p>
                     <p>
-                        <b>CommentStyle</b>: Style of comments. example: {'#'}</p>
+                        <b>CommentStyle</b> : style des commentaires. exemple : {'#'}</p>
                         <p>
-                            <b>EmptyLineRule</b>: Procedure to handle empty lines. example: 'skip'</p>
+                            <b>EmptyLineRule</b> : procédure de gestion des lignes vides. exemple : 'skip'</p>
                             <p>
-                                <b>VariableNamesLine</b>: Variable names location. example: 1</p>
+                                <b>VariableNamesLine</b> : emplacement des noms de variables. exemple : 1</p>
                                 <p>
-                                    <b>VariableNames</b>: Variable names. example: {'Names'  'Age'  'Height'  'Weight'}</p>
+                                    <b>VariableNames</b> : noms des variables. exemple : {'Names'  'Age'  'Height'  'Weight'}</p>
                                     <p>
-                                        <b>RowNamesColumn</b>:  Row names location. example: 0</p>
+                                        <b>RowNamesColumn</b> : emplacement des noms de ligne. exemple : 0</p>
                                         <p>
-                                            <b>DataLines</b>: Data location, <b>[l1 l2]</b> Indicate the range of lines containing the data. <b>l1</b> refers to the first line with data, while <b>l2</b> refers to the last line. example: [2  Inf]</p>
+                                            <b>DataLines</b> : emplacement des données, <b>[l1 l2]</b> indique la plage de lignes contenant les données. <b>l1</b> fait référence à la première ligne avec données, tandis que <b>l2</b> fait référence à la dernière ligne. exemple : [2  Inf]</p>
                                         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
 Age = [28; 34; 22; 30];
@@ -126,14 +126,14 @@ C2 = readcell([tempdir,'readcell_1.csv'], options)</code><button class="copy-btn
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../spreadsheet/readcell.html">readcell</a><a class="see-also-link" href="../spreadsheet/readtable.html">readtable</a><a class="see-also-link" href="../spreadsheet/readmatrix.html">readmatrix</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -141,13 +141,13 @@ C2 = readcell([tempdir,'readcell_1.csv'], options)</code><button class="copy-btn
 </tr>
 <tr>
 <td class="version">1.10.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

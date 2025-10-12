@@ -2,22 +2,22 @@
 <help_summary>
   <toc>
     <module>special_functions</module>
-    <section name="Special functions">
+    <section name="Fonctions spéciales">
       <chapter_description>
-        <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.</p>
-        <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.</p>  
-        <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.</p>
+        <p>Le module Fonctions Spéciales fournit des outils pour effectuer des opérations mathématiques avancées dans Nelson.</p>
+        <p>Il inclut des fonctions pour les distributions statistiques, les calculs combinatoires, et d'autres calculs mathématiques spécialisés qui sont essentiels dans diverses applications scientifiques et d'ingénierie.</p>  
+        <p>Ce module améliore les capacités de Nelson en offrant une gamme de fonctions qui supportent des analyses complexes et des tâches de modélisation.</p>
     </chapter_description>
-      <keyword name="betainc" link="betainc.html" description="Incomplete beta function"/>
-      <keyword name="cross" link="cross.html" description="Cross product."/>
-      <keyword name="dot" link="dot.html" description="Dot product."/>
-      <keyword name="factor" link="factor.html" description="Prime factors"/>
-      <keyword name="gamma" link="gamma.html" description="Gamma special function"/>
-      <keyword name="gammaln" link="gammaln.html" description="Logarithm of gamma function&#10;"/>
-      <keyword name="gcd" link="gcd.html" description="Greatest common divisor"/>
-      <keyword name="interp1" link="interp1.html" description="Linear 1-D data interpolation"/>
-      <keyword name="peaks" link="peaks.html" description="Peaks function"/>
-      <keyword name="primes" link="primes.html" description="Prime numbers less than or equal to input value"/>
+      <keyword name="betainc" link="betainc.html" description="Fonction bêta incomplète"/>
+      <keyword name="cross" link="cross.html" description="Produit vectoriel."/>
+      <keyword name="dot" link="dot.html" description="Produit scalaire."/>
+      <keyword name="factor" link="factor.html" description="Facteurs premiers"/>
+      <keyword name="gamma" link="gamma.html" description="Fonction spéciale gamma"/>
+      <keyword name="gammaln" link="gammaln.html" description="Logarithme de la fonction gamma&#10;"/>
+      <keyword name="gcd" link="gcd.html" description="Plus grand commun diviseur"/>
+      <keyword name="interp1" link="interp1.html" description="Interpolation linéaire de données 1-D"/>
+      <keyword name="peaks" link="peaks.html" description="Fonction peaks"/>
+      <keyword name="primes" link="primes.html" description="Nombres premiers inférieurs ou égaux à la valeur d'entrée"/>
     </section>
   </toc>
 </help_summary>

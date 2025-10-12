@@ -45,10 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">sscanf</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Read formatted data from strings.</div></div>
+<div class="section syntax-section"><div class="subtitle">Lire des données formatées depuis des chaînes.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">R = sscanf(str, format)
 R = sscanf(str, format, sizeR)
 [R, count] = sscanf(...)
@@ -58,49 +58,49 @@ R = sscanf(str, format, sizeR)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">str</td>
-<td>character array or string scalar.</td>
+<td>tableau de caractères ou scalaire de type string.</td>
 </tr>
 <tr>
 <td class="param-name">format</td>
-<td>a string describing the format to used function, see fscanf for supported format.</td>
+<td>une chaîne décrivant le format utilisé par la fonction ; voir fscanf pour les formats supportés.</td>
 </tr>
 <tr>
 <td class="param-name">sizeR</td>
-<td>desired dimensions of R.</td>
+<td>dimensions souhaitées de R.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">R</td>
-<td>matrix or character vector.</td>
+<td>matrice ou vecteur de caractères.</td>
 </tr>
 <tr>
 <td class="param-name">count</td>
-<td>number of elements read into output array.</td>
+<td>nombre d'éléments lus dans le tableau de sortie.</td>
 </tr>
 <tr>
 <td class="param-name">errmsg</td>
-<td>Error message.</td>
+<td>Message d'erreur.</td>
 </tr>
 <tr>
 <td class="param-name">nextindex</td>
-<td>Position after last character scanned.</td>
+<td>Position après le dernier caractère analysé.</td>
 </tr>
 </table>
 </div>
@@ -108,12 +108,12 @@ R = sscanf(str, format, sizeR)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Read formatted data from strings.</p>
+        <p>Lit des données formatées depuis des chaînes.</p>
     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">str = "2.7183  3.1416  0.0073";
 R = sscanf(str,'%f',[2 2])</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
@@ -121,14 +121,14 @@ R = sscanf(str,'%f',[2 2])</code><button class="copy-btn" type="button" onclick=
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../stream_manager/fscanf.html">fscanf</a><a class="see-also-link" href="../stream_manager/sprintf.html">sprintf</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -136,13 +136,13 @@ R = sscanf(str,'%f',[2 2])</code><button class="copy-btn" type="button" onclick=
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

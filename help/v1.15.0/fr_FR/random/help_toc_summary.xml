@@ -2,17 +2,17 @@
 <help_summary>
   <toc>
     <module>random</module>
-    <section name="Random">
+    <section name="Aléatoire">
       <chapter_description>
-        <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p>
-        <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p>
-        <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p>
+        <p>Le module Random fournit des outils pour générer des nombres aléatoires et des séquences aléatoires dans Nelson.</p>
+        <p>Il prend en charge les distributions uniforme et normale, la génération d'entiers aléatoires, les permutations et le contrôle de l'état du générateur de nombres aléatoires.</p>
+        <p>Ce module est essentiel pour les simulations, la modélisation probabiliste et les calculs stochastiques.</p>
     </chapter_description>
-      <keyword name="rand" link="rand.html" description="Random Number."/>
-      <keyword name="randi" link="randi.html" description="Random Integer."/>
-      <keyword name="randn" link="randn.html" description="Normally distributed random number."/>
-      <keyword name="randperm" link="randperm.html" description="Random permutation of integers values."/>
-      <keyword name="rng" link="rng.html" description="Random Number Generator."/>
+      <keyword name="rand" link="rand.html" description="Nombre aléatoire."/>
+      <keyword name="randi" link="randi.html" description="Entier aléatoire."/>
+      <keyword name="randn" link="randn.html" description="Nombre aléatoire normalement distribué."/>
+      <keyword name="randperm" link="randperm.html" description="Permutation aléatoire de valeurs entières."/>
+      <keyword name="rng" link="rng.html" description="Générateur de nombres aléatoires."/>
     </section>
   </toc>
 </help_summary>

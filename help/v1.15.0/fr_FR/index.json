@@ -960,16 +960,16 @@
     "content": "Ou exclusif (XOR)."
   },
   {
-    "title": "Single type",
+    "title": "Type simple précision",
     "url": "/./index.html",
     "path": "sections/single",
-    "content": "<chapter_description> <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p> <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Single fournit des outils pour gérer les valeurs numériques en simple précision dans Nelson.</p> <p>Il permet la conversion de variables au format simple précision, permettant un stockage et un calcul efficaces tout en maintenant une précision numérique suffisante pour de nombreuses applications.</p> </chapter_description>"
   },
   {
     "title": "single",
     "url": "./single/single.html",
     "path": "./single/single.html",
-    "content": "Converts a variable to single precision type."
+    "content": "Convertit une variable en type simple précision."
   },
   {
     "title": "Double",
@@ -1068,64 +1068,64 @@
     "content": "Convertit en entier non signé 8 bits."
   },
   {
-    "title": "Sparse type",
+    "title": "Type sparse",
     "url": "/./index.html",
     "path": "sections/sparse",
-    "content": "<chapter_description> <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.</p> <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.</p> <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Type Sparse fournit des outils pour créer et manipuler des matrices creuses dans Nelson.</p> <p>Il prend en charge le stockage et le calcul efficaces pour les matrices avec un grand nombre d'éléments zéro, y compris la conversion entre les représentations creuses et pleines, la génération de matrices creuses spéciales, et l'accès aux éléments non nuls.</p> <p>Ce module permet une gestion efficace en mémoire de grands ensembles de données et des opérations numériques optimisées sur des structures creuses.</p> </chapter_description>"
   },
   {
     "title": "IJV",
     "url": "./sparse/IJV.html",
     "path": "./sparse/IJV.html",
-    "content": "Returns I,J,V triplets from a sparse matrix."
+    "content": "Retourne les triplets I,J,V d'une matrice sparse."
   },
   {
     "title": "full",
     "url": "./sparse/full.html",
     "path": "./sparse/full.html",
-    "content": "Sparse to full matrix conversion."
+    "content": "Conversion de matrice sparse vers pleine."
   },
   {
     "title": "nnz",
     "url": "./sparse/nnz.html",
     "path": "./sparse/nnz.html",
-    "content": "Return the number of nonzero elements."
+    "content": "Retourne le nombre d'éléments non nuls."
   },
   {
     "title": "nzmax",
     "url": "./sparse/nzmax.html",
     "path": "./sparse/nzmax.html",
-    "content": "Reserved size for nonzero elements."
+    "content": "Taille réservée pour les éléments non nuls."
   },
   {
     "title": "sparse",
     "url": "./sparse/sparse.html",
     "path": "./sparse/sparse.html",
-    "content": "Sparse matrix definition."
+    "content": "Définition de matrice sparse."
   },
   {
     "title": "speye",
     "url": "./sparse/speye.html",
     "path": "./sparse/speye.html",
-    "content": "Sparse identity matrix."
+    "content": "Matrice identité sparse."
   },
   {
     "title": "spones",
     "url": "./sparse/spones.html",
     "path": "./sparse/spones.html",
-    "content": "Replaces non zero sparse matrix elements with ones."
+    "content": "Remplace les éléments non nuls d'une matrice sparse par des uns."
   },
   {
     "title": "sprand",
     "url": "./sparse/sprand.html",
     "path": "./sparse/sprand.html",
-    "content": "Sparse uniformly distributed random matrix."
+    "content": "Matrice sparse aléatoire à distribution uniforme."
   },
   {
     "title": "sprandn",
     "url": "./sparse/sprandn.html",
     "path": "./sparse/sprandn.html",
-    "content": "Sparse normally distributed random matrix."
+    "content": "Matrice sparse aléatoire à distribution normale."
   },
   {
     "title": "Type Chaîne",
@@ -2628,370 +2628,370 @@
     "content": "Wilkinson's eigenvalue test matrix"
   },
   {
-    "title": "Trigonometric functions",
+    "title": "Fonctions trigonométriques",
     "url": "/./index.html",
     "path": "sections/trigonometric_functions",
-    "content": "<chapter_description> <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.</p> <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.</p> <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Fonctions Trigonométriques fournit un ensemble complet de fonctions pour effectuer des calculs trigonométriques dans Nelson.</p> <p>Il inclut les fonctions trigonométriques standards telles que sinus, cosinus et tangente, ainsi que leurs inverses et leurs homologues hyperboliques. Le module prend en charge les mesures d'angle en degrés et en radians, permettant des calculs flexibles selon les préférences de l'utilisateur.</p> <p>De plus, le module propose des fonctions utilitaires pour convertir entre degrés et radians, facilitant l'intégration des calculs trigonométriques dans diverses applications mathématiques et d'ingénierie.</p> </chapter_description>"
   },
   {
     "title": "acos",
     "url": "./trigonometric_functions/acos.html",
     "path": "./trigonometric_functions/acos.html",
-    "content": "Computes the inverse cosine in radians for each element of x."
+    "content": "Calcule le cosinus inverse en radians pour chaque élément de x."
   },
   {
     "title": "acosd",
     "url": "./trigonometric_functions/acosd.html",
     "path": "./trigonometric_functions/acosd.html",
-    "content": "Inverse cosine in degrees."
+    "content": "Cosinus inverse en degrés."
   },
   {
     "title": "acosh",
     "url": "./trigonometric_functions/acosh.html",
     "path": "./trigonometric_functions/acosh.html",
-    "content": "Inverse hyperbolic cosine."
+    "content": "Cosinus hyperbolique inverse."
   },
   {
     "title": "acot",
     "url": "./trigonometric_functions/acot.html",
     "path": "./trigonometric_functions/acot.html",
-    "content": "Inverse cotangent of angle in radians"
+    "content": "Cotangente inverse d'un angle en radians"
   },
   {
     "title": "acotd",
     "url": "./trigonometric_functions/acotd.html",
     "path": "./trigonometric_functions/acotd.html",
-    "content": "Inverse cotangent of angle in degrees"
+    "content": "Cotangente inverse d'un angle en degrés"
   },
   {
     "title": "acoth",
     "url": "./trigonometric_functions/acoth.html",
     "path": "./trigonometric_functions/acoth.html",
-    "content": "Inverse hyperbolic cotangent."
+    "content": "Cotangente hyperbolique inverse."
   },
   {
     "title": "acsc",
     "url": "./trigonometric_functions/acsc.html",
     "path": "./trigonometric_functions/acsc.html",
-    "content": "Inverse cosecant in radians."
+    "content": "Cosécante inverse en radians."
   },
   {
     "title": "acscd",
     "url": "./trigonometric_functions/acscd.html",
     "path": "./trigonometric_functions/acscd.html",
-    "content": "Inverse cosecant in degrees."
+    "content": "Cosécante inverse en degrés."
   },
   {
     "title": "acsch",
     "url": "./trigonometric_functions/acsch.html",
     "path": "./trigonometric_functions/acsch.html",
-    "content": "Inverse hyperbolic cosecant."
+    "content": "Cosécante hyperbolique inverse."
   },
   {
     "title": "asec",
     "url": "./trigonometric_functions/asec.html",
     "path": "./trigonometric_functions/asec.html",
-    "content": "Inverse secant of angle in radians."
+    "content": "Sécante inverse d'un angle en radians."
   },
   {
     "title": "asecd",
     "url": "./trigonometric_functions/asecd.html",
     "path": "./trigonometric_functions/asecd.html",
-    "content": "Inverse secant of argument in degrees."
+    "content": "Sécante inverse de l'argument en degrés."
   },
   {
     "title": "asech",
     "url": "./trigonometric_functions/asech.html",
     "path": "./trigonometric_functions/asech.html",
-    "content": "Inverse hyperbolic secant of angle in radians."
+    "content": "Sécante hyperbolique inverse d'un angle en radians."
   },
   {
     "title": "asin",
     "url": "./trigonometric_functions/asin.html",
     "path": "./trigonometric_functions/asin.html",
-    "content": "Computes the inverse sine in radians for each element of x."
+    "content": "Calcule le sinus inverse en radians pour chaque élément de x."
   },
   {
     "title": "asind",
     "url": "./trigonometric_functions/asind.html",
     "path": "./trigonometric_functions/asind.html",
-    "content": "Inverse sine in degrees."
+    "content": "Sinus inverse en degrés."
   },
   {
     "title": "asinh",
     "url": "./trigonometric_functions/asinh.html",
     "path": "./trigonometric_functions/asinh.html",
-    "content": "Inverse hyperbolic sine function"
+    "content": "Sinus hyperbolique inverse"
   },
   {
     "title": "atan",
     "url": "./trigonometric_functions/atan.html",
     "path": "./trigonometric_functions/atan.html",
-    "content": "Computes the inverse tangent in radians for each element of x."
+    "content": "Calcule la tangente inverse en radians pour chaque élément de x."
   },
   {
     "title": "atan2",
     "url": "./trigonometric_functions/atan2.html",
     "path": "./trigonometric_functions/atan2.html",
-    "content": "Computes the four-quadrant inverse tangent."
+    "content": "Calcule la tangente inverse à quatre quadrants."
   },
   {
     "title": "atan2d",
     "url": "./trigonometric_functions/atan2d.html",
     "path": "./trigonometric_functions/atan2d.html",
-    "content": "Four-quadrant inverse tangent in degrees."
+    "content": "Tangente inverse à quatre quadrants en degrés."
   },
   {
     "title": "atand",
     "url": "./trigonometric_functions/atand.html",
     "path": "./trigonometric_functions/atand.html",
-    "content": "Inverse tangent in degrees."
+    "content": "Tangente inverse en degrés."
   },
   {
     "title": "atanh",
     "url": "./trigonometric_functions/atanh.html",
     "path": "./trigonometric_functions/atanh.html",
-    "content": "Computes the inverse hyperbolic tangent."
+    "content": "Calcule la tangente hyperbolique inverse."
   },
   {
     "title": "cart2pol",
     "url": "./trigonometric_functions/cart2pol.html",
     "path": "./trigonometric_functions/cart2pol.html",
-    "content": "Transforms Cartesian coordinates to polar or cylindrical."
+    "content": "Transforme des coordonnées cartésiennes en coordonnées polaires ou cylindriques."
   },
   {
     "title": "cart2sph",
     "url": "./trigonometric_functions/cart2sph.html",
     "path": "./trigonometric_functions/cart2sph.html",
-    "content": "Transforms Cartesian to spherical coordinates."
+    "content": "Transforme des coordonnées cartésiennes en coordonnées sphériques."
   },
   {
     "title": "cos",
     "url": "./trigonometric_functions/cos.html",
     "path": "./trigonometric_functions/cos.html",
-    "content": "Computes the cosine in radians for each element of x."
+    "content": "Calcule le cosinus en radians pour chaque élément de x."
   },
   {
     "title": "cosd",
     "url": "./trigonometric_functions/cosd.html",
     "path": "./trigonometric_functions/cosd.html",
-    "content": "Computes the cosine in degree for each element of x."
+    "content": "Calcule le cosinus en degrés pour chaque élément de x."
   },
   {
     "title": "cosh",
     "url": "./trigonometric_functions/cosh.html",
     "path": "./trigonometric_functions/cosh.html",
-    "content": "Computes the hyperbolic cosine in radians for each element of x."
+    "content": "Calcule le cosinus hyperbolique en radians pour chaque élément de x."
   },
   {
     "title": "cosm",
     "url": "./trigonometric_functions/cosm.html",
     "path": "./trigonometric_functions/cosm.html",
-    "content": "Computes the matrix cosine of a square matrix."
+    "content": "Calcule le cosinus matriciel d'une matrice carrée."
   },
   {
     "title": "cospi",
     "url": "./trigonometric_functions/cospi.html",
     "path": "./trigonometric_functions/cospi.html",
-    "content": "Computes cos(X * pi) accurately."
+    "content": "Calcule précisément cos(X * pi)."
   },
   {
     "title": "cot",
     "url": "./trigonometric_functions/cot.html",
     "path": "./trigonometric_functions/cot.html",
-    "content": "Cotangent of angle in radians"
+    "content": "Cotangente d'un angle en radians"
   },
   {
     "title": "cotd",
     "url": "./trigonometric_functions/cotd.html",
     "path": "./trigonometric_functions/cotd.html",
-    "content": "Cotangent of argument in degrees"
+    "content": "Cotangente de l'argument en degrés"
   },
   {
     "title": "coth",
     "url": "./trigonometric_functions/coth.html",
     "path": "./trigonometric_functions/coth.html",
-    "content": "Hyperbolic cotangent."
+    "content": "Cotangente hyperbolique."
   },
   {
     "title": "csc",
     "url": "./trigonometric_functions/csc.html",
     "path": "./trigonometric_functions/csc.html",
-    "content": "Cosecant of input angle in radians."
+    "content": "Cosécante d'un angle en radians."
   },
   {
     "title": "cscd",
     "url": "./trigonometric_functions/cscd.html",
     "path": "./trigonometric_functions/cscd.html",
-    "content": "Cosecant of argument in degrees."
+    "content": "Cosécante de l'argument en degrés."
   },
   {
     "title": "csch",
     "url": "./trigonometric_functions/csch.html",
     "path": "./trigonometric_functions/csch.html",
-    "content": "Hyperbolic cosecant."
+    "content": "Cosécante hyperbolique."
   },
   {
     "title": "deg2rad",
     "url": "./trigonometric_functions/deg2rad.html",
     "path": "./trigonometric_functions/deg2rad.html",
-    "content": "Convert angle from degrees to radians."
+    "content": "Convertit un angle de degrés en radians."
   },
   {
     "title": "pol2cart",
     "url": "./trigonometric_functions/pol2cart.html",
     "path": "./trigonometric_functions/pol2cart.html",
-    "content": "Transforms polar or cylindrical coordinates to Cartesian."
+    "content": "Transforme des coordonnées polaires ou cylindriques en coordonnées cartésiennes."
   },
   {
     "title": "rad2deg",
     "url": "./trigonometric_functions/rad2deg.html",
     "path": "./trigonometric_functions/rad2deg.html",
-    "content": "Convert angle from radians to degrees."
+    "content": "Convertit un angle de radians en degrés."
   },
   {
     "title": "sec",
     "url": "./trigonometric_functions/sec.html",
     "path": "./trigonometric_functions/sec.html",
-    "content": "Secant of angle in radians."
+    "content": "Sécante d'un angle en radians."
   },
   {
     "title": "secd",
     "url": "./trigonometric_functions/secd.html",
     "path": "./trigonometric_functions/secd.html",
-    "content": "Secant of argument in degrees."
+    "content": "Sécante de l'argument en degrés."
   },
   {
     "title": "sech",
     "url": "./trigonometric_functions/sech.html",
     "path": "./trigonometric_functions/sech.html",
-    "content": "Hyperbolic secant."
+    "content": "Sécante hyperbolique."
   },
   {
     "title": "sin",
     "url": "./trigonometric_functions/sin.html",
     "path": "./trigonometric_functions/sin.html",
-    "content": "Computes the sine in radians for each element of x."
+    "content": "Calcule le sinus en radians pour chaque élément de x."
   },
   {
     "title": "sind",
     "url": "./trigonometric_functions/sind.html",
     "path": "./trigonometric_functions/sind.html",
-    "content": "Computes the sine in degree for each element of x."
+    "content": "Calcule le sinus en degrés pour chaque élément de x."
   },
   {
     "title": "sinh",
     "url": "./trigonometric_functions/sinh.html",
     "path": "./trigonometric_functions/sinh.html",
-    "content": "Computes the hyperbolic sine in radians for each element of x."
+    "content": "Calcule le sinus hyperbolique en radians pour chaque élément de x."
   },
   {
     "title": "sinm",
     "url": "./trigonometric_functions/sinm.html",
     "path": "./trigonometric_functions/sinm.html",
-    "content": "Computes the matrix sinus of a square matrix."
+    "content": "Calcule le sinus matriciel d'une matrice carrée."
   },
   {
     "title": "sinpi",
     "url": "./trigonometric_functions/sinpi.html",
     "path": "./trigonometric_functions/sinpi.html",
-    "content": "Computes sin(X * pi) accurately."
+    "content": "Calcule précisément sin(X * pi)."
   },
   {
     "title": "sph2cart",
     "url": "./trigonometric_functions/sph2cart.html",
     "path": "./trigonometric_functions/sph2cart.html",
-    "content": "Transform spherical coordinates to Cartesian."
+    "content": "Transforme des coordonnées sphériques en coordonnées cartésiennes."
   },
   {
     "title": "tan",
     "url": "./trigonometric_functions/tan.html",
     "path": "./trigonometric_functions/tan.html",
-    "content": "Computes the tangent in radians for each element of x."
+    "content": "Calcule la tangente en radians pour chaque élément de x."
   },
   {
     "title": "tand",
     "url": "./trigonometric_functions/tand.html",
     "path": "./trigonometric_functions/tand.html",
-    "content": "Computes the tangent in degree for each element of x."
+    "content": "Calcule la tangente en degrés pour chaque élément de x."
   },
   {
     "title": "tanh",
     "url": "./trigonometric_functions/tanh.html",
     "path": "./trigonometric_functions/tanh.html",
-    "content": "Computes the hyperbolic tangent in radians for each element of x."
+    "content": "Calcule la tangente hyperbolique en radians pour chaque élément de x."
   },
   {
     "title": "tanm",
     "url": "./trigonometric_functions/tanm.html",
     "path": "./trigonometric_functions/tanm.html",
-    "content": "Computes the matrix tangent of a square matrix."
+    "content": "Calcule la tangente matricielle d'une matrice carrée."
   },
   {
-    "title": "Special functions",
+    "title": "Fonctions spéciales",
     "url": "/./index.html",
     "path": "sections/special_functions",
-    "content": "<chapter_description> <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.</p> <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.</p> <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Fonctions Spéciales fournit des outils pour effectuer des opérations mathématiques avancées dans Nelson.</p> <p>Il inclut des fonctions pour les distributions statistiques, les calculs combinatoires, et d'autres calculs mathématiques spécialisés qui sont essentiels dans diverses applications scientifiques et d'ingénierie.</p> <p>Ce module améliore les capacités de Nelson en offrant une gamme de fonctions qui supportent des analyses complexes et des tâches de modélisation.</p> </chapter_description>"
   },
   {
     "title": "betainc",
     "url": "./special_functions/betainc.html",
     "path": "./special_functions/betainc.html",
-    "content": "Incomplete beta function"
+    "content": "Fonction bêta incomplète"
   },
   {
     "title": "cross",
     "url": "./special_functions/cross.html",
     "path": "./special_functions/cross.html",
-    "content": "Cross product."
+    "content": "Produit vectoriel."
   },
   {
     "title": "dot",
     "url": "./special_functions/dot.html",
     "path": "./special_functions/dot.html",
-    "content": "Dot product."
+    "content": "Produit scalaire."
   },
   {
     "title": "factor",
     "url": "./special_functions/factor.html",
     "path": "./special_functions/factor.html",
-    "content": "Prime factors"
+    "content": "Facteurs premiers"
   },
   {
     "title": "gamma",
     "url": "./special_functions/gamma.html",
     "path": "./special_functions/gamma.html",
-    "content": "Gamma special function"
+    "content": "Fonction spéciale gamma"
   },
   {
     "title": "gammaln",
     "url": "./special_functions/gammaln.html",
     "path": "./special_functions/gammaln.html",
-    "content": "Logarithm of gamma function"
+    "content": "Logarithme de la fonction gamma"
   },
   {
     "title": "gcd",
     "url": "./special_functions/gcd.html",
     "path": "./special_functions/gcd.html",
-    "content": "Greatest common divisor"
+    "content": "Plus grand commun diviseur"
   },
   {
     "title": "interp1",
     "url": "./special_functions/interp1.html",
     "path": "./special_functions/interp1.html",
-    "content": "Linear 1-D data interpolation"
+    "content": "Interpolation linéaire de données 1-D"
   },
   {
     "title": "peaks",
     "url": "./special_functions/peaks.html",
     "path": "./special_functions/peaks.html",
-    "content": "Peaks function"
+    "content": "Fonction peaks"
   },
   {
     "title": "primes",
     "url": "./special_functions/primes.html",
     "path": "./special_functions/primes.html",
-    "content": "Prime numbers less than or equal to input value"
+    "content": "Nombres premiers inférieurs ou égaux à la valeur d'entrée"
   },
   {
     "title": "Algèbre linéaire",
@@ -3174,16 +3174,16 @@
     "content": "Norme par vecteur."
   },
   {
-    "title": "Statistics",
+    "title": "Statistiques",
     "url": "/./index.html",
     "path": "sections/statistics",
-    "content": "<chapter_description> <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.</p> <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.</p> <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Statistiques fournit des outils pour analyser et résumer des données dans Nelson.</p> <p>Il comprend des fonctions pour calculer des mesures de tendance centrale, de variabilité, de corrélation et des distributions de probabilités.</p> <p>Le module prend également en charge des structures avancées de synthèse de données pour une estimation précise des quantiles, permettant une analyse statistique robuste et l'interprétation des jeux de données.</p> </chapter_description>"
   },
   {
     "title": "corrcoef",
     "url": "./statistics/corrcoef.html",
     "path": "./statistics/corrcoef.html",
-    "content": "Correlation coefficients"
+    "content": "Coefficients de corrélation"
   },
   {
     "title": "cov",
@@ -3195,19 +3195,19 @@
     "title": "mean",
     "url": "./statistics/mean.html",
     "path": "./statistics/mean.html",
-    "content": "Mean of array elements."
+    "content": "Moyenne des éléments d'un tableau."
   },
   {
     "title": "normpdf",
     "url": "./statistics/normpdf.html",
     "path": "./statistics/normpdf.html",
-    "content": "Normal probability density function"
+    "content": "Densité de probabilité normale"
   },
   {
     "title": "tdigest",
     "url": "./statistics/tdigest.html",
     "path": "./statistics/tdigest.html",
-    "content": "t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters"
+    "content": "Structure de données t-digest pour une estimation précise des quantiles avec paramètres de compression configurables"
   },
   {
     "title": "var",
@@ -3744,82 +3744,82 @@
     "content": "Zéros et gain d'un système SISO."
   },
   {
-    "title": "Signal Processing",
+    "title": "Traitement du signal",
     "url": "/./index.html",
     "path": "sections/signal_processing",
-    "content": "<chapter_description> <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p> <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p> <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Traitement du signal fournit des outils pour analyser et manipuler des signaux échantillonnés dans Nelson.</p> <p>Il inclut des fonctions de fenêtrage, filtrage numérique, corrélation croisée, et des conversions entre représentations en magnitude, puissance et décibels.</p> <p>Le module prend également en charge la transformation entre représentations pôles-zéros et fonctions de transfert, permettant une conception et une analyse efficaces des systèmes de traitement du signal en temps discret.</p> </chapter_description>"
   },
   {
     "title": "bartlett",
     "url": "./signal_processing/bartlett.html",
     "path": "./signal_processing/bartlett.html",
-    "content": "Bartlett window."
+    "content": "Fenêtre de Bartlett."
   },
   {
     "title": "blackman",
     "url": "./signal_processing/blackman.html",
     "path": "./signal_processing/blackman.html",
-    "content": "Blackman window."
+    "content": "Fenêtre de Blackman."
   },
   {
     "title": "db2mag",
     "url": "./signal_processing/db2mag.html",
     "path": "./signal_processing/db2mag.html",
-    "content": "Convert a gain in decibels (dB) to a magnitude."
+    "content": "Convertit un gain en décibels (dB) en magnitude."
   },
   {
     "title": "db2pow",
     "url": "./signal_processing/db2pow.html",
     "path": "./signal_processing/db2pow.html",
-    "content": "Convert a gain in decibels (dB) to power."
+    "content": "Convertit un gain en décibels (dB) en puissance."
   },
   {
     "title": "filter2",
     "url": "./signal_processing/filter2.html",
     "path": "./signal_processing/filter2.html",
-    "content": "2-D digital filter."
+    "content": "Filtre numérique 2-D."
   },
   {
     "title": "hamming",
     "url": "./signal_processing/hamming.html",
     "path": "./signal_processing/hamming.html",
-    "content": "Hamming window."
+    "content": "Fenêtre de Hamming."
   },
   {
     "title": "hann",
     "url": "./signal_processing/hann.html",
     "path": "./signal_processing/hann.html",
-    "content": "Hann window."
+    "content": "Fenêtre de Hann."
   },
   {
     "title": "mag2db",
     "url": "./signal_processing/mag2db.html",
     "path": "./signal_processing/mag2db.html",
-    "content": "Convert a magnitude to decibels (dB)."
+    "content": "Convertit une magnitude en décibels (dB)."
   },
   {
     "title": "pow2db",
     "url": "./signal_processing/pow2db.html",
     "path": "./signal_processing/pow2db.html",
-    "content": "Convert power to decibel."
+    "content": "Convertit une puissance en décibels."
   },
   {
     "title": "sinc",
     "url": "./signal_processing/sinc.html",
     "path": "./signal_processing/sinc.html",
-    "content": "Sinc function."
+    "content": "Fonction sinc."
   },
   {
     "title": "xcorr2",
     "url": "./signal_processing/xcorr2.html",
     "path": "./signal_processing/xcorr2.html",
-    "content": "2-D cross-correlation."
+    "content": "Corrélation croisée 2-D."
   },
   {
     "title": "zp2tf",
     "url": "./signal_processing/zp2tf.html",
     "path": "./signal_processing/zp2tf.html",
-    "content": "Zero-pole to transfer function conversion."
+    "content": "Conversion zéros-pôles en fonction de transfert."
   },
   {
     "title": "Bibliothèque de sous-programmes en théorie du contrôle",
@@ -4038,40 +4038,40 @@
     "content": "inverse de fftshift"
   },
   {
-    "title": "Random",
+    "title": "Aléatoire",
     "url": "/./index.html",
     "path": "sections/random",
-    "content": "<chapter_description> <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p> <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p> <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Random fournit des outils pour générer des nombres aléatoires et des séquences aléatoires dans Nelson.</p> <p>Il prend en charge les distributions uniforme et normale, la génération d'entiers aléatoires, les permutations et le contrôle de l'état du générateur de nombres aléatoires.</p> <p>Ce module est essentiel pour les simulations, la modélisation probabiliste et les calculs stochastiques.</p> </chapter_description>"
   },
   {
     "title": "rand",
     "url": "./random/rand.html",
     "path": "./random/rand.html",
-    "content": "Random Number."
+    "content": "Nombre aléatoire."
   },
   {
     "title": "randi",
     "url": "./random/randi.html",
     "path": "./random/randi.html",
-    "content": "Random Integer."
+    "content": "Entier aléatoire."
   },
   {
     "title": "randn",
     "url": "./random/randn.html",
     "path": "./random/randn.html",
-    "content": "Normally distributed random number."
+    "content": "Nombre aléatoire normalement distribué."
   },
   {
     "title": "randperm",
     "url": "./random/randperm.html",
     "path": "./random/randperm.html",
-    "content": "Random permutation of integers values."
+    "content": "Permutation aléatoire de valeurs entières."
   },
   {
     "title": "rng",
     "url": "./random/rng.html",
     "path": "./random/rng.html",
-    "content": "Random Number Generator."
+    "content": "Générateur de nombres aléatoires."
   },
   {
     "title": "Fonctions du système d'exploitation",
@@ -4542,130 +4542,130 @@
     "content": "Renvoie le jour de la semaine."
   },
   {
-    "title": "Stream manager",
+    "title": "Gestion des flux",
     "url": "/./index.html",
     "path": "sections/stream_manager",
-    "content": "<chapter_description> <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p> <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p> <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.</p> <p>Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.</p> <p>Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.</p> </chapter_description>"
   },
   {
     "title": "diary",
     "url": "./stream_manager/diary.html",
     "path": "./stream_manager/diary.html",
-    "content": "Diary of a session."
+    "content": "Journal d'une session."
   },
   {
     "title": "fclose",
     "url": "./stream_manager/fclose.html",
     "path": "./stream_manager/fclose.html",
-    "content": "Close an opened file."
+    "content": "Ferme un fichier ouvert."
   },
   {
     "title": "feof",
     "url": "./stream_manager/feof.html",
     "path": "./stream_manager/feof.html",
-    "content": "Checks end of file."
+    "content": "Teste la fin de fichier."
   },
   {
     "title": "ferror",
     "url": "./stream_manager/ferror.html",
     "path": "./stream_manager/ferror.html",
-    "content": "Test for i/o read/write errors."
+    "content": "Test des erreurs d'E/S lecture/écriture."
   },
   {
     "title": "fgetl",
     "url": "./stream_manager/fgetl.html",
     "path": "./stream_manager/fgetl.html",
-    "content": "Read string from a file without newline."
+    "content": "Lire une chaîne depuis un fichier sans le caractère de nouvelle ligne."
   },
   {
     "title": "fgets",
     "url": "./stream_manager/fgets.html",
     "path": "./stream_manager/fgets.html",
-    "content": "Read string from a file, stopping after a newline, or EOF, or n characters have been read."
+    "content": "Lire une chaîne depuis un fichier, s'arrêtant après un saut de ligne, la fin du fichier ou après n caractères lus."
   },
   {
     "title": "fileread",
     "url": "./stream_manager/fileread.html",
     "path": "./stream_manager/fileread.html",
-    "content": "Read contents of file as text."
+    "content": "Lire le contenu d'un fichier en tant que texte."
   },
   {
     "title": "filewrite",
     "url": "./stream_manager/filewrite.html",
     "path": "./stream_manager/filewrite.html",
-    "content": "Write text to a file."
+    "content": "Écrire du texte dans un fichier."
   },
   {
     "title": "fopen",
     "url": "./stream_manager/fopen.html",
     "path": "./stream_manager/fopen.html",
-    "content": "Open a file in Nelson."
+    "content": "Ouvrir un fichier dans Nelson."
   },
   {
     "title": "fprintf",
     "url": "./stream_manager/fprintf.html",
     "path": "./stream_manager/fprintf.html",
-    "content": "Writes data to a file."
+    "content": "Écrit des données dans un fichier."
   },
   {
     "title": "fread",
     "url": "./stream_manager/fread.html",
     "path": "./stream_manager/fread.html",
-    "content": "Read data in binary form to the file specified by the file descriptor fid."
+    "content": "Lire des données en format binaire depuis le fichier spécifié par le descripteur fid."
   },
   {
     "title": "frewind",
     "url": "./stream_manager/frewind.html",
     "path": "./stream_manager/frewind.html",
-    "content": "Set position of stream to the beginning."
+    "content": "Positionne le flux au début du fichier."
   },
   {
     "title": "fscanf",
     "url": "./stream_manager/fscanf.html",
     "path": "./stream_manager/fscanf.html",
-    "content": "Reads data from a file."
+    "content": "Lit des données depuis un fichier."
   },
   {
     "title": "fseek",
     "url": "./stream_manager/fseek.html",
     "path": "./stream_manager/fseek.html",
-    "content": "Set the file pointer to a location."
+    "content": "Positionne le pointeur de fichier à un emplacement."
   },
   {
     "title": "fsize",
     "url": "./stream_manager/fsize.html",
     "path": "./stream_manager/fsize.html",
-    "content": "Returns size of an opened file."
+    "content": "Retourne la taille d'un fichier ouvert."
   },
   {
     "title": "ftell",
     "url": "./stream_manager/ftell.html",
     "path": "./stream_manager/ftell.html",
-    "content": "Returns the offset of the current byte relative to the beginning of a file."
+    "content": "Retourne le décalage de l'octet courant par rapport au début d'un fichier."
   },
   {
     "title": "fwrite",
     "url": "./stream_manager/fwrite.html",
     "path": "./stream_manager/fwrite.html",
-    "content": "Write data in binary form to the file specified by the file descriptor fid."
+    "content": "Écrire des données en binaire dans le fichier spécifié par le descripteur fid."
   },
   {
     "title": "load",
     "url": "./stream_manager/load.html",
     "path": "./stream_manager/load.html",
-    "content": "load data from .nh5 or .mat file into Nelson's workspace."
+    "content": "charger des données depuis un fichier .nh5 ou .mat dans l'espace de travail de Nelson."
   },
   {
     "title": "save",
     "url": "./stream_manager/save.html",
     "path": "./stream_manager/save.html",
-    "content": "save workspace variables to .nh5 or .mat file"
+    "content": "enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat"
   },
   {
     "title": "sscanf",
     "url": "./stream_manager/sscanf.html",
     "path": "./stream_manager/sscanf.html",
-    "content": "Read formatted data from strings."
+    "content": "Lire des données formatées depuis des chaînes."
   },
   {
     "title": "HDF5",
@@ -4806,76 +4806,76 @@
     "content": "formate une chaîne JSON."
   },
   {
-    "title": "Spreadsheet",
+    "title": "Feuille de calcul",
     "url": "/./index.html",
     "path": "sections/SPREADSHEET",
-    "content": "<chapter_description> <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p> <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p> <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Feuille de calcul fournit des fonctions pour lire et écrire des données tabulaires depuis et vers des formats de feuille de calcul basés sur du texte, tels que CSV et les fichiers séparés par délimiteurs.</p> <p>Il prend en charge l'importation vers différents types de données comme les tableaux numériques, les cellules de chaînes et les tables, ainsi que leur exportation vers des fichiers.</p> <p>Cela permet une interaction fluide avec les logiciels de tableur (Excel, LibreOffice Calc, etc.) et l'échange de données entre applications.</p> </chapter_description>"
   },
   {
     "title": "csvread",
     "url": "./SPREADSHEET/csvread.html",
     "path": "./SPREADSHEET/csvread.html",
-    "content": "Read comma-separated value (CSV) file."
+    "content": "Lire un fichier de valeurs séparées par des virgules (CSV)."
   },
   {
     "title": "csvwrite",
     "url": "./SPREADSHEET/csvwrite.html",
     "path": "./SPREADSHEET/csvwrite.html",
-    "content": "Write comma-separated value file."
+    "content": "Écrire un fichier de valeurs séparées par des virgules (CSV)."
   },
   {
     "title": "detectImportOptions",
     "url": "./SPREADSHEET/detectImportOptions.html",
     "path": "./SPREADSHEET/detectImportOptions.html",
-    "content": "Create import options based on file content."
+    "content": "Créer des options d'importation basées sur le contenu du fichier."
   },
   {
     "title": "dlmread",
     "url": "./SPREADSHEET/dlmread.html",
     "path": "./SPREADSHEET/dlmread.html",
-    "content": "Read an numeric matrix from a text file file using a delimiter."
+    "content": "Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."
   },
   {
     "title": "dlmwrite",
     "url": "./SPREADSHEET/dlmwrite.html",
     "path": "./SPREADSHEET/dlmwrite.html",
-    "content": "Write an numeric matrix to a text file file using a delimiter."
+    "content": "Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."
   },
   {
     "title": "readcell",
     "url": "./SPREADSHEET/readcell.html",
     "path": "./SPREADSHEET/readcell.html",
-    "content": "Create cell array from file."
+    "content": "Créer une cellule à partir d'un fichier."
   },
   {
     "title": "readmatrix",
     "url": "./SPREADSHEET/readmatrix.html",
     "path": "./SPREADSHEET/readmatrix.html",
-    "content": "Create matrix array from file."
+    "content": "Créer une matrice à partir d'un fichier."
   },
   {
     "title": "readtable",
     "url": "./SPREADSHEET/readtable.html",
     "path": "./SPREADSHEET/readtable.html",
-    "content": "Create table from file."
+    "content": "Créer une table à partir d'un fichier."
   },
   {
     "title": "writecell",
     "url": "./SPREADSHEET/writecell.html",
     "path": "./SPREADSHEET/writecell.html",
-    "content": "Write a cell to a file."
+    "content": "Écrire un tableau de cellules dans un fichier."
   },
   {
     "title": "writematrix",
     "url": "./SPREADSHEET/writematrix.html",
     "path": "./SPREADSHEET/writematrix.html",
-    "content": "Write a matrix to a file."
+    "content": "Écrire une matrice dans un fichier."
   },
   {
     "title": "writetable",
     "url": "./SPREADSHEET/writetable.html",
     "path": "./SPREADSHEET/writetable.html",
-    "content": "Write table to file."
+    "content": "Écrire une table dans un fichier."
   },
   {
     "title": "Interface de passage de messages (MPI)",
@@ -5994,136 +5994,136 @@
     "content": "Explorateur d'espace de travail"
   },
   {
-    "title": "QML engine",
+    "title": "Moteur QML",
     "url": "/./index.html",
     "path": "sections/qml_engine",
-    "content": "<chapter_description> <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p> <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.</p> <p>Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.</p> </chapter_description>"
   },
   {
     "title": "QObject_classname",
     "url": "./qml_engine/QObject_classname.html",
     "path": "./qml_engine/QObject_classname.html",
-    "content": "Returns class name of an QObject handle."
+    "content": "Renvoie le nom de classe d'une poignée (handle) QObject."
   },
   {
     "title": "QObject_findchildren",
     "url": "./qml_engine/QObject_findchildren.html",
     "path": "./qml_engine/QObject_findchildren.html",
-    "content": "Returns all children of this object with the given name."
+    "content": "Renvoie tous les enfants de cet objet ayant le nom donné."
   },
   {
     "title": "QObject_get",
     "url": "./qml_engine/QObject_get.html",
     "path": "./qml_engine/QObject_get.html",
-    "content": "Retrieve a property value from an QObject handle."
+    "content": "Récupère la valeur d'une propriété d'une poignée (handle) QObject."
   },
   {
     "title": "QObject_iswidgettype",
     "url": "./qml_engine/QObject_iswidgettype.html",
     "path": "./qml_engine/QObject_iswidgettype.html",
-    "content": "Returns true if the QObject is a widget."
+    "content": "Renvoie true si le QObject est un widget."
   },
   {
     "title": "QObject_iswindowtype",
     "url": "./qml_engine/QObject_iswindowtype.html",
     "path": "./qml_engine/QObject_iswindowtype.html",
-    "content": "Returns true if the QObject is a window."
+    "content": "Renvoie true si le QObject est une fenêtre."
   },
   {
     "title": "QObject_methodsignature",
     "url": "./qml_engine/QObject_methodsignature.html",
     "path": "./qml_engine/QObject_methodsignature.html",
-    "content": "Returns the signature of a method of a QObject handle."
+    "content": "Renvoie la signature d'une méthode d'une poignée (handle) QObject."
   },
   {
     "title": "QObject_root",
     "url": "./qml_engine/QObject_root.html",
     "path": "./qml_engine/QObject_root.html",
-    "content": "QObject root object."
+    "content": "Objet racine QObject."
   },
   {
     "title": "QObject_set",
     "url": "./qml_engine/QObject_set.html",
     "path": "./qml_engine/QObject_set.html",
-    "content": "Set a property value of an QObject handle (set)."
+    "content": "Définit la valeur d'une propriété d'une poignée (handle) QObject (set)."
   },
   {
     "title": "QObject_undefine",
     "url": "./qml_engine/QObject_undefine.html",
     "path": "./qml_engine/QObject_undefine.html",
-    "content": "Undefine a dynamic property of a QObject handle."
+    "content": "Supprime une propriété dynamique d'une poignée (handle) QObject."
   },
   {
     "title": "QObject_used",
     "url": "./qml_engine/QObject_used.html",
     "path": "./qml_engine/QObject_used.html",
-    "content": "Returns list of current used QObject handle."
+    "content": "Renvoie la liste des poignées (handles) QObject actuellement utilisées."
   },
   {
     "title": "nelsonObject",
     "url": "./qml_engine/nelsonObject.html",
     "path": "./qml_engine/nelsonObject.html",
-    "content": "nelson object callable from QML."
+    "content": "objet nelson appelable depuis QML."
   },
   {
     "title": "qml_addimportpath",
     "url": "./qml_engine/qml_addimportpath.html",
     "path": "./qml_engine/qml_addimportpath.html",
-    "content": "Adds path as directory where the qml engine searches for installed modules."
+    "content": "Ajoute un chemin comme répertoire où le moteur QML recherche les modules installés."
   },
   {
     "title": "qml_addpluginpath",
     "url": "./qml_engine/qml_addpluginpath.html",
     "path": "./qml_engine/qml_addpluginpath.html",
-    "content": "Adds path as directory where the qml engine searches for native plugins."
+    "content": "Ajoute un chemin comme répertoire où le moteur QML recherche les plugins natifs."
   },
   {
     "title": "qml_clearcomponentcache",
     "url": "./qml_engine/qml_clearcomponentcache.html",
     "path": "./qml_engine/qml_clearcomponentcache.html",
-    "content": "Clears the engine's internal component cache.."
+    "content": "Vide le cache interne de composants du moteur."
   },
   {
     "title": "qml_collectgarbage",
     "url": "./qml_engine/qml_collectgarbage.html",
     "path": "./qml_engine/qml_collectgarbage.html",
-    "content": "Runs the Qml garbage collector."
+    "content": "Exécute le ramasse-miette QML."
   },
   {
     "title": "qml_createqquickview",
     "url": "./qml_engine/qml_createqquickview.html",
     "path": "./qml_engine/qml_createqquickview.html",
-    "content": "Load a QML file and creates a window."
+    "content": "Charge un fichier QML et crée une fenêtre."
   },
   {
     "title": "qml_demos",
     "url": "./qml_engine/qml_demos.html",
     "path": "./qml_engine/qml_demos.html",
-    "content": "QML demos."
+    "content": "Démos QML."
   },
   {
     "title": "qml_evaluatefile",
     "url": "./qml_engine/qml_evaluatefile.html",
     "path": "./qml_engine/qml_evaluatefile.html",
-    "content": "Evaluates a js file."
+    "content": "Évalue un fichier JS."
   },
   {
     "title": "qml_evaluatestring",
     "url": "./qml_engine/qml_evaluatestring.html",
     "path": "./qml_engine/qml_evaluatestring.html",
-    "content": "Evaluates a js string."
+    "content": "Évalue une chaîne JS."
   },
   {
     "title": "qml_importpathlist",
     "url": "./qml_engine/qml_importpathlist.html",
     "path": "./qml_engine/qml_importpathlist.html",
-    "content": "Returns the list of directories where the engine searches for installed modules in a URL-based directory structure."
+    "content": "Renvoie la liste des répertoires où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL."
   },
   {
     "title": "qml_loadfile",
     "url": "./qml_engine/qml_loadfile.html",
     "path": "./qml_engine/qml_loadfile.html",
-    "content": "Load a QML file."
+    "content": "Charger un fichier QML."
   },
   {
     "title": "qml_loadstring",
@@ -6135,31 +6135,31 @@
     "title": "qml_offlinestoragepath",
     "url": "./qml_engine/qml_offlinestoragepath.html",
     "path": "./qml_engine/qml_offlinestoragepath.html",
-    "content": "Get the Property contains the directory to store offline user data."
+    "content": "Obtient la propriété contenant le répertoire pour stocker les données utilisateur hors ligne."
   },
   {
     "title": "qml_pluginpathlist",
     "url": "./qml_engine/qml_pluginpathlist.html",
     "path": "./qml_engine/qml_pluginpathlist.html",
-    "content": "Returns the list of directories where the engine searches for native plugins for imported modules."
+    "content": "Renvoie la liste des répertoires où le moteur recherche les plugins natifs pour les modules importés."
   },
   {
     "title": "qml_setofflinestoragepath",
     "url": "./qml_engine/qml_setofflinestoragepath.html",
     "path": "./qml_engine/qml_setofflinestoragepath.html",
-    "content": "Set the Property contains the directory to store offline user data."
+    "content": "Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne."
   },
   {
     "title": "qt_constant",
     "url": "./qml_engine/qt_constant.html",
     "path": "./qml_engine/qt_constant.html",
-    "content": "Returns Qt constant value."
+    "content": "Renvoie la valeur d'une constante Qt."
   },
   {
     "title": "qt_version",
     "url": "./qml_engine/qt_version.html",
     "path": "./qml_engine/qt_version.html",
-    "content": "Returns Qt version used."
+    "content": "Renvoie la version de Qt utilisée."
   },
   {
     "title": "Text editor",
@@ -6234,22 +6234,22 @@
     "content": "Envoyer des données à un service web RESTful"
   },
   {
-    "title": "Nelson in the cloud",
+    "title": "Nelson dans le cloud",
     "url": "/./index.html",
     "path": "sections/sio_client",
-    "content": "<chapter_description> <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.</p> </chapter_description>"
+    "content": "<chapter_description> <p>Ce module fournit des fonctions pour gérer les connexions, envoyer et recevoir des données, et gérer les événements dans un environnement cloud.</p> </chapter_description>"
   },
   {
     "title": "sioemit",
     "url": "./sio_client/sioemit.html",
     "path": "./sio_client/sioemit.html",
-    "content": "Emit an event to web client."
+    "content": "Émettre un événement vers le client web."
   },
   {
     "title": "siogetvariable",
     "url": "./sio_client/siogetvariable.html",
     "path": "./sio_client/siogetvariable.html",
-    "content": "Emit an value of variable to web browser."
+    "content": "Émettre la valeur d'une variable vers le navigateur web."
   },
   {
     "title": "Liens dynamiques",

@@ -45,10 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">rng</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Random Number Generator.</div></div>
+<div class="section syntax-section"><div class="subtitle">Générateur de nombres aléatoires.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">lst = rng('enginelist')
 rng('default')
 s = rng('default')
@@ -59,18 +59,15 @@ s = rng(seed)
 rng(seed, generator)
 s = rng(seed, generator)
 rng('shuffle', generator)
-s = rng('shuffle', generator)
-s = rng
-s = rng(generator)
 rng(s)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -79,7 +76,7 @@ rng(s)
 </tr>
 <tr>
 <td class="param-name">generator</td>
-<td>a string: 'twister', 'twister64', 'simdTwister', 'combRecursive', 'philox', 'laggedfibonacci607'</td>
+<td>une chaîne : 'twister', 'twister64', 'simdTwister', 'combRecursive', 'philox', 'laggedfibonacci607'</td>
 </tr>
 <tr>
 <td class="param-name">s</td>
@@ -89,10 +86,10 @@ rng(s)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -110,38 +107,38 @@ rng(s)
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>lst = rng('enginelist')</b> returns the list of available random number generator.</p>
+            <b>lst = rng('enginelist')</b> renvoie la liste des générateurs de nombres aléatoires disponibles.</p>
             <p>
-                <b>rng('default')</b> puts the settings of the random number generator to default values.</p>
+                <b>rng('default')</b> remet les paramètres du générateur de nombres aléatoires aux valeurs par défaut.</p>
                 <p>
-                    <b>s = rng('default')</b> puts the settings of the random number generator to default values.</p>
+                    <b>s = rng('default')</b> remet les paramètres du générateur de nombres aléatoires aux valeurs par défaut.</p>
                     <p>
-                        <b>rng('shuffle')</b> puts the settings of the random number generator to default values and returns previous generator as an struct.</p>
+                        <b>rng('shuffle')</b> remet les paramètres du générateur de nombres aléatoires aux valeurs par défaut et renvoie le générateur précédent sous forme de structure.</p>
                         <p>
-                            <b>s = rng('shuffle')</b> seeds the random number generator based on the current time.</p>
+                            <b>s = rng('shuffle')</b> initialise la graine du générateur de nombres aléatoires en fonction de l'heure courante.</p>
                             <p>
-                                <b>rng(seed)</b> seeds the random number generator using the nonnegative integer.</p>
+                                <b>rng(seed)</b> initialise la graine du générateur de nombres aléatoires en utilisant l'entier non négatif.</p>
                                 <p>
-                                    <b>s = rng(seed)</b> seeds the random number generator using the nonnegative integer and returns previous generator as an struct.</p>
+                                    <b>s = rng(seed)</b> initialise la graine du générateur de nombres aléatoires en utilisant l'entier non négatif et renvoie le générateur précédent sous forme de structure.</p>
                                     <p>
-                                        <b>rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used.</p>
+                                        <b>rng(seed, generator)</b> initialise la graine du générateur de nombres aléatoires en utilisant l'entier non négatif et spécifie également le type de générateur utilisé.</p>
                                         <p>
-                                            <b>s = rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct.</p>
+                                            <b>s = rng(seed, generator)</b> initialise la graine du générateur de nombres aléatoires en utilisant l'entier non négatif, spécifie le type de générateur utilisé et renvoie le générateur précédent sous forme de structure.</p>
                                             <p>
-                                                <b>rng('shuffle', generator)</b> seeds the random number generator based on the current time and specify also the type of generator used.</p>
+                                                <b>rng('shuffle', generator)</b> initialise la graine du générateur de nombres aléatoires en fonction de l'heure courante et spécifie également le type de générateur utilisé.</p>
                                                 <p>
-                                                    <b>s = rng('shuffle', generator)</b> seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct.</p>
+                                                    <b>s = rng('shuffle', generator)</b> initialise la graine du générateur de nombres aléatoires en fonction de l'heure courante, spécifie également le type de générateur utilisé et renvoie le générateur précédent sous forme de structure.</p>
                                                     <p>
-                                                        <b>s = rng</b> returns current generator as an struct.</p>
+                                                        <b>s = rng</b> renvoie le générateur courant sous forme de structure.</p>
                                                         <p>
-                                                            <b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by <b>s = rng</b>.</p>
+                                                            <b>rng(s)</b> restaure les paramètres du générateur de nombres aléatoires à partir d'une structure précédente renvoyée par <b>s = rng</b>.</p>
                                                             <p></p>
-                                                            <p>Available generators are:</p>
+                                                            <p>Générateurs disponibles :</p>
                                                             <table>
                                                                 <tr>
-                                                                    <th>Value</th>
-                                                                    <th>Generator Name</th>
-                                                                    <th>Generator Keyword</th>
+                                                                    <th>Valeur</th>
+                                                                    <th>Nom du générateur</th>
+                                                                    <th>Mot-clé du générateur</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>"twister"</td>
@@ -169,12 +166,12 @@ rng(s)
                                                                     <td>philox4x32_10</td>
                                                                 </tr>
                                                             </table>
-                                                            <p>Default generator is "twister".</p>
+                                                            <p>Le générateur par défaut est "twister".</p>
                                                         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">rng('default');
 r = rng()
@@ -183,14 +180,14 @@ lst = rng('enginelist')</code><button class="copy-btn" type="button" onclick="co
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../random/rand.html">rand</a><a class="see-also-link" href="../random/randn.html">randn</a><a class="see-also-link" href="../random/randi.html">randi</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -198,17 +195,17 @@ lst = rng('enginelist')</code><button class="copy-btn" type="button" onclick="co
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 <tr>
 <td class="version">1.15.0</td>
-<td>New random number generator: simdTwister, combRecursive, philox</td>
+<td>Nouveau générateur de nombres aléatoires : simdTwister, combRecursive, philox</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

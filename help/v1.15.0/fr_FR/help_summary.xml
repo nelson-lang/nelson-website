@@ -258,12 +258,12 @@
       <keyword name="true" link="./logical/true.html" description="Valeur logique true."></keyword>
       <keyword name="xor" link="./logical/xor.html" description="Ou exclusif (XOR)."></keyword>
     </section>
-    <section name="Single type">
+    <section name="Type simple précision">
       <chapter_description>
-        <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p>
-        <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p>
+        <p>Le module Single fournit des outils pour gérer les valeurs numériques en simple précision dans Nelson.</p>
+        <p>Il permet la conversion de variables au format simple précision, permettant un stockage et un calcul efficaces tout en maintenant une précision numérique suffisante pour de nombreuses applications.</p>
     </chapter_description>
-      <keyword name="single" link="./single/single.html" description="Converts a variable to single precision type."></keyword>
+      <keyword name="single" link="./single/single.html" description="Convertit une variable en type simple précision."></keyword>
     </section>
     <section name="Double">
       <chapter_description>
@@ -292,21 +292,21 @@
       <keyword name="uint64" link="./integer/uint64.html" description="Convertit en entier non signé 64 bits."></keyword>
       <keyword name="uint8" link="./integer/uint8.html" description="Convertit en entier non signé 8 bits."></keyword>
     </section>
-    <section name="Sparse type">
+    <section name="Type sparse">
       <chapter_description>
-        <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.</p>
-        <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.</p>
-        <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.</p>
+        <p>Le module Type Sparse fournit des outils pour créer et manipuler des matrices creuses dans Nelson.</p>
+        <p>Il prend en charge le stockage et le calcul efficaces pour les matrices avec un grand nombre d'éléments zéro, y compris la conversion entre les représentations creuses et pleines, la génération de matrices creuses spéciales, et l'accès aux éléments non nuls.</p>
+        <p>Ce module permet une gestion efficace en mémoire de grands ensembles de données et des opérations numériques optimisées sur des structures creuses.</p>
     </chapter_description>
-      <keyword name="IJV" link="./sparse/IJV.html" description="Returns I,J,V triplets from a sparse matrix."></keyword>
-      <keyword name="full" link="./sparse/full.html" description="Sparse to full matrix conversion."></keyword>
-      <keyword name="nnz" link="./sparse/nnz.html" description="Return the number of nonzero elements."></keyword>
-      <keyword name="nzmax" link="./sparse/nzmax.html" description="Reserved size for nonzero elements."></keyword>
-      <keyword name="sparse" link="./sparse/sparse.html" description="Sparse matrix definition."></keyword>
-      <keyword name="speye" link="./sparse/speye.html" description="Sparse identity matrix."></keyword>
-      <keyword name="spones" link="./sparse/spones.html" description="Replaces non zero sparse matrix elements with ones."></keyword>
-      <keyword name="sprand" link="./sparse/sprand.html" description="Sparse uniformly distributed random matrix."></keyword>
-      <keyword name="sprandn" link="./sparse/sprandn.html" description="Sparse normally distributed random matrix."></keyword>
+      <keyword name="IJV" link="./sparse/IJV.html" description="Retourne les triplets I,J,V d'une matrice sparse."></keyword>
+      <keyword name="full" link="./sparse/full.html" description="Conversion de matrice sparse vers pleine."></keyword>
+      <keyword name="nnz" link="./sparse/nnz.html" description="Retourne le nombre d'éléments non nuls."></keyword>
+      <keyword name="nzmax" link="./sparse/nzmax.html" description="Taille réservée pour les éléments non nuls."></keyword>
+      <keyword name="sparse" link="./sparse/sparse.html" description="Définition de matrice sparse."></keyword>
+      <keyword name="speye" link="./sparse/speye.html" description="Matrice identité sparse."></keyword>
+      <keyword name="spones" link="./sparse/spones.html" description="Remplace les éléments non nuls d'une matrice sparse par des uns."></keyword>
+      <keyword name="sprand" link="./sparse/sprand.html" description="Matrice sparse aléatoire à distribution uniforme."></keyword>
+      <keyword name="sprandn" link="./sparse/sprandn.html" description="Matrice sparse aléatoire à distribution normale."></keyword>
     </section>
     <section name="Type Chaîne">
       <chapter_description>
@@ -617,78 +617,78 @@
       <keyword name="vander" link="./elementary_functions/vander.html" description="Vandermonde matrix"></keyword>
       <keyword name="wilkinson" link="./elementary_functions/wilkinson.html" description="Wilkinson's eigenvalue test matrix"></keyword>
     </section>
-    <section name="Trigonometric functions">
+    <section name="Fonctions trigonométriques">
       <chapter_description>
-        <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.</p>
-        <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.</p>
-        <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.</p>
+        <p>Le module Fonctions Trigonométriques fournit un ensemble complet de fonctions pour effectuer des calculs trigonométriques dans Nelson.</p>
+        <p>Il inclut les fonctions trigonométriques standards telles que sinus, cosinus et tangente, ainsi que leurs inverses et leurs homologues hyperboliques. Le module prend en charge les mesures d'angle en degrés et en radians, permettant des calculs flexibles selon les préférences de l'utilisateur.</p>
+        <p>De plus, le module propose des fonctions utilitaires pour convertir entre degrés et radians, facilitant l'intégration des calculs trigonométriques dans diverses applications mathématiques et d'ingénierie.</p>
     </chapter_description>
-      <keyword name="acos" link="./trigonometric_functions/acos.html" description="Computes the inverse cosine in radians for each element of x."></keyword>
-      <keyword name="acosd" link="./trigonometric_functions/acosd.html" description="Inverse cosine in degrees."></keyword>
-      <keyword name="acosh" link="./trigonometric_functions/acosh.html" description="Inverse hyperbolic cosine."></keyword>
-      <keyword name="acot" link="./trigonometric_functions/acot.html" description="Inverse cotangent of angle in radians"></keyword>
-      <keyword name="acotd" link="./trigonometric_functions/acotd.html" description="Inverse cotangent of angle in degrees"></keyword>
-      <keyword name="acoth" link="./trigonometric_functions/acoth.html" description="Inverse hyperbolic cotangent."></keyword>
-      <keyword name="acsc" link="./trigonometric_functions/acsc.html" description="Inverse cosecant in radians."></keyword>
-      <keyword name="acscd" link="./trigonometric_functions/acscd.html" description="Inverse cosecant in degrees."></keyword>
-      <keyword name="acsch" link="./trigonometric_functions/acsch.html" description="Inverse hyperbolic cosecant."></keyword>
-      <keyword name="asec" link="./trigonometric_functions/asec.html" description="Inverse secant of angle in radians."></keyword>
-      <keyword name="asecd" link="./trigonometric_functions/asecd.html" description="Inverse secant of argument in degrees."></keyword>
-      <keyword name="asech" link="./trigonometric_functions/asech.html" description="Inverse hyperbolic secant of angle in radians."></keyword>
-      <keyword name="asin" link="./trigonometric_functions/asin.html" description="Computes the inverse sine in radians for each element of x."></keyword>
-      <keyword name="asind" link="./trigonometric_functions/asind.html" description="Inverse sine in degrees."></keyword>
-      <keyword name="asinh" link="./trigonometric_functions/asinh.html" description="Inverse hyperbolic sine function"></keyword>
-      <keyword name="atan" link="./trigonometric_functions/atan.html" description="Computes the inverse tangent in radians for each element of x."></keyword>
-      <keyword name="atan2" link="./trigonometric_functions/atan2.html" description="Computes the four-quadrant inverse tangent."></keyword>
-      <keyword name="atan2d" link="./trigonometric_functions/atan2d.html" description="Four-quadrant inverse tangent in degrees."></keyword>
-      <keyword name="atand" link="./trigonometric_functions/atand.html" description="Inverse tangent in degrees."></keyword>
-      <keyword name="atanh" link="./trigonometric_functions/atanh.html" description="Computes the inverse hyperbolic tangent."></keyword>
-      <keyword name="cart2pol" link="./trigonometric_functions/cart2pol.html" description="Transforms Cartesian coordinates to polar or cylindrical."></keyword>
-      <keyword name="cart2sph" link="./trigonometric_functions/cart2sph.html" description="Transforms Cartesian to spherical coordinates."></keyword>
-      <keyword name="cos" link="./trigonometric_functions/cos.html" description="Computes the cosine in radians for each element of x."></keyword>
-      <keyword name="cosd" link="./trigonometric_functions/cosd.html" description="Computes the cosine in degree for each element of x."></keyword>
-      <keyword name="cosh" link="./trigonometric_functions/cosh.html" description="Computes the hyperbolic cosine in radians for each element of x."></keyword>
-      <keyword name="cosm" link="./trigonometric_functions/cosm.html" description="Computes the matrix cosine of a square matrix."></keyword>
-      <keyword name="cospi" link="./trigonometric_functions/cospi.html" description="Computes cos(X * pi) accurately."></keyword>
-      <keyword name="cot" link="./trigonometric_functions/cot.html" description="Cotangent of angle in radians"></keyword>
-      <keyword name="cotd" link="./trigonometric_functions/cotd.html" description="Cotangent of argument in degrees"></keyword>
-      <keyword name="coth" link="./trigonometric_functions/coth.html" description="Hyperbolic cotangent."></keyword>
-      <keyword name="csc" link="./trigonometric_functions/csc.html" description="Cosecant of input angle in radians."></keyword>
-      <keyword name="cscd" link="./trigonometric_functions/cscd.html" description="Cosecant of argument in degrees."></keyword>
-      <keyword name="csch" link="./trigonometric_functions/csch.html" description="Hyperbolic cosecant."></keyword>
-      <keyword name="deg2rad" link="./trigonometric_functions/deg2rad.html" description="Convert angle from degrees to radians."></keyword>
-      <keyword name="pol2cart" link="./trigonometric_functions/pol2cart.html" description="Transforms polar or cylindrical coordinates to Cartesian."></keyword>
-      <keyword name="rad2deg" link="./trigonometric_functions/rad2deg.html" description="Convert angle from radians to degrees."></keyword>
-      <keyword name="sec" link="./trigonometric_functions/sec.html" description="Secant of angle in radians."></keyword>
-      <keyword name="secd" link="./trigonometric_functions/secd.html" description="Secant of argument in degrees."></keyword>
-      <keyword name="sech" link="./trigonometric_functions/sech.html" description="Hyperbolic secant."></keyword>
-      <keyword name="sin" link="./trigonometric_functions/sin.html" description="Computes the sine in radians for each element of x."></keyword>
-      <keyword name="sind" link="./trigonometric_functions/sind.html" description="Computes the sine in degree for each element of x."></keyword>
-      <keyword name="sinh" link="./trigonometric_functions/sinh.html" description="Computes the hyperbolic sine in radians for each element of x."></keyword>
-      <keyword name="sinm" link="./trigonometric_functions/sinm.html" description="Computes the matrix sinus of a square matrix."></keyword>
-      <keyword name="sinpi" link="./trigonometric_functions/sinpi.html" description="Computes sin(X * pi) accurately."></keyword>
-      <keyword name="sph2cart" link="./trigonometric_functions/sph2cart.html" description="Transform spherical coordinates to Cartesian."></keyword>
-      <keyword name="tan" link="./trigonometric_functions/tan.html" description="Computes the tangent in radians for each element of x."></keyword>
-      <keyword name="tand" link="./trigonometric_functions/tand.html" description="Computes the tangent in degree for each element of x."></keyword>
-      <keyword name="tanh" link="./trigonometric_functions/tanh.html" description="Computes the hyperbolic tangent in radians for each element of x."></keyword>
-      <keyword name="tanm" link="./trigonometric_functions/tanm.html" description="Computes the matrix tangent of a square matrix."></keyword>
+      <keyword name="acos" link="./trigonometric_functions/acos.html" description="Calcule le cosinus inverse en radians pour chaque élément de x."></keyword>
+      <keyword name="acosd" link="./trigonometric_functions/acosd.html" description="Cosinus inverse en degrés."></keyword>
+      <keyword name="acosh" link="./trigonometric_functions/acosh.html" description="Cosinus hyperbolique inverse."></keyword>
+      <keyword name="acot" link="./trigonometric_functions/acot.html" description="Cotangente inverse d'un angle en radians"></keyword>
+      <keyword name="acotd" link="./trigonometric_functions/acotd.html" description="Cotangente inverse d'un angle en degrés"></keyword>
+      <keyword name="acoth" link="./trigonometric_functions/acoth.html" description="Cotangente hyperbolique inverse."></keyword>
+      <keyword name="acsc" link="./trigonometric_functions/acsc.html" description="Cosécante inverse en radians."></keyword>
+      <keyword name="acscd" link="./trigonometric_functions/acscd.html" description="Cosécante inverse en degrés."></keyword>
+      <keyword name="acsch" link="./trigonometric_functions/acsch.html" description="Cosécante hyperbolique inverse."></keyword>
+      <keyword name="asec" link="./trigonometric_functions/asec.html" description="Sécante inverse d'un angle en radians."></keyword>
+      <keyword name="asecd" link="./trigonometric_functions/asecd.html" description="Sécante inverse de l'argument en degrés."></keyword>
+      <keyword name="asech" link="./trigonometric_functions/asech.html" description="Sécante hyperbolique inverse d'un angle en radians."></keyword>
+      <keyword name="asin" link="./trigonometric_functions/asin.html" description="Calcule le sinus inverse en radians pour chaque élément de x."></keyword>
+      <keyword name="asind" link="./trigonometric_functions/asind.html" description="Sinus inverse en degrés."></keyword>
+      <keyword name="asinh" link="./trigonometric_functions/asinh.html" description="Sinus hyperbolique inverse"></keyword>
+      <keyword name="atan" link="./trigonometric_functions/atan.html" description="Calcule la tangente inverse en radians pour chaque élément de x."></keyword>
+      <keyword name="atan2" link="./trigonometric_functions/atan2.html" description="Calcule la tangente inverse à quatre quadrants."></keyword>
+      <keyword name="atan2d" link="./trigonometric_functions/atan2d.html" description="Tangente inverse à quatre quadrants en degrés."></keyword>
+      <keyword name="atand" link="./trigonometric_functions/atand.html" description="Tangente inverse en degrés."></keyword>
+      <keyword name="atanh" link="./trigonometric_functions/atanh.html" description="Calcule la tangente hyperbolique inverse."></keyword>
+      <keyword name="cart2pol" link="./trigonometric_functions/cart2pol.html" description="Transforme des coordonnées cartésiennes en coordonnées polaires ou cylindriques."></keyword>
+      <keyword name="cart2sph" link="./trigonometric_functions/cart2sph.html" description="Transforme des coordonnées cartésiennes en coordonnées sphériques."></keyword>
+      <keyword name="cos" link="./trigonometric_functions/cos.html" description="Calcule le cosinus en radians pour chaque élément de x."></keyword>
+      <keyword name="cosd" link="./trigonometric_functions/cosd.html" description="Calcule le cosinus en degrés pour chaque élément de x."></keyword>
+      <keyword name="cosh" link="./trigonometric_functions/cosh.html" description="Calcule le cosinus hyperbolique en radians pour chaque élément de x."></keyword>
+      <keyword name="cosm" link="./trigonometric_functions/cosm.html" description="Calcule le cosinus matriciel d'une matrice carrée."></keyword>
+      <keyword name="cospi" link="./trigonometric_functions/cospi.html" description="Calcule précisément cos(X * pi)."></keyword>
+      <keyword name="cot" link="./trigonometric_functions/cot.html" description="Cotangente d'un angle en radians"></keyword>
+      <keyword name="cotd" link="./trigonometric_functions/cotd.html" description="Cotangente de l'argument en degrés"></keyword>
+      <keyword name="coth" link="./trigonometric_functions/coth.html" description="Cotangente hyperbolique."></keyword>
+      <keyword name="csc" link="./trigonometric_functions/csc.html" description="Cosécante d'un angle en radians."></keyword>
+      <keyword name="cscd" link="./trigonometric_functions/cscd.html" description="Cosécante de l'argument en degrés."></keyword>
+      <keyword name="csch" link="./trigonometric_functions/csch.html" description="Cosécante hyperbolique."></keyword>
+      <keyword name="deg2rad" link="./trigonometric_functions/deg2rad.html" description="Convertit un angle de degrés en radians."></keyword>
+      <keyword name="pol2cart" link="./trigonometric_functions/pol2cart.html" description="Transforme des coordonnées polaires ou cylindriques en coordonnées cartésiennes."></keyword>
+      <keyword name="rad2deg" link="./trigonometric_functions/rad2deg.html" description="Convertit un angle de radians en degrés."></keyword>
+      <keyword name="sec" link="./trigonometric_functions/sec.html" description="Sécante d'un angle en radians."></keyword>
+      <keyword name="secd" link="./trigonometric_functions/secd.html" description="Sécante de l'argument en degrés."></keyword>
+      <keyword name="sech" link="./trigonometric_functions/sech.html" description="Sécante hyperbolique."></keyword>
+      <keyword name="sin" link="./trigonometric_functions/sin.html" description="Calcule le sinus en radians pour chaque élément de x."></keyword>
+      <keyword name="sind" link="./trigonometric_functions/sind.html" description="Calcule le sinus en degrés pour chaque élément de x."></keyword>
+      <keyword name="sinh" link="./trigonometric_functions/sinh.html" description="Calcule le sinus hyperbolique en radians pour chaque élément de x."></keyword>
+      <keyword name="sinm" link="./trigonometric_functions/sinm.html" description="Calcule le sinus matriciel d'une matrice carrée."></keyword>
+      <keyword name="sinpi" link="./trigonometric_functions/sinpi.html" description="Calcule précisément sin(X * pi)."></keyword>
+      <keyword name="sph2cart" link="./trigonometric_functions/sph2cart.html" description="Transforme des coordonnées sphériques en coordonnées cartésiennes."></keyword>
+      <keyword name="tan" link="./trigonometric_functions/tan.html" description="Calcule la tangente en radians pour chaque élément de x."></keyword>
+      <keyword name="tand" link="./trigonometric_functions/tand.html" description="Calcule la tangente en degrés pour chaque élément de x."></keyword>
+      <keyword name="tanh" link="./trigonometric_functions/tanh.html" description="Calcule la tangente hyperbolique en radians pour chaque élément de x."></keyword>
+      <keyword name="tanm" link="./trigonometric_functions/tanm.html" description="Calcule la tangente matricielle d'une matrice carrée."></keyword>
     </section>
-    <section name="Special functions">
+    <section name="Fonctions spéciales">
       <chapter_description>
-        <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.</p>
-        <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.</p>  
-        <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.</p>
+        <p>Le module Fonctions Spéciales fournit des outils pour effectuer des opérations mathématiques avancées dans Nelson.</p>
+        <p>Il inclut des fonctions pour les distributions statistiques, les calculs combinatoires, et d'autres calculs mathématiques spécialisés qui sont essentiels dans diverses applications scientifiques et d'ingénierie.</p>  
+        <p>Ce module améliore les capacités de Nelson en offrant une gamme de fonctions qui supportent des analyses complexes et des tâches de modélisation.</p>
     </chapter_description>
-      <keyword name="betainc" link="./special_functions/betainc.html" description="Incomplete beta function"></keyword>
-      <keyword name="cross" link="./special_functions/cross.html" description="Cross product."></keyword>
-      <keyword name="dot" link="./special_functions/dot.html" description="Dot product."></keyword>
-      <keyword name="factor" link="./special_functions/factor.html" description="Prime factors"></keyword>
-      <keyword name="gamma" link="./special_functions/gamma.html" description="Gamma special function"></keyword>
-      <keyword name="gammaln" link="./special_functions/gammaln.html" description="Logarithm of gamma function&#10;"></keyword>
-      <keyword name="gcd" link="./special_functions/gcd.html" description="Greatest common divisor"></keyword>
-      <keyword name="interp1" link="./special_functions/interp1.html" description="Linear 1-D data interpolation"></keyword>
-      <keyword name="peaks" link="./special_functions/peaks.html" description="Peaks function"></keyword>
-      <keyword name="primes" link="./special_functions/primes.html" description="Prime numbers less than or equal to input value"></keyword>
+      <keyword name="betainc" link="./special_functions/betainc.html" description="Fonction bêta incomplète"></keyword>
+      <keyword name="cross" link="./special_functions/cross.html" description="Produit vectoriel."></keyword>
+      <keyword name="dot" link="./special_functions/dot.html" description="Produit scalaire."></keyword>
+      <keyword name="factor" link="./special_functions/factor.html" description="Facteurs premiers"></keyword>
+      <keyword name="gamma" link="./special_functions/gamma.html" description="Fonction spéciale gamma"></keyword>
+      <keyword name="gammaln" link="./special_functions/gammaln.html" description="Logarithme de la fonction gamma&#10;"></keyword>
+      <keyword name="gcd" link="./special_functions/gcd.html" description="Plus grand commun diviseur"></keyword>
+      <keyword name="interp1" link="./special_functions/interp1.html" description="Interpolation linéaire de données 1-D"></keyword>
+      <keyword name="peaks" link="./special_functions/peaks.html" description="Fonction peaks"></keyword>
+      <keyword name="primes" link="./special_functions/primes.html" description="Nombres premiers inférieurs ou égaux à la valeur d'entrée"></keyword>
     </section>
     <section name="Algèbre linéaire">
       <chapter_description>
@@ -726,17 +726,17 @@
       <keyword name="trace" link="./linear_algebra/trace.html" description="Trace d'une matrice."></keyword>
       <keyword name="vecnorm" link="./linear_algebra/vecnorm.html" description="Norme par vecteur."></keyword>
     </section>
-    <section name="Statistics">
+    <section name="Statistiques">
       <chapter_description>
-        <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.</p>
-        <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.</p>
-        <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.</p>
+        <p>Le module Statistiques fournit des outils pour analyser et résumer des données dans Nelson.</p>
+        <p>Il comprend des fonctions pour calculer des mesures de tendance centrale, de variabilité, de corrélation et des distributions de probabilités.</p>
+        <p>Le module prend également en charge des structures avancées de synthèse de données pour une estimation précise des quantiles, permettant une analyse statistique robuste et l'interprétation des jeux de données.</p>
     </chapter_description>
-      <keyword name="corrcoef" link="./statistics/corrcoef.html" description="Correlation coefficients"></keyword>
+      <keyword name="corrcoef" link="./statistics/corrcoef.html" description="Coefficients de corrélation"></keyword>
       <keyword name="cov" link="./statistics/cov.html" description="Covariance"></keyword>
-      <keyword name="mean" link="./statistics/mean.html" description="Mean of array elements."></keyword>
-      <keyword name="normpdf" link="./statistics/normpdf.html" description="Normal probability density function"></keyword>
-      <keyword name="tdigest" link="./statistics/tdigest.html" description="t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters"></keyword>
+      <keyword name="mean" link="./statistics/mean.html" description="Moyenne des éléments d'un tableau."></keyword>
+      <keyword name="normpdf" link="./statistics/normpdf.html" description="Densité de probabilité normale"></keyword>
+      <keyword name="tdigest" link="./statistics/tdigest.html" description="Structure de données t-digest pour une estimation précise des quantiles avec paramètres de compression configurables"></keyword>
       <keyword name="var" link="./statistics/var.html" description="Variance"></keyword>
     </section>
     <section name="Analyse de données">
@@ -852,24 +852,24 @@
       <keyword name="tzero" link="./control_system/tzero.html" description="Zéros invariants d'un système linéaire."></keyword>
       <keyword name="zero" link="./control_system/zero.html" description="Zéros et gain d'un système SISO."></keyword>
     </section>
-    <section name="Signal Processing">
+    <section name="Traitement du signal">
       <chapter_description>
-        <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p>
-        <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p>
-        <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p>
+        <p>Le module Traitement du signal fournit des outils pour analyser et manipuler des signaux échantillonnés dans Nelson.</p>
+        <p>Il inclut des fonctions de fenêtrage, filtrage numérique, corrélation croisée, et des conversions entre représentations en magnitude, puissance et décibels.</p>
+        <p>Le module prend également en charge la transformation entre représentations pôles-zéros et fonctions de transfert, permettant une conception et une analyse efficaces des systèmes de traitement du signal en temps discret.</p>
     </chapter_description>
-      <keyword name="bartlett" link="./signal_processing/bartlett.html" description="Bartlett window."></keyword>
-      <keyword name="blackman" link="./signal_processing/blackman.html" description="Blackman window."></keyword>
-      <keyword name="db2mag" link="./signal_processing/db2mag.html" description="Convert a gain in decibels (dB) to a magnitude."></keyword>
-      <keyword name="db2pow" link="./signal_processing/db2pow.html" description="Convert a gain in decibels (dB) to power."></keyword>
-      <keyword name="filter2" link="./signal_processing/filter2.html" description="2-D digital filter."></keyword>
-      <keyword name="hamming" link="./signal_processing/hamming.html" description="Hamming window."></keyword>
-      <keyword name="hann" link="./signal_processing/hann.html" description="Hann window."></keyword>
-      <keyword name="mag2db" link="./signal_processing/mag2db.html" description="Convert a magnitude to decibels (dB)."></keyword>
-      <keyword name="pow2db" link="./signal_processing/pow2db.html" description="Convert power to decibel."></keyword>
-      <keyword name="sinc" link="./signal_processing/sinc.html" description="Sinc function."></keyword>
-      <keyword name="xcorr2" link="./signal_processing/xcorr2.html" description="2-D cross-correlation."></keyword>
-      <keyword name="zp2tf" link="./signal_processing/zp2tf.html" description="Zero-pole to transfer function conversion."></keyword>
+      <keyword name="bartlett" link="./signal_processing/bartlett.html" description="Fenêtre de Bartlett."></keyword>
+      <keyword name="blackman" link="./signal_processing/blackman.html" description="Fenêtre de Blackman."></keyword>
+      <keyword name="db2mag" link="./signal_processing/db2mag.html" description="Convertit un gain en décibels (dB) en magnitude."></keyword>
+      <keyword name="db2pow" link="./signal_processing/db2pow.html" description="Convertit un gain en décibels (dB) en puissance."></keyword>
+      <keyword name="filter2" link="./signal_processing/filter2.html" description="Filtre numérique 2-D."></keyword>
+      <keyword name="hamming" link="./signal_processing/hamming.html" description="Fenêtre de Hamming."></keyword>
+      <keyword name="hann" link="./signal_processing/hann.html" description="Fenêtre de Hann."></keyword>
+      <keyword name="mag2db" link="./signal_processing/mag2db.html" description="Convertit une magnitude en décibels (dB)."></keyword>
+      <keyword name="pow2db" link="./signal_processing/pow2db.html" description="Convertit une puissance en décibels."></keyword>
+      <keyword name="sinc" link="./signal_processing/sinc.html" description="Fonction sinc."></keyword>
+      <keyword name="xcorr2" link="./signal_processing/xcorr2.html" description="Corrélation croisée 2-D."></keyword>
+      <keyword name="zp2tf" link="./signal_processing/zp2tf.html" description="Conversion zéros-pôles en fonction de transfert."></keyword>
     </section>
     <section name="Bibliothèque de sous-programmes en théorie du contrôle">
       <chapter_description>
@@ -919,17 +919,17 @@
       <keyword name="ifftn" link="./fftw/ifftn.html" description="Transformée de Fourier inverse multidimensionnelle."></keyword>
       <keyword name="ifftshift" link="./fftw/ifftshift.html" description="inverse de fftshift"></keyword>
     </section>
-    <section name="Random">
+    <section name="Aléatoire">
       <chapter_description>
-        <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p>
-        <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p>
-        <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p>
+        <p>Le module Random fournit des outils pour générer des nombres aléatoires et des séquences aléatoires dans Nelson.</p>
+        <p>Il prend en charge les distributions uniforme et normale, la génération d'entiers aléatoires, les permutations et le contrôle de l'état du générateur de nombres aléatoires.</p>
+        <p>Ce module est essentiel pour les simulations, la modélisation probabiliste et les calculs stochastiques.</p>
     </chapter_description>
-      <keyword name="rand" link="./random/rand.html" description="Random Number."></keyword>
-      <keyword name="randi" link="./random/randi.html" description="Random Integer."></keyword>
-      <keyword name="randn" link="./random/randn.html" description="Normally distributed random number."></keyword>
-      <keyword name="randperm" link="./random/randperm.html" description="Random permutation of integers values."></keyword>
-      <keyword name="rng" link="./random/rng.html" description="Random Number Generator."></keyword>
+      <keyword name="rand" link="./random/rand.html" description="Nombre aléatoire."></keyword>
+      <keyword name="randi" link="./random/randi.html" description="Entier aléatoire."></keyword>
+      <keyword name="randn" link="./random/randn.html" description="Nombre aléatoire normalement distribué."></keyword>
+      <keyword name="randperm" link="./random/randperm.html" description="Permutation aléatoire de valeurs entières."></keyword>
+      <keyword name="rng" link="./random/rng.html" description="Générateur de nombres aléatoires."></keyword>
     </section>
     <section name="Fonctions du système d'exploitation">
       <chapter_description>
@@ -1038,32 +1038,32 @@
       <keyword name="toc" link="./time/toc.html" description="Lire le chronomètre (stopwatch)."></keyword>
       <keyword name="weekday" link="./time/weekday.html" description="Renvoie le jour de la semaine."></keyword>
     </section>
-    <section name="Stream manager">
+    <section name="Gestion des flux">
       <chapter_description>
-        <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p>
-        <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p>
-        <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p>
+        <p>Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.</p>
+        <p>Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.</p>
+        <p>Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.</p>
    </chapter_description>
-      <keyword name="diary" link="./stream_manager/diary.html" description="Diary of a session."></keyword>
-      <keyword name="fclose" link="./stream_manager/fclose.html" description="Close an opened file."></keyword>
-      <keyword name="feof" link="./stream_manager/feof.html" description="Checks end of file."></keyword>
-      <keyword name="ferror" link="./stream_manager/ferror.html" description="Test for i/o read/write errors."></keyword>
-      <keyword name="fgetl" link="./stream_manager/fgetl.html" description="Read string from a file without newline."></keyword>
-      <keyword name="fgets" link="./stream_manager/fgets.html" description="Read string from a file, stopping after a newline, or EOF, or n characters have been read."></keyword>
-      <keyword name="fileread" link="./stream_manager/fileread.html" description="Read contents of file as text."></keyword>
-      <keyword name="filewrite" link="./stream_manager/filewrite.html" description="Write text to a file."></keyword>
-      <keyword name="fopen" link="./stream_manager/fopen.html" description="Open a file in Nelson."></keyword>
-      <keyword name="fprintf" link="./stream_manager/fprintf.html" description="Writes data to a file."></keyword>
-      <keyword name="fread" link="./stream_manager/fread.html" description="Read data in binary form to the file specified by the file descriptor fid."></keyword>
-      <keyword name="frewind" link="./stream_manager/frewind.html" description="Set position of stream to the beginning."></keyword>
-      <keyword name="fscanf" link="./stream_manager/fscanf.html" description="Reads data from a file."></keyword>
-      <keyword name="fseek" link="./stream_manager/fseek.html" description="Set the file pointer to a location."></keyword>
-      <keyword name="fsize" link="./stream_manager/fsize.html" description="Returns size of an opened file."></keyword>
-      <keyword name="ftell" link="./stream_manager/ftell.html" description="Returns the offset of the current byte relative to the beginning of a file."></keyword>
-      <keyword name="fwrite" link="./stream_manager/fwrite.html" description="Write data in binary form to the file specified by the file descriptor fid."></keyword>
-      <keyword name="load" link="./stream_manager/load.html" description="load data from .nh5 or .mat file into Nelson's workspace."></keyword>
-      <keyword name="save" link="./stream_manager/save.html" description="save workspace variables to .nh5 or .mat file"></keyword>
-      <keyword name="sscanf" link="./stream_manager/sscanf.html" description="Read formatted data from strings."></keyword>
+      <keyword name="diary" link="./stream_manager/diary.html" description="Journal d'une session."></keyword>
+      <keyword name="fclose" link="./stream_manager/fclose.html" description="Ferme un fichier ouvert."></keyword>
+      <keyword name="feof" link="./stream_manager/feof.html" description="Teste la fin de fichier."></keyword>
+      <keyword name="ferror" link="./stream_manager/ferror.html" description="Test des erreurs d'E/S lecture/écriture."></keyword>
+      <keyword name="fgetl" link="./stream_manager/fgetl.html" description="Lire une chaîne depuis un fichier sans le caractère de nouvelle ligne."></keyword>
+      <keyword name="fgets" link="./stream_manager/fgets.html" description="Lire une chaîne depuis un fichier, s'arrêtant après un saut de ligne, la fin du fichier ou après n caractères lus."></keyword>
+      <keyword name="fileread" link="./stream_manager/fileread.html" description="Lire le contenu d'un fichier en tant que texte."></keyword>
+      <keyword name="filewrite" link="./stream_manager/filewrite.html" description="Écrire du texte dans un fichier."></keyword>
+      <keyword name="fopen" link="./stream_manager/fopen.html" description="Ouvrir un fichier dans Nelson."></keyword>
+      <keyword name="fprintf" link="./stream_manager/fprintf.html" description="Écrit des données dans un fichier."></keyword>
+      <keyword name="fread" link="./stream_manager/fread.html" description="Lire des données en format binaire depuis le fichier spécifié par le descripteur fid."></keyword>
+      <keyword name="frewind" link="./stream_manager/frewind.html" description="Positionne le flux au début du fichier."></keyword>
+      <keyword name="fscanf" link="./stream_manager/fscanf.html" description="Lit des données depuis un fichier."></keyword>
+      <keyword name="fseek" link="./stream_manager/fseek.html" description="Positionne le pointeur de fichier à un emplacement."></keyword>
+      <keyword name="fsize" link="./stream_manager/fsize.html" description="Retourne la taille d'un fichier ouvert."></keyword>
+      <keyword name="ftell" link="./stream_manager/ftell.html" description="Retourne le décalage de l'octet courant par rapport au début d'un fichier."></keyword>
+      <keyword name="fwrite" link="./stream_manager/fwrite.html" description="Écrire des données en binaire dans le fichier spécifié par le descripteur fid."></keyword>
+      <keyword name="load" link="./stream_manager/load.html" description="charger des données depuis un fichier .nh5 ou .mat dans l'espace de travail de Nelson."></keyword>
+      <keyword name="save" link="./stream_manager/save.html" description="enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat"></keyword>
+      <keyword name="sscanf" link="./stream_manager/sscanf.html" description="Lire des données formatées depuis des chaînes."></keyword>
     </section>
     <section name="HDF5">
       <chapter_description>
@@ -1110,23 +1110,23 @@
       <keyword name="jsonencode" link="./JSON/jsonencode.html" description="encode un objet Nelson en une chaîne JSON."></keyword>
       <keyword name="jsonprettyprint" link="./JSON/jsonprettyprint.html" description="formate une chaîne JSON."></keyword>
     </section>
-    <section name="Spreadsheet">
+    <section name="Feuille de calcul">
       <chapter_description>
-        <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p>
-        <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p>
-        <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p>
+        <p>Le module Feuille de calcul fournit des fonctions pour lire et écrire des données tabulaires depuis et vers des formats de feuille de calcul basés sur du texte, tels que CSV et les fichiers séparés par délimiteurs.</p>
+        <p>Il prend en charge l'importation vers différents types de données comme les tableaux numériques, les cellules de chaînes et les tables, ainsi que leur exportation vers des fichiers.</p>
+        <p>Cela permet une interaction fluide avec les logiciels de tableur (Excel, LibreOffice Calc, etc.) et l'échange de données entre applications.</p>
     </chapter_description>
-      <keyword name="csvread" link="./SPREADSHEET/csvread.html" description="Read comma-separated value (CSV) file."></keyword>
-      <keyword name="csvwrite" link="./SPREADSHEET/csvwrite.html" description="Write comma-separated value file."></keyword>
-      <keyword name="detectImportOptions" link="./SPREADSHEET/detectImportOptions.html" description="Create import options based on file content."></keyword>
-      <keyword name="dlmread" link="./SPREADSHEET/dlmread.html" description="Read an numeric matrix from a text file file using a delimiter."></keyword>
-      <keyword name="dlmwrite" link="./SPREADSHEET/dlmwrite.html" description="Write an numeric matrix to a text file file using a delimiter."></keyword>
-      <keyword name="readcell" link="./SPREADSHEET/readcell.html" description="Create cell array from file."></keyword>
-      <keyword name="readmatrix" link="./SPREADSHEET/readmatrix.html" description="Create matrix array from file."></keyword>
-      <keyword name="readtable" link="./SPREADSHEET/readtable.html" description="Create table from file."></keyword>
-      <keyword name="writecell" link="./SPREADSHEET/writecell.html" description="Write a cell to a file."></keyword>
-      <keyword name="writematrix" link="./SPREADSHEET/writematrix.html" description="Write a matrix to a file."></keyword>
-      <keyword name="writetable" link="./SPREADSHEET/writetable.html" description="Write table to file."></keyword>
+      <keyword name="csvread" link="./SPREADSHEET/csvread.html" description="Lire un fichier de valeurs séparées par des virgules (CSV)."></keyword>
+      <keyword name="csvwrite" link="./SPREADSHEET/csvwrite.html" description="Écrire un fichier de valeurs séparées par des virgules (CSV)."></keyword>
+      <keyword name="detectImportOptions" link="./SPREADSHEET/detectImportOptions.html" description="Créer des options d'importation basées sur le contenu du fichier."></keyword>
+      <keyword name="dlmread" link="./SPREADSHEET/dlmread.html" description="Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."></keyword>
+      <keyword name="dlmwrite" link="./SPREADSHEET/dlmwrite.html" description="Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."></keyword>
+      <keyword name="readcell" link="./SPREADSHEET/readcell.html" description="Créer une cellule à partir d'un fichier."></keyword>
+      <keyword name="readmatrix" link="./SPREADSHEET/readmatrix.html" description="Créer une matrice à partir d'un fichier."></keyword>
+      <keyword name="readtable" link="./SPREADSHEET/readtable.html" description="Créer une table à partir d'un fichier."></keyword>
+      <keyword name="writecell" link="./SPREADSHEET/writecell.html" description="Écrire un tableau de cellules dans un fichier."></keyword>
+      <keyword name="writematrix" link="./SPREADSHEET/writematrix.html" description="Écrire une matrice dans un fichier."></keyword>
+      <keyword name="writetable" link="./SPREADSHEET/writetable.html" description="Écrire une table dans un fichier."></keyword>
     </section>
     <section name="Interface de passage de messages (MPI)">
       <chapter_description>
@@ -1360,38 +1360,38 @@
       <keyword name="warndlg" link="./gui/warndlg.html" description="Crée une boîte de dialogue d'avertissement."></keyword>
       <keyword name="workspace" link="./gui/workspace.html" description="Explorateur d'espace de travail"></keyword>
     </section>
-    <section name="QML engine">
+    <section name="Moteur QML">
       <chapter_description>
-        <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p>
-        <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p>
+        <p>Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.</p>
+        <p>Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.</p>
     </chapter_description>
-      <keyword name="QObject_classname" link="./qml_engine/QObject_classname.html" description="Returns class name of an QObject handle."></keyword>
-      <keyword name="QObject_findchildren" link="./qml_engine/QObject_findchildren.html" description="Returns all children of this object with the given name."></keyword>
-      <keyword name="QObject_get" link="./qml_engine/QObject_get.html" description="Retrieve a property value from an QObject handle."></keyword>
-      <keyword name="QObject_iswidgettype" link="./qml_engine/QObject_iswidgettype.html" description="Returns true if the QObject is a widget."></keyword>
-      <keyword name="QObject_iswindowtype" link="./qml_engine/QObject_iswindowtype.html" description="Returns true if the QObject is a window."></keyword>
-      <keyword name="QObject_methodsignature" link="./qml_engine/QObject_methodsignature.html" description="Returns the signature of a method of a QObject handle."></keyword>
-      <keyword name="QObject_root" link="./qml_engine/QObject_root.html" description="QObject root object."></keyword>
-      <keyword name="QObject_set" link="./qml_engine/QObject_set.html" description="Set a property value of an QObject handle (set)."></keyword>
-      <keyword name="QObject_undefine" link="./qml_engine/QObject_undefine.html" description="Undefine a dynamic property of a QObject handle."></keyword>
-      <keyword name="QObject_used" link="./qml_engine/QObject_used.html" description="Returns list of current used QObject handle."></keyword>
-      <keyword name="nelsonObject" link="./qml_engine/nelsonObject.html" description="nelson object callable from QML."></keyword>
-      <keyword name="qml_addimportpath" link="./qml_engine/qml_addimportpath.html" description="Adds path as directory where the qml engine searches for installed modules."></keyword>
-      <keyword name="qml_addpluginpath" link="./qml_engine/qml_addpluginpath.html" description="Adds path as directory where the qml engine searches for native plugins."></keyword>
-      <keyword name="qml_clearcomponentcache" link="./qml_engine/qml_clearcomponentcache.html" description="Clears the engine's internal component cache.."></keyword>
-      <keyword name="qml_collectgarbage" link="./qml_engine/qml_collectgarbage.html" description="Runs the Qml garbage collector."></keyword>
-      <keyword name="qml_createqquickview" link="./qml_engine/qml_createqquickview.html" description="Load a QML file and creates a window."></keyword>
-      <keyword name="qml_demos" link="./qml_engine/qml_demos.html" description="QML demos."></keyword>
-      <keyword name="qml_evaluatefile" link="./qml_engine/qml_evaluatefile.html" description="Evaluates a js file."></keyword>
-      <keyword name="qml_evaluatestring" link="./qml_engine/qml_evaluatestring.html" description="Evaluates a js string."></keyword>
-      <keyword name="qml_importpathlist" link="./qml_engine/qml_importpathlist.html" description="Returns the list of directories where the engine searches for installed modules in a URL-based directory structure."></keyword>
-      <keyword name="qml_loadfile" link="./qml_engine/qml_loadfile.html" description="Load a QML file."></keyword>
+      <keyword name="QObject_classname" link="./qml_engine/QObject_classname.html" description="Renvoie le nom de classe d'une poignée (handle) QObject."></keyword>
+      <keyword name="QObject_findchildren" link="./qml_engine/QObject_findchildren.html" description="Renvoie tous les enfants de cet objet ayant le nom donné."></keyword>
+      <keyword name="QObject_get" link="./qml_engine/QObject_get.html" description="Récupère la valeur d'une propriété d'une poignée (handle) QObject."></keyword>
+      <keyword name="QObject_iswidgettype" link="./qml_engine/QObject_iswidgettype.html" description="Renvoie true si le QObject est un widget."></keyword>
+      <keyword name="QObject_iswindowtype" link="./qml_engine/QObject_iswindowtype.html" description="Renvoie true si le QObject est une fenêtre."></keyword>
+      <keyword name="QObject_methodsignature" link="./qml_engine/QObject_methodsignature.html" description="Renvoie la signature d'une méthode d'une poignée (handle) QObject."></keyword>
+      <keyword name="QObject_root" link="./qml_engine/QObject_root.html" description="Objet racine QObject."></keyword>
+      <keyword name="QObject_set" link="./qml_engine/QObject_set.html" description="Définit la valeur d'une propriété d'une poignée (handle) QObject (set)."></keyword>
+      <keyword name="QObject_undefine" link="./qml_engine/QObject_undefine.html" description="Supprime une propriété dynamique d'une poignée (handle) QObject."></keyword>
+      <keyword name="QObject_used" link="./qml_engine/QObject_used.html" description="Renvoie la liste des poignées (handles) QObject actuellement utilisées."></keyword>
+      <keyword name="nelsonObject" link="./qml_engine/nelsonObject.html" description="objet nelson appelable depuis QML."></keyword>
+      <keyword name="qml_addimportpath" link="./qml_engine/qml_addimportpath.html" description="Ajoute un chemin comme répertoire où le moteur QML recherche les modules installés."></keyword>
+      <keyword name="qml_addpluginpath" link="./qml_engine/qml_addpluginpath.html" description="Ajoute un chemin comme répertoire où le moteur QML recherche les plugins natifs."></keyword>
+      <keyword name="qml_clearcomponentcache" link="./qml_engine/qml_clearcomponentcache.html" description="Vide le cache interne de composants du moteur."></keyword>
+      <keyword name="qml_collectgarbage" link="./qml_engine/qml_collectgarbage.html" description="Exécute le ramasse-miette QML."></keyword>
+      <keyword name="qml_createqquickview" link="./qml_engine/qml_createqquickview.html" description="Charge un fichier QML et crée une fenêtre."></keyword>
+      <keyword name="qml_demos" link="./qml_engine/qml_demos.html" description="Démos QML."></keyword>
+      <keyword name="qml_evaluatefile" link="./qml_engine/qml_evaluatefile.html" description="Évalue un fichier JS."></keyword>
+      <keyword name="qml_evaluatestring" link="./qml_engine/qml_evaluatestring.html" description="Évalue une chaîne JS."></keyword>
+      <keyword name="qml_importpathlist" link="./qml_engine/qml_importpathlist.html" description="Renvoie la liste des répertoires où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL."></keyword>
+      <keyword name="qml_loadfile" link="./qml_engine/qml_loadfile.html" description="Charger un fichier QML."></keyword>
       <keyword name="qml_loadstring" link="./qml_engine/qml_loadstring.html" description="Load a QML string."></keyword>
-      <keyword name="qml_offlinestoragepath" link="./qml_engine/qml_offlinestoragepath.html" description="Get the Property contains the directory to store offline user data."></keyword>
-      <keyword name="qml_pluginpathlist" link="./qml_engine/qml_pluginpathlist.html" description="Returns the list of directories where the engine searches for native plugins for imported modules."></keyword>
-      <keyword name="qml_setofflinestoragepath" link="./qml_engine/qml_setofflinestoragepath.html" description="Set the Property contains the directory to store offline user data."></keyword>
-      <keyword name="qt_constant" link="./qml_engine/qt_constant.html" description="Returns Qt constant value."></keyword>
-      <keyword name="qt_version" link="./qml_engine/qt_version.html" description="Returns Qt version used."></keyword>
+      <keyword name="qml_offlinestoragepath" link="./qml_engine/qml_offlinestoragepath.html" description="Obtient la propriété contenant le répertoire pour stocker les données utilisateur hors ligne."></keyword>
+      <keyword name="qml_pluginpathlist" link="./qml_engine/qml_pluginpathlist.html" description="Renvoie la liste des répertoires où le moteur recherche les plugins natifs pour les modules importés."></keyword>
+      <keyword name="qml_setofflinestoragepath" link="./qml_engine/qml_setofflinestoragepath.html" description="Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne."></keyword>
+      <keyword name="qt_constant" link="./qml_engine/qt_constant.html" description="Renvoie la valeur d'une constante Qt."></keyword>
+      <keyword name="qt_version" link="./qml_engine/qt_version.html" description="Renvoie la version de Qt utilisée."></keyword>
     </section>
     <section name="Text editor">
       <chapter_description>
@@ -1414,12 +1414,12 @@
       <keyword name="websave" link="./webtools/websave.html" description="Enregistrer les données d'un service web RESTful dans un fichier"></keyword>
       <keyword name="webwrite" link="./webtools/webwrite.html" description="Envoyer des données à un service web RESTful"></keyword>
     </section>
-    <section name="Nelson in the cloud">
+    <section name="Nelson dans le cloud">
       <chapter_description>
-        <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.</p>
+        <p>Ce module fournit des fonctions pour gérer les connexions, envoyer et recevoir des données, et gérer les événements dans un environnement cloud.</p>
     </chapter_description>
-      <keyword name="sioemit" link="./sio_client/sioemit.html" description="Emit an event to web client."></keyword>
-      <keyword name="siogetvariable" link="./sio_client/siogetvariable.html" description="Emit an value of variable to web browser."></keyword>
+      <keyword name="sioemit" link="./sio_client/sioemit.html" description="Émettre un événement vers le client web."></keyword>
+      <keyword name="siogetvariable" link="./sio_client/siogetvariable.html" description="Émettre la valeur d'une variable vers le navigateur web."></keyword>
     </section>
     <section name="Liens dynamiques">
       <chapter_description>

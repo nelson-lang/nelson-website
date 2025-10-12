@@ -45,10 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">speye</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Sparse identity matrix.</div></div>
+<div class="section syntax-section"><div class="subtitle">Matrice identité sparse.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">S = speye()
 S = speye(n)
 S = speye(n, m)
@@ -57,33 +57,33 @@ S = speye(sz)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">n, m</td>
-<td>dimension sizes: nonnegative integer scalar.</td>
+<td>tailles de dimensions : scalaire entier non négatif.</td>
 </tr>
 <tr>
 <td class="param-name">sz</td>
-<td>dimension sizes: two-element row vector.</td>
+<td>tailles de dimensions : vecteur ligne à deux éléments.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">S</td>
-<td>a sparse matrix.</td>
+<td>une matrice sparse.</td>
 </tr>
 </table>
 </div>
@@ -92,18 +92,18 @@ S = speye(sz)
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>S = speye()</b> returns a sparse scalar 1.</p>
+            <b>S = speye()</b> retourne un scalaire sparse 1.</p>
             <p>
-                <b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
+                <b>S = speye(n)</b> retourne une matrice identité sparse n-par-n, avec des uns sur la diagonale principale.</p>
                 <p>
-                    <b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
+                    <b>S = speye(n, m)</b> retourne une matrice sparse n-par-m, avec des uns sur la diagonale principale.</p>
                     <p>
-                        <b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.</p>
+                        <b>S = speye(sz)</b> retourne une matrice avec des uns sur la diagonale principale.</p>
                     </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">tic();S = speye(5000, 5000);toc()
 tic();S = sparse(eye(5000, 5000));toc()
@@ -112,12 +112,12 @@ tic();S = sparse(eye(5000, 5000));toc()
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div><a class="see-also-link" href="../sparse/sparse.html">sparse</a></div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -125,13 +125,13 @@ tic();S = sparse(eye(5000, 5000));toc()
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

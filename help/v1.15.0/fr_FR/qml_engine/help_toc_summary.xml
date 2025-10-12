@@ -2,38 +2,38 @@
 <help_summary>
   <toc>
     <module>qml_engine</module>
-    <section name="QML engine">
+    <section name="Moteur QML">
       <chapter_description>
-        <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p>
-        <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p>
+        <p>Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.</p>
+        <p>Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.</p>
     </chapter_description>
-      <keyword name="QObject_classname" link="QObject_classname.html" description="Returns class name of an QObject handle."/>
-      <keyword name="QObject_findchildren" link="QObject_findchildren.html" description="Returns all children of this object with the given name."/>
-      <keyword name="QObject_get" link="QObject_get.html" description="Retrieve a property value from an QObject handle."/>
-      <keyword name="QObject_iswidgettype" link="QObject_iswidgettype.html" description="Returns true if the QObject is a widget."/>
-      <keyword name="QObject_iswindowtype" link="QObject_iswindowtype.html" description="Returns true if the QObject is a window."/>
-      <keyword name="QObject_methodsignature" link="QObject_methodsignature.html" description="Returns the signature of a method of a QObject handle."/>
-      <keyword name="QObject_root" link="QObject_root.html" description="QObject root object."/>
-      <keyword name="QObject_set" link="QObject_set.html" description="Set a property value of an QObject handle (set)."/>
-      <keyword name="QObject_undefine" link="QObject_undefine.html" description="Undefine a dynamic property of a QObject handle."/>
-      <keyword name="QObject_used" link="QObject_used.html" description="Returns list of current used QObject handle."/>
-      <keyword name="nelsonObject" link="nelsonObject.html" description="nelson object callable from QML."/>
-      <keyword name="qml_addimportpath" link="qml_addimportpath.html" description="Adds path as directory where the qml engine searches for installed modules."/>
-      <keyword name="qml_addpluginpath" link="qml_addpluginpath.html" description="Adds path as directory where the qml engine searches for native plugins."/>
-      <keyword name="qml_clearcomponentcache" link="qml_clearcomponentcache.html" description="Clears the engine's internal component cache.."/>
-      <keyword name="qml_collectgarbage" link="qml_collectgarbage.html" description="Runs the Qml garbage collector."/>
-      <keyword name="qml_createqquickview" link="qml_createqquickview.html" description="Load a QML file and creates a window."/>
-      <keyword name="qml_demos" link="qml_demos.html" description="QML demos."/>
-      <keyword name="qml_evaluatefile" link="qml_evaluatefile.html" description="Evaluates a js file."/>
-      <keyword name="qml_evaluatestring" link="qml_evaluatestring.html" description="Evaluates a js string."/>
-      <keyword name="qml_importpathlist" link="qml_importpathlist.html" description="Returns the list of directories where the engine searches for installed modules in a URL-based directory structure."/>
-      <keyword name="qml_loadfile" link="qml_loadfile.html" description="Load a QML file."/>
+      <keyword name="QObject_classname" link="QObject_classname.html" description="Renvoie le nom de classe d'une poignée (handle) QObject."/>
+      <keyword name="QObject_findchildren" link="QObject_findchildren.html" description="Renvoie tous les enfants de cet objet ayant le nom donné."/>
+      <keyword name="QObject_get" link="QObject_get.html" description="Récupère la valeur d'une propriété d'une poignée (handle) QObject."/>
+      <keyword name="QObject_iswidgettype" link="QObject_iswidgettype.html" description="Renvoie true si le QObject est un widget."/>
+      <keyword name="QObject_iswindowtype" link="QObject_iswindowtype.html" description="Renvoie true si le QObject est une fenêtre."/>
+      <keyword name="QObject_methodsignature" link="QObject_methodsignature.html" description="Renvoie la signature d'une méthode d'une poignée (handle) QObject."/>
+      <keyword name="QObject_root" link="QObject_root.html" description="Objet racine QObject."/>
+      <keyword name="QObject_set" link="QObject_set.html" description="Définit la valeur d'une propriété d'une poignée (handle) QObject (set)."/>
+      <keyword name="QObject_undefine" link="QObject_undefine.html" description="Supprime une propriété dynamique d'une poignée (handle) QObject."/>
+      <keyword name="QObject_used" link="QObject_used.html" description="Renvoie la liste des poignées (handles) QObject actuellement utilisées."/>
+      <keyword name="nelsonObject" link="nelsonObject.html" description="objet nelson appelable depuis QML."/>
+      <keyword name="qml_addimportpath" link="qml_addimportpath.html" description="Ajoute un chemin comme répertoire où le moteur QML recherche les modules installés."/>
+      <keyword name="qml_addpluginpath" link="qml_addpluginpath.html" description="Ajoute un chemin comme répertoire où le moteur QML recherche les plugins natifs."/>
+      <keyword name="qml_clearcomponentcache" link="qml_clearcomponentcache.html" description="Vide le cache interne de composants du moteur."/>
+      <keyword name="qml_collectgarbage" link="qml_collectgarbage.html" description="Exécute le ramasse-miette QML."/>
+      <keyword name="qml_createqquickview" link="qml_createqquickview.html" description="Charge un fichier QML et crée une fenêtre."/>
+      <keyword name="qml_demos" link="qml_demos.html" description="Démos QML."/>
+      <keyword name="qml_evaluatefile" link="qml_evaluatefile.html" description="Évalue un fichier JS."/>
+      <keyword name="qml_evaluatestring" link="qml_evaluatestring.html" description="Évalue une chaîne JS."/>
+      <keyword name="qml_importpathlist" link="qml_importpathlist.html" description="Renvoie la liste des répertoires où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL."/>
+      <keyword name="qml_loadfile" link="qml_loadfile.html" description="Charger un fichier QML."/>
       <keyword name="qml_loadstring" link="qml_loadstring.html" description="Load a QML string."/>
-      <keyword name="qml_offlinestoragepath" link="qml_offlinestoragepath.html" description="Get the Property contains the directory to store offline user data."/>
-      <keyword name="qml_pluginpathlist" link="qml_pluginpathlist.html" description="Returns the list of directories where the engine searches for native plugins for imported modules."/>
-      <keyword name="qml_setofflinestoragepath" link="qml_setofflinestoragepath.html" description="Set the Property contains the directory to store offline user data."/>
-      <keyword name="qt_constant" link="qt_constant.html" description="Returns Qt constant value."/>
-      <keyword name="qt_version" link="qt_version.html" description="Returns Qt version used."/>
+      <keyword name="qml_offlinestoragepath" link="qml_offlinestoragepath.html" description="Obtient la propriété contenant le répertoire pour stocker les données utilisateur hors ligne."/>
+      <keyword name="qml_pluginpathlist" link="qml_pluginpathlist.html" description="Renvoie la liste des répertoires où le moteur recherche les plugins natifs pour les modules importés."/>
+      <keyword name="qml_setofflinestoragepath" link="qml_setofflinestoragepath.html" description="Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne."/>
+      <keyword name="qt_constant" link="qt_constant.html" description="Renvoie la valeur d'une constante Qt."/>
+      <keyword name="qt_version" link="qt_version.html" description="Renvoie la version de Qt utilisée."/>
     </section>
   </toc>
 </help_summary>

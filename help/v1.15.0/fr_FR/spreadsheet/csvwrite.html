@@ -45,33 +45,33 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">csvwrite</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Write comma-separated value file.</div></div>
+<div class="section syntax-section"><div class="subtitle">Écrire un fichier de valeurs séparées par des virgules (CSV).</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">csvwrite(filename, M)
 csvwrite(filename, M, r, c)
 </pre>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">filename</td>
-<td>a string: filename destination.</td>
+<td>une chaîne : nom de fichier de destination.</td>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>an numeric or logical matrix.</td>
+<td>une matrice numérique ou logique.</td>
 </tr>
 <tr>
 <td class="param-name">r, c</td>
-<td>integer: offset. default : 0, 0</td>
+<td>entier : décalage. par défaut : 0, 0</td>
 </tr>
 </table>
 </div>
@@ -80,12 +80,12 @@ csvwrite(filename, M, r, c)
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>csvwrite</b> writes an numeric matrix to an CSV format file.</p>
+            <b>csvwrite</b> écrit une matrice numérique dans un fichier au format CSV (valeurs séparées par des virgules).</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = [Inf, -Inf, NaN, 3];
 filename = [tempdir(), 'dlmwrite_example.csv'];
@@ -98,14 +98,14 @@ R = fileread(filename)</code><button class="copy-btn" type="button" onclick="cop
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../spreadsheet/csvread.html">csvread</a><a class="see-also-link" href="../spreadsheet/dlmread.html">dlmread</a><a class="see-also-link" href="../stream_manager/fileread.html">fileread</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -113,13 +113,13 @@ R = fileread(filename)</code><button class="copy-btn" type="button" onclick="cop
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

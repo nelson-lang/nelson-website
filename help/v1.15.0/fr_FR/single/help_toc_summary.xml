@@ -2,12 +2,12 @@
 <help_summary>
   <toc>
     <module>single</module>
-    <section name="Single type">
+    <section name="Type simple précision">
       <chapter_description>
-        <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p>
-        <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p>
+        <p>Le module Single fournit des outils pour gérer les valeurs numériques en simple précision dans Nelson.</p>
+        <p>Il permet la conversion de variables au format simple précision, permettant un stockage et un calcul efficaces tout en maintenant une précision numérique suffisante pour de nombreuses applications.</p>
     </chapter_description>
-      <keyword name="single" link="single.html" description="Converts a variable to single precision type."/>
+      <keyword name="single" link="single.html" description="Convertit une variable en type simple précision."/>
     </section>
   </toc>
 </help_summary>

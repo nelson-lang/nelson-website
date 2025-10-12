@@ -2,23 +2,23 @@
 <help_summary>
   <toc>
     <module>SPREADSHEET</module>
-    <section name="Spreadsheet">
+    <section name="Feuille de calcul">
       <chapter_description>
-        <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p>
-        <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p>
-        <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p>
+        <p>Le module Feuille de calcul fournit des fonctions pour lire et écrire des données tabulaires depuis et vers des formats de feuille de calcul basés sur du texte, tels que CSV et les fichiers séparés par délimiteurs.</p>
+        <p>Il prend en charge l'importation vers différents types de données comme les tableaux numériques, les cellules de chaînes et les tables, ainsi que leur exportation vers des fichiers.</p>
+        <p>Cela permet une interaction fluide avec les logiciels de tableur (Excel, LibreOffice Calc, etc.) et l'échange de données entre applications.</p>
     </chapter_description>
-      <keyword name="csvread" link="csvread.html" description="Read comma-separated value (CSV) file."/>
-      <keyword name="csvwrite" link="csvwrite.html" description="Write comma-separated value file."/>
-      <keyword name="detectImportOptions" link="detectImportOptions.html" description="Create import options based on file content."/>
-      <keyword name="dlmread" link="dlmread.html" description="Read an numeric matrix from a text file file using a delimiter."/>
-      <keyword name="dlmwrite" link="dlmwrite.html" description="Write an numeric matrix to a text file file using a delimiter."/>
-      <keyword name="readcell" link="readcell.html" description="Create cell array from file."/>
-      <keyword name="readmatrix" link="readmatrix.html" description="Create matrix array from file."/>
-      <keyword name="readtable" link="readtable.html" description="Create table from file."/>
-      <keyword name="writecell" link="writecell.html" description="Write a cell to a file."/>
-      <keyword name="writematrix" link="writematrix.html" description="Write a matrix to a file."/>
-      <keyword name="writetable" link="writetable.html" description="Write table to file."/>
+      <keyword name="csvread" link="csvread.html" description="Lire un fichier de valeurs séparées par des virgules (CSV)."/>
+      <keyword name="csvwrite" link="csvwrite.html" description="Écrire un fichier de valeurs séparées par des virgules (CSV)."/>
+      <keyword name="detectImportOptions" link="detectImportOptions.html" description="Créer des options d'importation basées sur le contenu du fichier."/>
+      <keyword name="dlmread" link="dlmread.html" description="Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."/>
+      <keyword name="dlmwrite" link="dlmwrite.html" description="Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."/>
+      <keyword name="readcell" link="readcell.html" description="Créer une cellule à partir d'un fichier."/>
+      <keyword name="readmatrix" link="readmatrix.html" description="Créer une matrice à partir d'un fichier."/>
+      <keyword name="readtable" link="readtable.html" description="Créer une table à partir d'un fichier."/>
+      <keyword name="writecell" link="writecell.html" description="Écrire un tableau de cellules dans un fichier."/>
+      <keyword name="writematrix" link="writematrix.html" description="Écrire une matrice dans un fichier."/>
+      <keyword name="writetable" link="writetable.html" description="Écrire une table dans un fichier."/>
     </section>
   </toc>
 </help_summary>

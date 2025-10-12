@@ -2,21 +2,21 @@
 <help_summary>
   <toc>
     <module>sparse</module>
-    <section name="Sparse type">
+    <section name="Type sparse">
       <chapter_description>
-        <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.</p>
-        <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.</p>
-        <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.</p>
+        <p>Le module Type Sparse fournit des outils pour créer et manipuler des matrices creuses dans Nelson.</p>
+        <p>Il prend en charge le stockage et le calcul efficaces pour les matrices avec un grand nombre d'éléments zéro, y compris la conversion entre les représentations creuses et pleines, la génération de matrices creuses spéciales, et l'accès aux éléments non nuls.</p>
+        <p>Ce module permet une gestion efficace en mémoire de grands ensembles de données et des opérations numériques optimisées sur des structures creuses.</p>
     </chapter_description>
-      <keyword name="IJV" link="IJV.html" description="Returns I,J,V triplets from a sparse matrix."/>
-      <keyword name="full" link="full.html" description="Sparse to full matrix conversion."/>
-      <keyword name="nnz" link="nnz.html" description="Return the number of nonzero elements."/>
-      <keyword name="nzmax" link="nzmax.html" description="Reserved size for nonzero elements."/>
-      <keyword name="sparse" link="sparse.html" description="Sparse matrix definition."/>
-      <keyword name="speye" link="speye.html" description="Sparse identity matrix."/>
-      <keyword name="spones" link="spones.html" description="Replaces non zero sparse matrix elements with ones."/>
-      <keyword name="sprand" link="sprand.html" description="Sparse uniformly distributed random matrix."/>
-      <keyword name="sprandn" link="sprandn.html" description="Sparse normally distributed random matrix."/>
+      <keyword name="IJV" link="IJV.html" description="Retourne les triplets I,J,V d'une matrice sparse."/>
+      <keyword name="full" link="full.html" description="Conversion de matrice sparse vers pleine."/>
+      <keyword name="nnz" link="nnz.html" description="Retourne le nombre d'éléments non nuls."/>
+      <keyword name="nzmax" link="nzmax.html" description="Taille réservée pour les éléments non nuls."/>
+      <keyword name="sparse" link="sparse.html" description="Définition de matrice sparse."/>
+      <keyword name="speye" link="speye.html" description="Matrice identité sparse."/>
+      <keyword name="spones" link="spones.html" description="Remplace les éléments non nuls d'une matrice sparse par des uns."/>
+      <keyword name="sprand" link="sprand.html" description="Matrice sparse aléatoire à distribution uniforme."/>
+      <keyword name="sprandn" link="sprandn.html" description="Matrice sparse aléatoire à distribution normale."/>
     </section>
   </toc>
 </help_summary>

@@ -45,10 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fwrite</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Write data in binary form to the file specified by the file descriptor fid.</div></div>
+<div class="section syntax-section"><div class="subtitle">Écrire des données en binaire dans le fichier spécifié par le descripteur fid.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">count = fwrite(fid, data)
 count = fwrite(fid, data, precision)
 count = fwrite(fid, data, precision, skip)
@@ -58,45 +58,45 @@ count = fwrite(fid, data, precision, arch)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">fid</td>
-<td>a file descriptor</td>
+<td>un descripteur de fichier</td>
 </tr>
 <tr>
 <td class="param-name">data</td>
-<td>data to write</td>
+<td>données à écrire</td>
 </tr>
 <tr>
 <td class="param-name">precision</td>
-<td>class of values to read</td>
+<td>classe des valeurs à écrire</td>
 </tr>
 <tr>
 <td class="param-name">skip</td>
-<td>number of bytes to skip</td>
+<td>nombre d'octets à ignorer</td>
 </tr>
 <tr>
 <td class="param-name">arch</td>
-<td>a string specifying the data format for the file.</td>
+<td>une chaîne spécifiant le format des données pour le fichier.</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">count</td>
-<td>-1 or number of elements written</td>
+<td>-1 ou nombre d'éléments écrits</td>
 </tr>
 </table>
 </div>
@@ -104,20 +104,20 @@ count = fwrite(fid, data, precision, arch)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Write data in binary form to the file specified by the file descriptor fid.</p>
-        <p>characters encoding uses <b>fopen</b> parameter.</p>
-        <p>supported architecture:</p>
+        <p>Écrit des données en format binaire dans le fichier spécifié par le descripteur fid.</p>
+        <p>L'encodage des caractères utilise le paramètre <b>fopen</b>.</p>
+        <p>Architectures supportées :</p>
         <p>
-            <b>native</b> , <b>n</b>: format of the current machine.</p>
+            <b>native</b> , <b>n</b> : format de la machine courante.</p>
             <p>
-                <b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
+                <b>ieee-be</b>, <b>b</b> : IEEE big endian.</p>
                 <p>
-                    <b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+                    <b>ieee-le</b>, <b>l</b> : IEEE little endian.</p>
                 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">A = rand(3,1)
 
@@ -132,14 +132,14 @@ fclose(fileID);</code><button class="copy-btn" type="button" onclick="copyExampl
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../stream_manager/fopen.html">fopen</a><a class="see-also-link" href="../stream_manager/fclose.html">fclose</a><a class="see-also-link" href="../stream_manager/fread.html">fread</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -147,13 +147,13 @@ fclose(fileID);</code><button class="copy-btn" type="button" onclick="copyExampl
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>

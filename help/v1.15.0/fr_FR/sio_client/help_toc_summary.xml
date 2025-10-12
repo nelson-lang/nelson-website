@@ -2,12 +2,12 @@
 <help_summary>
   <toc>
     <module>sio_client</module>
-    <section name="Nelson in the cloud">
+    <section name="Nelson dans le cloud">
       <chapter_description>
-        <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.</p>
+        <p>Ce module fournit des fonctions pour gérer les connexions, envoyer et recevoir des données, et gérer les événements dans un environnement cloud.</p>
     </chapter_description>
-      <keyword name="sioemit" link="sioemit.html" description="Emit an event to web client."/>
-      <keyword name="siogetvariable" link="siogetvariable.html" description="Emit an value of variable to web browser."/>
+      <keyword name="sioemit" link="sioemit.html" description="Émettre un événement vers le client web."/>
+      <keyword name="siogetvariable" link="siogetvariable.html" description="Émettre la valeur d'une variable vers le navigateur web."/>
     </section>
   </toc>
 </help_summary>

@@ -45,10 +45,10 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">rand</span></div></div>
-<div class="section syntax-section"><div class="subtitle">Random Number.</div></div>
+<div class="section syntax-section"><div class="subtitle">Nombre aléatoire.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
-<span class="syntax-icon">📝</span>Syntax</div>
+<span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block">M = rand
 M = rand(n)
 M = rand(x1, x2, ... , xN)
@@ -59,41 +59,41 @@ M = rand(x1, x2, ... , xN, 'like', var)
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📥</span>Input Arguments</div>
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">n</td>
-<td>a variable: n-by-n matrix will be generated.</td>
+<td>une variable : une matrice n-par-n sera générée.</td>
 </tr>
 <tr>
 <td class="param-name">x1, x2, ... , xN</td>
-<td> x1-by-...-by-xN values </td>
+<td> valeurs x1-par-...-par-xN </td>
 </tr>
 <tr>
 <td class="param-name">classname</td>
-<td>a string: 'single' or 'double'</td>
+<td>une chaîne : 'single' ou 'double'</td>
 </tr>
 <tr>
 <td class="param-name">var</td>
-<td>a variable: single or double</td>
+<td>une variable : single ou double</td>
 </tr>
 </table>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📤</span>Output Arguments</div>
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
 <table class="param-table">
 <tr>
-<th>Parameter</th>
+<th>Paramètre</th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="param-name">M</td>
-<td>a matrix of random numbers.</td>
+<td>une matrice de nombres aléatoires.</td>
 </tr>
 </table>
 </div>
@@ -102,14 +102,14 @@ M = rand(x1, x2, ... , xN, 'like', var)
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>rand</b> returns a matrix with random elements uniformly distributed on the interval [0, 1].</p>
-            <p>seed can be modified using <b>rng</b>.</p>
-            <p>The Mersenne Twister designers consider 5489 as default seed. Nelson uses it as default seed (0).</p>
+        <b>rand</b> renvoie une matrice dont les éléments sont distribués uniformément sur l'intervalle [0, 1].</p>
+        <p>La graine (seed) peut être modifiée en utilisant <b>rng</b>.</p>
+        <p>Les concepteurs du Mersenne Twister considèrent 5489 comme graine par défaut. Nelson utilise 5489 comme graine par défaut.</p>
         </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">💡</span>Examples</div>
+<span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
 <code class="matlab syntax-block" style="flex:1 1 auto;">rng('default');
 rand
@@ -136,19 +136,19 @@ rand(3, 2, 'like', v)</code><button class="copy-btn" type="button" onclick="copy
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🔗</span>See Also</div>
+<span class="syntax-icon">🔗</span>Voir aussi</div>
 <div>
 <a class="see-also-link" href="../random/rng.html">rng</a><a class="see-also-link" href="../random/randn.html">randn</a><a class="see-also-link" href="../constructors_functions/eye.html">eye</a>
 </div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">📚</span>Bibliography</div>
-<div>M. Matsumoto and T. Nishimura, Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator, ACM Trans. on Modeling and Computer Simulation Vol. 8, No. 1, pp. 3–30, January 1998</div>
+<span class="syntax-icon">📚</span>Bibliographie</div>
+<div>M. Matsumoto et T. Nishimura, Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator, ACM Trans. on Modeling and Computer Simulation Vol. 8, No. 1, pp. 3–30, January 1998</div>
 </div>
 <div class="section">
 <div class="section-title">
-<span class="syntax-icon">🕔</span>Version History</div>
+<span class="syntax-icon">🕔</span>Historique des versions</div>
 <table class="param-table">
 <tr>
 <th>Version</th>
@@ -156,13 +156,13 @@ rand(3, 2, 'like', v)</code><button class="copy-btn" type="button" onclick="copy
 </tr>
 <tr>
 <td class="version">1.0.0</td>
-<td>initial version</td>
+<td>version initiale</td>
 </tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
 <div class="section-title">
-<span class="syntax-icon">👤</span>Author</div>
+<span class="syntax-icon">👤</span>Auteur</div>
 <div>Allan CORNET</div>
 </div>
 </body>
