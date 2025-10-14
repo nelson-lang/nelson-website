@@ -1,11 +1,10 @@
-theme: plainwhite
+theme: jekyll-theme-time-machine
 name: Nelson
 description: Nelson
 author: Allan CORNET
 author_email: nelson.numerical.computation@gmail.com
 github:
   is_project_page: false
-
 
 # Theme settings
 
@@ -20,7 +19,6 @@ search: true
 search_full_content: true
 search_provider: lunr
 
-
 # Plugins (merged, unique)
 plugins:
   - jekyll-remote-theme
@@ -30,4 +28,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-
