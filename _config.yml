@@ -1,11 +1,14 @@
-remote_theme: mmistakes/minimal-mistakes@4.24.0
+theme: plainwhite
 name: Nelson
 description: Nelson
+author: Allan CORNET
+author_email: nelson.numerical.computation@gmail.com
 github:
   is_project_page: false
 
+
 # Theme settings
-minimal_mistakes_skin: "default"
+
 locale: "en-US"
 title: "Nelson"
 title_separator: "-"
@@ -17,21 +20,6 @@ search: true
 search_full_content: true
 search_provider: lunr
 
-# Site Author
-author:
-  name: "Allan CORNET"
-  email: "nelson.numerical.computation@gmail.com"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/nelson-lang"
-
-# Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/nelson-lang"
 
 # Plugins (merged, unique)
 plugins:
@@ -42,3 +30,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+
