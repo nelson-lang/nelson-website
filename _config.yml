@@ -1,30 +1,11 @@
-theme: jekyll-theme-architect
+remote_theme: pages-themes/architect@v0.2.0
 name: Nelson
 description: Nelson
 author: Allan CORNET
 author_email: nelson.numerical.computation@gmail.com
 github:
   is_project_page: false
-
-# Theme settings
-
-locale: "en-US"
-title: "Nelson"
-title_separator: "-"
-subtitle: "Numerical computation"
-url: ""
-baseurl: ""
-repository: "nelson-lang/nelson-website"
-search: true
-search_full_content: true
-search_provider: lunr
-
-# Plugins (merged, unique)
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
