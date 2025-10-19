@@ -4416,7 +4416,7 @@
     "content": "List variables in memory or in .nh5 or in .mat file with sizes and types."
   },
   {
-    "title": "Time functions",
+    "title": "Date and Time",
     "url": "/./index.html",
     "path": "sections/time",
     "content": "<chapter_description> <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p> <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p> <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p> </chapter_description>"

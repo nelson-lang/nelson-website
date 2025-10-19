@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1760298920
+// Auto-generated on 1760898047
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -4545,7 +4545,7 @@ window.searchIndex = [
       "Liste les variables en mémoire ou dans un fichier .nh5 ou .mat avec tailles et types.",
   },
   {
-    title: "Time functions",
+    title: "Date et Heure",
     url: "./time/index.html",
     path: "sections/time",
     content:
@@ -4567,13 +4567,14 @@ window.searchIndex = [
     title: "clock",
     url: "./time/clock.html",
     path: "./time/clock.html",
-    content: "Return the current local date and time as a date vector.",
+    content:
+      "Renvoie la date et l'heure locales actuelles sous forme d'un vecteur date.",
   },
   {
     title: "cputime",
     url: "./time/cputime.html",
     path: "./time/cputime.html",
-    content: "Return the CPU time used by your Nelon session.",
+    content: "Renvoie le temps CPU utilisé par votre session Nelson.",
   },
   {
     title: "date",
@@ -4660,7 +4661,7 @@ window.searchIndex = [
     url: "./time/time.html",
     path: "./time/time.html",
     content:
-      "Return the current time as the number of seconds or nanoseconds since the epoch.",
+      "Renvoie l'heure actuelle en secondes ou en nanosecondes depuis l'époque (epoch).",
   },
   {
     title: "timeit",

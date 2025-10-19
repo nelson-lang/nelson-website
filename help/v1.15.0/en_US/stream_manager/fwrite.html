@@ -5,43 +5,23 @@
 <title>fwrite</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script type="text/javascript">
-                document.addEventListener('click', function(e) {
-                  var a = (typeof e.target.closest === 'function') ? e.target.closest('a[href]') : null;
-                  if (!a) return;
-                  var href = a.getAttribute('href');
-                  if (/^https?:\/\//i.test(href)) {
-                    e.preventDefault();
-                    window.open(href, '_blank', 'noopener');
-                  }
-                }, true);
-            </script><script src="highlight.pack.js"></script><script>hljs.highlightAll();</script><script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    document.querySelectorAll('code.matlab').forEach(function(block) {
-                        if (window.hljs) hljs.highlightElement(block);
-                    });
+<script type="text/x-mathjax-config">
+                MathJax.Hub.Config({
+                    tex2jax: {
+                        inlineMath: [['$','$'], ['\\(','\\)']],
+                        displayMath: [['$$','$$'], ['\\[','\\]']],
+                        processEscapes: true,
+                        processEnvironments: true
+                    },
+                    "HTML-CSS": {
+                        availableFonts: ["TeX"],
+                        preferredFont: "TeX",
+                        webFont: "TeX",
+                        imageFont: null
+                    },
+                    showMathMenu: false
                 });
-            </script><script type="text/javascript">
-                function copyExample(btn) {
-                    var codeBlock = btn.parentNode.parentNode.querySelector('code');
-                    if (codeBlock) {
-                        var text = codeBlock.textContent;
-                        navigator.clipboard.writeText(text).then(function() {
-                            btn.setAttribute('data-copied', 'true');
-                            btn.setAttribute('aria-label', 'Copied!');
-                            btn.title = 'Copied!';
-                            setTimeout(function(){ 
-                                btn.removeAttribute('data-copied');
-                                btn.setAttribute('aria-label', 'Copy');
-                                btn.title = 'Copy';
-                            }, 1200);
-                        }, function() {
-                            btn.setAttribute('aria-label', 'Error');
-                            btn.title = 'Error';
-                        });
-                    }
-                }
-            </script>
+            </script><script id="MathJax-script" async="async" src="tex-mml-chtml.js"></script><script src="highlight.pack.js"></script>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fwrite</span></div></div>
@@ -54,6 +34,7 @@ count = fwrite(fid, data, precision)
 count = fwrite(fid, data, precision, skip)
 count = fwrite(fid, data, precision, skip, arch)
 count = fwrite(fid, data, precision, arch)
+[count, bytes] = fwrite(fid, ...)
 </pre>
 </div>
 <div class="section">
@@ -98,6 +79,10 @@ count = fwrite(fid, data, precision, arch)
 <td class="param-name">count</td>
 <td>-1 or number of elements written</td>
 </tr>
+<tr>
+<td class="param-name">bytes</td>
+<td>number of bytes written</td>
+</tr>
 </table>
 </div>
 <div class="section">
@@ -113,6 +98,80 @@ count = fwrite(fid, data, precision, arch)
                 <b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
                 <p>
                     <b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+                    <p>supported precision:</p>
+                    <p>
+                        <table border="1" cellpadding="4" cellspacing="0">
+                            <tr>
+                                <th>Value Type</th>
+                                <th>Precision</th>
+                                <th>Bits (Bytes)</th>
+                            </tr>
+                            <tr>
+                                <td>Logical</td>
+                                <td>'logical'</td>
+                                <td>platform-dependent</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Floating-point numbers</td>
+                                <td>'double', 'real*8', 'float64'</td>
+                                <td>64 (8)</td>
+                            </tr>
+                            <tr>
+                                <td>'single', 'real*4', 'float32'</td>
+                                <td>32 (4)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5">Integers, signed</td>
+                                <td>'int'</td>
+                                <td>32 (4)</td>
+                            </tr>
+                            <tr>
+                                <td>'int8', 'integer*1', 'schar'</td>
+                                <td>8 (1)</td>
+                            </tr>
+                            <tr>
+                                <td>'int16', 'integer*2'</td>
+                                <td>16 (2)</td>
+                            </tr>
+                            <tr>
+                                <td>'int32', 'integer*4'</td>
+                                <td>32 (4)</td>
+                            </tr>
+                            <tr>
+                                <td>'int64', 'integer*8'</td>
+                                <td>64 (8)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Integers, unsigned</td>
+                                <td>'uint8', 'uchar'</td>
+                                <td>8 (1)</td>
+                            </tr>
+                            <tr>
+                                <td>'uint16'</td>
+                                <td>16 (2)</td>
+                            </tr>
+                            <tr>
+                                <td>'uint32'</td>
+                                <td>32 (4)</td>
+                            </tr>
+                            <tr>
+                                <td>'uint64'</td>
+                                <td>64 (8)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Characters</td>
+                                <td>'char', '*char'</td>
+                                <td>depends encoding with fopen.</td>
+                            </tr>
+                            <tr>
+                                <td>'char*1'</td>
+                                <td>depends encoding with fopen.</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>if <b>fwrite</b> fails, it returns a negative value.</p>
+                    <p>if <b>fwrite</b> succeeds, it returns the number of elements written successfully.</p>
+                    <p>if <b>fwrite</b> writes characters, it returns the number of characters written successfully and not the number of elements.</p>
                 </div>
 </div>
 <div class="section">
@@ -128,6 +187,17 @@ fclose(fileID);
 fileID = fopen([tempdir(), 'doubledata.bin'],'r');
 R = fread(fileID, 'double')
 fclose(fileID);</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<code class="matlab syntax-block" style="flex:1 1 auto;">test_string =  'é ö ä ü è ê';
+fid = fopen([tempdir(), 'fwrite_example_char.txt'], 'w','n', 'UTF-8');
+[count, bytes] = fwrite(fid, test_string) % returns 11 and 17
+fclose(fid);
+
+% This is the number of characters written and not the number of bytes. 
+% Each accented character (é, ö, ä, ü, è, ê) = 2 bytes each 
+% Each space = 1 byte
+% Total bytes = 6*2 + 5*1 = 17 bytes</code><button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 </div>
 <div class="section">
@@ -149,6 +219,10 @@ fclose(fileID);</code><button class="copy-btn" type="button" onclick="copyExampl
 <td class="version">1.0.0</td>
 <td>initial version</td>
 </tr>
+<tr>
+<td class="version">1.15.0</td>
+<td>fwrite returns the number of characters written for character data.</td>
+</tr>
 </table>
 </div>
 <div class="section" style="margin-top:30px;">
@@ -156,5 +230,46 @@ fclose(fileID);</code><button class="copy-btn" type="button" onclick="copyExampl
 <span class="syntax-icon">👤</span>Author</div>
 <div>Allan CORNET</div>
 </div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><script type="text/javascript">
+                    function buildGitHubEditUrl(href) {
+                        try {
+                            var m = href.match(/\/help\/(v[^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)\.html$/);
+                            var version, lang, moduleName, basename;
+                            if (m) {
+                                version = m[1]; lang = m[2]; moduleName = m[3]; basename = m[4];
+                            } else {
+                                var url = href.split('?')[0].split('#')[0];
+                                var parts = url.split('/').filter(function(p){ return p.length > 0; });
+                                version = 'master';
+                                for (var i=0;i<parts.length;i++){
+                                    if (/^v\d+/i.test(parts[i])) { version = parts[i]; break; }
+                                }
+                                if (parts.length >= 2) {
+                                    moduleName = parts[parts.length - 2];
+                                    basename = parts[parts.length - 1].replace(/\.html?$/i, '').replace(/\.md$/i, '');
+                                } else if (parts.length === 1) { moduleName = parts[0]; basename = parts[0]; }
+                                else { moduleName = 'unknown_module'; basename = 'index'; }
+                                lang = 'en';
+                                for (var j=0;j<parts.length;j++){
+                                    if (/^fr(_|$)/i.test(parts[j]) || /^fr-/i.test(parts[j])) { lang = 'fr'; break; }
+                                    if (/^en(_|$)/i.test(parts[j]) || /^en-/i.test(parts[j])) { lang = 'en'; break; }
+                                }
+                            }
+                            var mdLang = /^fr/i.test(lang) ? 'fr' : 'en';
+                            if (!version) version = 'master';
+                            return 'https://github.com/nelson-lang/nelson-gitbook/blob/' + encodeURIComponent(version) + '/markdown/' + mdLang + '/' + encodeURIComponent(moduleName) + '/' + encodeURIComponent(basename) + '.md';
+                        } catch (e) { return 'https://github.com/nelson-lang/nelson-gitbook'; }
+                    }
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var link = document.getElementById('github-edit-link');
+                        if (link) link.href = buildGitHubEditUrl(window.location.href);
+                    });
+                </script><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+<script src="nelson_help.js"></script>
 </body>
 </html>

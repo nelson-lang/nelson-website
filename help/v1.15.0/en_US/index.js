@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1760298916
+// Auto-generated on 1760898019
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -4507,7 +4507,7 @@ window.searchIndex = [
       "List variables in memory or in .nh5 or in .mat file with sizes and types.",
   },
   {
-    title: "Time functions",
+    title: "Date and Time",
     url: "./time/index.html",
     path: "sections/time",
     content:

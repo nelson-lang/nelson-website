@@ -49,68 +49,115 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <p>Enhanced random number generation engine with new algorithms: <code>simdTwister</code>, <code>combRecursive</code>, <code>philox</code>, and <code>threefry</code>.</p>
 </li>
 <li>
-<p><code>sprand</code>: Function for generating sparse matrices with uniformly distributed random values.</p>
+<p>New functions for sparse matrix generation:</p>
+<ul>
+<li>
+<p><code>sprand</code>: Generate sparse matrices with uniformly distributed random values.</p>
 </li>
 <li>
-<p><code>sprandn</code>: Function for generating sparse matrices with normally distributed random values.</p>
+<p><code>sprandn</code>: Generate sparse matrices with normally distributed random values.</p>
 </li>
 <li>
-<p><code>randi</code>: Function for generating uniformly distributed random integers.</p>
+<p><code>randi</code>: Generate uniformly distributed random integers.</p>
+</li>
+</ul>
 </li>
 <li>
-<p><code>imresize</code>: Added a function to resize images by scale or to a specified output size, supporting both upscaling and downscaling for flexible image processing workflows.</p>
+<p><code>imresize</code>: Resize images by scale or to a specified output size, supporting both upscaling and downscaling.</p>
 </li>
 <li>
-<p>Variable Editor: Major redesign, now accessible via <code>openvar</code> or the GUI. Supports structured variables, tables, arrays, and nested data. Features a dynamic table view, real-time updates from the execution context, and improved performance for large datasets. Copy-paste compatibility with Excel, LibreOffice, and OpenOffice in both directions.</p>
+<p>Variable Editor: Redesigned for improved usability and performance. Accessible via <code>openvar</code> or the GUI, it supports structured variables, tables, arrays, and nested data. Features include:</p>
+<ul>
+<li>
+<p>Dynamic table view.</p>
 </li>
 <li>
-<p>Continuation prompt: Introduced context-aware continuation prompts to enhance interactive command workflows.</p>
+<p>Real-time updates from the execution context.</p>
 </li>
 <li>
-<p>Type support: Expanded support for missing types, increasing compatibility across functions and data structures.</p>
+<p>Enhanced performance for large datasets.</p>
 </li>
 <li>
-<p><code>missing</code> function: Added to create missing values for arrays and tables, improving data handling and interoperability.</p>
+<p>Copy-paste compatibility with Excel, LibreOffice, and OpenOffice.</p>
+</li>
+</ul>
 </li>
 <li>
-<p><code>renameStructField</code>: New function to rename fields in structures, simplifying data manipulation and refactoring.</p>
+<p>Continuation prompt: Context-aware prompts to enhance interactive command workflows.</p>
 </li>
 <li>
-<p><code>jsondecode(filename, '-file')</code>: Added ‘-file’ argument to allow direct reading and decoding of JSON files from disk.</p>
+<p>Expanded type support for missing types, increasing compatibility across functions and data structures.</p>
 </li>
 <li>
-<p><code>tdigest</code>: Introduced t-digest algorithm data structure for accurate quantile estimation
-with configurable compression parameters.</p>
+<p><code>missing</code> function: Create missing values for arrays and tables, improving data handling and interoperability.</p>
 </li>
 <li>
-<p><code>crc32</code> builtin: get crc32 checksum of a file or a string.</p>
+<p><code>renameStructField</code>: Rename fields in structures, simplifying data manipulation and refactoring.</p>
 </li>
 <li>
-<p><code>markdown</code>: option to select output generated format (‘secure’ or ‘advanced’).</p>
+<p><code>jsondecode(filename, '-file')</code>: Added <code>-file</code> argument for direct reading and decoding of JSON files from disk.</p>
+</li>
+<li>
+<p><code>tdigest</code>: Introduced t-digest algorithm for accurate quantile estimation with configurable compression parameters.</p>
+</li>
+<li>
+<p><code>crc32</code> builtin: Compute CRC32 checksum of a file or string.</p>
+</li>
+<li>
+<p><code>markdown</code>: Added option to select output format (<code>secure</code> or <code>advanced</code>).</p>
+</li>
+<li>
+<p><code>fwrite</code>: return also bytes count as second output argument.</p>
 </li>
 <li>
 <p>macOS Tahoe 26: CI setup and platform support.</p>
+</li>
+<li>
+<p>Python 3.14 support.</p>
 </li>
 </ul>
 <h3>Changed</h3>
 <ul>
 <li>
-<p>help framework fully reworked:</p>
+<p>Help framework reworked for improved performance and usability:</p>
 <ul>
-<li>faster build (on multithread)</li>
-<li>faster and extended search</li>
-<li>easier to maintain and evolve (based on Extensible Stylesheet Language Transformations)</li>
-<li>stylesheet reworked (same online and offline)</li>
-<li>qt help support used internally removed</li>
-<li><code>http://</code> replaced by <code>https://</code></li>
-<li><code>help_browser</code> module removed</li>
+<li>
+<p>Multithreaded builds for faster performance.</p>
+</li>
+<li>
+<p>Enhanced search capabilities with extended functionality.</p>
+</li>
+<li>
+<p>Improved maintainability using Extensible Stylesheet Language Transformations (XSLT).</p>
+</li>
+<li>
+<p>Unified stylesheet for consistent appearance online and offline.</p>
+</li>
+<li>
+<p>Removed internal usage of Qt help support.</p>
+</li>
+<li>
+<p>Replaced <code>http://</code> links with <code>https://</code> for secure connections.</p>
+</li>
+<li>
+<p>Removed the <code>help_browser</code> module.</p>
+</li>
+<li>
+<p>Added French language support for Help.</p>
+</li>
+<li>
+<p>Introduced support for LaTeX formulas.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><code>jsondecode</code>: Significantly improved performance by integrating <a href="https://simdjson.org/">simdjson</a>, enabling faster and more efficient JSON parsing.</p>
+<p><code>jsondecode</code>: Integrated <a href="https://simdjson.org/">simdjson</a> for significantly improved performance and efficiency.</p>
 </li>
 <li>
-<p><code>fileread</code>: Enhanced performance for reading large files, reducing memory usage and increasing speed for file operations.</p>
+<p><code>fileread</code>: Enhanced performance for reading large files, reducing memory usage and increasing speed.</p>
+</li>
+<li>
+<p><code>fwrite</code>: returns the number of characters written for character data.</p>
 </li>
 <li>
 <p>i18nExtractor: Reworked for greater speed and modernized codebase, improving internationalization extraction reliability.</p>
@@ -119,40 +166,50 @@ with configurable compression parameters.</p>
 <p>Browser variable: Refactored for improved usability, reliability, and consistency in variable inspection.</p>
 </li>
 <li>
-<p>Third-party libraries on Windows: Updated support for HDF5, zlib, and matio, improving compatibility and stability for Windows users.</p>
+<p>Third-party libraries on Windows: Updated support for HDF5, zlib, and matio, improving compatibility and stability.</p>
 </li>
 <li>
 <p>Qt: Upgraded to version 6.9.1 on Windows x64, providing better UI performance and compatibility with modern systems.</p>
 </li>
 <li>
-<p>Benchmarks: <code>bench_jsonencode.json</code> updated to include larger datasets for more robust and realistic performance testing.</p>
+<p>Benchmarks: Updated <code>bench_jsonencode.json</code> to include larger datasets for more robust performance testing.</p>
 </li>
 <li>
-<p>Improved <code>xmldocchecker</code> with XSD schema validation for XML files.</p>
+<p><code>xmldocchecker</code>: Improved with XSD schema validation for XML files.</p>
 </li>
 <li>
-<p><a href="https://github.com/nelson-lang/nelson/issues/1458">#1458</a>: Eigen 5.0.0 used if detected.</p>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1458">#1458</a>: Added support for Eigen 5.0.0 if detected.</p>
 </li>
 <li>
-<p>GitHub CI MacOS Ventura removed and replaced by MacOS 15 intel (<a href="https://github.com/nelson-lang/nelson/issues/1457">#1457</a>)</p>
+<p>GitHub CI: Replaced MacOS Ventura with MacOS 15 Intel (<a href="https://github.com/nelson-lang/nelson/issues/1457">#1457</a>).</p>
 </li>
 <li>
-<p>markdown renderer changed to use cmark library.</p>
+<p>Markdown renderer: Switched to the cmark library.</p>
 </li>
 <li>
-<p>Install a nelson’s external package will switch to local embedded help.</p>
+<p>External packages:</p>
+<ul>
+<li>Installing a Nelson external package now switches to local embedded help.</li>
+<li>External packages must be rebuilt with this version to use the new help format.</li>
+</ul>
 </li>
 <li>
-<p>External packages required to be rebuild with this version to use new help format.</p>
+<p>Removed several dependencies on Boost to reduce build complexity and improve portability.</p>
 </li>
 </ul>
 <h3>Fixed</h3>
 <ul>
 <li>
-<p><code>ans</code> variable: Fixed issue to ensure ‘ans’ is only created for expressions, preventing unintended variable creation in the workspace.</p>
+<p><code>ans</code> variable: Ensured <code>ans</code> is only created for expressions, preventing unintended variable creation in the workspace.</p>
 </li>
 <li>
-<p><code>jsondecode</code>: Corrected parsing of arrays containing empty arrays, improving reliability and correctness of JSON decoding.</p>
+<p><code>jsondecode</code>: Corrected parsing of arrays containing empty arrays, improving reliability and correctness.</p>
+</li>
+<li>
+<p>Julia engine works also with Julia 1.12.0</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/1462">#1462</a>: fwrite without specifying precision did not work as expected.</p>
 </li>
 </ul>
 <h2>1.14.0 - (2025-05-30)</h2>

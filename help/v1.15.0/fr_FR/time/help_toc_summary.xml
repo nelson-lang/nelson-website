@@ -2,7 +2,7 @@
 <help_summary>
   <toc>
     <module>time</module>
-    <section name="Time functions">
+    <section name="Date et Heure">
       <chapter_description>
         <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p>
         <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p>
@@ -10,8 +10,8 @@
     </chapter_description>
       <keyword name="addtodate" link="addtodate.html" description="Modifier un numéro de date par champ."/>
       <keyword name="calendar" link="calendar.html" description="Calendar."/>
-      <keyword name="clock" link="clock.html" description="Return the current local date and time as a date vector."/>
-      <keyword name="cputime" link="cputime.html" description="Return the CPU time used by your Nelon session."/>
+      <keyword name="clock" link="clock.html" description="Renvoie la date et l'heure locales actuelles sous forme d'un vecteur date."/>
+      <keyword name="cputime" link="cputime.html" description="Renvoie le temps CPU utilisé par votre session Nelson."/>
       <keyword name="date" link="date.html" description="Retourne la date courante sous forme de vecteur de caractères."/>
       <keyword name="datenum" link="datenum.html" description="d = datenum(...) Convertit différents formats de date en numéro de date série."/>
       <keyword name="datestr" link="datestr.html" description="Convertit une date/heure en représentation textuelle."/>
@@ -25,7 +25,7 @@
       <keyword name="second" link="second.html" description="Composante secondes de la date et de l'heure d'entrée."/>
       <keyword name="sleep" link="sleep.html" description="Met en pause l'exécution du code."/>
       <keyword name="tic" link="tic.html" description="Démarre un chronomètre."/>
-      <keyword name="time" link="time.html" description="Return the current time as the number of seconds or nanoseconds since the epoch."/>
+      <keyword name="time" link="time.html" description="Renvoie l'heure actuelle en secondes ou en nanosecondes depuis l'époque (epoch)."/>
       <keyword name="timeit" link="timeit.html" description="Mesure le temps nécessaire à l'exécution d'une fonction."/>
       <keyword name="toc" link="toc.html" description="Lire le chronomètre (stopwatch)."/>
       <keyword name="weekday" link="weekday.html" description="Renvoie le jour de la semaine."/>

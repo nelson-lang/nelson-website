@@ -1010,7 +1010,7 @@
       <keyword name="who" link="./memory_manager/who.html" description="Liste les variables en mémoire ou dans un fichier .nh5 ou .mat."></keyword>
       <keyword name="whos" link="./memory_manager/whos.html" description="Liste les variables en mémoire ou dans un fichier .nh5 ou .mat avec tailles et types."></keyword>
     </section>
-    <section name="Time functions">
+    <section name="Date et Heure">
       <chapter_description>
         <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p>
         <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p>
@@ -1018,8 +1018,8 @@
     </chapter_description>
       <keyword name="addtodate" link="./time/addtodate.html" description="Modifier un numéro de date par champ."></keyword>
       <keyword name="calendar" link="./time/calendar.html" description="Calendar."></keyword>
-      <keyword name="clock" link="./time/clock.html" description="Return the current local date and time as a date vector."></keyword>
-      <keyword name="cputime" link="./time/cputime.html" description="Return the CPU time used by your Nelon session."></keyword>
+      <keyword name="clock" link="./time/clock.html" description="Renvoie la date et l'heure locales actuelles sous forme d'un vecteur date."></keyword>
+      <keyword name="cputime" link="./time/cputime.html" description="Renvoie le temps CPU utilisé par votre session Nelson."></keyword>
       <keyword name="date" link="./time/date.html" description="Retourne la date courante sous forme de vecteur de caractères."></keyword>
       <keyword name="datenum" link="./time/datenum.html" description="d = datenum(...) Convertit différents formats de date en numéro de date série."></keyword>
       <keyword name="datestr" link="./time/datestr.html" description="Convertit une date/heure en représentation textuelle."></keyword>
@@ -1033,7 +1033,7 @@
       <keyword name="second" link="./time/second.html" description="Composante secondes de la date et de l'heure d'entrée."></keyword>
       <keyword name="sleep" link="./time/sleep.html" description="Met en pause l'exécution du code."></keyword>
       <keyword name="tic" link="./time/tic.html" description="Démarre un chronomètre."></keyword>
-      <keyword name="time" link="./time/time.html" description="Return the current time as the number of seconds or nanoseconds since the epoch."></keyword>
+      <keyword name="time" link="./time/time.html" description="Renvoie l'heure actuelle en secondes ou en nanosecondes depuis l'époque (epoch)."></keyword>
       <keyword name="timeit" link="./time/timeit.html" description="Mesure le temps nécessaire à l'exécution d'une fonction."></keyword>
       <keyword name="toc" link="./time/toc.html" description="Lire le chronomètre (stopwatch)."></keyword>
       <keyword name="weekday" link="./time/weekday.html" description="Renvoie le jour de la semaine."></keyword>

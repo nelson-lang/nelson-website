@@ -4410,7 +4410,7 @@
     "content": "Liste les variables en mémoire ou dans un fichier .nh5 ou .mat avec tailles et types."
   },
   {
-    "title": "Time functions",
+    "title": "Date et Heure",
     "url": "/./index.html",
     "path": "sections/time",
     "content": "<chapter_description> <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p> <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p> <p>Ce module permet une gestion précise du temps, la planification et la mesure de performance dans les scripts et applications.</p> </chapter_description>"
@@ -4431,13 +4431,13 @@
     "title": "clock",
     "url": "./time/clock.html",
     "path": "./time/clock.html",
-    "content": "Return the current local date and time as a date vector."
+    "content": "Renvoie la date et l'heure locales actuelles sous forme d'un vecteur date."
   },
   {
     "title": "cputime",
     "url": "./time/cputime.html",
     "path": "./time/cputime.html",
-    "content": "Return the CPU time used by your Nelon session."
+    "content": "Renvoie le temps CPU utilisé par votre session Nelson."
   },
   {
     "title": "date",
@@ -4521,7 +4521,7 @@
     "title": "time",
     "url": "./time/time.html",
     "path": "./time/time.html",
-    "content": "Return the current time as the number of seconds or nanoseconds since the epoch."
+    "content": "Renvoie l'heure actuelle en secondes ou en nanosecondes depuis l'époque (epoch)."
   },
   {
     "title": "timeit",

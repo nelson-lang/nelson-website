@@ -2,7 +2,7 @@
 <help_summary>
   <toc>
     <module>time</module>
-    <section name="Time functions">
+    <section name="Date and Time">
       <chapter_description>
         <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p>
         <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p>
