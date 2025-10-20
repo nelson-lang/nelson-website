@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1760898047
+// Auto-generated on 1760978469
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -223,7 +223,7 @@ window.searchIndex = [
     url: "./core/index.html",
     path: "sections/core",
     content:
-      "<chapter_description> <p>Le module de base fournit les éléments fondamentaux de l'environnement Nelson.</p> <p>Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.</p> <p>Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.</p> <p>Il offre également des utilitaires de base pour l'identification des fichiers, les sommes de contrôle et les capacités du terminal.</p> <p>Ensemble, ces fonctionnalités forment la base sur laquelle tous les autres modules et fonctionnalités au niveau utilisateur dans Nelson sont construits.</p> </chapter_description>",
+      "<chapter_description> <p>Le module core fournit les éléments fondamentaux de l'environnement Nelson.</p> <p>Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.</p> <p>Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.</p> <p>Il offre également des utilitaires de base pour l'identification des fichiers, les sommes de contrôle et les capacités du terminal.</p> <p>Ensemble, ces fonctionnalités forment la base sur laquelle tous les autres modules et fonctionnalités au niveau utilisateur dans Nelson sont construits.</p> </chapter_description>",
   },
   {
     title: "banner",
@@ -4481,7 +4481,7 @@ window.searchIndex = [
     title: "clear",
     url: "./memory_manager/clear.html",
     path: "./memory_manager/clear.html",
-    content: "Remove variable from workspace.",
+    content: "Efface une variable de l'espace de travail.",
   },
   {
     title: "global",
@@ -7390,6 +7390,13 @@ window.searchIndex = [
     url: "./help_tools/buildhelpweb.html",
     path: "./help_tools/buildhelpweb.html",
     content: "Génère l'aide des modules de Nelson pour un site web.",
+  },
+  {
+    title: "deployhelp",
+    url: "./help_tools/deployhelp.html",
+    path: "./help_tools/deployhelp.html",
+    content:
+      "Installer, désinstaller et gérer le système d'aide local de Nelson et les fichiers d'aide des modules.",
   },
   {
     title: "doc",

@@ -64,7 +64,7 @@
     </section>
     <section name="Core">
       <chapter_description>
-        <p>Le module de base fournit les éléments fondamentaux de l'environnement Nelson.</p>
+        <p>Le module core fournit les éléments fondamentaux de l'environnement Nelson.</p>
         <p>Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.</p>
         <p>Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.</p>
         <p>Il offre également des utilitaires de base pour l'identification des fichiers, les sommes de contrôle et les capacités du terminal.</p>
@@ -998,7 +998,7 @@
     </chapter_description>
       <keyword name="acquirevar" link="./memory_manager/acquirevar.html" description="Récupère la valeur d'une variable depuis une portée de variables spécifiée."></keyword>
       <keyword name="assignin" link="./memory_manager/assignin.html" description="Assigne une valeur à une variable dans une portée de variables spécifiée."></keyword>
-      <keyword name="clear" link="./memory_manager/clear.html" description="Remove variable from workspace."></keyword>
+      <keyword name="clear" link="./memory_manager/clear.html" description="Efface une variable de l'espace de travail."></keyword>
       <keyword name="global" link="./memory_manager/global.html" description="Définit une variable globale."></keyword>
       <keyword name="isglobal" link="./memory_manager/isglobal.html" description="Vérifie si une variable est globale."></keyword>
       <keyword name="isvar" link="./memory_manager/isvar.html" description="Vérifie l'existence d'une variable."></keyword>
@@ -1646,6 +1646,7 @@
       <keyword name="buildhelp" link="./help_tools/buildhelp.html" description="Génère l'aide des modules de Nelson."></keyword>
       <keyword name="buildhelpmd" link="./help_tools/buildhelpmd.html" description="Génère l'aide des modules de Nelson pour GitBook."></keyword>
       <keyword name="buildhelpweb" link="./help_tools/buildhelpweb.html" description="Génère l'aide des modules de Nelson pour un site web."></keyword>
+      <keyword name="deployhelp" link="./help_tools/deployhelp.html" description="Installer, désinstaller et gérer le système d'aide local de Nelson et les fichiers d'aide des modules."></keyword>
       <keyword name="doc" link="./help_tools/doc.html" description="Affiche la documentation."></keyword>
       <keyword name="docroot" link="./help_tools/docroot.html" description="Récupère ou met à jour le répertoire racine du système d'aide de Nelson."></keyword>
       <keyword name="headcomments" link="./help_tools/headcomments.html" description="Affiche les commentaires d'en-tête d'une fonction Nelson."></keyword>

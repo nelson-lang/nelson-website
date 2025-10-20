@@ -7158,6 +7158,12 @@
     "content": "Build help of Nelson's modules for website."
   },
   {
+    "title": "deployhelp",
+    "url": "./help_tools/deployhelp.html",
+    "path": "./help_tools/deployhelp.html",
+    "content": "Install, uninstall and manage the local Nelson help system and module help files."
+  },
+  {
     "title": "doc",
     "url": "./help_tools/doc.html",
     "path": "./help_tools/doc.html",

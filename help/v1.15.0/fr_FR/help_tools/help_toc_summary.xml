@@ -10,6 +10,7 @@
       <keyword name="buildhelp" link="buildhelp.html" description="Génère l'aide des modules de Nelson."/>
       <keyword name="buildhelpmd" link="buildhelpmd.html" description="Génère l'aide des modules de Nelson pour GitBook."/>
       <keyword name="buildhelpweb" link="buildhelpweb.html" description="Génère l'aide des modules de Nelson pour un site web."/>
+      <keyword name="deployhelp" link="deployhelp.html" description="Installer, désinstaller et gérer le système d'aide local de Nelson et les fichiers d'aide des modules."/>
       <keyword name="doc" link="doc.html" description="Affiche la documentation."/>
       <keyword name="docroot" link="docroot.html" description="Récupère ou met à jour le répertoire racine du système d'aide de Nelson."/>
       <keyword name="headcomments" link="headcomments.html" description="Affiche les commentaires d'en-tête d'une fonction Nelson."/>

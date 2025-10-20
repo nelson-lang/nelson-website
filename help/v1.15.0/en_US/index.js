@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1760898019
+// Auto-generated on 1760978460
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -7299,6 +7299,13 @@ window.searchIndex = [
     url: "./help_tools/buildhelpweb.html",
     path: "./help_tools/buildhelpweb.html",
     content: "Build help of Nelson's modules for website.",
+  },
+  {
+    title: "deployhelp",
+    url: "./help_tools/deployhelp.html",
+    path: "./help_tools/deployhelp.html",
+    content:
+      "Install, uninstall and manage the local Nelson help system and module help files.",
   },
   {
     title: "doc",

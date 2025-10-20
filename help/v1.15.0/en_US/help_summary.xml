@@ -1666,6 +1666,7 @@
       <keyword name="buildhelp" link="./help_tools/buildhelp.html" description="Build help of Nelson's modules."></keyword>
       <keyword name="buildhelpmd" link="./help_tools/buildhelpmd.html" description="Build help of Nelson's modules for GitBook."></keyword>
       <keyword name="buildhelpweb" link="./help_tools/buildhelpweb.html" description="Build help of Nelson's modules for website."></keyword>
+      <keyword name="deployhelp" link="./help_tools/deployhelp.html" description="Install, uninstall and manage the local Nelson help system and module help files."></keyword>
       <keyword name="doc" link="./help_tools/doc.html" description="Displays documentation."></keyword>
       <keyword name="docroot" link="./help_tools/docroot.html" description="Retrieve or update the root directory for Nelson Help system."></keyword>
       <keyword name="headcomments" link="./help_tools/headcomments.html" description="Display Nelson function header comments."></keyword>
