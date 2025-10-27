@@ -1,11 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>bdschur</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">bdschur</span></div></div>
@@ -45,7 +55,7 @@
 </tr>
 <tr>
 <td class="param-name">T</td>
-<td>Transformation matrix.</td>
+<td>Matrice de transformation.</td>
 </tr>
 <tr>
 <td class="param-name">B</td>
@@ -58,7 +68,7 @@
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>[T, B] = bdschur(A, CONDMAX)</b> calculates a transformation matrix <b>T</b>, where <b>B = T \ A * T</b> results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.</p>
+            <b>[T, B] = bdschur(A, CONDMAX)</b> calcule une matrice de transformation <b>T</b>, où <b>B = T \ A * T</b> donne une matrice diagonale par blocs, chaque bloc étant une matrice de Schur quasi triangulaire supérieure, assurant la diagonalisation de la matrice A tout en préservant certaines propriétés structurelles.</p>
         </div>
 </div>
 <div class="section">

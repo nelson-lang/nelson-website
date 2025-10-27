@@ -1,12 +1,5 @@
-// %=============================================================================
-// % Copyright (c) 2016-present Allan CORNET (Nelson)
-// %=============================================================================
-// % This file is part of Nelson.
-// %=============================================================================
-// % LICENCE_BLOCK_BEGIN
-// % SPDX-License-Identifier: LGPL-3.0-or-later
-// % LICENCE_BLOCK_END
-// %=============================================================================
+// Apache License 2.0
+// MathJax 3.2.2
 (function () {
   "use strict";
   var __webpack_modules__ = {
@@ -40512,6 +40505,23 @@
             );
           })(a.ContextMenu);
         e.MJContextMenu = c;
+        // Prevent bundled contextmenu handlers (e.g. MathJax) from running on right-click.
+        // This stops other listeners in capture/bubble from executing while still
+        // allowing the browser's native menu to open.
+        if (typeof window !== "undefined" && window.addEventListener) {
+          // Use capture and stopImmediatePropagation to ensure bundled handlers don't run.
+          window.addEventListener(
+            "contextmenu",
+            function (evt) {
+              try {
+                evt.stopImmediatePropagation();
+              } catch (e) {
+                /* ignore */
+              }
+            },
+            { capture: true, passive: true },
+          );
+        }
       },
       8310: function (t, e, r) {
         var n =

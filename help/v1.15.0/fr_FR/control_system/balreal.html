@@ -1,11 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>balreal</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">balreal</span></div></div>
@@ -62,7 +72,7 @@
 <span class="syntax-icon">📄</span>Description</div>
 <div>
         <p>
-            <b>balreal(sys)</b> calculates a balanced realization, denoted as <b>sysb</b>, for the stable segment of the linear time-invariant (LTI) model <b>sys</b>.</p>
+            <b>balreal(sys)</b> calcule une réalisation équilibrée, notée <b>sysb</b>, pour la partie stable du modèle linéaire invariant dans le temps (LTI) <b>sys</b>.</p>
             <p>Ce processus s'applique aussi bien aux systèmes continus que discrets. Si <b>sys</b> n'est pas initialement sous forme d'espace d'état, la fonction le convertit automatiquement en espace d'état à l'aide de <b>ss</b> avant de procéder à l'équilibrage.</p>
         </div>
 </div>

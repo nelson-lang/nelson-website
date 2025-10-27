@@ -1,11 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xmldoctohelp</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">xmldoctohelp</span></div></div>
@@ -26,19 +36,19 @@
 </tr>
 <tr>
 <td class="param-name">source_dirs</td>
-<td>a cell of string: list of xml filenames.</td>
+<td>une cellule de chaînes : liste des noms de fichiers xml.</td>
 </tr>
 <tr>
 <td class="param-name">destination_dir</td>
-<td>a string: directory destination.</td>
+<td>une chaîne : répertoire de destination.</td>
 </tr>
 <tr>
 <td class="param-name">main_title</td>
-<td>a string: title of main index.</td>
+<td>une chaîne : titre de l'index principal.</td>
 </tr>
 <tr>
 <td class="param-name">overwrite</td>
-<td>a logical: force overwrite if file destination already exists</td>
+<td>un booléen : forcer l'écrasement si le fichier de destination existe déjà.</td>
 </tr>
 </table>
 </div>
@@ -52,7 +62,7 @@
 </tr>
 <tr>
 <td class="param-name">status</td>
-<td>a logical: files generated or not.</td>
+<td>un booléen : fichiers générés ou non.</td>
 </tr>
 </table>
 </div>

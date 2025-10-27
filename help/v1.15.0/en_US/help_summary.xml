@@ -854,25 +854,6 @@
       <keyword name="tzero" link="./control_system/tzero.html" description="Invariant zeros of linear system."></keyword>
       <keyword name="zero" link="./control_system/zero.html" description="Zeros and gain of SISO dynamic system."></keyword>
     </section>
-    <section name="Signal Processing">
-      <chapter_description>
-        <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p>
-        <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p>
-        <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p>
-    </chapter_description>
-      <keyword name="bartlett" link="./signal_processing/bartlett.html" description="Bartlett window."></keyword>
-      <keyword name="blackman" link="./signal_processing/blackman.html" description="Blackman window."></keyword>
-      <keyword name="db2mag" link="./signal_processing/db2mag.html" description="Convert a gain in decibels (dB) to a magnitude."></keyword>
-      <keyword name="db2pow" link="./signal_processing/db2pow.html" description="Convert a gain in decibels (dB) to power."></keyword>
-      <keyword name="filter2" link="./signal_processing/filter2.html" description="2-D digital filter."></keyword>
-      <keyword name="hamming" link="./signal_processing/hamming.html" description="Hamming window."></keyword>
-      <keyword name="hann" link="./signal_processing/hann.html" description="Hann window."></keyword>
-      <keyword name="mag2db" link="./signal_processing/mag2db.html" description="Convert a magnitude to decibels (dB)."></keyword>
-      <keyword name="pow2db" link="./signal_processing/pow2db.html" description="Convert power to decibel."></keyword>
-      <keyword name="sinc" link="./signal_processing/sinc.html" description="Sinc function."></keyword>
-      <keyword name="xcorr2" link="./signal_processing/xcorr2.html" description="2-D cross-correlation."></keyword>
-      <keyword name="zp2tf" link="./signal_processing/zp2tf.html" description="Zero-pole to transfer function conversion."></keyword>
-    </section>
     <section name="Subroutine Library In COntrol Theory">
       <chapter_description>
       <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p>
@@ -903,6 +884,25 @@
       <keyword name="slicot_sg02ad" link="./slicot/slicot_sg02ad.html" description="Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems."></keyword>
       <keyword name="slicot_tb01id" link="./slicot/slicot_tb01id.html" description="Balancing a system matrix corresponding to a triplet (A, B, C)."></keyword>
       <keyword name="slicot_tg01ad" link="./slicot/slicot_tg01ad.html" description="Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C)."></keyword>
+    </section>
+    <section name="Signal Processing">
+      <chapter_description>
+        <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p>
+        <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p>
+        <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p>
+    </chapter_description>
+      <keyword name="bartlett" link="./signal_processing/bartlett.html" description="Bartlett window."></keyword>
+      <keyword name="blackman" link="./signal_processing/blackman.html" description="Blackman window."></keyword>
+      <keyword name="db2mag" link="./signal_processing/db2mag.html" description="Convert a gain in decibels (dB) to a magnitude."></keyword>
+      <keyword name="db2pow" link="./signal_processing/db2pow.html" description="Convert a gain in decibels (dB) to power."></keyword>
+      <keyword name="filter2" link="./signal_processing/filter2.html" description="2-D digital filter."></keyword>
+      <keyword name="hamming" link="./signal_processing/hamming.html" description="Hamming window."></keyword>
+      <keyword name="hann" link="./signal_processing/hann.html" description="Hann window."></keyword>
+      <keyword name="mag2db" link="./signal_processing/mag2db.html" description="Convert a magnitude to decibels (dB)."></keyword>
+      <keyword name="pow2db" link="./signal_processing/pow2db.html" description="Convert power to decibel."></keyword>
+      <keyword name="sinc" link="./signal_processing/sinc.html" description="Sinc function."></keyword>
+      <keyword name="xcorr2" link="./signal_processing/xcorr2.html" description="2-D cross-correlation."></keyword>
+      <keyword name="zp2tf" link="./signal_processing/zp2tf.html" description="Zero-pole to transfer function conversion."></keyword>
     </section>
     <section name="FFTW">
       <chapter_description>
@@ -1098,6 +1098,15 @@
       <keyword name="savemat" link="./matio/savemat.html" description="save workspace variables to .mat file"></keyword>
       <keyword name="whomat" link="./matio/whomat.html" description="List variables in an valid .mat file."></keyword>
       <keyword name="whosmat" link="./matio/whosmat.html" description="List variables in an valid .mat file with sizes and types."></keyword>
+    </section>
+    <section name="Xml Processing">
+      <chapter_description>
+        <p>The XML module provides functions to create, convert, and manage XML documents for
+            Nelson.</p>
+    </chapter_description>
+      <keyword name="xmlchecker" link="./xml/xmlchecker.html" description="Checks a xmlfile against xsd."></keyword>
+      <keyword name="xmlprettyprint" link="./xml/xmlprettyprint.html" description="format an XML file."></keyword>
+      <keyword name="xmltransform" link="./xml/xmltransform.html" description="XML transformation using XSLT"></keyword>
     </section>
     <section name="JavaScript Object Notation">
       <chapter_description>
@@ -1511,6 +1520,49 @@
     </chapter_description>
       <keyword name="nig" link="./nig/nig.html" description="Nelson tool to interface C or Fortran functions with Nelson."></keyword>
     </section>
+    <section name="Validators">
+      <chapter_description>
+        <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
+        <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
+        <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
+    </chapter_description>
+      <keyword name="mustBeA" link="./validators/mustBeA.html" description="Checks that input value comes from one of specified classes."></keyword>
+      <keyword name="mustBeColumn" link="./validators/mustBeColumn.html" description="Checks that value is a column vector or raise an error."></keyword>
+      <keyword name="mustBeFile" link="./validators/mustBeFile.html" description="Checks that input path refers to file."></keyword>
+      <keyword name="mustBeFinite" link="./validators/mustBeFinite.html" description="Checks that value is finite or raise an error."></keyword>
+      <keyword name="mustBeFloat" link="./validators/mustBeFloat.html" description="Checks that value is floating-point or raise an error."></keyword>
+      <keyword name="mustBeFolder" link="./validators/mustBeFolder.html" description="Checks that input path refers to folder."></keyword>
+      <keyword name="mustBeGreaterThan" link="./validators/mustBeGreaterThan.html" description="Checks that value is greater than another value or issue error."></keyword>
+      <keyword name="mustBeGreaterThanOrEqual" link="./validators/mustBeGreaterThanOrEqual.html" description="Checks that value is greater than or equal to another value or issue error."></keyword>
+      <keyword name="mustBeInRange" link="./validators/mustBeInRange.html" description="Checks that value is in the specified range."></keyword>
+      <keyword name="mustBeInteger" link="./validators/mustBeInteger.html" description="Checks that value is integer or raise an error."></keyword>
+      <keyword name="mustBeLessThan" link="./validators/mustBeLessThan.html" description="Checks that value is less than another value or issue error."></keyword>
+      <keyword name="mustBeLessThanOrEqual" link="./validators/mustBeLessThanOrEqual.html" description="Checks that value is less than or equal to another value or issue error."></keyword>
+      <keyword name="mustBeLogical" link="./validators/mustBeLogical.html" description="Checks that value is logical or raise an error."></keyword>
+      <keyword name="mustBeLogicalScalar" link="./validators/mustBeLogicalScalar.html" description="Checks that value is logical scalar or raise an error."></keyword>
+      <keyword name="mustBeMatrix" link="./validators/mustBeMatrix.html" description="Checks that value is a matrix or raise an error."></keyword>
+      <keyword name="mustBeMember" link="./validators/mustBeMember.html" description="Checks that value is member of specified array or issue error."></keyword>
+      <keyword name="mustBeNegative" link="./validators/mustBeNegative.html" description="Checks that value is negative or raise an error."></keyword>
+      <keyword name="mustBeNonNan" link="./validators/mustBeNonNan.html" description="Checks that value is not NaN."></keyword>
+      <keyword name="mustBeNonSparse" link="./validators/mustBeNonSparse.html" description="Checks that value is not sparse."></keyword>
+      <keyword name="mustBeNonZero" link="./validators/mustBeNonZero.html" description="Checks that value is not zero."></keyword>
+      <keyword name="mustBeNonempty" link="./validators/mustBeNonempty.html" description="Checks that value is nonempty or raise an error."></keyword>
+      <keyword name="mustBeNonmissing" link="./validators/mustBeNonmissing.html" description="Checks that value is not missing."></keyword>
+      <keyword name="mustBeNonnegative" link="./validators/mustBeNonnegative.html" description="Checks that value is nonnegative or raise an error."></keyword>
+      <keyword name="mustBeNonpositive" link="./validators/mustBeNonpositive.html" description="Checks that value is non positive or raise an error."></keyword>
+      <keyword name="mustBeNonzeroLengthText" link="./validators/mustBeNonzeroLengthText.html" description="Checks that value is text with nonzero length or raise an error."></keyword>
+      <keyword name="mustBeNumeric" link="./validators/mustBeNumeric.html" description="Checks that value is numeric or raise an error."></keyword>
+      <keyword name="mustBeNumericOrLogical" link="./validators/mustBeNumericOrLogical.html" description="Checks that input is numeric or logical."></keyword>
+      <keyword name="mustBePositive" link="./validators/mustBePositive.html" description="Checks that value is positive or raise an error."></keyword>
+      <keyword name="mustBeReal" link="./validators/mustBeReal.html" description="Checks that value is real."></keyword>
+      <keyword name="mustBeRow" link="./validators/mustBeRow.html" description="Checks that value is a row vector or raise an error."></keyword>
+      <keyword name="mustBeScalarOrEmpty" link="./validators/mustBeScalarOrEmpty.html" description="Checks that value is scalar or empty or raise an error."></keyword>
+      <keyword name="mustBeSparse" link="./validators/mustBeSparse.html" description="Checks that value is a sparse matrix or raise an error."></keyword>
+      <keyword name="mustBeText" link="./validators/mustBeText.html" description="Checks that value is piece of text or raise an error."></keyword>
+      <keyword name="mustBeTextScalar" link="./validators/mustBeTextScalar.html" description="Checks that value is single piece of text or raise an error."></keyword>
+      <keyword name="mustBeValidVariableName" link="./validators/mustBeValidVariableName.html" description="Checks that value is valid variable name or raise an error."></keyword>
+      <keyword name="mustBeVector" link="./validators/mustBeVector.html" description="Checks that value is vector or raise an error."></keyword>
+    </section>
     <section name="Component Object Model (COM) Client Interface">
       <chapter_description>
       <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p>
@@ -1598,49 +1650,6 @@
       <keyword name="test_run" link="./tests_manager/test_run.html" description="Runs tests"></keyword>
       <keyword name="skip_testsuite" link="./tests_manager/test_skip_testsuite.html" description="Skip test suite on condition"></keyword>
     </section>
-    <section name="Validators">
-      <chapter_description>
-        <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
-        <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
-        <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
-    </chapter_description>
-      <keyword name="mustBeA" link="./validators/mustBeA.html" description="Checks that input value comes from one of specified classes."></keyword>
-      <keyword name="mustBeColumn" link="./validators/mustBeColumn.html" description="Checks that value is a column vector or raise an error."></keyword>
-      <keyword name="mustBeFile" link="./validators/mustBeFile.html" description="Checks that input path refers to file."></keyword>
-      <keyword name="mustBeFinite" link="./validators/mustBeFinite.html" description="Checks that value is finite or raise an error."></keyword>
-      <keyword name="mustBeFloat" link="./validators/mustBeFloat.html" description="Checks that value is floating-point or raise an error."></keyword>
-      <keyword name="mustBeFolder" link="./validators/mustBeFolder.html" description="Checks that input path refers to folder."></keyword>
-      <keyword name="mustBeGreaterThan" link="./validators/mustBeGreaterThan.html" description="Checks that value is greater than another value or issue error."></keyword>
-      <keyword name="mustBeGreaterThanOrEqual" link="./validators/mustBeGreaterThanOrEqual.html" description="Checks that value is greater than or equal to another value or issue error."></keyword>
-      <keyword name="mustBeInRange" link="./validators/mustBeInRange.html" description="Checks that value is in the specified range."></keyword>
-      <keyword name="mustBeInteger" link="./validators/mustBeInteger.html" description="Checks that value is integer or raise an error."></keyword>
-      <keyword name="mustBeLessThan" link="./validators/mustBeLessThan.html" description="Checks that value is less than another value or issue error."></keyword>
-      <keyword name="mustBeLessThanOrEqual" link="./validators/mustBeLessThanOrEqual.html" description="Checks that value is less than or equal to another value or issue error."></keyword>
-      <keyword name="mustBeLogical" link="./validators/mustBeLogical.html" description="Checks that value is logical or raise an error."></keyword>
-      <keyword name="mustBeLogicalScalar" link="./validators/mustBeLogicalScalar.html" description="Checks that value is logical scalar or raise an error."></keyword>
-      <keyword name="mustBeMatrix" link="./validators/mustBeMatrix.html" description="Checks that value is a matrix or raise an error."></keyword>
-      <keyword name="mustBeMember" link="./validators/mustBeMember.html" description="Checks that value is member of specified array or issue error."></keyword>
-      <keyword name="mustBeNegative" link="./validators/mustBeNegative.html" description="Checks that value is negative or raise an error."></keyword>
-      <keyword name="mustBeNonNan" link="./validators/mustBeNonNan.html" description="Checks that value is not NaN."></keyword>
-      <keyword name="mustBeNonSparse" link="./validators/mustBeNonSparse.html" description="Checks that value is not sparse."></keyword>
-      <keyword name="mustBeNonZero" link="./validators/mustBeNonZero.html" description="Checks that value is not zero."></keyword>
-      <keyword name="mustBeNonempty" link="./validators/mustBeNonempty.html" description="Checks that value is nonempty or raise an error."></keyword>
-      <keyword name="mustBeNonmissing" link="./validators/mustBeNonmissing.html" description="Checks that value is not missing."></keyword>
-      <keyword name="mustBeNonnegative" link="./validators/mustBeNonnegative.html" description="Checks that value is nonnegative or raise an error."></keyword>
-      <keyword name="mustBeNonpositive" link="./validators/mustBeNonpositive.html" description="Checks that value is non positive or raise an error."></keyword>
-      <keyword name="mustBeNonzeroLengthText" link="./validators/mustBeNonzeroLengthText.html" description="Checks that value is text with nonzero length or raise an error."></keyword>
-      <keyword name="mustBeNumeric" link="./validators/mustBeNumeric.html" description="Checks that value is numeric or raise an error."></keyword>
-      <keyword name="mustBeNumericOrLogical" link="./validators/mustBeNumericOrLogical.html" description="Checks that input is numeric or logical."></keyword>
-      <keyword name="mustBePositive" link="./validators/mustBePositive.html" description="Checks that value is positive or raise an error."></keyword>
-      <keyword name="mustBeReal" link="./validators/mustBeReal.html" description="Checks that value is real."></keyword>
-      <keyword name="mustBeRow" link="./validators/mustBeRow.html" description="Checks that value is a row vector or raise an error."></keyword>
-      <keyword name="mustBeScalarOrEmpty" link="./validators/mustBeScalarOrEmpty.html" description="Checks that value is scalar or empty or raise an error."></keyword>
-      <keyword name="mustBeSparse" link="./validators/mustBeSparse.html" description="Checks that value is a sparse matrix or raise an error."></keyword>
-      <keyword name="mustBeText" link="./validators/mustBeText.html" description="Checks that value is piece of text or raise an error."></keyword>
-      <keyword name="mustBeTextScalar" link="./validators/mustBeTextScalar.html" description="Checks that value is single piece of text or raise an error."></keyword>
-      <keyword name="mustBeValidVariableName" link="./validators/mustBeValidVariableName.html" description="Checks that value is valid variable name or raise an error."></keyword>
-      <keyword name="mustBeVector" link="./validators/mustBeVector.html" description="Checks that value is vector or raise an error."></keyword>
-    </section>
     <section name="Assertion functions">
       <chapter_description>
         <p>The Asserts Functions module in Nelson provides tools for validating program behavior and
@@ -1663,13 +1672,16 @@
             and website-ready formats, enabling developers to maintain and distribute comprehensive
             documentation efficiently.</p>
     </chapter_description>
+      <keyword name="nelson help reference" link="./help_tools/1_nelson_help_reference.html" description="How to write help XML files for Nelson (elements, attributes, examples, tips)."></keyword>
       <keyword name="buildhelp" link="./help_tools/buildhelp.html" description="Build help of Nelson's modules."></keyword>
+      <keyword name="buildhelpjson" link="./help_tools/buildhelpjson.html" description="Build help of Nelson JSON format."></keyword>
       <keyword name="buildhelpmd" link="./help_tools/buildhelpmd.html" description="Build help of Nelson's modules for GitBook."></keyword>
       <keyword name="buildhelpweb" link="./help_tools/buildhelpweb.html" description="Build help of Nelson's modules for website."></keyword>
       <keyword name="deployhelp" link="./help_tools/deployhelp.html" description="Install, uninstall and manage the local Nelson help system and module help files."></keyword>
       <keyword name="doc" link="./help_tools/doc.html" description="Displays documentation."></keyword>
       <keyword name="docroot" link="./help_tools/docroot.html" description="Retrieve or update the root directory for Nelson Help system."></keyword>
       <keyword name="headcomments" link="./help_tools/headcomments.html" description="Display Nelson function header comments."></keyword>
+      <keyword name="help" link="./help_tools/help.html" description="Help for functions in Command Window."></keyword>
       <keyword name="htmltopdf" link="./help_tools/htmltopdf.html" description="Convers html page to pdf."></keyword>
       <keyword name="markdown" link="./help_tools/markdown.html" description="Converts markdown to html."></keyword>
       <keyword name="xmldocbuild" link="./help_tools/xmldocbuild.html" description="Internal function to convert xml document files to html."></keyword>

@@ -3,11 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
 </head>
 <body>
 <img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="./homepage.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
 <div class="section-title">Nelson Documentation</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Nelson: Scientific Computing Environment Programming Language.</p>
         <p>Nelson is an open-source scientific computing environment designed for numerical analysis, data visualization, and algorithm development.</p>
         <p>Built for performance and ease of use, Nelson provides a comprehensive suite of mathematical functions, advanced data structures, and powerful visualization tools.</p>
@@ -17,7 +27,7 @@
 </div>
 <div class="section">
 <div class="section-title">Functions manager</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.</p> 
         <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.</p> 
         <p>Utilities are available to check for the existence of built-in, macro, or mex functions.</p>
@@ -78,7 +88,7 @@
 </div>
 <div class="section">
 <div class="section-title">Modules manager</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.</p>
         <p>It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.</p> 
         <p>With support for both internal and external modules, the manager handles module metadata, paths, and versioning.</p>
@@ -138,7 +148,7 @@
 </div>
 <div class="section">
 <div class="section-title">Core</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Core module provides the fundamental building blocks of the Nelson environment.</p>
         <p>It includes essential services for program execution, environment management, and system interaction.</p>
         <p>Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.</p>
@@ -234,7 +244,7 @@
 </div>
 <div class="section">
 <div class="section-title">Engine</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Engine module manages the execution environment of Nelson itself.</p>
         <p>It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.</p>
         <p>This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.</p>
@@ -269,7 +279,7 @@
 </div>
 <div class="section">
 <div class="section-title">Interpreter functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
      <p>The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.</p>
      <p>It includes essential elements such as loops, conditional branching, error handling, and function declarations.</p>
      <p>The module also offers tools for parsing code, working with keywords, and managing recursion limits.</p>
@@ -337,7 +347,7 @@
 </div>
 <div class="section">
 <div class="section-title">Error manager</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.</p>
         <p>It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.</p>
         <p>This module ensures that users can manage execution flow in the presence of failures, capture meaningful error reports, and display warnings without interrupting program execution.</p>
@@ -375,7 +385,7 @@
 </div>
 <div class="section">
 <div class="section-title">Console</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Console module manages interaction with Nelson’s command window.</p>
         <p>It provides tools to control the display, handle user input, and query terminal properties.</p>
         <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p>
@@ -394,7 +404,7 @@
 </div>
 <div class="section">
 <div class="section-title">Display format</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>The Display Format module defines how values, variables, and expressions are presented in Nelson.</p>
 		<p>It offers control over numeric formatting, text representation, and the way results are shown in the console.</p>
 		<p>The module also provides mechanisms for capturing formatted output programmatically, enabling both human-readable display and programmatic handling of results.</p>
@@ -420,7 +430,7 @@
 </div>
 <div class="section">
 <div class="section-title">Characters encoding</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
        <p>The Characters Encoding module provides tools for converting between native byte representations and Unicode characters.</p>
        <p>It enables scripts to correctly interpret and manipulate text in various encodings, ensuring compatibility across different platforms and locales.</p>
        <p>The module also includes functionality for detecting character sets that match a given input, facilitating reliable text processing and internationalization.</p>
@@ -439,7 +449,7 @@
 </div>
 <div class="section">
 <div class="section-title">Localization functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
     <p>The Localization module manages language settings and internationalization in Nelson.</p>
     <p>It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.</p>
     <p>This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.</p>
@@ -461,7 +471,7 @@
 </div>
 <div class="section">
 <div class="section-title">I18n functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The i18n module provides tools for internationalization and localization of text within Nelson.</p>
         <p>It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.</p>
         <p>This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.</p>
@@ -483,7 +493,7 @@
 </div>
 <div class="section">
 <div class="section-title">Types module</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Types module provides tools for managing and inspecting data types in Nelson.</p>
         <p>It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.</p>
         <p>The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.</p>
@@ -577,7 +587,7 @@
 </div>
 <div class="section">
 <div class="section-title">Logical type functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Logical Type module provides tools for working with Boolean values and logical operations in Nelson.</p>
         <p>It enables the creation, conversion, and manipulation of logical data, supporting fundamental logical operations that are essential for control flow, conditional evaluation, and decision-making in scripts and programs.</p>
     </div>
@@ -598,7 +608,7 @@
 </div>
 <div class="section">
 <div class="section-title">Single type</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Single Type module provides tools for handling single-precision numeric values in Nelson.</p>
         <p>It enables conversion of variables to single-precision format, allowing efficient storage and computation while maintaining sufficient numeric accuracy for many applications.</p>
     </div>
@@ -608,7 +618,7 @@
 </div>
 <div class="section">
 <div class="section-title">Double</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>The Double Type module provides tools for handling double-precision numeric values in Nelson.</p>
 		<p>It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.</p>
 	</div>
@@ -629,7 +639,7 @@
 </div>
 <div class="section">
 <div class="section-title">Integers type</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Integer Types module provides tools for working with signed and unsigned integers of various sizes in Nelson.</p>
         <p>These types are particularly useful for efficiently storing and processing large datasets, such as images or large numeric arrays.</p>
         <p>The module supports conversions between integer formats and provides access to the minimum and maximum values representable for each integer type, ensuring safe and precise integer arithmetic.</p>
@@ -669,7 +679,7 @@
 </div>
 <div class="section">
 <div class="section-title">Sparse type</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Sparse Type module provides tools for creating and manipulating sparse matrices in Nelson.</p>
         <p>It supports efficient storage and computation for matrices with a large number of zero elements, including conversion between sparse and full representations, generation of special sparse matrices, and access to nonzero elements.</p>
         <p>This module enables memory-efficient handling of large datasets and optimized numerical operations on sparse structures.</p>
@@ -706,7 +716,7 @@
 </div>
 <div class="section">
 <div class="section-title">String type</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.</p>
         <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.</p>
         <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.</p>
@@ -824,7 +834,7 @@
 </div>
 <div class="section">
 <div class="section-title">Function_handle functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Function Handle Type module provides tools for creating and managing function handles in Nelson.</p>
         <p>It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.</p>
         <p>This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.</p>
@@ -846,7 +856,7 @@
 </div>
 <div class="section">
 <div class="section-title">Handle</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Handle module provides tools for creating and manipulating handle objects in Nelson.</p>
         <p>Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.</p>
         <p>This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.</p>
@@ -883,7 +893,7 @@
 </div>
 <div class="section">
 <div class="section-title">Data structures</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.</p>
         <p>It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.</p>
         <p>This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.</p>
@@ -950,7 +960,7 @@
 </div>
 <div class="section">
 <div class="section-title">Dictionaries</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The Dictionary module provides tools for working with key-value mappings in Nelson.</p>
       <p>It supports creation and configuration of dictionaries with defined key and value types, querying and modifying entries, and managing the overall structure.</p>
       <p>This module enables efficient storage, retrieval, and manipulation of data indexed by unique keys, making it ideal for associative arrays, lookups, and dynamic data management.</p>
@@ -1002,7 +1012,7 @@
 </div>
 <div class="section">
 <div class="section-title">Tables</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.</p>
       <p>Tables are array-like structures with named variables (columns), each capable of holding different data types.</p>
     </div>
@@ -1062,7 +1072,7 @@
 </div>
 <div class="section">
 <div class="section-title">Overloading</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The Overloading module provides mechanisms for customizing the behavior of functions and operators in Nelson.</p>
       <p>It allows users to define how standard operations or built-in functions should behave when applied to user-defined types or objects.</p>
       <p>This capability enables the extension of Nelson’s language features, supporting more natural and expressive use of custom data structures.</p>
@@ -1073,7 +1083,7 @@
 </div>
 <div class="section">
 <div class="section-title">Operators</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.</p>
         <p>It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.</p>
         <p>This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.</p>
@@ -1197,7 +1207,7 @@
 </div>
 <div class="section">
 <div class="section-title">Constructors functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.</p>
       <p>It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.</p>
       <p>This module forms the basis for initializing data structures and performing mathematical and numerical computations.</p>
@@ -1234,7 +1244,7 @@
 </div>
 <div class="section">
 <div class="section-title">Elementary functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.</p>
         <p>It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.</p>
         <p>The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.</p>
@@ -1523,7 +1533,7 @@
 </div>
 <div class="section">
 <div class="section-title">Trigonometric functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.</p>
         <p>It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.</p>
         <p>Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.</p>
@@ -1680,7 +1690,7 @@
 </div>
 <div class="section">
 <div class="section-title">Special functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Special Functions module provides tools for performing advanced mathematical operations in Nelson.</p>
         <p>It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.</p>  
         <p>This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.</p>
@@ -1721,7 +1731,7 @@
 </div>
 <div class="section">
 <div class="section-title">Linear algebra</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.</p>
         <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.</p>
         <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.</p>
@@ -1818,7 +1828,7 @@
 </div>
 <div class="section">
 <div class="section-title">Statistics</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Statistics module provides tools for analyzing and summarizing data in Nelson.</p>
         <p>It includes functions for computing measures of central tendency, variability, correlation, and probability distributions.</p>
         <p>The module also supports advanced data summarization structures for accurate quantile estimation, enabling robust statistical analysis and interpretation of datasets.</p>
@@ -1846,7 +1856,7 @@
 </div>
 <div class="section">
 <div class="section-title">Data analysis</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
        <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.</p>
        <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.</p>
        <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.</p>
@@ -1892,7 +1902,7 @@
 </div>
 <div class="section">
 <div class="section-title">Polynomials</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.</p>
         <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.</p>
         <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.</p>
@@ -1926,7 +1936,7 @@
 </div>
 <div class="section">
 <div class="section-title">Geometry</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Geometry module provides tools for performing geometric transformations and computations in Nelson.</p>
         <p>It supports rotation operations in three-dimensional space, enabling the construction of transformation matrices for manipulating objects and coordinate systems.</p>
         <p>This module is useful for applications in computer graphics, robotics, and spatial analysis.</p>
@@ -1945,7 +1955,7 @@
 </div>
 <div class="section">
 <div class="section-title">Control System functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p>
       <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p>
       <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p>
@@ -2138,54 +2148,8 @@
 </ul>
 </div>
 <div class="section">
-<div class="section-title">Signal Processing</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p>
-        <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p>
-        <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/bartlett.html" target="contentFrame">bartlett</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Bartlett window.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/blackman.html" target="contentFrame">blackman</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Blackman window.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/db2mag.html" target="contentFrame">db2mag</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert a gain in decibels (dB) to a magnitude.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/db2pow.html" target="contentFrame">db2pow</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert a gain in decibels (dB) to power.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/filter2.html" target="contentFrame">filter2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">2-D digital filter.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/hamming.html" target="contentFrame">hamming</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Hamming window.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/hann.html" target="contentFrame">hann</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Hann window.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/mag2db.html" target="contentFrame">mag2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert a magnitude to decibels (dB).</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/pow2db.html" target="contentFrame">pow2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert power to decibel.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/sinc.html" target="contentFrame">sinc</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sinc function.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/xcorr2.html" target="contentFrame">xcorr2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">2-D cross-correlation.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/zp2tf.html" target="contentFrame">zp2tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Zero-pole to transfer function conversion.</div>
-</li>
-</ul>
-</div>
-<div class="section">
 <div class="section-title">Subroutine Library In COntrol Theory</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p>
       <p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.</p>
       <p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.</p>
@@ -2266,8 +2230,54 @@
 </ul>
 </div>
 <div class="section">
+<div class="section-title">Signal Processing</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.</p>
+        <p>It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.</p>
+        <p>The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/bartlett.html" target="contentFrame">bartlett</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Bartlett window.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/blackman.html" target="contentFrame">blackman</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Blackman window.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/db2mag.html" target="contentFrame">db2mag</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert a gain in decibels (dB) to a magnitude.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/db2pow.html" target="contentFrame">db2pow</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert a gain in decibels (dB) to power.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/filter2.html" target="contentFrame">filter2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">2-D digital filter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/hamming.html" target="contentFrame">hamming</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Hamming window.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/hann.html" target="contentFrame">hann</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Hann window.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/mag2db.html" target="contentFrame">mag2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert a magnitude to decibels (dB).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/pow2db.html" target="contentFrame">pow2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert power to decibel.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/sinc.html" target="contentFrame">sinc</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sinc function.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/xcorr2.html" target="contentFrame">xcorr2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">2-D cross-correlation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/zp2tf.html" target="contentFrame">zp2tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Zero-pole to transfer function conversion.</div>
+</li>
+</ul>
+</div>
+<div class="section">
 <div class="section-title">FFTW</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.</p>
       <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.</p>
       <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.</p>
@@ -2307,7 +2317,7 @@
 </div>
 <div class="section">
 <div class="section-title">Random</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Random module provides tools for generating random numbers and random sequences in Nelson.</p>
         <p>It supports uniform and normal distributions, random integer generation, permutations, and control over the random number generator state.</p>
         <p>This module is essential for simulations, probabilistic modeling, and stochastic computations.</p>
@@ -2332,7 +2342,7 @@
 </div>
 <div class="section">
 <div class="section-title">OS functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The OS Functions module provides tools for interacting with the operating system in Nelson.</p>
         <p>It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.</p>
         <p>This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux/Unix platforms.</p>
@@ -2390,7 +2400,7 @@
 </div>
 <div class="section">
 <div class="section-title">Files and folders functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.</p>
       <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.</p>
       <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.</p>
@@ -2463,7 +2473,7 @@
 </div>
 <div class="section">
 <div class="section-title">File archiver functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The File Archiver module provides tools for compressing and decompressing files in Nelson.</p>
         <p>It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.</p>
     </div>
@@ -2478,7 +2488,7 @@
 </div>
 <div class="section">
 <div class="section-title">Memory manager functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Memory Manager module provides tools for managing variables and memory in Nelson.</p>
         <p>It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.</p>
         <p>The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.</p>
@@ -2527,7 +2537,7 @@
 </div>
 <div class="section">
 <div class="section-title">Date and Time</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p>
         <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p>
         <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p>
@@ -2600,7 +2610,7 @@
 </div>
 <div class="section">
 <div class="section-title">Stream manager</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Stream Manager module provides tools for managing input and output streams in Nelson.</p>
         <p>It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.</p>
         <p>The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.</p>
@@ -2670,7 +2680,7 @@
 </div>
 <div class="section">
 <div class="section-title">HDF5</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The HDF5 module provides support for working with Hierarchical Data Format (HDF5) files in Nelson.</p>
         <p>It allows users to create datasets, read and write data and attributes, and explore file contents.</p>
         <p>In addition to standard HDF5 support, it includes utilities for Nelson's native .nh5 format, enabling users to save, load, and inspect workspace variables efficiently.</p>
@@ -2717,7 +2727,7 @@
 </div>
 <div class="section">
 <div class="section-title">MATIO</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.</p>
         <p>It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.</p>
         <p>With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.</p>
@@ -2741,8 +2751,26 @@
 </ul>
 </div>
 <div class="section">
+<div class="section-title">Xml Processing</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The XML module provides functions to create, convert, and manage XML documents for
+            Nelson.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./xml/xmlchecker.html" target="contentFrame">xmlchecker</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks a xmlfile against xsd.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./xml/xmlprettyprint.html" target="contentFrame">xmlprettyprint</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">format an XML file.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./xml/xmltransform.html" target="contentFrame">xmltransform</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">XML transformation using XSLT</div>
+</li>
+</ul>
+</div>
+<div class="section">
 <div class="section-title">JavaScript Object Notation</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>The JSON module provides functions to encode, decode, and format JSON data, allowing easy
 			exchange of structured information between Nelson and external systems.</p>
 		<p>JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used
@@ -2764,7 +2792,7 @@
 </div>
 <div class="section">
 <div class="section-title">Spreadsheet</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.</p>
         <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p>
         <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p>
@@ -2807,7 +2835,7 @@
 </div>
 <div class="section">
 <div class="section-title">Message Passing Interface</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
     <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto
       standard for implementing programs on multiple processors.</p>
     <p>This module provides functions to initialize, manage, and finalize MPI environments, as well
@@ -2885,7 +2913,7 @@
 </div>
 <div class="section">
 <div class="section-title">Parallel</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The parallel module provides tools for running computations asynchronously in the
             background, managing task scheduling, and retrieving results.</p>
         <p>It enables Nelson programs to execute functions concurrently, improving efficiency and
@@ -2923,7 +2951,7 @@
 </div>
 <div class="section">
 <div class="section-title">Inter Process Communication</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>The ipc module provides basic tools for interacting with processes and enabling communication between them.</p>
       <p>It allows retrieving process identifiers and using a communicator object for exchanging information across Nelson processes.</p> 
     </div>
@@ -2938,7 +2966,7 @@
 </div>
 <div class="section">
 <div class="section-title">Audio playback functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>The audio module provides functions for reading, writing, analyzing, and playing audio files.</p>
 		<p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.</p>
 		<p>It also includes utilities for signal conversion and sound generation.</p>
@@ -3020,7 +3048,7 @@
 </div>
 <div class="section">
 <div class="section-title">Graphics functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The graphics module provides functions for creating, customizing, and managing plots,
             figures, colormaps, and graphical objects.</p>
         <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
@@ -3331,7 +3359,7 @@
 </div>
 <div class="section">
 <div class="section-title">Graphics I/O functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Graphics I/O module provides functions for importing, exporting, and managing
             graphical content and image formats.</p>
         <p>It supports reading and writing image files, copying figures, and saving plots in various
@@ -3357,7 +3385,7 @@
 </div>
 <div class="section">
 <div class="section-title">Image Processing functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Image Processing module provides basic operations for manipulating images, including
             format conversion, resizing, and rotation.</p>
     </div>
@@ -3375,7 +3403,7 @@
 </div>
 <div class="section">
 <div class="section-title">Gui module</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The GUI module provides functions to create and interact with graphical user interface
             components, dialogs, and application windows.</p>
     </div>
@@ -3423,7 +3451,7 @@
 </div>
 <div class="section">
 <div class="section-title">QML engine</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p>
         <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p>
     </div>
@@ -3513,7 +3541,7 @@
 </div>
 <div class="section">
 <div class="section-title">Text editor</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Text Editor module provides an embedded Nelson editor for creating, editing, and
             formatting Nelson scripts and files.</p>
     </div>
@@ -3531,7 +3559,7 @@
 </div>
 <div class="section">
 <div class="section-title">Web tools</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The WebTools module provides functions to interact with web resources, transfer data via
             URLs, and work with RESTful web services.</p>
     </div>
@@ -3561,7 +3589,7 @@
 </div>
 <div class="section">
 <div class="section-title">Nelson in the cloud</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.</p>
     </div>
 <ul class="toc-list">
@@ -3575,7 +3603,7 @@
 </div>
 <div class="section">
 <div class="section-title">Dynamic link</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p>
         <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p>
         <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p>
@@ -3693,7 +3721,7 @@
 </div>
 <div class="section">
 <div class="section-title">MEX functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
     <p>The MEX (MATLAB Executable) module allows C/C++ code to interface with Nelson, extending its
       functionality and enabling access to Nelson’s engine, variables, and functions.</p>
   </div>
@@ -3747,7 +3775,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fortran to C</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The F2C module allows Nelson users to convert legacy Fortran 77 source files into C code.</p>
         <p>This enables seamless integration of older Fortran routines into Nelson workflows,
             supporting compilation, execution, and interaction with Nelson variables.</p>
@@ -3760,7 +3788,7 @@
 </div>
 <div class="section">
 <div class="section-title">NIG</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The NIG module provides tools to easily interface C or Fortran functions with Nelson.</p>
         <p>It simplifies the process of creating gateways that allow compiled routines to be called
             directly from Nelson scripts or functions, enabling high-performance computation and
@@ -3771,188 +3799,8 @@
 </li></ul>
 </div>
 <div class="section">
-<div class="section-title">Component Object Model (COM) Client Interface</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-      <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p>
-      <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p>
-      <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/1_COM_examples.html" target="contentFrame">COM examples</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Some example to show how to use COM interface.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_delete.html" target="contentFrame">COM_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Removes COM control or server.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_fieldnames.html" target="contentFrame">COM_fieldnames</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns the properties name of an COM object.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_get.html" target="contentFrame">COM_get</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Get property value from COM interface.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_invoke.html" target="contentFrame">COM_invoke</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Invoke method on COM object or interface.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_ismethod.html" target="contentFrame">COM_ismethod</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determines if input is an existing COM object method.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_isprop.html" target="contentFrame">COM_isprop</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determines if input is an existing COM object property.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_methods.html" target="contentFrame">COM_methods</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns the methods name of an COM object.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_range.html" target="contentFrame">COM_range</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Private function: range helper.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_set.html" target="contentFrame">COM_set</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Set object or interface property to specified value.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_used.html" target="contentFrame">COM_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns list of current used COM handle.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_xlsfinfo.html" target="contentFrame">COM_xlsfinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determines if file contains Microsoft Excel spreadsheet.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_xlsread.html" target="contentFrame">COM_xlsread</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Read Microsoft Excel spreadsheet file using COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_xlswrite.html" target="contentFrame">COM_xlswrite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Write Microsoft Excel spreadsheet file using COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxGetRunningServer.html" target="contentFrame">actxGetRunningServer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Handle to running instance of Automation server.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxcontrollist.html" target="contentFrame">actxcontrollist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Get available ActiveX controls.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxserver.html" target="contentFrame">actxserver</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Creates COM server.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxserverlist.html" target="contentFrame">actxserverlist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Get available ActiveX servers.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/iscom.html" target="contentFrame">iscom</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determine whether input is COM or ActiveX object.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Python engine</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Python Engine module allows Nelson users to seamlessly interface with Python,
-            leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.</p>
-        <p>It provides functions to run Python code, manage interpreter environments, and exchange
-            data between Nelson and Python.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/1_The_power_of_Python.html" target="contentFrame">The power of calling Python from Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/2_How_to_install_python_package.html" target="contentFrame">How to install python package</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/3_python_types.html" target="contentFrame">Python Nelson types</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Managing Data between Python and Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/4_python_overload.html" target="contentFrame">Python operators</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">The representation of Python operators in Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyargs.html" target="contentFrame">pyargs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change default environment of Python interpreter.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyenv.html" target="contentFrame">pyenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change default environment of Python interpreter.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyrun.html" target="contentFrame">pyrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Python statements from Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyrunfile.html" target="contentFrame">pyrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Python file from Nelson.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Julia engine</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.</p>
-        <p>It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/jlenv.html" target="contentFrame">jlenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change default environment of Julia interpreter.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/jlrun.html" target="contentFrame">jlrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Julia statements from Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/jlrunfile.html" target="contentFrame">jlrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Julia file from Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/julia_types.html" target="contentFrame">Julia Nelson types</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Managing Data between Julia and Nelson.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">History manager</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The History Manager module in Nelson provides tools to access and manage the command
-            history of your session.</p>
-        <p>It allows users to review previously executed commands, recall them for reuse, and
-            maintain an organized workflow.</p>
-    </div>
-<ul class="toc-list"><li class="toc-entry">
-<a class="toc-link" href="./history_manager/history.html" target="contentFrame">history</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">history manager.</div>
-</li></ul>
-</div>
-<div class="section">
-<div class="section-title">Debugger functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Debugger module in Nelson provides functions to inspect and analyze program
-            execution.</p>
-        <p>It is designed to help users identify errors, trace the flow of execution, and better
-            understand the state of variables during runtime.</p>
-    </div>
-<ul class="toc-list"><li class="toc-entry">
-<a class="toc-link" href="./debugger/dbstack.html" target="contentFrame">dbstack</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">call stack.</div>
-</li></ul>
-</div>
-<div class="section">
-<div class="section-title">Profiling tools</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.</p>
-        <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./profiler/profile.html" target="contentFrame">profile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Profile execution time for Macro functions.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./profiler/profsave.html" target="contentFrame">profsave</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Save profile result to HTML format.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Tests framework for Nelson</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.</p>
-        <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./tests_manager/test_makeref.html" target="contentFrame">test_makeref</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Creates a '.ref' file for a test</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./tests_manager/test_run.html" target="contentFrame">test_run</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Runs tests</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./tests_manager/test_skip_testsuite.html" target="contentFrame">skip_testsuite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Skip test suite on condition</div>
-</li>
-</ul>
-</div>
-<div class="section">
 <div class="section-title">Validators</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
         <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
         <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
@@ -4069,8 +3917,188 @@
 </ul>
 </div>
 <div class="section">
+<div class="section-title">Component Object Model (COM) Client Interface</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+      <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p>
+      <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p>
+      <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/1_COM_examples.html" target="contentFrame">COM examples</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Some example to show how to use COM interface.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_delete.html" target="contentFrame">COM_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Removes COM control or server.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_fieldnames.html" target="contentFrame">COM_fieldnames</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns the properties name of an COM object.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_get.html" target="contentFrame">COM_get</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Get property value from COM interface.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_invoke.html" target="contentFrame">COM_invoke</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Invoke method on COM object or interface.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_ismethod.html" target="contentFrame">COM_ismethod</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determines if input is an existing COM object method.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_isprop.html" target="contentFrame">COM_isprop</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determines if input is an existing COM object property.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_methods.html" target="contentFrame">COM_methods</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns the methods name of an COM object.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_range.html" target="contentFrame">COM_range</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Private function: range helper.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_set.html" target="contentFrame">COM_set</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Set object or interface property to specified value.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_used.html" target="contentFrame">COM_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Returns list of current used COM handle.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_xlsfinfo.html" target="contentFrame">COM_xlsfinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determines if file contains Microsoft Excel spreadsheet.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_xlsread.html" target="contentFrame">COM_xlsread</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Read Microsoft Excel spreadsheet file using COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_xlswrite.html" target="contentFrame">COM_xlswrite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Write Microsoft Excel spreadsheet file using COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxGetRunningServer.html" target="contentFrame">actxGetRunningServer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Handle to running instance of Automation server.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxcontrollist.html" target="contentFrame">actxcontrollist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Get available ActiveX controls.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxserver.html" target="contentFrame">actxserver</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Creates COM server.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxserverlist.html" target="contentFrame">actxserverlist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Get available ActiveX servers.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/iscom.html" target="contentFrame">iscom</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determine whether input is COM or ActiveX object.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Python engine</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Python Engine module allows Nelson users to seamlessly interface with Python,
+            leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.</p>
+        <p>It provides functions to run Python code, manage interpreter environments, and exchange
+            data between Nelson and Python.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/1_The_power_of_Python.html" target="contentFrame">The power of calling Python from Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/2_How_to_install_python_package.html" target="contentFrame">How to install python package</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/3_python_types.html" target="contentFrame">Python Nelson types</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Managing Data between Python and Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/4_python_overload.html" target="contentFrame">Python operators</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">The representation of Python operators in Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyargs.html" target="contentFrame">pyargs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change default environment of Python interpreter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyenv.html" target="contentFrame">pyenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change default environment of Python interpreter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyrun.html" target="contentFrame">pyrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Python statements from Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyrunfile.html" target="contentFrame">pyrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Python file from Nelson.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Julia engine</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.</p>
+        <p>It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/jlenv.html" target="contentFrame">jlenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change default environment of Julia interpreter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/jlrun.html" target="contentFrame">jlrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Julia statements from Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/jlrunfile.html" target="contentFrame">jlrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Run Julia file from Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/julia_types.html" target="contentFrame">Julia Nelson types</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Managing Data between Julia and Nelson.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">History manager</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The History Manager module in Nelson provides tools to access and manage the command
+            history of your session.</p>
+        <p>It allows users to review previously executed commands, recall them for reuse, and
+            maintain an organized workflow.</p>
+    </div>
+<ul class="toc-list"><li class="toc-entry">
+<a class="toc-link" href="./history_manager/history.html" target="contentFrame">history</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">history manager.</div>
+</li></ul>
+</div>
+<div class="section">
+<div class="section-title">Debugger functions</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Debugger module in Nelson provides functions to inspect and analyze program
+            execution.</p>
+        <p>It is designed to help users identify errors, trace the flow of execution, and better
+            understand the state of variables during runtime.</p>
+    </div>
+<ul class="toc-list"><li class="toc-entry">
+<a class="toc-link" href="./debugger/dbstack.html" target="contentFrame">dbstack</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">call stack.</div>
+</li></ul>
+</div>
+<div class="section">
+<div class="section-title">Profiling tools</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.</p>
+        <p>It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./profiler/profile.html" target="contentFrame">profile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Profile execution time for Macro functions.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./profiler/profsave.html" target="contentFrame">profsave</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Save profile result to HTML format.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Tests framework for Nelson</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.</p>
+        <p>This module supports creating reference outputs, running test suites, and conditionally skipping tests.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./tests_manager/test_makeref.html" target="contentFrame">test_makeref</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Creates a '.ref' file for a test</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./tests_manager/test_run.html" target="contentFrame">test_run</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Runs tests</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./tests_manager/test_skip_testsuite.html" target="contentFrame">skip_testsuite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Skip test suite on condition</div>
+</li>
+</ul>
+</div>
+<div class="section">
 <div class="section-title">Assertion functions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Asserts Functions module in Nelson provides tools for validating program behavior and
       verifying conditions during development or testing.</p>
         <p>These functions help ensure that computations and logical conditions meet expected criteria,
@@ -4099,7 +4127,7 @@
 </div>
 <div class="section">
 <div class="section-title">Documentation and Help Management</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>The Help Tools module provides functions to create, convert, and manage documentation for
             Nelson.</p>
         <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF,
@@ -4108,7 +4136,13 @@
     </div>
 <ul class="toc-list">
 <li class="toc-entry">
+<a class="toc-link" href="./help_tools/1_nelson_help_reference.html" target="contentFrame">nelson help reference</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">How to write help XML files for Nelson (elements, attributes, examples, tips).</div>
+</li>
+<li class="toc-entry">
 <a class="toc-link" href="./help_tools/buildhelp.html" target="contentFrame">buildhelp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Build help of Nelson's modules.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./help_tools/buildhelpjson.html" target="contentFrame">buildhelpjson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Build help of Nelson JSON format.</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/buildhelpmd.html" target="contentFrame">buildhelpmd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Build help of Nelson's modules for GitBook.</div>
@@ -4127,6 +4161,9 @@
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/headcomments.html" target="contentFrame">headcomments</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Display Nelson function header comments.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./help_tools/help.html" target="contentFrame">help</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Help for functions in Command Window.</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/htmltopdf.html" target="contentFrame">htmltopdf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convers html page to pdf.</div>

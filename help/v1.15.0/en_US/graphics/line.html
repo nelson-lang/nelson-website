@@ -5,7 +5,17 @@
 <title>line</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">line</span></div></div>
@@ -81,7 +91,7 @@ go = line(ax, x, y, z, propertyName, propertyValue)
                                 <p>
                                     <b>LineWidth</b> Line width: scalar positive value.</p>
                                     <p>
-                                        <b>Marker</b>Marker symbol: 'o' (circle), '+' (Plus sign), '*' (asterik), '.' (point), 'x' (cross), '_' (horizontal line) , '|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '&gt;' (Right-pointing triangle), '&lt;' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default). </p>
+                                        <b>Marker</b> Marker symbol: 'o' (circle), '+' (Plus sign), '*' (asterik), '.' (point), 'x' (cross), '_' (horizontal line) , '|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '&gt;' (Right-pointing triangle), '&lt;' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default). </p>
                                         <p>
                                             <b>MarkerEdgeColor</b> Marker outline color: RGB triplet.</p>
                                             <p>
@@ -105,10 +115,10 @@ go = line(ax, x, y, z, propertyName, propertyValue)
                                                                                 <p>
                                                                                     <b>ZData</b> z values: vector, [] (default).</p>
                                                                                     <p>
-                                                                                        <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+                                                                                        <b>CreateFcn</b> Callback (function handle, string or cell) called when object is created.
 Set this property on an existing component has no effect.</p>
                                                                                         <p>
-                                                                                            <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+                                                                                            <b>DeleteFcn</b> Callback (function handle, string or cell) called when object is deleted.</p>
                                                                                             <p></p>
                                                                                             <p>
                                                                                                 <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>

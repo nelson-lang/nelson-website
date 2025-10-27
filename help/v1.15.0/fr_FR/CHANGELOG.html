@@ -49,18 +49,20 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <p>Enhanced random number generation engine with new algorithms: <code>simdTwister</code>, <code>combRecursive</code>, <code>philox</code>, and <code>threefry</code>.</p>
 </li>
 <li>
-<p>New functions for sparse matrix generation:</p>
-<ul>
-<li>
-<p><code>sprand</code>: Generate sparse matrices with uniformly distributed random values.</p>
-</li>
-<li>
-<p><code>sprandn</code>: Generate sparse matrices with normally distributed random values.</p>
-</li>
-<li>
 <p><code>randi</code>: Generate uniformly distributed random integers.</p>
 </li>
+<li>
+<p>New functions for sparse matrix generation:</p>
+<ul>
+<li><code>sprand</code>: Generate sparse matrices with uniformly distributed random values.</li>
+<li><code>sprandn</code>: Generate sparse matrices with normally distributed random values.</li>
 </ul>
+</li>
+<li>
+<p>Search Text in Console and Text Editor.</p>
+</li>
+<li>
+<p>Type support: Expanded support for missing types, increasing compatibility across functions and data structures.</p>
 </li>
 <li>
 <p><code>imresize</code>: Resize images by scale or to a specified output size, supporting both upscaling and downscaling.</p>
@@ -68,18 +70,10 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>
 <p>Variable Editor: Redesigned for improved usability and performance. Accessible via <code>openvar</code> or the GUI, it supports structured variables, tables, arrays, and nested data. Features include:</p>
 <ul>
-<li>
-<p>Dynamic table view.</p>
-</li>
-<li>
-<p>Real-time updates from the execution context.</p>
-</li>
-<li>
-<p>Enhanced performance for large datasets.</p>
-</li>
-<li>
-<p>Copy-paste compatibility with Excel, LibreOffice, and OpenOffice.</p>
-</li>
+<li>Dynamic table view.</li>
+<li>Real-time updates from the execution context.</li>
+<li>Enhanced performance for large datasets.</li>
+<li>Copy-paste compatibility with Excel, LibreOffice, and OpenOffice.</li>
 </ul>
 </li>
 <li>
@@ -110,6 +104,9 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <p><code>fwrite</code>: return also bytes count as second output argument.</p>
 </li>
 <li>
+<p><code>help</code>: Help for functions in Command Window.</p>
+</li>
+<li>
 <p>macOS Tahoe 26: CI setup and platform support.</p>
 </li>
 <li>
@@ -121,33 +118,16 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>
 <p>Help framework reworked for improved performance and usability:</p>
 <ul>
-<li>
-<p>Multithreaded builds for faster performance.</p>
-</li>
-<li>
-<p>Enhanced search capabilities with extended functionality.</p>
-</li>
-<li>
-<p>Improved maintainability using Extensible Stylesheet Language Transformations (XSLT).</p>
-</li>
-<li>
-<p>Unified stylesheet for consistent appearance online and offline.</p>
-</li>
-<li>
-<p>Removed internal usage of Qt help support.</p>
-</li>
-<li>
-<p>Replaced <code>http://</code> links with <code>https://</code> for secure connections.</p>
-</li>
-<li>
-<p>Removed the <code>help_browser</code> module.</p>
-</li>
-<li>
-<p>Added French language support for Help.</p>
-</li>
-<li>
-<p>Introduced support for LaTeX formulas.</p>
-</li>
+<li>Multithreaded builds for faster performance.</li>
+<li>Enhanced search capabilities with extended functionality.</li>
+<li>Improved maintainability using Extensible Stylesheet Language Transformations (XSLT).</li>
+<li>Unified stylesheet for consistent appearance online and offline.</li>
+<li>Removed internal usage of Qt help support.</li>
+<li>Dark theme.</li>
+<li>Added French language support for Help.</li>
+<li>Introduced support for LaTeX formulas.</li>
+<li>Replaced <code>http://</code> links with <code>https://</code> for secure connections.</li>
+<li>Removed the <code>help_browser</code> module.</li>
 </ul>
 </li>
 <li>
@@ -210,6 +190,9 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </li>
 <li>
 <p><a href="http://github.com/nelson-lang/nelson/issues/1462">#1462</a>: fwrite without specifying precision did not work as expected.</p>
+</li>
+<li>
+<p><code>eye</code> without input argument managed.</p>
 </li>
 </ul>
 <h2>1.14.0 - (2025-05-30)</h2>

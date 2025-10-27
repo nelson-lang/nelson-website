@@ -5,7 +5,17 @@
 <title>xmldocchecker</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">xmldocchecker</span></div></div>
@@ -13,10 +23,9 @@
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntax</div>
-<pre class="syntax-block"><code class="language-matlab">xmldocchecker(xmldocfilename)
-xmldocchecker(xmldocfilename, xsdfilename)
+<pre class="syntax-block"><code class="language-matlab">xmldocchecker()
+xmldocchecker(xmldocfilename)
 [state, errors_detected, warnings_detected] = xmldocchecker(xmldocfilename)
-[state, errors_detected, warnings_detected] = xmldocchecker(xmldocfilename, xsdfilename)
 </code></pre>
 </div>
 <div class="section">
@@ -30,10 +39,6 @@ xmldocchecker(xmldocfilename, xsdfilename)
 <tr>
 <td class="param-name">xmldocfilename</td>
 <td>a string: xml document.</td>
-</tr>
-<tr>
-<td class="param-name">xsdfilename</td>
-<td>a string: xsd document.</td>
 </tr>
 </table>
 </div>
@@ -65,8 +70,10 @@ xmldocchecker(xmldocfilename, xsdfilename)
 <div>
         <p>
             <b>xmldocchecker</b> is a tool to check that a xml document is valid.</p>
-            <p>Principally used to validate the structure and content of XML files against a defined schema.</p>
-        </div>
+            <p>Principally used to validate the structure and content of XML files against nelson's help documentation.</p>
+            <p>
+                <b>xmldocchecker()</b> check validity of all XML documentation files.</p>
+            </div>
 </div>
 <div class="section">
 <div class="section-title">
@@ -80,7 +87,7 @@ xmldocchecker(xmldocfilename, xsdfilename)
 <div class="section-title">
 <span class="syntax-icon">🔗</span>See Also</div>
 <div>
-<a class="see-also-link" href="../help_tools/buildhelp.html">buildhelp</a><a class="see-also-link" href="../help_tools/buildhelpweb.html">buildhelpweb</a>
+<a class="see-also-link" href="../xml/xmlchecker.html">xmlchecker</a><a class="see-also-link" href="../help_tools/buildhelp.html">buildhelp</a><a class="see-also-link" href="../help_tools/buildhelpweb.html">buildhelpweb</a>
 </div>
 </div>
 <div class="section">
@@ -94,6 +101,10 @@ xmldocchecker(xmldocfilename, xsdfilename)
 <tr>
 <td class="version">1.0.0</td>
 <td>initial version</td>
+</tr>
+<tr>
+<td class="version">1.15.0</td>
+<td>Use xmlchecker for XML validation.</td>
 </tr>
 </table>
 </div>

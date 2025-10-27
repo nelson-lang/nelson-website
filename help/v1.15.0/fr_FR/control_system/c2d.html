@@ -1,11 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>c2d</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">c2d</span></div></div>
@@ -33,15 +43,15 @@ sysd = c2d(sysc, Ts, 'prewarp', w0)
 </tr>
 <tr>
 <td class="param-name">B</td>
-<td>Input-to-state matrix: Nx-by-Nu matrix.</td>
+<td>Matrice entrée-état : matrice Nx-par-Nu.</td>
 </tr>
 <tr>
 <td class="param-name">Ts</td>
-<td>Sample time: positive scalar.</td>
+<td>Temps d'échantillonnage : scalaire positif.</td>
 </tr>
 <tr>
 <td class="param-name">sysc</td>
-<td>Continuous-time dynamic system: LTI model.</td>
+<td>Système dynamique en temps continu : modèle LTI.</td>
 </tr>
 <tr>
 <td class="param-name">method</td>
@@ -49,7 +59,7 @@ sysd = c2d(sysc, Ts, 'prewarp', w0)
 </tr>
 <tr>
 <td class="param-name">w0</td>
-<td>prewarp frequency.</td>
+<td>fréquence de pré-distorsion.</td>
 </tr>
 </table>
 </div>
@@ -63,15 +73,15 @@ sysd = c2d(sysc, Ts, 'prewarp', w0)
 </tr>
 <tr>
 <td class="param-name">P</td>
-<td>phi</td>
+<td>Matrice de transition d'état (phi)</td>
 </tr>
 <tr>
 <td class="param-name">G</td>
-<td>gamma</td>
+<td>gamma (matrice de commande discrète)</td>
 </tr>
 <tr>
 <td class="param-name">sysd</td>
-<td>Discrete-time model</td>
+<td>Modèle en temps discret</td>
 </tr>
 </table>
 </div>
@@ -79,8 +89,8 @@ sysd = c2d(sysc, Ts, 'prewarp', w0)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The function <b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model <b>sysc</b> using a zero-order hold on the inputs with a sample time of <b>Ts</b>.</p>
-        <p>For instance, you can use <b>sysd = c2d(sysc, Ts, method)</b> to explicitly specify the discretization method.</p>
+        <p>La fonction <b>sysd = c2d(sysc, Ts)</b> discrétise le modèle dynamique en temps continu <b>sysc</b> en utilisant un maintien d'ordre zéro sur les entrées avec un temps d'échantillonnage de <b>Ts</b>.</p>
+        <p>Par exemple, vous pouvez utiliser <b>sysd = c2d(sysc, Ts, method)</b> pour spécifier explicitement la méthode de discrétisation.</p>
     </div>
 </div>
 <div class="section">

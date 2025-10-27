@@ -5,7 +5,17 @@
 <title>betainc</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">betainc</span></div></div>
@@ -65,13 +75,13 @@ R = betainc(X, Z, W, tail)
             <b>betainc</b> computes the incomplete beta function (regularized).
         </p>
         <p>The incomplete beta function is defined as:</p>
-        <span class="latex-math">$$I_x(a,b) = \frac{B(x; a,b)}{B(a,b)} = \frac{1}{B(a,b)} \int_0^x t^{a-1} (1-t)^{b-1} \, dt$$</span>
+        <span class="math display">$$I_x(a,b) = \frac{B(x; a,b)}{B(a,b)} = \frac{1}{B(a,b)} \int_0^x t^{a-1} (1-t)^{b-1} \, dt$$</span>
         <p>where</p>
-        <span class="latex-math">$$B(a,b) = \int_0^1 t^{a-1} (1-t)^{b-1} \, dt$$</span>
+        <span class="math display">$$B(a,b) = \int_0^1 t^{a-1} (1-t)^{b-1} \, dt$$</span>
         <p>is the complete beta function, and:</p>
-        <span class="latex-math">$$B(a,b) = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$$</span>
+        <span class="math display">$$B(a,b) = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$$</span>
         <p>The function is normalized so that</p>
-        <span class="latex-math">$$I_1(a,b) = 1$$</span>.
+        <span class="math display">$$I_1(a,b) = 1$$</span>.
         <p>All arrays must be the same size or any of them can be scalar.</p>
     </div>
 </div>

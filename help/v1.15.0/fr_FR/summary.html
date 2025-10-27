@@ -3,11 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
 </head>
 <body>
 <img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="./homepage.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
 <div class="section-title">Nelson Documentation</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Nelson est un environnement de calcul scientifique open-source conçu pour l'analyse numérique, la visualisation de données et le développement d'algorithmes.</p>
         <p>Conçu pour la performance et la facilité d'utilisation, Nelson fournit une suite complète de fonctions mathématiques, de structures de données avancées et d'outils de visualisation puissants.</p>
         <p>Cette documentation sert de guide de référence complet sur les fonctions intégrées de Nelson, son système de modules et ses capacités de programmation - des opérations mathématiques de base aux tâches de calcul avancées.</p>
@@ -16,7 +26,7 @@
 </div>
 <div class="section">
 <div class="section-title">Gestionnaire de fonctions</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le gestionnaire de fonctions fournit des outils pour gérer et interagir avec le chemin de recherche des fonctions de Nelson et les types de fonctions.</p> 
         <p>Il comprend des commandes pour ajouter ou supprimer des répertoires du chemin de recherche, exécuter des fonctions intégrées, effacer des fonctions intégrées, évaluer des fonctions, et plus encore.</p> 
         <p>Des utilitaires sont disponibles pour vérifier l'existence de fonctions intégrées, macro ou mex.</p>
@@ -77,7 +87,7 @@
 </div>
 <div class="section">
 <div class="section-title">Gestionnaire de modules</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le gestionnaire de modules (Modules Manager) de Nelson fournit l'infrastructure pour étendre et gérer l'environnement à l'exécution.</p>
         <p>Il permet d'ajouter, de supprimer et d'interroger dynamiquement des modules, rendant le système flexible et adapté à différents flux de travail.</p> 
         <p>Avec la prise en charge des modules internes et externes, le gestionnaire traite les métadonnées, les chemins et la gestion des versions des modules.</p>
@@ -137,7 +147,7 @@
 </div>
 <div class="section">
 <div class="section-title">Core</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module core fournit les éléments fondamentaux de l'environnement Nelson.</p>
         <p>Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.</p>
         <p>Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.</p>
@@ -230,7 +240,7 @@
 </div>
 <div class="section">
 <div class="section-title">Moteur</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Engine gère l'environnement d'exécution de Nelson lui-même.</p>
         <p>Il fournit des mécanismes pour gérer le démarrage et l'arrêt du programme, l'intégration en ligne de commande et les modes d'exécution.</p>
         <p>Cela inclut le support des scripts d'initialisation et de terminaison définis par l'utilisateur, les exigences système spécifiques à la plateforme et les directives d'interpréteur pour l'exécution de scripts multiplateforme.</p>
@@ -265,7 +275,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de l'interpréteur</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
      <p>Le module Fonctions de l'interpréteur fournit les constructions de langage de base et les mécanismes de contrôle qui définissent le flux d'exécution dans Nelson.</p>
      <p>Il inclut des éléments essentiels tels que les boucles, les branchements conditionnels, la gestion des erreurs et les déclarations de fonctions.</p>
      <p>Le module propose également des outils pour analyser le code, travailler avec les mots-clés et gérer les limites de récursion.</p>
@@ -333,7 +343,7 @@
 </div>
 <div class="section">
 <div class="section-title">Gestion des erreurs</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Error Manager fournit les mécanismes de gestion des erreurs et des avertissements dans Nelson.</p>
         <p>Il définit comment les exceptions sont créées, levées et relancées, ainsi que la manière de récupérer les informations diagnostiques après qu'une erreur ou un avertissement se soit produit.</p>
         <p>Ce module permet aux utilisateurs de gérer le flux d'exécution en présence d'échecs, de capturer des rapports d'erreur significatifs et d'afficher des avertissements sans interrompre l'exécution du programme.</p>
@@ -371,7 +381,7 @@
 </div>
 <div class="section">
 <div class="section-title">Console</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Console gère l'interaction avec la fenêtre de commande de Nelson.</p>
         <p>Il fournit des outils pour contrôler l'affichage, gérer les entrées utilisateur et interroger les propriétés du terminal.</p>
         <p>Ces fonctionnalités permettent aux scripts et applications de communiquer directement avec l'utilisateur via la console, facilitant la construction de workflows interactifs et l'adaptation de la sortie à l'environnement terminal actuel.</p>
@@ -390,7 +400,7 @@
 </div>
 <div class="section">
 <div class="section-title">Format d'affichage</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>Le module Format d'affichage définit la manière dont les valeurs, variables et expressions sont présentées dans Nelson.</p>
 		<p>Il offre un contrôle sur le formatage numérique, la représentation du texte et la façon dont les résultats sont affichés dans la console.</p>
 		<p>Le module fournit également des mécanismes pour capturer la sortie formatée de manière programmatique, permettant à la fois un affichage lisible par l'humain et un traitement programmatique des résultats.</p>
@@ -416,7 +426,7 @@
 </div>
 <div class="section">
 <div class="section-title">Encodage des caractères</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
        <p>Le module d'encodage des caractères fournit des outils pour convertir entre les représentations d'octets natifs et les caractères Unicode.</p>
        <p>Il permet aux scripts d'interpréter et de manipuler correctement le texte dans divers encodages, assurant la compatibilité entre différentes plateformes et locales.</p>
        <p>Le module inclut également des fonctionnalités pour détecter les jeux de caractères qui correspondent à une entrée donnée, facilitant le traitement fiable du texte et l'internationalisation.</p>
@@ -435,7 +445,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de localisation</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
     <p>Le module de localisation gère les paramètres de langue et l'internationalisation dans Nelson.</p>
     <p>Il fournit des mécanismes pour interroger les langues disponibles, déterminer la langue actuelle et par défaut, et changer dynamiquement la langue de l'interface.</p>
     <p>Ce module garantit que Nelson peut être adapté à différentes préférences linguistiques et régionales, en prenant en charge une expérience utilisateur multilingue.</p>
@@ -457,7 +467,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions I18n</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module i18n fournit des outils pour l'internationalisation et la localisation du texte dans Nelson.</p>
         <p>Il permet d'obtenir les chaînes traduites pour la locale courante, prend en charge des utilitaires pour gérer les flux de travail de traduction et facilite la génération d'en-têtes de fichiers de traduction.</p>
         <p>Ce module aide les développeurs à créer des logiciels pouvant s'adapter dynamiquement à plusieurs langues et contextes culturels.</p>
@@ -479,7 +489,7 @@
 </div>
 <div class="section">
 <div class="section-title">Types module</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Types fournit des outils pour gérer et inspecter les types de données dans Nelson.</p>
         <p>Il permet aux utilisateurs d'interroger la nature des variables, de distinguer les types numériques, logiques, de chaîne et d'objet, et de travailler avec des types spécialisés tels que les tableaux creux (sparse) ou entiers.</p>
         <p>Le module prend également en charge la création d'objets et la validation des noms de variables, contribuant à garantir la sécurité des types et la cohérence des scripts et fonctions.</p>
@@ -573,7 +583,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de type logique</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module de type logique fournit des outils pour travailler avec les valeurs booléennes et les opérations logiques dans Nelson.</p>
         <p>Il permet la création, la conversion et la manipulation de données logiques, en prenant en charge des opérations logiques fondamentales essentielles pour le contrôle de flux, l'évaluation conditionnelle et la prise de décision dans les scripts et programmes.</p>
     </div>
@@ -594,7 +604,7 @@
 </div>
 <div class="section">
 <div class="section-title">Type simple précision</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Single fournit des outils pour gérer les valeurs numériques en simple précision dans Nelson.</p>
         <p>Il permet la conversion de variables au format simple précision, permettant un stockage et un calcul efficaces tout en maintenant une précision numérique suffisante pour de nombreuses applications.</p>
     </div>
@@ -604,7 +614,7 @@
 </div>
 <div class="section">
 <div class="section-title">Double</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>Le module Type Double fournit des outils pour gérer les valeurs numériques en précision double dans Nelson.</p>
 		<p>Il permet la conversion en double précision et donne accès aux limites numériques importantes, facilitant des calculs haute précision et la gestion fiable de nombres à virgule flottante très grands ou très petits pour les applications mathématiques et scientifiques.</p>
 	</div>
@@ -625,7 +635,7 @@
 </div>
 <div class="section">
 <div class="section-title">Types entiers</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Types entiers fournit des outils pour travailler avec des entiers signés et non signés de différentes tailles dans Nelson.</p>
         <p>Ces types sont particulièrement utiles pour stocker et traiter efficacement de grands jeux de données, tels que des images ou de grands tableaux numériques.</p>
         <p>Le module prend en charge les conversions entre formats entiers et fournit l'accès aux valeurs minimale et maximale représentables pour chaque type entier, garantissant des calculs entiers sûrs et précis.</p>
@@ -665,7 +675,7 @@
 </div>
 <div class="section">
 <div class="section-title">Type sparse</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Type Sparse fournit des outils pour créer et manipuler des matrices creuses dans Nelson.</p>
         <p>Il prend en charge le stockage et le calcul efficaces pour les matrices avec un grand nombre d'éléments zéro, y compris la conversion entre les représentations creuses et pleines, la génération de matrices creuses spéciales, et l'accès aux éléments non nuls.</p>
         <p>Ce module permet une gestion efficace en mémoire de grands ensembles de données et des opérations numériques optimisées sur des structures creuses.</p>
@@ -702,7 +712,7 @@
 </div>
 <div class="section">
 <div class="section-title">Type Chaîne</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Type Chaîne fournit des outils complets pour créer, manipuler et analyser du texte dans Nelson.</p>
         <p>Il prend en charge la conversion entre tableaux de caractères et tableaux de chaînes, la concaténation, le nettoyage, la justification et la conversion de casse.</p>
         <p>Le module inclut également des fonctions pour rechercher, faire correspondre, remplacer et formater des chaînes, permettant un traitement textuel flexible pour des opérations simples ou avancées.</p>
@@ -820,7 +830,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de function_handle</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Function Handle fournit des outils pour créer et gérer les function handles dans Nelson.</p>
         <p>Il prend en charge les fonctions anonymes, la conversion entre chaînes et function handles, ainsi que la vérification des objets function_handle.</p>
         <p>Ce module permet une invocation de fonctions flexible et dynamique, autorisant le passage, le stockage et l'exécution programmatiques de fonctions.</p>
@@ -842,7 +852,7 @@
 </div>
 <div class="section">
 <div class="section-title">Handle</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Handle fournit des outils pour créer et manipuler des objets handle dans Nelson.</p>
         <p>Les objets handle sont des références légères vers des structures de données plus volumineuses, permettant une gestion efficace de la mémoire et le partage de données entre différentes parties d'un programme.</p>
         <p>Ce module inclut des fonctions pour créer, copier et détruire des objets handle, ainsi que pour gérer leur durée de vie et garantir un nettoyage approprié.</p>
@@ -879,7 +889,7 @@
 </div>
 <div class="section">
 <div class="section-title">Structures de données</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Structures de données fournit des outils pour créer, manipuler et inspecter des tableaux, cellules et structures dans Nelson.</p>
         <p>Il permet la conversion entre différents formats de données, l'accès et la modification des champs, l'application de fonctions aux éléments de tableaux et l'organisation des données structurées.</p>
         <p>Ce module facilite la gestion flexible des données complexes, en prenant en charge les opérations programmatiques et la gestion dynamique des données.</p>
@@ -946,7 +956,7 @@
 </div>
 <div class="section">
 <div class="section-title">Dictionnaires</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module Dictionnaire fournit des outils pour travailler avec des paires clé-valeur dans Nelson.</p>
       <p>Il permet la création et la configuration de dictionnaires avec des types définis pour les clés et les valeurs, la consultation et la modification des entrées, ainsi que la gestion de la structure globale.</p>
       <p>Ce module permet un stockage, une récupération et une manipulation efficaces des données indexées par des clés uniques, ce qui le rend adapté aux tableaux associatifs, recherches et gestion dynamique des données.</p>
@@ -998,7 +1008,7 @@
 </div>
 <div class="section">
 <div class="section-title">Tables</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module Tables fournit des outils pour créer, accéder et manipuler des données tabulaires dans Nelson.</p>
       <p>Les tables sont des structures de type tableau avec des variables nommées (colonnes), chacune pouvant contenir différents types de données.</p>
     </div>
@@ -1059,7 +1069,7 @@
 </div>
 <div class="section">
 <div class="section-title">Surcharge</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module Surcharge fournit des mécanismes pour personnaliser le comportement des fonctions et des opérateurs dans Nelson.</p>
       <p>Il permet aux utilisateurs de définir comment les opérations standard ou les fonctions intégrées doivent se comporter lorsqu'elles sont appliquées à des types ou objets définis par l'utilisateur.</p>
       <p>Cette fonctionnalité permet d'étendre les capacités du langage Nelson, favorisant une utilisation plus naturelle et expressive des structures de données personnalisées.</p>
@@ -1070,7 +1080,7 @@
 </div>
 <div class="section">
 <div class="section-title">Opérateurs</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Operators fournit des outils pour effectuer des opérations arithmétiques, logiques, relationnelles et sur tableaux dans Nelson.</p>
         <p>Il prend en charge les calculs élément par élément et matriciels, la concaténation, l'indexation et l'affectation par indices, ainsi que les opérations logiques à court-circuit.</p>
         <p>Ce module permet une manipulation flexible des structures de données et des tableaux numériques, constituant la base des calculs simples comme des expressions mathématiques avancées.</p>
@@ -1194,7 +1204,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions constructeurs</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module Constructeurs fournit des outils pour créer des valeurs numériques fondamentales, des scalaires, des vecteurs et des matrices dans Nelson.</p>
       <p>Il comprend des constantes, des matrices identité et diagonales, et des valeurs spéciales telles que l'infini, NaN et la précision machine.</p>
       <p>Ce module constitue la base pour initialiser les structures de données et effectuer des calculs mathématiques et numériques.</p>
@@ -1231,7 +1241,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions élémentaires</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Fonctions élémentaires fournit un large éventail d'opérations mathématiques fondamentales et de manipulations de matrices dans Nelson.</p>
         <p>Il inclut des calculs numériques, des opérations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise à l'échelle, ainsi que diverses fonctions utilitaires pour interroger les propriétés des tableaux et des matrices.</p>
         <p>Le module prend également en charge la construction de matrices spéciales, de grilles et de séquences, facilitant l'implémentation robuste et efficace d'algorithmes mathématiques et d'analyses numériques.</p>
@@ -1520,7 +1530,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions trigonométriques</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Fonctions Trigonométriques fournit un ensemble complet de fonctions pour effectuer des calculs trigonométriques dans Nelson.</p>
         <p>Il inclut les fonctions trigonométriques standards telles que sinus, cosinus et tangente, ainsi que leurs inverses et leurs homologues hyperboliques. Le module prend en charge les mesures d'angle en degrés et en radians, permettant des calculs flexibles selon les préférences de l'utilisateur.</p>
         <p>De plus, le module propose des fonctions utilitaires pour convertir entre degrés et radians, facilitant l'intégration des calculs trigonométriques dans diverses applications mathématiques et d'ingénierie.</p>
@@ -1677,7 +1687,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions spéciales</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Fonctions Spéciales fournit des outils pour effectuer des opérations mathématiques avancées dans Nelson.</p>
         <p>Il inclut des fonctions pour les distributions statistiques, les calculs combinatoires, et d'autres calculs mathématiques spécialisés qui sont essentiels dans diverses applications scientifiques et d'ingénierie.</p>  
         <p>Ce module améliore les capacités de Nelson en offrant une gamme de fonctions qui supportent des analyses complexes et des tâches de modélisation.</p>
@@ -1718,7 +1728,7 @@
 </div>
 <div class="section">
 <div class="section-title">Algèbre linéaire</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Algèbre Linéaire fournit des outils complets pour effectuer des calculs matriciels et vectoriels dans Nelson.</p>
         <p>Il inclut des fonctions pour la factorisation, la décomposition, l'inversion et l'analyse de matrices, ainsi que des opérations sur les valeurs propres, valeurs singulières et sous-espaces.</p>
         <p>Le module prend en charge des méthodes numériques avancées pour évaluer les propriétés des matrices, les nombres de condition et les transformations, permettant des solutions efficaces et précises pour un large éventail de problèmes d'algèbre linéaire.</p>
@@ -1815,7 +1825,7 @@
 </div>
 <div class="section">
 <div class="section-title">Statistiques</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Statistiques fournit des outils pour analyser et résumer des données dans Nelson.</p>
         <p>Il comprend des fonctions pour calculer des mesures de tendance centrale, de variabilité, de corrélation et des distributions de probabilités.</p>
         <p>Le module prend également en charge des structures avancées de synthèse de données pour une estimation précise des quantiles, permettant une analyse statistique robuste et l'interprétation des jeux de données.</p>
@@ -1843,7 +1853,7 @@
 </div>
 <div class="section">
 <div class="section-title">Analyse de données</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
        <p>Le module Analyse de données fournit des outils pour effectuer des opérations numériques et des analyses basées sur des tableaux dans Nelson.</p>
        <p>Il prend en charge les opérations cumulatives, le tri, l'agrégation, la convolution et l'identification des valeurs uniques ou manquantes.</p>
        <p>Ce module permet un traitement, un résumé et une exploration efficaces des jeux de données, facilitant un large éventail de tâches analytiques et computationnelles.</p>
@@ -1889,7 +1899,7 @@
 </div>
 <div class="section">
 <div class="section-title">Polynomials</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Polynomials fournit des outils pour créer, manipuler et analyser des polynômes dans Nelson.</p>
         <p>Il prend en charge l'évaluation, la différentiation, l'intégration, l'ajustement (fitting), la recherche de racines et les opérations sur polynômes matriciels.</p>
         <p>Ce module permet une gestion efficace des expressions polynomiales pour la modélisation mathématique, l'ajustement de courbes et l'analyse numérique.</p>
@@ -1923,7 +1933,7 @@
 </div>
 <div class="section">
 <div class="section-title">Géométrie</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Géométrie fournit des outils pour effectuer des transformations et calculs géométriques dans Nelson.</p>
         <p>Il prend en charge les opérations de rotation en espace tridimensionnel, permettant la construction de matrices de transformation pour manipuler objets et systèmes de coordonnées.</p>
         <p>Ce module est utile pour des applications en infographie, robotique et analyse spatiale.</p>
@@ -1942,7 +1952,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de système de contrôle</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module Système de Contrôle fournit des algorithmes et des outils pour concevoir, analyser et ajuster des systèmes de contrôle linéaires dans Nelson.</p>
       <p>Il prend en charge les modèles d'espace d'état et de fonction de transfert, les transformations de système entre temps continu et discret, et le calcul des pôles, zéros et réponses en fréquence.</p>
       <p>Le module comprend également des fonctionnalités pour l'équilibrage des systèmes, l'analyse de contrôlabilité et d'observabilité, la conception de régulateurs et d'estimateurs, et la simulation des réponses des systèmes dynamiques.</p>
@@ -2135,54 +2145,8 @@
 </ul>
 </div>
 <div class="section">
-<div class="section-title">Traitement du signal</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>Le module Traitement du signal fournit des outils pour analyser et manipuler des signaux échantillonnés dans Nelson.</p>
-        <p>Il inclut des fonctions de fenêtrage, filtrage numérique, corrélation croisée, et des conversions entre représentations en magnitude, puissance et décibels.</p>
-        <p>Le module prend également en charge la transformation entre représentations pôles-zéros et fonctions de transfert, permettant une conception et une analyse efficaces des systèmes de traitement du signal en temps discret.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/bartlett.html" target="contentFrame">bartlett</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Bartlett.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/blackman.html" target="contentFrame">blackman</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Blackman.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/db2mag.html" target="contentFrame">db2mag</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit un gain en décibels (dB) en magnitude.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/db2pow.html" target="contentFrame">db2pow</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit un gain en décibels (dB) en puissance.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/filter2.html" target="contentFrame">filter2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Filtre numérique 2-D.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/hamming.html" target="contentFrame">hamming</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Hamming.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/hann.html" target="contentFrame">hann</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Hann.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/mag2db.html" target="contentFrame">mag2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit une magnitude en décibels (dB).</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/pow2db.html" target="contentFrame">pow2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit une puissance en décibels.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/sinc.html" target="contentFrame">sinc</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction sinc.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/xcorr2.html" target="contentFrame">xcorr2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Corrélation croisée 2-D.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./signal_processing/zp2tf.html" target="contentFrame">zp2tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Conversion zéros-pôles en fonction de transfert.</div>
-</li>
-</ul>
-</div>
-<div class="section">
 <div class="section-title">Bibliothèque de sous-programmes en théorie du contrôle</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module SLICOT fournit des algorithmes numériques avancés pour les calculs en automatique et théorie des systèmes.</p>
       <p>Il comprend des outils pour la factorisation de matrices, l'équilibrage de systèmes, l'analyse de stabilité, l'affectation de pôles et la résolution des équations de Lyapunov, Riccati et Sylvester.</p>
       <p>Le module prend en charge les systèmes temps continu et discret, y compris les systèmes descripteurs et multi-entrées, permettant une analyse, une conception et un contrôle précis et efficace des systèmes dynamiques complexes.</p>
@@ -2263,8 +2227,54 @@
 </ul>
 </div>
 <div class="section">
+<div class="section-title">Traitement du signal</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module Traitement du signal fournit des outils pour analyser et manipuler des signaux échantillonnés dans Nelson.</p>
+        <p>Il inclut des fonctions de fenêtrage, filtrage numérique, corrélation croisée, et des conversions entre représentations en magnitude, puissance et décibels.</p>
+        <p>Le module prend également en charge la transformation entre représentations pôles-zéros et fonctions de transfert, permettant une conception et une analyse efficaces des systèmes de traitement du signal en temps discret.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/bartlett.html" target="contentFrame">bartlett</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Bartlett.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/blackman.html" target="contentFrame">blackman</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Blackman.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/db2mag.html" target="contentFrame">db2mag</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit un gain en décibels (dB) en magnitude.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/db2pow.html" target="contentFrame">db2pow</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit un gain en décibels (dB) en puissance.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/filter2.html" target="contentFrame">filter2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Filtre numérique 2-D.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/hamming.html" target="contentFrame">hamming</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Hamming.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/hann.html" target="contentFrame">hann</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fenêtre de Hann.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/mag2db.html" target="contentFrame">mag2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit une magnitude en décibels (dB).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/pow2db.html" target="contentFrame">pow2db</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit une puissance en décibels.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/sinc.html" target="contentFrame">sinc</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction sinc.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/xcorr2.html" target="contentFrame">xcorr2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Corrélation croisée 2-D.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./signal_processing/zp2tf.html" target="contentFrame">zp2tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Conversion zéros-pôles en fonction de transfert.</div>
+</li>
+</ul>
+</div>
+<div class="section">
 <div class="section-title">FFTW</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module FFTW fournit des outils pour calculer les transformées de Fourier rapides dans Nelson.</p>
       <p>Il prend en charge les transformées unidimensionnelles, bidimensionnelles et multidimensionnelles, ainsi que les transformées inverses et les manipulations dans le domaine fréquentiel.</p>
       <p>Le module permet une analyse spectrale et un traitement du signal efficaces, en s'appuyant sur des algorithmes haute performance pour les données réelles et complexes.</p>
@@ -2304,7 +2314,7 @@
 </div>
 <div class="section">
 <div class="section-title">Aléatoire</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Random fournit des outils pour générer des nombres aléatoires et des séquences aléatoires dans Nelson.</p>
         <p>Il prend en charge les distributions uniforme et normale, la génération d'entiers aléatoires, les permutations et le contrôle de l'état du générateur de nombres aléatoires.</p>
         <p>Ce module est essentiel pour les simulations, la modélisation probabiliste et les calculs stochastiques.</p>
@@ -2329,7 +2339,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions du système d'exploitation</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Fonctions OS fournit des outils pour interagir avec le système d'exploitation dans Nelson.</p>
         <p>Il inclut des fonctions pour interroger les informations système, gérer les variables d'environnement, exécuter des commandes shell, générer des GUID et effectuer des opérations spécifiques à la plateforme.</p>
         <p>Ce module permet une intégration fluide des scripts Nelson avec le système d'exploitation sous-jacent sur Windows, macOS et Linux/Unix.</p>
@@ -2387,7 +2397,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de fichiers et dossiers</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module Fichiers et Dossiers fournit des outils pour gérer les fichiers, répertoires et chemins dans Nelson.</p>
       <p>Ce module prend en charge la navigation du système de fichiers, la création et la suppression de fichiers et répertoires, l'interrogation des propriétés, la construction et la résolution de chemins, ainsi que la gestion des séparateurs spécifiques à la plateforme.</p>
       <p>Ce module permet des opérations sur le système de fichiers efficaces et multi-plateformes dans les scripts et applications Nelson.</p>
@@ -2460,7 +2470,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions d'archivage de fichiers</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module File Archiver fournit des outils pour compresser et décompresser des fichiers dans Nelson.</p>
         <p>Il prend en charge la création d'archives zip et l'extraction de fichiers depuis des archives zip, permettant un stockage, un partage et une gestion efficaces des fichiers.</p>
     </div>
@@ -2475,7 +2485,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions du gestionnaire de mémoire</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Memory Manager fournit des outils pour gérer les variables et la mémoire dans Nelson.</p>
         <p>Il prend en charge la création, l'affectation, l'interrogation et la suppression de variables dans différentes portées, ainsi que la gestion des variables globales et persistantes.</p>
         <p>Le module permet également l'inspection de la mémoire, le verrouillage des variables et l'énumération du contenu de l'espace de travail, facilitant une utilisation efficace et contrôlée de la mémoire dans les scripts et applications.</p>
@@ -2524,7 +2534,7 @@
 </div>
 <div class="section">
 <div class="section-title">Date et Heure</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p>
         <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p>
         <p>Ce module permet une gestion précise du temps, la planification et la mesure de performance dans les scripts et applications.</p>
@@ -2597,7 +2607,7 @@
 </div>
 <div class="section">
 <div class="section-title">Gestion des flux</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.</p>
         <p>Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.</p>
         <p>Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.</p>
@@ -2667,7 +2677,7 @@
 </div>
 <div class="section">
 <div class="section-title">HDF5</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module HDF5 fournit un support pour travailler avec des fichiers au format Hierarchical Data Format (HDF5) dans Nelson.</p>
         <p>Il permet de créer des jeux de données, de lire et d'écrire des données et attributs, et d'explorer le contenu des fichiers.</p>
         <p>En plus du support HDF5 standard, il inclut des utilitaires pour le format natif de Nelson .nh5, permettant d'enregistrer, charger et inspecter efficacement les variables de l'espace de travail.</p>
@@ -2714,7 +2724,7 @@
 </div>
 <div class="section">
 <div class="section-title">MATIO</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module MATIO fournit un support pour la lecture et l'écriture de fichiers MAT, un format largement utilisé pour stocker des données numériques dans MATLAB© et des environnements compatibles.</p>
         <p>Il permet à Nelson de vérifier la validité d'un fichier MAT, de charger et sauvegarder des variables d'espace de travail, et d'inspecter le contenu des fichiers.</p>
         <p>Grâce à ce module, les utilisateurs peuvent échanger des données entre Nelson et MATLAB©, ce qui en fait un composant clé pour l'interopérabilité dans les flux de travail scientifiques et d'ingénierie.</p>
@@ -2738,8 +2748,26 @@
 </ul>
 </div>
 <div class="section">
+<div class="section-title">Traitement XML</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module XML fournit des fonctions pour créer, convertir et gérer des documents XML pour
+            Nelson.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./xml/xmlchecker.html" target="contentFrame">xmlchecker</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Vérifie un fichier XML par rapport à un XSD.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./xml/xmlprettyprint.html" target="contentFrame">xmlprettyprint</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">formate un fichier XML.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./xml/xmltransform.html" target="contentFrame">xmltransform</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Transformation XML utilisant XSLT</div>
+</li>
+</ul>
+</div>
+<div class="section">
 <div class="section-title">JavaScript Object Notation (JSON)</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>Le module JSON fournit des fonctions pour encoder, décoder et formater des données JSON,
 			permettant l'échange facile d'informations structurées entre Nelson et des systèmes externes.</p>
 		<p>JSON (JavaScript Object Notation) est un format de données texte léger largement utilisé
@@ -2761,7 +2789,7 @@
 </div>
 <div class="section">
 <div class="section-title">Feuille de calcul</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Feuille de calcul fournit des fonctions pour lire et écrire des données tabulaires depuis et vers des formats de feuille de calcul basés sur du texte, tels que CSV et les fichiers séparés par délimiteurs.</p>
         <p>Il prend en charge l'importation vers différents types de données comme les tableaux numériques, les cellules de chaînes et les tables, ainsi que leur exportation vers des fichiers.</p>
         <p>Cela permet une interaction fluide avec les logiciels de tableur (Excel, LibreOffice Calc, etc.) et l'échange de données entre applications.</p>
@@ -2804,7 +2832,7 @@
 </div>
 <div class="section">
 <div class="section-title">Interface de passage de messages (MPI)</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
     <p>Dans le domaine du calcul parallèle, le Message Passing Interface (MPI) est la norme de facto
       pour implémenter des programmes sur plusieurs processeurs.</p>
     <p>Ce module fournit des fonctions pour initialiser, gérer et finaliser des environnements MPI,
@@ -2882,7 +2910,7 @@
 </div>
 <div class="section">
 <div class="section-title">Parallel</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module parallel fournit des outils pour exécuter des calculs de manière asynchrone en
             arrière-plan, gérer la planification des tâches et récupérer les résultats.</p>
         <p>Il permet aux programmes Nelson d'exécuter des fonctions de manière concurrente, améliorant
@@ -2920,7 +2948,7 @@
 </div>
 <div class="section">
 <div class="section-title">Communication inter-processus</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
       <p>Le module ipc fournit des outils de base pour interagir avec les processus et permettre la communication entre eux.</p>
       <p>Il permet de récupérer les identifiants de processus et d'utiliser un objet communicateur pour échanger des informations entre les processus Nelson.</p> 
     </div>
@@ -2935,7 +2963,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de lecture audio</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
 		<p>Le module audio fournit des fonctions pour lire, écrire, analyser et jouer des fichiers audio.</p>
 		<p>Il prend en charge le contrôle de lecture via l'objet audioplayer, la manipulation des propriétés de lecture et la gestion des métadonnées.</p>
 		<p>Il comprend également des utilitaires pour la conversion de signaux et la génération de sons.</p>
@@ -3017,7 +3045,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions graphiques</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques,
             figures, palettes de couleurs et objets graphiques.</p>
         <p>Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et
@@ -3328,7 +3356,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions d'entrée/sortie graphiques</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Graphics I/O fournit des fonctions pour importer, exporter et gérer le contenu graphique et les formats d'image.</p>
         <p>Il prend en charge la lecture et l'écriture de fichiers image, la copie de figures et l'enregistrement de tracés dans divers formats pour l'interopérabilité avec d'autres applications.</p>
     </div>
@@ -3352,7 +3380,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions de traitement d'image</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Image Processing fournit des opérations de base pour manipuler des images, y compris la conversion de format, le redimensionnement et la rotation.</p>
     </div>
 <ul class="toc-list">
@@ -3369,7 +3397,7 @@
 </div>
 <div class="section">
 <div class="section-title">Module GUI</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module GUI fournit des fonctions pour créer et interagir avec les composants d'interface graphique, les boîtes de dialogue et les fenêtres d'application.</p>
     </div>
 <ul class="toc-list">
@@ -3416,7 +3444,7 @@
 </div>
 <div class="section">
 <div class="section-title">Moteur QML</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.</p>
         <p>Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.</p>
     </div>
@@ -3506,7 +3534,7 @@
 </div>
 <div class="section">
 <div class="section-title">Text editor</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer, éditer et
             formater des scripts et fichiers Nelson.</p>
     </div>
@@ -3524,7 +3552,7 @@
 </div>
 <div class="section">
 <div class="section-title">Web tools</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module WebTools fournit des fonctions pour interagir avec des ressources web, transférer des données via des URLs et travailler avec des services web RESTful.</p>
     </div>
 <ul class="toc-list">
@@ -3553,7 +3581,7 @@
 </div>
 <div class="section">
 <div class="section-title">Nelson dans le cloud</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Ce module fournit des fonctions pour gérer les connexions, envoyer et recevoir des données, et gérer les événements dans un environnement cloud.</p>
     </div>
 <ul class="toc-list">
@@ -3567,7 +3595,7 @@
 </div>
 <div class="section">
 <div class="section-title">Liens dynamiques</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution.</p>
         <p>Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.</p>
         <p>Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois configuremsvc ou configuremingw.</p>
@@ -3685,7 +3713,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fonctions MEX</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
     <p>Le module MEX (MATLAB Executable) permet au code C/C++ d'interfacer avec Nelson, étendant ses
       fonctionnalités et donnant accès au moteur de Nelson, aux variables et aux fonctions.</p>
   </div>
@@ -3739,7 +3767,7 @@
 </div>
 <div class="section">
 <div class="section-title">Fortran vers C</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module F2C permet aux utilisateurs de Nelson de convertir des fichiers sources Fortran 77 hérités en code C.</p>
         <p>Cela permet une intégration transparente des routines Fortran plus anciennes dans les flux de travail Nelson, avec le support de la compilation, de l'exécution et de l'interaction avec les variables Nelson.</p>
         <p>Il est particulièrement utile pour réutiliser des algorithmes numériques existants ou des bases de code scientifiques héritées dans un environnement Nelson moderne.</p>
@@ -3750,7 +3778,7 @@
 </div>
 <div class="section">
 <div class="section-title">NIG</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module NIG fournit des outils pour interfacer facilement des fonctions C ou Fortran avec Nelson.</p>
         <p>Il simplifie le processus de création de gateways qui permettent d'appeler des routines compilées directement depuis des scripts ou fonctions Nelson, offrant des calculs haute-performance et la réutilisation de bibliothèques numériques existantes.</p>
     </div>
@@ -3759,184 +3787,8 @@
 </li></ul>
 </div>
 <div class="section">
-<div class="section-title">Interface client du modèle d'objet composant (COM)</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-      <p>Le module COM Engine permet à Nelson d'interagir avec les composants Windows COM (Component Object Model) et ActiveX.</p>
-      <p>Il permet l'automatisation des applications logicielles, l'accès à leurs méthodes et propriétés, et la manipulation d'objets COM directement depuis les scripts Nelson.</p>
-      <p>Cela fournit un moyen d'intégrer Nelson avec une large gamme de logiciels Windows, y compris les applications Microsoft Office.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/1_COM_examples.html" target="contentFrame">Exemples COM</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Quelques exemples pour montrer comment utiliser l'interface COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_delete.html" target="contentFrame">COM_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime un contrôle ou serveur COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_fieldnames.html" target="contentFrame">COM_fieldnames</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les noms des propriétés d'un objet COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_get.html" target="contentFrame">COM_get</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Obtenir la valeur d'une propriété depuis l'interface COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_invoke.html" target="contentFrame">COM_invoke</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Invoquer une méthode sur un objet ou interface COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_ismethod.html" target="contentFrame">COM_ismethod</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si l'entrée est une méthode existante d'un objet COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_isprop.html" target="contentFrame">COM_isprop</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si l'entrée est une propriété existante d'un objet COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_methods.html" target="contentFrame">COM_methods</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les noms des méthodes d'un objet COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_range.html" target="contentFrame">COM_range</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction privée : assistant de plage.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_set.html" target="contentFrame">COM_set</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Définir la propriété d'un objet ou interface à la valeur spécifiée.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_used.html" target="contentFrame">COM_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne la liste des handles COM actuellement utilisés.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_xlsfinfo.html" target="contentFrame">COM_xlsfinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si le fichier contient une feuille de calcul Microsoft Excel.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_xlsread.html" target="contentFrame">COM_xlsread</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lire un fichier de feuille de calcul Microsoft Excel en utilisant COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/COM_xlswrite.html" target="contentFrame">COM_xlswrite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Écrire un fichier de feuille de calcul Microsoft Excel en utilisant COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxGetRunningServer.html" target="contentFrame">actxGetRunningServer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Handle vers une instance en cours d'exécution du serveur Automation.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxcontrollist.html" target="contentFrame">actxcontrollist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Obtenir les contrôles ActiveX disponibles.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxserver.html" target="contentFrame">actxserver</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Crée un serveur COM.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/actxserverlist.html" target="contentFrame">actxserverlist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Obtenir les serveurs ActiveX disponibles.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./com_engine/iscom.html" target="contentFrame">iscom</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si l'entrée est un objet COM ou ActiveX.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Moteur Python</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>Le module Moteur Python permet aux utilisateurs de Nelson d'interfacer de manière transparente avec Python,
-            tirant parti de l'écosystème étendu de Python tout en conservant les fonctionnalités natives de Nelson.</p>
-        <p>Il fournit des fonctions pour exécuter du code Python, gérer les environnements d'interpréteur et échanger
-            des données entre Nelson et Python.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/1_The_power_of_Python.html" target="contentFrame">La puissance d'appeler Python depuis Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/2_How_to_install_python_package.html" target="contentFrame">Comment installer un paquet Python</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/3_python_types.html" target="contentFrame">Types Python - Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Gestion des données entre Python et Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/4_python_overload.html" target="contentFrame">Opérateurs Python</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">La représentation des opérateurs Python dans Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyargs.html" target="contentFrame">pyargs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Générer des arguments nommés pour les fonctions Python.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyenv.html" target="contentFrame">pyenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Modifier l'environnement par défaut de l'interpréteur Python.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyrun.html" target="contentFrame">pyrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécuter des instructions Python depuis Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./python_engine/pyrunfile.html" target="contentFrame">pyrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécuter un fichier Python depuis Nelson.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Moteur Julia</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>Le module Julia Engine permet aux utilisateurs de Nelson d'interfacer de manière transparente le langage de programmation Julia, combinant les capacités numériques haute-performance de Julia avec l'environnement Nelson.</p>
-        <p>Il fournit des fonctions pour exécuter du code Julia, gérer les environnements d'interpréteur et échanger des données entre Nelson et Julia.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/jlenv.html" target="contentFrame">jlenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Modifier l'environnement par défaut de l'interpréteur Julia.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/jlrun.html" target="contentFrame">jlrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute des instructions Julia depuis Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/jlrunfile.html" target="contentFrame">jlrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute un fichier Julia depuis Nelson.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./julia_engine/julia_types.html" target="contentFrame">Julia Nelson types</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Gestion des données entre Julia et Nelson.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Gestionnaire d'historique</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>Le module History Manager de Nelson fournit des outils pour accéder et gérer l'historique des commandes de votre session.</p>
-        <p>Il permet aux utilisateurs de revoir les commandes exécutées précédemment, de les rappeler pour les réutiliser et de maintenir un flux de travail organisé.</p>
-    </div>
-<ul class="toc-list"><li class="toc-entry">
-<a class="toc-link" href="./history_manager/history.html" target="contentFrame">history</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">gestionnaire d'historique.</div>
-</li></ul>
-</div>
-<div class="section">
-<div class="section-title">Fonctions de débogage</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>Le module Débogueur de Nelson fournit des fonctions pour inspecter et analyser l'exécution des programmes.</p>
-        <p>Il est conçu pour aider les utilisateurs à identifier les erreurs, tracer le flux d'exécution et mieux comprendre l'état des variables pendant l'exécution.</p>
-    </div>
-<ul class="toc-list"><li class="toc-entry">
-<a class="toc-link" href="./debugger/dbstack.html" target="contentFrame">dbstack</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Pile d'appels (call stack).</div>
-</li></ul>
-</div>
-<div class="section">
-<div class="section-title">Profiling tools</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>Le module Profiler de Nelson fournit des fonctions pour mesurer et analyser les performances d'exécution du code.</p>
-        <p>Il aide les utilisateurs à identifier les goulots d'étranglement, optimiser les parties lentes des programmes et améliorer l'efficacité globale.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./profiler/profile.html" target="contentFrame">profile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Profiler le temps d'exécution des fonctions Macro.</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./profiler/profsave.html" target="contentFrame">profsave</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Enregistrer les résultats du profilage au format HTML.</div>
-</li>
-</ul>
-</div>
-<div class="section">
-<div class="section-title">Outils de tests pour Nelson</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
-        <p>The Test Manager de Nelson fournit des outils pour les tests automatisés de code, permettant aux utilisateurs de valider les fonctionnalités, d'assurer la correction et de gérer efficacement les cas de test.</p>
-        <p>Ce module prend en charge la création de sorties de référence, l'exécution de suites de tests et la désactivation conditionnelle des tests.</p>
-    </div>
-<ul class="toc-list">
-<li class="toc-entry">
-<a class="toc-link" href="./tests_manager/test_makeref.html" target="contentFrame">test_makeref</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Crée un fichier '.ref' pour un test</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./tests_manager/test_run.html" target="contentFrame">test_run</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute les tests</div>
-</li>
-<li class="toc-entry">
-<a class="toc-link" href="./tests_manager/test_skip_testsuite.html" target="contentFrame">skip_testsuite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sauter la suite de tests selon une condition</div>
-</li>
-</ul>
-</div>
-<div class="section">
 <div class="section-title">Validateurs</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Validators fournit des outils pour appliquer des contraintes et vérifier les valeurs d'entrée dans Nelson.</p>
         <p>Il prend en charge la vérification des types de données, des propriétés numériques, des dimensions des matrices et des vecteurs, la validité des textes, l'existence de fichiers et de dossiers, ainsi que les conditions logiques ou numériques.</p>
         <p>Ce module assure une validation d'entrée robuste, contribuant à prévenir les erreurs, garantir l'exactitude et améliorer la fiabilité des scripts et fonctions.</p>
@@ -4053,8 +3905,184 @@
 </ul>
 </div>
 <div class="section">
+<div class="section-title">Interface client du modèle d'objet composant (COM)</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+      <p>Le module COM Engine permet à Nelson d'interagir avec les composants Windows COM (Component Object Model) et ActiveX.</p>
+      <p>Il permet l'automatisation des applications logicielles, l'accès à leurs méthodes et propriétés, et la manipulation d'objets COM directement depuis les scripts Nelson.</p>
+      <p>Cela fournit un moyen d'intégrer Nelson avec une large gamme de logiciels Windows, y compris les applications Microsoft Office.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/1_COM_examples.html" target="contentFrame">Exemples COM</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Quelques exemples pour montrer comment utiliser l'interface COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_delete.html" target="contentFrame">COM_delete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime un contrôle ou serveur COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_fieldnames.html" target="contentFrame">COM_fieldnames</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les noms des propriétés d'un objet COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_get.html" target="contentFrame">COM_get</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Obtenir la valeur d'une propriété depuis l'interface COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_invoke.html" target="contentFrame">COM_invoke</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Invoquer une méthode sur un objet ou interface COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_ismethod.html" target="contentFrame">COM_ismethod</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si l'entrée est une méthode existante d'un objet COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_isprop.html" target="contentFrame">COM_isprop</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si l'entrée est une propriété existante d'un objet COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_methods.html" target="contentFrame">COM_methods</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les noms des méthodes d'un objet COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_range.html" target="contentFrame">COM_range</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction privée : assistant de plage.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_set.html" target="contentFrame">COM_set</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Définir la propriété d'un objet ou interface à la valeur spécifiée.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_used.html" target="contentFrame">COM_used</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne la liste des handles COM actuellement utilisés.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_xlsfinfo.html" target="contentFrame">COM_xlsfinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si le fichier contient une feuille de calcul Microsoft Excel.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_xlsread.html" target="contentFrame">COM_xlsread</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lire un fichier de feuille de calcul Microsoft Excel en utilisant COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/COM_xlswrite.html" target="contentFrame">COM_xlswrite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Écrire un fichier de feuille de calcul Microsoft Excel en utilisant COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxGetRunningServer.html" target="contentFrame">actxGetRunningServer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Handle vers une instance en cours d'exécution du serveur Automation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxcontrollist.html" target="contentFrame">actxcontrollist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Obtenir les contrôles ActiveX disponibles.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxserver.html" target="contentFrame">actxserver</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Crée un serveur COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/actxserverlist.html" target="contentFrame">actxserverlist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Obtenir les serveurs ActiveX disponibles.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./com_engine/iscom.html" target="contentFrame">iscom</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Détermine si l'entrée est un objet COM ou ActiveX.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Moteur Python</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module Moteur Python permet aux utilisateurs de Nelson d'interfacer de manière transparente avec Python,
+            tirant parti de l'écosystème étendu de Python tout en conservant les fonctionnalités natives de Nelson.</p>
+        <p>Il fournit des fonctions pour exécuter du code Python, gérer les environnements d'interpréteur et échanger
+            des données entre Nelson et Python.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/1_The_power_of_Python.html" target="contentFrame">La puissance d'appeler Python depuis Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/2_How_to_install_python_package.html" target="contentFrame">Comment installer un paquet Python</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;"></div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/3_python_types.html" target="contentFrame">Types Python - Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Gestion des données entre Python et Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/4_python_overload.html" target="contentFrame">Opérateurs Python</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">La représentation des opérateurs Python dans Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyargs.html" target="contentFrame">pyargs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Générer des arguments nommés pour les fonctions Python.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyenv.html" target="contentFrame">pyenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Modifier l'environnement par défaut de l'interpréteur Python.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyrun.html" target="contentFrame">pyrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécuter des instructions Python depuis Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./python_engine/pyrunfile.html" target="contentFrame">pyrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécuter un fichier Python depuis Nelson.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Moteur Julia</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module Julia Engine permet aux utilisateurs de Nelson d'interfacer de manière transparente le langage de programmation Julia, combinant les capacités numériques haute-performance de Julia avec l'environnement Nelson.</p>
+        <p>Il fournit des fonctions pour exécuter du code Julia, gérer les environnements d'interpréteur et échanger des données entre Nelson et Julia.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/jlenv.html" target="contentFrame">jlenv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Modifier l'environnement par défaut de l'interpréteur Julia.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/jlrun.html" target="contentFrame">jlrun</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute des instructions Julia depuis Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/jlrunfile.html" target="contentFrame">jlrunfile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute un fichier Julia depuis Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./julia_engine/julia_types.html" target="contentFrame">Julia Nelson types</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Gestion des données entre Julia et Nelson.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Gestionnaire d'historique</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module History Manager de Nelson fournit des outils pour accéder et gérer l'historique des commandes de votre session.</p>
+        <p>Il permet aux utilisateurs de revoir les commandes exécutées précédemment, de les rappeler pour les réutiliser et de maintenir un flux de travail organisé.</p>
+    </div>
+<ul class="toc-list"><li class="toc-entry">
+<a class="toc-link" href="./history_manager/history.html" target="contentFrame">history</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">gestionnaire d'historique.</div>
+</li></ul>
+</div>
+<div class="section">
+<div class="section-title">Fonctions de débogage</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module Débogueur de Nelson fournit des fonctions pour inspecter et analyser l'exécution des programmes.</p>
+        <p>Il est conçu pour aider les utilisateurs à identifier les erreurs, tracer le flux d'exécution et mieux comprendre l'état des variables pendant l'exécution.</p>
+    </div>
+<ul class="toc-list"><li class="toc-entry">
+<a class="toc-link" href="./debugger/dbstack.html" target="contentFrame">dbstack</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Pile d'appels (call stack).</div>
+</li></ul>
+</div>
+<div class="section">
+<div class="section-title">Profiling tools</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>Le module Profiler de Nelson fournit des fonctions pour mesurer et analyser les performances d'exécution du code.</p>
+        <p>Il aide les utilisateurs à identifier les goulots d'étranglement, optimiser les parties lentes des programmes et améliorer l'efficacité globale.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./profiler/profile.html" target="contentFrame">profile</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Profiler le temps d'exécution des fonctions Macro.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./profiler/profsave.html" target="contentFrame">profsave</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Enregistrer les résultats du profilage au format HTML.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Outils de tests pour Nelson</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+        <p>The Test Manager de Nelson fournit des outils pour les tests automatisés de code, permettant aux utilisateurs de valider les fonctionnalités, d'assurer la correction et de gérer efficacement les cas de test.</p>
+        <p>Ce module prend en charge la création de sorties de référence, l'exécution de suites de tests et la désactivation conditionnelle des tests.</p>
+    </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="./tests_manager/test_makeref.html" target="contentFrame">test_makeref</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Crée un fichier '.ref' pour un test</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./tests_manager/test_run.html" target="contentFrame">test_run</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute les tests</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./tests_manager/test_skip_testsuite.html" target="contentFrame">skip_testsuite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sauter la suite de tests selon une condition</div>
+</li>
+</ul>
+</div>
+<div class="section">
 <div class="section-title">Fonctions d'assertion</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Fonctions d'assertion de Nelson fournit des outils pour valider le comportement des programmes et vérifier les conditions lors du développement ou des tests.</p>
         <p>Ces fonctions permettent de s'assurer que les calculs et conditions logiques respectent les critères attendus, améliorant la fiabilité du code et détectant les erreurs précocement.</p>
     </div>
@@ -4081,13 +4109,19 @@
 </div>
 <div class="section">
 <div class="section-title">Documentation et gestion de l'aide</div>
-<div class="chapter-desc" style="font-size:0.97em;color:#444;margin-bottom:10px;margin-left:24px;">
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
         <p>Le module Help Tools fournit des fonctions pour créer, convertir et gérer la documentation pour Nelson.</p>
         <p>Il prend en charge la génération de contenu d'aide dans plusieurs formats, y compris HTML, Markdown, PDF et formats prêts pour le web, permettant aux développeurs de maintenir et de distribuer efficacement une documentation complète.</p>
     </div>
 <ul class="toc-list">
 <li class="toc-entry">
+<a class="toc-link" href="./help_tools/1_nelson_help_reference.html" target="contentFrame">Aide Nelson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Comment rédiger des fichiers XML d'aide pour Nelson (éléments, attributs, exemples, conseils).</div>
+</li>
+<li class="toc-entry">
 <a class="toc-link" href="./help_tools/buildhelp.html" target="contentFrame">buildhelp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère l'aide des modules de Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./help_tools/buildhelpjson.html" target="contentFrame">buildhelpjson</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Construire l'aide de Nelson au format JSON.</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/buildhelpmd.html" target="contentFrame">buildhelpmd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Génère l'aide des modules de Nelson pour GitBook.</div>
@@ -4106,6 +4140,9 @@
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/headcomments.html" target="contentFrame">headcomments</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Affiche les commentaires d'en-tête d'une fonction Nelson.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="./help_tools/help.html" target="contentFrame">help</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Aide pour les fonctions dans la fenêtre de commande.</div>
 </li>
 <li class="toc-entry">
 <a class="toc-link" href="./help_tools/htmltopdf.html" target="contentFrame">htmltopdf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convertit une page HTML en PDF.</div>

@@ -1,11 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>dot</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dot</span></div></div>
@@ -57,19 +67,19 @@ R = dot(A, B, dim)
             <b>R = dot(A, B)</b> retourne le produit scalaire de <b>A</b> et <b>B</b>.
         </p>
         <p>Pour les vecteurs réels</p>
-        <span class="latex-math">$$\mathbf{a}$$</span>
+        <span class="math display">$$\mathbf{a}$$</span>
         <p>et</p>
-        <span class="latex-math">$$\mathbf{b}$$</span>
+        <span class="math display">$$\mathbf{b}$$</span>
         <p>de longueur</p>
-        <span class="latex-math">$$n$$</span>
+        <span class="math display">$$n$$</span>
         <p>:</p>
-        <span class="latex-math">$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1 b_1 + a_2 b_2 + \cdots + a_n b_n$$</span>
+        <span class="math display">$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1 b_1 + a_2 b_2 + \cdots + a_n b_n$$</span>
         <p>Pour les vecteurs complexes, le produit scalaire est :</p>
-        <span class="latex-math">$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} \overline{a_i} b_i$$</span>
+        <span class="math display">$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} \overline{a_i} b_i$$</span>
         <p>où</p>
-        <span class="latex-math">$$\overline{a_i}$$</span>
+        <span class="math display">$$\overline{a_i}$$</span>
         <p>dénote le conjugué complexe de</p>
-        <span class="latex-math">$$a_i$$</span>
+        <span class="math display">$$a_i$$</span>
     </div>
 </div>
 <div class="section">

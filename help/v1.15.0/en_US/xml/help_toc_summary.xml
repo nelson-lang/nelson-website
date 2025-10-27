@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>xml</module>
+    <section name="Xml Processing">
+      <chapter_description>
+        <p>The XML module provides functions to create, convert, and manage XML documents for
+            Nelson.</p>
+    </chapter_description>
+      <keyword name="xmlchecker" link="xmlchecker.html" description="Checks a xmlfile against xsd."/>
+      <keyword name="xmlprettyprint" link="xmlprettyprint.html" description="format an XML file."/>
+      <keyword name="xmltransform" link="xmltransform.html" description="XML transformation using XSLT"/>
+    </section>
+  </toc>
+</help_summary>

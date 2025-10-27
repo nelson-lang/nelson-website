@@ -1,11 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>svd</title>
 <link rel="stylesheet" href="highlight.css">
 <link rel="stylesheet" href="nelson_common.css">
-<script src="nelson_help.js"></script>
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">svd</span></div></div>
@@ -67,31 +77,31 @@
             <b>svd</b> calcule la décomposition en valeurs singulières d'une matrice.
         </p>
         <p>Pour une matrice</p>
-        <span class="latex-math">$$M$$</span>
+        <span class="math display">$$M$$</span>
         <p>de taille</p>
-        <span class="latex-math">$$m \times n$$</span>
+        <span class="math display">$$m \times n$$</span>
         <p>, la SVD est :</p>
-        <span class="latex-math">$$M = U\Sigma V^T$$</span>
+        <span class="math display">$$M = U\Sigma V^T$$</span>
         <p>où :
         <ul>
         <li>
-<span class="latex-math">$$U$$</span> est une matrice unitaire</li>
-        <span class="latex-math">$$m \times m$$</span>
+<span class="math display">$$U$$</span> est une matrice unitaire</li>
+        <span class="math display">$$m \times m$$</span>
         <p>(vecteurs singuliers gauches)</p>
         <li>
-<span class="latex-math">$$\Sigma$$</span> est une matrice diagonale</li>
-        <span class="latex-math">$$m \times n$$</span>
+<span class="math display">$$\Sigma$$</span> est une matrice diagonale</li>
+        <span class="math display">$$m \times n$$</span>
         <p>avec des nombres réels non négatifs (valeurs singulières)</p>
         <li>
-<span class="latex-math">$$V^T$$</span> est une matrice unitaire</li>
-        <span class="latex-math">$$n \times n$$</span>
+<span class="math display">$$V^T$$</span> est une matrice unitaire</li>
+        <span class="math display">$$n \times n$$</span>
         <p>(vecteurs singuliers droits)</p>
         </ul>
         </p>
         <p>Les valeurs singulières</p>
-        <span class="latex-math">$$\sigma_i$$</span>
+        <span class="math display">$$\sigma_i$$</span>
         <p>sont arrangées en ordre décroissant :</p>
-        <span class="latex-math">$$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$</span>
+        <span class="math display">$$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$</span>
     </div>
 </div>
 <div class="section">
