@@ -14,6 +14,6 @@ bode(H,{1 10}, '-.')
 
 ![bode plot](https://github.com/nelson-lang/nelson-website/raw/master/images/bode.png "bode")
 
-### [List of control system functions](https://nelson-lang.github.io/nelson-website/help/en_US/chapter_control_system.html)
+### [List of control system functions](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html?open=./control_system/index.html)
 
 [Previous page](FEATURES.md)

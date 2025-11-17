@@ -1,6 +1,6 @@
 ## Tests engine
 
-Validate your algorithm using Nelson dedicated [functions](https://nelson-lang.github.io/nelson-website/help/en_US/chapter_assert_functions.html).
+Validate your algorithm using Nelson dedicated [functions](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html?open=./assert_functions/index.html).
 
 Since v0.5.4, tests are executed on multiple workers on all platforms supported (linux, mac and windows).
 ![alt text](https://github.com/nelson-lang/nelson-website/raw/master/images/test_run.png "test_run")

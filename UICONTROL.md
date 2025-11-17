@@ -2,7 +2,7 @@
 
 Nelson provides graphics functions to visualize and export data:
 
-You will find uicontrol documentation: [HERE](https://nelson-lang.github.io/nelson-website/help/en_US/uicontrol.html)
+You will find uicontrol documentation: [HERE](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html?open=./graphics/uicontrol.html)
 
 ### Example
 
@@ -14,10 +14,10 @@ Main .m file: (uicontrol_demo.m)
 
 ```matlab
 % Create a new figure window with specific properties
-fig = figure('Name', 'UIControl Demo', 'NumberTitle', 'off', 'Position', [300, 300, 600, 400]);
+fig = figure(Name='UIControl Demo', NumberTitle='off', Position=[300, 300, 600, 400]);
 
 % Create an axes object within the figure for plotting
-ax = axes('Parent', fig, 'Position', [0.2, 0.4, 0.7, 0.5]);
+ax = axes(Parent=fig, Position=[0.2, 0.4, 0.7, 0.5]);
 
 % Set the limits for the Y-axis of the plot
 ylim(ax, [-10, 10]);

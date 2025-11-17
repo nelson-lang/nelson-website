@@ -1,6 +1,6 @@
 ## data structures
 
-### [cell](https://nelson-lang.github.io/nelson-website/help/en_US/cell.html)
+### [cell]https://nelson-lang.github.io/nelson-website/latest/latest/en_US/index.html?open=./data_structures/cell.html)
 
 ```matlab
 >> ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
@@ -14,7 +14,7 @@ ce =
 
 ```
 
-### [struct](https://nelson-lang.github.io/nelson-website/help/en_US/struct.html)
+### [struct](https://nelson-lang.github.io/nelson-website/latest/latest/en_US/index.html?open=./data_structures/struct.html)
 
 ```matlab
 >> names = {'Pierre', 'Anna', 'Roberto'}
@@ -44,7 +44,7 @@ st =
 
 ```
 
-### [dictionary](https://nelson-lang.github.io/nelson-website/help/en_US/dictionary.html)
+### [dictionary](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html?open=./dictionary/dictionary.html)
 
 ```matlab
 >> names = {'Pierre', 'Anna', 'Roberto'};
@@ -68,7 +68,7 @@ ans =
     {'Anna'}
 ```
 
-### [table](https://nelson-lang.github.io/nelson-website/help/en_US/table.html)
+### [table](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html?open=./table/table.html)
 
 ```matlab
 T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})

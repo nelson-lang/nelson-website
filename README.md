@@ -105,7 +105,7 @@ Choose your platform and get started with Nelson today!
 
 ## 📖 **Documentation & Support**
 
-- Explore the **[Online Documentation](https://nelson-lang.github.io/nelson-website/help/en_US/index.html)** for in-depth guides.
+- Explore the **[Online Documentation](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html)** for in-depth guides.
 - Have questions or facing issues? **[Submit an Issue](https://github.com/nelson-lang/nelson/issues)**
 
 ---
@@ -125,13 +125,14 @@ Nelson is tested and supported on a wide range of platforms. **[Downloads](https
 | **Operating System** |  **Architecture**  | **CI** |   **Binaries**    |
 | :------------------: | :----------------: | :----: | :---------------: |
 |  **Windows 10, 11**  |    x86-64 (\*1)    |   ✓    |         ✓         |
+|   **macOS Tahoe**    |       arm64        |   ✓    |                   |
 |  **macOS Sequoia**   |       arm64        |   ✓    |                   |
 |   **macOS Sonoma**   |       arm64        |   ✓    |                   |
-|  **macOS Ventura**   |  x86-64 (64-bit)   |   ✓    |                   |
+|   **macOS Sonoma**   |  x86-64 (64-bit)   |   ✓    |                   |
 |   **Ubuntu 24.04**   |       x86-64       |   ✓    | ✓ (Snap, Flatpak) |
 |   **Ubuntu 24.04**   | arm64 (cobalt 100) |   ✓    | ✓ (Snap, Flatpak) |
 |   **Ubuntu 22.04**   |       x86-64       |   ✓    | ✓ (Snap, Flatpak) |
-|    **Fedora 41**     |       x86-64       |   ✓    | ✓ (Snap, Flatpak) |
+|    **Fedora 43**     |       x86-64       |   ✓    | ✓ (Snap, Flatpak) |
 |    **ArchLinux**     |       x86-64       |   ✓    | ✓ (Snap, Flatpak) |
 
 _Note: The continued support of some platforms may depend on community contributions._

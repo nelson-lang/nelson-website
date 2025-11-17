@@ -2,7 +2,7 @@
 
 Nelson provides graphics functions to visualize and export data:
 
-You will find all graphical functions documentation: [HERE](https://nelson-lang.github.io/nelson-website/help/en_US/chapter_graphics.html)
+You will find all graphical functions documentation: [HERE](https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html?open=./graphics/index.html)
 
 Find more plots in [Plot Gallery](PLOT_GALLERY.md)
 
@@ -15,7 +15,7 @@ f = figure();
 t = linspace(0, 2 * pi,63);
 hold on
 plot(cos(t), sin(t), '^r')
-plot(cos(t), sin(2 * t), '-g', 'MarkerSize', 2);
+plot(cos(t), sin(2 * t), '-g', MarkerSize=2);
 axis equal
 legend(_('Circle'), _('Lissajous curve'))
 ```
