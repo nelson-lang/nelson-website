@@ -29,7 +29,7 @@ properties, static and instance methods, operator overloading, events, enumerati
 metaclass introspection, and `arguments`-block validation inside methods. Compatibility
 has been checked extensively, so most existing object-oriented code runs unchanged.
 
-## NFlow: visual modelling with code generation *(beta)*
+## NFlow: visual modelling with code generation _(beta)_
 
 [**NFlow**](nflow.md) is Nelson's visual block-diagram editor and simulator. You assemble
 a model from a palette of blocks, connect causal signal flows or acausal physical

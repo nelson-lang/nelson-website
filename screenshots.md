@@ -10,13 +10,13 @@ workspace and history browsers, a variable editor, a code editor with debugging,
 figure windows, all running on the fast new engine.
 
 ![The Nelson 2.0 desktop on Windows](images/v2/desktop_2.0.png)
-*The Nelson 2.0 desktop, with a dockable command window, workspace, history, and tools in one window.*
+_The Nelson 2.0 desktop, with a dockable command window, workspace, history, and tools in one window._
 
 Graphics open in their own interactive figure windows, rendered by the rebuilt
 backend-agnostic engine:
 
 ![A surf(peaks) figure window](images/v2/figure_surf_peaks.png)
-*An interactive `surf(peaks)` figure. You can pan, zoom, rotate, and edit properties live.*
+_An interactive `surf(peaks)` figure. You can pan, zoom, rotate, and edit properties live._
 
 ## The same desktop, in your browser
 
@@ -24,7 +24,7 @@ Nelson 2.0 also runs as a [**web desktop**](web-desktop.md), with the same engin
 interface and nothing to install. A WebAssembly build runs Nelson entirely client-side.
 
 ![The Nelson web desktop running in a browser](images/v2/web_desktop.jpg)
-*The web desktop running live in a browser.*
+_The web desktop running live in a browser._
 
 ## Every platform
 

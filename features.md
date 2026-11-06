@@ -54,7 +54,7 @@ New to version 2.0? See [what's new in 2.0](whats-new.md).
 - [**NFlow**](nflow.md) lets you build block diagrams, simulate them, and generate
   standalone **C and Rust** that match the model to machine precision. It supports causal
   and acausal modelling, several solvers, scopes, dashboards, and FMI and FMU
-  co-simulation. *(beta)*
+  co-simulation. _(beta)_
 
 ## User interface and web
 
