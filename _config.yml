@@ -1,11 +1,55 @@
-remote_theme: pages-themes/architect@v0.2.0
+title: Nelson
 name: Nelson
-description: Nelson
+description: The open numerical computing language for engineers and scientists. Free and open source, with a familiar array syntax, a fast engine, visual modelling, and a web desktop.
 author: Allan CORNET
 author_email: nelson.numerical.computation@gmail.com
-github:
-  is_project_page: false
+lang: en_US
+
+url: https://nelson-lang.github.io
+baseurl: /nelson-website
+
+# Custom theme (layouts in _layouts, styles in assets/css/nelson.css).
+# No remote_theme: the site is styled by its own design system.
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+# Apply the "page" layout to every Markdown page by default,
+# and the "post" layout to news entries in _posts.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# News feed (jekyll-feed generates /feed.xml from _posts).
+feed:
+  path: feed.xml
+  posts_limit: 20
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - .prettierignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

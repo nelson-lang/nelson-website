@@ -13,7 +13,7 @@
 
 Nelson is a powerful, open-source numerical computational language, developed to provide a comprehensive and intuitive environment for engineers, scientists, and students. With over 1,200 built-in functions, Nelson supports a wide range of tasks, from basic algebra to advanced numerical simulations.
 
-Originally inspired by languages like MATLAB© and GNU Octave, Nelson offers users a lightweight yet feature-rich experience. It is designed to be easy to learn and use, with an emphasis on performance and flexibility.
+Originally inspired by languages like MATLAB® and GNU Octave, Nelson offers users a lightweight yet feature-rich experience. It is designed to be easy to learn and use, with an emphasis on performance and flexibility.
 
 ### Key Features:
 
@@ -25,8 +25,8 @@ Originally inspired by languages like MATLAB© and GNU Octave, Nelson offers use
 
 ## 📸 **Screenshots**
 
-- **See Nelson in Action:** [Screenshots](SCREENSHOTS.md)
-- **Graphical Capabilities:** [Plotting & Graphics](PLOT_GALLERY.md)
+- **See Nelson in Action:** [Screenshots](screenshots.md)
+- **Graphical Capabilities:** [Plotting & Graphics](plot_gallery.md)
 
 ## 🚀 Detailed Features
 
@@ -34,56 +34,55 @@ Nelson offers a wide range of powerful features for scientific computing and eng
 
 ### Core Capabilities
 
-- [Advanced Data Structures](TYPES.md): Cell arrays, structs, dictionaries, tables, and linear systems
-- [Internal Data Types](TYPES.md): Flexible and extensible type system
-- [Overloading](OVERLOADING.md): Customizable operator and function behavior
-- [Modularity](MODULARITY.md): Organize and extend functionality
-- [External Modules](EXTERNAL_MODULE.md): Integrate third-party libraries
+- [Advanced Data Structures](types.md): Cell arrays, structs, dictionaries, tables, and linear systems
+- [Internal Data Types](types.md): Flexible and extensible type system
+- [Overloading](overloading.md): Customizable operator and function behavior
+- [Modularity](modularity.md): Organize and extend functionality
+- [External Modules](external_module.md): Integrate third-party libraries
 
 ### Scientific Computing
 
-- [2D and 3D Plotting](PLOTS.md): High-level plot commands for data visualization
-- [Fast Fourier Transformation](FFTW.md): Efficient frequency domain analysis
-- [Control Systems](CONTROL.md): Tools for system modeling and analysis
-- [SLICOT Integration](SLICOT.md): Advanced control theory algorithms
+- [2D and 3D Plotting](plots.md): High-level plot commands for data visualization
+- [Fast Fourier Transformation](fftw.md): Efficient frequency domain analysis
+- [Control Systems](control.md): Tools for system modeling and analysis
+- [SLICOT Integration](slicot.md): Advanced control theory algorithms
 
 ### Programming & Development
 
-- [Interactive Code Editor](CODE_EDITOR.md): User-friendly development environment
-- [Build C/C++ On-the-Fly](BUILD_C_CPP_ON_FLY.md): Seamless integration with compiled languages
-- [C MEX API Support](MEX.md): Compatibility with existing MEX files
-- [Nelson Engine API](MEX_ENGINE.md): C API compatible with MEX Engine
-- [Foreign Function Interface (FFI)](FFI.md): Call functions from shared libraries
+- [Interactive Code Editor](code_editor.md): User-friendly development environment
+- [Build C/C++ On-the-Fly](build_c_cpp_on_fly.md): Seamless integration with compiled languages
+- [C MEX API Support](mex.md): Compatibility with existing MEX files
+- [Nelson Engine API](mex_engine.md): C API compatible with MEX Engine
+- [Foreign Function Interface (FFI)](ffi.md): Call functions from shared libraries
 
 ### High-Performance Computing
 
-- [Parallel Computing Module](PARALLEL.md): Leverage multi-core processors
-- [Message Passing Interface (MPI)](MPI.md): Distributed computing support
+- [Parallel Computing Module](parallel.md): Leverage multi-core processors
+- [Message Passing Interface (MPI)](mpi.md): Distributed computing support
 
 ### Data Handling & Interoperability
 
-- [HDF5 I/O](HDF5.md): High-level functions for HDF5 file format
-- [MAT-File I/O](MATIO.md): Read and write MATLAB® compatible files
-- [JSON Support](JSON.md): Parse and generate JSON data
-- [Python Integration](PYTHON.md): Call Python from Nelson
+- [HDF5 I/O](hdf5.md): High-level functions for HDF5 file format
+- [MAT-File I/O](matio.md): Read and write MATLAB® compatible files
+- [JSON Support](json.md): Parse and generate JSON data
+- [Python Integration](python.md): Call Python from Nelson
 
 ### User Interface & Graphics
 
-- [UI Controls](UICONTROL.md): Create interactive user interfaces
-- [QML Engine](QML_ENGINE.md): Design modern UIs with QML
+- [UI Controls](uicontrol.md): Create interactive user interfaces
+- [QML Engine](qml_engine.md): Design modern UIs with QML
 
 ### Connectivity & Web
 
-- [COM Interface](COM_INTERFACE.md): Interact with COM objects (Windows)
-- [RESTful Web Services](REST.md): Create and consume web APIs
-- [Cloud Computing☁️](CLOUD.md): Harness cloud resources for computation
+- [COM Interface](com_interface.md): Interact with COM objects (Windows)
+- [RESTful Web Services](rest.md): Create and consume web APIs
 
 ### Miscellaneous
 
-- [Audio Processing](AUDIO.md): Work with audio signals and files
-- [Unicode Support](CHARSET.md): Handle international character sets
-- [Validator Functions](VALIDATORS.md): Ensure data integrity
-- [Interprocess Communication (IPC)](IPC.md): Facilitate process interaction
+- [Audio Processing](audio.md): Work with audio signals and files
+- [Unicode Support](charset.md): Handle international character sets
+- [Validator Functions](validators.md): Ensure data integrity
+- [Interprocess Communication (IPC)](ipc.md): Facilitate process interaction
 
 ---
 
@@ -94,8 +93,6 @@ Choose your platform and get started with Nelson today!
 [**Download the latest version for Windows**](https://github.com/nelson-lang/nelson/releases)
 
 [**Windows Package Manager**](https://winstall.app/apps/NelsonNumericalSoftware.Nelson)
-
-[**Chocolatey Package Manager**](https://community.chocolatey.org/packages/nelson)
 
 [**Snap Store**](https://snapcraft.io/nelson)
 
@@ -112,7 +109,7 @@ Choose your platform and get started with Nelson today!
 
 ## 🧑‍💻 **Contribute to Nelson**
 
-Want to be part of the community? Contribute to the development of Nelson by following our [Development Guide](DEVELOPMENT.md).
+Want to be part of the community? Contribute to the development of Nelson by following our [Development Guide](development.md).
 
 [**Contact us**](mailto:nelson.numerical.computation@gmail.com)
 

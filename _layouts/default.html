@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% seo %}
+<link rel="icon" href="{{ '/images/v2/fibonacci.png' | relative_url }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,500;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{ '/assets/css/nelson.css' | relative_url }}" />
+{% feed_meta %}
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#f1c877" stroke-width="3">
+        <rect x="6" y="20" width="88" height="60" rx="2" opacity=".5"/>
+        <path d="M50 80 A30 30 0 0 1 50 20 A30 30 0 0 1 80 50 A18 18 0 0 1 62 68 A11 11 0 0 1 51 57 A7 7 0 0 1 58 50"/>
+      </g></svg>
+      <span class="word">Nelson</span>
+    </a>
+    <div class="navlinks">
+      <a href="{{ '/whats-new.html' | relative_url }}" class="v2">What's new in 2.0</a>
+      <a href="{{ '/features.html' | relative_url }}">Features</a>
+      <a href="{{ '/nflow.html' | relative_url }}">NFlow</a>
+      <a href="{{ '/news.html' | relative_url }}">News</a>
+      <a href="{{ '/#download' | relative_url }}">Download</a>
+      <a href="https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html">Docs</a>
+      <a href="{{ '/#download' | relative_url }}" class="navcta btn btn-gold" style="padding:9px 16px;font-size:14px">Get Nelson</a>
+    </div>
+  </div>
+</nav>
+
+{{ content }}
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="{{ '/' | relative_url }}" style="margin-bottom:12px">
+          <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#f1c877" stroke-width="3">
+            <rect x="6" y="20" width="88" height="60" rx="2" opacity=".5"/>
+            <path d="M50 80 A30 30 0 0 1 50 20 A30 30 0 0 1 80 50 A18 18 0 0 1 62 68 A11 11 0 0 1 51 57 A7 7 0 0 1 58 50"/>
+          </g></svg>
+          <span class="word">Nelson</span>
+        </a>
+        <p style="max-width:34ch;color:#8fb0d1">An open array programming language for engineers, scientists, and students.</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="{{ '/whats-new.html' | relative_url }}">What's new in 2.0</a></li>
+        <li><a href="{{ '/nflow.html' | relative_url }}">NFlow</a></li>
+        <li><a href="{{ '/web-desktop.html' | relative_url }}">Web desktop</a></li>
+        <li><a href="{{ '/#download' | relative_url }}">Download</a></li>
+      </ul></div>
+      <div><h4>Learn</h4><ul>
+        <li><a href="https://nelson-lang.github.io/nelson-gitbook/releases/en_US/latest/index.html">Documentation</a></li>
+        <li><a href="{{ '/plot_gallery.html' | relative_url }}">Plot gallery</a></li>
+        <li><a href="{{ '/screenshots.html' | relative_url }}">Screenshots</a></li>
+        <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+        <li><a href="https://github.com/nelson-lang/nelson/blob/master/CHANGELOG.md">Changelog</a></li>
+      </ul></div>
+      <div><h4>Community</h4><ul>
+        <li><a href="https://github.com/nelson-lang/nelson">GitHub</a></li>
+        <li><a href="https://github.com/nelson-lang/nelson/issues">Issues</a></li>
+        <li><a href="{{ '/development.html' | relative_url }}">Contribute</a></li>
+        <li><a href="mailto:nelson.numerical.computation@gmail.com">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>Copyright &copy; 2018 to present, Allan CORNET. Licensed under LGPL-3.0 and GPL-3.0.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

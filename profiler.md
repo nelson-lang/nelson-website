@@ -1,0 +1,21 @@
+---
+title: "Profiling and Coverage Tools"
+description: "Nelson has a built-in profiler that is very useful to profile your code and find out what script or function is taking the most time."
+---
+
+# Profiling and Coverage Tools
+
+Nelson has a built-in profiler that is very useful to profile your code and find out what script or function is taking the most time.
+
+Example:
+
+```matlab
+profile('on')
+run('test_profile.nls')
+profile('off')
+profsave()
+```
+
+It generates a html report available [here](https://nelson-lang.github.io/nelson-website/profile_result/index.html)
+
+[Back to features](features.md)

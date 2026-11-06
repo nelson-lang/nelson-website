@@ -1,3 +1,17 @@
 *.bak
 node_modules/
 package-lock.json
+
+# Jekyll local build
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+vendor/
+.bundle/
+
+# OS
+.DS_Store
+Thumbs.db
